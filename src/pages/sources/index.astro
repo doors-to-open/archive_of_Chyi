@@ -3,36 +3,23 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { sources } from "../../lib/archive";
 ---
 
-<BaseLayout title="Sources | Chyi Yu Archive">
+<BaseLayout title="Sources | All for Chyi Yu">
   <section class="page-shell">
     <p class="page-kicker">Sources</p>
-    <h1 class="page-title">Source register</h1>
+    <h1 class="page-title">Sources</h1>
     <p class="page-intro">
-      Every source record keeps its type, reliability, access date, and citation note visible.
+      Appendix for citations, reliability notes, and external reference links.
     </p>
 
-    <div class="section table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Type</th>
-            <th>Reliability</th>
-            <th>Accessed</th>
-          </tr>
-        </thead>
-        <tbody>
-          {sources.map((source) => (
-            <tr>
-              <td><a href={source.url}>{source.title}</a></td>
-              <td>{source.sourceType}</td>
-              <td>{source.reliability}</td>
-              <td>{source.accessDate}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div class="section archive-grid">
+      {sources.map((source) => (
+        <article class="record-card">
+          <h2><a href={source.url}>{source.title}</a></h2>
+          <p>{source.sourceType} · reliability: {source.reliability}</p>
+          {source.accessDate ? <p class="muted">Accessed {source.accessDate}</p> : null}
+          {source.notes ? <p>{source.notes}</p> : null}
+        </article>
+      ))}
     </div>
   </section>
 </BaseLayout>
-

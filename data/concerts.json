@@ -1,6 +1,6 @@
 [
   {
-    "id": "performance-the-unheard-of-chyi-2003-live-album",
+    "id": "concert-the-unheard-of-chyi-2003-live-album",
     "slug": "the-unheard-of-chyi-2003-live-album",
     "title": "The Unheard of Chyi",
     "date": "2003",
@@ -8,28 +8,34 @@
     "city": null,
     "countryOrRegion": null,
     "eventType": "live-album",
+    "guests": [],
     "setlist": [
       {
         "position": null,
         "song": "song-walking-in-the-rain",
-        "titlePerformed": "Walking In the Rain"
+        "titlePerformed": "Walking In the Rain",
+        "collaborators": [],
+        "mediaLinks": []
       },
       {
         "position": null,
         "song": "song-olive-tree",
-        "titlePerformed": "The Olive Tree"
+        "titlePerformed": "The Olive Tree",
+        "collaborators": [],
+        "mediaLinks": []
       },
       {
         "position": null,
         "song": "song-your-smiling-face",
-        "titlePerformed": "Your Smiling Face"
+        "titlePerformed": "Your Smiling Face",
+        "collaborators": [],
+        "mediaLinks": []
       }
     ],
     "mediaLinks": [],
     "sources": ["source-wikipedia-en-chyi-yu"],
     "sourceQuality": "secondary",
-    "notes": "Modeled as a partial performance-related record based on the 2003 live concert album listing. Exact concert metadata should be verified before treating this as a specific event.",
+    "notes": "Modeled as a partial concert-related record based on the 2003 live concert album listing. Exact concert metadata should be verified before treating this as a specific event.",
     "status": "partial"
   }
 ]
-

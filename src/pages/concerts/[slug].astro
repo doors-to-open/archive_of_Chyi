@@ -1,0 +1,106 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RecordStatus from "../../components/RecordStatus.astro";
+import { byId, concerts, songs, sourceRecords } from "../../lib/archive";
+
+export function getStaticPaths() {
+  return concerts.map((concert) => ({
+    params: { slug: concert.slug },
+    props: { concert }
+  }));
+}
+
+const { concert } = Astro.props;
+const linkedSources = sourceRecords(concert.sources);
+---
+
+<BaseLayout title={`${concert.title} | All for Chyi Yu`}>
+  <section class="page-shell">
+    <p class="page-kicker">Concert</p>
+    <h1 class="page-title">{concert.title}</h1>
+    <p class="page-intro">{concert.notes}</p>
+
+    <article class="section detail-panel">
+      <RecordStatus status={concert.status} />
+      <dl class="fact-lines">
+        <div>
+          <dt>Date</dt>
+          <dd>{concert.date || "Unknown"}</dd>
+        </div>
+        <div>
+          <dt>Type</dt>
+          <dd>{concert.eventType}</dd>
+        </div>
+        <div>
+          <dt>Venue</dt>
+          <dd>{concert.venue || "Unknown"}</dd>
+        </div>
+        <div>
+          <dt>Location</dt>
+          <dd>{[concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || "Unknown"}</dd>
+        </div>
+        <div>
+          <dt>Guests</dt>
+          <dd>{concert.guests?.length ? concert.guests.join(", ") : "None recorded"}</dd>
+        </div>
+      </dl>
+    </article>
+
+    <section class="section detail-panel">
+      <h2>Show links</h2>
+      {concert.mediaLinks.length ? (
+        <div class="link-list">
+          {concert.mediaLinks.map((link) => <p>{link}</p>)}
+        </div>
+      ) : (
+        <p class="empty-state">No show links added yet.</p>
+      )}
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Songs</h2>
+        <p>{concert.setlist.length} entries</p>
+      </div>
+
+      <div class="archive-grid">
+        {concert.setlist.map((entry) => {
+          const linkedSong = byId(songs, entry.song);
+          return (
+            <details class="record-card">
+              <summary>
+                <span>{entry.position ? `${entry.position}. ` : ""}{entry.titlePerformed || linkedSong?.title || entry.song}</span>
+                <span class="summary-meta">{linkedSong?.titleOriginal || ""}</span>
+              </summary>
+
+              <div class="details-body">
+                {entry.collaborators?.length ? <p>Collaborators: {entry.collaborators.join(", ")}</p> : null}
+                {entry.mediaLinks?.length ? (
+                  <div>
+                    <h3>Clip links</h3>
+                    {entry.mediaLinks.map((link) => <p>{link}</p>)}
+                  </div>
+                ) : (
+                  <p class="muted">No clip links added yet.</p>
+                )}
+              </div>
+            </details>
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="section detail-panel">
+      <h2>Sources</h2>
+      {linkedSources.length ? (
+        <div class="link-list">
+          {linkedSources.map((source) => (
+            <p><a href={source.url}>{source.title}</a></p>
+          ))}
+        </div>
+      ) : (
+        <p class="empty-state">No sources recorded.</p>
+      )}
+    </section>
+  </section>
+</BaseLayout>

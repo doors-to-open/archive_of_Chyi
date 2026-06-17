@@ -1,18 +1,40 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import RecordStatus from "../../components/RecordStatus.astro";
+import { appearances } from "../../lib/archive";
 ---
 
-<BaseLayout title="Appearances | Chyi Yu Archive">
+<BaseLayout title="Appearances | All for Chyi Yu">
   <section class="page-shell">
     <p class="page-kicker">Appearances</p>
-    <h1 class="page-title">TV, radio, film, and other appearances</h1>
+    <h1 class="page-title">Appearances</h1>
     <p class="page-intro">
-      Appearance records will cover programs, interviews, soundtrack work, documentaries, and related media.
+      Talk shows, film, soundtrack work, podcasts, interviews, documentaries, and other appearances.
     </p>
 
-    <div class="section empty-state">
-      No appearance records have been added to the starter dataset yet.
-    </div>
+    {appearances.length ? (
+      <div class="section archive-grid">
+        {appearances.map((appearance) => (
+          <details class="record-card">
+            <summary>
+              <span>{appearance.title}</span>
+              <span class="summary-meta">{appearance.date || "Date unknown"}</span>
+            </summary>
+
+            <div class="details-body">
+              <RecordStatus status={appearance.status} />
+              <p>{appearance.appearanceType}</p>
+              {appearance.programOrWork ? <p>{appearance.programOrWork}</p> : null}
+              {appearance.role ? <p>Role: {appearance.role}</p> : null}
+              {appearance.notes ? <p>{appearance.notes}</p> : null}
+            </div>
+          </details>
+        ))}
+      </div>
+    ) : (
+      <div class="section empty-state">
+        No appearance records have been added yet.
+      </div>
+    )}
   </section>
 </BaseLayout>
-

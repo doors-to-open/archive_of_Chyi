@@ -6,51 +6,31 @@ This document describes the first planned site map and the role of each route. I
 
 ### `/`
 
-Home page. It should introduce the archive purpose briefly and route visitors into the main archive sections. It should not become a marketing landing page; the first screen should help users browse the archive.
+Home page. It should give a short entry point into the archive without explaining the project machinery.
 
 Primary links:
 
-- Songs
-- Albums / Discography
-- Performances
+- Releases
+- Concerts
+- Music Shows
 - Appearances
+- People
+
+Footer links:
+
 - Sources
 - Contribute
-
-### `/songs/`
-
-Song index. This should become the main dictionary-like entry point.
-
-Expected controls:
-
-- Search by English title, original title, alias, lyricist, composer.
-- Filter by language.
-- Sort by title, first known release year, and known performance count.
-
-### `/songs/[slug]/`
-
-Song detail page.
-
-Expected sections:
-
-- Basic titles and aliases.
-- Credits.
-- Release appearances.
-- Known live performances.
-- External media links.
-- Source list.
-- Contribution action.
-- Optional fan memories later.
+- About
 
 ### `/releases/`
 
 Release index for albums, singles, compilations, reissues, collaborations, soundtracks, and other release appearances.
 
-Expected controls:
+Expected controls later:
 
 - Filter by release type.
 - Sort by release date.
-- Search by title, label, catalog number.
+- Search by title, label, catalog number, track title, lyricist, and composer.
 
 ### `/releases/[slug]/`
 
@@ -59,45 +39,72 @@ Release detail page.
 Expected sections:
 
 - Release metadata.
-- Track list linked to song records.
-- Credits.
+- Expandable track list.
+- Track-level lyricist, composer, arrangement, version, and duration when known.
+- Known concert and music-show connections by track.
 - External platform links.
 - Sources.
 - Notes.
 
-### `/performances/`
+Track titles should not link to standalone song pages.
 
-Concert and live performance index.
+### `/concerts/`
 
-Expected controls:
+Concert and concert-series index.
 
-- Filter by event type.
+Expected controls later:
+
+- Filter by location.
 - Filter by source quality.
 - Sort by date.
-- Search by event, venue, city, and song.
+- Search by concert title, venue, city, guest, and song.
 
-### `/performances/[slug]/`
+### `/concerts/[slug]/`
 
-Performance detail page.
+Concert detail page.
 
 Expected sections:
 
-- Event metadata.
-- Setlist when known.
-- Related songs.
-- External media links.
+- Concert or series metadata.
+- Show-level media links.
+- Guests when known.
+- Expandable song performance list.
+- Clip-level media links per song performance.
 - Source confidence.
 - Notes.
 
+### `/music-shows/`
+
+Music-show performance index for televised, streamed, and radio music programs.
+
+Expected controls later:
+
+- Filter by program or platform.
+- Sort by date.
+- Search by episode, collaborator, and performed song.
+
+### `/music-shows/[slug]/`
+
+Music-show detail page.
+
+Expected sections:
+
+- Program, platform, and episode metadata.
+- Performed songs.
+- Collaborators.
+- Show-level media links.
+- Clip-level media links.
+- Sources.
+
 ### `/appearances/`
 
-TV, radio, film, documentary, interview, soundtrack, and other appearance index.
+General appearance index for talk shows, film appearances, soundtrack work, podcasts, interviews, documentaries, and similar records.
 
-Expected controls:
+Expected controls later:
 
 - Filter by appearance type.
 - Sort by date.
-- Search by program/work title and related song.
+- Search by program/work title, host, role, and related song.
 
 ### `/appearances/[slug]/`
 
@@ -107,7 +114,7 @@ Expected sections:
 
 - Program or work metadata.
 - Role or involvement.
-- Related songs.
+- Related songs when relevant.
 - Media links.
 - Sources.
 
@@ -115,10 +122,11 @@ Expected sections:
 
 People index for credits and relationships.
 
-Expected controls:
+Expected controls later:
 
 - Search by name.
 - Filter by role.
+- Sort by relationship counts.
 
 ### `/people/[slug]/`
 
@@ -127,16 +135,17 @@ Person detail page.
 Expected sections:
 
 - Known roles.
-- Song credits.
-- Release credits.
-- Appearance or performance relationships.
+- Release and track credits.
+- Concert collaborations.
+- Music-show collaborations.
+- General appearances.
 - Sources.
 
 ### `/sources/`
 
-Source index.
+Source index. This is appendix navigation, not a primary archive category.
 
-Expected controls:
+Expected controls later:
 
 - Filter by source type.
 - Filter by reliability.
@@ -155,7 +164,7 @@ Expected sections:
 
 ### `/contribute/`
 
-Contribution instructions.
+Contribution instructions. This is appendix navigation.
 
 Expected sections:
 
@@ -167,7 +176,14 @@ Expected sections:
 
 ### `/about/`
 
-Site purpose, project status, contact route, credits, copyright/link policy, and non-affiliation disclaimer.
+Site purpose, project status, contact route, credits, copyright/link policy, and non-affiliation disclaimer. This is appendix navigation.
+
+## Removed Public Routes
+
+Song records remain in the data layer, but public song pages are removed:
+
+- no `/songs/`
+- no `/songs/[slug]/`
 
 ## Later Routes
 
@@ -179,4 +195,3 @@ These should wait until the basic archive works:
 - `/memories/`
 - `/changelog/`
 - `/contributors/`
-

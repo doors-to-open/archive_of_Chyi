@@ -2,117 +2,146 @@
 
 ## Main Sections
 
-The site should be organized for two kinds of visitors:
+The public site should read like a quiet reference index. Visitors should see the work first and the archive process only when they need sources, contribution rules, or project notes.
 
-- A new fan who wants a clear path into Chyi Yu's work.
-- A returning fan or contributor who wants to locate a specific item and verify details.
+### Releases
 
-### Songs
+Official releases and related release formats. A release page should show the album or release title, basic release information, and an expandable track list.
 
-The central archive object. A song can connect to releases, performances, composers, lyricists, arrangers, external media, translations, notes, and fan memories.
+Each track should show core credits such as lyricist and composer. If the song has known live records, the track can expand to show linked concerts or music-show performances. Song names are not public navigation targets.
 
-### Albums / Discography
+### Concerts
 
-Official releases and related release formats. This section should support studio albums, compilations, singles, collaborations, reissues, and appearances on other artists' or compilation releases.
+Concerts and concert series. A concert record should show date, location, guests when known, show-level media links, and an expandable song performance list.
 
-### Concerts / Live Performances
+Each song performance should have room for clip-level media links.
 
-Concerts, televised live events, festival performances, and other known live appearances. Some records may be official, while others may come from audience reports.
+### Music Shows
 
-### TV / Radio / Film Appearances
+Televised, streamed, or radio music-show performances. This section is separate from concerts because it is a major way singers perform live outside their own shows.
 
-Broadcast, interview, acting, soundtrack, documentary, and special-program appearances.
+A music-show record should show the program or platform, date, episode information, performed songs, collaborators, show-level links, and clip-level links.
 
-### People / Credits
+### Appearances
 
-Composers, lyricists, arrangers, producers, musicians, directors, hosts, and other people connected to archive items.
+Non-concert and non-music-show appearances: talk shows, film appearances, soundtrack work, podcasts, interviews, documentaries, and similar records.
+
+This section should separate general appearances from song-performance records.
+
+### People
+
+Composers, lyricists, arrangers, producers, musicians, hosts, directors, collaborators, and other people connected to archive items.
+
+People records should eventually support relationship summaries such as frequent lyricists, composers, producers, and performance collaborators.
 
 ### Sources
 
-Official websites, album booklets, streaming platforms, news articles, books, fan reports, archived pages, YouTube pages, and other evidence.
+Official websites, album booklets, streaming platforms, news articles, books, fan reports, archived pages, platform pages, and other evidence.
+
+Sources are appendix material. They should be accessible from the footer, not the main navigation.
 
 ### Contribute
 
 Instructions for corrections, additions, source requirements, credit, and review.
 
+Contribution instructions are appendix material. They should be accessible from the footer.
+
 ### About
 
 Site purpose, contact information, copyright/link policy, contributor credits, and project status.
 
+About is appendix material. It should be accessible from the footer.
+
 ## Browsing Rules
 
-### Songs
-
-- Default sort: alphabetic by English display title.
-- Secondary views: original title, first known release year, language, lyricist, composer, live performance count.
-- Song detail pages should prioritize relationships: releases, known performances, media links, credits, sources, and notes.
-
-### Albums / Discography
+### Releases
 
 - Default sort: release date.
-- Secondary views: release type, label, format, involvement type.
-- Release detail pages should show track list, credits, source coverage, and linked song records.
+- Secondary views later: release type, label, format, involvement type.
+- Release detail pages should show release facts, track list, credits, source coverage, and known live connections by track.
+- Track titles should not link to standalone song pages.
 
-### Concerts / Live Performances
+### Concerts
 
-- Default sort: performance date, newest or oldest toggle later.
-- Secondary views: event type, place, source quality, available media.
-- Performance detail pages should show setlist when known, links to performed songs, media links, and source confidence.
+- Default sort: concert date.
+- Secondary views later: location, series, guests, source quality, available media.
+- Concert pages should show show-level links first, then the song performance list.
+- Each song performance should support clip-level links.
 
-### TV / Radio / Film Appearances
+### Music Shows
 
 - Default sort: date.
-- Secondary views: appearance type, program/work title, related songs.
-- Appearance detail pages should separate broadcast/work metadata from song-performance metadata.
+- Secondary views later: program, platform, episode, collaborator, related song.
+- Music-show pages should show episode metadata, performed songs, collaborators, and media links.
 
-### People / Credits
+### Appearances
+
+- Default sort: date.
+- Secondary views later: appearance type, program/work title, role, related song.
+- Appearance pages should avoid mixing general appearances with concert or music-show performance records.
+
+### People
 
 - Default sort: alphabetic.
-- Detail pages should show credited songs, releases, performances, and appearances.
+- Detail pages should later show credited releases, songs, concerts, music shows, appearances, and relationship counts.
 
 ### Sources
 
 - Default sort: source type, then title.
-- Detail pages should show which archive records a source supports.
+- Source detail pages should later show which archive records each source supports.
 
 ## First Navigation
 
+Top navigation:
+
 - `/`
-- `/songs/`
-- `/songs/[slug]/`
 - `/releases/`
-- `/releases/[slug]/`
-- `/performances/`
-- `/performances/[slug]/`
+- `/concerts/`
+- `/music-shows/`
 - `/appearances/`
-- `/appearances/[slug]/`
 - `/people/`
-- `/people/[slug]/`
+
+Footer navigation:
+
 - `/sources/`
 - `/contribute/`
 - `/about/`
+
+Internal-only song data:
+
+- `songs.json`
+
+Public song routes are intentionally removed:
+
+- no `/songs/`
+- no `/songs/[slug]/`
 
 ## Relationship Priorities
 
 The first implementation should make these relationships easy:
 
-- Song to releases.
-- Song to performances.
-- Song to media links.
 - Release to tracks.
-- Performance to performed songs.
+- Track to internal song record.
+- Internal song record to concerts.
+- Internal song record to music-show performances.
+- Concert to performed songs.
+- Music show to performed songs and collaborators.
+- Person to credits and collaborations.
 - Any factual record to sources.
 
 ## Contribution Entry Points
 
-Each item detail page should eventually include a contribution action. The action should route contributors into a structured correction or addition process rather than free-form comments.
+Each public item page should eventually include a contribution action. The action should route contributors into a structured correction or addition process rather than free-form comments.
 
 First supported contribution types:
 
 - Correct a factual field.
 - Add a missing source.
 - Add an external media link.
-- Add a performance record.
+- Add a release track or credit.
+- Add a concert record.
+- Add a music-show performance.
+- Add a general appearance.
 - Add a short personal memory or fan note.
 
 Factual contribution forms should ask for source links. Personal memories should be stored separately from verified archive data.
@@ -120,5 +149,5 @@ Factual contribution forms should ask for source links. Personal memories should
 ## Open Information Architecture Questions
 
 - Whether the first public version should include bilingual navigation or stay English-only until the archive model stabilizes.
-- Whether media links should be shown inline on item pages or grouped in a separate media panel.
-- Whether "Movies" should be a top-level section or live under broader appearances until there is enough content.
+- Whether media links should be shown inline under each record or grouped in a compact media panel.
+- Whether OST work should stay under appearances or become its own section if enough records are added.

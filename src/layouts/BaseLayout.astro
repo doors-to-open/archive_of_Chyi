@@ -8,19 +8,15 @@ type Props = {
 
 const {
   title,
-  description = "A structured archive index for Chyi Yu records, sources, and external links."
+  description = "All for Chyi Yu: a quiet fan archive of releases, concerts, appearances, people, sources, and links."
 } = Astro.props;
 
 const navItems = [
-  { href: "/", label: "Archive" },
-  { href: "/songs/", label: "Songs" },
   { href: "/releases/", label: "Releases" },
-  { href: "/performances/", label: "Performances" },
+  { href: "/concerts/", label: "Concerts" },
+  { href: "/music-shows/", label: "Music shows" },
   { href: "/appearances/", label: "Appearances" },
-  { href: "/people/", label: "People" },
-  { href: "/sources/", label: "Sources" },
-  { href: "/contribute/", label: "Contribute" },
-  { href: "/about/", label: "About" }
+  { href: "/people/", label: "People" }
 ];
 ---
 
@@ -36,7 +32,7 @@ const navItems = [
     <header class="site-header">
       <a class="brand" href="/" aria-label="Chyi Yu Archive home">
         <span class="brand-mark" aria-hidden="true">CY</span>
-        <span>Chyi Yu Archive</span>
+        <span>All for Chyi Yu</span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
         {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
@@ -50,10 +46,10 @@ const navItems = [
         Fan archive index. Metadata and links only; no hosted audio or video.
       </p>
       <p>
-        <a href="/about/">About</a> <span aria-hidden="true">/</span>
-        <a href="/contribute/">Contribute</a>
+        <a href="/sources/">Sources</a> <span aria-hidden="true">/</span>
+        <a href="/contribute/">Contribute</a> <span aria-hidden="true">/</span>
+        <a href="/about/">About</a>
       </p>
     </footer>
   </body>
 </html>
-

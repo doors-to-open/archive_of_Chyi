@@ -1,7 +1,15 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { byId, personName, releases, songs, sourceRecords } from "../../lib/archive";
+import {
+  byId,
+  concertsForSong,
+  musicShowsForSong,
+  personName,
+  releases,
+  songs,
+  sourceRecords
+} from "../../lib/archive";
 
 export function getStaticPaths() {
   return releases.map((release) => ({
@@ -12,88 +20,101 @@ export function getStaticPaths() {
 
 const { release } = Astro.props;
 const linkedSources = sourceRecords(release.sources);
+
+function peopleList(ids: string[]) {
+  return ids.length ? ids.map(personName).join(", ") : "Not recorded";
+}
 ---
 
-<BaseLayout title={`${release.title} | Chyi Yu Archive`}>
+<BaseLayout title={`${release.title} | All for Chyi Yu`}>
   <section class="page-shell">
     <p class="page-kicker">Release</p>
     <h1 class="page-title">{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h1>
     <p class="page-intro">{release.notes}</p>
 
-    <div class="section detail-grid">
-      <article class="detail-panel">
-        <RecordStatus status={release.status} />
-        <div class="section">
-          <div class="section-header">
-            <h2>Track List</h2>
-            <p>{release.tracks.length} entries</p>
-          </div>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>No.</th>
-                  <th>Title</th>
-                  <th>Lyrics</th>
-                  <th>Music</th>
-                </tr>
-              </thead>
-              <tbody>
-                {release.tracks.map((track) => {
-                  const linkedSong = byId(songs, track.song);
-                  return (
-                    <tr>
-                      <td>{track.position}</td>
-                      <td>
-                        {linkedSong ? (
-                          <a href={`/songs/${linkedSong.slug}/`}>{track.titleOnRelease}</a>
-                        ) : (
-                          track.titleOnRelease
-                        )}
-                        {track.versionNote ? <div class="meta-row"><span>{track.versionNote}</span></div> : null}
-                      </td>
-                      <td>{track.credits.lyricsBy.length ? track.credits.lyricsBy.map(personName).join(", ") : "None recorded"}</td>
-                      <td>{track.credits.composedBy.length ? track.credits.composedBy.map(personName).join(", ") : "None recorded"}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
+    <article class="section detail-panel">
+      <RecordStatus status={release.status} />
+      <dl class="fact-lines">
+        <div>
+          <dt>Artist</dt>
+          <dd>{personName(release.artist)}</dd>
         </div>
-      </article>
+        <div>
+          <dt>Date</dt>
+          <dd>{release.releaseDate || "Unknown"}</dd>
+        </div>
+        <div>
+          <dt>Type</dt>
+          <dd>{release.releaseType}</dd>
+        </div>
+        <div>
+          <dt>Label</dt>
+          <dd>{release.label || "Unknown"}</dd>
+        </div>
+      </dl>
+    </article>
 
-      <aside class="fact-list">
-        <h2>Release Facts</h2>
-        <dl>
-          <div>
-            <dt>Artist</dt>
-            <dd>{personName(release.artist)}</dd>
-          </div>
-          <div>
-            <dt>Date</dt>
-            <dd>{release.releaseDate || "Unknown"}</dd>
-          </div>
-          <div>
-            <dt>Type</dt>
-            <dd>{release.releaseType}</dd>
-          </div>
-          <div>
-            <dt>Label</dt>
-            <dd>{release.label || "Unknown"}</dd>
-          </div>
-          <div>
-            <dt>Sources</dt>
-            <dd>
-              {linkedSources.map((source, index) => (
-                <>
-                  <a href={source.url}>{source.title}</a>{index < linkedSources.length - 1 ? ", " : ""}
-                </>
-              ))}
-            </dd>
-          </div>
-        </dl>
-      </aside>
-    </div>
+    <section class="section">
+      <div class="section-header">
+        <h2>Tracks</h2>
+        <p>{release.tracks.length} entries</p>
+      </div>
+
+      <div class="archive-grid">
+        {release.tracks.map((track) => {
+          const linkedSong = byId(songs, track.song);
+          const linkedConcerts = linkedSong ? concertsForSong(linkedSong.id) : [];
+          const linkedMusicShows = linkedSong ? musicShowsForSong(linkedSong.id) : [];
+          return (
+            <details class="record-card">
+              <summary>
+                <span>{track.position ? `${track.position}. ` : ""}{track.titleOnRelease}</span>
+                <span class="summary-meta">{peopleList(track.credits.composedBy)}</span>
+              </summary>
+
+              <div class="details-body">
+                <p>Lyrics: {peopleList(track.credits.lyricsBy)}</p>
+                <p>Music: {peopleList(track.credits.composedBy)}</p>
+                {track.duration ? <p>Duration: {track.duration}</p> : null}
+                {track.versionNote ? <p>{track.versionNote}</p> : null}
+
+                {linkedConcerts.length || linkedMusicShows.length ? (
+                  <div class="nested-links">
+                    <h3>Live records</h3>
+                    {linkedConcerts.map((concert) => (
+                      <p>
+                        <a href={`/concerts/${concert.slug}/`}>{concert.title}</a>
+                        {concert.date ? ` · ${concert.date}` : ""}
+                      </p>
+                    ))}
+                    {linkedMusicShows.map((show) => (
+                      <p>
+                        <a href={`/music-shows/${show.slug}/`}>{show.title}</a>
+                        {show.date ? ` · ${show.date}` : ""}
+                      </p>
+                    ))}
+                  </div>
+                ) : (
+                  <p class="muted">No linked live records yet.</p>
+                )}
+              </div>
+            </details>
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="section detail-panel">
+      <h2>Sources</h2>
+      {linkedSources.length ? (
+        <div class="link-list">
+          {linkedSources.map((source) => (
+            <p><a href={source.url}>{source.title}</a></p>
+          ))}
+        </div>
+      ) : (
+        <p class="empty-state">No sources recorded.</p>
+      )}
+    </section>
   </section>
 </BaseLayout>

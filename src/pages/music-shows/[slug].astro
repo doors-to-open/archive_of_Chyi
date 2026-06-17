@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RecordStatus from "../../components/RecordStatus.astro";
+import { byId, musicShows, songs, sourceRecords } from "../../lib/archive";
+
+export function getStaticPaths() {
+  return musicShows.map((show) => ({
+    params: { slug: show.slug },
+    props: { show }
+  }));
+}
+
+const { show } = Astro.props;
+const linkedSources = sourceRecords(show.sources);
+---
+
+<BaseLayout title={`${show.title} | All for Chyi Yu`}>
+  <section class="page-shell">
+    <p class="page-kicker">Music show</p>
+    <h1 class="page-title">{show.title}</h1>
+    <p class="page-intro">{show.notes}</p>
+
+    <article class="section detail-panel">
+      <RecordStatus status={show.status} />
+      <dl class="fact-lines">
+        <div>
+          <dt>Date</dt>
+          <dd>{show.date || "Unknown"}</dd>
+        </div>
+        <div>
+          <dt>Program</dt>
+          <dd>{show.program || "Unknown"}</dd>
+        </div>
+        <div>
+          <dt>Episode</dt>
+          <dd>{show.episode || "Unknown"}</dd>
+        </div>
+        <div>
+          <dt>Platform</dt>
+          <dd>{show.platform || "Unknown"}</dd>
+        </div>
+        <div>
+          <dt>Collaborators</dt>
+          <dd>{show.collaborators.length ? show.collaborators.join(", ") : "None recorded"}</dd>
+        </div>
+      </dl>
+    </article>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Songs</h2>
+        <p>{show.performedSongs.length} entries</p>
+      </div>
+
+      <div class="archive-grid">
+        {show.performedSongs.map((entry) => {
+          const linkedSong = byId(songs, entry.song);
+          return (
+            <details class="record-card">
+              <summary>
+                <span>{entry.position ? `${entry.position}. ` : ""}{entry.titlePerformed || linkedSong?.title || entry.song}</span>
+                <span class="summary-meta">{linkedSong?.titleOriginal || ""}</span>
+              </summary>
+
+              <div class="details-body">
+                {entry.collaborators?.length ? <p>Collaborators: {entry.collaborators.join(", ")}</p> : null}
+                {entry.mediaLinks?.length ? (
+                  <div>
+                    <h3>Clip links</h3>
+                    {entry.mediaLinks.map((link) => <p>{link}</p>)}
+                  </div>
+                ) : (
+                  <p class="muted">No clip links added yet.</p>
+                )}
+              </div>
+            </details>
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="section detail-panel">
+      <h2>Sources</h2>
+      {linkedSources.length ? (
+        <div class="link-list">
+          {linkedSources.map((source) => (
+            <p><a href={source.url}>{source.title}</a></p>
+          ))}
+        </div>
+      ) : (
+        <p class="empty-state">No sources recorded.</p>
+      )}
+    </section>
+  </section>
+</BaseLayout>

@@ -16,7 +16,9 @@ Most records should include:
 - `notes`: editorial notes.
 - `status`: `confirmed`, `partial`, `uncertain`, or `needs-source`.
 
-## Song
+## Internal Song
+
+Song records are internal identity records. They should support release tracks, concerts, music shows, people credits, statistics, and search. They should not create public song pages.
 
 Suggested fields:
 
@@ -31,7 +33,8 @@ Suggested fields:
 - `arrangedBy`
 - `firstKnownRelease`
 - `relatedReleases`
-- `knownPerformances`
+- `knownConcerts`
+- `knownMusicShows`
 - `mediaLinks`
 - `sources`
 - `notes`
@@ -67,7 +70,7 @@ Suggested fields:
 - `versionNote`
 - `credits`
 
-## Performance
+## Concert
 
 Suggested fields:
 
@@ -78,13 +81,55 @@ Suggested fields:
 - `venue`
 - `city`
 - `countryOrRegion`
-- `eventType`: `concert`, `festival`, `tv-live`, `radio-live`, `award-show`, or `other`
+- `eventType`: `concert`, `concert-series`, `festival`, `live-album`, or `other`
+- `guests`
 - `setlist`
 - `mediaLinks`
 - `sources`
 - `sourceQuality`
 - `notes`
 - `status`
+
+## Concert Song Performance
+
+Suggested fields inside a concert `setlist`:
+
+- `position`
+- `song`
+- `titlePerformed`
+- `collaborators`
+- `mediaLinks`
+- `notes`
+
+## Music Show
+
+Suggested fields:
+
+- `id`
+- `slug`
+- `title`
+- `date`
+- `program`
+- `episode`
+- `platform`
+- `performedSongs`
+- `collaborators`
+- `mediaLinks`
+- `sources`
+- `sourceQuality`
+- `notes`
+- `status`
+
+## Music-Show Song Performance
+
+Suggested fields inside `performedSongs`:
+
+- `position`
+- `song`
+- `titlePerformed`
+- `collaborators`
+- `mediaLinks`
+- `notes`
 
 ## Appearance
 
@@ -94,7 +139,7 @@ Suggested fields:
 - `slug`
 - `title`
 - `date`
-- `appearanceType`: `tv`, `radio`, `film`, `documentary`, `interview`, `soundtrack`, or `other`
+- `appearanceType`: `talk-show`, `film`, `soundtrack`, `podcast`, `interview`, `documentary`, `book`, `article`, or `other`
 - `programOrWork`
 - `role`
 - `relatedSongs`

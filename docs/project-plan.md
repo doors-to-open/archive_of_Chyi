@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This website should work like a fan-friendly dictionary for Chyi Yu. A visitor should be able to search or browse an item, understand what it is, see how it connects to songs, albums, performances, and appearances, and follow cited links to learn more.
+This website should work like a fan-friendly dictionary for Chyi Yu. A visitor should be able to search or browse releases, concerts, music shows, appearances, people, and sources, then follow cited links to learn more.
 
 ## Stages
 
@@ -17,7 +17,7 @@ This website should work like a fan-friendly dictionary for Chyi Yu. A visitor s
 
 - Define the main site sections.
 - Decide the first sitemap.
-- Clarify how songs, releases, performances, appearances, people, sources, and media links relate.
+- Clarify how internal song records, releases, concerts, music shows, appearances, people, sources, and media links relate.
 
 ### Stage 2: Data Model
 
@@ -30,17 +30,20 @@ This website should work like a fan-friendly dictionary for Chyi Yu. A visitor s
 - Build the first Astro site.
 - Render index and detail pages from structured data.
 - Keep the design quiet but intentional.
+- Before Stage 4, adjust the public IA if early browsing shows the categories are wrong.
 
 ### Stage 4: Search and Relationship Browsing
 
 - Add search.
 - Add filters.
 - Add cross-linking between archive records.
+- Add a curated seed batch manually while testing search, filters, and relationships.
+- Do not run broad crawling yet; keep data quality and record shape under direct review.
 
 ### Stage 5: Statistics
 
-- Count known live performances per song.
-- Show release and performance distributions.
+- Count known concert and music-show performances per internal song record.
+- Show release, concert, music-show, and appearance distributions.
 - Make source coverage and uncertainty visible.
 
 ### Stage 6: Contribution Workflow
@@ -48,6 +51,8 @@ This website should work like a fan-friendly dictionary for Chyi Yu. A visitor s
 - Start with GitHub Issues or simple forms.
 - Require sources for factual additions.
 - Add contributor credit rules.
+- Add a controlled public-source import/crawler workflow after the review process exists.
+- Limit import/crawler sources to allowlisted public pages, keep source metadata, deduplicate records, and send imported items through manual review before confirmation.
 - Later, consider moderation and admin tools.
 
 ### Stage 7: Visual and Interaction Upgrade
@@ -65,5 +70,4 @@ This website should work like a fan-friendly dictionary for Chyi Yu. A visitor s
 
 ## Immediate Next Step
 
-After Stage 0, build the first information architecture and data model before collecting large amounts of data. This avoids locking the archive into inconsistent records.
-
+After Stage 3, build Stage 4 search, filters, and relationship browsing with a small curated seed batch. Defer crawler/import work until Stage 6, when source requirements, deduplication, and manual review can prevent low-quality records from entering the archive.

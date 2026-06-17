@@ -11,10 +11,11 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-olive-tree-1979",
     "relatedReleases": ["release-olive-tree-1979"],
-    "knownPerformances": ["performance-the-unheard-of-chyi-2003-live-album"],
+    "knownConcerts": ["concert-the-unheard-of-chyi-2003-live-album"],
+    "knownMusicShows": [],
     "mediaLinks": [],
     "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
-    "notes": "Starter record for testing song-to-release and song-to-performance relationships.",
+    "notes": "Starter record for testing song-to-release and song-to-concert relationships.",
     "status": "partial"
   },
   {
@@ -29,7 +30,8 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-olive-tree-1979",
     "relatedReleases": ["release-olive-tree-1979"],
-    "knownPerformances": ["performance-the-unheard-of-chyi-2003-live-album"],
+    "knownConcerts": ["concert-the-unheard-of-chyi-2003-live-album"],
+    "knownMusicShows": [],
     "mediaLinks": [],
     "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
     "notes": "Title and credits are from starter encyclopedia sources and need official release verification.",
@@ -47,11 +49,11 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-olive-tree-1979",
     "relatedReleases": ["release-olive-tree-1979"],
-    "knownPerformances": ["performance-the-unheard-of-chyi-2003-live-album"],
+    "knownConcerts": ["concert-the-unheard-of-chyi-2003-live-album"],
+    "knownMusicShows": [],
     "mediaLinks": [],
     "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
     "notes": "Lyricist spelling varies across secondary sources, so it is intentionally left blank until checked against an official booklet.",
     "status": "partial"
   }
 ]
-

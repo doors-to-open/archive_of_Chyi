@@ -1,55 +1,57 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import RecordStatus from "../components/RecordStatus.astro";
-import { performances, releases, songs, sources } from "../lib/archive";
+import { appearances, concerts, musicShows, people, releases } from "../lib/archive";
 
 const sections = [
-  {
-    href: "/songs/",
-    title: "Songs",
-    count: songs.length,
-    text: "The central dictionary for titles, credits, releases, performances, and source-backed notes."
-  },
   {
     href: "/releases/",
     title: "Releases",
     count: releases.length,
-    text: "Albums, singles, compilations, collaborations, and reissues connected through track records."
+    text: "Albums, singles, compilations, collaborations, and soundtracks."
   },
   {
-    href: "/performances/",
-    title: "Performances",
-    count: performances.length,
-    text: "Known live and performance-related records with source quality kept visible."
+    href: "/concerts/",
+    title: "Concerts",
+    count: concerts.length,
+    text: "Concerts, concert series, setlists, and show links."
   },
   {
-    href: "/sources/",
-    title: "Sources",
-    count: sources.length,
-    text: "The evidence layer for archive facts, links, and confidence notes."
+    href: "/music-shows/",
+    title: "Music shows",
+    count: musicShows.length,
+    text: "Televised, streamed, and radio music-show performances."
+  },
+  {
+    href: "/appearances/",
+    title: "Appearances",
+    count: appearances.length,
+    text: "Talk shows, film, soundtrack, podcasts, interviews, and other appearances."
+  },
+  {
+    href: "/people/",
+    title: "People",
+    count: people.length,
+    text: "Writers, composers, producers, collaborators, hosts, and other credits."
   }
 ];
 ---
 
-<BaseLayout title="Chyi Yu Archive">
+<BaseLayout title="All for Chyi Yu">
   <section class="page-shell">
-    <p class="page-kicker">Structured fan archive</p>
-    <h1 class="page-title">Chyi Yu records, sources, and links in one navigable index.</h1>
+    <h1 class="page-title">All for Chyi Yu</h1>
     <p class="page-intro">
-      A working archive foundation for songs, releases, performances, and source-backed relationships.
+      Releases, concerts, music shows, appearances, people, and source-backed links.
     </p>
 
     <div class="section">
       <div class="archive-grid">
         {sections.map((section) => (
           <a class="record-card" href={section.href}>
-            <RecordStatus status={`${section.count} records`} />
             <h2>{section.title}</h2>
-            <p>{section.text}</p>
+            <p>{section.text} <span class="muted">({section.count})</span></p>
           </a>
         ))}
       </div>
     </div>
   </section>
 </BaseLayout>
-

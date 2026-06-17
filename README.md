@@ -1,13 +1,13 @@
 # Chyi Yu Archive
 
-An archive-style website for Chyi Yu, designed to help new fans discover her songs, releases, performances, appearances, credits, sources, and external media links.
+An archive-style website for Chyi Yu, designed to help new fans discover her releases, concerts, music-show performances, appearances, credits, sources, and external media links.
 
 The project is not intended to host copyrighted audio or video. It records metadata, cites sources, and links to external platforms where material is already available.
 
 ## Goals
 
 - Build a reliable fan-facing reference site.
-- Organize songs, albums, concerts, TV/radio/film appearances, people, and sources.
+- Organize releases, concerts, music shows, appearances, people, and sources.
 - Separate official information from fan-sourced or audience-reported information.
 - Make every factual claim traceable to a source whenever possible.
 - Support future search, statistics, contribution workflows, and richer visual interaction.
@@ -21,7 +21,7 @@ The recommended foundation is Astro with TypeScript and structured content colle
 - Link outward instead of rehosting copyrighted media.
 - Prefer official sources when available.
 - Keep uncertain or fan-sourced information clearly labeled.
-- Treat songs as central archive objects that can connect releases, performances, people, sources, and media links.
+- Keep songs as internal archive objects that connect releases, concerts, music shows, people, sources, and media links.
 - Keep contributor credit visible, while separating personal memories from verified facts.
 
 ## Documentation

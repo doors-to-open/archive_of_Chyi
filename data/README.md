@@ -1,16 +1,18 @@
 # Starter Data
 
-This folder contains early JSON records used to test the archive model before the Astro implementation is added.
+This folder contains early JSON records used to test the archive model.
 
-The data is intentionally small. It should prove that songs, releases, performances, people, and sources can connect to each other without forcing us to collect the whole archive at once.
+The data is intentionally small. It should prove that internal song records, releases, concerts, music shows, appearances, people, and sources can connect to each other without forcing us to collect the whole archive at once.
 
 ## Files
 
 - `sources.json`: source records used by sample items.
 - `people.json`: people referenced in credits.
-- `songs.json`: sample song records.
+- `songs.json`: internal song identity and credit records. These do not create public song pages.
 - `releases.json`: sample release records.
-- `performances.json`: sample live/performance records.
+- `concerts.json`: sample concert and concert-series records.
+- `music-shows.json`: sample televised, streamed, or radio music-show performance records.
+- `appearances.json`: sample non-concert and non-music-show appearance records.
 - `media-links.json`: verified media links. This starts empty until individual links are reviewed.
 
 ## Rules
@@ -24,4 +26,3 @@ The data is intentionally small. It should prove that songs, releases, performan
 ## Current Limitations
 
 The current records use encyclopedia sources as placeholders for model testing. They should be replaced or strengthened with official releases, album booklets, label pages, library records, or platform metadata whenever possible.
-

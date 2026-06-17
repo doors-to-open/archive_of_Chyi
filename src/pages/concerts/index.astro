@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RecordStatus from "../../components/RecordStatus.astro";
+import { byId, concerts, songs } from "../../lib/archive";
+---
+
+<BaseLayout title="Concerts | All for Chyi Yu">
+  <section class="page-shell">
+    <p class="page-kicker">Concerts</p>
+    <h1 class="page-title">Concerts</h1>
+    <p class="page-intro">
+      Concerts, concert series, setlists, and show-level links.
+    </p>
+
+    <div class="section archive-grid">
+      {concerts.map((concert) => (
+        <details class="record-card">
+          <summary>
+            <span>{concert.title}</span>
+            <span class="summary-meta">{concert.date || "Date unknown"}</span>
+          </summary>
+
+          <div class="details-body">
+            <RecordStatus status={concert.status} />
+            <p>{concert.eventType}{concert.venue ? ` · ${concert.venue}` : ""}</p>
+            {concert.city || concert.countryOrRegion ? (
+              <p>{[concert.city, concert.countryOrRegion].filter(Boolean).join(", ")}</p>
+            ) : null}
+            {concert.guests?.length ? <p>Guests: {concert.guests.join(", ")}</p> : null}
+            {concert.notes ? <p>{concert.notes}</p> : null}
+
+            <h3>Show links</h3>
+            {concert.mediaLinks.length ? (
+              <p>{concert.mediaLinks.join(", ")}</p>
+            ) : (
+              <p class="muted">No show links added yet.</p>
+            )}
+
+            <h3>Songs</h3>
+            {concert.setlist.length ? (
+              <ol class="plain-list">
+                {concert.setlist.map((entry) => {
+                  const linkedSong = byId(songs, entry.song);
+                  return (
+                    <li>
+                      <span>{entry.titlePerformed || linkedSong?.title || entry.song}</span>
+                      {entry.collaborators?.length ? <span class="muted"> · with {entry.collaborators.join(", ")}</span> : null}
+                      {entry.mediaLinks?.length ? <span class="muted"> · clips: {entry.mediaLinks.join(", ")}</span> : null}
+                    </li>
+                  );
+                })}
+              </ol>
+            ) : (
+              <p class="empty-state">No setlist recorded.</p>
+            )}
+
+            <p><a href={`/concerts/${concert.slug}/`}>Open concert record</a></p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,6 +1,8 @@
 import mediaLinksData from "../../data/media-links.json";
 import peopleData from "../../data/people.json";
-import performancesData from "../../data/performances.json";
+import appearancesData from "../../data/appearances.json";
+import concertsData from "../../data/concerts.json";
+import musicShowsData from "../../data/music-shows.json";
 import releasesData from "../../data/releases.json";
 import songsData from "../../data/songs.json";
 import sourcesData from "../../data/sources.json";
@@ -31,7 +33,8 @@ export type Song = {
   arrangedBy: string[];
   firstKnownRelease?: string;
   relatedReleases: string[];
-  knownPerformances: string[];
+  knownConcerts: string[];
+  knownMusicShows: string[];
   mediaLinks: string[];
   sources: string[];
   notes?: string;
@@ -68,7 +71,16 @@ export type Release = {
   status: Status;
 };
 
-export type Performance = {
+export type SongPerformance = {
+  position: number | null;
+  song: string;
+  titlePerformed: string;
+  collaborators?: string[];
+  mediaLinks?: string[];
+  notes?: string;
+};
+
+export type Concert = {
   id: string;
   slug: string;
   title: string;
@@ -77,14 +89,43 @@ export type Performance = {
   city?: string | null;
   countryOrRegion?: string | null;
   eventType: string;
-  setlist: {
-    position: number | null;
-    song: string;
-    titlePerformed: string;
-  }[];
+  guests?: string[];
+  setlist: SongPerformance[];
   mediaLinks: string[];
   sources: string[];
   sourceQuality?: string;
+  notes?: string;
+  status: Status;
+};
+
+export type MusicShow = {
+  id: string;
+  slug: string;
+  title: string;
+  date?: string | null;
+  program?: string | null;
+  episode?: string | null;
+  platform?: string | null;
+  performedSongs: SongPerformance[];
+  collaborators: string[];
+  mediaLinks: string[];
+  sources: string[];
+  sourceQuality?: string;
+  notes?: string;
+  status: Status;
+};
+
+export type Appearance = {
+  id: string;
+  slug: string;
+  title: string;
+  date?: string | null;
+  appearanceType: string;
+  programOrWork?: string | null;
+  role?: string | null;
+  relatedSongs: string[];
+  mediaLinks: string[];
+  sources: string[];
   notes?: string;
   status: Status;
 };
@@ -105,7 +146,9 @@ export type Source = {
 export const people = peopleData as Person[];
 export const songs = songsData as Song[];
 export const releases = releasesData as Release[];
-export const performances = performancesData as Performance[];
+export const concerts = concertsData as Concert[];
+export const musicShows = musicShowsData as MusicShow[];
+export const appearances = appearancesData as Appearance[];
 export const sources = sourcesData as Source[];
 export const mediaLinks = mediaLinksData as unknown[];
 
@@ -140,9 +183,15 @@ export function releasesForSong(songId: string) {
   );
 }
 
-export function performancesForSong(songId: string) {
-  return performances.filter((performance) =>
-    performance.setlist.some((entry) => entry.song === songId)
+export function concertsForSong(songId: string) {
+  return concerts.filter((concert) =>
+    concert.setlist.some((entry) => entry.song === songId)
+  );
+}
+
+export function musicShowsForSong(songId: string) {
+  return musicShows.filter((show) =>
+    show.performedSongs.some((entry) => entry.song === songId)
   );
 }
 
@@ -153,4 +202,3 @@ export function sourceRecords(ids: string[]) {
 export function displayTitle(item: { title: string; titleOriginal?: string }) {
   return item.titleOriginal ? `${item.title} / ${item.titleOriginal}` : item.title;
 }
-

@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RecordStatus from "../../components/RecordStatus.astro";
+import { appearances, sourceRecords } from "../../lib/archive";
+
+export function getStaticPaths() {
+  return appearances.map((appearance) => ({
+    params: { slug: appearance.slug },
+    props: { appearance }
+  }));
+}
+
+const { appearance } = Astro.props;
+const linkedSources = sourceRecords(appearance.sources);
+---
+
+<BaseLayout title={`${appearance.title} | All for Chyi Yu`}>
+  <section class="page-shell">
+    <p class="page-kicker">Appearance</p>
+    <h1 class="page-title">{appearance.title}</h1>
+    <p class="page-intro">{appearance.notes}</p>
+
+    <article class="section detail-panel">
+      <RecordStatus status={appearance.status} />
+      <dl class="fact-lines">
+        <div>
+          <dt>Date</dt>
+          <dd>{appearance.date || "Unknown"}</dd>
+        </div>
+        <div>
+          <dt>Type</dt>
+          <dd>{appearance.appearanceType}</dd>
+        </div>
+        <div>
+          <dt>Program or work</dt>
+          <dd>{appearance.programOrWork || "Unknown"}</dd>
+        </div>
+        <div>
+          <dt>Role</dt>
+          <dd>{appearance.role || "Unknown"}</dd>
+        </div>
+      </dl>
+    </article>
+
+    <section class="section detail-panel">
+      <h2>Sources</h2>
+      {linkedSources.length ? (
+        <div class="link-list">
+          {linkedSources.map((source) => (
+            <p><a href={source.url}>{source.title}</a></p>
+          ))}
+        </div>
+      ) : (
+        <p class="empty-state">No sources recorded.</p>
+      )}
+    </section>
+  </section>
+</BaseLayout>

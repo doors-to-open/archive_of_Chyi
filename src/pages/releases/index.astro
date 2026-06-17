@@ -1,23 +1,21 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import RecordStatus from "../../components/RecordStatus.astro";
 import { personName, releases } from "../../lib/archive";
 ---
 
-<BaseLayout title="Releases | Chyi Yu Archive">
+<BaseLayout title="Releases | All for Chyi Yu">
   <section class="page-shell">
     <p class="page-kicker">Releases</p>
-    <h1 class="page-title">Discography records</h1>
+    <h1 class="page-title">Releases</h1>
     <p class="page-intro">
-      Release records preserve track order, credits, formats, labels, and links back to song pages.
+      Albums, singles, compilations, collaborations, and soundtrack releases.
     </p>
 
     <div class="section archive-grid">
       {releases.map((release) => (
         <a class="record-card" href={`/releases/${release.slug}/`}>
-          <RecordStatus status={release.status} />
           <h2>{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h2>
-          <p>{release.releaseDate} / {release.releaseType}</p>
+          <p>{release.releaseDate || "Date unknown"} · {release.releaseType}</p>
           <div class="meta-row">
             <span>{personName(release.artist)}</span>
             <span>{release.tracks.length} tracks</span>
@@ -27,4 +25,3 @@ import { personName, releases } from "../../lib/archive";
     </div>
   </section>
 </BaseLayout>
-
