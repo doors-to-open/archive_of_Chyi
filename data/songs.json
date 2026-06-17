@@ -1,0 +1,57 @@
+[
+  {
+    "id": "song-olive-tree",
+    "slug": "olive-tree",
+    "title": "The Olive Tree",
+    "titleOriginal": "橄欖樹",
+    "aliases": ["Olive Tree", "Ganlan Shu"],
+    "language": "Mandarin",
+    "lyricsBy": ["person-sanmao"],
+    "composedBy": ["person-li-tai-hsiang"],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-olive-tree-1979",
+    "relatedReleases": ["release-olive-tree-1979"],
+    "knownPerformances": ["performance-the-unheard-of-chyi-2003-live-album"],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
+    "notes": "Starter record for testing song-to-release and song-to-performance relationships.",
+    "status": "partial"
+  },
+  {
+    "id": "song-walking-in-the-rain",
+    "slug": "walking-in-the-rain",
+    "title": "Walking in the Rain",
+    "titleOriginal": "走在雨中",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": ["person-li-tai-hsiang"],
+    "composedBy": ["person-li-tai-hsiang"],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-olive-tree-1979",
+    "relatedReleases": ["release-olive-tree-1979"],
+    "knownPerformances": ["performance-the-unheard-of-chyi-2003-live-album"],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
+    "notes": "Title and credits are from starter encyclopedia sources and need official release verification.",
+    "status": "partial"
+  },
+  {
+    "id": "song-your-smiling-face",
+    "slug": "your-smiling-face",
+    "title": "Your Smiling Face",
+    "titleOriginal": "歡顏",
+    "aliases": ["Huan Yan"],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": ["person-li-tai-hsiang"],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-olive-tree-1979",
+    "relatedReleases": ["release-olive-tree-1979"],
+    "knownPerformances": ["performance-the-unheard-of-chyi-2003-live-album"],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
+    "notes": "Lyricist spelling varies across secondary sources, so it is intentionally left blank until checked against an official booklet.",
+    "status": "partial"
+  }
+]
+

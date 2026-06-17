@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RecordStatus from "../../components/RecordStatus.astro";
+import { performances } from "../../lib/archive";
+---
+
+<BaseLayout title="Performances | Chyi Yu Archive">
+  <section class="page-shell">
+    <p class="page-kicker">Performances</p>
+    <h1 class="page-title">Live and performance records</h1>
+    <p class="page-intro">
+      Performance records connect events, setlists, source quality, and related song pages.
+    </p>
+
+    <div class="section archive-grid">
+      {performances.map((performance) => (
+        <a class="record-card" href={`/performances/${performance.slug}/`}>
+          <RecordStatus status={performance.status} />
+          <h2>{performance.title}</h2>
+          <p>{performance.date} / {performance.eventType}</p>
+          <div class="meta-row">
+            <span>{performance.sourceQuality}</span>
+            <span>{performance.setlist.length} setlist links</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "person-chyi-yu",
+    "slug": "chyi-yu",
+    "displayName": "Chyi Yu",
+    "nameOriginal": "齊豫",
+    "aliases": ["Qi Yu", "齐豫"],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-en-chyi-yu"],
+    "notes": "Primary subject of the archive.",
+    "status": "partial"
+  },
+  {
+    "id": "person-sanmao",
+    "slug": "sanmao",
+    "displayName": "Sanmao",
+    "nameOriginal": "三毛",
+    "aliases": [],
+    "roles": ["lyricist", "writer"],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
+    "notes": "Credited as lyricist for 'The Olive Tree' in the starter sources.",
+    "status": "partial"
+  },
+  {
+    "id": "person-li-tai-hsiang",
+    "slug": "li-tai-hsiang",
+    "displayName": "Li Tai-hsiang",
+    "nameOriginal": "李泰祥",
+    "aliases": ["Li Taixiang"],
+    "roles": ["composer", "lyricist"],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
+    "notes": "Credited as composer for several sample records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-rongzi",
+    "slug": "rongzi",
+    "displayName": "Rongzi",
+    "nameOriginal": "蓉子",
+    "aliases": [],
+    "roles": ["lyricist"],
+    "sources": ["source-wikipedia-zh-olive-tree-album"],
+    "notes": "Credited as lyricist for '青夢湖' in the starter release source.",
+    "status": "partial"
+  }
+]
+

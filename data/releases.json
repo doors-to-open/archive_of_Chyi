@@ -1,0 +1,155 @@
+[
+  {
+    "id": "release-olive-tree-1979",
+    "slug": "olive-tree-1979",
+    "title": "The Olive Tree",
+    "titleOriginal": "橄欖樹",
+    "releaseDate": "1979",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "label": "新格唱片",
+    "catalogNumber": null,
+    "formats": [],
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-olive-tree",
+        "titleOnRelease": "橄欖樹",
+        "duration": null,
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "青夢湖",
+        "duration": null,
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-rongzi"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "愛之死 (演奏)",
+        "duration": null,
+        "versionNote": "Instrumental track; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "答案",
+        "duration": null,
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "我在夢中哭泣了",
+        "duration": null,
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-li-tai-hsiang"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "搖籃曲",
+        "duration": null,
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 7,
+        "song": "song-your-smiling-face",
+        "titleOnRelease": "歡顏",
+        "duration": null,
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 8,
+        "song": "song-walking-in-the-rain",
+        "titleOnRelease": "走在雨中",
+        "duration": null,
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-li-tai-hsiang"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "愛的世界",
+        "duration": null,
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-li-tai-hsiang"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "預感",
+        "duration": null,
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-li-tai-hsiang"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titleOnRelease": "追逐與重逢 (演奏)",
+        "duration": null,
+        "versionNote": "Instrumental track; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 12,
+        "song": "song-your-smiling-face",
+        "titleOnRelease": "歡顏 (演奏)",
+        "duration": null,
+        "versionNote": "Instrumental version.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      }
+    ],
+    "credits": {
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
+    "notes": "Starter release record. Release month, catalog number, formats, and official track metadata still need primary-source verification.",
+    "status": "partial"
+  }
+]
+

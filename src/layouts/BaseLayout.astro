@@ -1,0 +1,59 @@
+---
+import "../styles/global.css";
+
+type Props = {
+  title: string;
+  description?: string;
+};
+
+const {
+  title,
+  description = "A structured archive index for Chyi Yu records, sources, and external links."
+} = Astro.props;
+
+const navItems = [
+  { href: "/", label: "Archive" },
+  { href: "/songs/", label: "Songs" },
+  { href: "/releases/", label: "Releases" },
+  { href: "/performances/", label: "Performances" },
+  { href: "/appearances/", label: "Appearances" },
+  { href: "/people/", label: "People" },
+  { href: "/sources/", label: "Sources" },
+  { href: "/contribute/", label: "Contribute" },
+  { href: "/about/", label: "About" }
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Chyi Yu Archive home">
+        <span class="brand-mark" aria-hidden="true">CY</span>
+        <span>Chyi Yu Archive</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>
+        Fan archive index. Metadata and links only; no hosted audio or video.
+      </p>
+      <p>
+        <a href="/about/">About</a> <span aria-hidden="true">/</span>
+        <a href="/contribute/">Contribute</a>
+      </p>
+    </footer>
+  </body>
+</html>
+

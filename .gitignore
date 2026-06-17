@@ -1,0 +1,18 @@
+# Local task notes and assistant working notes
+task_*.md
+.codex-notes/
+
+# Dependencies and build output
+node_modules/
+dist/
+.astro/
+
+# Environment and local editor files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

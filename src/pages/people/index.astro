@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RecordStatus from "../../components/RecordStatus.astro";
+import { people } from "../../lib/archive";
+---
+
+<BaseLayout title="People | Chyi Yu Archive">
+  <section class="page-shell">
+    <p class="page-kicker">People</p>
+    <h1 class="page-title">Credits index</h1>
+    <p class="page-intro">
+      People records connect vocal, lyric, composition, arrangement, production, and appearance credits.
+    </p>
+
+    <div class="section archive-grid">
+      {people.map((person) => (
+        <div class="record-card">
+          <RecordStatus status={person.status} />
+          <h2>{person.displayName}{person.nameOriginal ? ` / ${person.nameOriginal}` : ""}</h2>
+          <p>{person.roles.join(", ")}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+

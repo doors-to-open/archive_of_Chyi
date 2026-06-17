@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import RecordStatus from "../components/RecordStatus.astro";
+import { performances, releases, songs, sources } from "../lib/archive";
+
+const sections = [
+  {
+    href: "/songs/",
+    title: "Songs",
+    count: songs.length,
+    text: "The central dictionary for titles, credits, releases, performances, and source-backed notes."
+  },
+  {
+    href: "/releases/",
+    title: "Releases",
+    count: releases.length,
+    text: "Albums, singles, compilations, collaborations, and reissues connected through track records."
+  },
+  {
+    href: "/performances/",
+    title: "Performances",
+    count: performances.length,
+    text: "Known live and performance-related records with source quality kept visible."
+  },
+  {
+    href: "/sources/",
+    title: "Sources",
+    count: sources.length,
+    text: "The evidence layer for archive facts, links, and confidence notes."
+  }
+];
+---
+
+<BaseLayout title="Chyi Yu Archive">
+  <section class="page-shell">
+    <p class="page-kicker">Structured fan archive</p>
+    <h1 class="page-title">Chyi Yu records, sources, and links in one navigable index.</h1>
+    <p class="page-intro">
+      A working archive foundation for songs, releases, performances, and source-backed relationships.
+    </p>
+
+    <div class="section">
+      <div class="archive-grid">
+        {sections.map((section) => (
+          <a class="record-card" href={section.href}>
+            <RecordStatus status={`${section.count} records`} />
+            <h2>{section.title}</h2>
+            <p>{section.text}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

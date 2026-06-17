@@ -1,0 +1,97 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RecordStatus from "../../components/RecordStatus.astro";
+import { byId, performances, songs, sourceRecords } from "../../lib/archive";
+
+export function getStaticPaths() {
+  return performances.map((performance) => ({
+    params: { slug: performance.slug },
+    props: { performance }
+  }));
+}
+
+const { performance } = Astro.props;
+const linkedSources = sourceRecords(performance.sources);
+---
+
+<BaseLayout title={`${performance.title} | Chyi Yu Archive`}>
+  <section class="page-shell">
+    <p class="page-kicker">Performance</p>
+    <h1 class="page-title">{performance.title}</h1>
+    <p class="page-intro">{performance.notes}</p>
+
+    <div class="section detail-grid">
+      <article class="detail-panel">
+        <RecordStatus status={performance.status} />
+        <div class="section">
+          <div class="section-header">
+            <h2>Setlist Links</h2>
+            <p>{performance.setlist.length} entries</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Performed title</th>
+                  <th>Song record</th>
+                </tr>
+              </thead>
+              <tbody>
+                {performance.setlist.map((entry) => {
+                  const linkedSong = byId(songs, entry.song);
+                  return (
+                    <tr>
+                      <td>{entry.position || "-"}</td>
+                      <td>{entry.titlePerformed}</td>
+                      <td>
+                        {linkedSong ? (
+                          <a href={`/songs/${linkedSong.slug}/`}>{linkedSong.title}</a>
+                        ) : (
+                          "Missing song record"
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+
+      <aside class="fact-list">
+        <h2>Performance Facts</h2>
+        <dl>
+          <div>
+            <dt>Date</dt>
+            <dd>{performance.date || "Unknown"}</dd>
+          </div>
+          <div>
+            <dt>Event type</dt>
+            <dd>{performance.eventType}</dd>
+          </div>
+          <div>
+            <dt>Venue</dt>
+            <dd>{performance.venue || "Unknown"}</dd>
+          </div>
+          <div>
+            <dt>Source quality</dt>
+            <dd>{performance.sourceQuality || "Unknown"}</dd>
+          </div>
+          <div>
+            <dt>Sources</dt>
+            <dd>
+              {linkedSources.map((source, index) => (
+                <>
+                  <a href={source.url}>{source.title}</a>{index < linkedSources.length - 1 ? ", " : ""}
+                </>
+              ))}
+            </dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>
+

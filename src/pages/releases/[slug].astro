@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RecordStatus from "../../components/RecordStatus.astro";
+import { byId, personName, releases, songs, sourceRecords } from "../../lib/archive";
+
+export function getStaticPaths() {
+  return releases.map((release) => ({
+    params: { slug: release.slug },
+    props: { release }
+  }));
+}
+
+const { release } = Astro.props;
+const linkedSources = sourceRecords(release.sources);
+---
+
+<BaseLayout title={`${release.title} | Chyi Yu Archive`}>
+  <section class="page-shell">
+    <p class="page-kicker">Release</p>
+    <h1 class="page-title">{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h1>
+    <p class="page-intro">{release.notes}</p>
+
+    <div class="section detail-grid">
+      <article class="detail-panel">
+        <RecordStatus status={release.status} />
+        <div class="section">
+          <div class="section-header">
+            <h2>Track List</h2>
+            <p>{release.tracks.length} entries</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Title</th>
+                  <th>Lyrics</th>
+                  <th>Music</th>
+                </tr>
+              </thead>
+              <tbody>
+                {release.tracks.map((track) => {
+                  const linkedSong = byId(songs, track.song);
+                  return (
+                    <tr>
+                      <td>{track.position}</td>
+                      <td>
+                        {linkedSong ? (
+                          <a href={`/songs/${linkedSong.slug}/`}>{track.titleOnRelease}</a>
+                        ) : (
+                          track.titleOnRelease
+                        )}
+                        {track.versionNote ? <div class="meta-row"><span>{track.versionNote}</span></div> : null}
+                      </td>
+                      <td>{track.credits.lyricsBy.length ? track.credits.lyricsBy.map(personName).join(", ") : "None recorded"}</td>
+                      <td>{track.credits.composedBy.length ? track.credits.composedBy.map(personName).join(", ") : "None recorded"}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+
+      <aside class="fact-list">
+        <h2>Release Facts</h2>
+        <dl>
+          <div>
+            <dt>Artist</dt>
+            <dd>{personName(release.artist)}</dd>
+          </div>
+          <div>
+            <dt>Date</dt>
+            <dd>{release.releaseDate || "Unknown"}</dd>
+          </div>
+          <div>
+            <dt>Type</dt>
+            <dd>{release.releaseType}</dd>
+          </div>
+          <div>
+            <dt>Label</dt>
+            <dd>{release.label || "Unknown"}</dd>
+          </div>
+          <div>
+            <dt>Sources</dt>
+            <dd>
+              {linkedSources.map((source, index) => (
+                <>
+                  <a href={source.url}>{source.title}</a>{index < linkedSources.length - 1 ? ", " : ""}
+                </>
+              ))}
+            </dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

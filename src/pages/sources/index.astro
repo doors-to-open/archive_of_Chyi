@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { sources } from "../../lib/archive";
+---
+
+<BaseLayout title="Sources | Chyi Yu Archive">
+  <section class="page-shell">
+    <p class="page-kicker">Sources</p>
+    <h1 class="page-title">Source register</h1>
+    <p class="page-intro">
+      Every source record keeps its type, reliability, access date, and citation note visible.
+    </p>
+
+    <div class="section table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Type</th>
+            <th>Reliability</th>
+            <th>Accessed</th>
+          </tr>
+        </thead>
+        <tbody>
+          {sources.map((source) => (
+            <tr>
+              <td><a href={source.url}>{source.title}</a></td>
+              <td>{source.sourceType}</td>
+              <td>{source.reliability}</td>
+              <td>{source.accessDate}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</BaseLayout>
+

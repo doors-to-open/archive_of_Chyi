@@ -1,0 +1,27 @@
+[
+  {
+    "id": "source-wikipedia-en-chyi-yu",
+    "sourceType": "encyclopedia",
+    "title": "Chyi Yu",
+    "authorOrPublisher": "Wikipedia contributors",
+    "date": null,
+    "url": "https://en.wikipedia.org/wiki/Chyi_Yu",
+    "accessDate": "2026-06-17",
+    "citation": "Wikipedia contributors. \"Chyi Yu.\" Wikipedia.",
+    "reliability": "medium",
+    "notes": "Useful as an initial cross-check only. Replace or confirm with official or primary sources where possible."
+  },
+  {
+    "id": "source-wikipedia-zh-olive-tree-album",
+    "sourceType": "encyclopedia",
+    "title": "橄欖樹 (專輯)",
+    "authorOrPublisher": "Wikipedia contributors",
+    "date": null,
+    "url": "https://zh.wikipedia.org/wiki/%E6%A9%84%E6%AC%96%E6%A8%B9_(%E5%B0%88%E8%BC%AF)",
+    "accessDate": "2026-06-17",
+    "citation": "Wikipedia contributors. \"橄欖樹 (專輯).\" Wikipedia.",
+    "reliability": "medium",
+    "notes": "Provides early release metadata and track credits for model testing. Needs official booklet or label verification."
+  }
+]
+
