@@ -18,6 +18,12 @@ const navItems = [
   { href: "/appearances/", label: "Appearances" },
   { href: "/people/", label: "People" }
 ];
+
+const appendixItems = [
+  { href: "/sources/", label: "Sources" },
+  { href: "/contribute/", label: "Contribute" },
+  { href: "/about/", label: "About" }
+];
 ---
 
 <!doctype html>
@@ -31,12 +37,22 @@ const navItems = [
   <body>
     <header class="site-header">
       <a class="brand" href="/" aria-label="Chyi Yu Archive home">
-        <span class="brand-mark" aria-hidden="true">CY</span>
         <span>All for Chyi Yu</span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
         {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
       </nav>
+      <details class="site-menu">
+        <summary>Menu</summary>
+        <div class="menu-panel">
+          <nav aria-label="Full navigation">
+            {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+          </nav>
+          <nav aria-label="Appendix navigation">
+            {appendixItems.map((item) => <a href={item.href}>{item.label}</a>)}
+          </nav>
+        </div>
+      </details>
     </header>
     <main>
       <slot />
@@ -46,9 +62,12 @@ const navItems = [
         Fan archive index. Metadata and links only; no hosted audio or video.
       </p>
       <p>
-        <a href="/sources/">Sources</a> <span aria-hidden="true">/</span>
-        <a href="/contribute/">Contribute</a> <span aria-hidden="true">/</span>
-        <a href="/about/">About</a>
+        {appendixItems.map((item, index) => (
+          <>
+            <a href={item.href}>{item.label}</a>
+            {index < appendixItems.length - 1 ? <span aria-hidden="true"> / </span> : null}
+          </>
+        ))}
       </p>
     </footer>
   </body>

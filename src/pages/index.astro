@@ -37,21 +37,23 @@ const sections = [
 ---
 
 <BaseLayout title="All for Chyi Yu">
-  <section class="page-shell">
-    <h1 class="page-title">All for Chyi Yu</h1>
+  <section class="page-shell home-shell">
+    <h1 class="page-title home-title">All for Chyi Yu</h1>
     <p class="page-intro">
       Releases, concerts, music shows, appearances, people, and source-backed links.
     </p>
 
-    <div class="section">
-      <div class="archive-grid">
-        {sections.map((section) => (
-          <a class="record-card" href={section.href}>
-            <h2>{section.title}</h2>
-            <p>{section.text} <span class="muted">({section.count})</span></p>
-          </a>
-        ))}
-      </div>
-    </div>
+    <nav class="section landing-list" aria-label="Archive sections">
+      {sections.map((section, index) => (
+        <a class="section-row" href={section.href}>
+          <span class="section-number">{String(index + 1).padStart(2, "0")}</span>
+          <span class="section-copy">
+            <span class="section-title">{section.title}</span>
+            <span class="section-note">{section.text}</span>
+          </span>
+          <span class="section-count">{section.count} records</span>
+        </a>
+      ))}
+    </nav>
   </section>
 </BaseLayout>
