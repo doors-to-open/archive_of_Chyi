@@ -10,6 +10,7 @@ Home page. It should give a short entry point into the archive without explainin
 
 Primary links:
 
+- Search
 - Releases
 - Concerts
 - Music Shows
@@ -21,6 +22,16 @@ Footer links:
 - Sources
 - Contribute
 - About
+
+### `/search/`
+
+Global search across public archive sections, internal song records, release tracks, people, and sources.
+
+Expected controls:
+
+- Search by title, original title, alias, person, date, source, release track, concert song, or program/work title.
+- Filter by section.
+- Link results to the nearest public route. Internal song records should link to their release context rather than to standalone song pages.
 
 ### `/releases/`
 

@@ -1,11 +1,35 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { byId, musicShows, songs } from "../../lib/archive";
+import { byId, musicShows, personNames, songs } from "../../lib/archive";
+
+const platforms = Array.from(
+  new Set(musicShows.map((show) => show.platform).filter(Boolean))
+).sort();
+
+function showSearchText(show: (typeof musicShows)[number]) {
+  return [
+    show.title,
+    show.date,
+    show.program,
+    show.episode,
+    show.platform,
+    personNames(show.collaborators),
+    ...show.performedSongs.flatMap((entry) => {
+      const linkedSong = byId(songs, entry.song);
+      return [
+        entry.titlePerformed,
+        linkedSong?.title,
+        linkedSong?.titleOriginal,
+        personNames(entry.collaborators)
+      ];
+    })
+  ].filter(Boolean).join(" ");
+}
 ---
 
 <BaseLayout title="Music shows | All for Chyi Yu">
-  <section class="page-shell">
+  <section class="page-shell" data-filter-root>
     <p class="page-kicker">Music shows</p>
     <h1 class="page-title">Music shows</h1>
     <p class="page-intro">
@@ -13,42 +37,70 @@ import { byId, musicShows, songs } from "../../lib/archive";
     </p>
 
     {musicShows.length ? (
-      <div class="section archive-grid">
-        {musicShows.map((show) => (
-          <details class="record-card">
-            <summary>
-              <span>{show.title}</span>
-              <span class="summary-meta">{show.date || "Date unknown"}</span>
-            </summary>
+      <>
+        <div class="section filter-panel">
+          <label>
+            <span>Search</span>
+            <input data-filter-search type="search" placeholder="Program, episode, song, collaborator..." />
+          </label>
 
-            <div class="details-body">
-              <RecordStatus status={show.status} />
-              {show.program ? <p>Program: {show.program}</p> : null}
-              {show.episode ? <p>Episode: {show.episode}</p> : null}
-              {show.platform ? <p>Platform: {show.platform}</p> : null}
-              {show.collaborators.length ? <p>Collaborators: {show.collaborators.join(", ")}</p> : null}
+          {platforms.length ? (
+            <label>
+              <span>Platform</span>
+              <select data-filter-select data-filter-key="platform">
+                <option value="">All platforms</option>
+                {platforms.map((platform) => <option value={platform}>{platform}</option>)}
+              </select>
+            </label>
+          ) : null}
 
-              <h3>Songs</h3>
-              {show.performedSongs.length ? (
-                <ol class="plain-list">
-                  {show.performedSongs.map((entry) => {
-                    const linkedSong = byId(songs, entry.song);
-                    return (
-                      <li>
-                        <span>{entry.titlePerformed || linkedSong?.title || entry.song}</span>
-                        {entry.collaborators?.length ? <span class="muted"> · with {entry.collaborators.join(", ")}</span> : null}
-                        {entry.mediaLinks?.length ? <span class="muted"> · clips: {entry.mediaLinks.join(", ")}</span> : null}
-                      </li>
-                    );
-                  })}
-                </ol>
-              ) : (
-                <p class="empty-state">No performed songs recorded.</p>
-              )}
-            </div>
-          </details>
-        ))}
-      </div>
+          <p data-filter-count>{musicShows.length} records</p>
+        </div>
+
+        <div class="section archive-grid">
+          {musicShows.map((show) => (
+            <details
+              class="record-card"
+              data-filter-item
+              data-platform={show.platform || ""}
+              data-search={showSearchText(show)}
+            >
+              <summary>
+                <span>{show.title}</span>
+                <span class="summary-meta">{show.date || "Date unknown"}</span>
+              </summary>
+
+              <div class="details-body">
+                <RecordStatus status={show.status} />
+                {show.program ? <p>Program: {show.program}</p> : null}
+                {show.episode ? <p>Episode: {show.episode}</p> : null}
+                {show.platform ? <p>Platform: {show.platform}</p> : null}
+                {show.collaborators.length ? <p>Collaborators: {personNames(show.collaborators)}</p> : null}
+
+                <h3>Songs</h3>
+                {show.performedSongs.length ? (
+                  <ol class="plain-list">
+                    {show.performedSongs.map((entry) => {
+                      const linkedSong = byId(songs, entry.song);
+                      return (
+                        <li>
+                          <span>{entry.titlePerformed || linkedSong?.title || entry.song}</span>
+                          {entry.collaborators?.length ? <span class="muted"> / with {personNames(entry.collaborators)}</span> : null}
+                          {entry.mediaLinks?.length ? <span class="muted"> / clips: {entry.mediaLinks.join(", ")}</span> : null}
+                        </li>
+                      );
+                    })}
+                  </ol>
+                ) : (
+                  <p class="empty-state">No performed songs recorded.</p>
+                )}
+              </div>
+            </details>
+          ))}
+        </div>
+
+        <p data-filter-empty hidden class="empty-state">No matching music shows.</p>
+      </>
     ) : (
       <div class="section empty-state">
         No music-show records have been added yet.

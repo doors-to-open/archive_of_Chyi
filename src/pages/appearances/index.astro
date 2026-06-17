@@ -2,10 +2,25 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import { appearances } from "../../lib/archive";
+
+const appearanceTypes = Array.from(
+  new Set(appearances.map((appearance) => appearance.appearanceType))
+).sort();
+
+function appearanceSearchText(appearance: (typeof appearances)[number]) {
+  return [
+    appearance.title,
+    appearance.date,
+    appearance.appearanceType,
+    appearance.programOrWork,
+    appearance.role,
+    appearance.notes
+  ].filter(Boolean).join(" ");
+}
 ---
 
 <BaseLayout title="Appearances | All for Chyi Yu">
-  <section class="page-shell">
+  <section class="page-shell" data-filter-root>
     <p class="page-kicker">Appearances</p>
     <h1 class="page-title">Appearances</h1>
     <p class="page-intro">
@@ -13,24 +28,50 @@ import { appearances } from "../../lib/archive";
     </p>
 
     {appearances.length ? (
-      <div class="section archive-grid">
-        {appearances.map((appearance) => (
-          <details class="record-card">
-            <summary>
-              <span>{appearance.title}</span>
-              <span class="summary-meta">{appearance.date || "Date unknown"}</span>
-            </summary>
+      <>
+        <div class="section filter-panel">
+          <label>
+            <span>Search</span>
+            <input data-filter-search type="search" placeholder="Title, work, role..." />
+          </label>
 
-            <div class="details-body">
-              <RecordStatus status={appearance.status} />
-              <p>{appearance.appearanceType}</p>
-              {appearance.programOrWork ? <p>{appearance.programOrWork}</p> : null}
-              {appearance.role ? <p>Role: {appearance.role}</p> : null}
-              {appearance.notes ? <p>{appearance.notes}</p> : null}
-            </div>
-          </details>
-        ))}
-      </div>
+          <label>
+            <span>Type</span>
+            <select data-filter-select data-filter-key="appearance-type">
+              <option value="">All types</option>
+              {appearanceTypes.map((type) => <option value={type}>{type}</option>)}
+            </select>
+          </label>
+
+          <p data-filter-count>{appearances.length} records</p>
+        </div>
+
+        <div class="section archive-grid">
+          {appearances.map((appearance) => (
+            <details
+              class="record-card"
+              data-filter-item
+              data-appearance-type={appearance.appearanceType}
+              data-search={appearanceSearchText(appearance)}
+            >
+              <summary>
+                <span>{appearance.title}</span>
+                <span class="summary-meta">{appearance.date || "Date unknown"}</span>
+              </summary>
+
+              <div class="details-body">
+                <RecordStatus status={appearance.status} />
+                <p>{appearance.appearanceType}</p>
+                {appearance.programOrWork ? <p>{appearance.programOrWork}</p> : null}
+                {appearance.role ? <p>Role: {appearance.role}</p> : null}
+                {appearance.notes ? <p>{appearance.notes}</p> : null}
+              </div>
+            </details>
+          ))}
+        </div>
+
+        <p data-filter-empty hidden class="empty-state">No matching appearances.</p>
+      </>
     ) : (
       <div class="section empty-state">
         No appearance records have been added yet.

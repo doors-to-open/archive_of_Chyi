@@ -37,8 +37,14 @@ This website should work like a fan-friendly dictionary for Chyi Yu. A visitor s
 - Add search.
 - Add filters.
 - Add cross-linking between archive records.
-- Add a curated seed batch manually while testing search, filters, and relationships.
 - Do not run broad crawling yet; keep data quality and record shape under direct review.
+
+### Stage 4.5: Curated Seed Data for Testing
+
+- Add a small manually reviewed batch before building statistics.
+- Include enough varied releases, concerts, music shows, appearances, internal song records, people credits, sources, and status values to test Stage 4 behavior.
+- Use the seed batch to verify search, filters, cross-links, repeated people credits, empty states, and source/status visibility.
+- Do not use a broad crawler or automated import in this stage.
 
 ### Stage 5: Statistics
 
@@ -70,4 +76,4 @@ This website should work like a fan-friendly dictionary for Chyi Yu. A visitor s
 
 ## Immediate Next Step
 
-After Stage 3, build Stage 4 search, filters, and relationship browsing with a small curated seed batch. Defer crawler/import work until Stage 6, when source requirements, deduplication, and manual review can prevent low-quality records from entering the archive.
+After Stage 4, complete Stage 4.5 with a small curated seed batch, then build Stage 5 statistics. Defer crawler/import work until Stage 6, when source requirements, deduplication, and manual review can prevent low-quality records from entering the archive.

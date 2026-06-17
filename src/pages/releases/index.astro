@@ -1,21 +1,63 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { personName, releases } from "../../lib/archive";
+import { personName, personNames, releases } from "../../lib/archive";
+
+const releaseTypes = Array.from(new Set(releases.map((release) => release.releaseType))).sort();
+
+function releaseSearchText(release: (typeof releases)[number]) {
+  return [
+    release.title,
+    release.titleOriginal,
+    release.releaseDate,
+    release.releaseType,
+    release.label,
+    personName(release.artist),
+    ...release.tracks.flatMap((track) => [
+      track.titleOnRelease,
+      track.versionNote,
+      personNames(track.credits.lyricsBy),
+      personNames(track.credits.composedBy)
+    ])
+  ].filter(Boolean).join(" ");
+}
 ---
 
 <BaseLayout title="Releases | All for Chyi Yu">
-  <section class="page-shell">
+  <section class="page-shell" data-filter-root>
     <p class="page-kicker">Releases</p>
     <h1 class="page-title">Releases</h1>
     <p class="page-intro">
       Albums, singles, compilations, collaborations, and soundtrack releases.
     </p>
 
+    <div class="section filter-panel">
+      <label>
+        <span>Search</span>
+        <input data-filter-search type="search" placeholder="Title, label, track, credit..." />
+      </label>
+
+      <label>
+        <span>Type</span>
+        <select data-filter-select data-filter-key="release-type">
+          <option value="">All types</option>
+          {releaseTypes.map((type) => <option value={type}>{type}</option>)}
+        </select>
+      </label>
+
+      <p data-filter-count>{releases.length} records</p>
+    </div>
+
     <div class="section archive-grid">
       {releases.map((release) => (
-        <a class="record-card" href={`/releases/${release.slug}/`}>
+        <a
+          class="record-card"
+          href={`/releases/${release.slug}/`}
+          data-filter-item
+          data-release-type={release.releaseType}
+          data-search={releaseSearchText(release)}
+        >
           <h2>{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h2>
-          <p>{release.releaseDate || "Date unknown"} · {release.releaseType}</p>
+          <p>{release.releaseDate || "Date unknown"} / {release.releaseType}</p>
           <div class="meta-row">
             <span>{personName(release.artist)}</span>
             <span>{release.tracks.length} tracks</span>
@@ -23,5 +65,7 @@ import { personName, releases } from "../../lib/archive";
         </a>
       ))}
     </div>
+
+    <p data-filter-empty hidden class="empty-state">No matching releases.</p>
   </section>
 </BaseLayout>

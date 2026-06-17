@@ -95,6 +95,7 @@ About is appendix material. It should be accessible from the footer.
 Top navigation:
 
 - `/`
+- `/search/`
 - `/releases/`
 - `/concerts/`
 - `/music-shows/`

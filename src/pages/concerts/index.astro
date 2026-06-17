@@ -1,20 +1,80 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { byId, concerts, songs } from "../../lib/archive";
+import { byId, concerts, personNames, songs } from "../../lib/archive";
+
+const eventTypes = Array.from(new Set(concerts.map((concert) => concert.eventType))).sort();
+const sourceQualities = Array.from(
+  new Set(concerts.map((concert) => concert.sourceQuality).filter(Boolean))
+).sort();
+
+function concertSearchText(concert: (typeof concerts)[number]) {
+  return [
+    concert.title,
+    concert.date,
+    concert.venue,
+    concert.city,
+    concert.countryOrRegion,
+    concert.eventType,
+    concert.sourceQuality,
+    personNames(concert.guests),
+    ...concert.setlist.flatMap((entry) => {
+      const linkedSong = byId(songs, entry.song);
+      return [
+        entry.titlePerformed,
+        linkedSong?.title,
+        linkedSong?.titleOriginal,
+        personNames(entry.collaborators)
+      ];
+    })
+  ].filter(Boolean).join(" ");
+}
 ---
 
 <BaseLayout title="Concerts | All for Chyi Yu">
-  <section class="page-shell">
+  <section class="page-shell" data-filter-root>
     <p class="page-kicker">Concerts</p>
     <h1 class="page-title">Concerts</h1>
     <p class="page-intro">
       Concerts, concert series, setlists, and show-level links.
     </p>
 
+    <div class="section filter-panel">
+      <label>
+        <span>Search</span>
+        <input data-filter-search type="search" placeholder="Concert, place, song..." />
+      </label>
+
+      <label>
+        <span>Type</span>
+        <select data-filter-select data-filter-key="event-type">
+          <option value="">All types</option>
+          {eventTypes.map((type) => <option value={type}>{type}</option>)}
+        </select>
+      </label>
+
+      {sourceQualities.length ? (
+        <label>
+          <span>Source</span>
+          <select data-filter-select data-filter-key="source-quality">
+            <option value="">All source levels</option>
+            {sourceQualities.map((quality) => <option value={quality}>{quality}</option>)}
+          </select>
+        </label>
+      ) : null}
+
+      <p data-filter-count>{concerts.length} records</p>
+    </div>
+
     <div class="section archive-grid">
       {concerts.map((concert) => (
-        <details class="record-card">
+        <details
+          class="record-card"
+          data-filter-item
+          data-event-type={concert.eventType}
+          data-source-quality={concert.sourceQuality || ""}
+          data-search={concertSearchText(concert)}
+        >
           <summary>
             <span>{concert.title}</span>
             <span class="summary-meta">{concert.date || "Date unknown"}</span>
@@ -22,11 +82,11 @@ import { byId, concerts, songs } from "../../lib/archive";
 
           <div class="details-body">
             <RecordStatus status={concert.status} />
-            <p>{concert.eventType}{concert.venue ? ` · ${concert.venue}` : ""}</p>
+            <p>{concert.eventType}{concert.venue ? ` / ${concert.venue}` : ""}</p>
             {concert.city || concert.countryOrRegion ? (
               <p>{[concert.city, concert.countryOrRegion].filter(Boolean).join(", ")}</p>
             ) : null}
-            {concert.guests?.length ? <p>Guests: {concert.guests.join(", ")}</p> : null}
+            {concert.guests?.length ? <p>Guests: {personNames(concert.guests)}</p> : null}
             {concert.notes ? <p>{concert.notes}</p> : null}
 
             <h3>Show links</h3>
@@ -44,8 +104,8 @@ import { byId, concerts, songs } from "../../lib/archive";
                   return (
                     <li>
                       <span>{entry.titlePerformed || linkedSong?.title || entry.song}</span>
-                      {entry.collaborators?.length ? <span class="muted"> · with {entry.collaborators.join(", ")}</span> : null}
-                      {entry.mediaLinks?.length ? <span class="muted"> · clips: {entry.mediaLinks.join(", ")}</span> : null}
+                      {entry.collaborators?.length ? <span class="muted"> / with {personNames(entry.collaborators)}</span> : null}
+                      {entry.mediaLinks?.length ? <span class="muted"> / clips: {entry.mediaLinks.join(", ")}</span> : null}
                     </li>
                   );
                 })}
@@ -59,5 +119,7 @@ import { byId, concerts, songs } from "../../lib/archive";
         </details>
       ))}
     </div>
+
+    <p data-filter-empty hidden class="empty-state">No matching concerts.</p>
   </section>
 </BaseLayout>

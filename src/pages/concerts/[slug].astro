@@ -1,7 +1,14 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { byId, concerts, songs, sourceRecords } from "../../lib/archive";
+import {
+  byId,
+  concerts,
+  personNames,
+  releasesForSong,
+  songs,
+  sourceRecords
+} from "../../lib/archive";
 
 export function getStaticPaths() {
   return concerts.map((concert) => ({
@@ -66,6 +73,7 @@ const linkedSources = sourceRecords(concert.sources);
       <div class="archive-grid">
         {concert.setlist.map((entry) => {
           const linkedSong = byId(songs, entry.song);
+          const linkedReleases = linkedSong ? releasesForSong(linkedSong.id) : [];
           return (
             <details class="record-card">
               <summary>
@@ -74,7 +82,21 @@ const linkedSources = sourceRecords(concert.sources);
               </summary>
 
               <div class="details-body">
-                {entry.collaborators?.length ? <p>Collaborators: {entry.collaborators.join(", ")}</p> : null}
+                {linkedSong ? (
+                  <>
+                    {linkedSong.lyricsBy.length ? <p>Lyrics: {personNames(linkedSong.lyricsBy)}</p> : null}
+                    {linkedSong.composedBy.length ? <p>Music: {personNames(linkedSong.composedBy)}</p> : null}
+                  </>
+                ) : null}
+                {entry.collaborators?.length ? <p>Collaborators: {personNames(entry.collaborators)}</p> : null}
+                {linkedReleases.length ? (
+                  <div>
+                    <h3>Release links</h3>
+                    {linkedReleases.map((release) => (
+                      <p><a href={`/releases/${release.slug}/`}>{release.title}</a>{release.releaseDate ? ` / ${release.releaseDate}` : ""}</p>
+                    ))}
+                  </div>
+                ) : null}
                 {entry.mediaLinks?.length ? (
                   <div>
                     <h3>Clip links</h3>

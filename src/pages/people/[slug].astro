@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RecordStatus from "../../components/RecordStatus.astro";
+import { people, personCredits, sourceRecords } from "../../lib/archive";
+
+export function getStaticPaths() {
+  return people.map((person) => ({
+    params: { slug: person.slug },
+    props: { person }
+  }));
+}
+
+const { person } = Astro.props;
+const credits = personCredits(person.id);
+const linkedSources = sourceRecords(person.sources);
+
+const groups = [
+  ["Releases", credits.releaseCredits],
+  ["Tracks", credits.trackCredits],
+  ["Internal songs", credits.songCredits],
+  ["Concerts", credits.concertCredits],
+  ["Music shows", credits.musicShowCredits]
+] as const;
+---
+
+<BaseLayout title={`${person.displayName} | All for Chyi Yu`}>
+  <section class="page-shell">
+    <p class="page-kicker">Person</p>
+    <h1 class="page-title">{person.displayName}{person.nameOriginal ? ` / ${person.nameOriginal}` : ""}</h1>
+    <p class="page-intro">{person.notes}</p>
+
+    <article class="section detail-panel">
+      <RecordStatus status={person.status} />
+      <dl class="fact-lines">
+        <div>
+          <dt>Roles</dt>
+          <dd>{person.roles.length ? person.roles.join(", ") : "None recorded"}</dd>
+        </div>
+        <div>
+          <dt>Aliases</dt>
+          <dd>{person.aliases.length ? person.aliases.join(", ") : "None recorded"}</dd>
+        </div>
+        <div>
+          <dt>Relationships</dt>
+          <dd>{credits.total} linked records</dd>
+        </div>
+      </dl>
+    </article>
+
+    {groups.map(([title, items]) => (
+      <section class="section">
+        <div class="section-header">
+          <h2>{title}</h2>
+          <p>{items.length} links</p>
+        </div>
+
+        {items.length ? (
+          <div class="archive-grid">
+            {items.map((credit) => (
+              <a class="record-card" href={credit.href}>
+                <h3>{credit.title}</h3>
+                <p>{credit.role}{credit.context ? ` / ${credit.context}` : ""}</p>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <p class="empty-state">No linked {title.toLowerCase()} yet.</p>
+        )}
+      </section>
+    ))}
+
+    <section class="section detail-panel">
+      <h2>Sources</h2>
+      {linkedSources.length ? (
+        <div class="link-list">
+          {linkedSources.map((source) => (
+            <p><a href={source.url}>{source.title}</a></p>
+          ))}
+        </div>
+      ) : (
+        <p class="empty-state">No sources recorded.</p>
+      )}
+    </section>
+  </section>
+</BaseLayout>

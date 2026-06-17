@@ -12,6 +12,7 @@ const {
 } = Astro.props;
 
 const navItems = [
+  { href: "/search/", label: "Search" },
   { href: "/releases/", label: "Releases" },
   { href: "/concerts/", label: "Concerts" },
   { href: "/music-shows/", label: "Music shows" },
@@ -70,5 +71,82 @@ const appendixItems = [
         ))}
       </p>
     </footer>
+    <script>
+      const normalize = (value: unknown) => String(value || "").toLowerCase().trim();
+
+      document.querySelectorAll("[data-filter-root]").forEach((root) => {
+        const items = Array.from(root.querySelectorAll("[data-filter-item]"));
+        const searchInput = root.querySelector("[data-filter-search]");
+        const selects = Array.from(root.querySelectorAll("[data-filter-select]"));
+        const optionGroups = Array.from(root.querySelectorAll("[data-filter-options]"));
+        const count = root.querySelector("[data-filter-count]");
+        const empty = root.querySelector("[data-filter-empty]");
+        const requiresFilter = root.hasAttribute("data-require-filter");
+        const initialEmptyText = empty?.getAttribute("data-empty-initial") || "";
+        const noResultsText = empty?.getAttribute("data-empty-none") || empty?.textContent || "";
+        const activeOptionValue = (group: Element) => {
+          const active = group.querySelector("[data-filter-option][aria-pressed='true']");
+          return normalize(active?.getAttribute("data-filter-value"));
+        };
+
+        const update = () => {
+          const query = normalize(searchInput instanceof HTMLInputElement ? searchInput.value : "");
+          const hasActiveSelect = selects.some((select) =>
+            normalize(select instanceof HTMLSelectElement ? select.value : "")
+          );
+          const hasActiveOption = optionGroups.some((group) => activeOptionValue(group));
+          const hasActiveFilter = Boolean(query) || hasActiveSelect || hasActiveOption;
+          let visibleCount = 0;
+
+          items.forEach((item) => {
+            const searchable = normalize(item.getAttribute("data-search"));
+            const matchesSearch = !query || searchable.includes(query);
+            const matchesSelects = selects.every((select) => {
+              const selected = normalize(select instanceof HTMLSelectElement ? select.value : "");
+              const key = select.getAttribute("data-filter-key");
+              if (!selected || !key) return true;
+              const values = normalize(item.getAttribute(`data-${key}`)).split("|").filter(Boolean);
+              return values.includes(selected);
+            });
+            const matchesOptionGroups = optionGroups.every((group) => {
+              const selected = activeOptionValue(group);
+              const key = group.getAttribute("data-filter-key");
+              if (!selected || !key) return true;
+              const values = normalize(item.getAttribute(`data-${key}`)).split("|").filter(Boolean);
+              return values.includes(selected);
+            });
+
+            const isVisible = (!requiresFilter || hasActiveFilter) && matchesSearch && matchesSelects && matchesOptionGroups;
+            item.toggleAttribute("hidden", !isVisible);
+            if (isVisible) visibleCount += 1;
+          });
+
+          if (count) {
+            count.textContent = requiresFilter && !hasActiveFilter
+              ? "Ready"
+              : `${visibleCount} ${visibleCount === 1 ? "record" : "records"}`;
+          }
+
+          if (empty) {
+            empty.textContent = requiresFilter && !hasActiveFilter ? initialEmptyText : noResultsText;
+            empty.toggleAttribute("hidden", requiresFilter && !hasActiveFilter ? false : visibleCount !== 0);
+          }
+        };
+
+        searchInput?.addEventListener("input", update);
+        selects.forEach((select) => select.addEventListener("change", update));
+        optionGroups.forEach((group) => {
+          const options = Array.from(group.querySelectorAll("[data-filter-option]"));
+          options.forEach((option) => {
+            option.addEventListener("click", () => {
+              options.forEach((item) => item.setAttribute("aria-pressed", "false"));
+              option.setAttribute("aria-pressed", "true");
+              update();
+            });
+          });
+        });
+        update();
+      });
+    </script>
   </body>
 </html>

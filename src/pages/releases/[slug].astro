@@ -6,6 +6,7 @@ import {
   concertsForSong,
   musicShowsForSong,
   personName,
+  personNames,
   releases,
   songs,
   sourceRecords
@@ -22,7 +23,7 @@ const { release } = Astro.props;
 const linkedSources = sourceRecords(release.sources);
 
 function peopleList(ids: string[]) {
-  return ids.length ? ids.map(personName).join(", ") : "Not recorded";
+  return personNames(ids) || "Not recorded";
 }
 ---
 
@@ -84,13 +85,13 @@ function peopleList(ids: string[]) {
                     {linkedConcerts.map((concert) => (
                       <p>
                         <a href={`/concerts/${concert.slug}/`}>{concert.title}</a>
-                        {concert.date ? ` · ${concert.date}` : ""}
+                        {concert.date ? ` / ${concert.date}` : ""}
                       </p>
                     ))}
                     {linkedMusicShows.map((show) => (
                       <p>
                         <a href={`/music-shows/${show.slug}/`}>{show.title}</a>
-                        {show.date ? ` · ${show.date}` : ""}
+                        {show.date ? ` / ${show.date}` : ""}
                       </p>
                     ))}
                   </div>

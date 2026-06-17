@@ -1,25 +1,68 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { people } from "../../lib/archive";
+import { people, personCredits } from "../../lib/archive";
+
+const roles = Array.from(new Set(people.flatMap((person) => person.roles))).sort();
+
+function personSearchText(person: (typeof people)[number]) {
+  return [
+    person.displayName,
+    person.nameOriginal,
+    person.aliases.join(" "),
+    person.roles.join(" "),
+    person.notes
+  ].filter(Boolean).join(" ");
+}
 ---
 
 <BaseLayout title="People | All for Chyi Yu">
-  <section class="page-shell">
+  <section class="page-shell" data-filter-root>
     <p class="page-kicker">People</p>
     <h1 class="page-title">People</h1>
     <p class="page-intro">
       Writers, composers, producers, collaborators, hosts, and other credits.
     </p>
 
-    <div class="section archive-grid">
-      {people.map((person) => (
-        <div class="record-card">
-          <RecordStatus status={person.status} />
-          <h2>{person.displayName}{person.nameOriginal ? ` / ${person.nameOriginal}` : ""}</h2>
-          <p>{person.roles.join(", ")}</p>
-        </div>
-      ))}
+    <div class="section filter-panel">
+      <label>
+        <span>Search</span>
+        <input data-filter-search type="search" placeholder="Name, alias, role..." />
+      </label>
+
+      <label>
+        <span>Role</span>
+        <select data-filter-select data-filter-key="roles">
+          <option value="">All roles</option>
+          {roles.map((role) => <option value={role}>{role}</option>)}
+        </select>
+      </label>
+
+      <p data-filter-count>{people.length} records</p>
     </div>
+
+    <div class="section archive-grid">
+      {people.map((person) => {
+        const credits = personCredits(person.id);
+        return (
+          <a
+            class="record-card"
+            href={`/people/${person.slug}/`}
+            data-filter-item
+            data-roles={person.roles.join("|")}
+            data-search={personSearchText(person)}
+          >
+            <RecordStatus status={person.status} />
+            <h2>{person.displayName}{person.nameOriginal ? ` / ${person.nameOriginal}` : ""}</h2>
+            <p>{person.roles.join(", ")}</p>
+            <div class="meta-row">
+              <span>{credits.total} relationship links</span>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+
+    <p data-filter-empty hidden class="empty-state">No matching people.</p>
   </section>
 </BaseLayout>

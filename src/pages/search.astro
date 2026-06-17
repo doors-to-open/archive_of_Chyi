@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { buildSearchEntries } from "../lib/archive";
+
+const entries = buildSearchEntries();
+const categories = Array.from(
+  new Map(entries.map((entry) => [entry.filterCategory, entry.category])).entries()
+);
+---
+
+<BaseLayout title="Search | All for Chyi Yu">
+  <section class="page-shell" data-filter-root data-require-filter>
+    <p class="page-kicker">Search</p>
+    <h1 class="page-title">Search</h1>
+    <p class="page-intro">
+      Search releases, tracks, internal song records, concerts, music shows, appearances, people, and sources.
+    </p>
+
+    <div class="section filter-panel search-filter-panel">
+      <label>
+        <span>Keyword</span>
+        <input data-filter-search type="search" placeholder="Title, person, source, date..." />
+      </label>
+
+      <fieldset class="filter-option-group" data-filter-options data-filter-key="category">
+        <legend>Section</legend>
+        <div class="filter-options">
+          <button type="button" data-filter-option data-filter-value="" aria-pressed="true">
+            All sections
+          </button>
+          {categories.map(([value, label]) => (
+            <button type="button" data-filter-option data-filter-value={value} aria-pressed="false">
+              {label}
+            </button>
+          ))}
+        </div>
+      </fieldset>
+
+      <p data-filter-count>{entries.length} records</p>
+    </div>
+
+    <div class="section archive-grid">
+      {entries.map((entry) => (
+        <a
+          class="record-card"
+          href={entry.href}
+          hidden
+          data-filter-item
+          data-category={entry.filterCategory}
+          data-search={`${entry.title} ${entry.summary} ${entry.meta} ${entry.searchText}`}
+        >
+          <h2>{entry.title}</h2>
+          <p>{entry.category}{entry.summary ? ` / ${entry.summary}` : ""}</p>
+          {entry.meta ? <div class="meta-row"><span>{entry.meta}</span></div> : null}
+        </a>
+      ))}
+    </div>
+
+    <p
+      data-filter-empty
+      data-empty-initial="Enter a keyword or choose a section."
+      data-empty-none="No matching records."
+      class="empty-state"
+    >
+      Enter a keyword or choose a section.
+    </p>
+  </section>
+</BaseLayout>

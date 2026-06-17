@@ -1,25 +1,73 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { sources } from "../../lib/archive";
+
+const sourceTypes = Array.from(new Set(sources.map((source) => source.sourceType))).sort();
+const reliabilities = Array.from(new Set(sources.map((source) => source.reliability))).sort();
+
+function sourceSearchText(source: (typeof sources)[number]) {
+  return [
+    source.title,
+    source.authorOrPublisher,
+    source.sourceType,
+    source.reliability,
+    source.url,
+    source.citation,
+    source.notes
+  ].filter(Boolean).join(" ");
+}
 ---
 
 <BaseLayout title="Sources | All for Chyi Yu">
-  <section class="page-shell">
+  <section class="page-shell" data-filter-root>
     <p class="page-kicker">Sources</p>
     <h1 class="page-title">Sources</h1>
     <p class="page-intro">
       Appendix for citations, reliability notes, and external reference links.
     </p>
 
+    <div class="section filter-panel">
+      <label>
+        <span>Search</span>
+        <input data-filter-search type="search" placeholder="Title, publisher, URL..." />
+      </label>
+
+      <label>
+        <span>Type</span>
+        <select data-filter-select data-filter-key="source-type">
+          <option value="">All types</option>
+          {sourceTypes.map((type) => <option value={type}>{type}</option>)}
+        </select>
+      </label>
+
+      <label>
+        <span>Reliability</span>
+        <select data-filter-select data-filter-key="reliability">
+          <option value="">All levels</option>
+          {reliabilities.map((reliability) => <option value={reliability}>{reliability}</option>)}
+        </select>
+      </label>
+
+      <p data-filter-count>{sources.length} records</p>
+    </div>
+
     <div class="section archive-grid">
       {sources.map((source) => (
-        <article class="record-card">
+        <article
+          class="record-card"
+          data-filter-item
+          data-source-type={source.sourceType}
+          data-reliability={source.reliability}
+          data-search={sourceSearchText(source)}
+        >
           <h2><a href={source.url}>{source.title}</a></h2>
-          <p>{source.sourceType} · reliability: {source.reliability}</p>
+          <p>{source.sourceType} / reliability: {source.reliability}</p>
           {source.accessDate ? <p class="muted">Accessed {source.accessDate}</p> : null}
           {source.notes ? <p>{source.notes}</p> : null}
         </article>
       ))}
     </div>
+
+    <p data-filter-empty hidden class="empty-state">No matching sources.</p>
   </section>
 </BaseLayout>
