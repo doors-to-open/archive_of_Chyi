@@ -19,9 +19,8 @@ Album art, photographs, broadcast stills, posters, and scans may be copyrighted.
 
 ## Contributor Submissions
 
-Contributors should provide sources for factual claims. Personal memories and short fan notes should be stored separately from verified archive data.
+Contributors should provide sources for factual claims. Submissions should focus on verifiable archive information.
 
 ## Disclaimer
 
 This project is a fan archive and reference index. It is not affiliated with Chyi Yu, her labels, publishers, management, or media platforms unless explicitly stated.
-

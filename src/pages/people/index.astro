@@ -1,7 +1,16 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionPanel from "../../components/ContributionPanel.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import { people, personCredits } from "../../lib/archive";
+import { contributionIssueUrl } from "../../lib/contribution";
+
+const contributionActions = [
+  {
+    label: "Propose person/credit",
+    href: contributionIssueUrl({ kind: "person", recordType: "Person", recordPath: "/people/" })
+  }
+];
 ---
 
 <BaseLayout title="People | All for Chyi Yu">
@@ -30,5 +39,10 @@ import { people, personCredits } from "../../lib/archive";
         );
       })}
     </div>
+
+    <ContributionPanel
+      text="Propose a missing person record or credit relationship with a source."
+      actions={contributionActions}
+    />
   </section>
 </BaseLayout>

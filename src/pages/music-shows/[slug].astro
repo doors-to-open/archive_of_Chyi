@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import {
   byId,
@@ -126,5 +127,11 @@ const { show } = Astro.props;
         <p>{show.notes}</p>
       </section>
     ) : null}
+
+    <ContributionActions
+      recordType="Music show"
+      recordTitle={show.title}
+      recordPath={`/music-shows/${show.slug}/`}
+    />
   </section>
 </BaseLayout>

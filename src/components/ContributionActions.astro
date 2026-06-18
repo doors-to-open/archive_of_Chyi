@@ -1,0 +1,18 @@
+---
+import ContributionPanel from "./ContributionPanel.astro";
+import { contributionActions } from "../lib/contribution";
+
+type Props = {
+  recordType: string;
+  recordTitle: string;
+  recordPath: string;
+};
+
+const { recordType, recordTitle, recordPath } = Astro.props;
+const actions = contributionActions(recordType, recordTitle, recordPath);
+---
+
+<ContributionPanel
+  text="Send a sourced correction or link for this record."
+  actions={actions}
+/>

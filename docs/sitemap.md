@@ -186,7 +186,9 @@ Expected sections:
 - Source requirements.
 - Credit choices.
 - What anonymous submissions can and cannot be used for.
-- How factual claims differ from personal memories.
+- GitHub Issue entry points for corrections, sources, media links, albums/releases, tracks, concerts, music-show performances, appearances, and people/credits.
+- Detail-page actions for suggesting corrections, adding sources, and adding media links.
+- Section index actions for proposing root-level additions such as new releases, performances, people, and sources.
 
 ### `/about/`
 
@@ -216,6 +218,5 @@ These should wait until the basic archive works:
 
 - `/timeline/`
 - `/media/`
-- `/memories/`
 - `/changelog/`
 - `/contributors/`

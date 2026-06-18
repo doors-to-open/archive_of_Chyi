@@ -54,13 +54,31 @@ This website should work like a fan-friendly dictionary for Chyi Yu. A visitor s
 - Add album/song browsing modes on Releases, with date, alphabetic, and live-record sorting.
 - Simplify global search to song, album, concert, and person results, while keeping tracks as album-specific placements.
 
-### Stage 6: Contribution Workflow
+### Stage 6: Contribution and Controlled Import Workflow
 
-- Start with GitHub Issues or simple forms.
-- Require sources for factual additions.
-- Add contributor credit rules.
-- Add a controlled public-source import/crawler workflow after the review process exists.
-- Limit import/crawler sources to allowlisted public pages, keep source metadata, deduplicate records, and send imported items through manual review before confirmation.
+Split this stage into two sub-stages so imported data never bypasses review.
+
+#### Stage 6A: Contribution Workflow
+
+- Start with GitHub Issues or simple forms, not a custom backend.
+- Keep `/contribute/` as the central contribution hub.
+- Add contribution actions on item detail pages: suggest a correction, add a source, and add a media link.
+- Add category-level contribution actions from section index pages: propose album/release, track, concert, music-show performance, appearance, person/credit, or source.
+- Split GitHub Issue bodies by target type so album, track, concert, music-show, appearance, person, source, media, and correction submissions collect the right fields.
+- Require sources for factual additions and corrections.
+- Keep Stage 6A focused on verifiable archive information.
+- Add contributor credit rules and review states: submitted, reviewed, accepted or rejected, then added to data.
+- Use the maintainer as the first contributor to test whether the workflow is practical.
+
+#### Stage 6B: Controlled Public-Source Import / Crawler Workflow
+
+- Add import/crawler work only after the Stage 6A review workflow exists.
+- Keep crawler/parser code in a tracked project folder such as `tools/import/` or `scripts/import/`.
+- Keep raw downloads, screenshots, temporary exports, and scratch candidate files in ignored local folders such as `supplement/raw/`, `supplement/screenshots/`, and `supplement/import-drafts/`.
+- Limit import/crawler sources to allowlisted public pages.
+- Preserve source metadata, access dates, parser notes, and uncertainty flags.
+- Deduplicate imported candidates against existing records before review.
+- Treat crawler output as review candidates only; final accepted records still enter `data/*.json` through manual or reviewed edits.
 - Later, consider moderation and admin tools.
 
 ### Stage 7: Visual and Interaction Upgrade

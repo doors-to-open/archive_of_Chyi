@@ -1,9 +1,17 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionPanel from "../../components/ContributionPanel.astro";
 import { sources } from "../../lib/archive";
+import { contributionIssueUrl } from "../../lib/contribution";
 
 const sourceTypes = Array.from(new Set(sources.map((source) => source.sourceType))).sort();
 const reliabilities = Array.from(new Set(sources.map((source) => source.reliability))).sort();
+const contributionActions = [
+  {
+    label: "Propose source",
+    href: contributionIssueUrl({ kind: "source", recordType: "Source", recordPath: "/sources/" })
+  }
+];
 
 function sourceSearchText(source: (typeof sources)[number]) {
   return [
@@ -69,5 +77,10 @@ function sourceSearchText(source: (typeof sources)[number]) {
     </div>
 
     <p data-filter-empty hidden class="empty-state">No matching sources.</p>
+
+    <ContributionPanel
+      text="Propose a source that can support archive facts or improve uncertain records."
+      actions={contributionActions}
+    />
   </section>
 </BaseLayout>

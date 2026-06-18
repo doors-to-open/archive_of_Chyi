@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import { people, personCredits } from "../../lib/archive";
 
@@ -67,5 +68,11 @@ const groups = [
         )}
       </section>
     ))}
+
+    <ContributionActions
+      recordType="Person"
+      recordTitle={person.displayName}
+      recordPath={`/people/${person.slug}/`}
+    />
   </section>
 </BaseLayout>

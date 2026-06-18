@@ -168,7 +168,7 @@ Suggested fields:
 Suggested fields:
 
 - `id`
-- `sourceType`: `official`, `album-booklet`, `platform`, `news`, `book`, `encyclopedia`, `database`, `fan-report`, `audience-memory`, `archive`, or `other`
+- `sourceType`: `official`, `album-booklet`, `platform`, `news`, `book`, `encyclopedia`, `database`, `archive`, or `other`
 - `title`
 - `authorOrPublisher`
 - `date`
@@ -193,6 +193,5 @@ Suggested fields:
 
 - Official releases and official pages should be treated as high-priority sources for release metadata.
 - Encyclopedia and open database sources can be useful for orientation, but should be replaced or strengthened with primary sources when possible.
-- Fan reports and audience memories can be valuable but should be labeled separately.
-- Anonymous submissions may be accepted for personal memories, but anonymous factual claims should not become confirmed data without independent sources.
+- Anonymous factual claims should not become confirmed data without independent sources.
 - If a contributor is the primary source, the record should say so clearly.

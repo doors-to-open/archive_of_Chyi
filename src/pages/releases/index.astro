@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionPanel from "../../components/ContributionPanel.astro";
 import SongSummaryCard from "../../components/SongSummaryCard.astro";
 import {
   personName,
@@ -10,8 +11,19 @@ import {
   releases,
   songSummaries
 } from "../../lib/archive";
+import { contributionIssueUrl } from "../../lib/contribution";
 
 const summaries = songSummaries();
+const contributionActions = [
+  {
+    label: "Propose album/release",
+    href: contributionIssueUrl({ kind: "album", recordType: "Release", recordPath: "/releases/" })
+  },
+  {
+    label: "Add release track",
+    href: contributionIssueUrl({ kind: "track", recordType: "Track", recordPath: "/releases/" })
+  }
+];
 ---
 
 <BaseLayout title="Releases | All for Chyi Yu">
@@ -121,5 +133,10 @@ const summaries = songSummaries();
         />
       ))}
     </div>
+
+    <ContributionPanel
+      text="Propose a missing release or track-level addition with source links."
+      actions={contributionActions}
+    />
   </section>
 </BaseLayout>

@@ -20,7 +20,7 @@ The data is intentionally small. It should prove that internal song records, rel
 - Do not add factual claims without at least one source ID.
 - Use `status: "partial"` when the record is useful but incomplete.
 - Use `status: "needs-source"` when a value is plausible but not yet sourced.
-- Use `sourceQuality` or `reliability` to separate official sources from encyclopedia, fan, audience, and platform sources.
+- Use `sourceQuality` or `reliability` to separate official sources from encyclopedia, platform, archived, and other source types.
 - Prefer adding less data with clearer sources over adding many uncertain records.
 
 ## Current Limitations

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import {
   availabilityLabels,
@@ -193,5 +194,10 @@ function trackNumber(track: (typeof release.tracks)[number]) {
       </section>
     ) : null}
 
+    <ContributionActions
+      recordType="Release"
+      recordTitle={release.title}
+      recordPath={`/releases/${release.slug}/`}
+    />
   </section>
 </BaseLayout>

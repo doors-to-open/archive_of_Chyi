@@ -1,6 +1,15 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionPanel from "../../components/ContributionPanel.astro";
 import { concertAvailabilityChecks, concerts, personNames } from "../../lib/archive";
+import { contributionIssueUrl } from "../../lib/contribution";
+
+const contributionActions = [
+  {
+    label: "Propose concert",
+    href: contributionIssueUrl({ kind: "concert", recordType: "Concert", recordPath: "/concerts/" })
+  }
+];
 ---
 
 <BaseLayout title="Concerts | All for Chyi Yu">
@@ -33,5 +42,10 @@ import { concertAvailabilityChecks, concerts, personNames } from "../../lib/arch
         </a>
       ))}
     </div>
+
+    <ContributionPanel
+      text="Propose a missing concert or concert-series record with date, location, and sources."
+      actions={contributionActions}
+    />
   </section>
 </BaseLayout>

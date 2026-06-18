@@ -1,6 +1,15 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionPanel from "../../components/ContributionPanel.astro";
 import { appearanceAvailabilityChecks, appearances } from "../../lib/archive";
+import { contributionIssueUrl } from "../../lib/contribution";
+
+const contributionActions = [
+  {
+    label: "Propose appearance",
+    href: contributionIssueUrl({ kind: "appearance", recordType: "Appearance", recordPath: "/appearances/" })
+  }
+];
 ---
 
 <BaseLayout title="Appearances | All for Chyi Yu">
@@ -40,5 +49,10 @@ import { appearanceAvailabilityChecks, appearances } from "../../lib/archive";
         No appearance records have been added yet.
       </div>
     )}
+
+    <ContributionPanel
+      text="Propose a missing interview, soundtrack, film, article, or other appearance record with sources."
+      actions={contributionActions}
+    />
   </section>
 </BaseLayout>

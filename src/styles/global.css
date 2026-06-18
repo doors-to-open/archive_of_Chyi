@@ -575,6 +575,59 @@ details[open].record-card summary::after {
   padding-top: 0.8rem;
 }
 
+.contribution-panel p {
+  margin-bottom: 0.9rem;
+}
+
+.contribution-groups {
+  border-top: 1px solid var(--line);
+}
+
+.contribution-group {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 0.85fr) minmax(14rem, 1fr);
+  padding: clamp(1rem, 2.2vw, 1.75rem) 0;
+}
+
+.contribution-group h2 {
+  font-size: clamp(1.08rem, 1.55vw, 1.58rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.14;
+  margin: 0;
+}
+
+.contribution-group p {
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 0.45rem 0 0;
+  max-width: 620px;
+}
+
+.contribution-actions {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+}
+
+.contribution-actions a {
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 620;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contribution-actions a:hover {
+  border-bottom-color: var(--ink);
+  color: var(--ink);
+}
 
 .status {
   color: var(--muted);
@@ -797,6 +850,10 @@ details[open].record-card summary::after {
   .filter-panel {
     display: flex;
     margin-bottom: 0;
+  }
+
+  .contribution-group {
+    grid-template-columns: 1fr;
   }
 
   .section-row {

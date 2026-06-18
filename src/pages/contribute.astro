@@ -1,5 +1,77 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { contributionIssueUrl } from "../lib/contribution";
+
+const contributionGroups = [
+  {
+    title: "Existing Records",
+    text: "Use these when a page already exists and the change belongs to that record.",
+    actions: [
+      {
+        label: "Suggest correction",
+        href: contributionIssueUrl({ kind: "correction", recordType: "Archive record" })
+      },
+      {
+        label: "Add source",
+        href: contributionIssueUrl({ kind: "source", recordType: "Archive record" })
+      },
+      {
+        label: "Add media link",
+        href: contributionIssueUrl({ kind: "media", recordType: "Archive record" })
+      }
+    ]
+  },
+  {
+    title: "Releases And Tracks",
+    text: "Propose release-level records or track-level additions with printed or platform sources.",
+    actions: [
+      {
+        label: "New album/release",
+        href: contributionIssueUrl({ kind: "album", recordType: "Release" })
+      },
+      {
+        label: "Track addition",
+        href: contributionIssueUrl({ kind: "track", recordType: "Track" })
+      }
+    ]
+  },
+  {
+    title: "Performances And Appearances",
+    text: "Add dated concert, broadcast, interview, soundtrack, or other appearance records.",
+    actions: [
+      {
+        label: "New concert",
+        href: contributionIssueUrl({ kind: "concert", recordType: "Concert" })
+      },
+      {
+        label: "New music show",
+        href: contributionIssueUrl({ kind: "music-show", recordType: "Music show" })
+      },
+      {
+        label: "New appearance",
+        href: contributionIssueUrl({ kind: "appearance", recordType: "Appearance" })
+      }
+    ]
+  },
+  {
+    title: "People, Sources, And Media",
+    text: "Add supporting people, credit relationships, citations, or external media links.",
+    actions: [
+      {
+        label: "New person/credit",
+        href: contributionIssueUrl({ kind: "person", recordType: "Person" })
+      },
+      {
+        label: "New source",
+        href: contributionIssueUrl({ kind: "source", recordType: "Source" })
+      },
+      {
+        label: "New media link",
+        href: contributionIssueUrl({ kind: "media", recordType: "Media link" })
+      }
+    ]
+  }
+];
 ---
 
 <BaseLayout title="Contribute | All for Chyi Yu">
@@ -7,22 +79,33 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <p class="page-kicker">Contribute</p>
     <h1 class="page-title">Contribute</h1>
     <p class="page-intro">
-      Corrections need sources. Memories need context.
+      Corrections, additions, and links need sources.
     </p>
 
-    <div class="section archive-grid">
-      <div class="record-card">
-        <h2>Factual corrections</h2>
-        <p>Submit the field to change, the proposed value, and the source that supports it.</p>
-      </div>
-      <div class="record-card">
-        <h2>Missing records</h2>
-        <p>Add a release, concert, music show, appearance, person, source, or external media link.</p>
-      </div>
-      <div class="record-card">
-        <h2>Personal memories</h2>
-        <p>Short fan notes can be preserved separately from verified archive facts.</p>
-      </div>
+    <div class="section contribution-groups">
+      {contributionGroups.map((group) => (
+        <section class="contribution-group">
+          <div>
+            <h2>{group.title}</h2>
+            <p>{group.text}</p>
+          </div>
+          <div class="contribution-actions">
+            {group.actions.map((action) => (
+              <a href={action.href}>{action.label}</a>
+            ))}
+          </div>
+        </section>
+      ))}
     </div>
+
+    <section class="section detail-panel">
+      <h2>Review Rules</h2>
+      <div class="record-meta-table">
+        <span>Factual claims need source links.</span>
+        <span>Anonymous factual claims stay unconfirmed until independently sourced.</span>
+        <span>Submissions should focus on verifiable archive information.</span>
+        <span>Accepted changes are added through reviewed edits to the data files.</span>
+      </div>
+    </section>
   </section>
 </BaseLayout>

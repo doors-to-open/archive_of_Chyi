@@ -1,0 +1,21 @@
+---
+import type { ContributionAction } from "../lib/contribution";
+
+type Props = {
+  title?: string;
+  text: string;
+  actions: ContributionAction[];
+};
+
+const { title = "Contribute", text, actions } = Astro.props;
+---
+
+<section class="section detail-panel contribution-panel">
+  <h2>{title}</h2>
+  <p>{text}</p>
+  <div class="contribution-actions">
+    {actions.map((action) => (
+      <a href={action.href}>{action.label}</a>
+    ))}
+  </div>
+</section>

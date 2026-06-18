@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import { appearanceAvailabilityChecks, appearances, linkCreditLabel } from "../../lib/archive";
 
@@ -59,5 +60,11 @@ const { appearance } = Astro.props;
         <p>{appearance.notes}</p>
       </section>
     ) : null}
+
+    <ContributionActions
+      recordType="Appearance"
+      recordTitle={appearance.title}
+      recordPath={`/appearances/${appearance.slug}/`}
+    />
   </section>
 </BaseLayout>

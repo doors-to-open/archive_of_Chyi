@@ -36,7 +36,7 @@ People records should eventually support relationship summaries such as frequent
 
 ### Sources
 
-Official websites, album booklets, streaming platforms, news articles, books, fan reports, archived pages, platform pages, and other evidence.
+Official websites, album booklets, streaming platforms, news articles, books, archived pages, platform pages, and other evidence.
 
 Sources are appendix material. They should be accessible from the footer, not the main navigation.
 
@@ -132,20 +132,22 @@ The first implementation should make these relationships easy:
 
 ## Contribution Entry Points
 
-Each public item page should eventually include a contribution action. The action should route contributors into a structured correction or addition process rather than free-form comments.
+Each public item page should include simple contribution actions for existing records. Section index pages and `/contribute/` should route root-level additions into structured GitHub Issue templates rather than free-form comments.
 
 First supported contribution types:
 
 - Correct a factual field.
 - Add a missing source.
 - Add an external media link.
+- Add an album or release.
 - Add a release track or credit.
 - Add a concert record.
 - Add a music-show performance.
 - Add a general appearance.
-- Add a short personal memory or fan note.
+- Add a person or credit relationship.
+- Add a source.
 
-Factual contribution forms should ask for source links. Personal memories should be stored separately from verified archive data.
+Factual contribution forms should ask for source links.
 
 ## Open Information Architecture Questions
 
