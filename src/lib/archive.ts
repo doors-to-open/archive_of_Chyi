@@ -53,6 +53,16 @@ export type Track = {
   };
 };
 
+export type ArchiveLink = {
+  label: string;
+  platform?: string;
+  url: string;
+  kind?: string;
+  isOfficial?: boolean;
+  accessRegion?: string;
+  notes?: string;
+};
+
 export type Release = {
   id: string;
   slug: string;
@@ -61,9 +71,15 @@ export type Release = {
   releaseDate?: string;
   releaseType: string;
   artist: string;
+  artists?: string[];
   label?: string | null;
   catalogNumber?: string | null;
   formats: string[];
+  availability?: {
+    physical?: string[];
+    streaming?: ArchiveLink[];
+    purchase?: ArchiveLink[];
+  };
   tracks: Track[];
   credits: Record<string, string[]>;
   sources: string[];
@@ -73,10 +89,11 @@ export type Release = {
 
 export type SongPerformance = {
   position: number | null;
-  song: string;
+  song: string | null;
   titlePerformed: string;
+  originalPerformer?: string | null;
   collaborators?: string[];
-  mediaLinks?: string[];
+  mediaLinks?: ArchiveLink[];
   notes?: string;
 };
 
@@ -91,7 +108,8 @@ export type Concert = {
   eventType: string;
   guests?: string[];
   setlist: SongPerformance[];
-  mediaLinks: string[];
+  mediaLinks: ArchiveLink[];
+  officialRecording?: boolean;
   sources: string[];
   sourceQuality?: string;
   notes?: string;
@@ -108,7 +126,7 @@ export type MusicShow = {
   platform?: string | null;
   performedSongs: SongPerformance[];
   collaborators: string[];
-  mediaLinks: string[];
+  mediaLinks: ArchiveLink[];
   sources: string[];
   sourceQuality?: string;
   notes?: string;
@@ -124,7 +142,7 @@ export type Appearance = {
   programOrWork?: string | null;
   role?: string | null;
   relatedSongs: string[];
-  mediaLinks: string[];
+  mediaLinks: ArchiveLink[];
   sources: string[];
   notes?: string;
   status: Status;
@@ -182,6 +200,20 @@ export function personName(id: string) {
 
 export function personNames(ids: string[] | undefined) {
   return ids?.length ? ids.map(personName).join(", ") : "";
+}
+
+export function releaseArtists(release: Release) {
+  return personNames(release.artists?.length ? release.artists : [release.artist]);
+}
+
+export function releaseProducers(release: Release) {
+  return personNames(release.credits.producer || release.credits.producers || []);
+}
+
+export function linkPlatformList(links: ArchiveLink[] | undefined) {
+  return links?.length
+    ? Array.from(new Set(links.map((link) => link.platform || link.label))).join(", ")
+    : "";
 }
 
 export function sourceTitle(id: string) {
@@ -256,6 +288,7 @@ export function personCredits(personId: string) {
       .filter(([, ids]) => hasPerson(ids, personId))
       .map(([role]) => role);
     if (release.artist === personId) credits.unshift("artist");
+    if (hasPerson(release.artists, personId) && release.artist !== personId) credits.unshift("artist");
 
     return credits.length
       ? [{
@@ -387,7 +420,10 @@ export function buildSearchEntries(): SearchEntry[] {
       release.releaseType,
       release.releaseDate,
       release.label,
-      personName(release.artist),
+      releaseArtists(release),
+      releaseProducers(release),
+      release.formats.join(" "),
+      linkPlatformList(release.availability?.streaming),
       ...release.tracks.flatMap((track) => [
         track.titleOnRelease,
         personNames(track.credits.lyricsBy),
@@ -448,7 +484,12 @@ export function buildSearchEntries(): SearchEntry[] {
       concert.city,
       concert.countryOrRegion,
       personNames(concert.guests),
-      ...concert.setlist.map((entry) => entry.titlePerformed)
+      linkPlatformList(concert.mediaLinks),
+      ...concert.setlist.flatMap((entry) => [
+        entry.titlePerformed,
+        entry.originalPerformer,
+        linkPlatformList(entry.mediaLinks)
+      ])
     ])
   }));
 
@@ -466,7 +507,12 @@ export function buildSearchEntries(): SearchEntry[] {
       show.episode,
       show.platform,
       personNames(show.collaborators),
-      ...show.performedSongs.map((entry) => entry.titlePerformed)
+      linkPlatformList(show.mediaLinks),
+      ...show.performedSongs.flatMap((entry) => [
+        entry.titlePerformed,
+        entry.originalPerformer,
+        linkPlatformList(entry.mediaLinks)
+      ])
     ])
   }));
 

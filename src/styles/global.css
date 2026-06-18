@@ -477,6 +477,53 @@ details[open].record-card summary::after {
   text-transform: uppercase;
 }
 
+.meta-highlight {
+  color: var(--accent);
+  font-weight: 680;
+}
+
+.availability-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.6rem;
+  margin-top: 0.9rem;
+}
+
+.availability-row span {
+  align-items: center;
+  color: var(--muted);
+  display: inline-flex;
+  font-size: 0.7rem;
+  font-weight: 620;
+  gap: 0.35rem;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.availability-row span::before {
+  border: 1px solid var(--line);
+  content: "";
+  display: inline-block;
+  height: 0.62rem;
+  width: 0.62rem;
+}
+
+.availability-row span.available {
+  color: var(--ink);
+}
+
+.availability-row span.available::before {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 2px var(--bg);
+}
+
+.availability-row-detail {
+  border-top: 1px solid var(--line-soft);
+  padding-top: 0.8rem;
+}
+
 .status {
   color: var(--muted);
   display: inline-flex;
@@ -555,6 +602,15 @@ details[open].record-card summary::after {
   font-weight: 620;
   letter-spacing: 0.08em;
   margin: 1.2rem 0 0.4rem;
+  text-transform: uppercase;
+}
+
+.link-list h3 {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 620;
+  letter-spacing: 0.08em;
+  margin: 1rem 0 0.4rem;
   text-transform: uppercase;
 }
 

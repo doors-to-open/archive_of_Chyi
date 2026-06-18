@@ -15,10 +15,10 @@
     "slug": "sanmao",
     "displayName": "Sanmao",
     "nameOriginal": "三毛",
-    "aliases": [],
+    "aliases": ["Chen Ping", "陳平", "陈平"],
     "roles": ["lyricist", "writer"],
-    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
-    "notes": "Credited as lyricist for 'The Olive Tree' in the starter sources.",
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-yue-olive-tree-album", "source-wikipedia-yue-echo-album"],
+    "notes": "Writer whose lyrics and spoken text are central to several seed records.",
     "status": "partial"
   },
   {
@@ -27,9 +27,9 @@
     "displayName": "Li Tai-hsiang",
     "nameOriginal": "李泰祥",
     "aliases": ["Li Taixiang"],
-    "roles": ["composer", "lyricist"],
-    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
-    "notes": "Credited as composer for several sample records.",
+    "roles": ["composer", "lyricist", "arranger"],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-yue-olive-tree-album", "source-wikipedia-yue-echo-album"],
+    "notes": "Composer/arranger repeatedly credited in early Chyi Yu records.",
     "status": "partial"
   },
   {
@@ -39,9 +39,239 @@
     "nameOriginal": "蓉子",
     "aliases": [],
     "roles": ["lyricist"],
-    "sources": ["source-wikipedia-zh-olive-tree-album"],
+    "sources": ["source-wikipedia-yue-olive-tree-album"],
     "notes": "Credited as lyricist for '青夢湖' in the starter release source.",
     "status": "partial"
+  },
+  {
+    "id": "person-pan-yue-yun",
+    "slug": "pan-yue-yun",
+    "displayName": "Pan Yue-yun",
+    "nameOriginal": "潘越雲",
+    "aliases": ["Michelle Pan", "潘越云"],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-yue-echo-album", "source-apple-music-echo"],
+    "notes": "Co-performer on Echo.",
+    "status": "partial"
+  },
+  {
+    "id": "person-chen-chih-yuan",
+    "slug": "chen-chih-yuan",
+    "displayName": "Chen Chih-yuan",
+    "nameOriginal": "陳志遠",
+    "aliases": ["Chen Zhiyuan"],
+    "roles": ["composer", "arranger"],
+    "sources": ["source-wikipedia-yue-echo-album"],
+    "notes": "Credited on the Echo track listing.",
+    "status": "partial"
+  },
+  {
+    "id": "person-li-tsung-sheng",
+    "slug": "li-tsung-sheng",
+    "displayName": "Jonathan Lee",
+    "nameOriginal": "李宗盛",
+    "aliases": ["Li Tsung-sheng", "Li Zongsheng"],
+    "roles": ["composer", "lyricist", "producer"],
+    "sources": ["source-wikipedia-yue-echo-album"],
+    "notes": "Credited as composer on Echo.",
+    "status": "partial"
+  },
+  {
+    "id": "person-weng-hsiao-liang",
+    "slug": "weng-hsiao-liang",
+    "displayName": "Weng Hsiao-liang",
+    "nameOriginal": "翁孝良",
+    "aliases": ["Weng Xiaoliang"],
+    "roles": ["composer"],
+    "sources": ["source-wikipedia-yue-echo-album"],
+    "notes": "Credited as composer on Echo.",
+    "status": "partial"
+  },
+  {
+    "id": "person-wang-hsin-lien",
+    "slug": "wang-hsin-lien",
+    "displayName": "Wang Hsin-lien",
+    "nameOriginal": "王新蓮",
+    "aliases": ["Wang Xinlian"],
+    "roles": ["composer", "producer"],
+    "sources": ["source-wikipedia-yue-echo-album"],
+    "notes": "Credited as composer on Echo; also cited in source notes about the album.",
+    "status": "partial"
+  },
+  {
+    "id": "person-chen-yang",
+    "slug": "chen-yang",
+    "displayName": "Chen Yang",
+    "nameOriginal": "陳揚",
+    "aliases": [],
+    "roles": ["composer", "arranger"],
+    "sources": ["source-wikipedia-yue-echo-album"],
+    "notes": "Credited on the Echo track listing.",
+    "status": "partial"
+  },
+  {
+    "id": "person-lee-tai-ming",
+    "slug": "lee-tai-ming",
+    "displayName": "Lee Tai-ming",
+    "nameOriginal": "李泰銘",
+    "aliases": ["Li Taiming"],
+    "roles": ["composer", "arranger"],
+    "sources": ["source-wikipedia-yue-echo-album", "source-wikipedia-yue-camel-bird-fish"],
+    "notes": "Credited on Echo and Camel Bird Fish.",
+    "status": "partial"
+  },
+  {
+    "id": "person-chi-chin",
+    "slug": "chi-chin",
+    "displayName": "Chyi Chin",
+    "nameOriginal": "齊秦",
+    "aliases": ["Qi Qin", "齐秦"],
+    "roles": ["composer", "vocalist"],
+    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "notes": "Credited as composer on Camel Bird Fish.",
+    "status": "partial"
+  },
+  {
+    "id": "person-hsu-chang-te",
+    "slug": "hsu-chang-te",
+    "displayName": "Hsu Chang-te",
+    "nameOriginal": "許常德",
+    "aliases": ["Xu Changde", "许常德"],
+    "roles": ["lyricist"],
+    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "notes": "Credited as lyricist on Camel Bird Fish.",
+    "status": "partial"
+  },
+  {
+    "id": "person-kuo-tzu",
+    "slug": "kuo-tzu",
+    "displayName": "Kuo Tzu",
+    "nameOriginal": "郭子",
+    "aliases": ["Guo Zi"],
+    "roles": ["composer"],
+    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "notes": "Credited as composer on Camel Bird Fish.",
+    "status": "partial"
+  },
+  {
+    "id": "person-li-ge-di",
+    "slug": "li-ge-di",
+    "displayName": "Li Ge-di",
+    "nameOriginal": "李格弟",
+    "aliases": ["Xia Yu", "夏宇"],
+    "roles": ["lyricist"],
+    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "notes": "Credited as lyricist on Camel Bird Fish.",
+    "status": "partial"
+  },
+  {
+    "id": "person-wu-bai",
+    "slug": "wu-bai",
+    "displayName": "Wu Bai",
+    "nameOriginal": "吳俊霖",
+    "aliases": ["伍佰", "Wu Junlin"],
+    "roles": ["composer", "original performer"],
+    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "notes": "Credited by given name on Camel Bird Fish.",
+    "status": "partial"
+  },
+  {
+    "id": "person-huang-shu-chun",
+    "slug": "huang-shu-chun",
+    "displayName": "Huang Shu-chun",
+    "nameOriginal": "黃舒駿",
+    "aliases": ["Huang Shujun"],
+    "roles": ["composer", "lyricist"],
+    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "notes": "Credited as writer/composer on Camel Bird Fish.",
+    "status": "partial"
+  },
+  {
+    "id": "person-lin-xi",
+    "slug": "lin-xi",
+    "displayName": "Lin Xi",
+    "nameOriginal": "林夕",
+    "aliases": [],
+    "roles": ["lyricist"],
+    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "notes": "Credited as lyricist on Camel Bird Fish.",
+    "status": "partial"
+  },
+  {
+    "id": "person-wu-tsing-fong",
+    "slug": "wu-tsing-fong",
+    "displayName": "Wu Tsing-fong",
+    "nameOriginal": "吳青峰",
+    "aliases": ["Wu Qing-feng", "吴青峰"],
+    "roles": ["vocalist", "guest"],
+    "sources": ["source-bilibili-grace-still-beijing-full", "source-baike-singer-2019"],
+    "notes": "Guest at the 2025 Beijing concert and participant/host figure in Singer 2019.",
+    "status": "partial"
+  },
+  {
+    "id": "person-yang-nai-wen",
+    "slug": "yang-nai-wen",
+    "displayName": "Faith Yang",
+    "nameOriginal": "楊乃文",
+    "aliases": ["Yang Naiwen", "杨乃文"],
+    "roles": ["vocalist", "original performer"],
+    "sources": ["source-bilibili-grace-still-beijing-full", "source-baike-singer-2019"],
+    "notes": "Original performer noted for '祝我幸福' in the 2025 Beijing concert source.",
+    "status": "partial"
+  },
+  {
+    "id": "person-liu-huan",
+    "slug": "liu-huan",
+    "displayName": "Liu Huan",
+    "nameOriginal": "劉歡",
+    "aliases": ["刘欢"],
+    "roles": ["vocalist"],
+    "sources": ["source-baike-singer-2019"],
+    "notes": "Singer 2019 participant.",
+    "status": "partial"
+  },
+  {
+    "id": "person-yang-kun",
+    "slug": "yang-kun",
+    "displayName": "Yang Kun",
+    "nameOriginal": "楊坤",
+    "aliases": ["杨坤"],
+    "roles": ["vocalist"],
+    "sources": ["source-baike-singer-2019"],
+    "notes": "Singer 2019 participant.",
+    "status": "partial"
+  },
+  {
+    "id": "person-hung-hsiao",
+    "slug": "hung-hsiao",
+    "displayName": "Hong Xiao",
+    "nameOriginal": "洪嘯",
+    "aliases": ["洪啸"],
+    "roles": ["director", "producer"],
+    "sources": ["source-baike-singer-2019"],
+    "notes": "Director/producer listed for Singer 2019.",
+    "status": "partial"
+  },
+  {
+    "id": "person-leung-kiu-pak",
+    "slug": "leung-kiu-pak",
+    "displayName": "Leung Kiu-pak",
+    "nameOriginal": "梁翹柏",
+    "aliases": ["梁翘柏", "Kubert Leung"],
+    "roles": ["music director"],
+    "sources": ["source-baike-singer-2019"],
+    "notes": "Music director for Singer 2019.",
+    "status": "partial"
+  },
+  {
+    "id": "person-mabel-cheung",
+    "slug": "mabel-cheung",
+    "displayName": "Mabel Cheung",
+    "nameOriginal": "張婉婷",
+    "aliases": ["张婉婷"],
+    "roles": ["director"],
+    "sources": ["source-user-task-0618-1"],
+    "notes": "Director of Eight Taels of Gold, included from the curated task note pending stronger source expansion.",
+    "status": "needs-source"
   }
 ]
-

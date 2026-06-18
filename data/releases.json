@@ -4,18 +4,41 @@
     "slug": "olive-tree-1979",
     "title": "The Olive Tree",
     "titleOriginal": "橄欖樹",
-    "releaseDate": "1979",
+    "releaseDate": "1979-02",
     "releaseType": "studio-album",
     "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
     "label": "新格唱片",
     "catalogNumber": null,
-    "formats": [],
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "Apple Music",
+          "platform": "apple-music",
+          "url": "https://music.apple.com/tw/album/%E6%A9%84%E6%AC%96%E6%A8%B9/1894989610",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "Taiwan"
+        },
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/002usJY80bBhex",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
     "tracks": [
       {
         "position": 1,
         "song": "song-olive-tree",
         "titleOnRelease": "橄欖樹",
-        "duration": null,
+        "duration": "3:44",
         "versionNote": null,
         "credits": {
           "lyricsBy": ["person-sanmao"],
@@ -26,7 +49,7 @@
         "position": 2,
         "song": null,
         "titleOnRelease": "青夢湖",
-        "duration": null,
+        "duration": "3:35",
         "versionNote": "Song record not modeled yet.",
         "credits": {
           "lyricsBy": ["person-rongzi"],
@@ -36,8 +59,8 @@
       {
         "position": 3,
         "song": null,
-        "titleOnRelease": "愛之死 (演奏)",
-        "duration": null,
+        "titleOnRelease": "愛之死 (Instrumental)",
+        "duration": "2:43",
         "versionNote": "Instrumental track; song record not modeled yet.",
         "credits": {
           "lyricsBy": [],
@@ -46,10 +69,10 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-answer",
         "titleOnRelease": "答案",
-        "duration": null,
-        "versionNote": "Song record not modeled yet.",
+        "duration": "3:03",
+        "versionNote": null,
         "credits": {
           "lyricsBy": [],
           "composedBy": ["person-li-tai-hsiang"]
@@ -59,7 +82,7 @@
         "position": 5,
         "song": null,
         "titleOnRelease": "我在夢中哭泣了",
-        "duration": null,
+        "duration": "3:52",
         "versionNote": "Song record not modeled yet.",
         "credits": {
           "lyricsBy": ["person-li-tai-hsiang"],
@@ -70,7 +93,7 @@
         "position": 6,
         "song": null,
         "titleOnRelease": "搖籃曲",
-        "duration": null,
+        "duration": "2:26",
         "versionNote": "Song record not modeled yet.",
         "credits": {
           "lyricsBy": [],
@@ -81,7 +104,7 @@
         "position": 7,
         "song": "song-your-smiling-face",
         "titleOnRelease": "歡顏",
-        "duration": null,
+        "duration": "3:47",
         "versionNote": null,
         "credits": {
           "lyricsBy": [],
@@ -92,7 +115,7 @@
         "position": 8,
         "song": "song-walking-in-the-rain",
         "titleOnRelease": "走在雨中",
-        "duration": null,
+        "duration": "3:44",
         "versionNote": null,
         "credits": {
           "lyricsBy": ["person-li-tai-hsiang"],
@@ -103,7 +126,7 @@
         "position": 9,
         "song": null,
         "titleOnRelease": "愛的世界",
-        "duration": null,
+        "duration": "2:57",
         "versionNote": "Song record not modeled yet.",
         "credits": {
           "lyricsBy": ["person-li-tai-hsiang"],
@@ -114,7 +137,7 @@
         "position": 10,
         "song": null,
         "titleOnRelease": "預感",
-        "duration": null,
+        "duration": "2:12",
         "versionNote": "Song record not modeled yet.",
         "credits": {
           "lyricsBy": ["person-li-tai-hsiang"],
@@ -124,8 +147,8 @@
       {
         "position": 11,
         "song": null,
-        "titleOnRelease": "追逐與重逢 (演奏)",
-        "duration": null,
+        "titleOnRelease": "追逐與重逢 (Instrumental)",
+        "duration": "2:39",
         "versionNote": "Instrumental track; song record not modeled yet.",
         "credits": {
           "lyricsBy": [],
@@ -135,8 +158,8 @@
       {
         "position": 12,
         "song": "song-your-smiling-face",
-        "titleOnRelease": "歡顏 (演奏)",
-        "duration": null,
+        "titleOnRelease": "歡顏 (Instrumental)",
+        "duration": "3:56",
         "versionNote": "Instrumental version.",
         "credits": {
           "lyricsBy": [],
@@ -147,9 +170,469 @@
     "credits": {
       "vocalist": ["person-chyi-yu"]
     },
-    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-olive-tree-album"],
-    "notes": "Starter release record. Release month, catalog number, formats, and official track metadata still need primary-source verification.",
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-yue-olive-tree-album", "source-apple-music-olive-tree", "source-qq-music-olive-tree"],
+    "notes": "Producer and original physical formats remain unknown. The supplied encyclopedia page has a likely swapped title-track lyric/music field, so that credit still needs official booklet verification.",
+    "status": "partial"
+  },
+  {
+    "id": "release-echo-1985",
+    "slug": "echo-1985",
+    "title": "Echo",
+    "titleOriginal": "回聲 三毛作品第15號",
+    "releaseDate": "1985-11-19",
+    "releaseType": "collaboration",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu", "person-pan-yue-yun"],
+    "label": "滾石唱片",
+    "catalogNumber": null,
+    "formats": ["cassette", "vinyl", "CD"],
+    "availability": {
+      "physical": ["cassette", "vinyl", "CD"],
+      "streaming": [
+        {
+          "label": "Apple Music",
+          "platform": "apple-music",
+          "url": "https://music.apple.com/tw/album/%E5%9B%9E%E8%81%B2/152297986",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "Taiwan"
+        },
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/001jRXdc1hQz0m",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "軌外",
+        "duration": "3:43",
+        "versionNote": "Includes Sanmao spoken narration.",
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-lee-tai-ming"]
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "謎",
+        "duration": "2:54",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-weng-hsiao-liang"]
+        }
+      },
+      {
+        "position": 3,
+        "song": "song-seven-oclock",
+        "titleOnRelease": "七點鐘",
+        "duration": "3:43",
+        "versionNote": "Listed as 七點鐘（今生） in the encyclopedia source.",
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-li-tsung-sheng"]
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "飛",
+        "duration": "3:42",
+        "versionNote": "Performed by Pan Yue-yun.",
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-li-tsung-sheng"]
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "曉夢蝴蝶",
+        "duration": "3:00",
+        "versionNote": "Performed by Pan Yue-yun.",
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-chen-chih-yuan"]
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "沙漠",
+        "duration": "5:36",
+        "versionNote": "Includes Sanmao spoken narration.",
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titleOnRelease": "今世",
+        "duration": "6:04",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "孀",
+        "duration": "5:42",
+        "versionNote": "Includes Sanmao spoken narration.",
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-chen-yang"]
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "說給自己聽",
+        "duration": "4:17",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-lee-tai-ming"]
+        }
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "遠方",
+        "duration": "3:19",
+        "versionNote": "Includes Sanmao spoken narration; performed by Pan Yue-yun.",
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-wang-hsin-lien"]
+        }
+      },
+      {
+        "position": 11,
+        "song": "song-dream-field",
+        "titleOnRelease": "夢田",
+        "duration": "3:03",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-weng-hsiao-liang"]
+        }
+      }
+    ],
+    "credits": {
+      "vocalist": ["person-chyi-yu", "person-pan-yue-yun"]
+    },
+    "sources": ["source-wikipedia-yue-echo-album", "source-apple-music-echo", "source-qq-music-echo"],
+    "notes": "Co-performed with Pan Yue-yun. The supplied encyclopedia source says the album was first released on cassette and vinyl, then reissued on CD the following January.",
+    "status": "partial"
+  },
+  {
+    "id": "release-camel-bird-fish-1997",
+    "slug": "camel-bird-fish-1997",
+    "title": "Camel Bird Fish",
+    "titleOriginal": "駱駝‧飛鳥‧魚",
+    "releaseDate": "1997-12-09",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "滾石唱片",
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "Apple Music",
+          "platform": "apple-music",
+          "url": "https://music.apple.com/tw/album/%E9%A7%B1%E9%A7%9D-%E9%A3%9B%E9%B3%A5-%E9%AD%9A/161876832",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "Taiwan"
+        },
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/001PHmmB1HBpFn",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-flying-bird-and-fish",
+        "titleOnRelease": "飛鳥與魚",
+        "duration": "4:35",
+        "versionNote": "Title appears as 飛魚與鳥 in the encyclopedia track template.",
+        "credits": {
+          "lyricsBy": ["person-chyi-yu"],
+          "composedBy": ["person-chi-chin"]
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "覺 (遙寄林覺民)",
+        "duration": "4:41",
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-hsu-chang-te", "person-chyi-yu"],
+          "composedBy": ["person-kuo-tzu"]
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "有沒有",
+        "duration": "4:26",
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-chyi-yu"],
+          "composedBy": ["person-chi-chin"]
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "既然你問起",
+        "duration": "6:22",
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-li-ge-di"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "女人與小孩 I",
+        "duration": "4:01",
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-li-ge-di"],
+          "composedBy": ["person-wu-bai"]
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "話題",
+        "duration": "4:24",
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-huang-shu-chun"],
+          "composedBy": ["person-huang-shu-chun"]
+        }
+      },
+      {
+        "position": 7,
+        "song": "song-crying-camel",
+        "titleOnRelease": "哭泣的駱駝",
+        "duration": "4:00",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-hsu-chang-te"],
+          "composedBy": ["person-kuo-tzu"]
+        }
+      },
+      {
+        "position": 8,
+        "song": "song-happiness",
+        "titleOnRelease": "幸福",
+        "duration": "4:15",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-chyi-yu"],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "懶洋洋",
+        "duration": "4:33",
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-lin-xi"],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "四十個無親無故的年頭",
+        "duration": "4:53",
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-chyi-yu"],
+          "composedBy": ["person-lee-tai-ming"]
+        }
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titleOnRelease": "嘆息瓶",
+        "duration": "7:15",
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-li-ge-di"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 12,
+        "song": null,
+        "titleOnRelease": "女人與小孩 II",
+        "duration": "4:07",
+        "versionNote": "Song record not modeled yet.",
+        "credits": {
+          "lyricsBy": ["person-li-ge-di"],
+          "composedBy": ["person-wu-bai"]
+        }
+      }
+    ],
+    "credits": {
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-yue-camel-bird-fish", "source-apple-music-camel-bird-fish", "source-qq-music-camel-bird-fish"],
+    "notes": "Producer and physical-format details remain unknown. Apple Music and QQ Music confirm current streaming availability.",
+    "status": "partial"
+  },
+  {
+    "id": "release-the-unheard-of-chyi-2003",
+    "slug": "the-unheard-of-chyi-2003",
+    "title": "The Unheard Of Chyi",
+    "releaseDate": "2003-04-01",
+    "releaseType": "live-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "滾石唱片",
+    "catalogNumber": null,
+    "formats": ["CD", "DVD"],
+    "availability": {
+      "physical": ["CD", "DVD"],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/000tfZ2r2SzQJw",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "Opening",
+        "duration": null,
+        "versionNote": "Live concert program track.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": "song-walking-in-the-rain",
+        "titleOnRelease": "走在雨中",
+        "duration": null,
+        "versionNote": "Live version.",
+        "credits": {
+          "lyricsBy": ["person-li-tai-hsiang"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 3,
+        "song": "song-olive-tree",
+        "titleOnRelease": "橄欖樹",
+        "duration": null,
+        "versionNote": "Live version.",
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 4,
+        "song": "song-seven-oclock",
+        "titleOnRelease": "七點鐘",
+        "duration": null,
+        "versionNote": "Live version.",
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-li-tsung-sheng"]
+        }
+      },
+      {
+        "position": 5,
+        "song": "song-boat-song",
+        "titleOnRelease": "船歌",
+        "duration": null,
+        "versionNote": "Live version.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 6,
+        "song": "song-answer",
+        "titleOnRelease": "答案",
+        "duration": null,
+        "versionNote": "Live version.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 7,
+        "song": "song-flying-bird-and-fish",
+        "titleOnRelease": "飛鳥與魚",
+        "duration": null,
+        "versionNote": "Live version.",
+        "credits": {
+          "lyricsBy": ["person-chyi-yu"],
+          "composedBy": ["person-chi-chin"]
+        }
+      },
+      {
+        "position": 8,
+        "song": "song-your-smiling-face",
+        "titleOnRelease": "歡顏",
+        "duration": null,
+        "versionNote": "Live version.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      }
+    ],
+    "credits": {
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-unheard-full-480p", "source-bilibili-unheard-chapters", "source-qq-music-unheard-of-chyi"],
+    "notes": "Modeled separately from the 2002 Hong Kong concert event. QQ Music search metadata shows The Unheard Of Chyi as a 2003-04-01 album with 37 tracks, but full official track metadata still needs source expansion.",
     "status": "partial"
   }
 ]
-

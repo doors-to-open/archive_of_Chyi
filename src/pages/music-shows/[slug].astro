@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import {
   byId,
+  linkPlatformList,
   musicShows,
   personNames,
   releasesForSong,
@@ -53,6 +54,24 @@ const linkedSources = sourceRecords(show.sources);
       </dl>
     </article>
 
+    <section class="section detail-panel">
+      <h2>Watch links</h2>
+      {show.mediaLinks.length ? (
+        <div class="link-list">
+          {show.mediaLinks.map((link) => (
+            <p>
+              <a href={link.url}>{link.label}</a>
+              {link.platform ? ` / ${link.platform}` : ""}
+              {link.accessRegion ? ` / ${link.accessRegion}` : ""}
+              {link.isOfficial === false ? " / fan upload" : ""}
+            </p>
+          ))}
+        </div>
+      ) : (
+        <p class="empty-state">No watch links recorded.</p>
+      )}
+    </section>
+
     <section class="section">
       <div class="section-header">
         <h2>Songs</h2>
@@ -78,6 +97,7 @@ const linkedSources = sourceRecords(show.sources);
                   </>
                 ) : null}
                 {entry.collaborators?.length ? <p>Collaborators: {personNames(entry.collaborators)}</p> : null}
+                {entry.originalPerformer ? <p>Original performer: {entry.originalPerformer}</p> : null}
                 {linkedReleases.length ? (
                   <div>
                     <h3>Release links</h3>
@@ -89,7 +109,13 @@ const linkedSources = sourceRecords(show.sources);
                 {entry.mediaLinks?.length ? (
                   <div>
                     <h3>Clip links</h3>
-                    {entry.mediaLinks.map((link) => <p>{link}</p>)}
+                    {entry.mediaLinks.map((link) => (
+                      <p>
+                        <a href={link.url}>{link.label}</a>
+                        {linkPlatformList([link]) ? ` / ${linkPlatformList([link])}` : ""}
+                        {link.isOfficial === false ? " / fan upload" : ""}
+                      </p>
+                    ))}
                   </div>
                 ) : (
                   <p class="muted">No clip links added yet.</p>

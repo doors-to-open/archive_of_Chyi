@@ -1,6 +1,13 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { personName, personNames, releases } from "../../lib/archive";
+import {
+  linkPlatformList,
+  personName,
+  personNames,
+  releaseArtists,
+  releaseProducers,
+  releases
+} from "../../lib/archive";
 
 const releaseTypes = Array.from(new Set(releases.map((release) => release.releaseType))).sort();
 
@@ -11,7 +18,10 @@ function releaseSearchText(release: (typeof releases)[number]) {
     release.releaseDate,
     release.releaseType,
     release.label,
-    personName(release.artist),
+    releaseArtists(release),
+    releaseProducers(release),
+    release.formats.join(" "),
+    linkPlatformList(release.availability?.streaming),
     ...release.tracks.flatMap((track) => [
       track.titleOnRelease,
       track.versionNote,
@@ -59,8 +69,18 @@ function releaseSearchText(release: (typeof releases)[number]) {
           <h2>{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h2>
           <p>{release.releaseDate || "Date unknown"} / {release.releaseType}</p>
           <div class="meta-row">
-            <span>{personName(release.artist)}</span>
+            {releaseProducers(release) ? <span>Producer: {releaseProducers(release)}</span> : null}
+            <span class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""}>
+              {releaseArtists(release) || personName(release.artist)}
+            </span>
             <span>{release.tracks.length} tracks</span>
+          </div>
+          <div class="availability-row" aria-label="Availability summary">
+            <span class={release.formats.includes("CD") ? "available" : ""}>CD</span>
+            <span class={release.formats.includes("vinyl") ? "available" : ""}>Vinyl</span>
+            <span class={release.formats.includes("cassette") ? "available" : ""}>Cassette</span>
+            <span class={release.availability?.streaming?.length ? "available" : ""}>Streaming</span>
+            <span class={release.availability?.purchase?.length ? "available" : ""}>Buy</span>
           </div>
         </a>
       ))}

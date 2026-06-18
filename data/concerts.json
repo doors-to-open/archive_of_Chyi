@@ -1,41 +1,709 @@
 [
   {
-    "id": "concert-the-unheard-of-chyi-2003-live-album",
-    "slug": "the-unheard-of-chyi-2003-live-album",
-    "title": "The Unheard of Chyi",
-    "date": "2003",
-    "venue": null,
-    "city": null,
-    "countryOrRegion": null,
-    "eventType": "live-album",
+    "id": "concert-unheard-of-chyi-2002-hong-kong",
+    "slug": "unheard-of-chyi-2002-hong-kong",
+    "title": "The Unheard of Chyi / 音樂難得有奇遇演唱會",
+    "date": "2002-09-20/2002-09-21",
+    "venue": "Hong Kong Coliseum",
+    "city": "Hong Kong",
+    "countryOrRegion": "Hong Kong",
+    "eventType": "concert",
     "guests": [],
     "setlist": [
       {
-        "position": null,
+        "position": 1,
+        "song": null,
+        "titlePerformed": "Opening",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=1",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titlePerformed": "Forever",
+        "originalPerformer": "Stratovarius",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=2",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 3,
         "song": "song-walking-in-the-rain",
-        "titlePerformed": "Walking In the Rain",
+        "titlePerformed": "走在雨中",
         "collaborators": [],
-        "mediaLinks": []
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=3",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
       },
       {
-        "position": null,
+        "position": 4,
         "song": "song-olive-tree",
-        "titlePerformed": "The Olive Tree",
+        "titlePerformed": "橄欖樹",
         "collaborators": [],
-        "mediaLinks": []
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=4",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
       },
       {
-        "position": null,
-        "song": "song-your-smiling-face",
-        "titlePerformed": "Your Smiling Face",
+        "position": 5,
+        "song": null,
+        "titlePerformed": "有沒有這種說法",
         "collaborators": [],
-        "mediaLinks": []
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=5",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titlePerformed": "Whoever Finds This, I Love You",
+        "originalPerformer": "Mac Davis",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=6",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titlePerformed": "九月的高跟鞋",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=7",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 8,
+        "song": "song-stories",
+        "titlePerformed": "Stories",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=8",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titlePerformed": "祝福",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=9",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 10,
+        "song": "song-li-xianglan",
+        "titlePerformed": "李香蘭",
+        "originalPerformer": "Jacky Cheung",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=10",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 11,
+        "song": "song-zui-ai",
+        "titlePerformed": "最愛",
+        "originalPerformer": "Chow Yun-fat",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=11",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 12,
+        "song": "song-seven-oclock",
+        "titlePerformed": "七點鐘",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili parts",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=12",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ],
+        "notes": "The chaptered upload splits this song across p=12 and p=13."
+      },
+      {
+        "position": 13,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=14",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 14,
+        "song": null,
+        "titlePerformed": "All Souls Night",
+        "originalPerformer": "Loreena McKennitt",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=15",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 15,
+        "song": null,
+        "titlePerformed": "Moon Night Flower",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=16",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 16,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=17",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 17,
+        "song": "song-vincent",
+        "titlePerformed": "Vincent",
+        "originalPerformer": "Don McLean",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=18",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 18,
+        "song": null,
+        "titlePerformed": "Where Have All the Flowers Gone?",
+        "originalPerformer": "Pete Seeger",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=19",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 19,
+        "song": null,
+        "titlePerformed": "春天的故事",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=20",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 20,
+        "song": null,
+        "titlePerformed": "Wind Flowers",
+        "originalPerformer": "Seals and Crofts",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=21",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 21,
+        "song": "song-flying-bird-and-fish",
+        "titlePerformed": "飛鳥與魚",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=22",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 22,
+        "song": null,
+        "titlePerformed": "C'est La Vie",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=23",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 23,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "歡顏",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=24",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 24,
+        "song": null,
+        "titlePerformed": "Memory",
+        "originalPerformer": "Elaine Paige",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=25",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 25,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹（清唱版）",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1Tg4y167V2/?p=26",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
       }
     ],
-    "mediaLinks": [],
-    "sources": ["source-wikipedia-en-chyi-yu"],
-    "sourceQuality": "secondary",
-    "notes": "Modeled as a partial concert-related record based on the 2003 live concert album listing. Exact concert metadata should be verified before treating this as a specific event.",
+    "mediaLinks": [
+      {
+        "label": "Full fan upload, HD",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1iq4y157JH/",
+        "kind": "video",
+        "isOfficial": false
+      },
+      {
+        "label": "Full fan upload, 480P",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Kx411k7df/",
+        "kind": "video",
+        "isOfficial": false
+      },
+      {
+        "label": "Chaptered fan upload",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Tg4y167V2/",
+        "kind": "video",
+        "isOfficial": false
+      },
+      {
+        "label": "Related live album",
+        "platform": "internal",
+        "url": "/releases/the-unheard-of-chyi-2003/",
+        "kind": "release-link",
+        "isOfficial": true
+      }
+    ],
+    "officialRecording": true,
+    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-unheard-full-480p", "source-bilibili-unheard-chapters"],
+    "sourceQuality": "fan-upload-with-release-context",
+    "notes": "Modeled as one concert item because the supplied source gives the concert as a two-day Hong Kong Coliseum run, but does not distinguish per-day setlists. Official DVD/live-album material is represented separately under Releases; this concert page emphasizes fan-uploaded show material.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-grace-still-beijing-2025",
+    "slug": "grace-still-beijing-2025",
+    "title": "Grace Still / 風采依舊·在 Beijing",
+    "date": "2025-11-22",
+    "venue": "Beijing Exhibition Theater",
+    "city": "Beijing",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "guests": ["person-wu-tsing-fong"],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-this-world-so-many-people",
+        "titlePerformed": "這世界那麼多人",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 2,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "歡顏",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 3,
+        "song": "song-walking-in-the-rain",
+        "titlePerformed": "走在雨中",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titlePerformed": "菊嘆",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 5,
+        "song": "song-yu-si",
+        "titlePerformed": "雨絲",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Bilibili clip",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aEmhBtEjU/",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titlePerformed": "民歌組曲：如果 / 讓我們看雲去 / 捉泥鰍 / 蘭花草 / 童年 / 鄉間小路 / 外婆的澎湖灣 / 同桌的你 / 光陰的故事",
+        "collaborators": [],
+        "mediaLinks": [],
+        "notes": "Medley listed in the full-video description; component song identity records are not modeled yet."
+      },
+      {
+        "position": 7,
+        "song": "song-vincent",
+        "titlePerformed": "Vincent",
+        "originalPerformer": "Don McLean",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 8,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 9,
+        "song": "song-happiness",
+        "titlePerformed": "幸福",
+        "collaborators": ["person-wu-tsing-fong"],
+        "mediaLinks": []
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titlePerformed": "一念之間 - 在空中",
+        "collaborators": ["person-wu-tsing-fong"],
+        "mediaLinks": []
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titlePerformed": "祝我幸福",
+        "originalPerformer": "Faith Yang",
+        "collaborators": ["person-wu-tsing-fong"],
+        "mediaLinks": [],
+        "notes": "The source description marks this as Wu Tsing-fong covering Faith Yang."
+      },
+      {
+        "position": 12,
+        "song": null,
+        "titlePerformed": "棕髮少女",
+        "collaborators": ["person-wu-tsing-fong"],
+        "mediaLinks": []
+      },
+      {
+        "position": 13,
+        "song": "song-stories",
+        "titlePerformed": "Stories",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 14,
+        "song": "song-flying-bird-and-fish",
+        "titlePerformed": "飛鳥與魚",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 15,
+        "song": "song-zui-ai",
+        "titlePerformed": "最愛",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 16,
+        "song": null,
+        "titlePerformed": "時代組曲：綠島小夜曲 / 蘇州河邊 / 相思河畔 / 情人的眼淚",
+        "collaborators": [],
+        "mediaLinks": [],
+        "notes": "Medley listed in the full-video description; component song identity records are not modeled yet."
+      },
+      {
+        "position": 17,
+        "song": null,
+        "titlePerformed": "海上花",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 18,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 19,
+        "song": null,
+        "titlePerformed": "問佛",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 20,
+        "song": null,
+        "titlePerformed": "女人花",
+        "originalPerformer": "Anita Mui",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 21,
+        "song": "song-li-xianglan",
+        "titlePerformed": "李香蘭",
+        "originalPerformer": "Jacky Cheung",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Bilibili clip",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1RrUhBvELi/",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 22,
+        "song": null,
+        "titlePerformed": "九月的高跟鞋",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 23,
+        "song": null,
+        "titlePerformed": "你是我所有的回憶",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 24,
+        "song": null,
+        "titlePerformed": "一條日光大道",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 25,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 26,
+        "song": "song-seven-oclock",
+        "titlePerformed": "七點鐘",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 27,
+        "song": null,
+        "titlePerformed": "掌聲響起",
+        "collaborators": [],
+        "mediaLinks": []
+      },
+      {
+        "position": 28,
+        "song": "song-friendship",
+        "titlePerformed": "友誼地久天長",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Bilibili clip",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1T3UPBGEsf/",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      },
+      {
+        "position": 29,
+        "song": "song-this-world-so-many-people",
+        "titlePerformed": "這世界那麼多人",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Bilibili clip",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1T3UPBGEsf/",
+            "kind": "video",
+            "isOfficial": false
+          }
+        ]
+      }
+    ],
+    "mediaLinks": [
+      {
+        "label": "Full fan upload, 4K",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1shUABzErY/",
+        "kind": "video",
+        "isOfficial": false
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-bilibili-grace-still-beijing-full",
+      "source-bilibili-grace-still-beijing-clip-friendship",
+      "source-bilibili-grace-still-beijing-clip-li-xianglan",
+      "source-bilibili-grace-still-beijing-clip-yu-si"
+    ],
+    "sourceQuality": "fan-upload",
+    "notes": "Fan-upload metadata identifies the guest as Wu Tsing-fong and lists the full setlist. Official recording availability has not been found in this seed pass.",
     "status": "partial"
   }
 ]

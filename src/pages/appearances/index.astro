@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { appearances } from "../../lib/archive";
+import { appearances, linkPlatformList } from "../../lib/archive";
 
 const appearanceTypes = Array.from(
   new Set(appearances.map((appearance) => appearance.appearanceType))
@@ -14,7 +14,8 @@ function appearanceSearchText(appearance: (typeof appearances)[number]) {
     appearance.appearanceType,
     appearance.programOrWork,
     appearance.role,
-    appearance.notes
+    appearance.notes,
+    linkPlatformList(appearance.mediaLinks)
   ].filter(Boolean).join(" ");
 }
 ---
@@ -65,6 +66,9 @@ function appearanceSearchText(appearance: (typeof appearances)[number]) {
                 {appearance.programOrWork ? <p>{appearance.programOrWork}</p> : null}
                 {appearance.role ? <p>Role: {appearance.role}</p> : null}
                 {appearance.notes ? <p>{appearance.notes}</p> : null}
+                {appearance.mediaLinks.length ? (
+                  <p>Links: {appearance.mediaLinks.map((link) => link.label).join(", ")}</p>
+                ) : null}
               </div>
             </details>
           ))}

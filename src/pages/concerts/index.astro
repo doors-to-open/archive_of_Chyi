@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { byId, concerts, personNames, songs } from "../../lib/archive";
+import { byId, concerts, linkPlatformList, personNames, songs } from "../../lib/archive";
 
 const eventTypes = Array.from(new Set(concerts.map((concert) => concert.eventType))).sort();
 const sourceQualities = Array.from(
@@ -18,13 +18,16 @@ function concertSearchText(concert: (typeof concerts)[number]) {
     concert.eventType,
     concert.sourceQuality,
     personNames(concert.guests),
+    linkPlatformList(concert.mediaLinks),
     ...concert.setlist.flatMap((entry) => {
       const linkedSong = byId(songs, entry.song);
       return [
         entry.titlePerformed,
+        entry.originalPerformer,
         linkedSong?.title,
         linkedSong?.titleOriginal,
-        personNames(entry.collaborators)
+        personNames(entry.collaborators),
+        linkPlatformList(entry.mediaLinks)
       ];
     })
   ].filter(Boolean).join(" ");
@@ -88,10 +91,24 @@ function concertSearchText(concert: (typeof concerts)[number]) {
             ) : null}
             {concert.guests?.length ? <p>Guests: {personNames(concert.guests)}</p> : null}
             {concert.notes ? <p>{concert.notes}</p> : null}
+            <div class="availability-row" aria-label="Recording availability summary">
+              <span class={concert.officialRecording ? "available" : ""}>Official recording</span>
+              <span class={concert.mediaLinks.some((link) => link.kind === "video") ? "available" : ""}>Video</span>
+              <span class={concert.mediaLinks.some((link) => link.kind === "audio") ? "available" : ""}>Audio</span>
+              <span class={concert.setlist.some((entry) => entry.mediaLinks?.length) ? "available" : ""}>Clips</span>
+            </div>
 
             <h3>Show links</h3>
             {concert.mediaLinks.length ? (
-              <p>{concert.mediaLinks.join(", ")}</p>
+              <div class="link-list">
+                {concert.mediaLinks.map((link) => (
+                  <p>
+                    <a href={link.url}>{link.label}</a>
+                    {link.kind ? ` / ${link.kind}` : ""}
+                    {link.isOfficial === false ? " / fan upload" : ""}
+                  </p>
+                ))}
+              </div>
             ) : (
               <p class="muted">No show links added yet.</p>
             )}
@@ -104,8 +121,9 @@ function concertSearchText(concert: (typeof concerts)[number]) {
                   return (
                     <li>
                       <span>{entry.titlePerformed || linkedSong?.title || entry.song}</span>
+                      {entry.originalPerformer ? <span class="muted"> / original: {entry.originalPerformer}</span> : null}
                       {entry.collaborators?.length ? <span class="muted"> / with {personNames(entry.collaborators)}</span> : null}
-                      {entry.mediaLinks?.length ? <span class="muted"> / clips: {entry.mediaLinks.join(", ")}</span> : null}
+                      {entry.mediaLinks?.length ? <span class="muted"> / clips: {entry.mediaLinks.map((link) => link.label).join(", ")}</span> : null}
                     </li>
                   );
                 })}

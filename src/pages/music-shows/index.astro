@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { byId, musicShows, personNames, songs } from "../../lib/archive";
+import { byId, linkPlatformList, musicShows, personNames, songs } from "../../lib/archive";
 
 const platforms = Array.from(
   new Set(musicShows.map((show) => show.platform).filter(Boolean))
@@ -15,13 +15,16 @@ function showSearchText(show: (typeof musicShows)[number]) {
     show.episode,
     show.platform,
     personNames(show.collaborators),
+    linkPlatformList(show.mediaLinks),
     ...show.performedSongs.flatMap((entry) => {
       const linkedSong = byId(songs, entry.song);
       return [
         entry.titlePerformed,
+        entry.originalPerformer,
         linkedSong?.title,
         linkedSong?.titleOriginal,
-        personNames(entry.collaborators)
+        personNames(entry.collaborators),
+        linkPlatformList(entry.mediaLinks)
       ];
     })
   ].filter(Boolean).join(" ");
@@ -76,6 +79,9 @@ function showSearchText(show: (typeof musicShows)[number]) {
                 {show.episode ? <p>Episode: {show.episode}</p> : null}
                 {show.platform ? <p>Platform: {show.platform}</p> : null}
                 {show.collaborators.length ? <p>Collaborators: {personNames(show.collaborators)}</p> : null}
+                {show.mediaLinks.length ? (
+                  <p>Watch: {show.mediaLinks.map((link) => link.label).join(", ")}</p>
+                ) : null}
 
                 <h3>Songs</h3>
                 {show.performedSongs.length ? (
@@ -85,8 +91,9 @@ function showSearchText(show: (typeof musicShows)[number]) {
                       return (
                         <li>
                           <span>{entry.titlePerformed || linkedSong?.title || entry.song}</span>
+                          {entry.originalPerformer ? <span class="muted"> / original: {entry.originalPerformer}</span> : null}
                           {entry.collaborators?.length ? <span class="muted"> / with {personNames(entry.collaborators)}</span> : null}
-                          {entry.mediaLinks?.length ? <span class="muted"> / clips: {entry.mediaLinks.join(", ")}</span> : null}
+                          {entry.mediaLinks?.length ? <span class="muted"> / clips: {entry.mediaLinks.map((link) => link.label).join(", ")}</span> : null}
                         </li>
                       );
                     })}

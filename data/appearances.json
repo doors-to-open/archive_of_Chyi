@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "appearance-eight-taels-of-gold-ost",
+    "slug": "eight-taels-of-gold-ost",
+    "title": "Eight Taels of Gold soundtrack vocals",
+    "titleOriginal": "八兩金 原聲帶",
+    "date": "1989",
+    "appearanceType": "soundtrack",
+    "programOrWork": "Eight Taels of Gold",
+    "role": "OST vocal appearance",
+    "relatedSongs": ["song-boat-song", "song-red-cotton", "song-mess"],
+    "mediaLinks": [],
+    "sources": ["source-user-task-0618-1"],
+    "notes": "Task note says Chyi Yu had vocal appearances on 船歌, 紅棉, and 亂 for Mabel Cheung's Eight Taels of Gold soundtrack. Public/official soundtrack source and watch/listen links still need confirmation.",
+    "status": "needs-source"
+  },
+  {
+    "id": "appearance-kangsi-coming",
+    "slug": "kangsi-coming",
+    "title": "Kangsi Coming appearance",
+    "titleOriginal": "康熙來了",
+    "date": null,
+    "appearanceType": "talk-show",
+    "programOrWork": "Kangsi Coming",
+    "role": "Guest",
+    "relatedSongs": [],
+    "mediaLinks": [],
+    "sources": ["source-user-task-0618-1"],
+    "notes": "Mentioned in the task note. Exact episode date/title and official watch links still need sourcing.",
+    "status": "needs-source"
+  }
+]

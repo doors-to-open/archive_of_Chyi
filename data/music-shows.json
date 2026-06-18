@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "music-show-singer-2019",
+    "slug": "singer-2019",
+    "title": "Singer 2019",
+    "date": "2019-01-11/2019-04-12",
+    "program": "Singer 2019",
+    "episode": "Season record; episode-level Chyi Yu performances pending",
+    "platform": "Hunan TV / Mango TV",
+    "performedSongs": [],
+    "collaborators": ["person-liu-huan", "person-yang-kun", "person-wu-tsing-fong", "person-hung-hsiao", "person-leung-kiu-pak"],
+    "mediaLinks": [
+      {
+        "label": "Mango TV official channel",
+        "platform": "mango-tv",
+        "url": "http://www.mgtv.com/act/2019/gs/",
+        "kind": "watch",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
+      }
+    ],
+    "sources": ["source-baike-singer-2019", "source-wikipedia-zh-singer-2019"],
+    "sourceQuality": "secondary",
+    "notes": "Baidu Baike and Wikipedia confirm first broadcast on 2019-01-11, weekly Friday 22:00 on Hunan TV, Mango TV online playback, and Chyi Yu as a starting participant. Episode-level performed songs and original-performer notes still need extraction before statistics use.",
+    "status": "partial"
+  },
+  {
+    "id": "music-show-dream-star-partner-2013",
+    "slug": "dream-star-partner-2013",
+    "title": "Dream Star Partner",
+    "titleOriginal": "夢想星搭檔",
+    "date": "2013",
+    "program": "夢想星搭檔",
+    "episode": "Season/appearance record; exact Chyi Yu episode rows pending",
+    "platform": "CCTV",
+    "performedSongs": [],
+    "collaborators": ["person-chi-chin"],
+    "mediaLinks": [],
+    "sources": ["source-baike-dream-star-partner", "source-user-task-0618-1"],
+    "sourceQuality": "needs-review",
+    "notes": "Seed placeholder from the task note and supplied Baidu Baike URL. The exact broadcast dates, episode rows, and official watch links need manual confirmation because the source page was blocked by a security challenge during this pass.",
+    "status": "needs-source"
+  }
+]

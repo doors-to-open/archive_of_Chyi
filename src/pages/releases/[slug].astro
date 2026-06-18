@@ -7,6 +7,8 @@ import {
   musicShowsForSong,
   personName,
   personNames,
+  releaseArtists,
+  releaseProducers,
   releases,
   songs,
   sourceRecords
@@ -36,9 +38,17 @@ function peopleList(ids: string[]) {
     <article class="section detail-panel">
       <RecordStatus status={release.status} />
       <dl class="fact-lines">
+        {releaseProducers(release) ? (
+          <div>
+            <dt>Producer</dt>
+            <dd>{releaseProducers(release)}</dd>
+          </div>
+        ) : null}
         <div>
           <dt>Artist</dt>
-          <dd>{personName(release.artist)}</dd>
+          <dd class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""}>
+            {releaseArtists(release) || personName(release.artist)}
+          </dd>
         </div>
         <div>
           <dt>Date</dt>
@@ -52,8 +62,51 @@ function peopleList(ids: string[]) {
           <dt>Label</dt>
           <dd>{release.label || "Unknown"}</dd>
         </div>
+        <div>
+          <dt>Formats</dt>
+          <dd>{release.formats.length ? release.formats.join(", ") : "Unknown"}</dd>
+        </div>
       </dl>
+      <div class="availability-row availability-row-detail" aria-label="Availability summary">
+        <span class={release.formats.includes("CD") ? "available" : ""}>CD</span>
+        <span class={release.formats.includes("vinyl") ? "available" : ""}>Vinyl</span>
+        <span class={release.formats.includes("cassette") ? "available" : ""}>Cassette</span>
+        <span class={release.availability?.streaming?.length ? "available" : ""}>Streaming</span>
+        <span class={release.availability?.purchase?.length ? "available" : ""}>Buy</span>
+      </div>
     </article>
+
+    <section class="section detail-panel">
+      <h2>Availability</h2>
+      {release.availability?.streaming?.length ? (
+        <div class="link-list">
+          <h3>Streaming</h3>
+          {release.availability.streaming.map((link) => (
+            <p>
+              <a href={link.url}>{link.label}</a>
+              {link.accessRegion ? ` / ${link.accessRegion}` : ""}
+              {link.isOfficial === false ? " / unofficial" : ""}
+            </p>
+          ))}
+        </div>
+      ) : (
+        <p class="empty-state">No streaming links recorded.</p>
+      )}
+      {release.availability?.purchase?.length ? (
+        <div class="link-list">
+          <h3>Purchase</h3>
+          {release.availability.purchase.map((link) => (
+            <p>
+              <a href={link.url}>{link.label}</a>
+              {link.accessRegion ? ` / ${link.accessRegion}` : ""}
+              {link.isOfficial === false ? " / unofficial" : ""}
+            </p>
+          ))}
+        </div>
+      ) : (
+        <p class="muted">No official purchase links recorded.</p>
+      )}
+    </section>
 
     <section class="section">
       <div class="section-header">

@@ -43,6 +43,24 @@ const linkedSources = sourceRecords(appearance.sources);
     </article>
 
     <section class="section detail-panel">
+      <h2>Links</h2>
+      {appearance.mediaLinks.length ? (
+        <div class="link-list">
+          {appearance.mediaLinks.map((link) => (
+            <p>
+              <a href={link.url}>{link.label}</a>
+              {link.platform ? ` / ${link.platform}` : ""}
+              {link.accessRegion ? ` / ${link.accessRegion}` : ""}
+              {link.isOfficial === false ? " / fan upload" : ""}
+            </p>
+          ))}
+        </div>
+      ) : (
+        <p class="empty-state">No links recorded.</p>
+      )}
+    </section>
+
+    <section class="section detail-panel">
       <h2>Sources</h2>
       {linkedSources.length ? (
         <div class="link-list">
