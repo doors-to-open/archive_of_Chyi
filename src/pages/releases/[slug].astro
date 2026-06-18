@@ -2,12 +2,15 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import {
+  availabilityLabels,
   byId,
   concertsForSong,
   musicShowsForSong,
   personName,
   personNames,
+  releaseAvailabilityChecks,
   releaseArtists,
+  releaseFormatLabels,
   releaseProducers,
   releases,
   songs,
@@ -27,52 +30,34 @@ const linkedSources = sourceRecords(release.sources);
 function peopleList(ids: string[]) {
   return personNames(ids) || "Not recorded";
 }
+
+function trackNumber(track: (typeof release.tracks)[number]) {
+  return [track.disc ? `D${track.disc}` : "", track.position ? `${track.position}` : ""]
+    .filter(Boolean)
+    .join(".");
+}
 ---
 
 <BaseLayout title={`${release.title} | All for Chyi Yu`}>
   <section class="page-shell">
     <p class="page-kicker">Release</p>
     <h1 class="page-title">{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h1>
-    <p class="page-intro">{release.notes}</p>
 
     <article class="section detail-panel">
       <RecordStatus status={release.status} />
-      <dl class="fact-lines">
-        {releaseProducers(release) ? (
-          <div>
-            <dt>Producer</dt>
-            <dd>{releaseProducers(release)}</dd>
-          </div>
-        ) : null}
-        <div>
-          <dt>Artist</dt>
-          <dd class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""}>
-            {releaseArtists(release) || personName(release.artist)}
-          </dd>
-        </div>
-        <div>
-          <dt>Date</dt>
-          <dd>{release.releaseDate || "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Type</dt>
-          <dd>{release.releaseType}</dd>
-        </div>
-        <div>
-          <dt>Label</dt>
-          <dd>{release.label || "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Formats</dt>
-          <dd>{release.formats.length ? release.formats.join(", ") : "Unknown"}</dd>
-        </div>
-      </dl>
+      <div class="record-meta-table">
+        <span>Artist: <b class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""}>{releaseArtists(release) || personName(release.artist)}</b></span>
+        {releaseProducers(release) ? <span>Producer: {releaseProducers(release)}</span> : null}
+        <span>Date: {release.releaseDate || "Unknown"}</span>
+        <span>Type: {release.releaseType}</span>
+        <span>Label: {release.label || "Unknown"}</span>
+        <span>Formats: {releaseFormatLabels(release).join(", ") || "Unknown"}</span>
+        {availabilityLabels(release.availability).map((label) => <span>{label}</span>)}
+      </div>
       <div class="availability-row availability-row-detail" aria-label="Availability summary">
-        <span class={release.formats.includes("CD") ? "available" : ""}>CD</span>
-        <span class={release.formats.includes("vinyl") ? "available" : ""}>Vinyl</span>
-        <span class={release.formats.includes("cassette") ? "available" : ""}>Cassette</span>
-        <span class={release.availability?.streaming?.length ? "available" : ""}>Streaming</span>
-        <span class={release.availability?.purchase?.length ? "available" : ""}>Buy</span>
+        {releaseAvailabilityChecks(release).map(([label, available]) => (
+          <span class={available ? "available" : ""}>{label}</span>
+        ))}
       </div>
     </article>
 
@@ -122,11 +107,12 @@ function peopleList(ids: string[]) {
           return (
             <details class="record-card">
               <summary>
-                <span>{track.position ? `${track.position}. ` : ""}{track.titleOnRelease}</span>
-                <span class="summary-meta">{peopleList(track.credits.composedBy)}</span>
+                <span>{trackNumber(track) ? `${trackNumber(track)}. ` : ""}{track.titleOnRelease}</span>
+                <span class="summary-meta">{track.performers?.length ? personNames(track.performers) : peopleList(track.credits.composedBy)}</span>
               </summary>
 
               <div class="details-body">
+                {track.performers?.length ? <p class="performer-note">Performed by {personNames(track.performers)}</p> : null}
                 <p>Lyrics: {peopleList(track.credits.lyricsBy)}</p>
                 <p>Music: {peopleList(track.credits.composedBy)}</p>
                 {track.duration ? <p>Duration: {track.duration}</p> : null}
@@ -157,6 +143,13 @@ function peopleList(ids: string[]) {
         })}
       </div>
     </section>
+
+    {release.notes ? (
+      <section class="section detail-panel">
+        <h2>Notes</h2>
+        <p>{release.notes}</p>
+      </section>
+    ) : null}
 
     <section class="section detail-panel">
       <h2>Sources</h2>

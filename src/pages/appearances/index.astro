@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import RecordStatus from "../../components/RecordStatus.astro";
-import { appearances, linkPlatformList } from "../../lib/archive";
+import { appearanceAvailabilityChecks, appearances, linkPlatformList } from "../../lib/archive";
 
 const appearanceTypes = Array.from(
   new Set(appearances.map((appearance) => appearance.appearanceType))
@@ -49,28 +48,26 @@ function appearanceSearchText(appearance: (typeof appearances)[number]) {
 
         <div class="section archive-grid">
           {appearances.map((appearance) => (
-            <details
+            <a
               class="record-card"
+              href={`/appearances/${appearance.slug}/`}
               data-filter-item
               data-appearance-type={appearance.appearanceType}
               data-search={appearanceSearchText(appearance)}
             >
-              <summary>
-                <span>{appearance.title}</span>
-                <span class="summary-meta">{appearance.date || "Date unknown"}</span>
-              </summary>
-
-              <div class="details-body">
-                <RecordStatus status={appearance.status} />
-                <p>{appearance.appearanceType}</p>
-                {appearance.programOrWork ? <p>{appearance.programOrWork}</p> : null}
-                {appearance.role ? <p>Role: {appearance.role}</p> : null}
-                {appearance.notes ? <p>{appearance.notes}</p> : null}
-                {appearance.mediaLinks.length ? (
-                  <p>Links: {appearance.mediaLinks.map((link) => link.label).join(", ")}</p>
-                ) : null}
+              <h2>{appearance.title}{appearance.titleOriginal ? ` / ${appearance.titleOriginal}` : ""}</h2>
+              <div class="record-meta-table">
+                <span>Date: {appearance.date || "Unknown"}</span>
+                <span>Type: {appearance.appearanceType}</span>
+                {appearance.programOrWork ? <span>Work: {appearance.programOrWork}</span> : null}
+                {appearance.role ? <span>Role: {appearance.role}</span> : null}
               </div>
-            </details>
+              <div class="availability-row" aria-label="Access summary">
+                {appearanceAvailabilityChecks(appearance).map(([label, available]) => (
+                  <span class={available ? "available" : ""}>{label}</span>
+                ))}
+              </div>
+            </a>
           ))}
         </div>
 

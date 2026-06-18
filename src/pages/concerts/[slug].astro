@@ -3,8 +3,10 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import {
   byId,
+  concertAvailabilityChecks,
   concerts,
   linkPlatformList,
+  linkCreditLabel,
   personNames,
   releasesForSong,
   songs,
@@ -26,41 +28,21 @@ const linkedSources = sourceRecords(concert.sources);
   <section class="page-shell">
     <p class="page-kicker">Concert</p>
     <h1 class="page-title">{concert.title}</h1>
-    <p class="page-intro">{concert.notes}</p>
 
     <article class="section detail-panel">
       <RecordStatus status={concert.status} />
-      <dl class="fact-lines">
-        <div>
-          <dt>Date</dt>
-          <dd>{concert.date || "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Type</dt>
-          <dd>{concert.eventType}</dd>
-        </div>
-        <div>
-          <dt>Venue</dt>
-          <dd>{concert.venue || "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Location</dt>
-          <dd>{[concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Guests</dt>
-          <dd>{concert.guests?.length ? personNames(concert.guests) : "None recorded"}</dd>
-        </div>
-        <div>
-          <dt>Official recording</dt>
-          <dd>{concert.officialRecording ? "Available" : "Not recorded"}</dd>
-        </div>
-      </dl>
+      <div class="record-meta-table">
+        <span>Date: {concert.date || "Unknown"}</span>
+        <span>Type: {concert.eventType}</span>
+        <span>Location: {[concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || "Unknown"}</span>
+        <span>{concert.setlist.length} songs</span>
+        <span>Venue: {concert.venue || "Unknown"}</span>
+        <span>Guests: {concert.guests?.length ? personNames(concert.guests) : "None recorded"}</span>
+      </div>
       <div class="availability-row availability-row-detail" aria-label="Recording availability summary">
-        <span class={concert.officialRecording ? "available" : ""}>Official recording</span>
-        <span class={concert.mediaLinks.some((link) => link.kind === "video") ? "available" : ""}>Video</span>
-        <span class={concert.mediaLinks.some((link) => link.kind === "audio") ? "available" : ""}>Audio</span>
-        <span class={concert.setlist.some((entry) => entry.mediaLinks?.length) ? "available" : ""}>Clips</span>
+        {concertAvailabilityChecks(concert).map(([label, available]) => (
+          <span class={available ? "available" : ""}>{label}</span>
+        ))}
       </div>
     </article>
 
@@ -75,6 +57,7 @@ const linkedSources = sourceRecords(concert.sources);
               {link.kind ? ` / ${link.kind}` : ""}
               {link.accessRegion ? ` / ${link.accessRegion}` : ""}
               {link.isOfficial === false ? " / fan upload" : ""}
+              {linkCreditLabel(link) ? ` / ${linkCreditLabel(link)}` : ""}
             </p>
           ))}
         </div>
@@ -126,6 +109,7 @@ const linkedSources = sourceRecords(concert.sources);
                         {linkPlatformList([link]) ? ` / ${linkPlatformList([link])}` : ""}
                         {link.kind ? ` / ${link.kind}` : ""}
                         {link.isOfficial === false ? " / fan upload" : ""}
+                        {linkCreditLabel(link) ? ` / ${linkCreditLabel(link)}` : ""}
                       </p>
                     ))}
                   </div>
@@ -138,6 +122,13 @@ const linkedSources = sourceRecords(concert.sources);
         })}
       </div>
     </section>
+
+    {concert.notes ? (
+      <section class="section detail-panel">
+        <h2>Notes</h2>
+        <p>{concert.notes}</p>
+      </section>
+    ) : null}
 
     <section class="section detail-panel">
       <h2>Sources</h2>

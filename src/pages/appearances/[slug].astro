@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { appearances, sourceRecords } from "../../lib/archive";
+import { appearanceAvailabilityChecks, appearances, linkCreditLabel, sourceRecords } from "../../lib/archive";
 
 export function getStaticPaths() {
   return appearances.map((appearance) => ({
@@ -18,28 +18,21 @@ const linkedSources = sourceRecords(appearance.sources);
   <section class="page-shell">
     <p class="page-kicker">Appearance</p>
     <h1 class="page-title">{appearance.title}</h1>
-    <p class="page-intro">{appearance.notes}</p>
 
     <article class="section detail-panel">
       <RecordStatus status={appearance.status} />
-      <dl class="fact-lines">
-        <div>
-          <dt>Date</dt>
-          <dd>{appearance.date || "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Type</dt>
-          <dd>{appearance.appearanceType}</dd>
-        </div>
-        <div>
-          <dt>Program or work</dt>
-          <dd>{appearance.programOrWork || "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Role</dt>
-          <dd>{appearance.role || "Unknown"}</dd>
-        </div>
-      </dl>
+      <div class="record-meta-table">
+        <span>Date: {appearance.date || "Unknown"}</span>
+        <span>Type: {appearance.appearanceType}</span>
+        <span>Program or work: {appearance.programOrWork || "Unknown"}</span>
+        <span>Role: {appearance.role || "Unknown"}</span>
+        <span>{appearance.relatedSongs.length} related songs</span>
+      </div>
+      <div class="availability-row availability-row-detail" aria-label="Access summary">
+        {appearanceAvailabilityChecks(appearance).map(([label, available]) => (
+          <span class={available ? "available" : ""}>{label}</span>
+        ))}
+      </div>
     </article>
 
     <section class="section detail-panel">
@@ -52,6 +45,7 @@ const linkedSources = sourceRecords(appearance.sources);
               {link.platform ? ` / ${link.platform}` : ""}
               {link.accessRegion ? ` / ${link.accessRegion}` : ""}
               {link.isOfficial === false ? " / fan upload" : ""}
+              {linkCreditLabel(link) ? ` / ${linkCreditLabel(link)}` : ""}
             </p>
           ))}
         </div>
@@ -59,6 +53,13 @@ const linkedSources = sourceRecords(appearance.sources);
         <p class="empty-state">No links recorded.</p>
       )}
     </section>
+
+    {appearance.notes ? (
+      <section class="section detail-panel">
+        <h2>Notes</h2>
+        <p>{appearance.notes}</p>
+      </section>
+    ) : null}
 
     <section class="section detail-panel">
       <h2>Sources</h2>

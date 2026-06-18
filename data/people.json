@@ -273,5 +273,148 @@
     "sources": ["source-user-task-0618-1"],
     "notes": "Director of Eight Taels of Gold, included from the curated task note pending stronger source expansion.",
     "status": "needs-source"
+  },
+  {
+    "id": "person-luo-dayou",
+    "slug": "luo-dayou",
+    "displayName": "Lo Ta-yu",
+    "nameOriginal": "羅大佑",
+    "aliases": ["Luo Dayou", "罗大佑"],
+    "roles": ["composer", "lyricist", "vocalist"],
+    "sources": ["source-wikipedia-zh-eight-taels-of-gold-film"],
+    "notes": "Credited for Eight Taels of Gold theme song and soundtrack seed records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-mao-buyi",
+    "slug": "mao-buyi",
+    "displayName": "Mao Buyi",
+    "nameOriginal": "毛不易",
+    "aliases": [],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-yue-singer-2019"],
+    "notes": "Guest partner for Chyi Yu on Singer 2019.",
+    "status": "partial"
+  },
+  {
+    "id": "person-hu-xia",
+    "slug": "hu-xia",
+    "displayName": "Hu Xia",
+    "nameOriginal": "胡夏",
+    "aliases": [],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-yue-singer-2019"],
+    "notes": "Guest partner for Chyi Yu in the Singer 2019 final.",
+    "status": "partial"
+  },
+  {
+    "id": "person-leo-ku",
+    "slug": "leo-ku",
+    "displayName": "Leo Ku",
+    "nameOriginal": "古巨基",
+    "aliases": ["Ku Kui-kei"],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
+    "status": "partial"
+  },
+  {
+    "id": "person-li-wei",
+    "slug": "li-wei",
+    "displayName": "Li Wei",
+    "nameOriginal": "李煒",
+    "aliases": ["李炜"],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
+    "status": "partial"
+  },
+  {
+    "id": "person-huang-yun-ling",
+    "slug": "huang-yun-ling",
+    "displayName": "Kay Huang",
+    "nameOriginal": "黃韻玲",
+    "aliases": ["Huang Yun-ling", "黄韵玲"],
+    "roles": ["vocalist", "composer"],
+    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "notes": "Dream Star Partner guest collaborator in listed group performances.",
+    "status": "partial"
+  },
+  {
+    "id": "person-cheng-lin",
+    "slug": "cheng-lin",
+    "displayName": "Cheng Lin",
+    "nameOriginal": "程琳",
+    "aliases": [],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
+    "status": "partial"
+  },
+  {
+    "id": "person-sha-baoliang",
+    "slug": "sha-baoliang",
+    "displayName": "Sha Baoliang",
+    "nameOriginal": "沙寶亮",
+    "aliases": ["沙宝亮"],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
+    "status": "partial"
+  },
+  {
+    "id": "person-huang-qishan",
+    "slug": "huang-qishan",
+    "displayName": "Huang Qishan",
+    "nameOriginal": "黃綺珊",
+    "aliases": ["黄绮珊"],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
+    "status": "partial"
+  },
+  {
+    "id": "person-sa-dingding",
+    "slug": "sa-dingding",
+    "displayName": "Sa Dingding",
+    "nameOriginal": "薩頂頂",
+    "aliases": ["萨顶顶"],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
+    "status": "partial"
+  },
+  {
+    "id": "person-chang-shilei",
+    "slug": "chang-shilei",
+    "displayName": "Chang Shilei",
+    "nameOriginal": "常石磊",
+    "aliases": [],
+    "roles": ["vocalist", "composer"],
+    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "notes": "Dream Star Partner participant.",
+    "status": "partial"
+  },
+  {
+    "id": "person-yang-pei-an",
+    "slug": "yang-pei-an",
+    "displayName": "Yang Pei-an",
+    "nameOriginal": "楊培安",
+    "aliases": ["杨培安"],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "notes": "Dream Star Partner participant.",
+    "status": "partial"
+  },
+  {
+    "id": "person-ricky-hsiao",
+    "slug": "ricky-hsiao",
+    "displayName": "Ricky Hsiao",
+    "nameOriginal": "蕭煌奇",
+    "aliases": ["萧煌奇"],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "notes": "Dream Star Partner participant.",
+    "status": "partial"
   }
 ]

@@ -4,9 +4,11 @@ import RecordStatus from "../../components/RecordStatus.astro";
 import {
   byId,
   linkPlatformList,
+  linkCreditLabel,
   musicShows,
   personNames,
   releasesForSong,
+  showAvailabilityChecks,
   songs,
   sourceRecords
 } from "../../lib/archive";
@@ -26,32 +28,22 @@ const linkedSources = sourceRecords(show.sources);
   <section class="page-shell">
     <p class="page-kicker">Music show</p>
     <h1 class="page-title">{show.title}</h1>
-    <p class="page-intro">{show.notes}</p>
 
     <article class="section detail-panel">
       <RecordStatus status={show.status} />
-      <dl class="fact-lines">
-        <div>
-          <dt>Date</dt>
-          <dd>{show.date || "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Program</dt>
-          <dd>{show.program || "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Episode</dt>
-          <dd>{show.episode || "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Platform</dt>
-          <dd>{show.platform || "Unknown"}</dd>
-        </div>
-        <div>
-          <dt>Collaborators</dt>
-          <dd>{show.collaborators.length ? personNames(show.collaborators) : "None recorded"}</dd>
-        </div>
-      </dl>
+      <div class="record-meta-table">
+        <span>Date: {show.date || "Unknown"}</span>
+        <span>Program: {show.program || "Unknown"}</span>
+        <span>{show.performedSongs.length} songs</span>
+        <span>Platform: {show.platform || "Unknown"}</span>
+        <span>Episode: {show.episode || "Unknown"}</span>
+        <span>Collaborators: {show.collaborators.length ? personNames(show.collaborators) : "None recorded"}</span>
+      </div>
+      <div class="availability-row availability-row-detail" aria-label="Access summary">
+        {showAvailabilityChecks(show).map(([label, available]) => (
+          <span class={available ? "available" : ""}>{label}</span>
+        ))}
+      </div>
     </article>
 
     <section class="section detail-panel">
@@ -64,6 +56,7 @@ const linkedSources = sourceRecords(show.sources);
               {link.platform ? ` / ${link.platform}` : ""}
               {link.accessRegion ? ` / ${link.accessRegion}` : ""}
               {link.isOfficial === false ? " / fan upload" : ""}
+              {linkCreditLabel(link) ? ` / ${linkCreditLabel(link)}` : ""}
             </p>
           ))}
         </div>
@@ -86,10 +79,11 @@ const linkedSources = sourceRecords(show.sources);
             <details class="record-card">
               <summary>
                 <span>{entry.position ? `${entry.position}. ` : ""}{entry.titlePerformed || linkedSong?.title || entry.song}</span>
-                <span class="summary-meta">{linkedSong?.titleOriginal || ""}</span>
+                <span class="summary-meta">{entry.date || linkedSong?.titleOriginal || ""}</span>
               </summary>
 
               <div class="details-body">
+                {entry.date ? <p>Date: {entry.date}</p> : null}
                 {linkedSong ? (
                   <>
                     {linkedSong.lyricsBy.length ? <p>Lyrics: {personNames(linkedSong.lyricsBy)}</p> : null}
@@ -114,6 +108,7 @@ const linkedSources = sourceRecords(show.sources);
                         <a href={link.url}>{link.label}</a>
                         {linkPlatformList([link]) ? ` / ${linkPlatformList([link])}` : ""}
                         {link.isOfficial === false ? " / fan upload" : ""}
+                        {linkCreditLabel(link) ? ` / ${linkCreditLabel(link)}` : ""}
                       </p>
                     ))}
                   </div>
@@ -126,6 +121,13 @@ const linkedSources = sourceRecords(show.sources);
         })}
       </div>
     </section>
+
+    {show.notes ? (
+      <section class="section detail-panel">
+        <h2>Notes</h2>
+        <p>{show.notes}</p>
+      </section>
+    ) : null}
 
     <section class="section detail-panel">
       <h2>Sources</h2>

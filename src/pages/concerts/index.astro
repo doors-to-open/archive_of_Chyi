@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import RecordStatus from "../../components/RecordStatus.astro";
-import { byId, concerts, linkPlatformList, personNames, songs } from "../../lib/archive";
+import { byId, concertAvailabilityChecks, concerts, linkPlatformList, personNames, songs } from "../../lib/archive";
 
 const eventTypes = Array.from(new Set(concerts.map((concert) => concert.eventType))).sort();
 const sourceQualities = Array.from(
@@ -71,70 +70,28 @@ function concertSearchText(concert: (typeof concerts)[number]) {
 
     <div class="section archive-grid">
       {concerts.map((concert) => (
-        <details
+        <a
           class="record-card"
+          href={`/concerts/${concert.slug}/`}
           data-filter-item
           data-event-type={concert.eventType}
           data-source-quality={concert.sourceQuality || ""}
           data-search={concertSearchText(concert)}
         >
-          <summary>
-            <span>{concert.title}</span>
-            <span class="summary-meta">{concert.date || "Date unknown"}</span>
-          </summary>
-
-          <div class="details-body">
-            <RecordStatus status={concert.status} />
-            <p>{concert.eventType}{concert.venue ? ` / ${concert.venue}` : ""}</p>
-            {concert.city || concert.countryOrRegion ? (
-              <p>{[concert.city, concert.countryOrRegion].filter(Boolean).join(", ")}</p>
-            ) : null}
-            {concert.guests?.length ? <p>Guests: {personNames(concert.guests)}</p> : null}
-            {concert.notes ? <p>{concert.notes}</p> : null}
-            <div class="availability-row" aria-label="Recording availability summary">
-              <span class={concert.officialRecording ? "available" : ""}>Official recording</span>
-              <span class={concert.mediaLinks.some((link) => link.kind === "video") ? "available" : ""}>Video</span>
-              <span class={concert.mediaLinks.some((link) => link.kind === "audio") ? "available" : ""}>Audio</span>
-              <span class={concert.setlist.some((entry) => entry.mediaLinks?.length) ? "available" : ""}>Clips</span>
-            </div>
-
-            <h3>Show links</h3>
-            {concert.mediaLinks.length ? (
-              <div class="link-list">
-                {concert.mediaLinks.map((link) => (
-                  <p>
-                    <a href={link.url}>{link.label}</a>
-                    {link.kind ? ` / ${link.kind}` : ""}
-                    {link.isOfficial === false ? " / fan upload" : ""}
-                  </p>
-                ))}
-              </div>
-            ) : (
-              <p class="muted">No show links added yet.</p>
-            )}
-
-            <h3>Songs</h3>
-            {concert.setlist.length ? (
-              <ol class="plain-list">
-                {concert.setlist.map((entry) => {
-                  const linkedSong = byId(songs, entry.song);
-                  return (
-                    <li>
-                      <span>{entry.titlePerformed || linkedSong?.title || entry.song}</span>
-                      {entry.originalPerformer ? <span class="muted"> / original: {entry.originalPerformer}</span> : null}
-                      {entry.collaborators?.length ? <span class="muted"> / with {personNames(entry.collaborators)}</span> : null}
-                      {entry.mediaLinks?.length ? <span class="muted"> / clips: {entry.mediaLinks.map((link) => link.label).join(", ")}</span> : null}
-                    </li>
-                  );
-                })}
-              </ol>
-            ) : (
-              <p class="empty-state">No setlist recorded.</p>
-            )}
-
-            <p><a href={`/concerts/${concert.slug}/`}>Open concert record</a></p>
+          <h2>{concert.title}</h2>
+          <div class="record-meta-table">
+            <span>Date: {concert.date || "Unknown"}</span>
+            <span>Location: {[concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || "Unknown"}</span>
+            <span>{concert.setlist.length} songs</span>
+            {concert.venue ? <span>Venue: {concert.venue}</span> : null}
           </div>
-        </details>
+          <div class="availability-row" aria-label="Recording availability summary">
+            {concertAvailabilityChecks(concert).map(([label, available]) => (
+              <span class={available ? "available" : ""}>{label}</span>
+            ))}
+          </div>
+          {concert.guests?.length ? <p>Guests: {personNames(concert.guests)}</p> : null}
+        </a>
       ))}
     </div>
 

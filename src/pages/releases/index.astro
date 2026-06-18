@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
-  linkPlatformList,
+  availabilityLabels,
   personName,
   personNames,
+  releaseAvailabilityChecks,
   releaseArtists,
+  releaseFormatLabels,
   releaseProducers,
   releases
 } from "../../lib/archive";
@@ -20,11 +22,12 @@ function releaseSearchText(release: (typeof releases)[number]) {
     release.label,
     releaseArtists(release),
     releaseProducers(release),
-    release.formats.join(" "),
-    linkPlatformList(release.availability?.streaming),
+    releaseFormatLabels(release).join(" "),
+    availabilityLabels(release.availability).join(" "),
     ...release.tracks.flatMap((track) => [
       track.titleOnRelease,
       track.versionNote,
+      personNames(track.performers),
       personNames(track.credits.lyricsBy),
       personNames(track.credits.composedBy)
     ])
@@ -67,20 +70,22 @@ function releaseSearchText(release: (typeof releases)[number]) {
           data-search={releaseSearchText(release)}
         >
           <h2>{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h2>
-          <p>{release.releaseDate || "Date unknown"} / {release.releaseType}</p>
+          <div class="record-meta-table">
+            <span>Date: {release.releaseDate || "Unknown"}</span>
+            <span>Type: {release.releaseType}</span>
+            <span>{release.tracks.length} tracks</span>
+            {release.label ? <span>Label: {release.label}</span> : null}
+          </div>
           <div class="meta-row">
             {releaseProducers(release) ? <span>Producer: {releaseProducers(release)}</span> : null}
             <span class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""}>
               {releaseArtists(release) || personName(release.artist)}
             </span>
-            <span>{release.tracks.length} tracks</span>
           </div>
           <div class="availability-row" aria-label="Availability summary">
-            <span class={release.formats.includes("CD") ? "available" : ""}>CD</span>
-            <span class={release.formats.includes("vinyl") ? "available" : ""}>Vinyl</span>
-            <span class={release.formats.includes("cassette") ? "available" : ""}>Cassette</span>
-            <span class={release.availability?.streaming?.length ? "available" : ""}>Streaming</span>
-            <span class={release.availability?.purchase?.length ? "available" : ""}>Buy</span>
+            {releaseAvailabilityChecks(release).map(([label, available]) => (
+              <span class={available ? "available" : ""}>{label}</span>
+            ))}
           </div>
         </a>
       ))}

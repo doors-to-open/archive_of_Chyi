@@ -262,5 +262,101 @@
     "citation": "百度百科. \"梦想星搭档.\"",
     "reliability": "medium",
     "notes": "Seed source for the program record. Episode-level Chyi Yu performances still need extraction and confirmation."
+  },
+  {
+    "id": "source-user-task-0618-2",
+    "sourceType": "audience-memory",
+    "title": "Stage 4.5 follow-up correction task note",
+    "authorOrPublisher": "Project maintainer",
+    "date": "2026-06-18",
+    "url": "task_0618_2_follow_up_correction.md",
+    "accessDate": "2026-06-18",
+    "citation": "Project maintainer. \"task_0618_2_follow_up_correction.md.\" Local task note.",
+    "reliability": "medium",
+    "notes": "Used for requested corrections and local leads; public/platform sources are preferred for record facts."
+  },
+  {
+    "id": "source-local-qq-unheard-track-image",
+    "sourceType": "platform-screenshot",
+    "title": "QQ Music track screenshot for The Unheard Of Chyi",
+    "authorOrPublisher": "QQ Music / Project maintainer",
+    "date": "2026-06-18",
+    "url": "supplement/Tracks_of_the_unheard_of_Chyi_Yu.jpg",
+    "accessDate": "2026-06-18",
+    "citation": "QQ Music screenshot supplied by project maintainer, 2026-06-18.",
+    "reliability": "medium",
+    "notes": "Local screenshot shows a 37-song QQ Music track list across three discs. The supplement folder remains untracked."
+  },
+  {
+    "id": "source-wikipedia-yue-singer-2019",
+    "sourceType": "encyclopedia",
+    "title": "歌手2019",
+    "authorOrPublisher": "Wikipedia contributors",
+    "date": null,
+    "url": "https://zh-yue.wikipedia.org/wiki/%E6%AD%8C%E6%89%8B2019",
+    "accessDate": "2026-06-18",
+    "citation": "Wikipedia contributors. \"歌手2019.\" 維基百科.",
+    "reliability": "medium",
+    "notes": "Used for Chyi Yu episode rows, original-performer fields, dates, rankings, and guest-collaboration rows."
+  },
+  {
+    "id": "source-wikipedia-zh-dream-star-partner-season-1",
+    "sourceType": "encyclopedia",
+    "title": "夢想星搭檔 (第一季)",
+    "authorOrPublisher": "Wikipedia contributors",
+    "date": null,
+    "url": "https://zh.wikipedia.org/wiki/%E5%A4%A2%E6%83%B3%E6%98%9F%E6%90%AD%E6%AA%94_(%E7%AC%AC%E4%B8%80%E5%AD%A3)",
+    "accessDate": "2026-06-18",
+    "citation": "Wikipedia contributors. \"夢想星搭檔 (第一季).\" Wikipedia.",
+    "reliability": "medium",
+    "notes": "Used for Chyi Yu and Chyi Chin performance rows, collaborators, original-performer notes, and broadcast dates."
+  },
+  {
+    "id": "source-douban-eight-taels-of-gold",
+    "sourceType": "database",
+    "title": "八两金",
+    "authorOrPublisher": "Douban Movie",
+    "date": null,
+    "url": "https://movie.douban.com/subject/1300202/",
+    "accessDate": "2026-06-18",
+    "citation": "豆瓣电影. \"八两金.\"",
+    "reliability": "medium",
+    "notes": "Confirms the 1989 film record, director, release date, cast, and IMDb title identifier."
+  },
+  {
+    "id": "source-wikipedia-zh-eight-taels-of-gold-film",
+    "sourceType": "encyclopedia",
+    "title": "八兩金 (電影)",
+    "authorOrPublisher": "Wikipedia contributors",
+    "date": null,
+    "url": "https://zh.wikipedia.org/wiki/%E5%85%AB%E5%85%A9%E9%87%91_(%E9%9B%BB%E5%BD%B1)",
+    "accessDate": "2026-06-18",
+    "citation": "Wikipedia contributors. \"八兩金 (電影).\" Wikipedia.",
+    "reliability": "medium",
+    "notes": "Confirms Mabel Cheung as director and 船歌 as the Chyi Yu theme song credited to Lo Ta-yu."
+  },
+  {
+    "id": "source-qq-music-eight-taels-of-gold-ost",
+    "sourceType": "platform",
+    "title": "八兩金 soundtrack on QQ Music",
+    "authorOrPublisher": "QQ Music",
+    "date": null,
+    "url": "https://c6.y.qq.com/base/fcgi-bin/u?__=4XObUwID78Tu",
+    "accessDate": "2026-06-18",
+    "citation": "QQ Music. \"八兩金\" soundtrack short link supplied by project maintainer.",
+    "reliability": "medium",
+    "notes": "User-supplied official-platform short link. Used for the Chyi Yu vocal-appearance subset pending full platform metadata extraction."
+  },
+  {
+    "id": "source-bilibili-kangsi-coming-2004",
+    "sourceType": "platform",
+    "title": "康熙来了 2004 on Bilibili",
+    "authorOrPublisher": "Bilibili",
+    "date": null,
+    "url": "https://www.bilibili.com/bangumi/play/ss38316",
+    "accessDate": "2026-06-18",
+    "citation": "Bilibili. \"康熙来了 2004.\"",
+    "reliability": "medium",
+    "notes": "Bilibili series page identifies the 2004 Kangsi Coming season as an official-platform stream; exact Chyi Yu episode still needs pinpointing."
   }
 ]

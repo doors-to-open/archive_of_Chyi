@@ -170,7 +170,12 @@
     "credits": {
       "vocalist": ["person-chyi-yu"]
     },
-    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-yue-olive-tree-album", "source-apple-music-olive-tree", "source-qq-music-olive-tree"],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-yue-olive-tree-album",
+      "source-apple-music-olive-tree",
+      "source-qq-music-olive-tree"
+    ],
     "notes": "Producer and original physical formats remain unknown. The supplied encyclopedia page has a likely swapped title-track lyric/music field, so that credit still needs official booklet verification.",
     "status": "partial"
   },
@@ -251,7 +256,8 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-li-tsung-sheng"]
-        }
+        },
+        "performers": ["person-pan-yue-yun"]
       },
       {
         "position": 5,
@@ -262,7 +268,8 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-chen-chih-yuan"]
-        }
+        },
+        "performers": ["person-pan-yue-yun"]
       },
       {
         "position": 6,
@@ -317,7 +324,8 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-wang-hsin-lien"]
-        }
+        },
+        "performers": ["person-pan-yue-yun"]
       },
       {
         "position": 11,
@@ -328,13 +336,14 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-weng-hsiao-liang"]
-        }
+        },
+        "performers": ["person-chyi-yu", "person-pan-yue-yun"]
       }
     ],
     "credits": {
       "vocalist": ["person-chyi-yu", "person-pan-yue-yun"]
     },
-    "sources": ["source-wikipedia-yue-echo-album", "source-apple-music-echo", "source-qq-music-echo"],
+    "sources": ["source-wikipedia-yue-echo-album", "source-apple-music-echo", "source-qq-music-echo", "source-user-task-0618-2"],
     "notes": "Co-performed with Pan Yue-yun. The supplied encyclopedia source says the album was first released on cassette and vinyl, then reissued on CD the following January.",
     "status": "partial"
   },
@@ -542,97 +551,534 @@
       {
         "position": 1,
         "song": null,
-        "titleOnRelease": "Opening",
+        "titleOnRelease": "序 (Live)",
         "duration": null,
-        "versionNote": "Live concert program track.",
+        "versionNote": "Live program opening.",
         "credits": {
           "lyricsBy": [],
           "composedBy": []
-        }
+        },
+        "disc": 1
       },
       {
         "position": 2,
+        "song": null,
+        "titleOnRelease": "Forever (Live)",
+        "duration": null,
+        "versionNote": "Live cover; original performer: Stratovarius.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 1
+      },
+      {
+        "position": 3,
         "song": "song-walking-in-the-rain",
-        "titleOnRelease": "走在雨中",
+        "titleOnRelease": "走在雨中 (Live)",
         "duration": null,
         "versionNote": "Live version.",
         "credits": {
           "lyricsBy": ["person-li-tai-hsiang"],
           "composedBy": ["person-li-tai-hsiang"]
-        }
+        },
+        "disc": 1
       },
       {
-        "position": 3,
+        "position": 4,
         "song": "song-olive-tree",
-        "titleOnRelease": "橄欖樹",
+        "titleOnRelease": "橄欖樹 (Live)",
         "duration": null,
         "versionNote": "Live version.",
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-li-tai-hsiang"]
-        }
+        },
+        "disc": 1
       },
       {
-        "position": 4,
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "有沒有這種說法 (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 1
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "不要問我為什麼 (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 1
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titleOnRelease": "Whoever Finds This, I Love You (Live)",
+        "duration": null,
+        "versionNote": "Live cover; original performer: Mac Davis.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 1
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "九月的高跟鞋 (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 1
+      },
+      {
+        "position": 9,
+        "song": "song-stories",
+        "titleOnRelease": "Stories (Live)",
+        "duration": null,
+        "versionNote": "Live cover.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 1
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "祝福 (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 1
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titleOnRelease": "屬於愛情的 (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 1
+      },
+      {
+        "position": 12,
+        "song": "song-li-xianglan",
+        "titleOnRelease": "李香蘭 (Live)",
+        "duration": null,
+        "versionNote": "Live cover; original performer: Jacky Cheung.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 1
+      },
+      {
+        "position": 13,
+        "song": null,
+        "titleOnRelease": "錯過 (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 1
+      },
+      {
+        "position": 14,
+        "song": "song-zui-ai",
+        "titleOnRelease": "最愛 (Live)",
+        "duration": null,
+        "versionNote": "Live cover.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 1
+      },
+      {
+        "position": 15,
         "song": "song-seven-oclock",
-        "titleOnRelease": "七點鐘",
+        "titleOnRelease": "七點鐘 (Live)",
         "duration": null,
         "versionNote": "Live version.",
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-li-tsung-sheng"]
-        }
+        },
+        "disc": 1
+      },
+      {
+        "position": 1,
+        "song": "song-boat-song",
+        "titleOnRelease": "船歌 (Live)",
+        "duration": null,
+        "versionNote": "Live version.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "All Souls Night (Live)",
+        "duration": null,
+        "versionNote": "Live cover; original performer: Loreena McKennitt.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "Moonlight Flower (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "星星 (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
       },
       {
         "position": 5,
+        "song": "song-answer",
+        "titleOnRelease": "答案 (Live)",
+        "duration": null,
+        "versionNote": "Live version.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": ["person-li-tai-hsiang"]
+        },
+        "disc": 2
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "另一種星星 (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 7,
+        "song": "song-vincent",
+        "titleOnRelease": "Vincent (Live)",
+        "duration": null,
+        "versionNote": "Live cover; original performer: Don McLean.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "一切都從這四個和弦開始 (Live)",
+        "duration": null,
+        "versionNote": "Live spoken/program track.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "Where Have All The Flowers Gone? (Live)",
+        "duration": null,
+        "versionNote": "Live cover; original performer: Pete Seeger.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "給我的祝福 (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titleOnRelease": "春天的故事 (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 12,
+        "song": null,
+        "titleOnRelease": "Windflower (Live)",
+        "duration": null,
+        "versionNote": "Live cover; original performer: Seals and Crofts.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 13,
+        "song": "song-flying-bird-and-fish",
+        "titleOnRelease": "飛鳥與魚 (Live)",
+        "duration": null,
+        "versionNote": "Live version.",
+        "credits": {
+          "lyricsBy": ["person-chyi-yu"],
+          "composedBy": ["person-chi-chin"]
+        },
+        "disc": 2
+      },
+      {
+        "position": 14,
+        "song": null,
+        "titleOnRelease": "C'est La Vie (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 15,
+        "song": null,
+        "titleOnRelease": "你是我所有的回憶 (Live)",
+        "duration": null,
+        "versionNote": "Live version; song record not modeled yet.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 16,
+        "song": "song-your-smiling-face",
+        "titleOnRelease": "歡顏 (Live)",
+        "duration": null,
+        "versionNote": "Live version.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": ["person-li-tai-hsiang"]
+        },
+        "disc": 2
+      },
+      {
+        "position": 17,
+        "song": null,
+        "titleOnRelease": "Memory (NG) (Live)",
+        "duration": null,
+        "versionNote": "Live rehearsal/outtake track; original source musical: Cats.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 18,
+        "song": null,
+        "titleOnRelease": "Memory (Live)",
+        "duration": null,
+        "versionNote": "Live cover; original performer: Elaine Paige.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 19,
+        "song": null,
+        "titleOnRelease": "加強記憶 (Live)",
+        "duration": null,
+        "versionNote": "Live program track.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 20,
+        "song": "song-olive-tree",
+        "titleOnRelease": "橄欖樹 (清唱版)",
+        "duration": null,
+        "versionNote": "A cappella live version.",
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-li-tai-hsiang"]
+        },
+        "disc": 2
+      },
+      {
+        "position": 21,
+        "song": null,
+        "titleOnRelease": "跋 (Live)",
+        "duration": null,
+        "versionNote": "Live program closing track.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 2
+      },
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "Indescribable Night (Live)",
+        "duration": null,
+        "versionNote": "Live bonus track.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "disc": 3
+      }
+    ],
+    "credits": {
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "notes": "Modeled separately from the 2002 Hong Kong concert event. The local QQ Music screenshot confirms the 2003-04-01 live album has 37 listed tracks across three discs. Song identity and cover/original credits remain partial where no internal song record exists.",
+    "status": "partial"
+  },
+  {
+    "id": "release-eight-taels-of-gold-ost-1989",
+    "slug": "eight-taels-of-gold-ost-1989",
+    "title": "Eight Taels of Gold soundtrack",
+    "titleOriginal": "八兩金 原聲帶",
+    "releaseDate": "1989",
+    "releaseType": "soundtrack",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": null,
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music OST link",
+          "platform": "qq-music",
+          "url": "https://c6.y.qq.com/base/fcgi-bin/u?__=4XObUwID78Tu",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
         "song": "song-boat-song",
         "titleOnRelease": "船歌",
         "duration": null,
-        "versionNote": "Live version.",
+        "versionNote": "Chyi Yu vocal appearance on the film soundtrack.",
+        "credits": {
+          "lyricsBy": ["person-luo-dayou"],
+          "composedBy": ["person-luo-dayou"]
+        }
+      },
+      {
+        "position": 2,
+        "song": "song-red-cotton",
+        "titleOnRelease": "紅棉",
+        "duration": null,
+        "versionNote": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending.",
         "credits": {
           "lyricsBy": [],
           "composedBy": []
         }
       },
       {
-        "position": 6,
-        "song": "song-answer",
-        "titleOnRelease": "答案",
+        "position": 3,
+        "song": "song-mess",
+        "titleOnRelease": "亂",
         "duration": null,
-        "versionNote": "Live version.",
+        "versionNote": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending.",
         "credits": {
           "lyricsBy": [],
-          "composedBy": ["person-li-tai-hsiang"]
-        }
-      },
-      {
-        "position": 7,
-        "song": "song-flying-bird-and-fish",
-        "titleOnRelease": "飛鳥與魚",
-        "duration": null,
-        "versionNote": "Live version.",
-        "credits": {
-          "lyricsBy": ["person-chyi-yu"],
-          "composedBy": ["person-chi-chin"]
-        }
-      },
-      {
-        "position": 8,
-        "song": "song-your-smiling-face",
-        "titleOnRelease": "歡顏",
-        "duration": null,
-        "versionNote": "Live version.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": ["person-li-tai-hsiang"]
+          "composedBy": []
         }
       }
     ],
     "credits": {
-      "vocalist": ["person-chyi-yu"]
+      "vocalist": ["person-chyi-yu"],
+      "soundtrack": ["person-luo-dayou"]
     },
-    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-unheard-full-480p", "source-bilibili-unheard-chapters", "source-qq-music-unheard-of-chyi"],
-    "notes": "Modeled separately from the 2002 Hong Kong concert event. QQ Music search metadata shows The Unheard Of Chyi as a 2003-04-01 album with 37 tracks, but full official track metadata still needs source expansion.",
+    "sources": [
+      "source-user-task-0618-2",
+      "source-qq-music-eight-taels-of-gold-ost",
+      "source-wikipedia-zh-eight-taels-of-gold-film",
+      "source-douban-eight-taels-of-gold"
+    ],
+    "notes": "Partial release record focused on the Chyi Yu vocal-appearance subset identified by the project maintainer. The complete OST album track list still needs extraction from an official platform page.",
     "status": "partial"
   }
 ]

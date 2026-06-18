@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import RecordStatus from "../../components/RecordStatus.astro";
-import { byId, linkPlatformList, musicShows, personNames, songs } from "../../lib/archive";
+import { byId, linkPlatformList, musicShows, personNames, showAvailabilityChecks, songs } from "../../lib/archive";
 
 const platforms = Array.from(
   new Set(musicShows.map((show) => show.platform).filter(Boolean))
@@ -62,47 +61,27 @@ function showSearchText(show: (typeof musicShows)[number]) {
 
         <div class="section archive-grid">
           {musicShows.map((show) => (
-            <details
+            <a
               class="record-card"
+              href={`/music-shows/${show.slug}/`}
               data-filter-item
               data-platform={show.platform || ""}
               data-search={showSearchText(show)}
             >
-              <summary>
-                <span>{show.title}</span>
-                <span class="summary-meta">{show.date || "Date unknown"}</span>
-              </summary>
-
-              <div class="details-body">
-                <RecordStatus status={show.status} />
-                {show.program ? <p>Program: {show.program}</p> : null}
-                {show.episode ? <p>Episode: {show.episode}</p> : null}
-                {show.platform ? <p>Platform: {show.platform}</p> : null}
-                {show.collaborators.length ? <p>Collaborators: {personNames(show.collaborators)}</p> : null}
-                {show.mediaLinks.length ? (
-                  <p>Watch: {show.mediaLinks.map((link) => link.label).join(", ")}</p>
-                ) : null}
-
-                <h3>Songs</h3>
-                {show.performedSongs.length ? (
-                  <ol class="plain-list">
-                    {show.performedSongs.map((entry) => {
-                      const linkedSong = byId(songs, entry.song);
-                      return (
-                        <li>
-                          <span>{entry.titlePerformed || linkedSong?.title || entry.song}</span>
-                          {entry.originalPerformer ? <span class="muted"> / original: {entry.originalPerformer}</span> : null}
-                          {entry.collaborators?.length ? <span class="muted"> / with {personNames(entry.collaborators)}</span> : null}
-                          {entry.mediaLinks?.length ? <span class="muted"> / clips: {entry.mediaLinks.map((link) => link.label).join(", ")}</span> : null}
-                        </li>
-                      );
-                    })}
-                  </ol>
-                ) : (
-                  <p class="empty-state">No performed songs recorded.</p>
-                )}
+              <h2>{show.title}{show.titleOriginal ? ` / ${show.titleOriginal}` : ""}</h2>
+              <div class="record-meta-table">
+                <span>Date: {show.date || "Unknown"}</span>
+                <span>Program: {show.program || "Unknown"}</span>
+                <span>{show.performedSongs.length} songs</span>
+                {show.platform ? <span>Platform: {show.platform}</span> : null}
               </div>
-            </details>
+              <div class="availability-row" aria-label="Access summary">
+                {showAvailabilityChecks(show).map(([label, available]) => (
+                  <span class={available ? "available" : ""}>{label}</span>
+                ))}
+              </div>
+              {show.collaborators.length ? <p>Collaborators: {personNames(show.collaborators)}</p> : null}
+            </a>
           ))}
         </div>
 

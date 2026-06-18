@@ -211,16 +211,23 @@
     "titleOriginal": "船歌",
     "aliases": ["船歌"],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": ["person-luo-dayou"],
+    "composedBy": ["person-luo-dayou"],
     "arrangedBy": [],
-    "relatedReleases": [],
+    "relatedReleases": ["release-eight-taels-of-gold-ost-1989"],
     "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong", "concert-grace-still-beijing-2025"],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-grace-still-beijing-full", "source-user-task-0618-1"],
-    "notes": "Also mentioned in the task note as an Eight Taels of Gold soundtrack vocal appearance; OST release details still need sourcing.",
-    "status": "partial"
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-grace-still-beijing-full",
+      "source-user-task-0618-1",
+      "source-user-task-0618-2",
+      "source-qq-music-eight-taels-of-gold-ost"
+    ],
+    "notes": "Eight Taels of Gold sources identify 船歌 as the film theme song sung by Chyi Yu and credited to Lo Ta-yu; live-performance links are also modeled separately.",
+    "status": "partial",
+    "firstKnownRelease": "release-eight-taels-of-gold-ost-1989"
   },
   {
     "id": "song-li-xianglan",
@@ -236,7 +243,11 @@
     "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong", "concert-grace-still-beijing-2025"],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-grace-still-beijing-full", "source-bilibili-grace-still-beijing-clip-li-xianglan"],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-grace-still-beijing-full",
+      "source-bilibili-grace-still-beijing-clip-li-xianglan"
+    ],
     "notes": "Cover-performance identity record for statistics; original credits pending.",
     "status": "needs-source"
   },
@@ -322,11 +333,11 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "relatedReleases": [],
+    "relatedReleases": ["release-eight-taels-of-gold-ost-1989"],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": ["source-user-task-0618-1"],
+    "sources": ["source-user-task-0618-1", "source-user-task-0618-2", "source-qq-music-eight-taels-of-gold-ost"],
     "notes": "Mentioned in the task note as an Eight Taels of Gold soundtrack vocal appearance; needs public-source verification.",
     "status": "needs-source"
   },
@@ -340,11 +351,11 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "relatedReleases": [],
+    "relatedReleases": ["release-eight-taels-of-gold-ost-1989"],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": ["source-user-task-0618-1"],
+    "sources": ["source-user-task-0618-1", "source-user-task-0618-2", "source-qq-music-eight-taels-of-gold-ost"],
     "notes": "Mentioned in the task note as an Eight Taels of Gold soundtrack vocal appearance; needs public-source verification.",
     "status": "needs-source"
   }

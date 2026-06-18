@@ -4,29 +4,73 @@
     "slug": "eight-taels-of-gold-ost",
     "title": "Eight Taels of Gold soundtrack vocals",
     "titleOriginal": "八兩金 原聲帶",
-    "date": "1989",
+    "date": "1989-12-21",
     "appearanceType": "soundtrack",
     "programOrWork": "Eight Taels of Gold",
     "role": "OST vocal appearance",
     "relatedSongs": ["song-boat-song", "song-red-cotton", "song-mess"],
-    "mediaLinks": [],
-    "sources": ["source-user-task-0618-1"],
-    "notes": "Task note says Chyi Yu had vocal appearances on 船歌, 紅棉, and 亂 for Mabel Cheung's Eight Taels of Gold soundtrack. Public/official soundtrack source and watch/listen links still need confirmation.",
-    "status": "needs-source"
+    "mediaLinks": [
+      {
+        "label": "QQ Music soundtrack",
+        "platform": "qq-music",
+        "url": "https://c6.y.qq.com/base/fcgi-bin/u?__=4XObUwID78Tu",
+        "kind": "streaming",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
+      },
+      {
+        "label": "Douban film record",
+        "platform": "douban",
+        "url": "https://movie.douban.com/subject/1300202/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "IMDb film record",
+        "platform": "imdb",
+        "url": "https://www.imdb.com/title/tt0099079/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "Related soundtrack release",
+        "platform": "internal",
+        "url": "/releases/eight-taels-of-gold-ost-1989/",
+        "kind": "release-link",
+        "isOfficial": true
+      }
+    ],
+    "sources": [
+      "source-user-task-0618-2",
+      "source-douban-eight-taels-of-gold",
+      "source-wikipedia-zh-eight-taels-of-gold-film",
+      "source-qq-music-eight-taels-of-gold-ost"
+    ],
+    "notes": "The follow-up note identifies Chyi Yu vocal appearances on 船歌, 紅棉, and 亂. Douban confirms the 1989-12-21 film date and Mabel Cheung credit; the public film pages checked in this pass did not expose a stable official full-film streaming URL, so the current official access link is the QQ Music soundtrack.",
+    "status": "partial"
   },
   {
     "id": "appearance-kangsi-coming",
     "slug": "kangsi-coming",
     "title": "Kangsi Coming appearance",
     "titleOriginal": "康熙來了",
-    "date": null,
+    "date": "2004",
     "appearanceType": "talk-show",
     "programOrWork": "Kangsi Coming",
     "role": "Guest",
     "relatedSongs": [],
-    "mediaLinks": [],
-    "sources": ["source-user-task-0618-1"],
-    "notes": "Mentioned in the task note. Exact episode date/title and official watch links still need sourcing.",
-    "status": "needs-source"
+    "mediaLinks": [
+      {
+        "label": "Bilibili 2004 season page",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/bangumi/play/ss38316",
+        "kind": "watch",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
+      }
+    ],
+    "sources": ["source-user-task-0618-2", "source-bilibili-kangsi-coming-2004"],
+    "notes": "Bilibili exposes an official-platform page for the 2004 Kangsi Coming season. The exact Chyi Yu episode title/date still needs pinpointing within the season list.",
+    "status": "partial"
   }
 ]

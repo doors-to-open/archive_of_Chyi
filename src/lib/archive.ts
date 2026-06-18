@@ -42,11 +42,13 @@ export type Song = {
 };
 
 export type Track = {
+  disc?: number;
   position: number | null;
   song: string | null;
   titleOnRelease: string;
   duration: string | null;
   versionNote: string | null;
+  performers?: string[];
   credits: {
     lyricsBy: string[];
     composedBy: string[];
@@ -60,6 +62,7 @@ export type ArchiveLink = {
   kind?: string;
   isOfficial?: boolean;
   accessRegion?: string;
+  credit?: string;
   notes?: string;
 };
 
@@ -89,6 +92,7 @@ export type Release = {
 
 export type SongPerformance = {
   position: number | null;
+  date?: string | null;
   song: string | null;
   titlePerformed: string;
   originalPerformer?: string | null;
@@ -120,6 +124,7 @@ export type MusicShow = {
   id: string;
   slug: string;
   title: string;
+  titleOriginal?: string;
   date?: string | null;
   program?: string | null;
   episode?: string | null;
@@ -137,6 +142,7 @@ export type Appearance = {
   id: string;
   slug: string;
   title: string;
+  titleOriginal?: string;
   date?: string | null;
   appearanceType: string;
   programOrWork?: string | null;
@@ -214,6 +220,62 @@ export function linkPlatformList(links: ArchiveLink[] | undefined) {
   return links?.length
     ? Array.from(new Set(links.map((link) => link.platform || link.label))).join(", ")
     : "";
+}
+
+export function availabilityLabels(availability: Release["availability"]) {
+  return [
+    availability?.streaming?.length ? `Streaming: ${linkPlatformList(availability.streaming)}` : "",
+    availability?.purchase?.length ? `Buy: ${linkPlatformList(availability.purchase)}` : ""
+  ].filter(Boolean);
+}
+
+export function releaseFormatLabels(release: Release) {
+  return [
+    release.formats.includes("CD") ? "CD" : "",
+    release.formats.includes("DVD") ? "DVD" : "",
+    release.formats.includes("vinyl") ? "Vinyl" : "",
+    release.formats.includes("cassette") ? "Cassette" : ""
+  ].filter(Boolean);
+}
+
+export function releaseAvailabilityChecks(release: Release) {
+  return [
+    ["CD", release.formats.includes("CD")],
+    ["DVD", release.formats.includes("DVD")],
+    ["Vinyl", release.formats.includes("vinyl")],
+    ["Cassette", release.formats.includes("cassette")],
+    ["Streaming", Boolean(release.availability?.streaming?.length)],
+    ["Buy", Boolean(release.availability?.purchase?.length)]
+  ] as Array<[string, boolean]>;
+}
+
+export function concertAvailabilityChecks(concert: Concert) {
+  return [
+    ["Official recording", Boolean(concert.officialRecording)],
+    ["Video", concert.mediaLinks.some((link) => link.kind === "video")],
+    ["Audio", concert.mediaLinks.some((link) => link.kind === "audio")],
+    ["Clips", concert.setlist.some((entry) => entry.mediaLinks?.length)]
+  ] as Array<[string, boolean]>;
+}
+
+export function showAvailabilityChecks(show: MusicShow) {
+  return [
+    ["Watch", show.mediaLinks.some((link) => link.kind === "watch")],
+    ["Streaming", show.mediaLinks.some((link) => link.kind?.includes("streaming"))],
+    ["Clips", show.performedSongs.some((entry) => entry.mediaLinks?.length)]
+  ] as Array<[string, boolean]>;
+}
+
+export function appearanceAvailabilityChecks(appearance: Appearance) {
+  return [
+    ["Watch", appearance.mediaLinks.some((link) => link.kind === "watch")],
+    ["Streaming", appearance.mediaLinks.some((link) => link.kind === "streaming")],
+    ["Metadata", appearance.mediaLinks.some((link) => link.kind === "metadata")]
+  ] as Array<[string, boolean]>;
+}
+
+export function linkCreditLabel(link: ArchiveLink) {
+  return link.credit ? `Credit: ${link.credit}` : "";
 }
 
 export function sourceTitle(id: string) {
@@ -426,8 +488,11 @@ export function buildSearchEntries(): SearchEntry[] {
       linkPlatformList(release.availability?.streaming),
       ...release.tracks.flatMap((track) => [
         track.titleOnRelease,
+        track.disc ? `disc ${track.disc}` : "",
         personNames(track.credits.lyricsBy),
-        personNames(track.credits.composedBy)
+        personNames(track.credits.composedBy),
+        personNames(track.performers),
+        track.versionNote
       ])
     ])
   }));
@@ -443,7 +508,9 @@ export function buildSearchEntries(): SearchEntry[] {
       searchText: text([
         track.titleOnRelease,
         displayTitle(release),
+        track.disc ? `disc ${track.disc}` : "",
         track.versionNote,
+        personNames(track.performers),
         personNames(track.credits.lyricsBy),
         personNames(track.credits.composedBy)
       ])
@@ -488,6 +555,7 @@ export function buildSearchEntries(): SearchEntry[] {
       ...concert.setlist.flatMap((entry) => [
         entry.titlePerformed,
         entry.originalPerformer,
+        entry.mediaLinks?.map(linkCreditLabel).join(" "),
         linkPlatformList(entry.mediaLinks)
       ])
     ])
@@ -509,8 +577,10 @@ export function buildSearchEntries(): SearchEntry[] {
       personNames(show.collaborators),
       linkPlatformList(show.mediaLinks),
       ...show.performedSongs.flatMap((entry) => [
+        entry.date,
         entry.titlePerformed,
         entry.originalPerformer,
+        personNames(entry.collaborators),
         linkPlatformList(entry.mediaLinks)
       ])
     ])

@@ -5,9 +5,131 @@
     "title": "Singer 2019",
     "date": "2019-01-11/2019-04-12",
     "program": "Singer 2019",
-    "episode": "Season record; episode-level Chyi Yu performances pending",
+    "episode": "Season record; Chyi Yu performance rows extracted",
     "platform": "Hunan TV / Mango TV",
-    "performedSongs": [],
+    "performedSongs": [
+      {
+        "position": 1,
+        "song": "song-zui-ai",
+        "titlePerformed": "最愛",
+        "collaborators": [],
+        "mediaLinks": [],
+        "date": "2019-01-11",
+        "originalPerformer": "Pan Yue-yun"
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titlePerformed": "是否 / 愛的箴言",
+        "collaborators": [],
+        "mediaLinks": [],
+        "date": "2019-01-18",
+        "originalPerformer": "Su Rui / Teresa Teng",
+        "notes": "Medley listed in the schedule table."
+      },
+      {
+        "position": 3,
+        "song": "song-flying-bird-and-fish",
+        "titlePerformed": "飛鳥與魚",
+        "collaborators": [],
+        "mediaLinks": [],
+        "date": "2019-01-25",
+        "originalPerformer": "Chyi Yu"
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titlePerformed": "今世",
+        "collaborators": [],
+        "mediaLinks": [],
+        "date": "2019-02-01",
+        "originalPerformer": "Chyi Yu"
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titlePerformed": "女人花",
+        "collaborators": [],
+        "mediaLinks": [],
+        "date": "2019-02-08",
+        "originalPerformer": "Anita Mui"
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titlePerformed": "不要告別 / 告別",
+        "collaborators": [],
+        "mediaLinks": [],
+        "date": "2019-02-15",
+        "originalPerformer": "Li Chin-ling / Li Tai-hsiang",
+        "notes": "Medley listed in the schedule table."
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titlePerformed": "一條日光大道",
+        "collaborators": [],
+        "mediaLinks": [],
+        "date": "2019-02-22",
+        "originalPerformer": "Chyi Yu"
+      },
+      {
+        "position": 8,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "歡顏",
+        "collaborators": [],
+        "mediaLinks": [],
+        "date": "2019-03-01",
+        "originalPerformer": "Chyi Yu"
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titlePerformed": "Memory",
+        "collaborators": [],
+        "mediaLinks": [],
+        "date": "2019-03-08",
+        "originalPerformer": "Elaine Paige"
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titlePerformed": "隱形的翅膀 / You Raise Me Up",
+        "collaborators": [],
+        "mediaLinks": [],
+        "date": "2019-03-15",
+        "originalPerformer": "Angela Chang / Secret Garden",
+        "notes": "Medley listed in the schedule table."
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titlePerformed": "祝我幸福 / 雪落下的聲音",
+        "collaborators": [],
+        "mediaLinks": [],
+        "date": "2019-03-22",
+        "originalPerformer": "Faith Yang / Lu Hu",
+        "notes": "Medley listed in the schedule table."
+      },
+      {
+        "position": 12,
+        "song": null,
+        "titlePerformed": "因為愛情",
+        "collaborators": ["person-mao-buyi"],
+        "mediaLinks": [],
+        "date": "2019-04-05",
+        "originalPerformer": "Faye Wong / Eason Chan"
+      },
+      {
+        "position": 13,
+        "song": null,
+        "titlePerformed": "知否知否",
+        "collaborators": ["person-hu-xia"],
+        "mediaLinks": [],
+        "date": "2019-04-12",
+        "originalPerformer": "Yisa Yu / Hu Xia"
+      }
+    ],
     "collaborators": ["person-liu-huan", "person-yang-kun", "person-wu-tsing-fong", "person-hung-hsiao", "person-leung-kiu-pak"],
     "mediaLinks": [
       {
@@ -17,11 +139,19 @@
         "kind": "watch",
         "isOfficial": true,
         "accessRegion": "China mainland"
+      },
+      {
+        "label": "QQ Music live-track search",
+        "platform": "qq-music",
+        "url": "https://y.qq.com/n/ryqq/search?w=%E6%AD%8C%E6%89%8B2019%20%E9%BD%90%E8%B1%AB&t=song",
+        "kind": "streaming-search",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
       }
     ],
-    "sources": ["source-baike-singer-2019", "source-wikipedia-zh-singer-2019"],
-    "sourceQuality": "secondary",
-    "notes": "Baidu Baike and Wikipedia confirm first broadcast on 2019-01-11, weekly Friday 22:00 on Hunan TV, Mango TV online playback, and Chyi Yu as a starting participant. Episode-level performed songs and original-performer notes still need extraction before statistics use.",
+    "sources": ["source-wikipedia-yue-singer-2019", "source-baike-singer-2019", "source-wikipedia-zh-singer-2019"],
+    "sourceQuality": "secondary-with-platform-links",
+    "notes": "Episode-level performed songs are extracted from the schedule tables and include original-performer notes for cover performances. Music-platform access is represented as a QQ Music search link until a stable album URL is confirmed.",
     "status": "partial"
   },
   {
@@ -29,16 +159,236 @@
     "slug": "dream-star-partner-2013",
     "title": "Dream Star Partner",
     "titleOriginal": "夢想星搭檔",
-    "date": "2013",
+    "date": "2013-10-25/2014-01-03",
     "program": "夢想星搭檔",
-    "episode": "Season/appearance record; exact Chyi Yu episode rows pending",
-    "platform": "CCTV",
-    "performedSongs": [],
-    "collaborators": ["person-chi-chin"],
-    "mediaLinks": [],
-    "sources": ["source-baike-dream-star-partner", "source-user-task-0618-1"],
-    "sourceQuality": "needs-review",
-    "notes": "Seed placeholder from the task note and supplied Baidu Baike URL. The exact broadcast dates, episode rows, and official watch links need manual confirmation because the source page was blocked by a security challenge during this pass.",
-    "status": "needs-source"
+    "episode": "Season record; Chyi Yu and Chyi Chin performance rows extracted",
+    "platform": "CCTV-3 / CCTV-1",
+    "performedSongs": [
+      {
+        "position": 1,
+        "song": null,
+        "titlePerformed": "天使與狼",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2013-10-25",
+        "originalPerformer": "Chyi Yu / Chyi Chin"
+      },
+      {
+        "position": 2,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2013-11-01",
+        "originalPerformer": "Chyi Yu / Pan Yue-yun"
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titlePerformed": "外面的世界",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2013-11-08",
+        "originalPerformer": "Chyi Chin"
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titlePerformed": "愛拼才會贏",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2013-11-15",
+        "originalPerformer": "Ye Qitian"
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titlePerformed": "天下有情人",
+        "collaborators": ["person-li-wei"],
+        "mediaLinks": [],
+        "date": "2013-11-15",
+        "originalPerformer": "Chyi Yu"
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titlePerformed": "我只在乎你",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2013-11-22",
+        "originalPerformer": "Teresa Teng"
+      },
+      {
+        "position": 7,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹",
+        "collaborators": ["person-leo-ku"],
+        "mediaLinks": [],
+        "date": "2013-11-22",
+        "originalPerformer": "Chyi Yu"
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titlePerformed": "是否 / 愛的箴言",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2013-11-29",
+        "originalPerformer": "Su Rui / Teresa Teng",
+        "notes": "Medley listed in the schedule table."
+      },
+      {
+        "position": 9,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田",
+        "collaborators": ["person-pan-yue-yun", "person-huang-yun-ling"],
+        "mediaLinks": [],
+        "date": "2013-11-29",
+        "originalPerformer": "Chyi Yu / Pan Yue-yun"
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titlePerformed": "女人花",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2013-12-06",
+        "originalPerformer": "Anita Mui"
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titlePerformed": "花祭",
+        "collaborators": ["person-chi-chin", "person-huang-qishan", "person-sha-baoliang"],
+        "mediaLinks": [],
+        "date": "2013-12-06",
+        "originalPerformer": "Chyi Chin"
+      },
+      {
+        "position": 12,
+        "song": null,
+        "titlePerformed": "我願意",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2013-12-13",
+        "originalPerformer": "Faye Wong"
+      },
+      {
+        "position": 13,
+        "song": null,
+        "titlePerformed": "恰似你的溫柔",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2013-12-20",
+        "originalPerformer": "Tsai Chin"
+      },
+      {
+        "position": 14,
+        "song": null,
+        "titlePerformed": "鄉間的小路",
+        "collaborators": ["person-cheng-lin"],
+        "mediaLinks": [],
+        "date": "2013-12-20",
+        "originalPerformer": "Liu Wen-cheng"
+      },
+      {
+        "position": 15,
+        "song": null,
+        "titlePerformed": "城裡的月光",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2013-12-27",
+        "originalPerformer": "Mavis Hee"
+      },
+      {
+        "position": 16,
+        "song": "song-vincent",
+        "titlePerformed": "Vincent",
+        "collaborators": ["person-leo-ku"],
+        "mediaLinks": [],
+        "date": "2013-12-27",
+        "originalPerformer": "Don McLean",
+        "notes": "The source table lists Joanna Wang in the original-performer column; the archive keeps Don McLean as the underlying original performer."
+      },
+      {
+        "position": 17,
+        "song": null,
+        "titlePerformed": "又見溜溜的她",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2014-01-03",
+        "originalPerformer": "Chyi Chin"
+      },
+      {
+        "position": 18,
+        "song": null,
+        "titlePerformed": "因為愛情",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2014-01-03",
+        "originalPerformer": "Faye Wong / Eason Chan"
+      },
+      {
+        "position": 19,
+        "song": null,
+        "titlePerformed": "月亮代表我的心",
+        "collaborators": ["person-chi-chin"],
+        "mediaLinks": [],
+        "date": "2014-01-03",
+        "originalPerformer": "Teresa Teng"
+      },
+      {
+        "position": 20,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌",
+        "collaborators": ["person-sa-dingding"],
+        "mediaLinks": [],
+        "date": "2014-01-03",
+        "originalPerformer": "Chyi Yu"
+      },
+      {
+        "position": 21,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹",
+        "collaborators": ["person-leo-ku"],
+        "mediaLinks": [],
+        "date": "2014-01-03",
+        "originalPerformer": "Chyi Yu"
+      },
+      {
+        "position": 22,
+        "song": null,
+        "titlePerformed": "九月的高跟鞋",
+        "collaborators": ["person-chi-chin", "person-huang-qishan"],
+        "mediaLinks": [],
+        "date": "2014-01-03",
+        "originalPerformer": "Chyi Yu"
+      }
+    ],
+    "collaborators": [
+      "person-chi-chin",
+      "person-pan-yue-yun",
+      "person-leo-ku",
+      "person-li-wei",
+      "person-huang-yun-ling",
+      "person-cheng-lin",
+      "person-huang-qishan",
+      "person-sha-baoliang",
+      "person-sa-dingding"
+    ],
+    "mediaLinks": [
+      {
+        "label": "QQ Music live-track search",
+        "platform": "qq-music",
+        "url": "https://y.qq.com/n/ryqq/search?w=%E6%A2%A6%E6%83%B3%E6%98%9F%E6%90%AD%E6%A1%A3%20%E9%BD%90%E8%B1%AB&t=song",
+        "kind": "streaming-search",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
+      }
+    ],
+    "sources": ["source-wikipedia-zh-dream-star-partner-season-1", "source-user-task-0618-2"],
+    "sourceQuality": "secondary-with-platform-links",
+    "notes": "Chyi Yu and Chyi Chin were a core pair and finished as season runners-up. Rows include cover original-performer notes and named collaborators from the season schedule table; music-platform access is represented as a QQ Music search link until a stable album URL is confirmed.",
+    "status": "partial"
   }
 ]
