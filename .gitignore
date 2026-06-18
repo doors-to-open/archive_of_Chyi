@@ -11,8 +11,8 @@ dist/
 .env
 .env.*
 !.env.example
+supplement/
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
-
