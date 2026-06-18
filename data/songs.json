@@ -114,6 +114,32 @@
     "status": "partial"
   },
   {
+    "id": "song-jin-shi",
+    "slug": "jin-shi",
+    "title": "This Life",
+    "titleOriginal": "今世",
+    "aliases": ["今世", "Jin Shi"],
+    "language": "Mandarin",
+    "lyricsBy": ["person-sanmao"],
+    "composedBy": ["person-li-tai-hsiang"],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-echo-1985",
+    "relatedReleases": ["release-echo-1985"],
+    "knownConcerts": [],
+    "knownMusicShows": ["music-show-singer-2019"],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-echo-album",
+      "source-apple-music-echo",
+      "source-qq-music-echo",
+      "source-wikipedia-yue-singer-2019",
+      "source-baike-singer-2019",
+      "source-wikipedia-zh-singer-2019"
+    ],
+    "notes": "Modeled so the Echo album track and Chyi Yu's 2019-02-01 Singer 2019 performance resolve to the same song identity.",
+    "status": "partial"
+  },
+  {
     "id": "song-flying-bird-and-fish",
     "slug": "flying-bird-and-fish",
     "title": "Flying Bird and Fish",
