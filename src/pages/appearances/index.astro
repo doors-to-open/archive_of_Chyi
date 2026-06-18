@@ -1,26 +1,10 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { appearanceAvailabilityChecks, appearances, linkPlatformList } from "../../lib/archive";
-
-const appearanceTypes = Array.from(
-  new Set(appearances.map((appearance) => appearance.appearanceType))
-).sort();
-
-function appearanceSearchText(appearance: (typeof appearances)[number]) {
-  return [
-    appearance.title,
-    appearance.date,
-    appearance.appearanceType,
-    appearance.programOrWork,
-    appearance.role,
-    appearance.notes,
-    linkPlatformList(appearance.mediaLinks)
-  ].filter(Boolean).join(" ");
-}
+import { appearanceAvailabilityChecks, appearances } from "../../lib/archive";
 ---
 
 <BaseLayout title="Appearances | All for Chyi Yu">
-  <section class="page-shell" data-filter-root>
+  <section class="page-shell">
     <p class="page-kicker">Appearances</p>
     <h1 class="page-title">Appearances</h1>
     <p class="page-intro">
@@ -29,31 +13,11 @@ function appearanceSearchText(appearance: (typeof appearances)[number]) {
 
     {appearances.length ? (
       <>
-        <div class="section filter-panel">
-          <label>
-            <span>Search</span>
-            <input data-filter-search type="search" placeholder="Title, work, role..." />
-          </label>
-
-          <label>
-            <span>Type</span>
-            <select data-filter-select data-filter-key="appearance-type">
-              <option value="">All types</option>
-              {appearanceTypes.map((type) => <option value={type}>{type}</option>)}
-            </select>
-          </label>
-
-          <p data-filter-count>{appearances.length} records</p>
-        </div>
-
         <div class="section archive-grid">
           {appearances.map((appearance) => (
             <a
               class="record-card"
               href={`/appearances/${appearance.slug}/`}
-              data-filter-item
-              data-appearance-type={appearance.appearanceType}
-              data-search={appearanceSearchText(appearance)}
             >
               <h2>{appearance.title}{appearance.titleOriginal ? ` / ${appearance.titleOriginal}` : ""}</h2>
               <div class="record-meta-table">
@@ -70,8 +34,6 @@ function appearanceSearchText(appearance: (typeof appearances)[number]) {
             </a>
           ))}
         </div>
-
-        <p data-filter-empty hidden class="empty-state">No matching appearances.</p>
       </>
     ) : (
       <div class="section empty-state">

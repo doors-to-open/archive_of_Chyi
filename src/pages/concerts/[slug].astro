@@ -9,8 +9,7 @@ import {
   linkCreditLabel,
   personNames,
   releasesForSong,
-  songs,
-  sourceRecords
+  songs
 } from "../../lib/archive";
 
 export function getStaticPaths() {
@@ -21,13 +20,12 @@ export function getStaticPaths() {
 }
 
 const { concert } = Astro.props;
-const linkedSources = sourceRecords(concert.sources);
 ---
 
 <BaseLayout title={`${concert.title} | All for Chyi Yu`}>
   <section class="page-shell">
     <p class="page-kicker">Concert</p>
-    <h1 class="page-title">{concert.title}</h1>
+    <h1 class="page-title record-page-title">{concert.title}</h1>
 
     <article class="section detail-panel">
       <RecordStatus status={concert.status} />
@@ -77,7 +75,7 @@ const linkedSources = sourceRecords(concert.sources);
           const linkedSong = byId(songs, entry.song);
           const linkedReleases = linkedSong ? releasesForSong(linkedSong.id) : [];
           return (
-            <details class="record-card">
+            <details class="record-card compact-record-card">
               <summary>
                 <span>{entry.position ? `${entry.position}. ` : ""}{entry.titlePerformed || linkedSong?.title || entry.song}</span>
                 <span class="summary-meta">{linkedSong?.titleOriginal || ""}</span>
@@ -129,18 +127,5 @@ const linkedSources = sourceRecords(concert.sources);
         <p>{concert.notes}</p>
       </section>
     ) : null}
-
-    <section class="section detail-panel">
-      <h2>Sources</h2>
-      {linkedSources.length ? (
-        <div class="link-list">
-          {linkedSources.map((source) => (
-            <p><a href={source.url}>{source.title}</a></p>
-          ))}
-        </div>
-      ) : (
-        <p class="empty-state">No sources recorded.</p>
-      )}
-    </section>
   </section>
 </BaseLayout>

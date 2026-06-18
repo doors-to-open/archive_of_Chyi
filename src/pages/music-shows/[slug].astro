@@ -9,8 +9,7 @@ import {
   personNames,
   releasesForSong,
   showAvailabilityChecks,
-  songs,
-  sourceRecords
+  songs
 } from "../../lib/archive";
 
 export function getStaticPaths() {
@@ -21,7 +20,6 @@ export function getStaticPaths() {
 }
 
 const { show } = Astro.props;
-const linkedSources = sourceRecords(show.sources);
 ---
 
 <BaseLayout title={`${show.title} | All for Chyi Yu`}>
@@ -76,7 +74,7 @@ const linkedSources = sourceRecords(show.sources);
           const linkedSong = byId(songs, entry.song);
           const linkedReleases = linkedSong ? releasesForSong(linkedSong.id) : [];
           return (
-            <details class="record-card">
+            <details class="record-card compact-record-card">
               <summary>
                 <span>{entry.position ? `${entry.position}. ` : ""}{entry.titlePerformed || linkedSong?.title || entry.song}</span>
                 <span class="summary-meta">{entry.date || linkedSong?.titleOriginal || ""}</span>
@@ -128,18 +126,5 @@ const linkedSources = sourceRecords(show.sources);
         <p>{show.notes}</p>
       </section>
     ) : null}
-
-    <section class="section detail-panel">
-      <h2>Sources</h2>
-      {linkedSources.length ? (
-        <div class="link-list">
-          {linkedSources.map((source) => (
-            <p><a href={source.url}>{source.title}</a></p>
-          ))}
-        </div>
-      ) : (
-        <p class="empty-state">No sources recorded.</p>
-      )}
-    </section>
   </section>
 </BaseLayout>

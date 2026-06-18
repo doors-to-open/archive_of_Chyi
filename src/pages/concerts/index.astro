@@ -1,82 +1,21 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { byId, concertAvailabilityChecks, concerts, linkPlatformList, personNames, songs } from "../../lib/archive";
-
-const eventTypes = Array.from(new Set(concerts.map((concert) => concert.eventType))).sort();
-const sourceQualities = Array.from(
-  new Set(concerts.map((concert) => concert.sourceQuality).filter(Boolean))
-).sort();
-
-function concertSearchText(concert: (typeof concerts)[number]) {
-  return [
-    concert.title,
-    concert.date,
-    concert.venue,
-    concert.city,
-    concert.countryOrRegion,
-    concert.eventType,
-    concert.sourceQuality,
-    personNames(concert.guests),
-    linkPlatformList(concert.mediaLinks),
-    ...concert.setlist.flatMap((entry) => {
-      const linkedSong = byId(songs, entry.song);
-      return [
-        entry.titlePerformed,
-        entry.originalPerformer,
-        linkedSong?.title,
-        linkedSong?.titleOriginal,
-        personNames(entry.collaborators),
-        linkPlatformList(entry.mediaLinks)
-      ];
-    })
-  ].filter(Boolean).join(" ");
-}
+import { concertAvailabilityChecks, concerts, personNames } from "../../lib/archive";
 ---
 
 <BaseLayout title="Concerts | All for Chyi Yu">
-  <section class="page-shell" data-filter-root>
+  <section class="page-shell">
     <p class="page-kicker">Concerts</p>
     <h1 class="page-title">Concerts</h1>
     <p class="page-intro">
       Concerts, concert series, setlists, and show-level links.
     </p>
 
-    <div class="section filter-panel">
-      <label>
-        <span>Search</span>
-        <input data-filter-search type="search" placeholder="Concert, place, song..." />
-      </label>
-
-      <label>
-        <span>Type</span>
-        <select data-filter-select data-filter-key="event-type">
-          <option value="">All types</option>
-          {eventTypes.map((type) => <option value={type}>{type}</option>)}
-        </select>
-      </label>
-
-      {sourceQualities.length ? (
-        <label>
-          <span>Source</span>
-          <select data-filter-select data-filter-key="source-quality">
-            <option value="">All source levels</option>
-            {sourceQualities.map((quality) => <option value={quality}>{quality}</option>)}
-          </select>
-        </label>
-      ) : null}
-
-      <p data-filter-count>{concerts.length} records</p>
-    </div>
-
     <div class="section archive-grid">
       {concerts.map((concert) => (
         <a
           class="record-card"
           href={`/concerts/${concert.slug}/`}
-          data-filter-item
-          data-event-type={concert.eventType}
-          data-source-quality={concert.sourceQuality || ""}
-          data-search={concertSearchText(concert)}
         >
           <h2>{concert.title}</h2>
           <div class="record-meta-table">
@@ -94,7 +33,5 @@ function concertSearchText(concert: (typeof concerts)[number]) {
         </a>
       ))}
     </div>
-
-    <p data-filter-empty hidden class="empty-state">No matching concerts.</p>
   </section>
 </BaseLayout>

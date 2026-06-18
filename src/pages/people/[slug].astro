@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { people, personCredits, sourceRecords } from "../../lib/archive";
+import { people, personCredits } from "../../lib/archive";
 
 export function getStaticPaths() {
   return people.map((person) => ({
@@ -12,7 +12,6 @@ export function getStaticPaths() {
 
 const { person } = Astro.props;
 const credits = personCredits(person.id);
-const linkedSources = sourceRecords(person.sources);
 
 const groups = [
   ["Releases", credits.releaseCredits],
@@ -68,18 +67,5 @@ const groups = [
         )}
       </section>
     ))}
-
-    <section class="section detail-panel">
-      <h2>Sources</h2>
-      {linkedSources.length ? (
-        <div class="link-list">
-          {linkedSources.map((source) => (
-            <p><a href={source.url}>{source.title}</a></p>
-          ))}
-        </div>
-      ) : (
-        <p class="empty-state">No sources recorded.</p>
-      )}
-    </section>
   </section>
 </BaseLayout>

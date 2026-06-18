@@ -13,8 +13,7 @@ import {
   releaseFormatLabels,
   releaseProducers,
   releases,
-  songs,
-  sourceRecords
+  songs
 } from "../../lib/archive";
 
 export function getStaticPaths() {
@@ -25,7 +24,6 @@ export function getStaticPaths() {
 }
 
 const { release } = Astro.props;
-const linkedSources = sourceRecords(release.sources);
 
 function peopleList(ids: string[]) {
   return personNames(ids) || "Not recorded";
@@ -41,7 +39,7 @@ function trackNumber(track: (typeof release.tracks)[number]) {
 <BaseLayout title={`${release.title} | All for Chyi Yu`}>
   <section class="page-shell">
     <p class="page-kicker">Release</p>
-    <h1 class="page-title">{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h1>
+    <h1 class="page-title record-page-title">{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h1>
 
     <article class="section detail-panel">
       <RecordStatus status={release.status} />
@@ -105,7 +103,7 @@ function trackNumber(track: (typeof release.tracks)[number]) {
           const linkedConcerts = linkedSong ? concertsForSong(linkedSong.id) : [];
           const linkedMusicShows = linkedSong ? musicShowsForSong(linkedSong.id) : [];
           return (
-            <details class="record-card">
+            <details class="record-card compact-record-card">
               <summary>
                 <span>{trackNumber(track) ? `${trackNumber(track)}. ` : ""}{track.titleOnRelease}</span>
                 <span class="summary-meta">{track.performers?.length ? personNames(track.performers) : peopleList(track.credits.composedBy)}</span>
@@ -150,18 +148,5 @@ function trackNumber(track: (typeof release.tracks)[number]) {
         <p>{release.notes}</p>
       </section>
     ) : null}
-
-    <section class="section detail-panel">
-      <h2>Sources</h2>
-      {linkedSources.length ? (
-        <div class="link-list">
-          {linkedSources.map((source) => (
-            <p><a href={source.url}>{source.title}</a></p>
-          ))}
-        </div>
-      ) : (
-        <p class="empty-state">No sources recorded.</p>
-      )}
-    </section>
   </section>
 </BaseLayout>

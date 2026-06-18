@@ -1,37 +1,10 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { byId, linkPlatformList, musicShows, personNames, showAvailabilityChecks, songs } from "../../lib/archive";
-
-const platforms = Array.from(
-  new Set(musicShows.map((show) => show.platform).filter(Boolean))
-).sort();
-
-function showSearchText(show: (typeof musicShows)[number]) {
-  return [
-    show.title,
-    show.date,
-    show.program,
-    show.episode,
-    show.platform,
-    personNames(show.collaborators),
-    linkPlatformList(show.mediaLinks),
-    ...show.performedSongs.flatMap((entry) => {
-      const linkedSong = byId(songs, entry.song);
-      return [
-        entry.titlePerformed,
-        entry.originalPerformer,
-        linkedSong?.title,
-        linkedSong?.titleOriginal,
-        personNames(entry.collaborators),
-        linkPlatformList(entry.mediaLinks)
-      ];
-    })
-  ].filter(Boolean).join(" ");
-}
+import { musicShows, personNames, showAvailabilityChecks } from "../../lib/archive";
 ---
 
 <BaseLayout title="Music shows | All for Chyi Yu">
-  <section class="page-shell" data-filter-root>
+  <section class="page-shell">
     <p class="page-kicker">Music shows</p>
     <h1 class="page-title">Music shows</h1>
     <p class="page-intro">
@@ -40,33 +13,11 @@ function showSearchText(show: (typeof musicShows)[number]) {
 
     {musicShows.length ? (
       <>
-        <div class="section filter-panel">
-          <label>
-            <span>Search</span>
-            <input data-filter-search type="search" placeholder="Program, episode, song, collaborator..." />
-          </label>
-
-          {platforms.length ? (
-            <label>
-              <span>Platform</span>
-              <select data-filter-select data-filter-key="platform">
-                <option value="">All platforms</option>
-                {platforms.map((platform) => <option value={platform}>{platform}</option>)}
-              </select>
-            </label>
-          ) : null}
-
-          <p data-filter-count>{musicShows.length} records</p>
-        </div>
-
         <div class="section archive-grid">
           {musicShows.map((show) => (
             <a
               class="record-card"
               href={`/music-shows/${show.slug}/`}
-              data-filter-item
-              data-platform={show.platform || ""}
-              data-search={showSearchText(show)}
             >
               <h2>{show.title}{show.titleOriginal ? ` / ${show.titleOriginal}` : ""}</h2>
               <div class="record-meta-table">
@@ -84,8 +35,6 @@ function showSearchText(show: (typeof musicShows)[number]) {
             </a>
           ))}
         </div>
-
-        <p data-filter-empty hidden class="empty-state">No matching music shows.</p>
       </>
     ) : (
       <div class="section empty-state">
