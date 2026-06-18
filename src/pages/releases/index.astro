@@ -1,33 +1,90 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import SongSummaryCard from "../../components/SongSummaryCard.astro";
 import {
   personName,
   releaseAvailabilityChecks,
   releaseArtists,
+  releaseLiveRecordCount,
   releaseProducers,
-  releases
+  releases,
+  songSummaries
 } from "../../lib/archive";
+
+const summaries = songSummaries();
 ---
 
 <BaseLayout title="Releases | All for Chyi Yu">
-  <section class="page-shell">
+  <section class="page-shell" data-sort-root>
     <p class="page-kicker">Releases</p>
     <h1 class="page-title">Releases</h1>
     <p class="page-intro">
-      Albums, singles, compilations, collaborations, and soundtrack releases.
+      Albums by default, with songs available as an expandable identity view.
     </p>
 
-    <div class="section archive-grid">
-      {releases.map((release) => (
+    <div class="section filter-panel release-controls-panel">
+      <fieldset class="filter-option-group">
+        <legend>View</legend>
+        <div class="filter-options">
+          <button type="button" data-view-option data-view-value="albums" aria-pressed="true">
+            Albums
+          </button>
+          <button type="button" data-view-option data-view-value="songs" aria-pressed="false">
+            Songs
+          </button>
+        </div>
+      </fieldset>
+
+      <fieldset class="filter-option-group sort-option-group">
+        <legend>Sort</legend>
+        <div class="filter-options">
+          <button type="button" data-sort-option data-sort-value="date-asc" aria-pressed="true">
+            Oldest
+          </button>
+          <button type="button" data-sort-option data-sort-value="date-desc" aria-pressed="false">
+            Newest
+          </button>
+          <button type="button" data-sort-option data-sort-value="alpha-asc" aria-pressed="false">
+            A-Z
+          </button>
+          <button type="button" data-sort-option data-sort-value="alpha-desc" aria-pressed="false">
+            Z-A
+          </button>
+          <button type="button" data-sort-option data-sort-value="live-desc" aria-pressed="false">
+            Most live
+          </button>
+          <button type="button" data-sort-option data-sort-value="live-asc" aria-pressed="false">
+            Least live
+          </button>
+        </div>
+      </fieldset>
+
+      <p data-sort-count>{releases.length} albums</p>
+    </div>
+
+    <div
+      class="section archive-grid"
+      data-view-panel="albums"
+      data-sort-container
+      data-count-label-singular="album"
+      data-count-label-plural="albums"
+    >
+      {releases.map((release, index) => (
         <a
           class="record-card"
           href={`/releases/${release.slug}/`}
+          data-sort-item
+          data-sort-index={index}
+          data-sort-date={release.releaseDate || ""}
+          data-sort-alpha={`${release.title} ${release.titleOriginal || ""}`.toLocaleLowerCase("en-US")}
+          data-sort-live={releaseLiveRecordCount(release)}
         >
           <h2>{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h2>
           <div class="record-meta-table">
             <span>Date: {release.releaseDate || "Unknown"}</span>
             <span>Type: {release.releaseType}</span>
             <span>{release.tracks.length} tracks</span>
+            <span>{releaseLiveRecordCount(release)} linked live records</span>
             {release.label ? <span>Label: {release.label}</span> : null}
           </div>
           <div class="meta-row">
@@ -42,6 +99,26 @@ import {
             ))}
           </div>
         </a>
+      ))}
+    </div>
+
+    <div
+      class="section archive-grid"
+      data-view-panel="songs"
+      data-sort-container
+      data-count-label-singular="song"
+      data-count-label-plural="songs"
+      hidden
+    >
+      {summaries.map((summary, index) => (
+        <SongSummaryCard
+          summary={summary}
+          data-sort-item
+          data-sort-index={index}
+          data-sort-date={summary.dateSort}
+          data-sort-alpha={summary.alphaSort}
+          data-sort-live={summary.liveCount}
+        />
       ))}
     </div>
   </section>

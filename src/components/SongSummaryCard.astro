@@ -1,0 +1,76 @@
+---
+import type { SongSummary } from "../lib/archive";
+import RecordStatus from "./RecordStatus.astro";
+
+type Props = {
+  summary: SongSummary;
+  [key: string]: unknown;
+};
+
+const { summary, ...attrs } = Astro.props;
+---
+
+<details class="record-card compact-record-card song-summary-card" {...attrs}>
+  <summary>
+    <span>{summary.title}</span>
+    <span class="summary-meta">
+      {summary.originLabel} / {summary.albumLabel} / {summary.liveCount} live
+    </span>
+  </summary>
+
+  <div class="details-body">
+    <RecordStatus status={summary.song.status} />
+    <p>{summary.song.language || "Language not recorded"}</p>
+    {summary.creditsLabel ? <p>Credits: {summary.creditsLabel}</p> : <p>Credits not recorded.</p>}
+
+    <div class="nested-links">
+      <h3>Albums</h3>
+      {summary.releasePlacements.length ? (
+        summary.releasePlacements.map((placement) => (
+          <p>
+            <a href={placement.href}>{placement.label}</a>
+            {placement.track.titleOnRelease !== summary.song.title ? ` / ${placement.track.titleOnRelease}` : ""}
+          </p>
+        ))
+      ) : summary.albumReleases.length ? (
+        summary.albumReleases.map((release) => (
+          <p><a href={`/releases/${release.slug}/`}>{release.title}</a>{release.releaseDate ? ` / ${release.releaseDate}` : ""}</p>
+        ))
+      ) : (
+        <p class="muted">No linked album yet.</p>
+      )}
+    </div>
+
+    <div class="nested-links">
+      <h3>Live Records</h3>
+      {summary.liveRecords.length ? (
+        summary.liveRecords.map((record) => (
+          <p>
+            <a href={record.href}>{record.title}</a>
+            {record.date ? ` / ${record.date}` : ""}
+            {record.entry.titlePerformed !== summary.song.title ? ` / ${record.entry.titlePerformed}` : ""}
+          </p>
+        ))
+      ) : (
+        <p class="muted">No linked live records yet.</p>
+      )}
+    </div>
+
+    {summary.liveRecords.some((record) => record.mediaLinks.length) ? (
+      <div class="nested-links">
+        <h3>Clips</h3>
+        {summary.liveRecords.flatMap((record) =>
+          record.mediaLinks.map((link) => (
+            <p>
+              <a href={link.url}>{link.label}</a>
+              {link.platform ? ` / ${link.platform}` : ""}
+              {link.credit ? ` / ${link.credit}` : ""}
+            </p>
+          ))
+        )}
+      </div>
+    ) : null}
+
+    {summary.song.notes ? <p>{summary.song.notes}</p> : null}
+  </div>
+</details>

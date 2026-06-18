@@ -1,8 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { buildSearchEntries } from "../lib/archive";
+import SongSummaryCard from "../components/SongSummaryCard.astro";
+import { buildSearchEntries, songSummaries } from "../lib/archive";
 
 const entries = buildSearchEntries();
+const songResults = songSummaries();
+const nonSongEntries = entries.filter((entry) => entry.filterCategory !== "song");
 const categories = Array.from(
   new Map(entries.map((entry) => [entry.filterCategory, entry.category])).entries()
 );
@@ -13,7 +16,7 @@ const categories = Array.from(
     <p class="page-kicker">Search</p>
     <h1 class="page-title">Search</h1>
     <p class="page-intro">
-      Search releases, tracks, internal song records, concerts, music shows, appearances, people, and sources.
+      Search songs, albums, concerts, and people.
     </p>
 
     <div class="section filter-panel search-filter-panel">
@@ -40,7 +43,17 @@ const categories = Array.from(
     </div>
 
     <div class="section archive-grid">
-      {entries.map((entry) => (
+      {songResults.map((summary) => (
+        <SongSummaryCard
+          summary={summary}
+          hidden
+          data-filter-item
+          data-category="song"
+          data-search={summary.searchText}
+        />
+      ))}
+
+      {nonSongEntries.map((entry) => (
         <a
           class="record-card"
           href={entry.href}

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { appearances, concerts, musicShows, people, releases } from "../lib/archive";
+import { appearances, concerts, musicShows, people, releases, songs } from "../lib/archive";
 
 const sections = [
   {
@@ -32,6 +32,12 @@ const sections = [
     title: "People",
     count: people.length,
     text: "Writers, composers, producers, collaborators, hosts, and other credits."
+  },
+  {
+    href: "/statistics/",
+    title: "Statistics",
+    count: songs.length,
+    text: "Song performance counts, distribution summaries, and source coverage."
   }
 ];
 ---

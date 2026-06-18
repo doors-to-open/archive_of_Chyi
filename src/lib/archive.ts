@@ -185,6 +185,50 @@ export type PersonCredit = {
   context?: string;
 };
 
+export type SongReleasePlacement = {
+  release: Release;
+  track: Track;
+  href: string;
+  label: string;
+};
+
+export type SongLiveRecord = {
+  kind: "concert" | "music-show";
+  category: string;
+  title: string;
+  href: string;
+  date?: string | null;
+  context?: string | null;
+  entry: SongPerformance;
+  mediaLinks: ArchiveLink[];
+};
+
+export type SongSummary = {
+  song: Song;
+  title: string;
+  href: string;
+  originLabel: "Original" | "Cover" | "Unresolved";
+  albumLabel: string;
+  albumReleases: Release[];
+  releasePlacements: SongReleasePlacement[];
+  liveRecords: SongLiveRecord[];
+  concertCount: number;
+  musicShowCount: number;
+  liveCount: number;
+  clipCount: number;
+  dateSort: string;
+  alphaSort: string;
+  creditsLabel: string;
+  searchText: string;
+};
+
+export type DistributionItem = {
+  label: string;
+  count: number;
+  total: number;
+  percent: number;
+};
+
 export const people = peopleData as Person[];
 export const songs = songsData as Song[];
 export const releases = releasesData as Release[];
@@ -317,6 +361,227 @@ export function sourceRecords(ids: string[]) {
 
 export function displayTitle(item: { title: string; titleOriginal?: string }) {
   return item.titleOriginal ? `${item.title} / ${item.titleOriginal}` : item.title;
+}
+
+function uniqueById<T extends { id: string }>(items: T[]) {
+  return Array.from(new Map(items.map((item) => [item.id, item])).values());
+}
+
+function normalizeTitle(value: string) {
+  return value.toLocaleLowerCase("en-US");
+}
+
+function songTrackLabel(track: Track) {
+  return [track.disc ? `D${track.disc}` : "", track.position ? `${track.position}` : ""]
+    .filter(Boolean)
+    .join(".");
+}
+
+function songDateSort(song: Song, releasePlacements: SongReleasePlacement[], liveRecords: SongLiveRecord[]) {
+  return [
+    ...releasePlacements.map((placement) => placement.release.releaseDate),
+    ...liveRecords.map((record) => record.date),
+    song.firstKnownRelease ? byId(releases, song.firstKnownRelease)?.releaseDate : ""
+  ]
+    .filter(Boolean)
+    .sort()[0] || "";
+}
+
+function hasChyiOriginalPerformer(record: SongLiveRecord) {
+  return Boolean(record.entry.originalPerformer?.toLocaleLowerCase("en-US").includes("chyi yu"));
+}
+
+function hasCoverClue(song: Song, liveRecords: SongLiveRecord[]) {
+  return song.notes?.toLocaleLowerCase("en-US").includes("cover") ||
+    liveRecords.some((record) => record.entry.originalPerformer && !hasChyiOriginalPerformer(record));
+}
+
+export function releasePlacementsForSong(songId: string): SongReleasePlacement[] {
+  return releases.flatMap((release) =>
+    release.tracks
+      .filter((track) => track.song === songId)
+      .map((track) => {
+        const trackLabel = songTrackLabel(track);
+        return {
+          release,
+          track,
+          href: `/releases/${release.slug}/`,
+          label: trackLabel ? `${displayTitle(release)} / ${trackLabel}` : displayTitle(release)
+        };
+      })
+  );
+}
+
+export function liveRecordsForSong(songId: string): SongLiveRecord[] {
+  const concertRecords = concerts.flatMap((concert) =>
+    concert.setlist
+      .filter((entry) => entry.song === songId)
+      .map((entry) => ({
+        kind: "concert" as const,
+        category: "Concert",
+        title: concert.title,
+        href: `/concerts/${concert.slug}/`,
+        date: entry.date || concert.date,
+        context: text([concert.venue, concert.city, concert.countryOrRegion]),
+        entry,
+        mediaLinks: entry.mediaLinks || []
+      }))
+  );
+
+  const musicShowRecords = musicShows.flatMap((show) =>
+    show.performedSongs
+      .filter((entry) => entry.song === songId)
+      .map((entry) => ({
+        kind: "music-show" as const,
+        category: "Music show",
+        title: show.title,
+        href: `/music-shows/${show.slug}/`,
+        date: entry.date || show.date,
+        context: text([show.program, show.episode, show.platform]),
+        entry,
+        mediaLinks: entry.mediaLinks || []
+      }))
+  );
+
+  return [...concertRecords, ...musicShowRecords].sort((a, b) =>
+    text([a.date, a.title, a.entry.position || 0]).localeCompare(text([b.date, b.title, b.entry.position || 0]), "en")
+  );
+}
+
+export function songSummary(song: Song): SongSummary {
+  const releasePlacements = releasePlacementsForSong(song.id);
+  const directReleases = [
+    song.firstKnownRelease ? byId(releases, song.firstKnownRelease) : undefined,
+    ...song.relatedReleases.map((releaseId) => byId(releases, releaseId)),
+    ...releasePlacements.map((placement) => placement.release)
+  ].filter(Boolean) as Release[];
+  const albumReleases = uniqueById(directReleases);
+  const liveRecords = liveRecordsForSong(song.id);
+  const concertCount = liveRecords.filter((record) => record.kind === "concert").length;
+  const musicShowCount = liveRecords.filter((record) => record.kind === "music-show").length;
+  const clipCount = liveRecords.reduce((sum, record) => sum + record.mediaLinks.length, 0);
+  const originLabel = hasCoverClue(song, liveRecords)
+    ? "Cover"
+    : albumReleases.length
+      ? "Original"
+      : "Unresolved";
+  const primaryRelease = albumReleases[0];
+  const albumLabel = primaryRelease
+    ? `${displayTitle(primaryRelease)}${albumReleases.length > 1 ? ` + ${albumReleases.length - 1} more` : ""}`
+    : "No linked album";
+
+  return {
+    song,
+    title: displayTitle(song),
+    href: primaryRelease ? `/releases/${primaryRelease.slug}/` : "/releases/",
+    originLabel,
+    albumLabel,
+    albumReleases,
+    releasePlacements,
+    liveRecords,
+    concertCount,
+    musicShowCount,
+    liveCount: liveRecords.length,
+    clipCount,
+    dateSort: songDateSort(song, releasePlacements, liveRecords),
+    alphaSort: normalizeTitle(displayTitle(song)),
+    creditsLabel: text([personNames(song.lyricsBy), personNames(song.composedBy)]),
+    searchText: text([
+      displayTitle(song),
+      song.aliases.join(" "),
+      song.language,
+      personNames(song.lyricsBy),
+      personNames(song.composedBy),
+      personNames(song.arrangedBy),
+      albumReleases.map(displayTitle).join(" "),
+      releasePlacements.map((placement) => placement.track.titleOnRelease).join(" "),
+      ...liveRecords.flatMap((record) => [
+        record.title,
+        record.entry.titlePerformed,
+        record.entry.originalPerformer,
+        personNames(record.entry.collaborators),
+        linkPlatformList(record.mediaLinks)
+      ]),
+      song.notes
+    ])
+  };
+}
+
+export function songSummaries() {
+  return songs.map(songSummary);
+}
+
+export function releaseLiveRecordCount(release: Release) {
+  const songIds = Array.from(new Set(release.tracks.map((track) => track.song).filter(Boolean))) as string[];
+  return songIds.reduce((sum, songId) => sum + liveRecordsForSong(songId).length, 0);
+}
+
+export function distribution(items: Array<string | null | undefined>, fallback = "Unknown"): DistributionItem[] {
+  const counts = items.reduce((map, value) => {
+    const label = value || fallback;
+    map.set(label, (map.get(label) || 0) + 1);
+    return map;
+  }, new Map<string, number>());
+  const total = items.length;
+  return Array.from(counts.entries())
+    .map(([label, count]) => ({
+      label,
+      count,
+      total,
+      percent: total ? Math.round((count / total) * 100) : 0
+    }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, "en"));
+}
+
+function recordSourceIds(record: { sources?: string[] }) {
+  return record.sources || [];
+}
+
+export function archiveStatistics() {
+  const summaries = songSummaries();
+  const statusRecords = [
+    ...songs,
+    ...releases,
+    ...concerts,
+    ...musicShows,
+    ...appearances,
+    ...people
+  ];
+  const sourceBackedRecords = statusRecords.filter((record) => recordSourceIds(record).length);
+  const sourceIds = new Set(statusRecords.flatMap(recordSourceIds));
+
+  return {
+    totals: {
+      songs: songs.length,
+      albums: releases.length,
+      concerts: concerts.length,
+      musicShows: musicShows.length,
+      appearances: appearances.length,
+      people: people.length,
+      sources: sources.length,
+      concertPerformances: concerts.reduce((sum, concert) => sum + concert.setlist.length, 0),
+      musicShowPerformances: musicShows.reduce((sum, show) => sum + show.performedSongs.length, 0)
+    },
+    songPerformanceTotal: summaries.reduce((sum, summary) => sum + summary.liveCount, 0),
+    topSongs: [...summaries]
+      .filter((summary) => summary.liveCount > 0)
+      .sort((a, b) => b.liveCount - a.liveCount || a.alphaSort.localeCompare(b.alphaSort, "en"))
+      .slice(0, 10),
+    leastPerformedSongs: [...summaries]
+      .sort((a, b) => a.liveCount - b.liveCount || a.alphaSort.localeCompare(b.alphaSort, "en"))
+      .slice(0, 10),
+    releaseTypeDistribution: distribution(releases.map((release) => release.releaseType)),
+    concertRegionDistribution: distribution(concerts.map((concert) => concert.countryOrRegion)),
+    musicShowPlatformDistribution: distribution(musicShows.map((show) => show.platform)),
+    appearanceTypeDistribution: distribution(appearances.map((appearance) => appearance.appearanceType)),
+    statusDistribution: distribution(statusRecords.map((record) => record.status)),
+    sourceCoverage: {
+      totalRecords: statusRecords.length,
+      withSources: sourceBackedRecords.length,
+      withoutSources: statusRecords.length - sourceBackedRecords.length,
+      citedSourceIds: sourceIds.size
+    }
+  };
 }
 
 function hasPerson(personIds: string[] | undefined, personId: string) {
@@ -470,9 +735,9 @@ function text(values: Array<string | number | null | undefined | false>) {
 }
 
 export function buildSearchEntries(): SearchEntry[] {
-  const releaseEntries = releases.map((release) => ({
-    category: "Releases",
-    filterCategory: "releases",
+  const albumEntries = releases.map((release) => ({
+    category: "Album",
+    filterCategory: "album",
     title: displayTitle(release),
     href: `/releases/${release.slug}/`,
     summary: text([release.releaseDate, release.releaseType, release.label]),
@@ -497,48 +762,19 @@ export function buildSearchEntries(): SearchEntry[] {
     ])
   }));
 
-  const trackEntries = releases.flatMap((release) =>
-    release.tracks.map((track) => ({
-      category: "Tracks",
-      filterCategory: "tracks",
-      title: track.titleOnRelease,
-      href: `/releases/${release.slug}/`,
-      summary: `Track ${track.position || "-"} on ${displayTitle(release)}`,
-      meta: text([personNames(track.credits.lyricsBy), personNames(track.credits.composedBy)]),
-      searchText: text([
-        track.titleOnRelease,
-        displayTitle(release),
-        track.disc ? `disc ${track.disc}` : "",
-        track.versionNote,
-        personNames(track.performers),
-        personNames(track.credits.lyricsBy),
-        personNames(track.credits.composedBy)
-      ])
-    }))
-  );
-
-  const songEntries = songs.map((song) => {
-    const firstRelease = byId(releases, song.firstKnownRelease);
-    return {
-      category: "Internal songs",
-      filterCategory: "songs",
-      title: displayTitle(song),
-      href: firstRelease ? `/releases/${firstRelease.slug}/` : "/releases/",
-      summary: firstRelease ? `Appears on ${displayTitle(firstRelease)}` : "Internal song record",
-      meta: text([personNames(song.lyricsBy), personNames(song.composedBy)]),
-      searchText: text([
-        displayTitle(song),
-        song.aliases.join(" "),
-        song.language,
-        personNames(song.lyricsBy),
-        personNames(song.composedBy)
-      ])
-    };
-  });
+  const songEntries = songSummaries().map((summary) => ({
+    category: "Song",
+    filterCategory: "song",
+    title: summary.title,
+    href: summary.href,
+    summary: text([summary.originLabel, summary.albumLabel]),
+    meta: `${summary.liveCount} live records`,
+    searchText: summary.searchText
+  }));
 
   const concertEntries = concerts.map((concert) => ({
-    category: "Concerts",
-    filterCategory: "concerts",
+    category: "Concert",
+    filterCategory: "concert",
     title: concert.title,
     href: `/concerts/${concert.slug}/`,
     summary: text([concert.date, concert.eventType, concert.venue, concert.city, concert.countryOrRegion]),
@@ -561,51 +797,9 @@ export function buildSearchEntries(): SearchEntry[] {
     ])
   }));
 
-  const musicShowEntries = musicShows.map((show) => ({
-    category: "Music shows",
-    filterCategory: "music-shows",
-    title: show.title,
-    href: `/music-shows/${show.slug}/`,
-    summary: text([show.date, show.program, show.episode, show.platform]),
-    meta: `${show.performedSongs.length} songs`,
-    searchText: text([
-      show.title,
-      show.date,
-      show.program,
-      show.episode,
-      show.platform,
-      personNames(show.collaborators),
-      linkPlatformList(show.mediaLinks),
-      ...show.performedSongs.flatMap((entry) => [
-        entry.date,
-        entry.titlePerformed,
-        entry.originalPerformer,
-        personNames(entry.collaborators),
-        linkPlatformList(entry.mediaLinks)
-      ])
-    ])
-  }));
-
-  const appearanceEntries = appearances.map((appearance) => ({
-    category: "Appearances",
-    filterCategory: "appearances",
-    title: appearance.title,
-    href: `/appearances/${appearance.slug}/`,
-    summary: text([appearance.date, appearance.appearanceType, appearance.programOrWork, appearance.role]),
-    meta: appearance.status,
-    searchText: text([
-      appearance.title,
-      appearance.date,
-      appearance.appearanceType,
-      appearance.programOrWork,
-      appearance.role,
-      appearance.notes
-    ])
-  }));
-
   const personEntries = people.map((person) => ({
-    category: "People",
-    filterCategory: "people",
+    category: "Person",
+    filterCategory: "person",
     title: person.nameOriginal ? `${person.displayName} / ${person.nameOriginal}` : person.displayName,
     href: `/people/${person.slug}/`,
     summary: person.roles.join(", "),
@@ -619,31 +813,10 @@ export function buildSearchEntries(): SearchEntry[] {
     ])
   }));
 
-  const sourceEntries = sources.map((source) => ({
-    category: "Sources",
-    filterCategory: "sources",
-    title: source.title,
-    href: source.url || "/sources/",
-    summary: text([source.sourceType, source.authorOrPublisher, source.reliability]),
-    meta: source.accessDate || "",
-    searchText: text([
-      source.title,
-      source.authorOrPublisher,
-      source.sourceType,
-      source.reliability,
-      source.citation,
-      source.notes
-    ])
-  }));
-
   return [
-    ...releaseEntries,
-    ...trackEntries,
     ...songEntries,
+    ...albumEntries,
     ...concertEntries,
-    ...musicShowEntries,
-    ...appearanceEntries,
-    ...personEntries,
-    ...sourceEntries
+    ...personEntries
   ];
 }

@@ -18,7 +18,8 @@ const navItems = [
   { href: "/concerts/", label: "Concerts" },
   { href: "/music-shows/", label: "Music shows" },
   { href: "/appearances/", label: "Appearances" },
-  { href: "/people/", label: "People" }
+  { href: "/people/", label: "People" },
+  { href: "/statistics/", label: "Statistics" }
 ];
 
 const appendixItems = [
@@ -145,6 +146,104 @@ const appendixItems = [
             });
           });
         });
+        update();
+      });
+
+      document.querySelectorAll("[data-sort-root]").forEach((root) => {
+        const sortSelect = root.querySelector("[data-sort-select]");
+        const sortOptions = Array.from(root.querySelectorAll("[data-sort-option]"));
+        const viewOptions = Array.from(root.querySelectorAll("[data-view-option]"));
+        const panels = Array.from(root.querySelectorAll("[data-view-panel]"));
+        const count = root.querySelector("[data-sort-count]");
+
+        const activeView = () => {
+          const active = root.querySelector("[data-view-option][aria-pressed='true']");
+          return normalize(active?.getAttribute("data-view-value"));
+        };
+
+        const activePanels = () => {
+          const view = activeView();
+          return panels.length
+            ? panels.filter((panel) => !view || normalize(panel.getAttribute("data-view-panel")) === view)
+            : [root];
+        };
+
+        const sortValue = () => {
+          const activeSort = root.querySelector("[data-sort-option][aria-pressed='true']");
+          return activeSort?.getAttribute("data-sort-value") ||
+            (sortSelect instanceof HTMLSelectElement ? sortSelect.value : "index-asc");
+        };
+
+        const itemValue = (item: Element, key: string) => item.getAttribute(`data-sort-${key}`) || "";
+
+        const compareItems = (a: Element, b: Element, key: string, direction: "asc" | "desc") => {
+          if (key === "live" || key === "index") {
+            const aValue = Number(itemValue(a, key) || 0);
+            const bValue = Number(itemValue(b, key) || 0);
+            return direction === "asc" ? aValue - bValue : bValue - aValue;
+          }
+
+          const aValue = itemValue(a, key);
+          const bValue = itemValue(b, key);
+          if (!aValue && !bValue) return 0;
+          if (!aValue) return 1;
+          if (!bValue) return -1;
+          return direction === "asc"
+            ? aValue.localeCompare(bValue, "en")
+            : bValue.localeCompare(aValue, "en");
+        };
+
+        const sortPanel = (panel: Element) => {
+          const container = panel.querySelector("[data-sort-container]") || panel;
+          const items = Array.from(container.querySelectorAll(":scope > [data-sort-item]"));
+          const [key = "index", direction = "asc"] = sortValue().split("-") as [string, "asc" | "desc"];
+          items
+            .sort((a, b) => compareItems(a, b, key, direction) || compareItems(a, b, "index", "asc"))
+            .forEach((item) => container.appendChild(item));
+        };
+
+        const update = () => {
+          const visiblePanels = activePanels();
+          panels.forEach((panel) => {
+            panel.toggleAttribute("hidden", !visiblePanels.includes(panel));
+          });
+
+          visiblePanels.forEach(sortPanel);
+
+          if (count) {
+            const activePanel = visiblePanels[0];
+            const visibleItems = activePanel
+              ? activePanel.querySelectorAll("[data-sort-item]").length
+              : root.querySelectorAll("[data-sort-item]").length;
+            const singular =
+              activePanel?.getAttribute("data-count-label-singular") ||
+              root.getAttribute("data-count-label-singular") ||
+              "record";
+            const plural =
+              activePanel?.getAttribute("data-count-label-plural") ||
+              root.getAttribute("data-count-label-plural") ||
+              `${singular}s`;
+            count.textContent = `${visibleItems} ${visibleItems === 1 ? singular : plural}`;
+          }
+        };
+
+        viewOptions.forEach((option) => {
+          option.addEventListener("click", () => {
+            viewOptions.forEach((item) => item.setAttribute("aria-pressed", "false"));
+            option.setAttribute("aria-pressed", "true");
+            update();
+          });
+        });
+
+        sortOptions.forEach((option) => {
+          option.addEventListener("click", () => {
+            sortOptions.forEach((item) => item.setAttribute("aria-pressed", "false"));
+            option.setAttribute("aria-pressed", "true");
+            update();
+          });
+        });
+
+        sortSelect?.addEventListener("change", update);
         update();
       });
     </script>

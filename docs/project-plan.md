@@ -51,6 +51,8 @@ This website should work like a fan-friendly dictionary for Chyi Yu. A visitor s
 - Count known concert and music-show performances per internal song record.
 - Show release, concert, music-show, and appearance distributions.
 - Make source coverage and uncertainty visible.
+- Add album/song browsing modes on Releases, with date, alphabetic, and live-record sorting.
+- Simplify global search to song, album, concert, and person results, while keeping tracks as album-specific placements.
 
 ### Stage 6: Contribution Workflow
 

@@ -25,13 +25,14 @@ Footer links:
 
 ### `/search/`
 
-Global search across public archive sections, internal song records, release tracks, people, and sources.
+Global search across the main user-facing discovery targets: songs, albums, concerts, and people.
 
 Expected controls:
 
 - Search by title, original title, alias, person, date, source, release track, concert song, or program/work title.
-- Filter by section.
+- Filter by song, album, concert, or person.
 - Link results to the nearest public route. Internal song records should link to their release context rather than to standalone song pages.
+- Show song results as expandable song summaries, not as standalone song pages.
 
 ### `/releases/`
 
@@ -40,7 +41,8 @@ Release index for albums, singles, compilations, reissues, collaborations, sound
 Expected controls later:
 
 - Filter by release type.
-- Sort by release date.
+- Switch between album and song views.
+- Sort by release date, alphabetic title, and live-record counts.
 - Search by title, label, catalog number, track title, lyricist, and composer.
 
 ### `/releases/[slug]/`
@@ -51,6 +53,7 @@ Expected sections:
 
 - Release metadata.
 - Expandable track list.
+- Track sorting by album order, alphabetic title, and linked live-record counts.
 - Track-level lyricist, composer, arrangement, version, and duration when known.
 - Known concert and music-show connections by track.
 - External platform links.
@@ -196,12 +199,22 @@ Song records remain in the data layer, but public song pages are removed:
 - no `/songs/`
 - no `/songs/[slug]/`
 
+### `/statistics/`
+
+Statistics page for the current reviewed dataset.
+
+Expected sections:
+
+- Archive totals.
+- Known concert and music-show performances per internal song record.
+- Release, concert, music-show, and appearance distributions.
+- Source coverage and status distribution.
+
 ## Later Routes
 
 These should wait until the basic archive works:
 
 - `/timeline/`
-- `/statistics/`
 - `/media/`
 - `/memories/`
 - `/changelog/`

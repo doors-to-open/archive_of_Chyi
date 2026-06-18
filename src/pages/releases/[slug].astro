@@ -13,6 +13,7 @@ import {
   releaseFormatLabels,
   releaseProducers,
   releases,
+  songSummary,
   songs
 } from "../../lib/archive";
 
@@ -24,6 +25,11 @@ export function getStaticPaths() {
 }
 
 const { release } = Astro.props;
+const trackSummaries = new Map(
+  release.tracks
+    .filter((track) => track.song)
+    .map((track) => [track.song, songSummary(byId(songs, track.song)!)])
+);
 
 function peopleList(ids: string[]) {
   return personNames(ids) || "Not recorded";
@@ -37,7 +43,12 @@ function trackNumber(track: (typeof release.tracks)[number]) {
 ---
 
 <BaseLayout title={`${release.title} | All for Chyi Yu`}>
-  <section class="page-shell">
+  <section
+    class="page-shell"
+    data-sort-root
+    data-count-label-singular="entry"
+    data-count-label-plural="entries"
+  >
     <p class="page-kicker">Release</p>
     <h1 class="page-title record-page-title">{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h1>
 
@@ -94,25 +105,58 @@ function trackNumber(track: (typeof release.tracks)[number]) {
     <section class="section">
       <div class="section-header">
         <h2>Tracks</h2>
-        <p>{release.tracks.length} entries</p>
+        <p data-sort-count>{release.tracks.length} entries</p>
       </div>
 
-      <div class="archive-grid">
-        {release.tracks.map((track) => {
+      <div class="filter-panel inline-filter-panel">
+        <fieldset class="filter-option-group sort-option-group">
+          <legend>Sort tracks</legend>
+          <div class="filter-options">
+            <button type="button" data-sort-option data-sort-value="index-asc" aria-pressed="true">
+              Album order
+            </button>
+            <button type="button" data-sort-option data-sort-value="alpha-asc" aria-pressed="false">
+              A-Z
+            </button>
+            <button type="button" data-sort-option data-sort-value="alpha-desc" aria-pressed="false">
+              Z-A
+            </button>
+            <button type="button" data-sort-option data-sort-value="live-desc" aria-pressed="false">
+              Most live
+            </button>
+            <button type="button" data-sort-option data-sort-value="live-asc" aria-pressed="false">
+              Least live
+            </button>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="archive-grid" data-sort-container>
+        {release.tracks.map((track, index) => {
           const linkedSong = byId(songs, track.song);
+          const summary = track.song ? trackSummaries.get(track.song) : undefined;
           const linkedConcerts = linkedSong ? concertsForSong(linkedSong.id) : [];
           const linkedMusicShows = linkedSong ? musicShowsForSong(linkedSong.id) : [];
           return (
-            <details class="record-card compact-record-card">
+            <details
+              class="record-card compact-record-card"
+              data-sort-item
+              data-sort-index={index}
+              data-sort-alpha={track.titleOnRelease.toLocaleLowerCase("en-US")}
+              data-sort-live={summary?.liveCount || 0}
+            >
               <summary>
                 <span>{trackNumber(track) ? `${trackNumber(track)}. ` : ""}{track.titleOnRelease}</span>
-                <span class="summary-meta">{track.performers?.length ? personNames(track.performers) : peopleList(track.credits.composedBy)}</span>
+                <span class="summary-meta">
+                  {summary ? `${summary.originLabel} / ${summary.liveCount} live` : "Unmodeled song"}
+                </span>
               </summary>
 
               <div class="details-body">
                 {track.performers?.length ? <p class="performer-note">Performed by {personNames(track.performers)}</p> : null}
                 <p>Lyrics: {peopleList(track.credits.lyricsBy)}</p>
                 <p>Music: {peopleList(track.credits.composedBy)}</p>
+                {summary ? <p>Song identity: {summary.originLabel} / {summary.albumLabel}</p> : null}
                 {track.duration ? <p>Duration: {track.duration}</p> : null}
                 {track.versionNote ? <p>{track.versionNote}</p> : null}
 
@@ -148,5 +192,6 @@ function trackNumber(track: (typeof release.tracks)[number]) {
         <p>{release.notes}</p>
       </section>
     ) : null}
+
   </section>
 </BaseLayout>
