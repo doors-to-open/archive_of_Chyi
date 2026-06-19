@@ -579,6 +579,148 @@ details[open].record-card summary::after {
   margin-bottom: 0.9rem;
 }
 
+.contribution-form-panel {
+  max-width: 920px;
+}
+
+.contribution-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contribution-form label {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.contribution-form label span,
+.credit-choice legend {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 620;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contribution-form input,
+.contribution-form select,
+.contribution-form textarea {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  color: var(--ink);
+  font: inherit;
+  min-width: 0;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.contribution-form textarea {
+  border: 1px solid var(--line);
+  min-height: 6rem;
+  padding: 0.7rem;
+  resize: vertical;
+}
+
+.contribution-form input:focus,
+.contribution-form select:focus,
+.contribution-form textarea:focus {
+  border-color: var(--ink);
+  outline: 0;
+}
+
+.contribution-form input::placeholder,
+.contribution-form textarea::placeholder {
+  color: rgba(113, 110, 102, 0.68);
+}
+
+.credit-choice {
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.credit-choice legend {
+  flex-basis: 100%;
+  margin-bottom: 0.1rem;
+  padding: 0;
+}
+
+.credit-choice label {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.45rem;
+}
+
+.credit-choice input {
+  appearance: auto;
+  margin: 0;
+  width: auto;
+}
+
+.contribution-helper {
+  border-top: 1px solid var(--line-soft);
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 760px;
+  padding-top: 0.85rem;
+}
+
+.form-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+}
+
+.form-actions button {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: var(--bg);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 620;
+  letter-spacing: 0.06em;
+  padding: 0.72rem 0.9rem;
+  text-transform: uppercase;
+}
+
+.form-actions button:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.form-actions a {
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 620;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.form-actions a:hover {
+  border-bottom-color: var(--ink);
+  color: var(--ink);
+}
+
 .contribution-groups {
   border-top: 1px solid var(--line);
 }
@@ -627,6 +769,42 @@ details[open].record-card summary::after {
 .contribution-actions a:hover {
   border-bottom-color: var(--ink);
   color: var(--ink);
+}
+
+.review-flow {
+  counter-reset: review-step;
+  display: grid;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.review-flow li {
+  border-bottom: 1px solid var(--line-soft);
+  counter-increment: review-step;
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: 3rem minmax(8rem, 0.45fr) minmax(0, 1fr);
+  padding: 0.82rem 0;
+}
+
+.review-flow li::before {
+  color: var(--muted);
+  content: counter(review-step, decimal-leading-zero);
+  font-size: 0.72rem;
+  font-weight: 620;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.review-flow strong {
+  font-weight: 620;
+}
+
+.review-flow span {
+  color: var(--muted);
+  line-height: 1.45;
 }
 
 .status {
@@ -853,6 +1031,11 @@ details[open].record-card summary::after {
   }
 
   .contribution-group {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid,
+  .review-flow li {
     grid-template-columns: 1fr;
   }
 

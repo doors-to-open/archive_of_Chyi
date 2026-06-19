@@ -11,17 +11,17 @@ import {
   releases,
   songSummaries
 } from "../../lib/archive";
-import { contributionIssueUrl } from "../../lib/contribution";
+import { contributionPageUrl } from "../../lib/contribution";
 
 const summaries = songSummaries();
 const contributionActions = [
   {
     label: "Propose album/release",
-    href: contributionIssueUrl({ kind: "album", recordType: "Release", recordPath: "/releases/" })
+    href: contributionPageUrl({ kind: "album", recordType: "Release", recordPath: "/releases/" })
   },
   {
     label: "Add release track",
-    href: contributionIssueUrl({ kind: "track", recordType: "Track", recordPath: "/releases/" })
+    href: contributionPageUrl({ kind: "track", recordType: "Track", recordPath: "/releases/" })
   }
 ];
 ---

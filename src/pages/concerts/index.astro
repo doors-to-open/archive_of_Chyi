@@ -2,12 +2,12 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionPanel from "../../components/ContributionPanel.astro";
 import { concertAvailabilityChecks, concerts, personNames } from "../../lib/archive";
-import { contributionIssueUrl } from "../../lib/contribution";
+import { contributionPageUrl } from "../../lib/contribution";
 
 const contributionActions = [
   {
     label: "Propose concert",
-    href: contributionIssueUrl({ kind: "concert", recordType: "Concert", recordPath: "/concerts/" })
+    href: contributionPageUrl({ kind: "concert", recordType: "Concert", recordPath: "/concerts/" })
   }
 ];
 ---

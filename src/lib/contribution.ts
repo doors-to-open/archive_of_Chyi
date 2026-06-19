@@ -21,9 +21,17 @@ export type ContributionAction = {
   href: string;
 };
 
-const repositoryIssueUrl = "https://github.com/doors-to-open/archive_of_Chyi/issues/new";
+export type ContributionTypeOption = {
+  kind: ContributionKind;
+  label: string;
+  defaultRecordType: string;
+  helper: string;
+};
 
-const labels: Record<ContributionKind, string> = {
+export const repositoryIssueUrl = "https://github.com/doors-to-open/archive_of_Chyi/issues/new";
+const contributionPagePath = "/contribute/";
+
+export const contributionLabels: Record<ContributionKind, string> = {
   correction: "contribution,correction",
   album: "contribution,new-release",
   track: "contribution,track",
@@ -35,7 +43,7 @@ const labels: Record<ContributionKind, string> = {
   media: "contribution,media-link"
 };
 
-const titles: Record<ContributionKind, string> = {
+export const contributionTitles: Record<ContributionKind, string> = {
   correction: "Correction",
   album: "New album or release",
   track: "Track addition",
@@ -46,6 +54,63 @@ const titles: Record<ContributionKind, string> = {
   source: "Source",
   media: "Media link"
 };
+
+export const contributionTypeOptions: ContributionTypeOption[] = [
+  {
+    kind: "correction",
+    label: "Correct a record",
+    defaultRecordType: "Archive record",
+    helper: "Use this for factual fixes to an existing release, concert, show, appearance, person, source, or media link."
+  },
+  {
+    kind: "source",
+    label: "Add a source",
+    defaultRecordType: "Source",
+    helper: "Use this when a source can support an existing fact or replace a weak source."
+  },
+  {
+    kind: "media",
+    label: "Add a media link",
+    defaultRecordType: "Media link",
+    helper: "Use this for external audio, video, platform, or clip links. The archive links out instead of hosting media."
+  },
+  {
+    kind: "album",
+    label: "Add album/release",
+    defaultRecordType: "Release",
+    helper: "Use this for albums, singles, compilations, reissues, collaborations, soundtracks, and related releases."
+  },
+  {
+    kind: "track",
+    label: "Add track/credit",
+    defaultRecordType: "Track",
+    helper: "Use this for track listings, album placement, durations, versions, lyricists, composers, or arrangers."
+  },
+  {
+    kind: "concert",
+    label: "Add concert",
+    defaultRecordType: "Concert",
+    helper: "Use this for concert, concert-series, festival, live-album, or setlist records."
+  },
+  {
+    kind: "music-show",
+    label: "Add music show",
+    defaultRecordType: "Music show",
+    helper: "Use this for televised, streamed, radio, or platform performance records."
+  },
+  {
+    kind: "appearance",
+    label: "Add appearance",
+    defaultRecordType: "Appearance",
+    helper: "Use this for interviews, talk shows, soundtrack work, film, documentary, article, podcast, or similar records."
+  },
+  {
+    kind: "person",
+    label: "Add person/credit",
+    defaultRecordType: "Person",
+    helper: "Use this for people, public profiles, and credit relationships connected to archive records."
+  }
+];
 
 function recordLine(params: ContributionIssueParams) {
   return params.recordTitle
@@ -63,7 +128,7 @@ function section(title: string, lines: string[]) {
 
 function contextLines(params: ContributionIssueParams) {
   return [
-    `Target: ${titles[params.kind]}`,
+    `Target: ${contributionTitles[params.kind]}`,
     recordLine(params),
     pageLine(params.recordPath)
   ];
@@ -289,30 +354,44 @@ function bodyFor(params: ContributionIssueParams) {
 
 export function contributionIssueUrl(params: ContributionIssueParams) {
   const title = params.recordTitle
-    ? `${titles[params.kind]}: ${params.recordTitle}`
-    : titles[params.kind];
+    ? `${contributionTitles[params.kind]}: ${params.recordTitle}`
+    : contributionTitles[params.kind];
   const query = new URLSearchParams({
     title,
-    labels: labels[params.kind],
+    labels: contributionLabels[params.kind],
     body: bodyFor(params)
   });
 
   return `${repositoryIssueUrl}?${query.toString()}`;
 }
 
+export function contributionIssueBody(params: ContributionIssueParams) {
+  return bodyFor(params);
+}
+
+export function contributionPageUrl(params: ContributionIssueParams) {
+  const query = new URLSearchParams();
+  query.set("kind", params.kind);
+  if (params.recordType) query.set("recordType", params.recordType);
+  if (params.recordTitle) query.set("recordTitle", params.recordTitle);
+  if (params.recordPath) query.set("recordPath", params.recordPath);
+
+  return `${contributionPagePath}?${query.toString()}`;
+}
+
 export function contributionActions(recordType: string, recordTitle: string, recordPath: string): ContributionAction[] {
   return [
     {
       label: "Suggest correction",
-      href: contributionIssueUrl({ kind: "correction", recordType, recordTitle, recordPath })
+      href: contributionPageUrl({ kind: "correction", recordType, recordTitle, recordPath })
     },
     {
       label: "Add source",
-      href: contributionIssueUrl({ kind: "source", recordType, recordTitle, recordPath })
+      href: contributionPageUrl({ kind: "source", recordType, recordTitle, recordPath })
     },
     {
       label: "Add media link",
-      href: contributionIssueUrl({ kind: "media", recordType, recordTitle, recordPath })
+      href: contributionPageUrl({ kind: "media", recordType, recordTitle, recordPath })
     }
   ];
 }

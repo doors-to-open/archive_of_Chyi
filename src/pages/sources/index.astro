@@ -2,14 +2,14 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionPanel from "../../components/ContributionPanel.astro";
 import { sources } from "../../lib/archive";
-import { contributionIssueUrl } from "../../lib/contribution";
+import { contributionPageUrl } from "../../lib/contribution";
 
 const sourceTypes = Array.from(new Set(sources.map((source) => source.sourceType))).sort();
 const reliabilities = Array.from(new Set(sources.map((source) => source.reliability))).sort();
 const contributionActions = [
   {
     label: "Propose source",
-    href: contributionIssueUrl({ kind: "source", recordType: "Source", recordPath: "/sources/" })
+    href: contributionPageUrl({ kind: "source", recordType: "Source", recordPath: "/sources/" })
   }
 ];
 

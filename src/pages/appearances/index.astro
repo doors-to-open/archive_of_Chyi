@@ -2,12 +2,12 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionPanel from "../../components/ContributionPanel.astro";
 import { appearanceAvailabilityChecks, appearances } from "../../lib/archive";
-import { contributionIssueUrl } from "../../lib/contribution";
+import { contributionPageUrl } from "../../lib/contribution";
 
 const contributionActions = [
   {
     label: "Propose appearance",
-    href: contributionIssueUrl({ kind: "appearance", recordType: "Appearance", recordPath: "/appearances/" })
+    href: contributionPageUrl({ kind: "appearance", recordType: "Appearance", recordPath: "/appearances/" })
   }
 ];
 ---
