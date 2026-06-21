@@ -1,0 +1,123 @@
+[
+  {
+    "id": "apple-music-album",
+    "label": "Apple Music album pages",
+    "host": "music.apple.com",
+    "protocols": ["https:"],
+    "pathPrefixes": ["/tw/album/", "/hk/album/", "/us/album/", "/cn/album/"],
+    "categories": ["release", "song", "source"],
+    "sourceType": "platform",
+    "reliability": "high",
+    "notes": "Use for release availability, track count, titles, and platform metadata. Region-specific availability should be recorded."
+  },
+  {
+    "id": "qq-music-album",
+    "label": "QQ Music album pages",
+    "host": "y.qq.com",
+    "protocols": ["https:"],
+    "pathPrefixes": ["/n/ryqq/albumDetail/"],
+    "categories": ["release", "song", "source"],
+    "sourceType": "platform",
+    "reliability": "high",
+    "notes": "Use for release availability, public time, track count, and platform album identifiers."
+  },
+  {
+    "id": "qq-music-short-link",
+    "label": "QQ Music short links",
+    "host": "c6.y.qq.com",
+    "protocols": ["https:"],
+    "pathPrefixes": ["/base/fcgi-bin/u"],
+    "categories": ["release", "song", "media-link", "source"],
+    "sourceType": "platform",
+    "reliability": "medium",
+    "notes": "Short links need expansion and review before facts are accepted."
+  },
+  {
+    "id": "bilibili-video",
+    "label": "Bilibili video pages",
+    "host": "www.bilibili.com",
+    "protocols": ["https:"],
+    "pathPrefixes": ["/video/"],
+    "categories": ["concert", "music-show", "appearance", "media-link", "source"],
+    "sourceType": "platform",
+    "reliability": "medium",
+    "notes": "Use for media availability, upload metadata, descriptions, chapters, and setlist leads. Fan-upload facts need review."
+  },
+  {
+    "id": "bilibili-series",
+    "label": "Bilibili series pages",
+    "host": "www.bilibili.com",
+    "protocols": ["https:"],
+    "pathPrefixes": ["/bangumi/play/"],
+    "categories": ["music-show", "appearance", "media-link", "source"],
+    "sourceType": "platform",
+    "reliability": "medium",
+    "notes": "Use for program availability and episode leads."
+  },
+  {
+    "id": "wikipedia-en",
+    "label": "English Wikipedia pages",
+    "host": "en.wikipedia.org",
+    "protocols": ["https:"],
+    "pathPrefixes": ["/wiki/"],
+    "categories": ["release", "concert", "music-show", "appearance", "person", "source"],
+    "sourceType": "encyclopedia",
+    "reliability": "medium",
+    "notes": "Use for orientation and cross-checking. Prefer primary or platform sources for accepted facts."
+  },
+  {
+    "id": "wikipedia-zh",
+    "label": "Chinese Wikipedia pages",
+    "host": "zh.wikipedia.org",
+    "protocols": ["https:"],
+    "pathPrefixes": ["/wiki/"],
+    "categories": ["release", "concert", "music-show", "appearance", "person", "source"],
+    "sourceType": "encyclopedia",
+    "reliability": "medium",
+    "notes": "Use for orientation and cross-checking. Prefer primary or platform sources for accepted facts."
+  },
+  {
+    "id": "wikipedia-yue",
+    "label": "Cantonese Wikipedia pages",
+    "host": "zh-yue.wikipedia.org",
+    "protocols": ["https:"],
+    "pathPrefixes": ["/wiki/"],
+    "categories": ["release", "concert", "music-show", "appearance", "person", "source"],
+    "sourceType": "encyclopedia",
+    "reliability": "medium",
+    "notes": "Use for orientation and cross-checking. Watch for transcription and template inconsistencies."
+  },
+  {
+    "id": "wikidata-entity",
+    "label": "Wikidata entity pages",
+    "host": "www.wikidata.org",
+    "protocols": ["https:"],
+    "pathPrefixes": ["/wiki/"],
+    "categories": ["release", "concert", "music-show", "appearance", "person", "source"],
+    "sourceType": "database",
+    "reliability": "medium",
+    "notes": "Use for identifiers and source leads. Do not treat statements as final without checking references."
+  },
+  {
+    "id": "douban-movie",
+    "label": "Douban movie pages",
+    "host": "movie.douban.com",
+    "protocols": ["https:"],
+    "pathPrefixes": ["/subject/"],
+    "categories": ["appearance", "release", "source"],
+    "sourceType": "database",
+    "reliability": "medium",
+    "notes": "Use for film and soundtrack leads. Verify music facts with platform, official, or booklet sources where possible."
+  },
+  {
+    "id": "baidu-baike",
+    "label": "Baidu Baike pages",
+    "host": "baike.baidu.com",
+    "protocols": ["https:"],
+    "pathPrefixes": ["/item/"],
+    "categories": ["release", "concert", "music-show", "appearance", "person", "source"],
+    "sourceType": "encyclopedia",
+    "reliability": "medium",
+    "notes": "Use for orientation and local-program leads. Confirm accepted facts elsewhere when possible."
+  }
+]

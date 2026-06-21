@@ -7,7 +7,9 @@
     "dev": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro dev --host 127.0.0.1",
     "build": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro build",
     "preview": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro preview --host 127.0.0.1",
-    "check": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro check"
+    "check": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro check",
+    "import:allowlist": "node scripts/import/crawl-url.mjs --list-sources",
+    "import:crawl": "node scripts/import/crawl-url.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
