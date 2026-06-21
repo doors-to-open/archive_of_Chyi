@@ -16,6 +16,12 @@ Create a draft from an allowlisted URL:
 npm run import:crawl -- --category release --url "https://music.apple.com/tw/album/example/123"
 ```
 
+Create a QQ Music album draft with structured album and track metadata:
+
+```sh
+npm run import:qq-album -- --url "https://y.qq.com/n/ryqq/albumDetail/002usJY80bBhex"
+```
+
 Create a no-network draft shell, useful before a crawler exists for a source:
 
 ```sh

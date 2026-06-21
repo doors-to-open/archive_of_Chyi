@@ -9,7 +9,8 @@
     "preview": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro preview --host 127.0.0.1",
     "check": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro check",
     "import:allowlist": "node scripts/import/crawl-url.mjs --list-sources",
-    "import:crawl": "node scripts/import/crawl-url.mjs"
+    "import:crawl": "node scripts/import/crawl-url.mjs",
+    "import:qq-album": "node scripts/import/qq-album.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
