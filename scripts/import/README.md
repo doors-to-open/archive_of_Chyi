@@ -22,6 +22,12 @@ Create a QQ Music album draft with structured album and track metadata:
 npm run import:qq-album -- --url "https://y.qq.com/n/ryqq/albumDetail/002usJY80bBhex"
 ```
 
+Run a QQ Music album batch from a task note containing direct album links or QQ share links:
+
+```sh
+npm run import:qq-album -- --input task_0621_1_6B_album_links.md
+```
+
 Create a no-network draft shell, useful before a crawler exists for a source:
 
 ```sh

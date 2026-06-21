@@ -22,11 +22,15 @@ const DATA_FILES = [
 function usage() {
   return `Usage:
   node scripts/import/qq-album.mjs --url https://y.qq.com/n/ryqq/albumDetail/002usJY80bBhex
+  node scripts/import/qq-album.mjs --url https://c6.y.qq.com/base/fcgi-bin/u?__=5V66l0Gq7Av0
   node scripts/import/qq-album.mjs --album-mid 002usJY80bBhex
+  node scripts/import/qq-album.mjs --input task_0621_1_6B_album_links.md
 
 Options:
   --url <url>          QQ Music album page URL
   --album-mid <mid>    QQ Music album MID
+  --album-id <id>      QQ Music numeric album ID
+  --input <file>       Text or markdown file containing QQ album links
   --access-date <date> Optional YYYY-MM-DD access date
 `;
 }
@@ -40,6 +44,10 @@ function parseArgs(argv) {
       args.url = argv[++i];
     } else if (arg === "--album-mid") {
       args.albumMid = argv[++i];
+    } else if (arg === "--album-id") {
+      args.albumId = argv[++i];
+    } else if (arg === "--input") {
+      args.input = argv[++i];
     } else if (arg === "--access-date") {
       args.accessDate = argv[++i];
     } else if (arg === "--help" || arg === "-h") {
@@ -47,6 +55,8 @@ function parseArgs(argv) {
     } else if (!arg.startsWith("--") && !args.url && !args.albumMid) {
       if (arg.startsWith("https://")) {
         args.url = arg;
+      } else if (/\.(md|markdown|txt)$/i.test(arg)) {
+        args.input = arg;
       } else {
         args.albumMid = arg;
       }
@@ -80,13 +90,11 @@ function slugify(value) {
 
 function albumMidFromUrl(value) {
   const url = new URL(value);
-  if (url.protocol !== "https:" || url.hostname !== "y.qq.com") {
-    throw new Error(`Unsupported QQ album URL: ${value}`);
-  }
-
   const parts = url.pathname.split("/").filter(Boolean);
   const albumIndex = parts.indexOf("albumDetail");
-  const albumMid = albumIndex >= 0 ? parts[albumIndex + 1] : "";
+  const albumMid = url.protocol === "https:" && url.hostname === "y.qq.com" && albumIndex >= 0
+    ? parts[albumIndex + 1]
+    : "";
   if (!albumMid) {
     throw new Error(`Could not find album MID in URL: ${value}`);
   }
@@ -94,11 +102,15 @@ function albumMidFromUrl(value) {
   return albumMid;
 }
 
+function qqShareLinkUrl(albumId) {
+  return `https://i2.y.qq.com/n3/other/pages/details/album.html?albumId=${albumId}`;
+}
+
 function qqAlbumUrl(albumMid) {
   return `https://y.qq.com/n/ryqq/albumDetail/${albumMid}`;
 }
 
-function qqApiUrl(albumMid) {
+function qqApiUrl({ albumMid = "", albumId = 0 }) {
   const payload = {
     comm: {
       ct: 24,
@@ -108,7 +120,7 @@ function qqApiUrl(albumMid) {
       method: "GetAlbumSongList",
       param: {
         albumMid,
-        albumID: 0,
+        albumID: Number(albumId) || 0,
         begin: 0,
         num: 200,
         order: 2
@@ -120,12 +132,86 @@ function qqApiUrl(albumMid) {
   return `https://u.y.qq.com/cgi-bin/musicu.fcg?format=json&data=${encodeURIComponent(JSON.stringify(payload))}`;
 }
 
-async function fetchQqAlbum(albumMid) {
-  const url = qqApiUrl(albumMid);
+async function resolveQqShareUrl(inputUrl) {
+  const response = await fetch(inputUrl, {
+    headers: {
+      "user-agent": "Mozilla/5.0",
+      "accept": "text/html,*/*;q=0.5"
+    },
+    redirect: "manual"
+  });
+
+  const location = response.headers.get("location") || response.url;
+  const resolvedUrl = new URL(location, inputUrl);
+  const albumId = resolvedUrl.searchParams.get("albumId");
+  if (!albumId) {
+    throw new Error(`QQ share link did not expose albumId: ${inputUrl}`);
+  }
+
+  return {
+    inputUrl,
+    resolvedUrl: resolvedUrl.href,
+    albumId
+  };
+}
+
+async function resolveAlbumInput({ url, albumMid, albumId }) {
+  if (albumMid) {
+    return {
+      inputUrl: url || qqAlbumUrl(albumMid),
+      albumMid,
+      albumId: null,
+      pageUrl: qqAlbumUrl(albumMid),
+      resolvedUrl: null
+    };
+  }
+
+  if (albumId) {
+    return {
+      inputUrl: url || qqShareLinkUrl(albumId),
+      albumMid: null,
+      albumId,
+      pageUrl: qqShareLinkUrl(albumId),
+      resolvedUrl: null
+    };
+  }
+
+  if (!url) {
+    throw new Error("Missing album input.");
+  }
+
+  const parsed = new URL(url);
+  if (parsed.hostname === "y.qq.com") {
+    const mid = albumMidFromUrl(url);
+    return {
+      inputUrl: url,
+      albumMid: mid,
+      albumId: null,
+      pageUrl: qqAlbumUrl(mid),
+      resolvedUrl: null
+    };
+  }
+
+  if (parsed.hostname === "c6.y.qq.com") {
+    const resolved = await resolveQqShareUrl(url);
+    return {
+      inputUrl: url,
+      albumMid: null,
+      albumId: resolved.albumId,
+      pageUrl: resolved.resolvedUrl,
+      resolvedUrl: resolved.resolvedUrl
+    };
+  }
+
+  throw new Error(`Unsupported QQ album URL: ${url}`);
+}
+
+async function fetchQqAlbum({ albumMid, albumId, referer }) {
+  const url = qqApiUrl({ albumMid, albumId });
   const response = await fetch(url, {
     headers: {
       "user-agent": "chyi-yu-archive-import/0.1 (+review-candidates-only)",
-      "referer": qqAlbumUrl(albumMid),
+      "referer": referer || "https://y.qq.com/",
       "accept": "application/json,text/plain;q=0.9,*/*;q=0.5"
     }
   });
@@ -360,19 +446,21 @@ function compactObject(value) {
   );
 }
 
-async function main() {
-  const args = parseArgs(process.argv.slice(2));
-  if (args.help) {
-    console.log(usage());
-    return;
-  }
+function extractQqLinksFromText(text) {
+  const matches = text.match(/https:\/\/(?:c6\.y|y)\.qq\.com\/[^\s)>\]]+/g) || [];
+  return unique(matches.map((url) => url.replace(/[，。；、）)]+$/u, "")));
+}
 
-  const albumMid = args.albumMid || (args.url ? albumMidFromUrl(args.url) : "");
-  if (!albumMid) {
-    throw new Error(`Missing --url or --album-mid.\n\n${usage()}`);
-  }
-
-  const accessDate = args.accessDate || todayIso();
+async function importOneAlbum(input, accessDate) {
+  const resolved = await resolveAlbumInput(input);
+  const response = await fetchQqAlbum({
+    albumMid: resolved.albumMid || "",
+    albumId: resolved.albumId || 0,
+    referer: resolved.pageUrl
+  });
+  const preliminaryAlbumMid = resolved.albumMid || response.json.albumSonglist?.data?.albumMid || resolved.albumId;
+  const albumData = extractAlbumData(preliminaryAlbumMid, response.json);
+  const albumMid = albumData.album.mid || resolved.albumMid || preliminaryAlbumMid;
   const albumUrl = qqAlbumUrl(albumMid);
   const candidateId = `candidate-release-qq-music-album-api-${accessDate}-${hash(albumMid)}`;
   const rawFolder = path.join(RAW_DIR, accessDate);
@@ -380,15 +468,13 @@ async function main() {
   const rawFullPath = path.join(rawFolder, `${candidateId}.json`);
   const draftFullPath = path.join(draftFolder, `${candidateId}.json`);
 
-  const response = await fetchQqAlbum(albumMid);
   await mkdir(rawFolder, { recursive: true });
   await writeFile(rawFullPath, `${JSON.stringify(response.json, null, 2)}\n`, "utf8");
 
-  const albumData = extractAlbumData(albumMid, response.json);
   const dataRecords = await loadData();
   const dedupe = findDedupeMatches(
     dataRecords,
-    [albumUrl],
+    unique([albumUrl, resolved.inputUrl, resolved.pageUrl, resolved.resolvedUrl]),
     [
       albumData.album.title,
       albumData.album.name,
@@ -423,6 +509,8 @@ async function main() {
     },
     source: {
       url: albumUrl,
+      inputUrl: resolved.inputUrl,
+      resolvedUrl: resolved.resolvedUrl,
       apiUrl: response.apiUrl,
       allowlistId: "qq-music-album",
       allowlistLabel: "QQ Music album pages",
@@ -448,9 +536,12 @@ async function main() {
   await mkdir(draftFolder, { recursive: true });
   await writeFile(draftFullPath, `${JSON.stringify(candidate, null, 2)}\n`, "utf8");
 
-  console.log(JSON.stringify({
+  return {
     candidateId,
     albumMid,
+    albumId: resolved.albumId,
+    inputUrl: resolved.inputUrl,
+    url: albumUrl,
     title: albumData.album.title,
     publicTime: albumData.album.publicTime,
     tracks: albumData.tracks.length,
@@ -460,7 +551,44 @@ async function main() {
       existingUrlMatches: dedupe.existingUrlMatches.length,
       existingTitleMatches: dedupe.existingTitleMatches.length
     }
-  }, null, 2));
+  };
+}
+
+async function main() {
+  const args = parseArgs(process.argv.slice(2));
+  if (args.help) {
+    console.log(usage());
+    return;
+  }
+
+  const accessDate = args.accessDate || todayIso();
+
+  if (args.input) {
+    const inputPath = path.resolve(ROOT, args.input);
+    const text = await readFile(inputPath, "utf8");
+    const urls = extractQqLinksFromText(text);
+    if (!urls.length) {
+      throw new Error(`No QQ album links found in ${args.input}`);
+    }
+
+    const results = [];
+    for (const url of urls) {
+      results.push(await importOneAlbum({ url }, accessDate));
+    }
+
+    console.log(JSON.stringify({
+      input: args.input,
+      count: results.length,
+      results
+    }, null, 2));
+    return;
+  }
+
+  if (!args.albumMid && !args.albumId && !args.url) {
+    throw new Error(`Missing --url or --album-mid.\n\n${usage()}`);
+  }
+
+  console.log(JSON.stringify(await importOneAlbum(args, accessDate), null, 2));
 }
 
 main().catch((error) => {
