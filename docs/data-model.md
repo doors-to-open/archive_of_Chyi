@@ -9,12 +9,41 @@ Most records should include:
 - `id`: stable internal identifier.
 - `slug`: URL-safe identifier.
 - `title`: display title.
+- `titleLocalized`: optional locale-keyed title variants for future language switching.
 - `titleOriginal`: original-language title when relevant.
 - `aliases`: alternate names or translations.
 - `summary`: short description.
 - `sources`: source IDs that support the record.
 - `notes`: editorial notes.
 - `status`: `confirmed`, `partial`, `uncertain`, or `needs-source`.
+
+## Localized Text
+
+Localized text fields are additive. Existing string fields such as `title`, `titleOriginal`, `titleOnRelease`, and `titlePerformed` remain the current canonical display fields until the UI is migrated.
+
+Use BCP-47-style keys where possible:
+
+- `en`: English.
+- `zh-Hant`: traditional Chinese.
+- `zh-Hans`: simplified Chinese.
+- `pinyin`: romanized Mandarin helper text when useful for search or disambiguation.
+
+Example:
+
+```json
+{
+  "title": "The Olive Tree",
+  "titleOriginal": "橄欖樹",
+  "titleLocalized": {
+    "en": "The Olive Tree",
+    "zh-Hant": "橄欖樹",
+    "zh-Hans": "橄榄树",
+    "pinyin": "Ganlan Shu"
+  }
+}
+```
+
+The same pattern applies to track-specific titles with `titleOnReleaseLocalized`, person names with `nameLocalized`, and performance titles with `titlePerformedLocalized`.
 
 ## Internal Song
 
@@ -25,6 +54,7 @@ Suggested fields:
 - `id`
 - `slug`
 - `title`
+- `titleLocalized`
 - `titleOriginal`
 - `aliases`
 - `language`
@@ -47,6 +77,7 @@ Suggested fields:
 - `id`
 - `slug`
 - `title`
+- `titleLocalized`
 - `titleOriginal`
 - `releaseDate`
 - `releaseType`: `studio-album`, `single`, `compilation`, `collaboration`, `soundtrack`, `reissue`, or `other`
@@ -66,6 +97,7 @@ Suggested fields:
 - `position`
 - `song`
 - `titleOnRelease`
+- `titleOnReleaseLocalized`
 - `duration`
 - `versionNote`
 - `credits`
@@ -97,6 +129,7 @@ Suggested fields inside a concert `setlist`:
 - `position`
 - `song`
 - `titlePerformed`
+- `titlePerformedLocalized`
 - `collaborators`
 - `mediaLinks`
 - `notes`
@@ -108,6 +141,7 @@ Suggested fields:
 - `id`
 - `slug`
 - `title`
+- `titleLocalized`
 - `date`
 - `program`
 - `episode`
@@ -127,6 +161,7 @@ Suggested fields inside `performedSongs`:
 - `position`
 - `song`
 - `titlePerformed`
+- `titlePerformedLocalized`
 - `collaborators`
 - `mediaLinks`
 - `notes`
@@ -138,6 +173,7 @@ Suggested fields:
 - `id`
 - `slug`
 - `title`
+- `titleLocalized`
 - `date`
 - `appearanceType`: `talk-show`, `film`, `soundtrack`, `podcast`, `interview`, `documentary`, `book`, `article`, or `other`
 - `programOrWork`
@@ -177,6 +213,21 @@ Suggested fields:
 - `citation`
 - `reliability`: `high`, `medium`, `low`, or `unknown`
 - `notes`
+
+## Person
+
+Suggested fields:
+
+- `id`
+- `slug`
+- `displayName`
+- `nameLocalized`
+- `nameOriginal`
+- `aliases`
+- `roles`
+- `sources`
+- `notes`
+- `status`
 
 ## Contributor
 

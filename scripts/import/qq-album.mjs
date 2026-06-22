@@ -247,6 +247,16 @@ function normalizeText(value) {
   return String(value || "").toLowerCase().replace(/\s+/g, " ").trim();
 }
 
+function hasCjk(value) {
+  return /\p{Script=Han}/u.test(String(value || ""));
+}
+
+function localizedTitle(value) {
+  const title = String(value || "").trim();
+  if (!title) return undefined;
+  return hasCjk(title) ? { "zh-Hans": title } : { en: title };
+}
+
 async function loadData() {
   const records = [];
   for (const file of DATA_FILES) {
@@ -380,6 +390,7 @@ function proposedRelease(albumUrl, sourceId, albumMid, albumData) {
     id: `release-review-qq-${midSlug}`,
     slug: `qq-${midSlug}-review`,
     title: albumTitle,
+    titleLocalized: localizedTitle(albumTitle),
     titleOriginal: albumData.album.name && albumData.album.name !== albumTitle ? albumData.album.name : undefined,
     releaseDate: albumData.album.publicTime || null,
     releaseType: "other",
@@ -402,24 +413,28 @@ function proposedRelease(albumUrl, sourceId, albumMid, albumData) {
       ],
       purchase: []
     },
-    tracks: albumData.tracks.map((track) => ({
-      position: track.position,
-      disc: track.disc || undefined,
-      song: null,
-      titleOnRelease: track.title || track.name || "Untitled track",
-      duration: track.duration,
-      versionNote: track.subtitle || null,
-      performers: [],
-      credits: {
-        lyricsBy: [],
-        composedBy: []
-      },
-      importNotes: {
-        qqSongMid: track.songMid,
-        qqSongId: track.songId,
-        singers: track.singers.map((singer) => singer.name).filter(Boolean)
-      }
-    })),
+    tracks: albumData.tracks.map((track) => {
+      const trackTitle = track.title || track.name || "Untitled track";
+      return {
+        position: track.position,
+        disc: track.disc || undefined,
+        song: null,
+        titleOnRelease: trackTitle,
+        titleOnReleaseLocalized: localizedTitle(trackTitle),
+        duration: track.duration,
+        versionNote: track.subtitle || null,
+        performers: [],
+        credits: {
+          lyricsBy: [],
+          composedBy: []
+        },
+        importNotes: {
+          qqSongMid: track.songMid,
+          qqSongId: track.songId,
+          singers: track.singers.map((singer) => singer.name).filter(Boolean)
+        }
+      };
+    }),
     credits: {
       vocalist: []
     },
@@ -529,7 +544,8 @@ async function importOneAlbum(input, accessDate) {
       releases: [proposedRelease(albumUrl, sourceId, albumMid, albumData)]
     },
     parserNotes: [
-      "QQ Music API candidate only. Release ID, slug, credits, label, release type, formats, song IDs, and person IDs require human review before import."
+      "QQ Music API candidate only. Release ID, slug, credits, label, release type, formats, song IDs, and person IDs require human review before import.",
+      "Localized title fields are inferred from QQ Music text for review convenience; confirm or expand traditional Chinese and English variants during import."
     ]
   });
 

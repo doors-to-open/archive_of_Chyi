@@ -9,11 +9,20 @@ import sourcesData from "../../data/sources.json";
 
 export type Status = "confirmed" | "partial" | "uncertain" | "needs-source";
 
+export type LocalizedText = {
+  en?: string;
+  "zh-Hant"?: string;
+  "zh-Hans"?: string;
+  pinyin?: string;
+  [locale: string]: string | undefined;
+};
+
 export type Person = {
   id: string;
   slug: string;
   displayName: string;
   nameOriginal?: string;
+  nameLocalized?: LocalizedText;
   aliases: string[];
   roles: string[];
   sources: string[];
@@ -25,6 +34,7 @@ export type Song = {
   id: string;
   slug: string;
   title: string;
+  titleLocalized?: LocalizedText;
   titleOriginal?: string;
   aliases: string[];
   language?: string;
@@ -46,6 +56,7 @@ export type Track = {
   position: number | null;
   song: string | null;
   titleOnRelease: string;
+  titleOnReleaseLocalized?: LocalizedText;
   duration: string | null;
   versionNote: string | null;
   performers?: string[];
@@ -70,6 +81,7 @@ export type Release = {
   id: string;
   slug: string;
   title: string;
+  titleLocalized?: LocalizedText;
   titleOriginal?: string;
   releaseDate?: string;
   releaseType: string;
@@ -95,6 +107,7 @@ export type SongPerformance = {
   date?: string | null;
   song: string | null;
   titlePerformed: string;
+  titlePerformedLocalized?: LocalizedText;
   originalPerformer?: string | null;
   collaborators?: string[];
   mediaLinks?: ArchiveLink[];
@@ -105,6 +118,7 @@ export type Concert = {
   id: string;
   slug: string;
   title: string;
+  titleLocalized?: LocalizedText;
   date?: string | null;
   venue?: string | null;
   city?: string | null;
@@ -124,6 +138,7 @@ export type MusicShow = {
   id: string;
   slug: string;
   title: string;
+  titleLocalized?: LocalizedText;
   titleOriginal?: string;
   date?: string | null;
   program?: string | null;
@@ -142,6 +157,7 @@ export type Appearance = {
   id: string;
   slug: string;
   title: string;
+  titleLocalized?: LocalizedText;
   titleOriginal?: string;
   date?: string | null;
   appearanceType: string;
@@ -363,6 +379,10 @@ export function displayTitle(item: { title: string; titleOriginal?: string }) {
   return item.titleOriginal ? `${item.title} / ${item.titleOriginal}` : item.title;
 }
 
+export function localizedTextValues(value: LocalizedText | undefined) {
+  return value ? Object.values(value).filter((item): item is string => Boolean(item)) : [];
+}
+
 function uniqueById<T extends { id: string }>(items: T[]) {
   return Array.from(new Map(items.map((item) => [item.id, item])).values());
 }
@@ -488,16 +508,20 @@ export function songSummary(song: Song): SongSummary {
     creditsLabel: text([personNames(song.lyricsBy), personNames(song.composedBy)]),
     searchText: text([
       displayTitle(song),
+      ...localizedTextValues(song.titleLocalized),
       song.aliases.join(" "),
       song.language,
       personNames(song.lyricsBy),
       personNames(song.composedBy),
       personNames(song.arrangedBy),
       albumReleases.map(displayTitle).join(" "),
+      ...albumReleases.flatMap((release) => localizedTextValues(release.titleLocalized)),
       releasePlacements.map((placement) => placement.track.titleOnRelease).join(" "),
+      ...releasePlacements.flatMap((placement) => localizedTextValues(placement.track.titleOnReleaseLocalized)),
       ...liveRecords.flatMap((record) => [
         record.title,
         record.entry.titlePerformed,
+        ...localizedTextValues(record.entry.titlePerformedLocalized),
         record.entry.originalPerformer,
         personNames(record.entry.collaborators),
         linkPlatformList(record.mediaLinks)
@@ -744,6 +768,7 @@ export function buildSearchEntries(): SearchEntry[] {
     meta: `${release.tracks.length} tracks`,
     searchText: text([
       displayTitle(release),
+      ...localizedTextValues(release.titleLocalized),
       release.releaseType,
       release.releaseDate,
       release.label,
@@ -753,6 +778,7 @@ export function buildSearchEntries(): SearchEntry[] {
       linkPlatformList(release.availability?.streaming),
       ...release.tracks.flatMap((track) => [
         track.titleOnRelease,
+        ...localizedTextValues(track.titleOnReleaseLocalized),
         track.disc ? `disc ${track.disc}` : "",
         personNames(track.credits.lyricsBy),
         personNames(track.credits.composedBy),
@@ -781,6 +807,7 @@ export function buildSearchEntries(): SearchEntry[] {
     meta: `${concert.setlist.length} songs`,
     searchText: text([
       concert.title,
+      ...localizedTextValues(concert.titleLocalized),
       concert.date,
       concert.eventType,
       concert.venue,
@@ -790,6 +817,7 @@ export function buildSearchEntries(): SearchEntry[] {
       linkPlatformList(concert.mediaLinks),
       ...concert.setlist.flatMap((entry) => [
         entry.titlePerformed,
+        ...localizedTextValues(entry.titlePerformedLocalized),
         entry.originalPerformer,
         entry.mediaLinks?.map(linkCreditLabel).join(" "),
         linkPlatformList(entry.mediaLinks)
@@ -807,6 +835,7 @@ export function buildSearchEntries(): SearchEntry[] {
     searchText: text([
       person.displayName,
       person.nameOriginal,
+      ...localizedTextValues(person.nameLocalized),
       person.aliases.join(" "),
       person.roles.join(" "),
       person.notes
