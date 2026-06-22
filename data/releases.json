@@ -43,6 +43,10 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "橄欖樹",
+          "zh-Hans": "橄榄树"
         }
       },
       {
@@ -54,6 +58,10 @@
         "credits": {
           "lyricsBy": ["person-rongzi"],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "青夢湖",
+          "zh-Hans": "青梦湖"
         }
       },
       {
@@ -65,6 +73,10 @@
         "credits": {
           "lyricsBy": [],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "愛之死 (Instrumental)",
+          "zh-Hans": "爱之死 (演奏曲)"
         }
       },
       {
@@ -76,6 +88,10 @@
         "credits": {
           "lyricsBy": [],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "答案",
+          "zh-Hans": "答案"
         }
       },
       {
@@ -87,6 +103,10 @@
         "credits": {
           "lyricsBy": ["person-li-tai-hsiang"],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "我在夢中哭泣了",
+          "zh-Hans": "我在梦中哭泣了"
         }
       },
       {
@@ -98,6 +118,10 @@
         "credits": {
           "lyricsBy": [],
           "composedBy": []
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "搖籃曲",
+          "zh-Hans": "摇篮曲"
         }
       },
       {
@@ -109,6 +133,10 @@
         "credits": {
           "lyricsBy": [],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "歡顏",
+          "zh-Hans": "欢颜"
         }
       },
       {
@@ -120,6 +148,10 @@
         "credits": {
           "lyricsBy": ["person-li-tai-hsiang"],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "走在雨中",
+          "zh-Hans": "走在雨中"
         }
       },
       {
@@ -131,6 +163,10 @@
         "credits": {
           "lyricsBy": ["person-li-tai-hsiang"],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "愛的世界",
+          "zh-Hans": "爱的世界"
         }
       },
       {
@@ -142,6 +178,10 @@
         "credits": {
           "lyricsBy": ["person-li-tai-hsiang"],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "預感",
+          "zh-Hans": "预感"
         }
       },
       {
@@ -153,6 +193,10 @@
         "credits": {
           "lyricsBy": [],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "追逐與重逢 (Instrumental)",
+          "zh-Hans": "追逐与重逢 (演奏曲)"
         }
       },
       {
@@ -164,19 +208,612 @@
         "credits": {
           "lyricsBy": [],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "歡顏 (Instrumental)",
+          "zh-Hans": "欢颜 (演奏曲)"
         }
       }
     ],
     "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
       "vocalist": ["person-chyi-yu"]
     },
-    "sources": [
-      "source-wikipedia-en-chyi-yu",
-      "source-wikipedia-yue-olive-tree-album",
-      "source-apple-music-olive-tree",
-      "source-qq-music-olive-tree"
-    ],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-yue-olive-tree-album", "source-apple-music-olive-tree", "source-qq-music-olive-tree"],
     "notes": "Producer and original physical formats remain unknown. The supplied encyclopedia page has a likely swapped title-track lyric/music field, so that credit still needs official booklet verification.",
+    "status": "partial",
+    "titleLocalized": {
+      "en": "The Olive Tree",
+      "zh-Hant": "橄欖樹",
+      "zh-Hans": "橄榄树",
+      "pinyin": "Ganlan Shu"
+    }
+  },
+  {
+    "id": "release-blessing-1982",
+    "slug": "blessing-1982",
+    "title": "Blessing",
+    "titleLocalized": {
+      "en": "Blessing",
+      "zh-Hant": "祝福",
+      "zh-Hans": "祝福"
+    },
+    "titleOriginal": "祝福",
+    "releaseDate": "1982-01-01",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "拍譜唱片",
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/001dHtAR4DVCk8",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-blessing",
+        "titleOnRelease": "祝福",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "祝福",
+          "zh-Hans": "祝福"
+        },
+        "duration": "5:20",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["王小虎"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 2,
+        "song": "song-daylight-avenue",
+        "titleOnRelease": "一條日光大道",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "一條日光大道",
+          "zh-Hans": "一条日光大道"
+        },
+        "duration": "3:15",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-li-tai-hsiang"]
+        },
+        "performers": ["person-chyi-yu", "person-li-tai-hsiang"]
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "風",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "風",
+          "zh-Hans": "风"
+        },
+        "duration": "3:31",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-sanmao"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "傳說",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "傳說",
+          "zh-Hans": "传说"
+        },
+        "duration": "4:33",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["余光中"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "雁",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "雁",
+          "zh-Hans": "雁"
+        },
+        "duration": "2:51",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["葉維廉"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "牧羊女",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "牧羊女",
+          "zh-Hans": "牧羊女"
+        },
+        "duration": "3:35",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["鄭愁予"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titleOnRelease": "春天的浮雕",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "春天的浮雕",
+          "zh-Hans": "春天的浮雕"
+        },
+        "duration": "4:12",
+        "versionNote": "Wikipedia notes an earlier version by Sally Yeh.",
+        "credits": {
+          "lyricsBy": ["羅門"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "海棠紋身",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "海棠紋身",
+          "zh-Hans": "海棠纹身"
+        },
+        "duration": "5:08",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["余光中"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "都市旋律",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "都市旋律",
+          "zh-Hans": "都市旋律"
+        },
+        "duration": "4:40",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["羅門"],
+          "composedBy": ["person-li-tai-hsiang"]
+        },
+        "performers": ["person-chyi-yu", "person-li-tai-hsiang"]
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "星",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "星",
+          "zh-Hans": "星"
+        },
+        "duration": "4:11",
+        "versionNote": "Wikipedia notes an earlier version by Sally Yeh.",
+        "credits": {
+          "lyricsBy": ["羅青"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      }
+    ],
+    "credits": {
+      "arranger": ["person-li-tai-hsiang"],
+      "composer": ["person-li-tai-hsiang"],
+      "producer": ["person-li-tai-hsiang"],
+      "soundtrack": [],
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-zh-blessing-album", "source-qq-music-blessing"],
+    "notes": "Imported from the accepted Stage 6B review. QQ provides current platform metadata and durations. Wikipedia identifies this as Chyi Yu’s second Mandarin studio album and notes a later 1998 reissue as 天使之詩; exact original day/month remains unconfirmed, so the QQ publicTime is retained as a platform date.",
+    "status": "partial"
+  },
+  {
+    "id": "release-you-are-all-my-memories-1983",
+    "slug": "you-are-all-my-memories-1983",
+    "title": "You Are All My Memories",
+    "titleLocalized": {
+      "en": "You Are All My Memories",
+      "zh-Hant": "你是我所有的回憶",
+      "zh-Hans": "你是我所有的回忆"
+    },
+    "titleOriginal": "你是我所有的回憶",
+    "releaseDate": "1983-11-01",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "金聲唱片",
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/0033n7k50McyzE",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-you-are-all-my-memories",
+        "titleOnRelease": "你是我所有的回憶",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "你是我所有的回憶",
+          "zh-Hans": "你是我所有的回忆"
+        },
+        "duration": "5:11",
+        "versionNote": "English Wikipedia lists 影子 in parentheses and notes an attribution issue for the lyricist.",
+        "credits": {
+          "lyricsBy": ["侯德健"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "三月的風",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "三月的風",
+          "zh-Hans": "三月的风"
+        },
+        "duration": "4:23",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["王玉萍"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "浮雲歌",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "浮雲歌",
+          "zh-Hans": "浮云歌"
+        },
+        "duration": "4:51",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["王玉萍"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "他的眸子",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "他的眸子",
+          "zh-Hans": "他的眸子"
+        },
+        "duration": "4:22",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["王玉萍"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "今年的湖畔會很冷",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "今年的湖畔會很冷",
+          "zh-Hans": "今年的湖畔会很冷"
+        },
+        "duration": "5:07",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["沈呂百"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "一朵青蓮",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "一朵青蓮",
+          "zh-Hans": "一朵青莲"
+        },
+        "duration": "5:11",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-rongzi"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titleOnRelease": "鷺鷥",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "鷺鷥",
+          "zh-Hans": "鹭鸶"
+        },
+        "duration": "5:48",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["高上秦"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "菊嘆",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "菊嘆",
+          "zh-Hans": "菊叹"
+        },
+        "duration": "4:24",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["向陽"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "彈琴的女孩",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "彈琴的女孩",
+          "zh-Hans": "弹琴的女孩"
+        },
+        "duration": "3:51",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["醉雲"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "輕輕的走來你身影",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "輕輕的走來你身影",
+          "zh-Hans": "轻轻的走来你身影"
+        },
+        "duration": "2:54",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["林綠"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": ["person-li-tai-hsiang"],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-chyi-yu", "source-qq-music-you-are-all-my-memories"],
+    "notes": "Imported from the accepted Stage 6B review. QQ confirms the platform title, order, durations, and publicTime. English Wikipedia supplies track-credit orientation but has a cleanup warning and an apparent section-year inconsistency, so credits remain partial pending booklet verification.",
+    "status": "partial"
+  },
+  {
+    "id": "release-only-you-1984",
+    "slug": "only-you-1984",
+    "title": "Only You",
+    "titleLocalized": {
+      "en": "Only You",
+      "zh-Hant": "有一個人",
+      "zh-Hans": "有一个人"
+    },
+    "titleOriginal": "有一個人",
+    "releaseDate": "1984-12-01",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "滾石唱片",
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/002Nwhn04bkAWp",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "去罷",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "去罷",
+          "zh-Hans": "去吧"
+        },
+        "duration": "3:28",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["徐志摩"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "山之旅",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "山之旅",
+          "zh-Hans": "山之旅"
+        },
+        "duration": "3:55",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["林綠"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "水天吟",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "水天吟",
+          "zh-Hans": "水天吟"
+        },
+        "duration": "7:23",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["羅門"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "山雲遊",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "山雲遊",
+          "zh-Hans": "山云游"
+        },
+        "duration": "4:34",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["羅門"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "渺小",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "渺小",
+          "zh-Hans": "渺小"
+        },
+        "duration": "3:09",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["徐志摩"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "別擰我，疼",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "別擰我，疼",
+          "zh-Hans": "别拧我，疼"
+        },
+        "duration": "3:20",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["徐志摩"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 7,
+        "song": "song-only-you",
+        "titleOnRelease": "有一個人",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "有一個人",
+          "zh-Hans": "有一个人"
+        },
+        "duration": "5:40",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["李敏勇"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "戲子",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "戲子",
+          "zh-Hans": "戏子"
+        },
+        "duration": "3:05",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["席慕蓉"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "歌",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "歌",
+          "zh-Hans": "歌"
+        },
+        "duration": "5:45",
+        "versionNote": "QQ order is used; English Wikipedia appears to swap this with 雨絲.",
+        "credits": {
+          "lyricsBy": ["瘂弦"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      },
+      {
+        "position": 10,
+        "song": "song-yu-si",
+        "titleOnRelease": "雨絲",
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "雨絲",
+          "zh-Hans": "雨丝"
+        },
+        "duration": "4:14",
+        "versionNote": "Linked to the existing 2025 live-performance identity.",
+        "credits": {
+          "lyricsBy": ["鄭愁予"],
+          "composedBy": ["person-li-tai-hsiang"]
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": ["person-li-tai-hsiang"],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-chyi-yu", "source-qq-music-only-you"],
+    "notes": "Imported from the accepted Stage 6B review. QQ order is used for 歌 and 雨絲 because English Wikipedia appears to conflict with the platform order. English Wikipedia instrument notes are treated cautiously and not fully normalized.",
     "status": "partial"
   },
   {
@@ -223,6 +860,10 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-lee-tai-ming"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "軌外",
+          "zh-Hans": "轨外"
         }
       },
       {
@@ -234,6 +875,10 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-weng-hsiao-liang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "謎",
+          "zh-Hans": "谜"
         }
       },
       {
@@ -245,6 +890,10 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-li-tsung-sheng"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "七點鐘",
+          "zh-Hans": "七点钟"
         }
       },
       {
@@ -257,7 +906,11 @@
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-li-tsung-sheng"]
         },
-        "performers": ["person-pan-yue-yun"]
+        "performers": ["person-pan-yue-yun"],
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "飛",
+          "zh-Hans": "飞"
+        }
       },
       {
         "position": 5,
@@ -269,7 +922,11 @@
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-chen-chih-yuan"]
         },
-        "performers": ["person-pan-yue-yun"]
+        "performers": ["person-pan-yue-yun"],
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "曉夢蝴蝶",
+          "zh-Hans": "晓梦蝴蝶"
+        }
       },
       {
         "position": 6,
@@ -280,6 +937,10 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "沙漠",
+          "zh-Hans": "沙漠"
         }
       },
       {
@@ -291,6 +952,10 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-li-tai-hsiang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "今世",
+          "zh-Hans": "今世"
         }
       },
       {
@@ -302,6 +967,10 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-chen-yang"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "孀",
+          "zh-Hans": "孀"
         }
       },
       {
@@ -313,6 +982,10 @@
         "credits": {
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-lee-tai-ming"]
+        },
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "說給自己聽",
+          "zh-Hans": "说给自己听"
         }
       },
       {
@@ -325,7 +998,11 @@
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-wang-hsin-lien"]
         },
-        "performers": ["person-pan-yue-yun"]
+        "performers": ["person-pan-yue-yun"],
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "遠方",
+          "zh-Hans": "远方"
+        }
       },
       {
         "position": 11,
@@ -337,14 +1014,1525 @@
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-weng-hsiao-liang"]
         },
-        "performers": ["person-chyi-yu", "person-pan-yue-yun"]
+        "performers": ["person-chyi-yu", "person-pan-yue-yun"],
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "夢田",
+          "zh-Hans": "梦田"
+        }
       }
     ],
     "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
       "vocalist": ["person-chyi-yu", "person-pan-yue-yun"]
     },
     "sources": ["source-wikipedia-yue-echo-album", "source-apple-music-echo", "source-qq-music-echo", "source-user-task-0618-2"],
     "notes": "Co-performed with Pan Yue-yun. The supplied encyclopedia source says the album was first released on cassette and vinyl, then reissued on CD the following January.",
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Echo",
+      "zh-Hant": "回聲 三毛作品第15號",
+      "zh-Hans": "回声 三毛作品第15号"
+    }
+  },
+  {
+    "id": "release-stories-1987",
+    "slug": "stories-1987",
+    "title": "Stories",
+    "titleLocalized": {
+      "en": "Stories"
+    },
+    "releaseDate": "1987-10-01",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "滾石唱片",
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/002PXFzT2OfnOr",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-stories",
+        "titleOnRelease": "Stories",
+        "titleOnReleaseLocalized": {
+          "en": "Stories",
+          "zh-Hans": "Stories"
+        },
+        "duration": "4:56",
+        "versionNote": "Original performer/source noted by English Wikipedia: Viktor Lazlo, 1986.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": "song-memory",
+        "titleOnRelease": "Memory",
+        "titleOnReleaseLocalized": {
+          "en": "Memory",
+          "zh-Hans": "Memory"
+        },
+        "duration": "4:24",
+        "versionNote": "Original performer/source noted by English Wikipedia: Elaine Paige, 1983.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "Light A Light",
+        "titleOnReleaseLocalized": {
+          "en": "Light A Light",
+          "zh-Hans": "Light A Light"
+        },
+        "duration": "2:44",
+        "versionNote": "Original performer/source noted by English Wikipedia: Janis Ian, 1975.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "Castles In The Air",
+        "titleOnReleaseLocalized": {
+          "en": "Castles In The Air",
+          "zh-Hans": "Castles In The Air"
+        },
+        "duration": "3:03",
+        "versionNote": "Original performer/source noted by English Wikipedia: Don McLean, 1970.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "Windmills Of Your Mind",
+        "titleOnReleaseLocalized": {
+          "en": "Windmills Of Your Mind",
+          "zh-Hans": "Windmills Of Your Mind"
+        },
+        "duration": "3:53",
+        "versionNote": "Original performer/source noted by English Wikipedia: Dusty Springfield, 1966.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "Love's In Disguise",
+        "titleOnReleaseLocalized": {
+          "en": "Love's In Disguise",
+          "zh-Hans": "Love's In Disguise"
+        },
+        "duration": "3:47",
+        "versionNote": "Original performer/source noted by English Wikipedia: Amii Stewart, 1987.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titleOnRelease": "Unknown Musician",
+        "titleOnReleaseLocalized": {
+          "en": "Unknown Musician",
+          "zh-Hans": "Unknown Musician"
+        },
+        "duration": "3:51",
+        "versionNote": "Original performer/source noted by English Wikipedia: Blast, 1978.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "If You Say My Eyes Are Beautiful",
+        "titleOnReleaseLocalized": {
+          "en": "If You Say My Eyes Are Beautiful",
+          "zh-Hans": "If You Say My Eyes Are Beautiful"
+        },
+        "duration": "4:17",
+        "versionNote": "English Wikipedia describes this as a duet with Steven Francis; original source Whitney Houston & Jermaine Jackson, 1986.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "Diamonds And Rust",
+        "titleOnReleaseLocalized": {
+          "en": "Diamonds And Rust",
+          "zh-Hans": "Diamonds And Rust"
+        },
+        "duration": "4:32",
+        "versionNote": "Original performer/source noted by English Wikipedia: Joan Baez, 1975.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "Like A Hero",
+        "titleOnReleaseLocalized": {
+          "en": "Like A Hero",
+          "zh-Hans": "Like A Hero"
+        },
+        "duration": "5:37",
+        "versionNote": "Original performer/source noted by English Wikipedia: Modern Talking, 1987.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titleOnRelease": "Requiem",
+        "titleOnReleaseLocalized": {
+          "en": "Requiem",
+          "zh-Hans": "Requiem"
+        },
+        "duration": "4:28",
+        "versionNote": "Original performer/source noted by English Wikipedia: Karthago, 1983.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": ["person-reggie-verghese"],
+      "soundtrack": [],
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-chyi-yu", "source-qq-music-stories"],
+    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as Chyi Yu’s English cover-album debut. QQ supplies current platform order/durations; English Wikipedia supplies original-performer/source-year orientation and producer context.",
+    "status": "partial"
+  },
+  {
+    "id": "release-whoever-finds-this-i-love-you-1988",
+    "slug": "whoever-finds-this-i-love-you-1988",
+    "title": "Whoever Finds This, I Love You",
+    "titleLocalized": {
+      "en": "Whoever Finds This, I Love You",
+      "zh-Hant": "誰撿到這張紙條 我愛你",
+      "zh-Hans": "谁捡到这张纸条 我爱你"
+    },
+    "titleOriginal": "誰撿到這張紙條 我愛你",
+    "releaseDate": "1988-03-31",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "滾石唱片",
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/0044p8A40NlwtI",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "You Got A Nerve",
+        "titleOnReleaseLocalized": {
+          "en": "You Got A Nerve",
+          "zh-Hans": "You Got A Nerve"
+        },
+        "duration": "5:08",
+        "versionNote": "Original performer/source noted by English Wikipedia: Rod Stewart, 1978.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "Waiting for the morning",
+        "titleOnReleaseLocalized": {
+          "en": "Waiting for the morning",
+          "zh-Hans": "Waiting for the morning"
+        },
+        "duration": "4:32",
+        "versionNote": "Original performer/source noted by English Wikipedia: Bobbysocks, 1986.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "Make no mistake, he's mine",
+        "titleOnReleaseLocalized": {
+          "en": "Make no mistake, he's mine",
+          "zh-Hans": "Make no mistake, he's mine"
+        },
+        "duration": "4:18",
+        "versionNote": "English Wikipedia describes this as a duet with Michelle Pan; original source Barbra Streisand & Kim Carnes, 1985.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "performers": ["person-chyi-yu", "person-pan-yue-yun"]
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "He's so beautiful to me",
+        "titleOnReleaseLocalized": {
+          "en": "He's so beautiful to me",
+          "zh-Hans": "He's so beautiful to me"
+        },
+        "duration": "3:35",
+        "versionNote": "Original performer/source noted by English Wikipedia: Anita Mayer, 1986.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "Angels, Roses And Rain",
+        "titleOnReleaseLocalized": {
+          "en": "Angels, Roses And Rain",
+          "zh-Hans": "Angels, Roses And Rain"
+        },
+        "duration": "3:32",
+        "versionNote": "Original performer/source noted by English Wikipedia: Dickey Lee, 1977.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "Lady On The Other Side Of Town",
+        "titleOnReleaseLocalized": {
+          "en": "Lady On The Other Side Of Town",
+          "zh-Hans": "Lady On The Other Side Of Town"
+        },
+        "duration": "7:26",
+        "versionNote": "English Wikipedia marks original source unmentioned.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 7,
+        "song": "song-whoever-finds-this-i-love-you",
+        "titleOnRelease": "Whoever Finds This I Love You",
+        "titleOnReleaseLocalized": {
+          "en": "Whoever Finds This I Love You",
+          "zh-Hans": "Whoever Finds This I Love You"
+        },
+        "duration": "5:12",
+        "versionNote": "Original performer/source noted by English Wikipedia: Mac Davis, 1972.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 8,
+        "song": "song-vincent",
+        "titleOnRelease": "Vincent",
+        "titleOnReleaseLocalized": {
+          "en": "Vincent",
+          "zh-Hans": "Vincent"
+        },
+        "duration": "4:15",
+        "versionNote": "Original performer/source noted by English Wikipedia: Don McLean, 1972.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "Yesterday when I was young",
+        "titleOnReleaseLocalized": {
+          "en": "Yesterday when I was young",
+          "zh-Hans": "Yesterday when I was young"
+        },
+        "duration": "4:24",
+        "versionNote": "Original performer/source noted by English Wikipedia: Roy Clark, 1969.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-chyi-yu", "source-qq-music-whoever-finds-this-i-love-you"],
+    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as an English cover album. English Wikipedia notes MTV filming context and Chinese track titles; full writer/composer credits remain unnormalized pending stronger sources.",
+    "status": "partial"
+  },
+  {
+    "id": "release-paradise-bird-1988",
+    "slug": "paradise-bird-1988",
+    "title": "Paradise Bird",
+    "titleLocalized": {
+      "en": "Paradise Bird",
+      "zh-Hant": "天堂鳥",
+      "zh-Hans": "天堂鸟"
+    },
+    "titleOriginal": "天堂鳥",
+    "releaseDate": "1988-11-01",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "滾石唱片",
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/0015HYXU1OC9sz",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "Only Love",
+        "titleOnReleaseLocalized": {
+          "en": "Only Love",
+          "zh-Hans": "Only Love"
+        },
+        "duration": "4:23",
+        "versionNote": "Original performer/source noted by English Wikipedia: Nana Mouskouri, 1985.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "Paradise Bird",
+        "titleOnReleaseLocalized": {
+          "en": "Paradise Bird",
+          "zh-Hans": "Paradise Bird"
+        },
+        "duration": "5:06",
+        "versionNote": "Original performer/source noted by English Wikipedia: Amii Stewart, 1979.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "Gypsy",
+        "titleOnReleaseLocalized": {
+          "en": "Gypsy",
+          "zh-Hans": "Gypsy"
+        },
+        "duration": "4:00",
+        "versionNote": "Original performer/source noted by English Wikipedia: Suzanne Vega, 1987.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "Graveyard Angel",
+        "titleOnReleaseLocalized": {
+          "en": "Graveyard Angel",
+          "zh-Hans": "Graveyard Angel"
+        },
+        "duration": "4:20",
+        "versionNote": "Original performer/source noted by English Wikipedia: Louise Tucker, 1982.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "Tonight",
+        "titleOnReleaseLocalized": {
+          "en": "Tonight",
+          "zh-Hans": "Tonight"
+        },
+        "duration": "3:30",
+        "versionNote": "English Wikipedia marks original source unknown.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "It Was Love",
+        "titleOnReleaseLocalized": {
+          "en": "It Was Love",
+          "zh-Hans": "It Was Love"
+        },
+        "duration": "4:24",
+        "versionNote": "Original performer/source noted by English Wikipedia: Frank Duval, 1985.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titleOnRelease": "Islands",
+        "titleOnReleaseLocalized": {
+          "en": "Islands",
+          "zh-Hans": "Islands"
+        },
+        "duration": "4:49",
+        "versionNote": "Original performer/source noted by English Wikipedia: Mike Oldfield, 1987.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "Joan Of Arc",
+        "titleOnReleaseLocalized": {
+          "en": "Joan Of Arc",
+          "zh-Hans": "Joan Of Arc"
+        },
+        "duration": "8:00",
+        "versionNote": "English Wikipedia identifies this as a duet with Reggie Verghese; original source Jennifer Warnes duet with Leonard Cohen, 1987.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "performers": ["person-chyi-yu", "person-reggie-verghese"]
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "Broken Heroes",
+        "titleOnReleaseLocalized": {
+          "en": "Broken Heroes",
+          "zh-Hans": "Broken Heroes"
+        },
+        "duration": "3:44",
+        "versionNote": "Original performer/source noted by English Wikipedia: Chris Norman, 1988.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": ["person-reggie-verghese"],
+      "soundtrack": [],
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-chyi-yu", "source-qq-music-paradise-bird"],
+    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as an English cover album. Reggie Verghese is represented as producer and Joan Of Arc duet collaborator, not as album-level main artist.",
+    "status": "partial"
+  },
+  {
+    "id": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "slug": "you-meiyou-zhe-zhong-shuofa-1988",
+    "title": "Any Words Like This?",
+    "titleLocalized": {
+      "en": "Any Words Like This?",
+      "zh-Hant": "有沒有這種說法",
+      "zh-Hans": "有没有这种说法",
+      "pinyin": "You Meiyou Zhe Zhong Shuofa"
+    },
+    "titleOriginal": "有沒有這種說法",
+    "releaseDate": "1988-11-01",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "滾石唱片",
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/000KBpK92BWC1n",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-high-heels-in-september",
+        "titleOnRelease": "九月的高跟鞋",
+        "titleOnReleaseLocalized": {
+          "en": "High Heel in September",
+          "zh-Hant": "九月的高跟鞋",
+          "zh-Hans": "九月的高跟鞋"
+        },
+        "duration": "4:48",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["陳克華"],
+          "composedBy": ["虹"]
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "如果真的不要",
+        "titleOnReleaseLocalized": {
+          "en": "If You Really Don't Want",
+          "zh-Hant": "如果真的不要",
+          "zh-Hans": "如果真的不要"
+        },
+        "duration": "5:41",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-wang-hsin-lien"],
+          "composedBy": ["虹"]
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "忘了數羊",
+        "titleOnReleaseLocalized": {
+          "en": "Fail to Count the Sheep",
+          "zh-Hant": "忘了數羊",
+          "zh-Hans": "忘了数羊"
+        },
+        "duration": "4:05",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["羅聖爾"],
+          "composedBy": ["羅聖爾"]
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "雪中蓮",
+        "titleOnReleaseLocalized": {
+          "en": "The Lily in Snow",
+          "zh-Hant": "雪中蓮",
+          "zh-Hans": "雪中莲"
+        },
+        "duration": "4:39",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["陳桂芬"],
+          "composedBy": ["虹"]
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "那個叫老的人",
+        "titleOnReleaseLocalized": {
+          "en": "The Man Named Old",
+          "zh-Hant": "那個叫老的人",
+          "zh-Hans": "那个叫老的人"
+        },
+        "duration": "4:30",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["詹德茂"],
+          "composedBy": ["虹"]
+        }
+      },
+      {
+        "position": 6,
+        "song": "song-any-words-like-this",
+        "titleOnRelease": "有沒有這種說法",
+        "titleOnReleaseLocalized": {
+          "en": "Any Words Like This?",
+          "zh-Hant": "有沒有這種說法",
+          "zh-Hans": "有没有这种说法"
+        },
+        "duration": "5:45",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-chyi-yu"],
+          "composedBy": ["虹"]
+        }
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titleOnRelease": "冷冷的心",
+        "titleOnReleaseLocalized": {
+          "en": "Chilly Heart",
+          "zh-Hant": "冷冷的心",
+          "zh-Hans": "冷冷的心"
+        },
+        "duration": "4:22",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["虹"],
+          "composedBy": ["林隆旋"]
+        }
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "細說從頭",
+        "titleOnReleaseLocalized": {
+          "en": "Telling from Beginning",
+          "zh-Hant": "細說從頭",
+          "zh-Hans": "细说从头"
+        },
+        "duration": "3:40",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-li-tsung-sheng"],
+          "composedBy": ["person-li-tsung-sheng"]
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "一面湖水",
+        "titleOnReleaseLocalized": {
+          "en": "A Piece of Lake",
+          "zh-Hant": "一面湖水",
+          "zh-Hans": "一面湖水"
+        },
+        "duration": "4:56",
+        "versionNote": "QQ and English Wikipedia identify Luo Hong-wu as the male voice on this track.",
+        "credits": {
+          "lyricsBy": ["person-wang-hsin-lien"],
+          "composedBy": ["虹"]
+        },
+        "performers": ["person-chyi-yu", "person-luo-hong-wu"]
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "十二個夜晚",
+        "titleOnReleaseLocalized": {
+          "en": "Twelve Nights",
+          "zh-Hant": "十二個夜晚",
+          "zh-Hans": "十二个夜晚"
+        },
+        "duration": "5:01",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["person-chyi-yu"],
+          "composedBy": ["虹"]
+        }
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titleOnRelease": "窗外有藍天",
+        "titleOnReleaseLocalized": {
+          "en": "A Room With a View",
+          "zh-Hant": "窗外有藍天",
+          "zh-Hans": "窗外有蓝天"
+        },
+        "duration": null,
+        "versionNote": "Listed by English Wikipedia but missing/hidden from the QQ Music API result used in Stage 6B.",
+        "credits": {
+          "lyricsBy": ["梁弘志"],
+          "composedBy": ["梁弘志"]
+        }
+      },
+      {
+        "position": 12,
+        "song": null,
+        "titleOnRelease": "怨女",
+        "titleOnReleaseLocalized": {
+          "en": "Rouge of the North",
+          "zh-Hant": "怨女",
+          "zh-Hans": "怨女"
+        },
+        "duration": "6:02",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": ["呂思志"],
+          "composedBy": ["張弘毅"]
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-chyi-yu", "source-qq-music-you-meiyou-zhe-zhong-shuofa"],
+    "notes": "Imported from the accepted Stage 6B review with gap note. QQ returns positions 1-10 and 12, apparently omitting/hiding position 11, while English Wikipedia lists 窗外有藍天 / A Room With a View as position 11. Luo Hong-wu is represented only as the track performer on 一面湖水.",
+    "status": "partial"
+  },
+  {
+    "id": "release-eight-taels-of-gold-ost-1989",
+    "slug": "eight-taels-of-gold-ost-1989",
+    "title": "Eight Taels of Gold soundtrack",
+    "titleOriginal": "八兩金 原聲帶",
+    "releaseDate": "1989",
+    "releaseType": "soundtrack",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": null,
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music OST link",
+          "platform": "qq-music",
+          "url": "https://c6.y.qq.com/base/fcgi-bin/u?__=4XObUwID78Tu",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-boat-song",
+        "titleOnRelease": "船歌",
+        "duration": null,
+        "versionNote": "Chyi Yu vocal appearance on the film soundtrack.",
+        "credits": {
+          "lyricsBy": ["person-luo-dayou"],
+          "composedBy": ["person-luo-dayou"]
+        }
+      },
+      {
+        "position": 2,
+        "song": "song-red-cotton",
+        "titleOnRelease": "紅棉",
+        "duration": null,
+        "versionNote": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 3,
+        "song": "song-mess",
+        "titleOnRelease": "亂",
+        "duration": null,
+        "versionNote": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": ["person-luo-dayou"],
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-user-task-0618-2", "source-qq-music-eight-taels-of-gold-ost", "source-wikipedia-zh-eight-taels-of-gold-film", "source-douban-eight-taels-of-gold"],
+    "notes": "Partial release record focused on the Chyi Yu vocal-appearance subset identified by the project maintainer. The complete OST album track list still needs extraction from an official platform page.",
+    "status": "partial"
+  },
+  {
+    "id": "release-where-have-all-the-flowers-gone-1990",
+    "slug": "where-have-all-the-flowers-gone-1990",
+    "title": "Where Have All the Flowers Gone",
+    "titleLocalized": {
+      "en": "Where Have All the Flowers Gone"
+    },
+    "releaseDate": "1990-04-01",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "滾石唱片",
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/001iskHR2Hs4Zm",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "Find The Cost Of Freedom",
+        "titleOnReleaseLocalized": {
+          "en": "Find The Cost Of Freedom",
+          "zh-Hans": "Find The Cost Of Freedom"
+        },
+        "duration": "1:46",
+        "versionNote": "Music/lyrics source noted by English Wikipedia: Stephen Stills, 1974.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "Borderline",
+        "titleOnReleaseLocalized": {
+          "en": "Borderline",
+          "zh-Hans": "Borderline"
+        },
+        "duration": "4:52",
+        "versionNote": "Music/lyrics source noted by English Wikipedia: Chris de Burgh, 1982.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "Senses In Flight",
+        "titleOnReleaseLocalized": {
+          "en": "Senses In Flight",
+          "zh-Hans": "Senses In Flight"
+        },
+        "duration": "5:09",
+        "versionNote": "English Wikipedia notes words by Chyi Yu & Mark Hansell and music by Clannad, 1982.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "Unborn Heart",
+        "titleOnReleaseLocalized": {
+          "en": "Unborn Heart",
+          "zh-Hans": "Unborn Heart"
+        },
+        "duration": "4:41",
+        "versionNote": "Music/lyrics source noted by English Wikipedia: Dan Hill, 1989.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "Wind Beneath My Wings",
+        "titleOnReleaseLocalized": {
+          "en": "Wind Beneath My Wings",
+          "zh-Hans": "Wind Beneath My Wings"
+        },
+        "duration": "5:01",
+        "versionNote": "Music/lyrics source noted by English Wikipedia: Larry Henley & Jeff Silbar, 1982.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "Children Of The 80's",
+        "titleOnReleaseLocalized": {
+          "en": "Children Of The 80's",
+          "zh-Hans": "Children Of The 80's"
+        },
+        "duration": "4:08",
+        "versionNote": "Music/lyrics source noted by English Wikipedia: Joan Baez, 1983.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 7,
+        "song": "song-where-have-all-the-flowers-gone",
+        "titleOnRelease": "Where Have All The Flowers Gone",
+        "titleOnReleaseLocalized": {
+          "en": "Where Have All The Flowers Gone",
+          "zh-Hans": "Where Have All The Flowers Gone"
+        },
+        "duration": "4:39",
+        "versionNote": "English Wikipedia notes Pete Seeger & Joe Hickerson, with arrangement by Lee Tai-ming.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "The End Of The Innocence",
+        "titleOnReleaseLocalized": {
+          "en": "The End Of The Innocence",
+          "zh-Hans": "The End Of The Innocence"
+        },
+        "duration": "4:57",
+        "versionNote": "Music/lyrics source noted by English Wikipedia: Don Henley & Bruce Hornsby, 1989.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "Longer",
+        "titleOnReleaseLocalized": {
+          "en": "Longer",
+          "zh-Hans": "Longer"
+        },
+        "duration": "3:18",
+        "versionNote": "Music/lyrics source noted by English Wikipedia: Dan Fogelberg, 1982.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "Light In The Darkness",
+        "titleOnReleaseLocalized": {
+          "en": "Light In The Darkness",
+          "zh-Hans": "Light In The Darkness"
+        },
+        "duration": "3:47",
+        "versionNote": "Music/lyrics source noted by English Wikipedia: Mark Spiro & Ed Arkin, 1987.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-chyi-yu", "source-qq-music-where-have-all-the-flowers-gone"],
+    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as an English cover album. Writer/source details are kept in track notes rather than normalized person credits.",
+    "status": "partial"
+  },
+  {
+    "id": "release-love-of-my-life-1993",
+    "slug": "love-of-my-life-1993",
+    "title": "Love of My Life",
+    "titleLocalized": {
+      "en": "Love of My Life",
+      "zh-Hant": "藏愛的女人",
+      "zh-Hans": "藏爱的女人"
+    },
+    "titleOriginal": "藏愛的女人",
+    "releaseDate": "1993-10-22",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "滾石唱片",
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/000Zsd2k3zRYvi",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "The Music of The Night",
+        "titleOnReleaseLocalized": {
+          "en": "The Music of The Night",
+          "zh-Hans": "The Music of The Night"
+        },
+        "duration": "5:32",
+        "versionNote": "English Wikipedia lists lyrics by Charles Hart and music by Andrew Lloyd Webber.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "Vino de Amor",
+        "titleOnReleaseLocalized": {
+          "en": "Vino de Amor",
+          "zh-Hans": "Vino de Amor"
+        },
+        "duration": "4:18",
+        "versionNote": "English Wikipedia lists lyrics by Tony Hiller & Nicky Graham and traditional music.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "A Twist of Fate",
+        "titleOnReleaseLocalized": {
+          "en": "A Twist of Fate",
+          "zh-Hans": "A Twist of Fate"
+        },
+        "duration": "3:04",
+        "versionNote": "English Wikipedia notes this is based on Schubert’s Serenade.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "Brave New World",
+        "titleOnReleaseLocalized": {
+          "en": "Brave New World",
+          "zh-Hans": "Brave New World"
+        },
+        "duration": "3:18",
+        "versionNote": "English Wikipedia notes this is based on Beethoven’s Pathetique Sonata.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "Love of My Life",
+        "titleOnReleaseLocalized": {
+          "en": "Love of My Life",
+          "zh-Hans": "Love of My Life"
+        },
+        "duration": "4:32",
+        "versionNote": "English Wikipedia lists Freddie Mercury / Queen for lyrics and music.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "Glitter And Dust",
+        "titleOnReleaseLocalized": {
+          "en": "Glitter And Dust",
+          "zh-Hans": "Glitter And Dust"
+        },
+        "duration": "4:20",
+        "versionNote": "English Wikipedia notes this is based on Swan Lake by Tchaikovsky.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titleOnRelease": "Plaisir D'amour",
+        "titleOnReleaseLocalized": {
+          "en": "Plaisir D'amour",
+          "zh-Hans": "Plaisir D'amour"
+        },
+        "duration": "3:55",
+        "versionNote": "English Wikipedia describes this as a duet with Dave Matthews and lists Jean Paul Egide Martimi for music.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "performers": ["person-chyi-yu", "person-dave-matthews"]
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "Forever Bound",
+        "titleOnReleaseLocalized": {
+          "en": "Forever Bound",
+          "zh-Hans": "Forever Bound"
+        },
+        "duration": "4:14",
+        "versionNote": "English Wikipedia notes this is based on Adagio Cantabill from Symphony No. 5 by Tchaikovsky.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "The Vision",
+        "titleOnReleaseLocalized": {
+          "en": "The Vision",
+          "zh-Hans": "The Vision"
+        },
+        "duration": "3:45",
+        "versionNote": "English Wikipedia notes this is based on The Swan from The Carnival of the Animals by Saint-Saëns.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "Recuerdos de la Alhambra",
+        "titleOnReleaseLocalized": {
+          "en": "Recuerdos de la Alhambra",
+          "zh-Hans": "Recuerdos de la Alhambra"
+        },
+        "duration": "4:11",
+        "versionNote": "English Wikipedia notes this is based on Recuerdos de la Alhambra by Tárrega.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titleOnRelease": "Careless Love",
+        "titleOnReleaseLocalized": {
+          "en": "Careless Love",
+          "zh-Hans": "Careless Love"
+        },
+        "duration": "4:32",
+        "versionNote": "English Wikipedia notes this is based on Etude Op. 10 No. 3 by Chopin.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 12,
+        "song": null,
+        "titleOnRelease": "She'll Never Know",
+        "titleOnReleaseLocalized": {
+          "en": "She'll Never Know",
+          "zh-Hans": "She'll Never Know"
+        },
+        "duration": "2:53",
+        "versionNote": "English Wikipedia notes this is based on Für Elise by Beethoven.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-chyi-yu", "source-qq-music-love-of-my-life"],
+    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as an English cover/classical-adaptation album. Classical/adaptation credits are preserved as source notes rather than over-normalized.",
+    "status": "partial"
+  },
+  {
+    "id": "release-chyis-tears-1996",
+    "slug": "chyis-tears-1996",
+    "title": "CHYI'S TEARS",
+    "titleLocalized": {
+      "en": "CHYI'S TEARS"
+    },
+    "releaseDate": "1996-01-01",
+    "releaseType": "studio-album",
+    "artist": "person-chyi-yu",
+    "artists": ["person-chyi-yu"],
+    "label": "滾石唱片",
+    "catalogNumber": null,
+    "formats": ["unknown"],
+    "availability": {
+      "physical": ["unknown"],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/000WaDzh1HYydc",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-tears",
+        "titleOnRelease": "Tears",
+        "titleOnReleaseLocalized": {
+          "en": "Tears",
+          "zh-Hans": "Tears"
+        },
+        "duration": "3:20",
+        "versionNote": "Original Spanish title Donde Voy; library title remains Tears per project review.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": "song-all-souls-night",
+        "titleOnRelease": "All Souls Night",
+        "titleOnReleaseLocalized": {
+          "en": "All Souls Night",
+          "zh-Hans": "All Souls Night"
+        },
+        "duration": "4:43",
+        "versionNote": "English Wikipedia preserves OC note: Loreena McKennitt.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "Babes In The Wood",
+        "titleOnReleaseLocalized": {
+          "en": "Babes In The Wood",
+          "zh-Hans": "Babes In The Wood"
+        },
+        "duration": "3:54",
+        "versionNote": "English Wikipedia lists original title Babies In the Wood and preserves OC/OP/SP notes.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "Cry",
+        "titleOnReleaseLocalized": {
+          "en": "Cry",
+          "zh-Hans": "Cry"
+        },
+        "duration": "4:06",
+        "versionNote": "English Wikipedia preserves OC/SP notes.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "You Can't Say",
+        "titleOnReleaseLocalized": {
+          "en": "You Can't Say",
+          "zh-Hans": "You Can't Say"
+        },
+        "duration": "3:11",
+        "versionNote": "English Wikipedia preserves OC/OP/SP notes.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "Concrete Sea",
+        "titleOnReleaseLocalized": {
+          "en": "Concrete Sea",
+          "zh-Hans": "Concrete Sea"
+        },
+        "duration": "3:41",
+        "versionNote": "English Wikipedia preserves OC/OP/SP notes.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titleOnRelease": "Prologue - Winter Song",
+        "titleOnReleaseLocalized": {
+          "en": "Prologue - Winter Song",
+          "zh-Hans": "Prologue - Winter Song"
+        },
+        "duration": "6:24",
+        "versionNote": "English Wikipedia lists original title Prologue, Winter Song and OC Chris Simpson.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "Knife",
+        "titleOnReleaseLocalized": {
+          "en": "Knife",
+          "zh-Hans": "Knife"
+        },
+        "duration": "4:46",
+        "versionNote": "English Wikipedia preserves OC/DP/SP notes.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "You Are The Reason",
+        "titleOnReleaseLocalized": {
+          "en": "You Are The Reason",
+          "zh-Hans": "You Are The Reason"
+        },
+        "duration": "4:04",
+        "versionNote": "English Wikipedia preserves OC/OP notes.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "Send In the Clowns",
+        "titleOnReleaseLocalized": {
+          "en": "Send In the Clowns",
+          "zh-Hans": "Send In the Clowns"
+        },
+        "duration": "3:58",
+        "versionNote": "English Wikipedia preserves Stephen Sondheim and publishing notes.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titleOnRelease": "Big Dream",
+        "titleOnReleaseLocalized": {
+          "en": "Big Dream",
+          "zh-Hans": "Big Dream"
+        },
+        "duration": "3:02",
+        "versionNote": "English Wikipedia leaves original-title/credit fields unexpanded.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": ["person-chyi-yu"]
+    },
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-chyi-yu", "source-qq-music-chyis-tears"],
+    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as an English cover album. Track 1 keeps Tears as the library title and stores Donde Voy as original-title context.",
     "status": "partial"
   },
   {
@@ -516,6 +2704,10 @@
       }
     ],
     "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
       "vocalist": ["person-chyi-yu"]
     },
     "sources": ["source-wikipedia-yue-camel-bird-fish", "source-apple-music-camel-bird-fish", "source-qq-music-camel-bird-fish"],
@@ -558,7 +2750,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "序 (Live)",
+          "zh-Hant": "序 (Live)"
+        }
       },
       {
         "position": 2,
@@ -570,7 +2766,10 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "Forever (Live)"
+        }
       },
       {
         "position": 3,
@@ -582,7 +2781,11 @@
           "lyricsBy": ["person-li-tai-hsiang"],
           "composedBy": ["person-li-tai-hsiang"]
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "走在雨中 (Live)",
+          "zh-Hant": "走在雨中 (Live)"
+        }
       },
       {
         "position": 4,
@@ -594,11 +2797,15 @@
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-li-tai-hsiang"]
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "橄欖樹 (Live)",
+          "zh-Hant": "橄欖樹 (Live)"
+        }
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-any-words-like-this",
         "titleOnRelease": "有沒有這種說法 (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -606,7 +2813,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "有沒有這種說法 (Live)",
+          "zh-Hant": "有沒有這種說法 (Live)"
+        }
       },
       {
         "position": 6,
@@ -618,11 +2829,15 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "不要問我為什麼 (Live)",
+          "zh-Hant": "不要問我為什麼 (Live)"
+        }
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-whoever-finds-this-i-love-you",
         "titleOnRelease": "Whoever Finds This, I Love You (Live)",
         "duration": null,
         "versionNote": "Live cover; original performer: Mac Davis.",
@@ -630,11 +2845,14 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "Whoever Finds This, I Love You (Live)"
+        }
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-high-heels-in-september",
         "titleOnRelease": "九月的高跟鞋 (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -642,7 +2860,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "九月的高跟鞋 (Live)",
+          "zh-Hant": "九月的高跟鞋 (Live)"
+        }
       },
       {
         "position": 9,
@@ -654,11 +2876,14 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "Stories (Live)"
+        }
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-blessing",
         "titleOnRelease": "祝福 (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -666,7 +2891,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "祝福 (Live)",
+          "zh-Hant": "祝福 (Live)"
+        }
       },
       {
         "position": 11,
@@ -678,7 +2907,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "屬於愛情的 (Live)",
+          "zh-Hant": "屬於愛情的 (Live)"
+        }
       },
       {
         "position": 12,
@@ -690,7 +2923,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "李香蘭 (Live)",
+          "zh-Hant": "李香蘭 (Live)"
+        }
       },
       {
         "position": 13,
@@ -702,7 +2939,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "錯過 (Live)",
+          "zh-Hant": "錯過 (Live)"
+        }
       },
       {
         "position": 14,
@@ -714,7 +2955,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "最愛 (Live)",
+          "zh-Hant": "最愛 (Live)"
+        }
       },
       {
         "position": 15,
@@ -726,7 +2971,11 @@
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-li-tsung-sheng"]
         },
-        "disc": 1
+        "disc": 1,
+        "titleOnReleaseLocalized": {
+          "en": "七點鐘 (Live)",
+          "zh-Hant": "七點鐘 (Live)"
+        }
       },
       {
         "position": 1,
@@ -738,11 +2987,15 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "船歌 (Live)",
+          "zh-Hant": "船歌 (Live)"
+        }
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-all-souls-night",
         "titleOnRelease": "All Souls Night (Live)",
         "duration": null,
         "versionNote": "Live cover; original performer: Loreena McKennitt.",
@@ -750,7 +3003,10 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "All Souls Night (Live)"
+        }
       },
       {
         "position": 3,
@@ -762,7 +3018,10 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "Moonlight Flower (Live)"
+        }
       },
       {
         "position": 4,
@@ -774,7 +3033,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "星星 (Live)",
+          "zh-Hant": "星星 (Live)"
+        }
       },
       {
         "position": 5,
@@ -786,7 +3049,11 @@
           "lyricsBy": [],
           "composedBy": ["person-li-tai-hsiang"]
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "答案 (Live)",
+          "zh-Hant": "答案 (Live)"
+        }
       },
       {
         "position": 6,
@@ -798,7 +3065,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "另一種星星 (Live)",
+          "zh-Hant": "另一種星星 (Live)"
+        }
       },
       {
         "position": 7,
@@ -810,7 +3081,10 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "Vincent (Live)"
+        }
       },
       {
         "position": 8,
@@ -822,11 +3096,15 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "一切都從這四個和弦開始 (Live)",
+          "zh-Hant": "一切都從這四個和弦開始 (Live)"
+        }
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-where-have-all-the-flowers-gone",
         "titleOnRelease": "Where Have All The Flowers Gone? (Live)",
         "duration": null,
         "versionNote": "Live cover; original performer: Pete Seeger.",
@@ -834,7 +3112,10 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "Where Have All The Flowers Gone? (Live)"
+        }
       },
       {
         "position": 10,
@@ -846,7 +3127,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "給我的祝福 (Live)",
+          "zh-Hant": "給我的祝福 (Live)"
+        }
       },
       {
         "position": 11,
@@ -858,7 +3143,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "春天的故事 (Live)",
+          "zh-Hant": "春天的故事 (Live)"
+        }
       },
       {
         "position": 12,
@@ -870,7 +3159,10 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "Windflower (Live)"
+        }
       },
       {
         "position": 13,
@@ -882,7 +3174,11 @@
           "lyricsBy": ["person-chyi-yu"],
           "composedBy": ["person-chi-chin"]
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "飛鳥與魚 (Live)",
+          "zh-Hant": "飛鳥與魚 (Live)"
+        }
       },
       {
         "position": 14,
@@ -894,11 +3190,14 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "C'est La Vie (Live)"
+        }
       },
       {
         "position": 15,
-        "song": null,
+        "song": "song-you-are-all-my-memories",
         "titleOnRelease": "你是我所有的回憶 (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -906,7 +3205,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "你是我所有的回憶 (Live)",
+          "zh-Hant": "你是我所有的回憶 (Live)"
+        }
       },
       {
         "position": 16,
@@ -918,11 +3221,15 @@
           "lyricsBy": [],
           "composedBy": ["person-li-tai-hsiang"]
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "歡顏 (Live)",
+          "zh-Hant": "歡顏 (Live)"
+        }
       },
       {
         "position": 17,
-        "song": null,
+        "song": "song-memory",
         "titleOnRelease": "Memory (NG) (Live)",
         "duration": null,
         "versionNote": "Live rehearsal/outtake track; original source musical: Cats.",
@@ -930,11 +3237,14 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "Memory (NG) (Live)"
+        }
       },
       {
         "position": 18,
-        "song": null,
+        "song": "song-memory",
         "titleOnRelease": "Memory (Live)",
         "duration": null,
         "versionNote": "Live cover; original performer: Elaine Paige.",
@@ -942,7 +3252,10 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "Memory (Live)"
+        }
       },
       {
         "position": 19,
@@ -954,7 +3267,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "加強記憶 (Live)",
+          "zh-Hant": "加強記憶 (Live)"
+        }
       },
       {
         "position": 20,
@@ -966,7 +3283,10 @@
           "lyricsBy": ["person-sanmao"],
           "composedBy": ["person-li-tai-hsiang"]
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "zh-Hant": "橄欖樹 (清唱版)"
+        }
       },
       {
         "position": 21,
@@ -978,7 +3298,11 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 2
+        "disc": 2,
+        "titleOnReleaseLocalized": {
+          "en": "跋 (Live)",
+          "zh-Hant": "跋 (Live)"
+        }
       },
       {
         "position": 1,
@@ -990,95 +3314,21 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "disc": 3
+        "disc": 3,
+        "titleOnReleaseLocalized": {
+          "en": "Indescribable Night (Live)"
+        }
       }
     ],
     "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
       "vocalist": ["person-chyi-yu"]
     },
-    "sources": [
-      "source-bilibili-unheard-full-hd",
-      "source-bilibili-unheard-full-480p",
-      "source-bilibili-unheard-chapters",
-      "source-qq-music-unheard-of-chyi",
-      "source-local-qq-unheard-track-image",
-      "source-user-task-0618-2"
-    ],
+    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-unheard-full-480p", "source-bilibili-unheard-chapters", "source-qq-music-unheard-of-chyi", "source-local-qq-unheard-track-image", "source-user-task-0618-2"],
     "notes": "Modeled separately from the 2002 Hong Kong concert event. The local QQ Music screenshot confirms the 2003-04-01 live album has 37 listed tracks across three discs. Song identity and cover/original credits remain partial where no internal song record exists.",
-    "status": "partial"
-  },
-  {
-    "id": "release-eight-taels-of-gold-ost-1989",
-    "slug": "eight-taels-of-gold-ost-1989",
-    "title": "Eight Taels of Gold soundtrack",
-    "titleOriginal": "八兩金 原聲帶",
-    "releaseDate": "1989",
-    "releaseType": "soundtrack",
-    "artist": "person-chyi-yu",
-    "artists": ["person-chyi-yu"],
-    "label": null,
-    "catalogNumber": null,
-    "formats": ["unknown"],
-    "availability": {
-      "physical": ["unknown"],
-      "streaming": [
-        {
-          "label": "QQ Music OST link",
-          "platform": "qq-music",
-          "url": "https://c6.y.qq.com/base/fcgi-bin/u?__=4XObUwID78Tu",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "China mainland"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [
-      {
-        "position": 1,
-        "song": "song-boat-song",
-        "titleOnRelease": "船歌",
-        "duration": null,
-        "versionNote": "Chyi Yu vocal appearance on the film soundtrack.",
-        "credits": {
-          "lyricsBy": ["person-luo-dayou"],
-          "composedBy": ["person-luo-dayou"]
-        }
-      },
-      {
-        "position": 2,
-        "song": "song-red-cotton",
-        "titleOnRelease": "紅棉",
-        "duration": null,
-        "versionNote": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 3,
-        "song": "song-mess",
-        "titleOnRelease": "亂",
-        "duration": null,
-        "versionNote": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      }
-    ],
-    "credits": {
-      "vocalist": ["person-chyi-yu"],
-      "soundtrack": ["person-luo-dayou"]
-    },
-    "sources": [
-      "source-user-task-0618-2",
-      "source-qq-music-eight-taels-of-gold-ost",
-      "source-wikipedia-zh-eight-taels-of-gold-film",
-      "source-douban-eight-taels-of-gold"
-    ],
-    "notes": "Partial release record focused on the Chyi Yu vocal-appearance subset identified by the project maintainer. The complete OST album track list still needs extraction from an official platform page.",
     "status": "partial"
   }
 ]

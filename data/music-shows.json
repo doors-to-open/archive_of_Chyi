@@ -84,7 +84,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-memory",
         "titlePerformed": "Memory",
         "collaborators": [],
         "mediaLinks": [],
@@ -357,7 +357,7 @@
       },
       {
         "position": 22,
-        "song": null,
+        "song": "song-high-heels-in-september",
         "titlePerformed": "九月的高跟鞋",
         "collaborators": ["person-chi-chin", "person-huang-qishan"],
         "mediaLinks": [],
@@ -365,17 +365,7 @@
         "originalPerformer": "Chyi Yu"
       }
     ],
-    "collaborators": [
-      "person-chi-chin",
-      "person-pan-yue-yun",
-      "person-leo-ku",
-      "person-li-wei",
-      "person-huang-yun-ling",
-      "person-cheng-lin",
-      "person-huang-qishan",
-      "person-sha-baoliang",
-      "person-sa-dingding"
-    ],
+    "collaborators": ["person-chi-chin", "person-pan-yue-yun", "person-leo-ku", "person-li-wei", "person-huang-yun-ling", "person-cheng-lin", "person-huang-qishan", "person-sha-baoliang", "person-sa-dingding"],
     "mediaLinks": [
       {
         "label": "QQ Music live-track search",

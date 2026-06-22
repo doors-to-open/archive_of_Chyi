@@ -77,7 +77,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-any-words-like-this",
         "titlePerformed": "有沒有這種說法",
         "collaborators": [],
         "mediaLinks": [
@@ -93,7 +93,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-whoever-finds-this-i-love-you",
         "titlePerformed": "Whoever Finds This, I Love You",
         "originalPerformer": "Mac Davis",
         "collaborators": [],
@@ -110,7 +110,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-high-heels-in-september",
         "titlePerformed": "九月的高跟鞋",
         "collaborators": [],
         "mediaLinks": [
@@ -142,7 +142,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-blessing",
         "titlePerformed": "祝福",
         "collaborators": [],
         "mediaLinks": [
@@ -225,7 +225,7 @@
       },
       {
         "position": 14,
-        "song": null,
+        "song": "song-all-souls-night",
         "titlePerformed": "All Souls Night",
         "originalPerformer": "Loreena McKennitt",
         "collaborators": [],
@@ -291,7 +291,7 @@
       },
       {
         "position": 18,
-        "song": null,
+        "song": "song-where-have-all-the-flowers-gone",
         "titlePerformed": "Where Have All the Flowers Gone?",
         "originalPerformer": "Pete Seeger",
         "collaborators": [],
@@ -389,7 +389,7 @@
       },
       {
         "position": 24,
-        "song": null,
+        "song": "song-memory",
         "titlePerformed": "Memory",
         "originalPerformer": "Elaine Paige",
         "collaborators": [],
@@ -645,21 +645,21 @@
       },
       {
         "position": 22,
-        "song": null,
+        "song": "song-high-heels-in-september",
         "titlePerformed": "九月的高跟鞋",
         "collaborators": [],
         "mediaLinks": []
       },
       {
         "position": 23,
-        "song": null,
+        "song": "song-you-are-all-my-memories",
         "titlePerformed": "你是我所有的回憶",
         "collaborators": [],
         "mediaLinks": []
       },
       {
         "position": 24,
-        "song": null,
+        "song": "song-daylight-avenue",
         "titlePerformed": "一條日光大道",
         "collaborators": [],
         "mediaLinks": []
@@ -729,12 +729,7 @@
       }
     ],
     "officialRecording": false,
-    "sources": [
-      "source-bilibili-grace-still-beijing-full",
-      "source-bilibili-grace-still-beijing-clip-friendship",
-      "source-bilibili-grace-still-beijing-clip-li-xianglan",
-      "source-bilibili-grace-still-beijing-clip-yu-si"
-    ],
+    "sources": ["source-bilibili-grace-still-beijing-full", "source-bilibili-grace-still-beijing-clip-friendship", "source-bilibili-grace-still-beijing-clip-li-xianglan", "source-bilibili-grace-still-beijing-clip-yu-si"],
     "sourceQuality": "fan-upload",
     "notes": "Fan-upload metadata identifies the guest as Wu Tsing-fong and lists the full setlist. Official recording availability has not been found in this seed pass.",
     "status": "partial"

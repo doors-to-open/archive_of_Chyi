@@ -16,7 +16,12 @@
     "mediaLinks": [],
     "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-yue-olive-tree-album", "source-apple-music-olive-tree"],
     "notes": "Signature song. The supplied encyclopedia page has an apparent music/lyrics field inconsistency, so the longstanding Sanmao/Li Tai-hsiang credit is kept pending booklet verification.",
-    "status": "partial"
+    "status": "partial",
+    "titleLocalized": {
+      "en": "The Olive Tree",
+      "zh-Hant": "橄欖樹",
+      "zh-Hans": "橄榄树"
+    }
   },
   {
     "id": "song-walking-in-the-rain",
@@ -35,7 +40,11 @@
     "mediaLinks": [],
     "sources": ["source-wikipedia-yue-olive-tree-album", "source-apple-music-olive-tree"],
     "notes": "Title and credits are from starter encyclopedia/platform sources and need booklet verification.",
-    "status": "partial"
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Walking in the Rain",
+      "zh-Hant": "走在雨中"
+    }
   },
   {
     "id": "song-your-smiling-face",
@@ -54,7 +63,12 @@
     "mediaLinks": [],
     "sources": ["source-wikipedia-yue-olive-tree-album", "source-apple-music-olive-tree"],
     "notes": "Lyricist spelling varies across secondary sources, so it is intentionally left blank until checked against an official booklet.",
-    "status": "partial"
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Your Smiling Face",
+      "zh-Hant": "歡顏",
+      "zh-Hans": "欢颜"
+    }
   },
   {
     "id": "song-answer",
@@ -73,7 +87,11 @@
     "mediaLinks": [],
     "sources": ["source-wikipedia-yue-olive-tree-album", "source-apple-music-olive-tree"],
     "notes": "Modeled for release/concert relationship testing; lyric credit needs booklet verification.",
-    "status": "partial"
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Answer",
+      "zh-Hant": "答案"
+    }
   },
   {
     "id": "song-seven-oclock",
@@ -92,7 +110,12 @@
     "mediaLinks": [],
     "sources": ["source-wikipedia-yue-echo-album", "source-apple-music-echo"],
     "notes": "Track title appears as 七點鐘 on Apple Music and 七點鐘（今生） in the encyclopedia source.",
-    "status": "partial"
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Seven O'Clock",
+      "zh-Hant": "七點鐘",
+      "zh-Hans": "七点钟"
+    }
   },
   {
     "id": "song-dream-field",
@@ -111,7 +134,12 @@
     "mediaLinks": [],
     "sources": ["source-wikipedia-yue-echo-album", "source-apple-music-echo"],
     "notes": "Co-performed by Chyi Yu and Pan Yue-yun on Echo.",
-    "status": "partial"
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Dream Field",
+      "zh-Hant": "夢田",
+      "zh-Hans": "梦田"
+    }
   },
   {
     "id": "song-jin-shi",
@@ -128,16 +156,13 @@
     "knownConcerts": [],
     "knownMusicShows": ["music-show-singer-2019"],
     "mediaLinks": [],
-    "sources": [
-      "source-wikipedia-yue-echo-album",
-      "source-apple-music-echo",
-      "source-qq-music-echo",
-      "source-wikipedia-yue-singer-2019",
-      "source-baike-singer-2019",
-      "source-wikipedia-zh-singer-2019"
-    ],
+    "sources": ["source-wikipedia-yue-echo-album", "source-apple-music-echo", "source-qq-music-echo", "source-wikipedia-yue-singer-2019", "source-baike-singer-2019", "source-wikipedia-zh-singer-2019"],
     "notes": "Modeled so the Echo album track and Chyi Yu's 2019-02-01 Singer 2019 performance resolve to the same song identity.",
-    "status": "partial"
+    "status": "partial",
+    "titleLocalized": {
+      "en": "This Life",
+      "zh-Hant": "今世"
+    }
   },
   {
     "id": "song-flying-bird-and-fish",
@@ -156,7 +181,12 @@
     "mediaLinks": [],
     "sources": ["source-wikipedia-yue-camel-bird-fish", "source-apple-music-camel-bird-fish"],
     "notes": "The supplied encyclopedia title field says 飛魚與鳥 while Apple Music and concert sources use 飛鳥與魚.",
-    "status": "partial"
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Flying Bird and Fish",
+      "zh-Hant": "飛鳥與魚",
+      "zh-Hans": "飞鸟与鱼"
+    }
   },
   {
     "id": "song-happiness",
@@ -175,7 +205,11 @@
     "mediaLinks": [],
     "sources": ["source-wikipedia-yue-camel-bird-fish", "source-apple-music-camel-bird-fish"],
     "notes": "Composer credit from the source page has not yet been modeled as a person record.",
-    "status": "partial"
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Happiness",
+      "zh-Hant": "幸福"
+    }
   },
   {
     "id": "song-crying-camel",
@@ -194,7 +228,12 @@
     "mediaLinks": [],
     "sources": ["source-wikipedia-yue-camel-bird-fish", "source-apple-music-camel-bird-fish"],
     "notes": "Modeled from Camel Bird Fish for relationship and search coverage.",
-    "status": "partial"
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Crying Camel",
+      "zh-Hant": "哭泣的駱駝",
+      "zh-Hans": "哭泣的骆驼"
+    }
   },
   {
     "id": "song-stories",
@@ -205,13 +244,17 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "relatedReleases": [],
+    "relatedReleases": ["release-stories-1987"],
     "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong", "concert-grace-still-beijing-2025"],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-grace-still-beijing-full"],
-    "notes": "Modeled from concert setlists only; original credits pending.",
-    "status": "needs-source"
+    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-grace-still-beijing-full", "source-wikipedia-en-chyi-yu", "source-qq-music-stories"],
+    "notes": "Modeled from concert setlists only; original credits pending. Stage 6B links this cover identity to the 1987 Stories album.",
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Stories"
+    },
+    "firstKnownRelease": "release-stories-1987"
   },
   {
     "id": "song-vincent",
@@ -222,13 +265,17 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "relatedReleases": [],
+    "relatedReleases": ["release-whoever-finds-this-i-love-you-1988"],
     "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong", "concert-grace-still-beijing-2025"],
-    "knownMusicShows": [],
+    "knownMusicShows": ["music-show-dream-star-partner-2013"],
     "mediaLinks": [],
-    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-grace-still-beijing-full"],
-    "notes": "Cover-performance identity record for statistics; original performer/credits pending.",
-    "status": "needs-source"
+    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-grace-still-beijing-full", "source-wikipedia-en-chyi-yu", "source-qq-music-whoever-finds-this-i-love-you"],
+    "notes": "Cover-performance identity record for statistics; original performer/credits pending. Stage 6B links this cover identity to the 1988 Whoever Finds This, I Love You album.",
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Vincent"
+    },
+    "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988"
   },
   {
     "id": "song-boat-song",
@@ -244,16 +291,14 @@
     "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong", "concert-grace-still-beijing-2025"],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [
-      "source-bilibili-unheard-full-hd",
-      "source-bilibili-grace-still-beijing-full",
-      "source-user-task-0618-1",
-      "source-user-task-0618-2",
-      "source-qq-music-eight-taels-of-gold-ost"
-    ],
+    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-grace-still-beijing-full", "source-user-task-0618-1", "source-user-task-0618-2", "source-qq-music-eight-taels-of-gold-ost"],
     "notes": "Eight Taels of Gold sources identify 船歌 as the film theme song sung by Chyi Yu and credited to Lo Ta-yu; live-performance links are also modeled separately.",
     "status": "partial",
-    "firstKnownRelease": "release-eight-taels-of-gold-ost-1989"
+    "firstKnownRelease": "release-eight-taels-of-gold-ost-1989",
+    "titleLocalized": {
+      "en": "Boat Song",
+      "zh-Hant": "船歌"
+    }
   },
   {
     "id": "song-li-xianglan",
@@ -269,13 +314,14 @@
     "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong", "concert-grace-still-beijing-2025"],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [
-      "source-bilibili-unheard-full-hd",
-      "source-bilibili-grace-still-beijing-full",
-      "source-bilibili-grace-still-beijing-clip-li-xianglan"
-    ],
+    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-grace-still-beijing-full", "source-bilibili-grace-still-beijing-clip-li-xianglan"],
     "notes": "Cover-performance identity record for statistics; original credits pending.",
-    "status": "needs-source"
+    "status": "needs-source",
+    "titleLocalized": {
+      "en": "Li Xianglan",
+      "zh-Hant": "李香蘭",
+      "zh-Hans": "李香兰"
+    }
   },
   {
     "id": "song-zui-ai",
@@ -293,7 +339,12 @@
     "mediaLinks": [],
     "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-grace-still-beijing-full"],
     "notes": "Cover-performance identity record for statistics; original credits pending.",
-    "status": "needs-source"
+    "status": "needs-source",
+    "titleLocalized": {
+      "en": "Most Beloved",
+      "zh-Hant": "最愛",
+      "zh-Hans": "最爱"
+    }
   },
   {
     "id": "song-friendship",
@@ -311,7 +362,12 @@
     "mediaLinks": [],
     "sources": ["source-bilibili-grace-still-beijing-full", "source-bilibili-grace-still-beijing-clip-friendship"],
     "notes": "Concert cover-performance identity record for statistics.",
-    "status": "needs-source"
+    "status": "needs-source",
+    "titleLocalized": {
+      "en": "Auld Lang Syne",
+      "zh-Hant": "友誼地久天長",
+      "zh-Hans": "友谊地久天长"
+    }
   },
   {
     "id": "song-this-world-so-many-people",
@@ -329,7 +385,12 @@
     "mediaLinks": [],
     "sources": ["source-bilibili-grace-still-beijing-full", "source-bilibili-grace-still-beijing-clip-friendship"],
     "notes": "Concert cover-performance identity record for statistics.",
-    "status": "needs-source"
+    "status": "needs-source",
+    "titleLocalized": {
+      "en": "So Many People in This World",
+      "zh-Hant": "這世界那麼多人",
+      "zh-Hans": "这世界那么多人"
+    }
   },
   {
     "id": "song-yu-si",
@@ -338,16 +399,22 @@
     "titleOriginal": "雨絲",
     "aliases": ["雨丝"],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": ["鄭愁予"],
+    "composedBy": ["person-li-tai-hsiang"],
     "arrangedBy": [],
-    "relatedReleases": [],
+    "relatedReleases": ["release-only-you-1984"],
     "knownConcerts": ["concert-grace-still-beijing-2025"],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": ["source-bilibili-grace-still-beijing-full", "source-bilibili-grace-still-beijing-clip-yu-si"],
-    "notes": "Concert performance identity record; release and credit details pending.",
-    "status": "needs-source"
+    "sources": ["source-bilibili-grace-still-beijing-full", "source-bilibili-grace-still-beijing-clip-yu-si", "source-wikipedia-en-chyi-yu", "source-qq-music-only-you"],
+    "notes": "Concert performance identity record; release and credit details pending. Stage 6B links the 1984 album track to the existing 2025 live-performance identity.",
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Yu Si",
+      "zh-Hant": "雨絲",
+      "zh-Hans": "雨丝"
+    },
+    "firstKnownRelease": "release-only-you-1984"
   },
   {
     "id": "song-red-cotton",
@@ -365,7 +432,12 @@
     "mediaLinks": [],
     "sources": ["source-user-task-0618-1", "source-user-task-0618-2", "source-qq-music-eight-taels-of-gold-ost"],
     "notes": "Mentioned in the task note as an Eight Taels of Gold soundtrack vocal appearance; needs public-source verification.",
-    "status": "needs-source"
+    "status": "needs-source",
+    "titleLocalized": {
+      "en": "Red Cotton",
+      "zh-Hant": "紅棉",
+      "zh-Hans": "红棉"
+    }
   },
   {
     "id": "song-mess",
@@ -383,6 +455,266 @@
     "mediaLinks": [],
     "sources": ["source-user-task-0618-1", "source-user-task-0618-2", "source-qq-music-eight-taels-of-gold-ost"],
     "notes": "Mentioned in the task note as an Eight Taels of Gold soundtrack vocal appearance; needs public-source verification.",
-    "status": "needs-source"
+    "status": "needs-source",
+    "titleLocalized": {
+      "en": "Mess",
+      "zh-Hant": "亂",
+      "zh-Hans": "乱"
+    }
+  },
+  {
+    "id": "song-blessing",
+    "slug": "blessing",
+    "title": "Blessing",
+    "titleLocalized": {
+      "en": "Blessing",
+      "zh-Hant": "祝福",
+      "zh-Hans": "祝福"
+    },
+    "titleOriginal": "祝福",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": ["王小虎"],
+    "composedBy": ["person-li-tai-hsiang"],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-blessing-1982",
+    "relatedReleases": ["release-blessing-1982"],
+    "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong"],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-zh-blessing-album", "source-qq-music-blessing"],
+    "notes": "Linked to the Blessing album and the 2002 live performance/release placement.",
+    "status": "partial"
+  },
+  {
+    "id": "song-daylight-avenue",
+    "slug": "daylight-avenue",
+    "title": "Daylight Avenue",
+    "titleLocalized": {
+      "en": "Daylight Avenue",
+      "zh-Hant": "一條日光大道",
+      "zh-Hans": "一条日光大道"
+    },
+    "titleOriginal": "一條日光大道",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": ["person-sanmao"],
+    "composedBy": ["person-li-tai-hsiang"],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-blessing-1982",
+    "relatedReleases": ["release-blessing-1982"],
+    "knownConcerts": ["concert-grace-still-beijing-2025"],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-zh-blessing-album", "source-qq-music-blessing"],
+    "notes": "Linked to the Blessing album and the 2025 Beijing concert setlist.",
+    "status": "partial"
+  },
+  {
+    "id": "song-you-are-all-my-memories",
+    "slug": "you-are-all-my-memories",
+    "title": "You Are All My Memories",
+    "titleLocalized": {
+      "en": "You Are All My Memories",
+      "zh-Hant": "你是我所有的回憶",
+      "zh-Hans": "你是我所有的回忆"
+    },
+    "titleOriginal": "你是我所有的回憶",
+    "aliases": ["Ni Shi Wo Suoyou De Huiyi"],
+    "language": "Mandarin",
+    "lyricsBy": ["侯德健"],
+    "composedBy": ["person-li-tai-hsiang"],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-are-all-my-memories-1983",
+    "relatedReleases": ["release-you-are-all-my-memories-1983"],
+    "knownConcerts": ["concert-grace-still-beijing-2025"],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-chyi-yu", "source-qq-music-you-are-all-my-memories"],
+    "notes": "English Wikipedia notes the lyricist attribution issue for this song; kept as partial pending booklet verification.",
+    "status": "partial"
+  },
+  {
+    "id": "song-only-you",
+    "slug": "only-you",
+    "title": "Only You",
+    "titleLocalized": {
+      "en": "Only You",
+      "zh-Hant": "有一個人",
+      "zh-Hans": "有一个人"
+    },
+    "titleOriginal": "有一個人",
+    "aliases": ["You Yi Ge Ren"],
+    "language": "Mandarin",
+    "lyricsBy": ["李敏勇"],
+    "composedBy": ["person-li-tai-hsiang"],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-only-you-1984",
+    "relatedReleases": ["release-only-you-1984"],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-zh-chyi-yu", "source-qq-music-only-you"],
+    "notes": "Title track from Only You / 有一個人.",
+    "status": "partial"
+  },
+  {
+    "id": "song-high-heels-in-september",
+    "slug": "high-heels-in-september",
+    "title": "High Heels in September",
+    "titleLocalized": {
+      "en": "High Heels in September",
+      "zh-Hant": "九月的高跟鞋",
+      "zh-Hans": "九月的高跟鞋"
+    },
+    "titleOriginal": "九月的高跟鞋",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": ["陳克華"],
+    "composedBy": ["虹"],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": ["release-you-meiyou-zhe-zhong-shuofa-1988"],
+    "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong", "concert-grace-still-beijing-2025"],
+    "knownMusicShows": ["music-show-dream-star-partner-2013"],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-qq-music-you-meiyou-zhe-zhong-shuofa"],
+    "notes": "Created to connect album, 2002 live album/concert, 2013 music-show, and 2025 concert appearances.",
+    "status": "partial"
+  },
+  {
+    "id": "song-any-words-like-this",
+    "slug": "any-words-like-this",
+    "title": "Any Words Like This?",
+    "titleLocalized": {
+      "en": "Any Words Like This?",
+      "zh-Hant": "有沒有這種說法",
+      "zh-Hans": "有没有这种说法"
+    },
+    "titleOriginal": "有沒有這種說法",
+    "aliases": ["You Meiyou Zhe Zhong Shuofa"],
+    "language": "Mandarin",
+    "lyricsBy": ["person-chyi-yu"],
+    "composedBy": ["虹"],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": ["release-you-meiyou-zhe-zhong-shuofa-1988"],
+    "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong"],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-qq-music-you-meiyou-zhe-zhong-shuofa"],
+    "notes": "Created to connect the Mandarin album title track with the 2002 live album/concert placement.",
+    "status": "partial"
+  },
+  {
+    "id": "song-memory",
+    "slug": "memory",
+    "title": "Memory",
+    "titleLocalized": {
+      "en": "Memory"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-stories-1987",
+    "relatedReleases": ["release-stories-1987", "release-the-unheard-of-chyi-2003"],
+    "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong"],
+    "knownMusicShows": ["music-show-singer-2019"],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-qq-music-stories", "source-bilibili-unheard-full-hd"],
+    "notes": "Cover-performance identity for Memory from Cats; original credits remain pending.",
+    "status": "partial"
+  },
+  {
+    "id": "song-whoever-finds-this-i-love-you",
+    "slug": "whoever-finds-this-i-love-you",
+    "title": "Whoever Finds This, I Love You",
+    "titleLocalized": {
+      "en": "Whoever Finds This, I Love You",
+      "zh-Hant": "誰撿到這張紙條 我愛你",
+      "zh-Hans": "谁捡到这张纸条 我爱你"
+    },
+    "titleOriginal": "誰撿到這張紙條 我愛你",
+    "aliases": ["Whoever Finds This I Love You"],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
+    "relatedReleases": ["release-whoever-finds-this-i-love-you-1988", "release-the-unheard-of-chyi-2003"],
+    "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong"],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-qq-music-whoever-finds-this-i-love-you", "source-bilibili-unheard-full-hd"],
+    "notes": "Cover-performance identity linked from the 1988 cover album and 2002 live material; original performer noted as Mac Davis in source notes.",
+    "status": "partial"
+  },
+  {
+    "id": "song-where-have-all-the-flowers-gone",
+    "slug": "where-have-all-the-flowers-gone",
+    "title": "Where Have All the Flowers Gone?",
+    "titleLocalized": {
+      "en": "Where Have All the Flowers Gone?",
+      "zh-Hant": "花兒都到哪兒去了？",
+      "zh-Hans": "花儿都到哪儿去了？"
+    },
+    "titleOriginal": "花兒都到哪兒去了？",
+    "aliases": ["Where Have All The Flowers Gone"],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
+    "relatedReleases": ["release-where-have-all-the-flowers-gone-1990", "release-the-unheard-of-chyi-2003"],
+    "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong"],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-qq-music-where-have-all-the-flowers-gone", "source-bilibili-unheard-full-hd"],
+    "notes": "Cover-performance identity linked from the 1990 cover album and 2002 live material; source notes identify Pete Seeger/Joe Hickerson context.",
+    "status": "partial"
+  },
+  {
+    "id": "song-all-souls-night",
+    "slug": "all-souls-night",
+    "title": "All Souls Night",
+    "titleLocalized": {
+      "en": "All Souls Night"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chyis-tears-1996",
+    "relatedReleases": ["release-chyis-tears-1996", "release-the-unheard-of-chyi-2003"],
+    "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong"],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-qq-music-chyis-tears", "source-bilibili-unheard-full-hd"],
+    "notes": "Cover-performance identity linked from Chyi’s Tears and 2002 live material; original credits remain partial.",
+    "status": "partial"
+  },
+  {
+    "id": "song-tears",
+    "slug": "tears",
+    "title": "Tears",
+    "titleLocalized": {
+      "en": "Tears"
+    },
+    "aliases": ["Donde Voy"],
+    "language": "English",
+    "lyricsBy": ["person-chyi-yu"],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chyis-tears-1996",
+    "relatedReleases": ["release-chyis-tears-1996"],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-qq-music-chyis-tears"],
+    "notes": "Library title kept as Tears. English Wikipedia identifies Donde Voy as the original Spanish title and notes English lyric by Chyi Yu.",
+    "status": "partial"
   }
 ]

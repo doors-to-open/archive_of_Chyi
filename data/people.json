@@ -416,5 +416,41 @@
     "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
     "notes": "Dream Star Partner participant.",
     "status": "partial"
+  },
+  {
+    "id": "person-luo-hong-wu",
+    "slug": "luo-hong-wu",
+    "displayName": "Luo Hong-wu",
+    "nameOriginal": "羅紘武",
+    "nameLocalized": {
+      "en": "Luo Hong-wu",
+      "zh-Hant": "羅紘武",
+      "zh-Hans": "罗纮武"
+    },
+    "aliases": ["罗纮武", "Luo Hongwu"],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-en-chyi-yu", "source-qq-music-you-meiyou-zhe-zhong-shuofa"],
+    "notes": "Listed as the male voice on 一面湖水 in the You Meiyou Zhe Zhong Shuofa review sources.",
+    "status": "partial"
+  },
+  {
+    "id": "person-reggie-verghese",
+    "slug": "reggie-verghese",
+    "displayName": "Reggie Verghese",
+    "aliases": ["Reggie Verghes"],
+    "roles": ["producer", "vocalist"],
+    "sources": ["source-wikipedia-en-chyi-yu"],
+    "notes": "English Wikipedia lists Reggie Verghes as producer for Stories and Reggie Verghese as duet collaborator on Joan of Arc.",
+    "status": "partial"
+  },
+  {
+    "id": "person-dave-matthews",
+    "slug": "dave-matthews",
+    "displayName": "Dave Matthews",
+    "aliases": [],
+    "roles": ["vocalist"],
+    "sources": ["source-wikipedia-en-chyi-yu"],
+    "notes": "Listed in English Wikipedia as Chyi Yu collaborator on Plaisir D’amour.",
+    "status": "partial"
   }
 ]
