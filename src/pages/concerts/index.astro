@@ -3,6 +3,16 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionPanel from "../../components/ContributionPanel.astro";
 import { concertAvailabilityChecks, concerts, personNames } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
+import {
+  availabilityValues,
+  countValues,
+  i18nAttrs,
+  labelValueValues,
+  personIdsValues,
+  titleValues,
+  uiText,
+  valueForLocale
+} from "../../lib/i18n";
 
 const contributionActions = [
   {
@@ -14,11 +24,9 @@ const contributionActions = [
 
 <BaseLayout title="Concerts | All for Chyi Yu">
   <section class="page-shell">
-    <p class="page-kicker">Concerts</p>
-    <h1 class="page-title">Concerts</h1>
-    <p class="page-intro">
-      Concerts, concert series, setlists, and show-level links.
-    </p>
+    <p class="page-kicker" {...i18nAttrs(uiText("nav.concerts"))}>{valueForLocale(uiText("nav.concerts"))}</p>
+    <h1 class="page-title" {...i18nAttrs(uiText("nav.concerts"))}>{valueForLocale(uiText("nav.concerts"))}</h1>
+    <p class="page-intro" {...i18nAttrs(uiText("page.concerts.intro"))}>{valueForLocale(uiText("page.concerts.intro"))}</p>
 
     <div class="section archive-grid">
       {concerts.map((concert) => (
@@ -26,19 +34,34 @@ const contributionActions = [
           class="record-card"
           href={`/concerts/${concert.slug}/`}
         >
-          <h2>{concert.title}</h2>
+          <h2 {...i18nAttrs(titleValues(concert))}>{valueForLocale(titleValues(concert))}</h2>
           <div class="record-meta-table">
-            <span>Date: {concert.date || "Unknown"}</span>
-            <span>Location: {[concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || "Unknown"}</span>
-            <span>{concert.setlist.length} songs</span>
-            {concert.venue ? <span>Venue: {concert.venue}</span> : null}
+            <span {...i18nAttrs(labelValueValues("label.date", concert.date || uiText("value.unknown")))}>
+              {valueForLocale(labelValueValues("label.date", concert.date || uiText("value.unknown")))}
+            </span>
+            <span {...i18nAttrs(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}>
+              {valueForLocale(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}
+            </span>
+            <span {...i18nAttrs(countValues(concert.setlist.length, "count.song", "count.songs"))}>
+              {valueForLocale(countValues(concert.setlist.length, "count.song", "count.songs"))}
+            </span>
+            {concert.venue ? (
+              <span {...i18nAttrs(labelValueValues("label.venue", concert.venue))}>
+                {valueForLocale(labelValueValues("label.venue", concert.venue))}
+              </span>
+            ) : null}
           </div>
           <div class="availability-row" aria-label="Recording availability summary">
-            {concertAvailabilityChecks(concert).map(([label, available]) => (
-              <span class={available ? "available" : ""}>{label}</span>
-            ))}
+            {concertAvailabilityChecks(concert).map(([label, available]) => {
+              const values = availabilityValues(label);
+              return <span class={available ? "available" : ""} {...i18nAttrs(values)}>{valueForLocale(values)}</span>;
+            })}
           </div>
-          {concert.guests?.length ? <p>Guests: {personNames(concert.guests)}</p> : null}
+          {concert.guests?.length ? (
+            <p {...i18nAttrs(labelValueValues("label.guests", personIdsValues(concert.guests)))}>
+              {valueForLocale(labelValueValues("label.guests", personIdsValues(concert.guests))) || `Guests: ${personNames(concert.guests)}`}
+            </p>
+          ) : null}
         </a>
       ))}
     </div>

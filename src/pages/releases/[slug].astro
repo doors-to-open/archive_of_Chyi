@@ -3,12 +3,11 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import {
-  availabilityLabels,
   byId,
   concertsForSong,
+  linkPlatformList,
   musicShowsForSong,
   personName,
-  personNames,
   releaseAvailabilityChecks,
   releaseArtists,
   releaseFormatLabels,
@@ -17,6 +16,22 @@ import {
   songSummary,
   songs
 } from "../../lib/archive";
+import {
+  availabilityValues,
+  countValues,
+  i18nAttrs,
+  i18nCountLabelAttrs,
+  joinValues,
+  labelValueValues,
+  originValues,
+  personIdValues,
+  personIdsValues,
+  textValues,
+  titleValues,
+  trackTitleValues,
+  uiText,
+  valueForLocale
+} from "../../lib/i18n";
 
 export function getStaticPaths() {
   return releases.map((release) => ({
@@ -32,8 +47,8 @@ const trackSummaries = new Map(
     .map((track) => [track.song, songSummary(byId(songs, track.song)!)])
 );
 
-function peopleList(ids: string[]) {
-  return personNames(ids) || "Not recorded";
+function peopleListValues(ids: string[]) {
+  return personIdsValues(ids, uiText("value.notRecorded"));
 }
 
 function trackNumber(track: (typeof release.tracks)[number]) {
@@ -49,72 +64,114 @@ function trackNumber(track: (typeof release.tracks)[number]) {
     data-sort-root
     data-count-label-singular="entry"
     data-count-label-plural="entries"
+    {...i18nCountLabelAttrs(uiText("count.entry"), uiText("count.entries"))}
   >
-    <p class="page-kicker">Release</p>
-    <h1 class="page-title record-page-title">{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h1>
+    <p class="page-kicker" {...i18nAttrs(uiText("nav.releases"))}>{valueForLocale(uiText("nav.releases"))}</p>
+    <h1 class="page-title record-page-title" {...i18nAttrs(titleValues(release))}>{valueForLocale(titleValues(release))}</h1>
 
     <article class="section detail-panel">
       <RecordStatus status={release.status} />
       <div class="record-meta-table">
-        <span>Artist: <b class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""}>{releaseArtists(release) || personName(release.artist)}</b></span>
-        {releaseProducers(release) ? <span>Producer: {releaseProducers(release)}</span> : null}
-        <span>Date: {release.releaseDate || "Unknown"}</span>
-        <span>Type: {release.releaseType}</span>
-        <span>Label: {release.label || "Unknown"}</span>
-        <span>Formats: {releaseFormatLabels(release).join(", ") || "Unknown"}</span>
-        {availabilityLabels(release.availability).map((label) => <span>{label}</span>)}
+        <span>
+          <span {...i18nAttrs(uiText("label.artist"))}>{valueForLocale(uiText("label.artist"))}</span>
+          {": "}
+          <b
+            class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""}
+            {...i18nAttrs(release.artists?.length ? personIdsValues(release.artists) : personIdValues(release.artist))}
+          >
+            {valueForLocale(release.artists?.length ? personIdsValues(release.artists) : personIdValues(release.artist)) || releaseArtists(release) || personName(release.artist)}
+          </b>
+        </span>
+        {releaseProducers(release) ? (
+          <span {...i18nAttrs(labelValueValues("label.producer", personIdsValues(release.credits.producer || release.credits.producers || [])))}>
+            {valueForLocale(labelValueValues("label.producer", personIdsValues(release.credits.producer || release.credits.producers || [])))}
+          </span>
+        ) : null}
+        <span {...i18nAttrs(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}>
+          {valueForLocale(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}
+        </span>
+        <span {...i18nAttrs(labelValueValues("label.type", release.releaseType))}>
+          {valueForLocale(labelValueValues("label.type", release.releaseType))}
+        </span>
+        <span {...i18nAttrs(labelValueValues("label.label", release.label || uiText("value.unknown")))}>
+          {valueForLocale(labelValueValues("label.label", release.label || uiText("value.unknown")))}
+        </span>
+        <span {...i18nAttrs(labelValueValues("label.formats", releaseFormatLabels(release).join(", ") || uiText("value.unknown")))}>
+          {valueForLocale(labelValueValues("label.formats", releaseFormatLabels(release).join(", ") || uiText("value.unknown")))}
+        </span>
+        {release.availability?.streaming?.length ? (
+          <span {...i18nAttrs(labelValueValues("label.streaming", linkPlatformList(release.availability.streaming)))}>
+            {valueForLocale(labelValueValues("label.streaming", linkPlatformList(release.availability.streaming)))}
+          </span>
+        ) : null}
+        {release.availability?.purchase?.length ? (
+          <span {...i18nAttrs(labelValueValues("label.purchase", linkPlatformList(release.availability.purchase)))}>
+            {valueForLocale(labelValueValues("label.purchase", linkPlatformList(release.availability.purchase)))}
+          </span>
+        ) : null}
       </div>
       <div class="availability-row availability-row-detail" aria-label="Availability summary">
-        {releaseAvailabilityChecks(release).map(([label, available]) => (
-          <span class={available ? "available" : ""}>{label}</span>
-        ))}
+        {releaseAvailabilityChecks(release).map(([label, available]) => {
+          const values = availabilityValues(label);
+          return <span class={available ? "available" : ""} {...i18nAttrs(values)}>{valueForLocale(values)}</span>;
+        })}
       </div>
     </article>
 
     <section class="section detail-panel">
-      <h2>Availability</h2>
+      <h2 {...i18nAttrs(uiText("label.availability"))}>{valueForLocale(uiText("label.availability"))}</h2>
       {release.availability?.streaming?.length ? (
         <div class="link-list">
-          <h3>Streaming</h3>
+          <h3 {...i18nAttrs(uiText("label.streaming"))}>{valueForLocale(uiText("label.streaming"))}</h3>
           {release.availability.streaming.map((link) => (
             <p>
               <a href={link.url}>{link.label}</a>
               {link.accessRegion ? ` / ${link.accessRegion}` : ""}
-              {link.isOfficial === false ? " / unofficial" : ""}
+              {link.isOfficial === false ? (
+                <>
+                  {" / "}
+                  <span {...i18nAttrs(uiText("value.unofficial"))}>{valueForLocale(uiText("value.unofficial"))}</span>
+                </>
+              ) : ""}
             </p>
           ))}
         </div>
       ) : (
-        <p class="empty-state">No streaming links recorded.</p>
+        <p class="empty-state" {...i18nAttrs(uiText("empty.noStreaming"))}>{valueForLocale(uiText("empty.noStreaming"))}</p>
       )}
       {release.availability?.purchase?.length ? (
         <div class="link-list">
-          <h3>Purchase</h3>
+          <h3 {...i18nAttrs(uiText("label.purchase"))}>{valueForLocale(uiText("label.purchase"))}</h3>
           {release.availability.purchase.map((link) => (
             <p>
               <a href={link.url}>{link.label}</a>
               {link.accessRegion ? ` / ${link.accessRegion}` : ""}
-              {link.isOfficial === false ? " / unofficial" : ""}
+              {link.isOfficial === false ? (
+                <>
+                  {" / "}
+                  <span {...i18nAttrs(uiText("value.unofficial"))}>{valueForLocale(uiText("value.unofficial"))}</span>
+                </>
+              ) : ""}
             </p>
           ))}
         </div>
       ) : (
-        <p class="muted">No official purchase links recorded.</p>
+        <p class="muted" {...i18nAttrs(uiText("empty.noPurchase"))}>{valueForLocale(uiText("empty.noPurchase"))}</p>
       )}
     </section>
 
     <section class="section">
       <div class="section-header">
-        <h2>Tracks</h2>
-        <p data-sort-count>{release.tracks.length} entries</p>
+        <h2 {...i18nAttrs(uiText("label.tracks"))}>{valueForLocale(uiText("label.tracks"))}</h2>
+        <p data-sort-count>{valueForLocale(countValues(release.tracks.length, "count.entry", "count.entries"))}</p>
       </div>
 
       <div class="filter-panel inline-filter-panel">
         <fieldset class="filter-option-group sort-option-group">
-          <legend>Sort tracks</legend>
+          <legend {...i18nAttrs(uiText("label.sortTracks"))}>{valueForLocale(uiText("label.sortTracks"))}</legend>
           <div class="filter-options">
             <button type="button" data-sort-option data-sort-value="index-asc" aria-pressed="true">
-              Album order
+              <span {...i18nAttrs(uiText("option.albumOrder"))}>{valueForLocale(uiText("option.albumOrder"))}</span>
             </button>
             <button type="button" data-sort-option data-sort-value="alpha-asc" aria-pressed="false">
               A-Z
@@ -123,10 +180,10 @@ function trackNumber(track: (typeof release.tracks)[number]) {
               Z-A
             </button>
             <button type="button" data-sort-option data-sort-value="live-desc" aria-pressed="false">
-              Most live
+              <span {...i18nAttrs(uiText("option.mostLive"))}>{valueForLocale(uiText("option.mostLive"))}</span>
             </button>
             <button type="button" data-sort-option data-sort-value="live-asc" aria-pressed="false">
-              Least live
+              <span {...i18nAttrs(uiText("option.leastLive"))}>{valueForLocale(uiText("option.leastLive"))}</span>
             </button>
           </div>
         </fieldset>
@@ -138,6 +195,25 @@ function trackNumber(track: (typeof release.tracks)[number]) {
           const summary = track.song ? trackSummaries.get(track.song) : undefined;
           const linkedConcerts = linkedSong ? concertsForSong(linkedSong.id) : [];
           const linkedMusicShows = linkedSong ? musicShowsForSong(linkedSong.id) : [];
+          const trackTitle = trackTitleValues(track);
+          const numberedTitle = trackNumber(track)
+            ? joinValues([textValues(`${trackNumber(track)}. `), trackTitle], "")
+            : trackTitle;
+          const summaryMeta = summary
+            ? joinValues([originValues(summary.originLabel), countValues(summary.liveCount, "count.liveRecord", "count.liveRecords")])
+            : uiText("value.unmodeledSong");
+          const primaryAlbum = summary?.albumReleases[0];
+          const albumLabel = primaryAlbum
+            ? joinValues([
+                titleValues(primaryAlbum),
+                summary.albumReleases.length > 1
+                  ? textValues(`+ ${summary.albumReleases.length - 1} more`, `另 ${summary.albumReleases.length - 1} 張`, `另 ${summary.albumReleases.length - 1} 张`)
+                  : ""
+              ], " ")
+            : uiText("empty.noLinkedAlbum");
+          const songIdentity = summary
+            ? joinValues([uiText("label.songIdentity"), joinValues([originValues(summary.originLabel), albumLabel])], ": ")
+            : textValues("");
           return (
             <details
               class="record-card compact-record-card"
@@ -147,38 +223,54 @@ function trackNumber(track: (typeof release.tracks)[number]) {
               data-sort-live={summary?.liveCount || 0}
             >
               <summary>
-                <span>{trackNumber(track) ? `${trackNumber(track)}. ` : ""}{track.titleOnRelease}</span>
-                <span class="summary-meta">
-                  {summary ? `${summary.originLabel} / ${summary.liveCount} live` : "Unmodeled song"}
-                </span>
+                <span {...i18nAttrs(numberedTitle)}>{valueForLocale(numberedTitle)}</span>
+                <span class="summary-meta" {...i18nAttrs(summaryMeta)}>{valueForLocale(summaryMeta)}</span>
               </summary>
 
               <div class="details-body">
-                {track.performers?.length ? <p class="performer-note">Performed by {personNames(track.performers)}</p> : null}
-                <p>Lyrics: {peopleList(track.credits.lyricsBy)}</p>
-                <p>Music: {peopleList(track.credits.composedBy)}</p>
-                {summary ? <p>Song identity: {summary.originLabel} / {summary.albumLabel}</p> : null}
-                {track.duration ? <p>Duration: {track.duration}</p> : null}
+                {track.performers?.length ? (
+                  <p class="performer-note" {...i18nAttrs(labelValueValues("label.performedBy", personIdsValues(track.performers)))}>
+                    {valueForLocale(labelValueValues("label.performedBy", personIdsValues(track.performers)))}
+                  </p>
+                ) : null}
+                <p {...i18nAttrs(labelValueValues("label.lyrics", peopleListValues(track.credits.lyricsBy)))}>
+                  {valueForLocale(labelValueValues("label.lyrics", peopleListValues(track.credits.lyricsBy)))}
+                </p>
+                <p {...i18nAttrs(labelValueValues("label.music", peopleListValues(track.credits.composedBy)))}>
+                  {valueForLocale(labelValueValues("label.music", peopleListValues(track.credits.composedBy)))}
+                </p>
+                {summary ? <p {...i18nAttrs(songIdentity)}>{valueForLocale(songIdentity)}</p> : null}
+                {track.duration ? (
+                  <p {...i18nAttrs(labelValueValues("label.duration", track.duration))}>
+                    {valueForLocale(labelValueValues("label.duration", track.duration))}
+                  </p>
+                ) : null}
                 {track.versionNote ? <p>{track.versionNote}</p> : null}
 
                 {linkedConcerts.length || linkedMusicShows.length ? (
                   <div class="nested-links">
-                    <h3>Live records</h3>
+                    <h3 {...i18nAttrs(uiText("label.liveRecords"))}>{valueForLocale(uiText("label.liveRecords"))}</h3>
                     {linkedConcerts.map((concert) => (
                       <p>
-                        <a href={`/concerts/${concert.slug}/`}>{concert.title}</a>
+                        <a href={`/concerts/${concert.slug}/`} {...i18nAttrs(titleValues(concert))}>
+                          {valueForLocale(titleValues(concert))}
+                        </a>
                         {concert.date ? ` / ${concert.date}` : ""}
                       </p>
                     ))}
                     {linkedMusicShows.map((show) => (
                       <p>
-                        <a href={`/music-shows/${show.slug}/`}>{show.title}</a>
+                        <a href={`/music-shows/${show.slug}/`} {...i18nAttrs(titleValues(show))}>
+                          {valueForLocale(titleValues(show))}
+                        </a>
                         {show.date ? ` / ${show.date}` : ""}
                       </p>
                     ))}
                   </div>
                 ) : (
-                  <p class="muted">No linked live records yet.</p>
+                  <p class="muted" {...i18nAttrs(uiText("empty.noLinkedLiveRecords"))}>
+                    {valueForLocale(uiText("empty.noLinkedLiveRecords"))}
+                  </p>
                 )}
               </div>
             </details>
@@ -189,7 +281,7 @@ function trackNumber(track: (typeof release.tracks)[number]) {
 
     {release.notes ? (
       <section class="section detail-panel">
-        <h2>Notes</h2>
+        <h2 {...i18nAttrs(uiText("label.notes"))}>{valueForLocale(uiText("label.notes"))}</h2>
         <p>{release.notes}</p>
       </section>
     ) : null}

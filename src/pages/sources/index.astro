@@ -3,6 +3,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionPanel from "../../components/ContributionPanel.astro";
 import { sources } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
+import {
+  countValues,
+  i18nAttrs,
+  i18nEmptyAttrs,
+  i18nPlaceholderAttrs,
+  labelValueValues,
+  uiText,
+  valueForLocale
+} from "../../lib/i18n";
 
 const sourceTypes = Array.from(new Set(sources.map((source) => source.sourceType))).sort();
 const reliabilities = Array.from(new Set(sources.map((source) => source.reliability))).sort();
@@ -28,35 +37,38 @@ function sourceSearchText(source: (typeof sources)[number]) {
 
 <BaseLayout title="Sources | All for Chyi Yu">
   <section class="page-shell" data-filter-root>
-    <p class="page-kicker">Sources</p>
-    <h1 class="page-title">Sources</h1>
-    <p class="page-intro">
-      Appendix for citations, reliability notes, and external reference links.
-    </p>
+    <p class="page-kicker" {...i18nAttrs(uiText("nav.sources"))}>{valueForLocale(uiText("nav.sources"))}</p>
+    <h1 class="page-title" {...i18nAttrs(uiText("nav.sources"))}>{valueForLocale(uiText("nav.sources"))}</h1>
+    <p class="page-intro" {...i18nAttrs(uiText("page.sources.intro"))}>{valueForLocale(uiText("page.sources.intro"))}</p>
 
     <div class="section filter-panel">
       <label>
-        <span>Search</span>
-        <input data-filter-search type="search" placeholder="Title, publisher, URL..." />
+        <span {...i18nAttrs(uiText("label.search"))}>{valueForLocale(uiText("label.search"))}</span>
+        <input
+          data-filter-search
+          type="search"
+          placeholder={valueForLocale(uiText("placeholder.sources"))}
+          {...i18nPlaceholderAttrs(uiText("placeholder.sources"))}
+        />
       </label>
 
       <label>
-        <span>Type</span>
+        <span {...i18nAttrs(uiText("label.type"))}>{valueForLocale(uiText("label.type"))}</span>
         <select data-filter-select data-filter-key="source-type">
-          <option value="">All types</option>
+          <option value="" {...i18nAttrs(uiText("option.allTypes"))}>{valueForLocale(uiText("option.allTypes"))}</option>
           {sourceTypes.map((type) => <option value={type}>{type}</option>)}
         </select>
       </label>
 
       <label>
-        <span>Reliability</span>
+        <span {...i18nAttrs(uiText("label.reliability"))}>{valueForLocale(uiText("label.reliability"))}</span>
         <select data-filter-select data-filter-key="reliability">
-          <option value="">All levels</option>
+          <option value="" {...i18nAttrs(uiText("option.allLevels"))}>{valueForLocale(uiText("option.allLevels"))}</option>
           {reliabilities.map((reliability) => <option value={reliability}>{reliability}</option>)}
         </select>
       </label>
 
-      <p data-filter-count>{sources.length} records</p>
+      <p data-filter-count>{valueForLocale(countValues(sources.length, "count.record", "count.records"))}</p>
     </div>
 
     <div class="section archive-grid">
@@ -69,14 +81,27 @@ function sourceSearchText(source: (typeof sources)[number]) {
           data-search={sourceSearchText(source)}
         >
           <h2><a href={source.url}>{source.title}</a></h2>
-          <p>{source.sourceType} / reliability: {source.reliability}</p>
+          <p>
+            {source.sourceType}
+            {" / "}
+            <span {...i18nAttrs(labelValueValues("label.reliability", source.reliability))}>
+              {valueForLocale(labelValueValues("label.reliability", source.reliability))}
+            </span>
+          </p>
           {source.accessDate ? <p class="muted">Accessed {source.accessDate}</p> : null}
           {source.notes ? <p>{source.notes}</p> : null}
         </article>
       ))}
     </div>
 
-    <p data-filter-empty hidden class="empty-state">No matching sources.</p>
+    <p
+      data-filter-empty
+      hidden
+      class="empty-state"
+      {...i18nEmptyAttrs(uiText("empty.noSources"), uiText("empty.noSources"))}
+    >
+      {valueForLocale(uiText("empty.noSources"))}
+    </p>
 
     <ContributionPanel
       text="Propose a source that can support archive facts or improve uncertain records."

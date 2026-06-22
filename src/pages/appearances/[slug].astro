@@ -3,6 +3,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import { appearanceAvailabilityChecks, appearances, linkCreditLabel } from "../../lib/archive";
+import {
+  availabilityValues,
+  countValues,
+  i18nAttrs,
+  labelValueValues,
+  titleValues,
+  uiText,
+  valueForLocale
+} from "../../lib/i18n";
 
 export function getStaticPaths() {
   return appearances.map((appearance) => ({
@@ -16,27 +25,38 @@ const { appearance } = Astro.props;
 
 <BaseLayout title={`${appearance.title} | All for Chyi Yu`}>
   <section class="page-shell">
-    <p class="page-kicker">Appearance</p>
-    <h1 class="page-title">{appearance.title}</h1>
+    <p class="page-kicker" {...i18nAttrs(uiText("nav.appearances"))}>{valueForLocale(uiText("nav.appearances"))}</p>
+    <h1 class="page-title" {...i18nAttrs(titleValues(appearance))}>{valueForLocale(titleValues(appearance))}</h1>
 
     <article class="section detail-panel">
       <RecordStatus status={appearance.status} />
       <div class="record-meta-table">
-        <span>Date: {appearance.date || "Unknown"}</span>
-        <span>Type: {appearance.appearanceType}</span>
-        <span>Program or work: {appearance.programOrWork || "Unknown"}</span>
-        <span>Role: {appearance.role || "Unknown"}</span>
-        <span>{appearance.relatedSongs.length} related songs</span>
+        <span {...i18nAttrs(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}>
+          {valueForLocale(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}
+        </span>
+        <span {...i18nAttrs(labelValueValues("label.type", appearance.appearanceType))}>
+          {valueForLocale(labelValueValues("label.type", appearance.appearanceType))}
+        </span>
+        <span {...i18nAttrs(labelValueValues("label.programOrWork", appearance.programOrWork || uiText("value.unknown")))}>
+          {valueForLocale(labelValueValues("label.programOrWork", appearance.programOrWork || uiText("value.unknown")))}
+        </span>
+        <span {...i18nAttrs(labelValueValues("label.role", appearance.role || uiText("value.unknown")))}>
+          {valueForLocale(labelValueValues("label.role", appearance.role || uiText("value.unknown")))}
+        </span>
+        <span {...i18nAttrs(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}>
+          {valueForLocale(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}
+        </span>
       </div>
       <div class="availability-row availability-row-detail" aria-label="Access summary">
-        {appearanceAvailabilityChecks(appearance).map(([label, available]) => (
-          <span class={available ? "available" : ""}>{label}</span>
-        ))}
+        {appearanceAvailabilityChecks(appearance).map(([label, available]) => {
+          const values = availabilityValues(label);
+          return <span class={available ? "available" : ""} {...i18nAttrs(values)}>{valueForLocale(values)}</span>;
+        })}
       </div>
     </article>
 
     <section class="section detail-panel">
-      <h2>Links</h2>
+      <h2 {...i18nAttrs(uiText("label.links"))}>{valueForLocale(uiText("label.links"))}</h2>
       {appearance.mediaLinks.length ? (
         <div class="link-list">
           {appearance.mediaLinks.map((link) => (
@@ -44,19 +64,24 @@ const { appearance } = Astro.props;
               <a href={link.url}>{link.label}</a>
               {link.platform ? ` / ${link.platform}` : ""}
               {link.accessRegion ? ` / ${link.accessRegion}` : ""}
-              {link.isOfficial === false ? " / fan upload" : ""}
+              {link.isOfficial === false ? (
+                <>
+                  {" / "}
+                  <span {...i18nAttrs(uiText("value.fanUpload"))}>{valueForLocale(uiText("value.fanUpload"))}</span>
+                </>
+              ) : ""}
               {linkCreditLabel(link) ? ` / ${linkCreditLabel(link)}` : ""}
             </p>
           ))}
         </div>
       ) : (
-        <p class="empty-state">No links recorded.</p>
+        <p class="empty-state" {...i18nAttrs(uiText("empty.noLinks"))}>{valueForLocale(uiText("empty.noLinks"))}</p>
       )}
     </section>
 
     {appearance.notes ? (
       <section class="section detail-panel">
-        <h2>Notes</h2>
+        <h2 {...i18nAttrs(uiText("label.notes"))}>{valueForLocale(uiText("label.notes"))}</h2>
         <p>{appearance.notes}</p>
       </section>
     ) : null}

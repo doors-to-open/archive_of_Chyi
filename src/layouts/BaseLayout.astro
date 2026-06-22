@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { i18nAttrs, languageOptions, uiText, valueForLocale } from "../lib/i18n";
 
 type Props = {
   title: string;
@@ -12,24 +13,25 @@ const {
 } = Astro.props;
 
 const navItems = [
-  { href: "/search/", label: "Search" },
-  { href: "/sources/", label: "Sources" },
-  { href: "/releases/", label: "Releases" },
-  { href: "/concerts/", label: "Concerts" },
-  { href: "/music-shows/", label: "Music shows" },
-  { href: "/appearances/", label: "Appearances" },
-  { href: "/people/", label: "People" },
-  { href: "/statistics/", label: "Statistics" }
+  { href: "/search/", label: uiText("nav.search") },
+  { href: "/sources/", label: uiText("nav.sources") },
+  { href: "/releases/", label: uiText("nav.releases") },
+  { href: "/concerts/", label: uiText("nav.concerts") },
+  { href: "/music-shows/", label: uiText("nav.musicShows") },
+  { href: "/appearances/", label: uiText("nav.appearances") },
+  { href: "/people/", label: uiText("nav.people") },
+  { href: "/statistics/", label: uiText("nav.statistics") }
 ];
 
 const appendixItems = [
-  { href: "/contribute/", label: "Contribute" },
-  { href: "/about/", label: "About" }
+  { href: "/contribute/", label: uiText("nav.contribute") },
+  { href: "/about/", label: uiText("nav.about") }
 ];
+
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-locale="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,19 +41,33 @@ const appendixItems = [
   <body>
     <header class="site-header">
       <a class="brand" href="/" aria-label="Chyi Yu Archive home">
-        <span>All for Chyi Yu</span>
+        <span {...i18nAttrs(uiText("site.title"))}>{valueForLocale(uiText("site.title"))}</span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
-        {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+        {navItems.map((item) => <a href={item.href} {...i18nAttrs(item.label)}>{valueForLocale(item.label)}</a>)}
       </nav>
+      <div class="locale-switcher" aria-label="Language">
+        {languageOptions.map((option) => (
+          <button
+            type="button"
+            data-locale-option
+            data-locale-value={option.locale}
+            aria-pressed={option.locale === "en" ? "true" : "false"}
+            aria-label={valueForLocale(option.label)}
+            title={valueForLocale(option.label)}
+          >
+            {option.shortLabel}
+          </button>
+        ))}
+      </div>
       <details class="site-menu">
-        <summary>Menu</summary>
+        <summary {...i18nAttrs(uiText("nav.menu"))}>{valueForLocale(uiText("nav.menu"))}</summary>
         <div class="menu-panel">
           <nav aria-label="Full navigation">
-            {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+            {navItems.map((item) => <a href={item.href} {...i18nAttrs(item.label)}>{valueForLocale(item.label)}</a>)}
           </nav>
           <nav aria-label="Appendix navigation">
-            {appendixItems.map((item) => <a href={item.href}>{item.label}</a>)}
+            {appendixItems.map((item) => <a href={item.href} {...i18nAttrs(item.label)}>{valueForLocale(item.label)}</a>)}
           </nav>
         </div>
       </details>
@@ -61,12 +77,12 @@ const appendixItems = [
     </main>
     <footer class="site-footer">
       <p>
-        Fan archive index. Metadata and links only; no hosted audio or video.
+        <span {...i18nAttrs(uiText("site.footer"))}>{valueForLocale(uiText("site.footer"))}</span>
       </p>
       <p>
         {appendixItems.map((item, index) => (
           <>
-            <a href={item.href}>{item.label}</a>
+            <a href={item.href} {...i18nAttrs(item.label)}>{valueForLocale(item.label)}</a>
             {index < appendixItems.length - 1 ? <span aria-hidden="true"> / </span> : null}
           </>
         ))}
@@ -74,6 +90,70 @@ const appendixItems = [
     </footer>
     <script>
       const normalize = (value: unknown) => String(value || "").toLowerCase().trim();
+      const supportedLocales = ["en", "zh-Hant", "zh-Hans"];
+      const localeStorageKey = "archiveLocale";
+      const localeSuffix = (locale: string) => locale.toLowerCase();
+      const activeLocale = () => document.documentElement.getAttribute("data-locale") || "en";
+      const localizedAttribute = (element: Element | null | undefined, base: string, fallback = "") => {
+        if (!element) return fallback;
+        const suffix = localeSuffix(activeLocale());
+        return element.getAttribute(`data-${base}-${suffix}`) ||
+          element.getAttribute(`data-${base}-en`) ||
+          fallback;
+      };
+      const countLabel = (
+        element: Element | null | undefined,
+        base: "singular" | "plural",
+        fallback: string
+      ) => localizedAttribute(element, `count-label-${base}`, element?.getAttribute(`data-count-label-${base}`) || fallback);
+      const defaultCountLabel = (count: number) => {
+        const labels = {
+          en: count === 1 ? "record" : "records",
+          "zh-Hant": "筆紀錄",
+          "zh-Hans": "条记录"
+        } as Record<string, string>;
+        return labels[activeLocale()] || labels.en;
+      };
+      const readyLabel = () => ({
+        en: "Ready",
+        "zh-Hant": "就緒",
+        "zh-Hans": "就绪"
+      } as Record<string, string>)[activeLocale()] || "Ready";
+      const applyLocale = (requestedLocale: string) => {
+        const locale = supportedLocales.includes(requestedLocale) ? requestedLocale : "en";
+        document.documentElement.lang = locale;
+        document.documentElement.setAttribute("data-locale", locale);
+        document.querySelectorAll("[data-i18n-en]").forEach((element) => {
+          element.textContent = localizedAttribute(element, "i18n", element.textContent || "");
+        });
+        document.querySelectorAll("[data-i18n-placeholder-en]").forEach((element) => {
+          const placeholder = localizedAttribute(element, "i18n-placeholder");
+          if (
+            placeholder &&
+            (element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement)
+          ) {
+            element.placeholder = placeholder;
+          }
+        });
+        document.querySelectorAll("[data-locale-option]").forEach((option) => {
+          option.setAttribute(
+            "aria-pressed",
+            option.getAttribute("data-locale-value") === locale ? "true" : "false"
+          );
+        });
+        try {
+          window.localStorage.setItem(localeStorageKey, locale);
+        } catch {
+          // Ignore private browsing storage failures.
+        }
+        window.dispatchEvent(new CustomEvent("archive-locale-change", { detail: { locale } }));
+      };
+
+      document.querySelectorAll("[data-locale-option]").forEach((option) => {
+        option.addEventListener("click", () => {
+          applyLocale(option.getAttribute("data-locale-value") || "en");
+        });
+      });
 
       document.querySelectorAll("[data-filter-root]").forEach((root) => {
         const items = Array.from(root.querySelectorAll("[data-filter-item]"));
@@ -83,8 +163,8 @@ const appendixItems = [
         const count = root.querySelector("[data-filter-count]");
         const empty = root.querySelector("[data-filter-empty]");
         const requiresFilter = root.hasAttribute("data-require-filter");
-        const initialEmptyText = empty?.getAttribute("data-empty-initial") || "";
-        const noResultsText = empty?.getAttribute("data-empty-none") || empty?.textContent || "";
+        const initialEmptyText = () => localizedAttribute(empty, "empty-initial", empty?.getAttribute("data-empty-initial") || "");
+        const noResultsText = () => localizedAttribute(empty, "empty-none", empty?.getAttribute("data-empty-none") || empty?.textContent || "");
         const activeOptionValue = (group: Element) => {
           const active = group.querySelector("[data-filter-option][aria-pressed='true']");
           return normalize(active?.getAttribute("data-filter-value"));
@@ -124,12 +204,12 @@ const appendixItems = [
 
           if (count) {
             count.textContent = requiresFilter && !hasActiveFilter
-              ? "Ready"
-              : `${visibleCount} ${visibleCount === 1 ? "record" : "records"}`;
+              ? readyLabel()
+              : `${visibleCount} ${defaultCountLabel(visibleCount)}`;
           }
 
           if (empty) {
-            empty.textContent = requiresFilter && !hasActiveFilter ? initialEmptyText : noResultsText;
+            empty.textContent = requiresFilter && !hasActiveFilter ? initialEmptyText() : noResultsText();
             empty.toggleAttribute("hidden", requiresFilter && !hasActiveFilter ? false : visibleCount !== 0);
           }
         };
@@ -146,6 +226,7 @@ const appendixItems = [
             });
           });
         });
+        window.addEventListener("archive-locale-change", update);
         update();
       });
 
@@ -216,13 +297,11 @@ const appendixItems = [
               ? activePanel.querySelectorAll("[data-sort-item]").length
               : root.querySelectorAll("[data-sort-item]").length;
             const singular =
-              activePanel?.getAttribute("data-count-label-singular") ||
-              root.getAttribute("data-count-label-singular") ||
-              "record";
+              countLabel(activePanel, "singular", "") ||
+              countLabel(root, "singular", "record");
             const plural =
-              activePanel?.getAttribute("data-count-label-plural") ||
-              root.getAttribute("data-count-label-plural") ||
-              `${singular}s`;
+              countLabel(activePanel, "plural", "") ||
+              countLabel(root, "plural", `${singular}s`);
             count.textContent = `${visibleItems} ${visibleItems === 1 ? singular : plural}`;
           }
         };
@@ -244,8 +323,17 @@ const appendixItems = [
         });
 
         sortSelect?.addEventListener("change", update);
+        window.addEventListener("archive-locale-change", update);
         update();
       });
+
+      let storedLocale = "en";
+      try {
+        storedLocale = window.localStorage.getItem(localeStorageKey) || "en";
+      } catch {
+        storedLocale = "en";
+      }
+      applyLocale(storedLocale);
     </script>
   </body>
 </html>

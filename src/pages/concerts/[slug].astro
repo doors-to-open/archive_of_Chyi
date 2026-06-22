@@ -8,10 +8,21 @@ import {
   concerts,
   linkPlatformList,
   linkCreditLabel,
-  personNames,
   releasesForSong,
   songs
 } from "../../lib/archive";
+import {
+  availabilityValues,
+  countValues,
+  i18nAttrs,
+  joinValues,
+  labelValueValues,
+  performanceTitleValues,
+  personIdsValues,
+  titleValues,
+  uiText,
+  valueForLocale
+} from "../../lib/i18n";
 
 export function getStaticPaths() {
   return concerts.map((concert) => ({
@@ -25,28 +36,41 @@ const { concert } = Astro.props;
 
 <BaseLayout title={`${concert.title} | All for Chyi Yu`}>
   <section class="page-shell">
-    <p class="page-kicker">Concert</p>
-    <h1 class="page-title record-page-title">{concert.title}</h1>
+    <p class="page-kicker" {...i18nAttrs(uiText("nav.concerts"))}>{valueForLocale(uiText("nav.concerts"))}</p>
+    <h1 class="page-title record-page-title" {...i18nAttrs(titleValues(concert))}>{valueForLocale(titleValues(concert))}</h1>
 
     <article class="section detail-panel">
       <RecordStatus status={concert.status} />
       <div class="record-meta-table">
-        <span>Date: {concert.date || "Unknown"}</span>
-        <span>Type: {concert.eventType}</span>
-        <span>Location: {[concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || "Unknown"}</span>
-        <span>{concert.setlist.length} songs</span>
-        <span>Venue: {concert.venue || "Unknown"}</span>
-        <span>Guests: {concert.guests?.length ? personNames(concert.guests) : "None recorded"}</span>
+        <span {...i18nAttrs(labelValueValues("label.date", concert.date || uiText("value.unknown")))}>
+          {valueForLocale(labelValueValues("label.date", concert.date || uiText("value.unknown")))}
+        </span>
+        <span {...i18nAttrs(labelValueValues("label.type", concert.eventType))}>
+          {valueForLocale(labelValueValues("label.type", concert.eventType))}
+        </span>
+        <span {...i18nAttrs(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}>
+          {valueForLocale(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}
+        </span>
+        <span {...i18nAttrs(countValues(concert.setlist.length, "count.song", "count.songs"))}>
+          {valueForLocale(countValues(concert.setlist.length, "count.song", "count.songs"))}
+        </span>
+        <span {...i18nAttrs(labelValueValues("label.venue", concert.venue || uiText("value.unknown")))}>
+          {valueForLocale(labelValueValues("label.venue", concert.venue || uiText("value.unknown")))}
+        </span>
+        <span {...i18nAttrs(labelValueValues("label.guests", concert.guests?.length ? personIdsValues(concert.guests) : uiText("value.noneRecorded")))}>
+          {valueForLocale(labelValueValues("label.guests", concert.guests?.length ? personIdsValues(concert.guests) : uiText("value.noneRecorded")))}
+        </span>
       </div>
       <div class="availability-row availability-row-detail" aria-label="Recording availability summary">
-        {concertAvailabilityChecks(concert).map(([label, available]) => (
-          <span class={available ? "available" : ""}>{label}</span>
-        ))}
+        {concertAvailabilityChecks(concert).map(([label, available]) => {
+          const values = availabilityValues(label);
+          return <span class={available ? "available" : ""} {...i18nAttrs(values)}>{valueForLocale(values)}</span>;
+        })}
       </div>
     </article>
 
     <section class="section detail-panel">
-      <h2>Show links</h2>
+      <h2 {...i18nAttrs(uiText("label.showLinks"))}>{valueForLocale(uiText("label.showLinks"))}</h2>
       {concert.mediaLinks.length ? (
         <div class="link-list">
           {concert.mediaLinks.map((link) => (
@@ -55,65 +79,104 @@ const { concert } = Astro.props;
               {link.platform ? ` / ${link.platform}` : ""}
               {link.kind ? ` / ${link.kind}` : ""}
               {link.accessRegion ? ` / ${link.accessRegion}` : ""}
-              {link.isOfficial === false ? " / fan upload" : ""}
+              {link.isOfficial === false ? (
+                <>
+                  {" / "}
+                  <span {...i18nAttrs(uiText("value.fanUpload"))}>{valueForLocale(uiText("value.fanUpload"))}</span>
+                </>
+              ) : ""}
               {linkCreditLabel(link) ? ` / ${linkCreditLabel(link)}` : ""}
             </p>
           ))}
         </div>
       ) : (
-        <p class="empty-state">No show links added yet.</p>
+        <p class="empty-state" {...i18nAttrs(uiText("empty.noShowLinks"))}>{valueForLocale(uiText("empty.noShowLinks"))}</p>
       )}
     </section>
 
     <section class="section">
       <div class="section-header">
-        <h2>Songs</h2>
-        <p>{concert.setlist.length} entries</p>
+        <h2 {...i18nAttrs(uiText("label.songs"))}>{valueForLocale(uiText("label.songs"))}</h2>
+        <p {...i18nAttrs(countValues(concert.setlist.length, "count.entry", "count.entries"))}>
+          {valueForLocale(countValues(concert.setlist.length, "count.entry", "count.entries"))}
+        </p>
       </div>
 
       <div class="archive-grid">
         {concert.setlist.map((entry) => {
           const linkedSong = byId(songs, entry.song);
           const linkedReleases = linkedSong ? releasesForSong(linkedSong.id) : [];
+          const performedTitle = performanceTitleValues(entry, linkedSong);
+          const numberedTitle = entry.position
+            ? joinValues([{ en: `${entry.position}. `, "zh-Hant": `${entry.position}. `, "zh-Hans": `${entry.position}. ` }, performedTitle], "")
+            : performedTitle;
           return (
             <details class="record-card compact-record-card">
               <summary>
-                <span>{entry.position ? `${entry.position}. ` : ""}{entry.titlePerformed || linkedSong?.title || entry.song}</span>
-                <span class="summary-meta">{linkedSong?.titleOriginal || ""}</span>
+                <span {...i18nAttrs(numberedTitle)}>{valueForLocale(numberedTitle)}</span>
+                <span class="summary-meta" {...i18nAttrs(linkedSong ? titleValues(linkedSong) : { en: "", "zh-Hant": "", "zh-Hans": "" })}>
+                  {linkedSong ? valueForLocale(titleValues(linkedSong)) : ""}
+                </span>
               </summary>
 
               <div class="details-body">
                 {linkedSong ? (
                   <>
-                    {linkedSong.lyricsBy.length ? <p>Lyrics: {personNames(linkedSong.lyricsBy)}</p> : null}
-                    {linkedSong.composedBy.length ? <p>Music: {personNames(linkedSong.composedBy)}</p> : null}
+                    {linkedSong.lyricsBy.length ? (
+                      <p {...i18nAttrs(labelValueValues("label.lyrics", personIdsValues(linkedSong.lyricsBy)))}>
+                        {valueForLocale(labelValueValues("label.lyrics", personIdsValues(linkedSong.lyricsBy)))}
+                      </p>
+                    ) : null}
+                    {linkedSong.composedBy.length ? (
+                      <p {...i18nAttrs(labelValueValues("label.music", personIdsValues(linkedSong.composedBy)))}>
+                        {valueForLocale(labelValueValues("label.music", personIdsValues(linkedSong.composedBy)))}
+                      </p>
+                    ) : null}
                   </>
                 ) : null}
-                {entry.collaborators?.length ? <p>Collaborators: {personNames(entry.collaborators)}</p> : null}
-                {entry.originalPerformer ? <p>Original performer: {entry.originalPerformer}</p> : null}
+                {entry.collaborators?.length ? (
+                  <p {...i18nAttrs(labelValueValues("label.collaborators", personIdsValues(entry.collaborators)))}>
+                    {valueForLocale(labelValueValues("label.collaborators", personIdsValues(entry.collaborators)))}
+                  </p>
+                ) : null}
+                {entry.originalPerformer ? (
+                  <p {...i18nAttrs(labelValueValues("label.originalPerformer", entry.originalPerformer))}>
+                    {valueForLocale(labelValueValues("label.originalPerformer", entry.originalPerformer))}
+                  </p>
+                ) : null}
                 {linkedReleases.length ? (
                   <div>
-                    <h3>Release links</h3>
+                    <h3 {...i18nAttrs(uiText("label.releaseLinks"))}>{valueForLocale(uiText("label.releaseLinks"))}</h3>
                     {linkedReleases.map((release) => (
-                      <p><a href={`/releases/${release.slug}/`}>{release.title}</a>{release.releaseDate ? ` / ${release.releaseDate}` : ""}</p>
+                      <p>
+                        <a href={`/releases/${release.slug}/`} {...i18nAttrs(titleValues(release))}>
+                          {valueForLocale(titleValues(release))}
+                        </a>
+                        {release.releaseDate ? ` / ${release.releaseDate}` : ""}
+                      </p>
                     ))}
                   </div>
                 ) : null}
                 {entry.mediaLinks?.length ? (
                   <div>
-                    <h3>Clip links</h3>
+                    <h3 {...i18nAttrs(uiText("label.clipLinks"))}>{valueForLocale(uiText("label.clipLinks"))}</h3>
                     {entry.mediaLinks.map((link) => (
                       <p>
                         <a href={link.url}>{link.label}</a>
                         {linkPlatformList([link]) ? ` / ${linkPlatformList([link])}` : ""}
                         {link.kind ? ` / ${link.kind}` : ""}
-                        {link.isOfficial === false ? " / fan upload" : ""}
+                        {link.isOfficial === false ? (
+                          <>
+                            {" / "}
+                            <span {...i18nAttrs(uiText("value.fanUpload"))}>{valueForLocale(uiText("value.fanUpload"))}</span>
+                          </>
+                        ) : ""}
                         {linkCreditLabel(link) ? ` / ${linkCreditLabel(link)}` : ""}
                       </p>
                     ))}
                   </div>
                 ) : (
-                  <p class="muted">No clip links added yet.</p>
+                  <p class="muted" {...i18nAttrs(uiText("empty.noClipLinks"))}>{valueForLocale(uiText("empty.noClipLinks"))}</p>
                 )}
               </div>
             </details>
@@ -124,7 +187,7 @@ const { concert } = Astro.props;
 
     {concert.notes ? (
       <section class="section detail-panel">
-        <h2>Notes</h2>
+        <h2 {...i18nAttrs(uiText("label.notes"))}>{valueForLocale(uiText("label.notes"))}</h2>
         <p>{concert.notes}</p>
       </section>
     ) : null}

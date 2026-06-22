@@ -1,5 +1,6 @@
 ---
 import type { ContributionAction } from "../lib/contribution";
+import { contributionValues, i18nAttrs, valueForLocale } from "../lib/i18n";
 
 type Props = {
   title?: string;
@@ -8,14 +9,17 @@ type Props = {
 };
 
 const { title = "Contribute", text, actions } = Astro.props;
+const titleValues = contributionValues(title);
+const textValues = contributionValues(text);
 ---
 
 <section class="section detail-panel contribution-panel">
-  <h2>{title}</h2>
-  <p>{text}</p>
+  <h2 {...i18nAttrs(titleValues)}>{valueForLocale(titleValues)}</h2>
+  <p {...i18nAttrs(textValues)}>{valueForLocale(textValues)}</p>
   <div class="contribution-actions">
-    {actions.map((action) => (
-      <a href={action.href}>{action.label}</a>
-    ))}
+    {actions.map((action) => {
+      const label = contributionValues(action.label);
+      return <a href={action.href} {...i18nAttrs(label)}>{valueForLocale(label)}</a>;
+    })}
   </div>
 </section>

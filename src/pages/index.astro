@@ -1,63 +1,64 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { appearances, concerts, musicShows, people, releases, songs } from "../lib/archive";
+import { countValues, i18nAttrs, uiText, valueForLocale } from "../lib/i18n";
 
 const sections = [
   {
     href: "/releases/",
-    title: "Releases",
+    title: uiText("nav.releases"),
     count: releases.length,
-    text: "Albums, singles, compilations, collaborations, and soundtracks."
+    text: uiText("home.releases.text")
   },
   {
     href: "/concerts/",
-    title: "Concerts",
+    title: uiText("nav.concerts"),
     count: concerts.length,
-    text: "Concerts, concert series, setlists, and show links."
+    text: uiText("home.concerts.text")
   },
   {
     href: "/music-shows/",
-    title: "Music shows",
+    title: uiText("nav.musicShows"),
     count: musicShows.length,
-    text: "Televised, streamed, and radio music-show performances."
+    text: uiText("home.musicShows.text")
   },
   {
     href: "/appearances/",
-    title: "Appearances",
+    title: uiText("nav.appearances"),
     count: appearances.length,
-    text: "Talk shows, film, soundtrack, podcasts, interviews, and other appearances."
+    text: uiText("home.appearances.text")
   },
   {
     href: "/people/",
-    title: "People",
+    title: uiText("nav.people"),
     count: people.length,
-    text: "Writers, composers, producers, collaborators, hosts, and other credits."
+    text: uiText("home.people.text")
   },
   {
     href: "/statistics/",
-    title: "Statistics",
+    title: uiText("nav.statistics"),
     count: songs.length,
-    text: "Song performance counts, distribution summaries, and source coverage."
+    text: uiText("home.statistics.text")
   }
 ];
 ---
 
 <BaseLayout title="All for Chyi Yu">
   <section class="page-shell home-shell">
-    <h1 class="page-title home-title">All for Chyi Yu</h1>
-    <p class="page-intro">
-      Releases, concerts, music shows, appearances, people, and source-backed links.
-    </p>
+    <h1 class="page-title home-title" {...i18nAttrs(uiText("site.title"))}>{valueForLocale(uiText("site.title"))}</h1>
+    <p class="page-intro" {...i18nAttrs(uiText("page.home.intro"))}>{valueForLocale(uiText("page.home.intro"))}</p>
 
     <nav class="section landing-list" aria-label="Archive sections">
       {sections.map((section, index) => (
         <a class="section-row" href={section.href}>
           <span class="section-number">{String(index + 1).padStart(2, "0")}</span>
           <span class="section-copy">
-            <span class="section-title">{section.title}</span>
-            <span class="section-note">{section.text}</span>
+            <span class="section-title" {...i18nAttrs(section.title)}>{valueForLocale(section.title)}</span>
+            <span class="section-note" {...i18nAttrs(section.text)}>{valueForLocale(section.text)}</span>
           </span>
-          <span class="section-count">{section.count} records</span>
+          <span class="section-count" {...i18nAttrs(countValues(section.count, "count.record", "count.records"))}>
+            {valueForLocale(countValues(section.count, "count.record", "count.records"))}
+          </span>
         </a>
       ))}
     </nav>

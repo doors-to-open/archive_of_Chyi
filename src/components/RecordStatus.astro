@@ -3,8 +3,11 @@ type Props = {
   status: string;
 };
 
+import { i18nAttrs, uiText, valueForLocale, type UiKey } from "../lib/i18n";
+
 const { status } = Astro.props;
+const key = `status.${status}` as UiKey;
+const values = uiText(key);
 ---
 
-<span class={`status status-${status}`}>{status}</span>
-
+<span class={`status status-${status}`} {...i18nAttrs(values)}>{valueForLocale(values)}</span>

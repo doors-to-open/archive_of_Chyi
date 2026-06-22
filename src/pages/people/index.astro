@@ -4,6 +4,13 @@ import ContributionPanel from "../../components/ContributionPanel.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import { people, personCredits } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
+import {
+  countValues,
+  i18nAttrs,
+  personNameValues,
+  uiText,
+  valueForLocale
+} from "../../lib/i18n";
 
 const contributionActions = [
   {
@@ -15,11 +22,9 @@ const contributionActions = [
 
 <BaseLayout title="People | All for Chyi Yu">
   <section class="page-shell">
-    <p class="page-kicker">People</p>
-    <h1 class="page-title">People</h1>
-    <p class="page-intro">
-      Writers, composers, producers, collaborators, hosts, and other credits.
-    </p>
+    <p class="page-kicker" {...i18nAttrs(uiText("nav.people"))}>{valueForLocale(uiText("nav.people"))}</p>
+    <h1 class="page-title" {...i18nAttrs(uiText("nav.people"))}>{valueForLocale(uiText("nav.people"))}</h1>
+    <p class="page-intro" {...i18nAttrs(uiText("page.people.intro"))}>{valueForLocale(uiText("page.people.intro"))}</p>
 
     <div class="section archive-grid">
       {people.map((person) => {
@@ -30,10 +35,12 @@ const contributionActions = [
             href={`/people/${person.slug}/`}
           >
             <RecordStatus status={person.status} />
-            <h2>{person.displayName}{person.nameOriginal ? ` / ${person.nameOriginal}` : ""}</h2>
+            <h2 {...i18nAttrs(personNameValues(person))}>{valueForLocale(personNameValues(person))}</h2>
             <p>{person.roles.join(", ")}</p>
             <div class="meta-row">
-              <span>{credits.total} relationship links</span>
+              <span {...i18nAttrs(countValues(credits.total, "count.relationshipLink", "count.relationshipLinks"))}>
+                {valueForLocale(countValues(credits.total, "count.relationshipLink", "count.relationshipLinks"))}
+              </span>
             </div>
           </a>
         );

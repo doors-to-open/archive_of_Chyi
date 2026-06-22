@@ -1,6 +1,19 @@
 ---
 import type { SongSummary } from "../lib/archive";
 import RecordStatus from "./RecordStatus.astro";
+import {
+  countValues,
+  i18nAttrs,
+  joinValues,
+  originValues,
+  personIdsValues,
+  textValues,
+  titleValues,
+  trackTitleValues,
+  performanceTitleValues,
+  uiText,
+  valueForLocale
+} from "../lib/i18n";
 
 type Props = {
   summary: SongSummary;
@@ -8,57 +21,113 @@ type Props = {
 };
 
 const { summary, ...attrs } = Astro.props;
+
+const title = titleValues(summary.song);
+const origin = originValues(summary.originLabel);
+const primaryAlbum = summary.albumReleases[0];
+const albumLabel = primaryAlbum
+  ? joinValues([
+      titleValues(primaryAlbum),
+      summary.albumReleases.length > 1
+        ? textValues(`+ ${summary.albumReleases.length - 1} more`, `另 ${summary.albumReleases.length - 1} 張`, `另 ${summary.albumReleases.length - 1} 张`)
+        : ""
+    ], " ")
+  : uiText("empty.noLinkedAlbum");
+const summaryMeta = joinValues([
+  origin,
+  albumLabel,
+  countValues(summary.liveCount, "count.liveRecord", "count.liveRecords")
+]);
+const credits = joinValues([personIdsValues(summary.song.lyricsBy), personIdsValues(summary.song.composedBy)], " / ");
 ---
 
 <details class="record-card compact-record-card song-summary-card" {...attrs}>
   <summary>
-    <span>{summary.title}</span>
-    <span class="summary-meta">
-      {summary.originLabel} / {summary.albumLabel} / {summary.liveCount} live
-    </span>
+    <span {...i18nAttrs(title)}>{valueForLocale(title)}</span>
+    <span class="summary-meta" {...i18nAttrs(summaryMeta)}>{valueForLocale(summaryMeta)}</span>
   </summary>
 
   <div class="details-body">
     <RecordStatus status={summary.song.status} />
-    <p>{summary.song.language || "Language not recorded"}</p>
-    {summary.creditsLabel ? <p>Credits: {summary.creditsLabel}</p> : <p>Credits not recorded.</p>}
+    <p {...i18nAttrs(summary.song.language ? textValues(summary.song.language) : uiText("value.languageNotRecorded"))}>
+      {summary.song.language || valueForLocale(uiText("value.languageNotRecorded"))}
+    </p>
+    {summary.creditsLabel ? (
+      <p {...i18nAttrs(joinValues([uiText("label.credits"), credits], ": "))}>
+        {valueForLocale(joinValues([uiText("label.credits"), credits], ": "))}
+      </p>
+    ) : (
+      <p {...i18nAttrs(uiText("value.creditsNotRecorded"))}>{valueForLocale(uiText("value.creditsNotRecorded"))}</p>
+    )}
 
     <div class="nested-links">
-      <h3>Albums</h3>
+      <h3 {...i18nAttrs(uiText("label.albums"))}>{valueForLocale(uiText("label.albums"))}</h3>
       {summary.releasePlacements.length ? (
-        summary.releasePlacements.map((placement) => (
-          <p>
-            <a href={placement.href}>{placement.label}</a>
-            {placement.track.titleOnRelease !== summary.song.title ? ` / ${placement.track.titleOnRelease}` : ""}
-          </p>
-        ))
+        summary.releasePlacements.map((placement) => {
+          const releaseTitle = titleValues(placement.release);
+          const trackTitle = trackTitleValues(placement.track);
+          const label = joinValues([
+            releaseTitle,
+            placement.track.disc ? textValues(`D${placement.track.disc}`) : "",
+            placement.track.position ? textValues(String(placement.track.position)) : ""
+          ], " / ");
+          const trackDiffers = placement.track.titleOnRelease !== summary.song.title;
+          return (
+            <p>
+              <a href={placement.href} {...i18nAttrs(label)}>{valueForLocale(label)}</a>
+              {trackDiffers ? (
+                <>
+                  {" / "}
+                  <span {...i18nAttrs(trackTitle)}>{valueForLocale(trackTitle)}</span>
+                </>
+              ) : ""}
+            </p>
+          );
+        })
       ) : summary.albumReleases.length ? (
-        summary.albumReleases.map((release) => (
-          <p><a href={`/releases/${release.slug}/`}>{release.title}</a>{release.releaseDate ? ` / ${release.releaseDate}` : ""}</p>
-        ))
+        summary.albumReleases.map((release) => {
+          const releaseTitle = titleValues(release);
+          return (
+            <p>
+              <a href={`/releases/${release.slug}/`} {...i18nAttrs(releaseTitle)}>{valueForLocale(releaseTitle)}</a>
+              {release.releaseDate ? ` / ${release.releaseDate}` : ""}
+            </p>
+          );
+        })
       ) : (
-        <p class="muted">No linked album yet.</p>
+        <p class="muted" {...i18nAttrs(uiText("empty.noLinkedAlbum"))}>{valueForLocale(uiText("empty.noLinkedAlbum"))}</p>
       )}
     </div>
 
     <div class="nested-links">
-      <h3>Live Records</h3>
+      <h3 {...i18nAttrs(uiText("label.liveRecords"))}>{valueForLocale(uiText("label.liveRecords"))}</h3>
       {summary.liveRecords.length ? (
-        summary.liveRecords.map((record) => (
-          <p>
-            <a href={record.href}>{record.title}</a>
-            {record.date ? ` / ${record.date}` : ""}
-            {record.entry.titlePerformed !== summary.song.title ? ` / ${record.entry.titlePerformed}` : ""}
-          </p>
-        ))
+        summary.liveRecords.map((record) => {
+          const recordTitle = textValues(record.title);
+          const performedTitle = performanceTitleValues(record.entry, summary.song);
+          return (
+            <p>
+              <a href={record.href} {...i18nAttrs(recordTitle)}>{valueForLocale(recordTitle)}</a>
+              {record.date ? ` / ${record.date}` : ""}
+              {record.entry.titlePerformed !== summary.song.title ? (
+                <>
+                  {" / "}
+                  <span {...i18nAttrs(performedTitle)}>{valueForLocale(performedTitle)}</span>
+                </>
+              ) : ""}
+            </p>
+          );
+        })
       ) : (
-        <p class="muted">No linked live records yet.</p>
+        <p class="muted" {...i18nAttrs(uiText("empty.noLinkedLiveRecords"))}>
+          {valueForLocale(uiText("empty.noLinkedLiveRecords"))}
+        </p>
       )}
     </div>
 
     {summary.liveRecords.some((record) => record.mediaLinks.length) ? (
       <div class="nested-links">
-        <h3>Clips</h3>
+        <h3 {...i18nAttrs(uiText("label.clips"))}>{valueForLocale(uiText("label.clips"))}</h3>
         {summary.liveRecords.flatMap((record) =>
           record.mediaLinks.map((link) => (
             <p>

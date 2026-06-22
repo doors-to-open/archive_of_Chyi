@@ -1,6 +1,7 @@
 # Local task notes and assistant working notes
 task_*.md
 .codex-notes/
+design.md
 
 # Dependencies and build output
 node_modules/

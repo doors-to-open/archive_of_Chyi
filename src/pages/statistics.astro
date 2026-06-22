@@ -2,18 +2,28 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import type { DistributionItem } from "../lib/archive";
 import { archiveStatistics } from "../lib/archive";
+import {
+  countValues,
+  i18nAttrs,
+  originValues,
+  type LocaleValues,
+  textValues,
+  titleValues,
+  uiText,
+  valueForLocale
+} from "../lib/i18n";
 
 const stats = archiveStatistics();
 
-const overview = [
-  ["Songs", stats.totals.songs],
-  ["Albums", stats.totals.albums],
-  ["Concerts", stats.totals.concerts],
-  ["Music shows", stats.totals.musicShows],
-  ["Appearances", stats.totals.appearances],
-  ["People", stats.totals.people],
-  ["Sources", stats.totals.sources],
-  ["Linked live song records", stats.songPerformanceTotal]
+const overview: Array<[LocaleValues, number]> = [
+  [uiText("label.songs"), stats.totals.songs],
+  [uiText("label.albums"), stats.totals.albums],
+  [uiText("nav.concerts"), stats.totals.concerts],
+  [uiText("nav.musicShows"), stats.totals.musicShows],
+  [uiText("nav.appearances"), stats.totals.appearances],
+  [uiText("nav.people"), stats.totals.people],
+  [uiText("nav.sources"), stats.totals.sources],
+  [textValues("Linked live song records", "關聯現場歌曲紀錄", "关联现场歌曲记录"), stats.songPerformanceTotal]
 ];
 
 const distributions: Array<[string, DistributionItem[]]> = [
@@ -27,16 +37,14 @@ const distributions: Array<[string, DistributionItem[]]> = [
 
 <BaseLayout title="Statistics | All for Chyi Yu">
   <section class="page-shell">
-    <p class="page-kicker">Statistics</p>
-    <h1 class="page-title">Statistics</h1>
-    <p class="page-intro">
-      Counts from the current reviewed dataset, including live song records and source coverage.
-    </p>
+    <p class="page-kicker" {...i18nAttrs(uiText("nav.statistics"))}>{valueForLocale(uiText("nav.statistics"))}</p>
+    <h1 class="page-title" {...i18nAttrs(uiText("nav.statistics"))}>{valueForLocale(uiText("nav.statistics"))}</h1>
+    <p class="page-intro" {...i18nAttrs(uiText("page.statistics.intro"))}>{valueForLocale(uiText("page.statistics.intro"))}</p>
 
     <section class="section stats-grid" aria-label="Archive totals">
       {overview.map(([label, value]) => (
         <article class="stat-tile">
-          <p>{label}</p>
+          <p {...i18nAttrs(label)}>{valueForLocale(label)}</p>
           <strong>{value}</strong>
         </article>
       ))}
@@ -45,40 +53,68 @@ const distributions: Array<[string, DistributionItem[]]> = [
     <section class="section two-column-section">
       <div>
         <div class="section-header">
-          <h2>Most Live Records</h2>
-          <p>Concerts + music shows</p>
+          <h2 {...i18nAttrs(textValues("Most Live Records", "現場紀錄最多", "现场记录最多"))}>
+            {valueForLocale(textValues("Most Live Records", "現場紀錄最多", "现场记录最多"))}
+          </h2>
+          <p {...i18nAttrs(textValues("Concerts + music shows", "演唱會 + 音樂節目", "演唱会 + 音乐节目"))}>
+            {valueForLocale(textValues("Concerts + music shows", "演唱會 + 音樂節目", "演唱会 + 音乐节目"))}
+          </p>
         </div>
         <div class="archive-grid">
-          {stats.topSongs.map((summary) => (
-            <a class="record-card compact-record-card" href={summary.href}>
-              <h3>{summary.title}</h3>
-              <p>{summary.albumLabel}</p>
-              <div class="meta-row">
-                <span>{summary.liveCount} live records</span>
-                <span>{summary.concertCount} concerts</span>
-                <span>{summary.musicShowCount} music shows</span>
-              </div>
-            </a>
-          ))}
+          {stats.topSongs.map((summary) => {
+            const album = summary.albumReleases[0];
+            const albumLabel = album
+              ? titleValues(album)
+              : uiText("empty.noLinkedAlbum");
+            return (
+              <a class="record-card compact-record-card" href={summary.href}>
+                <h3 {...i18nAttrs(titleValues(summary.song))}>{valueForLocale(titleValues(summary.song))}</h3>
+                <p {...i18nAttrs(albumLabel)}>{valueForLocale(albumLabel)}</p>
+                <div class="meta-row">
+                  <span {...i18nAttrs(countValues(summary.liveCount, "count.liveRecord", "count.liveRecords"))}>
+                    {valueForLocale(countValues(summary.liveCount, "count.liveRecord", "count.liveRecords"))}
+                  </span>
+                  <span {...i18nAttrs(countValues(summary.concertCount, "count.concert", "count.concerts"))}>
+                    {valueForLocale(countValues(summary.concertCount, "count.concert", "count.concerts"))}
+                  </span>
+                  <span {...i18nAttrs(countValues(summary.musicShowCount, "count.musicShow", "count.musicShows"))}>
+                    {valueForLocale(countValues(summary.musicShowCount, "count.musicShow", "count.musicShows"))}
+                  </span>
+                </div>
+              </a>
+            );
+          })}
         </div>
       </div>
 
       <div>
         <div class="section-header">
-          <h2>Least Live Records</h2>
-          <p>Coverage gaps</p>
+          <h2 {...i18nAttrs(textValues("Least Live Records", "現場紀錄最少", "现场记录最少"))}>
+            {valueForLocale(textValues("Least Live Records", "現場紀錄最少", "现场记录最少"))}
+          </h2>
+          <p {...i18nAttrs(textValues("Coverage gaps", "覆蓋缺口", "覆盖缺口"))}>
+            {valueForLocale(textValues("Coverage gaps", "覆蓋缺口", "覆盖缺口"))}
+          </p>
         </div>
         <div class="archive-grid">
-          {stats.leastPerformedSongs.map((summary) => (
-            <a class="record-card compact-record-card" href={summary.href}>
-              <h3>{summary.title}</h3>
-              <p>{summary.albumLabel}</p>
-              <div class="meta-row">
-                <span>{summary.liveCount} live records</span>
-                <span>{summary.originLabel}</span>
-              </div>
-            </a>
-          ))}
+          {stats.leastPerformedSongs.map((summary) => {
+            const album = summary.albumReleases[0];
+            const albumLabel = album
+              ? titleValues(album)
+              : uiText("empty.noLinkedAlbum");
+            return (
+              <a class="record-card compact-record-card" href={summary.href}>
+                <h3 {...i18nAttrs(titleValues(summary.song))}>{valueForLocale(titleValues(summary.song))}</h3>
+                <p {...i18nAttrs(albumLabel)}>{valueForLocale(albumLabel)}</p>
+                <div class="meta-row">
+                  <span {...i18nAttrs(countValues(summary.liveCount, "count.liveRecord", "count.liveRecords"))}>
+                    {valueForLocale(countValues(summary.liveCount, "count.liveRecord", "count.liveRecords"))}
+                  </span>
+                  <span {...i18nAttrs(originValues(summary.originLabel))}>{valueForLocale(originValues(summary.originLabel))}</span>
+                </div>
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -88,7 +124,9 @@ const distributions: Array<[string, DistributionItem[]]> = [
         <div>
           <div class="section-header">
             <h2>{title}</h2>
-            <p>{rows.length} groups</p>
+            <p {...i18nAttrs(countValues(rows.length, "count.group", "count.groups"))}>
+              {valueForLocale(countValues(rows.length, "count.group", "count.groups"))}
+            </p>
           </div>
           <div class="stat-list">
             {rows.map((row) => (
@@ -104,12 +142,22 @@ const distributions: Array<[string, DistributionItem[]]> = [
     </section>
 
     <section class="section detail-panel">
-      <h2>Source Coverage</h2>
+      <h2 {...i18nAttrs(textValues("Source Coverage", "來源覆蓋", "来源覆盖"))}>
+        {valueForLocale(textValues("Source Coverage", "來源覆蓋", "来源覆盖"))}
+      </h2>
       <div class="record-meta-table">
-        <span>{stats.sourceCoverage.withSources} records have at least one source</span>
-        <span>{stats.sourceCoverage.withoutSources} records have no source links yet</span>
-        <span>{stats.sourceCoverage.citedSourceIds} source records are cited</span>
-        <span>{stats.sourceCoverage.totalRecords} records checked for coverage</span>
+        <span {...i18nAttrs(textValues(`${stats.sourceCoverage.withSources} records have at least one source`, `${stats.sourceCoverage.withSources} 筆紀錄至少有一個來源`, `${stats.sourceCoverage.withSources} 条记录至少有一个来源`))}>
+          {stats.sourceCoverage.withSources} records have at least one source
+        </span>
+        <span {...i18nAttrs(textValues(`${stats.sourceCoverage.withoutSources} records have no source links yet`, `${stats.sourceCoverage.withoutSources} 筆紀錄尚無來源連結`, `${stats.sourceCoverage.withoutSources} 条记录尚无来源链接`))}>
+          {stats.sourceCoverage.withoutSources} records have no source links yet
+        </span>
+        <span {...i18nAttrs(textValues(`${stats.sourceCoverage.citedSourceIds} source records are cited`, `${stats.sourceCoverage.citedSourceIds} 筆來源紀錄被引用`, `${stats.sourceCoverage.citedSourceIds} 条来源记录被引用`))}>
+          {stats.sourceCoverage.citedSourceIds} source records are cited
+        </span>
+        <span {...i18nAttrs(textValues(`${stats.sourceCoverage.totalRecords} records checked for coverage`, `${stats.sourceCoverage.totalRecords} 筆紀錄已檢查來源覆蓋`, `${stats.sourceCoverage.totalRecords} 条记录已检查来源覆盖`))}>
+          {stats.sourceCoverage.totalRecords} records checked for coverage
+        </span>
       </div>
     </section>
   </section>

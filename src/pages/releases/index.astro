@@ -12,6 +12,18 @@ import {
   songSummaries
 } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
+import {
+  availabilityValues,
+  countValues,
+  i18nAttrs,
+  i18nCountLabelAttrs,
+  labelValueValues,
+  personIdValues,
+  personIdsValues,
+  titleValues,
+  uiText,
+  valueForLocale
+} from "../../lib/i18n";
 
 const summaries = songSummaries();
 const contributionActions = [
@@ -28,33 +40,31 @@ const contributionActions = [
 
 <BaseLayout title="Releases | All for Chyi Yu">
   <section class="page-shell" data-sort-root>
-    <p class="page-kicker">Releases</p>
-    <h1 class="page-title">Releases</h1>
-    <p class="page-intro">
-      Albums by default, with songs available as an expandable identity view.
-    </p>
+    <p class="page-kicker" {...i18nAttrs(uiText("nav.releases"))}>{valueForLocale(uiText("nav.releases"))}</p>
+    <h1 class="page-title" {...i18nAttrs(uiText("nav.releases"))}>{valueForLocale(uiText("nav.releases"))}</h1>
+    <p class="page-intro" {...i18nAttrs(uiText("page.releases.intro"))}>{valueForLocale(uiText("page.releases.intro"))}</p>
 
     <div class="section filter-panel release-controls-panel">
       <fieldset class="filter-option-group">
-        <legend>View</legend>
+        <legend {...i18nAttrs(uiText("label.view"))}>{valueForLocale(uiText("label.view"))}</legend>
         <div class="filter-options">
           <button type="button" data-view-option data-view-value="albums" aria-pressed="true">
-            Albums
+            <span {...i18nAttrs(uiText("option.albums"))}>{valueForLocale(uiText("option.albums"))}</span>
           </button>
           <button type="button" data-view-option data-view-value="songs" aria-pressed="false">
-            Songs
+            <span {...i18nAttrs(uiText("option.songs"))}>{valueForLocale(uiText("option.songs"))}</span>
           </button>
         </div>
       </fieldset>
 
       <fieldset class="filter-option-group sort-option-group">
-        <legend>Sort</legend>
+        <legend {...i18nAttrs(uiText("label.sort"))}>{valueForLocale(uiText("label.sort"))}</legend>
         <div class="filter-options">
           <button type="button" data-sort-option data-sort-value="date-asc" aria-pressed="true">
-            Oldest
+            <span {...i18nAttrs(uiText("option.oldest"))}>{valueForLocale(uiText("option.oldest"))}</span>
           </button>
           <button type="button" data-sort-option data-sort-value="date-desc" aria-pressed="false">
-            Newest
+            <span {...i18nAttrs(uiText("option.newest"))}>{valueForLocale(uiText("option.newest"))}</span>
           </button>
           <button type="button" data-sort-option data-sort-value="alpha-asc" aria-pressed="false">
             A-Z
@@ -63,15 +73,15 @@ const contributionActions = [
             Z-A
           </button>
           <button type="button" data-sort-option data-sort-value="live-desc" aria-pressed="false">
-            Most live
+            <span {...i18nAttrs(uiText("option.mostLive"))}>{valueForLocale(uiText("option.mostLive"))}</span>
           </button>
           <button type="button" data-sort-option data-sort-value="live-asc" aria-pressed="false">
-            Least live
+            <span {...i18nAttrs(uiText("option.leastLive"))}>{valueForLocale(uiText("option.leastLive"))}</span>
           </button>
         </div>
       </fieldset>
 
-      <p data-sort-count>{releases.length} albums</p>
+      <p data-sort-count>{valueForLocale(countValues(releases.length, "count.album", "count.albums"))}</p>
     </div>
 
     <div
@@ -80,38 +90,62 @@ const contributionActions = [
       data-sort-container
       data-count-label-singular="album"
       data-count-label-plural="albums"
+      {...i18nCountLabelAttrs(uiText("count.album"), uiText("count.albums"))}
     >
-      {releases.map((release, index) => (
-        <a
-          class="record-card"
-          href={`/releases/${release.slug}/`}
-          data-sort-item
-          data-sort-index={index}
-          data-sort-date={release.releaseDate || ""}
-          data-sort-alpha={`${release.title} ${release.titleOriginal || ""}`.toLocaleLowerCase("en-US")}
-          data-sort-live={releaseLiveRecordCount(release)}
-        >
-          <h2>{release.title}{release.titleOriginal ? ` / ${release.titleOriginal}` : ""}</h2>
-          <div class="record-meta-table">
-            <span>Date: {release.releaseDate || "Unknown"}</span>
-            <span>Type: {release.releaseType}</span>
-            <span>{release.tracks.length} tracks</span>
-            <span>{releaseLiveRecordCount(release)} linked live records</span>
-            {release.label ? <span>Label: {release.label}</span> : null}
-          </div>
-          <div class="meta-row">
-            {releaseProducers(release) ? <span>Producer: {releaseProducers(release)}</span> : null}
-            <span class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""}>
-              {releaseArtists(release) || personName(release.artist)}
-            </span>
-          </div>
-          <div class="availability-row" aria-label="Availability summary">
-            {releaseAvailabilityChecks(release).map(([label, available]) => (
-              <span class={available ? "available" : ""}>{label}</span>
-            ))}
-          </div>
-        </a>
-      ))}
+      {releases.map((release, index) => {
+        const releaseTitle = titleValues(release);
+        const producer = personIdsValues(release.credits.producer || release.credits.producers || []);
+        const artists = release.artists?.length ? personIdsValues(release.artists) : personIdValues(release.artist);
+        const liveRecordCount = releaseLiveRecordCount(release);
+        return (
+          <a
+            class="record-card"
+            href={`/releases/${release.slug}/`}
+            data-sort-item
+            data-sort-index={index}
+            data-sort-date={release.releaseDate || ""}
+            data-sort-alpha={`${release.title} ${release.titleOriginal || ""}`.toLocaleLowerCase("en-US")}
+            data-sort-live={liveRecordCount}
+          >
+            <h2 {...i18nAttrs(releaseTitle)}>{valueForLocale(releaseTitle)}</h2>
+            <div class="record-meta-table">
+              <span {...i18nAttrs(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}>
+                {valueForLocale(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}
+              </span>
+              <span {...i18nAttrs(labelValueValues("label.type", release.releaseType))}>
+                {valueForLocale(labelValueValues("label.type", release.releaseType))}
+              </span>
+              <span {...i18nAttrs(countValues(release.tracks.length, "count.song", "count.songs"))}>
+                {valueForLocale(countValues(release.tracks.length, "count.song", "count.songs"))}
+              </span>
+              <span {...i18nAttrs(countValues(liveRecordCount, "count.linkedLiveRecord", "count.linkedLiveRecords"))}>
+                {valueForLocale(countValues(liveRecordCount, "count.linkedLiveRecord", "count.linkedLiveRecords"))}
+              </span>
+              {release.label ? (
+                <span {...i18nAttrs(labelValueValues("label.label", release.label))}>
+                  {valueForLocale(labelValueValues("label.label", release.label))}
+                </span>
+              ) : null}
+            </div>
+            <div class="meta-row">
+              {releaseProducers(release) ? (
+                <span {...i18nAttrs(labelValueValues("label.producer", producer))}>
+                  {valueForLocale(labelValueValues("label.producer", producer))}
+                </span>
+              ) : null}
+              <span class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""} {...i18nAttrs(artists)}>
+                {valueForLocale(artists) || releaseArtists(release) || personName(release.artist)}
+              </span>
+            </div>
+            <div class="availability-row" aria-label="Availability summary">
+              {releaseAvailabilityChecks(release).map(([label, available]) => {
+                const values = availabilityValues(label);
+                return <span class={available ? "available" : ""} {...i18nAttrs(values)}>{valueForLocale(values)}</span>;
+              })}
+            </div>
+          </a>
+        );
+      })}
     </div>
 
     <div
@@ -120,6 +154,7 @@ const contributionActions = [
       data-sort-container
       data-count-label-singular="song"
       data-count-label-plural="songs"
+      {...i18nCountLabelAttrs(uiText("count.song"), uiText("count.songs"))}
       hidden
     >
       {summaries.map((summary, index) => (

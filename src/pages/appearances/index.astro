@@ -3,6 +3,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionPanel from "../../components/ContributionPanel.astro";
 import { appearanceAvailabilityChecks, appearances } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
+import {
+  availabilityValues,
+  i18nAttrs,
+  labelValueValues,
+  titleValues,
+  uiText,
+  valueForLocale
+} from "../../lib/i18n";
 
 const contributionActions = [
   {
@@ -14,11 +22,9 @@ const contributionActions = [
 
 <BaseLayout title="Appearances | All for Chyi Yu">
   <section class="page-shell">
-    <p class="page-kicker">Appearances</p>
-    <h1 class="page-title">Appearances</h1>
-    <p class="page-intro">
-      Talk shows, film, soundtrack work, podcasts, interviews, documentaries, and other appearances.
-    </p>
+    <p class="page-kicker" {...i18nAttrs(uiText("nav.appearances"))}>{valueForLocale(uiText("nav.appearances"))}</p>
+    <h1 class="page-title" {...i18nAttrs(uiText("nav.appearances"))}>{valueForLocale(uiText("nav.appearances"))}</h1>
+    <p class="page-intro" {...i18nAttrs(uiText("page.appearances.intro"))}>{valueForLocale(uiText("page.appearances.intro"))}</p>
 
     {appearances.length ? (
       <>
@@ -28,17 +34,30 @@ const contributionActions = [
               class="record-card"
               href={`/appearances/${appearance.slug}/`}
             >
-              <h2>{appearance.title}{appearance.titleOriginal ? ` / ${appearance.titleOriginal}` : ""}</h2>
+              <h2 {...i18nAttrs(titleValues(appearance))}>{valueForLocale(titleValues(appearance))}</h2>
               <div class="record-meta-table">
-                <span>Date: {appearance.date || "Unknown"}</span>
-                <span>Type: {appearance.appearanceType}</span>
-                {appearance.programOrWork ? <span>Work: {appearance.programOrWork}</span> : null}
-                {appearance.role ? <span>Role: {appearance.role}</span> : null}
+                <span {...i18nAttrs(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}>
+                  {valueForLocale(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}
+                </span>
+                <span {...i18nAttrs(labelValueValues("label.type", appearance.appearanceType))}>
+                  {valueForLocale(labelValueValues("label.type", appearance.appearanceType))}
+                </span>
+                {appearance.programOrWork ? (
+                  <span {...i18nAttrs(labelValueValues("label.work", appearance.programOrWork))}>
+                    {valueForLocale(labelValueValues("label.work", appearance.programOrWork))}
+                  </span>
+                ) : null}
+                {appearance.role ? (
+                  <span {...i18nAttrs(labelValueValues("label.role", appearance.role))}>
+                    {valueForLocale(labelValueValues("label.role", appearance.role))}
+                  </span>
+                ) : null}
               </div>
               <div class="availability-row" aria-label="Access summary">
-                {appearanceAvailabilityChecks(appearance).map(([label, available]) => (
-                  <span class={available ? "available" : ""}>{label}</span>
-                ))}
+                {appearanceAvailabilityChecks(appearance).map(([label, available]) => {
+                  const values = availabilityValues(label);
+                  return <span class={available ? "available" : ""} {...i18nAttrs(values)}>{valueForLocale(values)}</span>;
+                })}
               </div>
             </a>
           ))}
@@ -46,7 +65,7 @@ const contributionActions = [
       </>
     ) : (
       <div class="section empty-state">
-        No appearance records have been added yet.
+        <span {...i18nAttrs(uiText("empty.noAppearances"))}>{valueForLocale(uiText("empty.noAppearances"))}</span>
       </div>
     )}
 

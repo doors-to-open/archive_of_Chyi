@@ -2,6 +2,16 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SongSummaryCard from "../components/SongSummaryCard.astro";
 import { buildSearchEntries, songSummaries } from "../lib/archive";
+import {
+  countValues,
+  creditTitleValues,
+  i18nAttrs,
+  i18nEmptyAttrs,
+  i18nPlaceholderAttrs,
+  sourceCategoryValues,
+  uiText,
+  valueForLocale
+} from "../lib/i18n";
 
 const entries = buildSearchEntries();
 const songResults = songSummaries();
@@ -13,33 +23,36 @@ const categories = Array.from(
 
 <BaseLayout title="Search | All for Chyi Yu">
   <section class="page-shell" data-filter-root data-require-filter>
-    <p class="page-kicker">Search</p>
-    <h1 class="page-title">Search</h1>
-    <p class="page-intro">
-      Search songs, albums, concerts, and people.
-    </p>
+    <p class="page-kicker" {...i18nAttrs(uiText("nav.search"))}>{valueForLocale(uiText("nav.search"))}</p>
+    <h1 class="page-title" {...i18nAttrs(uiText("nav.search"))}>{valueForLocale(uiText("nav.search"))}</h1>
+    <p class="page-intro" {...i18nAttrs(uiText("page.search.intro"))}>{valueForLocale(uiText("page.search.intro"))}</p>
 
     <div class="section filter-panel search-filter-panel">
       <label>
-        <span>Keyword</span>
-        <input data-filter-search type="search" placeholder="Title, person, source, date..." />
+        <span {...i18nAttrs(uiText("label.keyword"))}>{valueForLocale(uiText("label.keyword"))}</span>
+        <input
+          data-filter-search
+          type="search"
+          placeholder={valueForLocale(uiText("placeholder.searchAll"))}
+          {...i18nPlaceholderAttrs(uiText("placeholder.searchAll"))}
+        />
       </label>
 
       <fieldset class="filter-option-group" data-filter-options data-filter-key="category">
-        <legend>Section</legend>
+        <legend {...i18nAttrs(uiText("label.section"))}>{valueForLocale(uiText("label.section"))}</legend>
         <div class="filter-options">
           <button type="button" data-filter-option data-filter-value="" aria-pressed="true">
-            All sections
+            <span {...i18nAttrs(uiText("option.allSections"))}>{valueForLocale(uiText("option.allSections"))}</span>
           </button>
           {categories.map(([value, label]) => (
             <button type="button" data-filter-option data-filter-value={value} aria-pressed="false">
-              {label}
+              <span {...i18nAttrs(sourceCategoryValues(value))}>{valueForLocale(sourceCategoryValues(value)) || label}</span>
             </button>
           ))}
         </div>
       </fieldset>
 
-      <p data-filter-count>{entries.length} records</p>
+      <p data-filter-count>{valueForLocale(countValues(entries.length, "count.record", "count.records"))}</p>
     </div>
 
     <div class="section archive-grid">
@@ -62,8 +75,13 @@ const categories = Array.from(
           data-category={entry.filterCategory}
           data-search={`${entry.title} ${entry.summary} ${entry.meta} ${entry.searchText}`}
         >
-          <h2>{entry.title}</h2>
-          <p>{entry.category}{entry.summary ? ` / ${entry.summary}` : ""}</p>
+          <h2 {...i18nAttrs(creditTitleValues(entry))}>{valueForLocale(creditTitleValues(entry)) || entry.title}</h2>
+          <p>
+            <span {...i18nAttrs(sourceCategoryValues(entry.filterCategory))}>
+              {valueForLocale(sourceCategoryValues(entry.filterCategory)) || entry.category}
+            </span>
+            {entry.summary ? ` / ${entry.summary}` : ""}
+          </p>
           {entry.meta ? <div class="meta-row"><span>{entry.meta}</span></div> : null}
         </a>
       ))}
@@ -73,9 +91,10 @@ const categories = Array.from(
       data-filter-empty
       data-empty-initial="Enter a keyword or choose a section."
       data-empty-none="No matching records."
+      {...i18nEmptyAttrs(uiText("empty.searchInitial"), uiText("empty.noRecords"))}
       class="empty-state"
     >
-      Enter a keyword or choose a section.
+      {valueForLocale(uiText("empty.searchInitial"))}
     </p>
   </section>
 </BaseLayout>
