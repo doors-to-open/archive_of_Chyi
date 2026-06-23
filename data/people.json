@@ -452,5 +452,95 @@
     "sources": ["source-wikipedia-en-chyi-yu"],
     "notes": "Listed in English Wikipedia as Chyi Yu collaborator on Plaisir D’amour.",
     "status": "partial"
+  },
+  {
+    "id": "person-sandy-lam",
+    "slug": "sandy-lam",
+    "displayName": "Sandy Lam",
+    "aliases": [
+      "Lin Yilian",
+      "Lam Yik Lin"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-qq-music-wonderful-world",
+      "source-qq-music-i-swear",
+      "source-qq-music-cest-la-vie"
+    ],
+    "notes": "QQ Music lists Sandy Lam on the Stage 6B collaboration and appearance-album candidates.",
+    "status": "partial",
+    "nameOriginal": "林忆莲"
+  },
+  {
+    "id": "person-prudence-liew",
+    "slug": "prudence-liew",
+    "displayName": "Prudence Liew",
+    "aliases": [
+      "Liu Meijun"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-qq-music-wonderful-world",
+      "source-qq-music-i-swear",
+      "source-qq-music-cest-la-vie"
+    ],
+    "notes": "QQ Music lists Prudence Liew on the Stage 6B collaboration and appearance-album candidates.",
+    "status": "partial",
+    "nameOriginal": "刘美君"
+  },
+  {
+    "id": "person-teresa-carpio",
+    "slug": "teresa-carpio",
+    "displayName": "Teresa Carpio",
+    "aliases": [
+      "Du Lisha"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-qq-music-i-swear",
+      "source-qq-music-cest-la-vie"
+    ],
+    "notes": "QQ Music lists Teresa Carpio on the Stage 6B collaboration candidates.",
+    "status": "partial",
+    "nameOriginal": "杜丽莎"
+  },
+  {
+    "id": "person-leslie-cheung",
+    "slug": "leslie-cheung",
+    "displayName": "Leslie Cheung",
+    "aliases": [
+      "Zhang Guorong"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-qq-music-i-swear"
+    ],
+    "notes": "QQ Music lists Leslie Cheung on the I Swear album candidate.",
+    "status": "partial",
+    "nameOriginal": "张国荣"
+  },
+  {
+    "id": "person-suzanne-ciani",
+    "slug": "suzanne-ciani",
+    "displayName": "Suzanne Ciani",
+    "aliases": [],
+    "roles": [
+      "composer",
+      "instrumentalist",
+      "vocalist"
+    ],
+    "sources": [
+      "source-qq-music-turning-collaboration"
+    ],
+    "notes": "QQ Music lists Suzanne Ciani on the Turning collaboration candidate.",
+    "status": "partial"
   }
 ]

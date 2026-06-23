@@ -716,5 +716,204 @@
     "sources": ["source-wikipedia-en-chyi-yu", "source-qq-music-chyis-tears"],
     "notes": "Library title kept as Tears. English Wikipedia identifies Donde Voy as the original Spanish title and notes English lyric by Chyi Yu.",
     "status": "partial"
+  },
+  {
+    "id": "song-forever",
+    "slug": "forever",
+    "title": "Forever",
+    "titleLocalized": {
+      "en": "Forever"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [
+      "release-cest-la-vie-1999",
+      "release-the-unheard-of-chyi-2003"
+    ],
+    "knownConcerts": [
+      "concert-unheard-of-chyi-2002-hong-kong"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-qq-music-unheard-of-chyi",
+      "source-bilibili-unheard-full-hd"
+    ],
+    "notes": "English cover identity linked from the 1999 C'est La Vie album and 2002 live material. The concert source identifies Stratovarius as original performer; writer/composer credits remain pending because the QQ album API did not expose them.",
+    "status": "partial"
+  },
+  {
+    "id": "song-cest-la-vie",
+    "slug": "cest-la-vie",
+    "title": "C'est La Vie",
+    "titleLocalized": {
+      "en": "C'est La Vie",
+      "zh-Hans": "这就是人生"
+    },
+    "titleOriginal": "这就是人生",
+    "aliases": [
+      "这就是人生"
+    ],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [
+      "release-cest-la-vie-1999",
+      "release-the-unheard-of-chyi-2003"
+    ],
+    "knownConcerts": [
+      "concert-unheard-of-chyi-2002-hong-kong"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-qq-music-unheard-of-chyi",
+      "source-bilibili-unheard-full-hd"
+    ],
+    "notes": "QQ Music gives the 1999 album track title as 这就是人生; the 2002 concert/live-album material uses C'est La Vie.",
+    "status": "partial"
+  },
+  {
+    "id": "song-windflowers",
+    "slug": "windflowers",
+    "title": "Windflowers",
+    "titleLocalized": {
+      "en": "Windflowers"
+    },
+    "aliases": [
+      "Windflower"
+    ],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [
+      "release-cest-la-vie-1999",
+      "release-the-unheard-of-chyi-2003"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-qq-music-unheard-of-chyi"
+    ],
+    "notes": "QQ Music titles the 1999 track Windflowers; the 2003 live album uses Windflower. Live-release notes identify Seals and Crofts as original performer context.",
+    "status": "partial"
+  },
+  {
+    "id": "song-i-swear",
+    "slug": "i-swear",
+    "title": "I Swear",
+    "titleLocalized": {
+      "en": "I Swear"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-i-swear-1996",
+    "relatedReleases": [
+      "release-i-swear-1996",
+      "release-cest-la-vie-1999"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-i-swear",
+      "source-qq-music-cest-la-vie"
+    ],
+    "notes": "QQ Music lists Chyi Yu on I Swear placements in the Sandy Lam-led album and the later C'est La Vie album. Writer/composer credits remain pending.",
+    "status": "partial"
+  },
+  {
+    "id": "song-rhythm-of-my-heart",
+    "slug": "rhythm-of-my-heart",
+    "title": "Rhythm Of My Heart",
+    "titleLocalized": {
+      "en": "Rhythm Of My Heart"
+    },
+    "aliases": [
+      "Rhythm of My Heart"
+    ],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-wonderful-world-1997",
+    "relatedReleases": [
+      "release-wonderful-world-1997"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-wonderful-world"
+    ],
+    "notes": "QQ Music lists Chyi Yu and Sandy Lam as singers on this Wonderful World track. Writer/composer credits remain pending.",
+    "status": "partial"
+  },
+  {
+    "id": "song-what-a-wonderful-world",
+    "slug": "what-a-wonderful-world",
+    "title": "What A Wonderful World",
+    "titleLocalized": {
+      "en": "What A Wonderful World"
+    },
+    "aliases": [
+      "What a Wonderful World"
+    ],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-wonderful-world-1997",
+    "relatedReleases": [
+      "release-wonderful-world-1997"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-wonderful-world"
+    ],
+    "notes": "QQ Music lists Sandy Lam, Prudence Liew, and Chyi Yu as singers on this Wonderful World track. Writer/composer credits remain pending.",
+    "status": "partial"
+  },
+  {
+    "id": "song-turning",
+    "slug": "turning",
+    "title": "Turning",
+    "titleLocalized": {
+      "en": "Turning"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-turning-1998",
+    "relatedReleases": [
+      "release-turning-1998"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-turning-collaboration"
+    ],
+    "notes": "QQ Music lists Chyi Yu and Suzanne Ciani as singers on the five-track 1998 Turning release title track. The later 1999 Suzanne Ciani album candidate is left draft-only because QQ did not list Chyi Yu as singer there.",
+    "status": "partial"
   }
 ]

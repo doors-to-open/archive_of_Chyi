@@ -28,7 +28,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-forever",
         "titlePerformed": "Forever",
         "originalPerformer": "Stratovarius",
         "collaborators": [],
@@ -357,7 +357,7 @@
       },
       {
         "position": 22,
-        "song": null,
+        "song": "song-cest-la-vie",
         "titlePerformed": "C'est La Vie",
         "collaborators": [],
         "mediaLinks": [
