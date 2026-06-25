@@ -55,6 +55,11 @@
         "position": 1,
         "song": "song-boat-song",
         "title": "船歌",
+        "titleLocalized": {
+          "en": "Boat Song",
+          "zh-Hant": "船歌",
+          "zh-Hans": "船歌"
+        },
         "role": "vocal appearance",
         "performers": [
           "person-chyi-yu"
@@ -68,12 +73,17 @@
             "person-luo-dayou"
           ]
         },
-        "notes": "Chyi Yu vocal appearance on the film soundtrack."
+        "notes": "Chyi Yu vocal appearance on the film soundtrack; Lo Ta-yu lyric/music credits are source-backed."
       },
       {
         "position": 2,
         "song": "song-red-cotton",
         "title": "紅棉",
+        "titleLocalized": {
+          "en": "Red Cotton",
+          "zh-Hant": "紅棉",
+          "zh-Hans": "红棉"
+        },
         "role": "vocal appearance",
         "performers": [
           "person-chyi-yu"
@@ -83,12 +93,17 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "notes": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending."
+        "notes": "Chyi Yu vocal appearance on the film soundtrack; lyricist/composer credits remain unresolved in the public sources checked."
       },
       {
         "position": 3,
         "song": "song-mess",
         "title": "亂",
+        "titleLocalized": {
+          "en": "Mess",
+          "zh-Hant": "亂",
+          "zh-Hans": "亂"
+        },
         "role": "vocal appearance",
         "performers": [
           "person-chyi-yu"
@@ -98,22 +113,22 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "notes": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending."
+        "notes": "Chyi Yu vocal appearance on the film soundtrack; lyricist/composer credits remain unresolved in the public sources checked."
       }
     ]
   },
   {
     "id": "appearance-turning-1999",
     "slug": "turning-1999",
-    "title": "Turning appearance",
+    "title": "Turning",
     "titleLocalized": {
-      "en": "Turning appearance"
+      "en": "Turning"
     },
     "titleOriginal": "Turning",
     "date": "1999-09-14",
     "appearanceType": "collaboration",
     "programOrWork": "Turning",
-    "role": "Vocal appearance",
+    "role": "vocal appearance",
     "relatedSongs": [
       "song-turning"
     ],
@@ -137,7 +152,7 @@
             "person-suzanne-ciani"
           ]
         },
-        "notes": "User-supplied QQ short link resolves to Suzanne Ciani album MID 002HM2yh0OU8N2 with track 1 Turning. QQ API singer fields list Suzanne Ciani; the earlier QQ collaboration source lists Chyi Yu on the 1998 title-track candidate, so the Chyi Yu contribution is retained as a partial appearance pending booklet-level credits."
+        "notes": "Only the title track is retained as the Chyi Yu voice-appearance record. The user-supplied QQ short link resolves to Suzanne Ciani album MID 002HM2yh0OU8N2; the earlier QQ collaboration source lists Chyi Yu and Suzanne Ciani on the title-track candidate, so Chyi Yu is retained here pending booklet-level credits."
       }
     ],
     "mediaLinks": [
@@ -170,16 +185,16 @@
   {
     "id": "appearance-whispering-steppes-desirous-water-ost",
     "slug": "whispering-steppes-desirous-water-ost",
-    "title": "Whispering Steppes - Desirous Water OST",
+    "title": "Xiu Xiu: The Sent Down Girl OST",
     "titleLocalized": {
-      "en": "Whispering Steppes - Desirous Water OST",
-      "zh-Hant": "天浴 - 慾水 OST",
-      "zh-Hans": "天浴 - 欲水 OST"
+      "en": "Xiu Xiu: The Sent Down Girl OST",
+      "zh-Hant": "天浴 OST",
+      "zh-Hans": "天浴 OST"
     },
-    "titleOriginal": "天浴 - 慾水 OST",
+    "titleOriginal": "天浴 OST",
     "date": "1998",
     "appearanceType": "soundtrack",
-    "programOrWork": "Tian Yu / Xiu Xiu: The Sent Down Girl",
+    "programOrWork": "Xiu Xiu: The Sent Down Girl",
     "role": "OST vocal appearance",
     "relatedSongs": [],
     "tracks": [
@@ -198,10 +213,16 @@
         ],
         "duration": null,
         "credits": {
-          "lyricsBy": [],
-          "composedBy": []
+          "lyricsBy": [
+            "Jimmy Seals",
+            "Dan Crofts"
+          ],
+          "composedBy": [
+            "Jimmy Seals",
+            "Dan Crofts"
+          ]
         },
-        "notes": "English Wikipedia lists original-credit context: Seals and Crofts."
+        "notes": "Chyi Yu page soundtrack table lists original credit as Seals, Jimmy/Crofts, Dan."
       },
       {
         "position": 2,
@@ -225,7 +246,7 @@
             "Johnny Chen"
           ]
         },
-        "notes": "English Wikipedia gives words by Chyi Yu and composition/arrangement by Johnny Chen."
+        "notes": "Chyi Yu page soundtrack table gives words by Chyi Yu and composition/arrangement by Johnny Chen."
       },
       {
         "position": 3,
@@ -247,7 +268,7 @@
             "person-suzanne-ciani"
           ]
         },
-        "notes": "English Wikipedia lists original-credit context: Suzanne Ciani."
+        "notes": "Chyi Yu page soundtrack table lists original credit as Suzanne Ciani."
       },
       {
         "position": 4,
@@ -265,10 +286,14 @@
         ],
         "duration": null,
         "credits": {
-          "lyricsBy": [],
-          "composedBy": []
+          "lyricsBy": [
+            "Amanda McBroom"
+          ],
+          "composedBy": [
+            "Amanda McBroom"
+          ]
         },
-        "notes": "English Wikipedia lists this as a Chyi Yu and Sandy Lam duet with original-credit context: Amanda McBroom."
+        "notes": "Chyi Yu page soundtrack table lists this Chyi Yu/Sandy Lam duet with Amanda McBroom original-credit context; spelling normalized against The Rose song source."
       },
       {
         "position": 5,
@@ -288,17 +313,24 @@
         ],
         "duration": null,
         "credits": {
-          "lyricsBy": [],
-          "composedBy": []
+          "lyricsBy": [
+            "Frank Myers",
+            "Gary Baker"
+          ],
+          "composedBy": [
+            "Frank Myers",
+            "Gary Baker"
+          ]
         },
-        "notes": "English Wikipedia lists this as a Chyi Yu, Sandy Lam, Teresa Carpio, and Prudence Liew collaboration."
+        "notes": "Chyi Yu page soundtrack table lists this quartet vocal appearance and original credit as Frank Myers/Gary Baker."
       }
     ],
     "mediaLinks": [],
     "sources": [
-      "source-wikipedia-en-chyi-yu"
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-the-rose-song"
     ],
-    "notes": "Moved from Releases to Appearances because this is soundtrack/film vocal material rather than a Chyi Yu release. English Wikipedia supplies the five-track table and partial credit context; catalog metadata, formats, and official platform availability remain unresolved.",
+    "notes": "Moved from Releases to Appearances because this is soundtrack/film vocal material rather than a Chyi Yu release. The soundtrack appearance title now follows the film-title + OST rule; the retained tracks are the Chyi Yu vocal appearances listed in the Chyi Yu page soundtrack table, with songwriter/composer credits populated where the checked sources support them.",
     "status": "partial"
   },
   {

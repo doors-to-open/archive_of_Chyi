@@ -68,10 +68,10 @@ const ui = {
   },
   "nav.search": { en: "Search", "zh-Hant": "搜尋", "zh-Hans": "搜索" },
   "nav.sources": { en: "Sources", "zh-Hant": "來源", "zh-Hans": "来源" },
-  "nav.releases": { en: "Releases", "zh-Hant": "發行", "zh-Hans": "发行" },
+  "nav.releases": { en: "Releases", "zh-Hant": "音樂發行", "zh-Hans": "音乐发行" },
   "nav.concerts": { en: "Concerts", "zh-Hant": "演唱會", "zh-Hans": "演唱会" },
   "nav.musicShows": { en: "Music shows", "zh-Hant": "音樂節目", "zh-Hans": "音乐节目" },
-  "nav.appearances": { en: "Appearances", "zh-Hant": "其他出現", "zh-Hans": "其他出现" },
+  "nav.appearances": { en: "Appearances", "zh-Hant": "演出與出現", "zh-Hans": "演出与出现" },
   "nav.people": { en: "People", "zh-Hant": "人物", "zh-Hans": "人物" },
   "nav.statistics": { en: "Statistics", "zh-Hant": "統計", "zh-Hans": "统计" },
   "nav.contribute": { en: "Contribute", "zh-Hant": "貢獻", "zh-Hans": "贡献" },
@@ -83,9 +83,9 @@ const ui = {
     "zh-Hans": "收录发行、演唱会、音乐节目、其他出现、人物与有来源支持的链接。"
   },
   "home.releases.text": {
-    en: "Albums, singles, compilations, collaborations, and soundtracks.",
-    "zh-Hant": "專輯、單曲、合輯、合作與原聲資料。",
-    "zh-Hans": "专辑、单曲、合辑、合作与原声资料。"
+    en: "Albums, singles, compilations, collaborations, and related releases.",
+    "zh-Hant": "專輯、單曲、合輯、合作與相關音樂發行。",
+    "zh-Hans": "专辑、单曲、合辑、合作与相关音乐发行。"
   },
   "home.concerts.text": {
     en: "Concerts, concert series, setlists, and show links.",
@@ -98,9 +98,9 @@ const ui = {
     "zh-Hans": "电视、流媒体与广播音乐节目演出。"
   },
   "home.appearances.text": {
-    en: "Talk shows, film, soundtrack, podcasts, interviews, and other appearances.",
-    "zh-Hant": "訪談、電影、原聲、Podcast、專訪與其他出現。",
-    "zh-Hans": "访谈、电影、原声、播客、专访与其他出现。"
+    en: "Talk shows, film soundtrack work, podcasts, interviews, and other appearances.",
+    "zh-Hant": "談話節目、電影原聲工作、Podcast、專訪與其他出現。",
+    "zh-Hans": "谈话节目、电影原声工作、播客、专访与其他出现。"
   },
   "home.people.text": {
     en: "Writers, composers, producers, collaborators, hosts, and other credits.",
@@ -133,9 +133,9 @@ const ui = {
     "zh-Hans": "电视、流媒体与广播音乐节目演出。"
   },
   "page.appearances.intro": {
-    en: "Talk shows, film, soundtrack work, podcasts, interviews, documentaries, and other appearances.",
-    "zh-Hant": "訪談、電影、原聲工作、Podcast、專訪、紀錄片與其他出現。",
-    "zh-Hans": "访谈、电影、原声工作、播客、专访、纪录片与其他出现。"
+    en: "Talk shows, film soundtrack work, podcasts, interviews, documentaries, and other appearances.",
+    "zh-Hant": "談話節目、電影原聲工作、Podcast、專訪、紀錄片與其他出現。",
+    "zh-Hans": "谈话节目、电影原声工作、播客、专访、纪录片与其他出现。"
   },
   "page.people.intro": {
     en: "Writers, composers, producers, collaborators, hosts, and other credits.",
@@ -152,7 +152,7 @@ const ui = {
     "zh-Hant": "目前已審核資料集的統計，包含現場歌曲紀錄與來源覆蓋。",
     "zh-Hans": "当前已审核数据集的统计，包含现场歌曲记录与来源覆盖。"
   },
-  "label.view": { en: "View", "zh-Hant": "視圖", "zh-Hans": "视图" },
+  "label.view": { en: "View", "zh-Hant": "檢視", "zh-Hans": "视图" },
   "label.sort": { en: "Sort", "zh-Hant": "排序", "zh-Hans": "排序" },
   "label.filter": { en: "Filter", "zh-Hant": "篩選", "zh-Hans": "筛选" },
   "label.category": { en: "Category", "zh-Hant": "分類", "zh-Hans": "分类" },
@@ -171,6 +171,8 @@ const ui = {
   "label.formats": { en: "Formats", "zh-Hant": "格式", "zh-Hans": "格式" },
   "label.program": { en: "Program", "zh-Hant": "節目", "zh-Hans": "节目" },
   "label.platform": { en: "Platform", "zh-Hant": "平台", "zh-Hans": "平台" },
+  "label.region": { en: "Region", "zh-Hant": "地區", "zh-Hans": "地区" },
+  "label.physicalFormats": { en: "Physical formats", "zh-Hant": "實體格式", "zh-Hans": "实体格式" },
   "label.episode": { en: "Episode", "zh-Hant": "集數", "zh-Hans": "集数" },
   "label.collaborators": { en: "Collaborators", "zh-Hant": "合作者", "zh-Hans": "合作者" },
   "label.guests": { en: "Guests", "zh-Hant": "嘉賓", "zh-Hans": "嘉宾" },
@@ -188,9 +190,9 @@ const ui = {
   "label.roles": { en: "Roles", "zh-Hant": "角色", "zh-Hans": "角色" },
   "label.aliases": { en: "Aliases", "zh-Hant": "別名", "zh-Hans": "别名" },
   "label.status": { en: "Status", "zh-Hant": "狀態", "zh-Hans": "状态" },
-  "label.availability": { en: "Availability", "zh-Hant": "可取得性", "zh-Hans": "可取得性" },
+  "label.availability": { en: "Availability", "zh-Hant": "可用來源", "zh-Hans": "可用来源" },
   "label.purchase": { en: "Purchase", "zh-Hant": "購買", "zh-Hans": "购买" },
-  "label.streaming": { en: "Streaming", "zh-Hant": "串流", "zh-Hans": "流媒体" },
+  "label.streaming": { en: "Streaming", "zh-Hant": "串流平台", "zh-Hans": "流媒体平台" },
   "label.links": { en: "Links", "zh-Hant": "連結", "zh-Hans": "链接" },
   "label.showLinks": { en: "Show links", "zh-Hant": "演出連結", "zh-Hans": "演出链接" },
   "label.watchLinks": { en: "Watch links", "zh-Hant": "觀看連結", "zh-Hans": "观看链接" },
@@ -198,7 +200,7 @@ const ui = {
   "label.clipLinks": { en: "Clip links", "zh-Hant": "片段連結", "zh-Hans": "片段链接" },
   "label.liveRecords": { en: "Live records", "zh-Hant": "現場紀錄", "zh-Hans": "现场记录" },
   "label.tracks": { en: "Tracks", "zh-Hant": "曲目", "zh-Hans": "曲目" },
-  "label.appearanceTracks": { en: "Appearance tracks", "zh-Hant": "出現曲目", "zh-Hans": "出现曲目" },
+  "label.appearanceTracks": { en: "Appearance tracks", "zh-Hant": "演出曲目", "zh-Hans": "演出曲目" },
   "label.songs": { en: "Songs", "zh-Hant": "歌曲", "zh-Hans": "歌曲" },
   "label.albums": { en: "Albums", "zh-Hant": "專輯", "zh-Hans": "专辑" },
   "label.clips": { en: "Clips", "zh-Hant": "片段", "zh-Hans": "片段" },
@@ -226,8 +228,8 @@ const ui = {
   },
   "contribution.appearanceText": {
     en: "Propose a missing interview, soundtrack, film, article, or other appearance record with sources.",
-    "zh-Hant": "提交缺少的專訪、原聲、電影、文章或其他出現紀錄，並附上來源。",
-    "zh-Hans": "提交缺少的专访、原声、电影、文章或其他出现记录，并附上来源。"
+    "zh-Hant": "提交缺少的專訪、原聲、電影、文章或其他演出紀錄，並附上來源。",
+    "zh-Hans": "提交缺少的专访、原声、电影、文章或其他演出记录，并附上来源。"
   },
   "contribution.personText": {
     en: "Propose a missing person record or credit relationship with a source.",
@@ -246,7 +248,7 @@ const ui = {
   "contribution.addTrack": { en: "Add release track", "zh-Hant": "新增發行曲目", "zh-Hans": "新增发行曲目" },
   "contribution.proposeConcert": { en: "Propose concert", "zh-Hant": "提交演唱會", "zh-Hans": "提交演唱会" },
   "contribution.proposeMusicShow": { en: "Propose music-show performance", "zh-Hant": "提交音樂節目演出", "zh-Hans": "提交音乐节目演出" },
-  "contribution.proposeAppearance": { en: "Propose appearance", "zh-Hant": "提交其他出現", "zh-Hans": "提交其他出现" },
+  "contribution.proposeAppearance": { en: "Propose appearance", "zh-Hant": "提交演出紀錄", "zh-Hans": "提交演出记录" },
   "contribution.proposePerson": { en: "Propose person/credit", "zh-Hant": "提交人物/工作人員", "zh-Hans": "提交人物/工作人员" },
   "contribution.proposeSource": { en: "Propose source", "zh-Hant": "提交來源", "zh-Hans": "提交来源" },
   "option.albums": { en: "Albums", "zh-Hant": "專輯", "zh-Hans": "专辑" },
@@ -256,13 +258,15 @@ const ui = {
   "option.mostLive": { en: "Most live", "zh-Hant": "現場最多", "zh-Hans": "现场最多" },
   "option.leastLive": { en: "Least live", "zh-Hant": "現場最少", "zh-Hans": "现场最少" },
   "option.albumOrder": { en: "Album order", "zh-Hant": "專輯順序", "zh-Hans": "专辑顺序" },
-  "option.allReleases": { en: "All releases", "zh-Hant": "全部發行", "zh-Hans": "全部发行" },
+  "option.allReleases": { en: "All releases", "zh-Hant": "全部音樂發行", "zh-Hans": "全部音乐发行" },
   "option.studioAlbums": { en: "Studio albums", "zh-Hant": "錄音室專輯", "zh-Hans": "录音室专辑" },
   "option.epSingles": { en: "EPs / singles", "zh-Hant": "EP / 單曲", "zh-Hans": "EP / 单曲" },
+  "option.ep": { en: "EP", "zh-Hant": "EP", "zh-Hans": "EP" },
+  "option.singles": { en: "Singles", "zh-Hant": "單曲", "zh-Hans": "单曲" },
   "option.compilations": { en: "Compilations", "zh-Hant": "合輯", "zh-Hans": "合辑" },
   "option.collaborations": { en: "Collaborations", "zh-Hant": "合作", "zh-Hans": "合作" },
   "option.englishCoverAlbums": { en: "English cover albums", "zh-Hant": "英文翻唱專輯", "zh-Hans": "英文翻唱专辑" },
-  "option.religiousAlbums": { en: "Religious albums", "zh-Hant": "宗教 / 唱經", "zh-Hans": "宗教 / 唱经" },
+  "option.religiousAlbums": { en: "Religious / chanting albums", "zh-Hant": "宗教 / 唱經專輯", "zh-Hans": "宗教 / 唱经专辑" },
   "option.liveAlbums": { en: "Live albums", "zh-Hant": "現場專輯", "zh-Hans": "现场专辑" },
   "option.reissues": { en: "Reissues", "zh-Hant": "再版", "zh-Hans": "再版" },
   "option.otherReleases": { en: "Other", "zh-Hant": "其他", "zh-Hans": "其他" },
@@ -295,7 +299,7 @@ const ui = {
   "empty.noClipLinks": { en: "No clip links added yet.", "zh-Hant": "尚未加入片段連結。", "zh-Hans": "尚未加入片段链接。" },
   "empty.noLinks": { en: "No links recorded.", "zh-Hant": "尚無連結紀錄。", "zh-Hans": "尚无链接记录。" },
   "empty.noMusicShows": { en: "No music-show records have been added yet.", "zh-Hant": "尚未加入音樂節目紀錄。", "zh-Hans": "尚未加入音乐节目记录。" },
-  "empty.noAppearances": { en: "No appearance records have been added yet.", "zh-Hant": "尚未加入其他出現紀錄。", "zh-Hans": "尚未加入其他出现记录。" },
+  "empty.noAppearances": { en: "No appearance records have been added yet.", "zh-Hant": "尚未加入演出與出現紀錄。", "zh-Hans": "尚未加入演出与出现记录。" },
   "value.ready": { en: "Ready", "zh-Hant": "就緒", "zh-Hans": "就绪" },
   "value.unknown": { en: "Unknown", "zh-Hant": "未知", "zh-Hans": "未知" },
   "value.notRecorded": { en: "Not recorded", "zh-Hant": "未記錄", "zh-Hans": "未记录" },
@@ -305,6 +309,7 @@ const ui = {
   "value.unmodeledSong": { en: "Unmodeled song", "zh-Hant": "未建模歌曲", "zh-Hans": "未建模歌曲" },
   "value.fanUpload": { en: "fan upload", "zh-Hant": "歌迷上傳", "zh-Hans": "歌迷上传" },
   "value.unofficial": { en: "unofficial", "zh-Hant": "非官方", "zh-Hans": "非官方" },
+  "value.official": { en: "official", "zh-Hant": "官方", "zh-Hans": "官方" },
   "count.record": { en: "record", "zh-Hant": "筆紀錄", "zh-Hans": "条记录" },
   "count.records": { en: "records", "zh-Hant": "筆紀錄", "zh-Hans": "条记录" },
   "count.album": { en: "album", "zh-Hant": "張專輯", "zh-Hans": "张专辑" },
@@ -421,6 +426,10 @@ export function performanceTitleValues(entry: SongPerformance, fallbackSong?: So
   return localizedValues(entry.titlePerformedLocalized, entry.titlePerformed || fallbackSong?.title || entry.song || "");
 }
 
+export function noteValues(note: string | null | undefined, localized?: LocalizedText): LocaleValues {
+  return localizedValues(localized, note || "");
+}
+
 export function personNameValues(person: Person): LocaleValues {
   return localizedValues(person.nameLocalized, person.displayName, person.nameOriginal);
 }
@@ -451,8 +460,8 @@ export function sourceCategoryValues(category: string): LocaleValues {
 export function releaseTypeValues(type: string): LocaleValues {
   const types: Record<string, LocaleValues> = {
     "studio-album": uiText("option.studioAlbums"),
-    single: uiText("option.epSingles"),
-    ep: uiText("option.epSingles"),
+    single: uiText("option.singles"),
+    ep: uiText("option.ep"),
     compilation: uiText("option.compilations"),
     collaboration: uiText("option.collaborations"),
     "live-album": uiText("option.liveAlbums"),
@@ -477,6 +486,21 @@ export function releaseCategoryValues(category: string): LocaleValues {
   return categories[category] || releaseTypeValues(category);
 }
 
+export function appearanceTypeValues(type: string): LocaleValues {
+  const types: Record<string, LocaleValues> = {
+    soundtrack: { en: "Soundtrack appearance", "zh-Hant": "原聲演出", "zh-Hans": "原声演出" },
+    collaboration: { en: "Collaboration", "zh-Hant": "合作演出", "zh-Hans": "合作演出" },
+    "talk-show": { en: "Talk show", "zh-Hant": "談話節目", "zh-Hans": "谈话节目" },
+    interview: { en: "Interview", "zh-Hant": "專訪", "zh-Hans": "专访" },
+    film: { en: "Film", "zh-Hant": "電影", "zh-Hans": "电影" },
+    documentary: { en: "Documentary", "zh-Hant": "紀錄片", "zh-Hans": "纪录片" },
+    podcast: { en: "Podcast", "zh-Hant": "Podcast", "zh-Hans": "播客" },
+    article: { en: "Article", "zh-Hant": "文章", "zh-Hans": "文章" },
+    other: uiText("option.otherReleases")
+  };
+  return types[type] || textValues(type);
+}
+
 export function originValues(label: string): LocaleValues {
   if (label === "Original") return uiText("origin.original");
   if (label === "Cover") return uiText("origin.cover");
@@ -497,6 +521,13 @@ export function labelValueValues(label: UiKey, value: string | LocaleValues | nu
   return locales.reduce((values, locale) => {
     values[locale] = `${labelValues[locale]}: ${resolved[locale] || uiText("value.unknown")[locale]}`;
     return values;
+  }, {} as LocaleValues);
+}
+
+export function withCountValues(values: LocaleValues, count: number): LocaleValues {
+  return locales.reduce((output, locale) => {
+    output[locale] = `${values[locale]} (${count})`;
+    return output;
   }, {} as LocaleValues);
 }
 

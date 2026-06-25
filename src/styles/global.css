@@ -682,24 +682,36 @@ details[open].record-card summary::after {
   text-transform: uppercase;
 }
 
+.availability-grid-head {
+  color: var(--muted);
+  display: grid;
+  font-size: 0.68rem;
+  font-weight: 680;
+  gap: 0.8rem;
+  grid-template-columns: minmax(8rem, 0.8fr) minmax(12rem, 1.4fr);
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
 .availability-cells {
   border-top: 1px solid var(--line);
   display: grid;
   gap: 0;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 }
 
 .availability-cell {
   border-bottom: 1px solid var(--line);
   display: grid;
-  gap: 0.55rem;
+  gap: 0.8rem;
+  grid-template-columns: minmax(8rem, 0.8fr) minmax(12rem, 1.4fr);
   min-width: 0;
-  padding: 0.85rem 1rem 0.85rem 0;
+  padding: 0.8rem 0;
 }
 
 .availability-cell strong {
   font-size: 0.82rem;
   font-weight: 620;
+  overflow-wrap: anywhere;
 }
 
 .platform-links {
@@ -717,6 +729,7 @@ details[open].record-card summary::after {
   font-weight: 620;
   gap: 0.35rem;
   min-height: 1.8rem;
+  min-width: 0;
   padding: 0.28rem 0.48rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -724,6 +737,7 @@ details[open].record-card summary::after {
 
 .platform-links a:hover {
   border-color: #00000036;
+  color: var(--accent);
 }
 
 .platform-links small {
@@ -731,6 +745,32 @@ details[open].record-card summary::after {
   font-size: 0.65rem;
   font-weight: 500;
   text-transform: none;
+}
+
+.format-checklist {
+  border-top: 1px solid var(--line-soft);
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.format-checklist h3 {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 620;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 620px) {
+  .availability-grid-head {
+    display: none;
+  }
+
+  .availability-cell {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contribution-panel p {

@@ -11,6 +11,7 @@ import {
   releasePrimaryCategory,
   releaseProducers,
   releases,
+  type Release,
   songSummaries
 } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
@@ -26,7 +27,8 @@ import {
   releaseTypeValues,
   titleValues,
   uiText,
-  valueForLocale
+  valueForLocale,
+  withCountValues
 } from "../../lib/i18n";
 
 const summaries = songSummaries();
@@ -40,6 +42,10 @@ const contributionActions = [
     href: contributionPageUrl({ kind: "track", recordType: "Track", recordPath: "/releases/" })
   }
 ];
+function releaseTagCount(tag: string) {
+  return tag ? releases.filter((release: Release) => releaseCategoryTags(release).includes(tag)).length : releases.length;
+}
+
 const releaseFilterOptions = [
   { value: "", label: uiText("option.allReleases") },
   { value: "studio", label: uiText("option.studioAlbums") },
@@ -51,7 +57,10 @@ const releaseFilterOptions = [
   { value: "live", label: uiText("option.liveAlbums") },
   { value: "reissue", label: uiText("option.reissues") },
   { value: "other", label: uiText("option.otherReleases") }
-];
+].map((option) => ({
+  ...option,
+  label: withCountValues(option.label, releaseTagCount(option.value))
+}));
 ---
 
 <BaseLayout title="Releases | All for Chyi Yu">

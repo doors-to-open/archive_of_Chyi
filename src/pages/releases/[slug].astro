@@ -24,6 +24,7 @@ import {
   i18nCountLabelAttrs,
   joinValues,
   labelValueValues,
+  noteValues,
   originValues,
   personIdValues,
   personIdsValues,
@@ -68,6 +69,10 @@ function groupedLinks(links: ArchiveLink[] | undefined) {
     groups.set(key, [...(groups.get(key) || []), link]);
   }
   return Array.from(groups.entries()).map(([region, regionLinks]) => ({ region, links: regionLinks }));
+}
+
+function platformName(link: ArchiveLink) {
+  return link.platform || link.label;
 }
 
 const primaryCategory = releasePrimaryCategory(release);
@@ -135,6 +140,10 @@ const releaseTags = releaseCategoryTags(release);
       {release.availability?.streaming?.length ? (
         <div class="availability-link-grid">
           <h3 {...i18nAttrs(uiText("label.streaming"))}>{valueForLocale(uiText("label.streaming"))}</h3>
+          <div class="availability-grid-head" aria-hidden="true">
+            <span {...i18nAttrs(uiText("label.region"))}>{valueForLocale(uiText("label.region"))}</span>
+            <span {...i18nAttrs(uiText("label.platform"))}>{valueForLocale(uiText("label.platform"))}</span>
+          </div>
           <div class="availability-cells">
             {groupedLinks(release.availability.streaming).map((group) => (
               <div class="availability-cell">
@@ -142,7 +151,10 @@ const releaseTags = releaseCategoryTags(release);
                 <div class="platform-links">
                   {group.links.map((link) => (
                     <a href={link.url} title={link.notes || link.label}>
-                      <span>{link.platform || link.label}</span>
+                      <span>{platformName(link)}</span>
+                      {link.isOfficial !== false ? (
+                        <small {...i18nAttrs(uiText("value.official"))}>{valueForLocale(uiText("value.official"))}</small>
+                      ) : null}
                       {link.isOfficial === false ? (
                         <small {...i18nAttrs(uiText("value.unofficial"))}>{valueForLocale(uiText("value.unofficial"))}</small>
                       ) : null}
@@ -152,27 +164,19 @@ const releaseTags = releaseCategoryTags(release);
               </div>
             ))}
           </div>
-          <div class="availability-row availability-row-detail">
-            {releaseFormatLabels(release).map((format) => (
-              <span class="available">{format}</span>
-            ))}
-          </div>
         </div>
       ) : (
         <>
           <p class="empty-state" {...i18nAttrs(uiText("empty.noStreaming"))}>{valueForLocale(uiText("empty.noStreaming"))}</p>
-          {releaseFormatLabels(release).length ? (
-            <div class="availability-row availability-row-detail">
-              {releaseFormatLabels(release).map((format) => (
-                <span class="available">{format}</span>
-              ))}
-            </div>
-          ) : null}
         </>
       )}
       {release.availability?.purchase?.length ? (
         <div class="availability-link-grid">
           <h3 {...i18nAttrs(uiText("label.purchase"))}>{valueForLocale(uiText("label.purchase"))}</h3>
+          <div class="availability-grid-head" aria-hidden="true">
+            <span {...i18nAttrs(uiText("label.region"))}>{valueForLocale(uiText("label.region"))}</span>
+            <span {...i18nAttrs(uiText("label.platform"))}>{valueForLocale(uiText("label.platform"))}</span>
+          </div>
           <div class="availability-cells">
             {groupedLinks(release.availability.purchase).map((group) => (
               <div class="availability-cell">
@@ -180,7 +184,10 @@ const releaseTags = releaseCategoryTags(release);
                 <div class="platform-links">
                   {group.links.map((link) => (
                     <a href={link.url} title={link.notes || link.label}>
-                      <span>{link.platform || link.label}</span>
+                      <span>{platformName(link)}</span>
+                      {link.isOfficial !== false ? (
+                        <small {...i18nAttrs(uiText("value.official"))}>{valueForLocale(uiText("value.official"))}</small>
+                      ) : null}
                       {link.isOfficial === false ? (
                         <small {...i18nAttrs(uiText("value.unofficial"))}>{valueForLocale(uiText("value.unofficial"))}</small>
                       ) : null}
@@ -194,6 +201,16 @@ const releaseTags = releaseCategoryTags(release);
       ) : (
         <p class="muted" {...i18nAttrs(uiText("empty.noPurchase"))}>{valueForLocale(uiText("empty.noPurchase"))}</p>
       )}
+      {releaseFormatLabels(release).length ? (
+        <div class="format-checklist">
+          <h3 {...i18nAttrs(uiText("label.physicalFormats"))}>{valueForLocale(uiText("label.physicalFormats"))}</h3>
+          <div class="availability-row availability-row-detail">
+            {releaseFormatLabels(release).map((format) => (
+              <span class="available">{format}</span>
+            ))}
+          </div>
+        </div>
+      ) : null}
     </section>
 
     <section class="section">
@@ -281,7 +298,11 @@ const releaseTags = releaseCategoryTags(release);
                     {valueForLocale(labelValueValues("label.duration", track.duration))}
                   </p>
                 ) : null}
-                {track.versionNote ? <p>{track.versionNote}</p> : null}
+                {track.versionNote ? (
+                  <p {...i18nAttrs(noteValues(track.versionNote, track.versionNoteLocalized))}>
+                    {valueForLocale(noteValues(track.versionNote, track.versionNoteLocalized))}
+                  </p>
+                ) : null}
 
                 {linkedConcerts.length || linkedMusicShows.length ? (
                   <div class="nested-links">
@@ -318,7 +339,9 @@ const releaseTags = releaseCategoryTags(release);
     {release.notes ? (
       <section class="section detail-panel">
         <h2 {...i18nAttrs(uiText("label.notes"))}>{valueForLocale(uiText("label.notes"))}</h2>
-        <p>{release.notes}</p>
+        <p {...i18nAttrs(noteValues(release.notes, release.notesLocalized))}>
+          {valueForLocale(noteValues(release.notes, release.notesLocalized))}
+        </p>
       </section>
     ) : null}
 

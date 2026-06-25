@@ -4,11 +4,13 @@ import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import { appearanceAvailabilityChecks, appearances, linkCreditLabel, personNames } from "../../lib/archive";
 import {
+  appearanceTypeValues,
   availabilityValues,
   countValues,
   i18nAttrs,
   joinValues,
   labelValueValues,
+  noteValues,
   personIdsValues,
   textValues,
   titleValues,
@@ -56,8 +58,8 @@ function trackNumber(track: NonNullable<typeof appearance.tracks>[number]) {
         <span {...i18nAttrs(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}>
           {valueForLocale(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.type", appearance.appearanceType))}>
-          {valueForLocale(labelValueValues("label.type", appearance.appearanceType))}
+        <span {...i18nAttrs(labelValueValues("label.type", appearanceTypeValues(appearance.appearanceType)))}>
+          {valueForLocale(labelValueValues("label.type", appearanceTypeValues(appearance.appearanceType)))}
         </span>
         <span {...i18nAttrs(labelValueValues("label.programOrWork", appearance.programOrWork || uiText("value.unknown")))}>
           {valueForLocale(labelValueValues("label.programOrWork", appearance.programOrWork || uiText("value.unknown")))}
@@ -112,7 +114,11 @@ function trackNumber(track: NonNullable<typeof appearance.tracks>[number]) {
                     </span>
                   ) : null}
                 </div>
-                {track.notes ? <p>{track.notes}</p> : null}
+                {track.notes ? (
+                  <p {...i18nAttrs(noteValues(track.notes, track.notesLocalized))}>
+                    {valueForLocale(noteValues(track.notes, track.notesLocalized))}
+                  </p>
+                ) : null}
               </article>
             );
           })}
@@ -147,7 +153,9 @@ function trackNumber(track: NonNullable<typeof appearance.tracks>[number]) {
     {appearance.notes ? (
       <section class="section detail-panel">
         <h2 {...i18nAttrs(uiText("label.notes"))}>{valueForLocale(uiText("label.notes"))}</h2>
-        <p>{appearance.notes}</p>
+        <p {...i18nAttrs(noteValues(appearance.notes, appearance.notesLocalized))}>
+          {valueForLocale(noteValues(appearance.notes, appearance.notesLocalized))}
+        </p>
       </section>
     ) : null}
 

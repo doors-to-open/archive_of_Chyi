@@ -59,6 +59,7 @@ export type Track = {
   titleOnReleaseLocalized?: LocalizedText;
   duration: string | null;
   versionNote: string | null;
+  versionNoteLocalized?: LocalizedText;
   performers?: string[];
   credits: {
     lyricsBy: string[];
@@ -79,6 +80,7 @@ export type AppearanceTrack = {
     composedBy: string[];
   };
   notes?: string | null;
+  notesLocalized?: LocalizedText;
 };
 
 export type ArchiveLink = {
@@ -114,6 +116,7 @@ export type Release = {
   credits: Record<string, string[]>;
   sources: string[];
   notes?: string;
+  notesLocalized?: LocalizedText;
   status: Status;
 };
 
@@ -183,6 +186,7 @@ export type Appearance = {
   mediaLinks: ArchiveLink[];
   sources: string[];
   notes?: string;
+  notesLocalized?: LocalizedText;
   status: Status;
 };
 
@@ -337,6 +341,18 @@ export function releaseCategoryTags(release: Release) {
     "release-the-voice-2010",
     "release-clouds-2011"
   ]);
+  const religiousReleaseIds = new Set([
+    "release-chanting-for-you-2-peace-of-mind-2004",
+    "release-chanting-for-you-1-peaceful-heart-2004",
+    "release-chanting-for-you-3-happy-journey-2004",
+    "release-buddha-heart-2004",
+    "release-thirty-seven-teachings-of-buddha-2011",
+    "release-morning-bell-gatha-cundi-mantra-2014",
+    "release-eight-auspicious-prayer-thirty-seven-practices-2015",
+    "release-kshitigarbha-praise-2017",
+    "release-ape-sounds-2020",
+    "release-chanting-for-you-trilogy"
+  ]);
   const text = [
     release.id,
     release.releaseType,
@@ -368,17 +384,12 @@ export function releaseCategoryTags(release: Release) {
     tags.add("english-cover");
   }
   if (
+    religiousReleaseIds.has(release.id) ||
     text.includes("buddha") ||
     text.includes("chanting") ||
     text.includes("cundi") ||
     text.includes("prayer") ||
-    text.includes("sutra") ||
-    text.includes("佛") ||
-    text.includes("經") ||
-    text.includes("经") ||
-    text.includes("咒") ||
-    text.includes("誦") ||
-    text.includes("诵")
+    text.includes("sutra")
   ) {
     tags.add("religious");
   }

@@ -4,9 +4,16 @@
     "slug": "chyi-yu",
     "displayName": "Chyi Yu",
     "nameOriginal": "齊豫",
-    "aliases": ["Qi Yu", "齐豫"],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-en-chyi-yu"],
+    "aliases": [
+      "Qi Yu",
+      "齐豫"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-en-chyi-yu"
+    ],
     "notes": "Primary subject of the archive.",
     "status": "partial"
   },
@@ -15,9 +22,20 @@
     "slug": "sanmao",
     "displayName": "Sanmao",
     "nameOriginal": "三毛",
-    "aliases": ["Chen Ping", "陳平", "陈平"],
-    "roles": ["lyricist", "writer"],
-    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-yue-olive-tree-album", "source-wikipedia-yue-echo-album"],
+    "aliases": [
+      "Chen Ping",
+      "陳平",
+      "陈平"
+    ],
+    "roles": [
+      "lyricist",
+      "writer"
+    ],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-yue-olive-tree-album",
+      "source-wikipedia-yue-echo-album"
+    ],
     "notes": "Writer whose lyrics and spoken text are central to several seed records.",
     "status": "partial"
   },
@@ -26,9 +44,19 @@
     "slug": "li-tai-hsiang",
     "displayName": "Li Tai-hsiang",
     "nameOriginal": "李泰祥",
-    "aliases": ["Li Taixiang"],
-    "roles": ["composer", "lyricist", "arranger"],
-    "sources": ["source-wikipedia-en-chyi-yu", "source-wikipedia-yue-olive-tree-album", "source-wikipedia-yue-echo-album"],
+    "aliases": [
+      "Li Taixiang"
+    ],
+    "roles": [
+      "composer",
+      "lyricist",
+      "arranger"
+    ],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-yue-olive-tree-album",
+      "source-wikipedia-yue-echo-album"
+    ],
     "notes": "Composer/arranger repeatedly credited in early Chyi Yu records.",
     "status": "partial"
   },
@@ -38,8 +66,12 @@
     "displayName": "Rongzi",
     "nameOriginal": "蓉子",
     "aliases": [],
-    "roles": ["lyricist"],
-    "sources": ["source-wikipedia-yue-olive-tree-album"],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [
+      "source-wikipedia-yue-olive-tree-album"
+    ],
     "notes": "Credited as lyricist for '青夢湖' in the starter release source.",
     "status": "partial"
   },
@@ -48,9 +80,17 @@
     "slug": "pan-yue-yun",
     "displayName": "Pan Yue-yun",
     "nameOriginal": "潘越雲",
-    "aliases": ["Michelle Pan", "潘越云"],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-yue-echo-album", "source-apple-music-echo"],
+    "aliases": [
+      "Michelle Pan",
+      "潘越云"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-yue-echo-album",
+      "source-apple-music-echo"
+    ],
     "notes": "Co-performer on Echo.",
     "status": "partial"
   },
@@ -59,9 +99,16 @@
     "slug": "chen-chih-yuan",
     "displayName": "Chen Chih-yuan",
     "nameOriginal": "陳志遠",
-    "aliases": ["Chen Zhiyuan"],
-    "roles": ["composer", "arranger"],
-    "sources": ["source-wikipedia-yue-echo-album"],
+    "aliases": [
+      "Chen Zhiyuan"
+    ],
+    "roles": [
+      "composer",
+      "arranger"
+    ],
+    "sources": [
+      "source-wikipedia-yue-echo-album"
+    ],
     "notes": "Credited on the Echo track listing.",
     "status": "partial"
   },
@@ -70,9 +117,18 @@
     "slug": "li-tsung-sheng",
     "displayName": "Jonathan Lee",
     "nameOriginal": "李宗盛",
-    "aliases": ["Li Tsung-sheng", "Li Zongsheng"],
-    "roles": ["composer", "lyricist", "producer"],
-    "sources": ["source-wikipedia-yue-echo-album"],
+    "aliases": [
+      "Li Tsung-sheng",
+      "Li Zongsheng"
+    ],
+    "roles": [
+      "composer",
+      "lyricist",
+      "producer"
+    ],
+    "sources": [
+      "source-wikipedia-yue-echo-album"
+    ],
     "notes": "Credited as composer on Echo.",
     "status": "partial"
   },
@@ -81,9 +137,15 @@
     "slug": "weng-hsiao-liang",
     "displayName": "Weng Hsiao-liang",
     "nameOriginal": "翁孝良",
-    "aliases": ["Weng Xiaoliang"],
-    "roles": ["composer"],
-    "sources": ["source-wikipedia-yue-echo-album"],
+    "aliases": [
+      "Weng Xiaoliang"
+    ],
+    "roles": [
+      "composer"
+    ],
+    "sources": [
+      "source-wikipedia-yue-echo-album"
+    ],
     "notes": "Credited as composer on Echo.",
     "status": "partial"
   },
@@ -92,9 +154,16 @@
     "slug": "wang-hsin-lien",
     "displayName": "Wang Hsin-lien",
     "nameOriginal": "王新蓮",
-    "aliases": ["Wang Xinlian"],
-    "roles": ["composer", "producer"],
-    "sources": ["source-wikipedia-yue-echo-album"],
+    "aliases": [
+      "Wang Xinlian"
+    ],
+    "roles": [
+      "composer",
+      "producer"
+    ],
+    "sources": [
+      "source-wikipedia-yue-echo-album"
+    ],
     "notes": "Credited as composer on Echo; also cited in source notes about the album.",
     "status": "partial"
   },
@@ -104,8 +173,13 @@
     "displayName": "Chen Yang",
     "nameOriginal": "陳揚",
     "aliases": [],
-    "roles": ["composer", "arranger"],
-    "sources": ["source-wikipedia-yue-echo-album"],
+    "roles": [
+      "composer",
+      "arranger"
+    ],
+    "sources": [
+      "source-wikipedia-yue-echo-album"
+    ],
     "notes": "Credited on the Echo track listing.",
     "status": "partial"
   },
@@ -114,9 +188,17 @@
     "slug": "lee-tai-ming",
     "displayName": "Lee Tai-ming",
     "nameOriginal": "李泰銘",
-    "aliases": ["Li Taiming"],
-    "roles": ["composer", "arranger"],
-    "sources": ["source-wikipedia-yue-echo-album", "source-wikipedia-yue-camel-bird-fish"],
+    "aliases": [
+      "Li Taiming"
+    ],
+    "roles": [
+      "composer",
+      "arranger"
+    ],
+    "sources": [
+      "source-wikipedia-yue-echo-album",
+      "source-wikipedia-yue-camel-bird-fish"
+    ],
     "notes": "Credited on Echo and Camel Bird Fish.",
     "status": "partial"
   },
@@ -125,9 +207,17 @@
     "slug": "chi-chin",
     "displayName": "Chyi Chin",
     "nameOriginal": "齊秦",
-    "aliases": ["Qi Qin", "齐秦"],
-    "roles": ["composer", "vocalist"],
-    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "aliases": [
+      "Qi Qin",
+      "齐秦"
+    ],
+    "roles": [
+      "composer",
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish"
+    ],
     "notes": "Credited as composer on Camel Bird Fish.",
     "status": "partial"
   },
@@ -136,9 +226,16 @@
     "slug": "hsu-chang-te",
     "displayName": "Hsu Chang-te",
     "nameOriginal": "許常德",
-    "aliases": ["Xu Changde", "许常德"],
-    "roles": ["lyricist"],
-    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "aliases": [
+      "Xu Changde",
+      "许常德"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish"
+    ],
     "notes": "Credited as lyricist on Camel Bird Fish.",
     "status": "partial"
   },
@@ -147,9 +244,15 @@
     "slug": "kuo-tzu",
     "displayName": "Kuo Tzu",
     "nameOriginal": "郭子",
-    "aliases": ["Guo Zi"],
-    "roles": ["composer"],
-    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "aliases": [
+      "Guo Zi"
+    ],
+    "roles": [
+      "composer"
+    ],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish"
+    ],
     "notes": "Credited as composer on Camel Bird Fish.",
     "status": "partial"
   },
@@ -158,9 +261,16 @@
     "slug": "li-ge-di",
     "displayName": "Li Ge-di",
     "nameOriginal": "李格弟",
-    "aliases": ["Xia Yu", "夏宇"],
-    "roles": ["lyricist"],
-    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "aliases": [
+      "Xia Yu",
+      "夏宇"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish"
+    ],
     "notes": "Credited as lyricist on Camel Bird Fish.",
     "status": "partial"
   },
@@ -169,9 +279,17 @@
     "slug": "wu-bai",
     "displayName": "Wu Bai",
     "nameOriginal": "吳俊霖",
-    "aliases": ["伍佰", "Wu Junlin"],
-    "roles": ["composer", "original performer"],
-    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "aliases": [
+      "伍佰",
+      "Wu Junlin"
+    ],
+    "roles": [
+      "composer",
+      "original performer"
+    ],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish"
+    ],
     "notes": "Credited by given name on Camel Bird Fish.",
     "status": "partial"
   },
@@ -180,9 +298,16 @@
     "slug": "huang-shu-chun",
     "displayName": "Huang Shu-chun",
     "nameOriginal": "黃舒駿",
-    "aliases": ["Huang Shujun"],
-    "roles": ["composer", "lyricist"],
-    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "aliases": [
+      "Huang Shujun"
+    ],
+    "roles": [
+      "composer",
+      "lyricist"
+    ],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish"
+    ],
     "notes": "Credited as writer/composer on Camel Bird Fish.",
     "status": "partial"
   },
@@ -192,8 +317,12 @@
     "displayName": "Lin Xi",
     "nameOriginal": "林夕",
     "aliases": [],
-    "roles": ["lyricist"],
-    "sources": ["source-wikipedia-yue-camel-bird-fish"],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish"
+    ],
     "notes": "Credited as lyricist on Camel Bird Fish.",
     "status": "partial"
   },
@@ -202,10 +331,22 @@
     "slug": "wu-tsing-fong",
     "displayName": "Wu Tsing-fong",
     "nameOriginal": "吳青峰",
-    "aliases": ["Wu Qing-feng", "吴青峰"],
-    "roles": ["vocalist", "guest"],
-    "sources": ["source-bilibili-grace-still-beijing-full", "source-baike-singer-2019", "source-bilibili-grace-still-chengdu-guest-wu-tsing-fong"],
-    "notes": "Guest at the 2025 Beijing concert and participant/host figure in Singer 2019.",
+    "aliases": [
+      "Wu Qing-feng",
+      "吴青峰"
+    ],
+    "roles": [
+      "vocalist",
+      "guest",
+      "collaborator"
+    ],
+    "sources": [
+      "source-bilibili-grace-still-beijing-full",
+      "source-baike-singer-2019",
+      "source-bilibili-grace-still-chengdu-guest-wu-tsing-fong",
+      "source-wikipedia-zh-wu-tsing-fong"
+    ],
+    "notes": "Guest at the 2025 Beijing concert and participant/host figure in Singer 2019. Chinese Wikipedia also lists the 2025 Chyi Yu collaboration single One Thought Between.",
     "status": "partial"
   },
   {
@@ -213,9 +354,18 @@
     "slug": "yang-nai-wen",
     "displayName": "Faith Yang",
     "nameOriginal": "楊乃文",
-    "aliases": ["Yang Naiwen", "杨乃文"],
-    "roles": ["vocalist", "original performer"],
-    "sources": ["source-bilibili-grace-still-beijing-full", "source-baike-singer-2019"],
+    "aliases": [
+      "Yang Naiwen",
+      "杨乃文"
+    ],
+    "roles": [
+      "vocalist",
+      "original performer"
+    ],
+    "sources": [
+      "source-bilibili-grace-still-beijing-full",
+      "source-baike-singer-2019"
+    ],
     "notes": "Original performer noted for '祝我幸福' in the 2025 Beijing concert source.",
     "status": "partial"
   },
@@ -224,9 +374,15 @@
     "slug": "liu-huan",
     "displayName": "Liu Huan",
     "nameOriginal": "劉歡",
-    "aliases": ["刘欢"],
-    "roles": ["vocalist"],
-    "sources": ["source-baike-singer-2019"],
+    "aliases": [
+      "刘欢"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-baike-singer-2019"
+    ],
     "notes": "Singer 2019 participant.",
     "status": "partial"
   },
@@ -235,9 +391,15 @@
     "slug": "yang-kun",
     "displayName": "Yang Kun",
     "nameOriginal": "楊坤",
-    "aliases": ["杨坤"],
-    "roles": ["vocalist"],
-    "sources": ["source-baike-singer-2019"],
+    "aliases": [
+      "杨坤"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-baike-singer-2019"
+    ],
     "notes": "Singer 2019 participant.",
     "status": "partial"
   },
@@ -246,9 +408,16 @@
     "slug": "hung-hsiao",
     "displayName": "Hong Xiao",
     "nameOriginal": "洪嘯",
-    "aliases": ["洪啸"],
-    "roles": ["director", "producer"],
-    "sources": ["source-baike-singer-2019"],
+    "aliases": [
+      "洪啸"
+    ],
+    "roles": [
+      "director",
+      "producer"
+    ],
+    "sources": [
+      "source-baike-singer-2019"
+    ],
     "notes": "Director/producer listed for Singer 2019.",
     "status": "partial"
   },
@@ -257,9 +426,16 @@
     "slug": "leung-kiu-pak",
     "displayName": "Leung Kiu-pak",
     "nameOriginal": "梁翹柏",
-    "aliases": ["梁翘柏", "Kubert Leung"],
-    "roles": ["music director"],
-    "sources": ["source-baike-singer-2019"],
+    "aliases": [
+      "梁翘柏",
+      "Kubert Leung"
+    ],
+    "roles": [
+      "music director"
+    ],
+    "sources": [
+      "source-baike-singer-2019"
+    ],
     "notes": "Music director for Singer 2019.",
     "status": "partial"
   },
@@ -268,9 +444,15 @@
     "slug": "mabel-cheung",
     "displayName": "Mabel Cheung",
     "nameOriginal": "張婉婷",
-    "aliases": ["张婉婷"],
-    "roles": ["director"],
-    "sources": ["source-user-task-0618-1"],
+    "aliases": [
+      "张婉婷"
+    ],
+    "roles": [
+      "director"
+    ],
+    "sources": [
+      "source-user-task-0618-1"
+    ],
     "notes": "Director of Eight Taels of Gold, included from the curated task note pending stronger source expansion.",
     "status": "needs-source"
   },
@@ -279,9 +461,18 @@
     "slug": "luo-dayou",
     "displayName": "Lo Ta-yu",
     "nameOriginal": "羅大佑",
-    "aliases": ["Luo Dayou", "罗大佑"],
-    "roles": ["composer", "lyricist", "vocalist"],
-    "sources": ["source-wikipedia-zh-eight-taels-of-gold-film"],
+    "aliases": [
+      "Luo Dayou",
+      "罗大佑"
+    ],
+    "roles": [
+      "composer",
+      "lyricist",
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-eight-taels-of-gold-film"
+    ],
     "notes": "Credited for Eight Taels of Gold theme song and soundtrack seed records.",
     "status": "partial"
   },
@@ -291,8 +482,12 @@
     "displayName": "Mao Buyi",
     "nameOriginal": "毛不易",
     "aliases": [],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-yue-singer-2019"],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-yue-singer-2019"
+    ],
     "notes": "Guest partner for Chyi Yu on Singer 2019.",
     "status": "partial"
   },
@@ -302,8 +497,12 @@
     "displayName": "Hu Xia",
     "nameOriginal": "胡夏",
     "aliases": [],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-yue-singer-2019"],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-yue-singer-2019"
+    ],
     "notes": "Guest partner for Chyi Yu in the Singer 2019 final.",
     "status": "partial"
   },
@@ -312,9 +511,15 @@
     "slug": "leo-ku",
     "displayName": "Leo Ku",
     "nameOriginal": "古巨基",
-    "aliases": ["Ku Kui-kei"],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "aliases": [
+      "Ku Kui-kei"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-dream-star-partner-season-1"
+    ],
     "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
     "status": "partial"
   },
@@ -323,9 +528,15 @@
     "slug": "li-wei",
     "displayName": "Li Wei",
     "nameOriginal": "李煒",
-    "aliases": ["李炜"],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "aliases": [
+      "李炜"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-dream-star-partner-season-1"
+    ],
     "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
     "status": "partial"
   },
@@ -334,9 +545,17 @@
     "slug": "huang-yun-ling",
     "displayName": "Kay Huang",
     "nameOriginal": "黃韻玲",
-    "aliases": ["Huang Yun-ling", "黄韵玲"],
-    "roles": ["vocalist", "composer"],
-    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "aliases": [
+      "Huang Yun-ling",
+      "黄韵玲"
+    ],
+    "roles": [
+      "vocalist",
+      "composer"
+    ],
+    "sources": [
+      "source-wikipedia-zh-dream-star-partner-season-1"
+    ],
     "notes": "Dream Star Partner guest collaborator in listed group performances.",
     "status": "partial"
   },
@@ -346,8 +565,12 @@
     "displayName": "Cheng Lin",
     "nameOriginal": "程琳",
     "aliases": [],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-dream-star-partner-season-1"
+    ],
     "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
     "status": "partial"
   },
@@ -356,9 +579,15 @@
     "slug": "sha-baoliang",
     "displayName": "Sha Baoliang",
     "nameOriginal": "沙寶亮",
-    "aliases": ["沙宝亮"],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "aliases": [
+      "沙宝亮"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-dream-star-partner-season-1"
+    ],
     "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
     "status": "partial"
   },
@@ -367,9 +596,15 @@
     "slug": "huang-qishan",
     "displayName": "Huang Qishan",
     "nameOriginal": "黃綺珊",
-    "aliases": ["黄绮珊"],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "aliases": [
+      "黄绮珊"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-dream-star-partner-season-1"
+    ],
     "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
     "status": "partial"
   },
@@ -378,9 +613,15 @@
     "slug": "sa-dingding",
     "displayName": "Sa Dingding",
     "nameOriginal": "薩頂頂",
-    "aliases": ["萨顶顶"],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "aliases": [
+      "萨顶顶"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-dream-star-partner-season-1"
+    ],
     "notes": "Dream Star Partner participant and Chyi Yu collaborator in listed group performances.",
     "status": "partial"
   },
@@ -390,8 +631,13 @@
     "displayName": "Chang Shilei",
     "nameOriginal": "常石磊",
     "aliases": [],
-    "roles": ["vocalist", "composer"],
-    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "roles": [
+      "vocalist",
+      "composer"
+    ],
+    "sources": [
+      "source-wikipedia-zh-dream-star-partner-season-1"
+    ],
     "notes": "Dream Star Partner participant.",
     "status": "partial"
   },
@@ -400,9 +646,15 @@
     "slug": "yang-pei-an",
     "displayName": "Yang Pei-an",
     "nameOriginal": "楊培安",
-    "aliases": ["杨培安"],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "aliases": [
+      "杨培安"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-dream-star-partner-season-1"
+    ],
     "notes": "Dream Star Partner participant.",
     "status": "partial"
   },
@@ -411,9 +663,15 @@
     "slug": "ricky-hsiao",
     "displayName": "Ricky Hsiao",
     "nameOriginal": "蕭煌奇",
-    "aliases": ["萧煌奇"],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-zh-dream-star-partner-season-1"],
+    "aliases": [
+      "萧煌奇"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-dream-star-partner-season-1"
+    ],
     "notes": "Dream Star Partner participant.",
     "status": "partial"
   },
@@ -427,9 +685,17 @@
       "zh-Hant": "羅紘武",
       "zh-Hans": "罗纮武"
     },
-    "aliases": ["罗纮武", "Luo Hongwu"],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-en-chyi-yu", "source-qq-music-you-meiyou-zhe-zhong-shuofa"],
+    "aliases": [
+      "罗纮武",
+      "Luo Hongwu"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa"
+    ],
     "notes": "Listed as the male voice on 一面湖水 in the You Meiyou Zhe Zhong Shuofa review sources.",
     "status": "partial"
   },
@@ -437,9 +703,16 @@
     "id": "person-reggie-verghese",
     "slug": "reggie-verghese",
     "displayName": "Reggie Verghese",
-    "aliases": ["Reggie Verghes"],
-    "roles": ["producer", "vocalist"],
-    "sources": ["source-wikipedia-en-chyi-yu"],
+    "aliases": [
+      "Reggie Verghes"
+    ],
+    "roles": [
+      "producer",
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-en-chyi-yu"
+    ],
     "notes": "English Wikipedia lists Reggie Verghes as producer for Stories and Reggie Verghese as duet collaborator on Joan of Arc.",
     "status": "partial"
   },
@@ -448,8 +721,12 @@
     "slug": "dave-matthews",
     "displayName": "Dave Matthews",
     "aliases": [],
-    "roles": ["vocalist"],
-    "sources": ["source-wikipedia-en-chyi-yu"],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-wikipedia-en-chyi-yu"
+    ],
     "notes": "Listed in English Wikipedia as Chyi Yu collaborator on Plaisir D’amour.",
     "status": "partial"
   },
@@ -457,9 +734,18 @@
     "id": "person-sandy-lam",
     "slug": "sandy-lam",
     "displayName": "Sandy Lam",
-    "aliases": ["Lin Yilian", "Lam Yik Lin"],
-    "roles": ["vocalist"],
-    "sources": ["source-qq-music-wonderful-world", "source-qq-music-i-swear", "source-qq-music-cest-la-vie"],
+    "aliases": [
+      "Lin Yilian",
+      "Lam Yik Lin"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-qq-music-wonderful-world",
+      "source-qq-music-i-swear",
+      "source-qq-music-cest-la-vie"
+    ],
     "notes": "QQ Music lists Sandy Lam on the Stage 6B collaboration and appearance-album candidates.",
     "status": "partial",
     "nameOriginal": "林忆莲"
@@ -468,9 +754,17 @@
     "id": "person-prudence-liew",
     "slug": "prudence-liew",
     "displayName": "Prudence Liew",
-    "aliases": ["Liu Meijun"],
-    "roles": ["vocalist"],
-    "sources": ["source-qq-music-wonderful-world", "source-qq-music-i-swear", "source-qq-music-cest-la-vie"],
+    "aliases": [
+      "Liu Meijun"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-qq-music-wonderful-world",
+      "source-qq-music-i-swear",
+      "source-qq-music-cest-la-vie"
+    ],
     "notes": "QQ Music lists Prudence Liew on the Stage 6B collaboration and appearance-album candidates.",
     "status": "partial",
     "nameOriginal": "刘美君"
@@ -479,9 +773,16 @@
     "id": "person-teresa-carpio",
     "slug": "teresa-carpio",
     "displayName": "Teresa Carpio",
-    "aliases": ["Du Lisha"],
-    "roles": ["vocalist"],
-    "sources": ["source-qq-music-i-swear", "source-qq-music-cest-la-vie"],
+    "aliases": [
+      "Du Lisha"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-qq-music-i-swear",
+      "source-qq-music-cest-la-vie"
+    ],
     "notes": "QQ Music lists Teresa Carpio on the Stage 6B collaboration candidates.",
     "status": "partial",
     "nameOriginal": "杜丽莎"
@@ -490,9 +791,15 @@
     "id": "person-leslie-cheung",
     "slug": "leslie-cheung",
     "displayName": "Leslie Cheung",
-    "aliases": ["Zhang Guorong"],
-    "roles": ["vocalist"],
-    "sources": ["source-qq-music-i-swear"],
+    "aliases": [
+      "Zhang Guorong"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-qq-music-i-swear"
+    ],
     "notes": "QQ Music lists Leslie Cheung on the I Swear album candidate.",
     "status": "partial",
     "nameOriginal": "张国荣"
@@ -502,8 +809,14 @@
     "slug": "suzanne-ciani",
     "displayName": "Suzanne Ciani",
     "aliases": [],
-    "roles": ["composer", "instrumentalist", "vocalist"],
-    "sources": ["source-qq-music-turning-collaboration"],
+    "roles": [
+      "composer",
+      "instrumentalist",
+      "vocalist"
+    ],
+    "sources": [
+      "source-qq-music-turning-collaboration"
+    ],
     "notes": "QQ Music lists Suzanne Ciani on the Turning collaboration candidate.",
     "status": "partial"
   },
@@ -512,9 +825,24 @@
     "slug": "cheng-fangyuan",
     "displayName": "Cheng Fangyuan",
     "nameOriginal": "成方圆",
-    "aliases": ["Cheng Fang-yuan", "成方圓"],
-    "roles": ["vocalist", "instrumentalist", "guest"],
-    "sources": ["source-bilibili-grace-still-shenzhen-official-rolling-stone", "source-bilibili-grace-still-shenzhen-full-shdvdjne", "source-bilibili-grace-still-shenzhen-full-woohoohey", "source-bilibili-grace-still-changsha-chaptered-shdvdjne", "source-bilibili-grace-still-changsha-full-zongteng", "source-bilibili-grace-still-changsha-full-likegem", "source-bilibili-grace-still-changsha-guest-cheng-fangyuan"],
+    "aliases": [
+      "Cheng Fang-yuan",
+      "成方圓"
+    ],
+    "roles": [
+      "vocalist",
+      "instrumentalist",
+      "guest"
+    ],
+    "sources": [
+      "source-bilibili-grace-still-shenzhen-official-rolling-stone",
+      "source-bilibili-grace-still-shenzhen-full-shdvdjne",
+      "source-bilibili-grace-still-shenzhen-full-woohoohey",
+      "source-bilibili-grace-still-changsha-chaptered-shdvdjne",
+      "source-bilibili-grace-still-changsha-full-zongteng",
+      "source-bilibili-grace-still-changsha-full-likegem",
+      "source-bilibili-grace-still-changsha-guest-cheng-fangyuan"
+    ],
     "notes": "Guest at Chyi Yu's 2026-04-18 Changsha and 2026-05-16 Shenzhen Still Grace / 風采依舊·在 concerts. Bilibili chapter metadata also identifies guest duet, guest solo, and erhu solo material across these tour stops.",
     "status": "partial"
   }

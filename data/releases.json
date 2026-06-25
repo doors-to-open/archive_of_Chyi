@@ -13,11 +13,14 @@
     "label": "新格唱片",
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "cassette",
+      "SACD",
+      "digital"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "cassette",
+        "SACD"
       ],
       "streaming": [
         {
@@ -35,9 +38,42 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
+        },
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=28273",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
-      "purchase": []
+      "purchase": [
+        {
+          "label": "Apple Music / iTunes Store (Taiwan)",
+          "platform": "itunes-store",
+          "url": "https://music.apple.com/tw/album/%3F%3F%3F/1894989610",
+          "kind": "purchase",
+          "isOfficial": true,
+          "accessRegion": "Taiwan"
+        },
+        {
+          "label": "Apple Music / iTunes Store (Hong Kong)",
+          "platform": "itunes-store",
+          "url": "https://music.apple.com/hk/album/%3F%3F%3F/1894989610",
+          "kind": "purchase",
+          "isOfficial": true,
+          "accessRegion": "Hong Kong"
+        },
+        {
+          "label": "Apple Music / iTunes Store (United States)",
+          "platform": "itunes-store",
+          "url": "https://music.apple.com/us/album/%3F%3F%3F/1894989610",
+          "kind": "purchase",
+          "isOfficial": true,
+          "accessRegion": "United States"
+        }
+      ]
     },
     "tracks": [
       {
@@ -268,9 +304,12 @@
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-yue-olive-tree-album",
       "source-apple-music-olive-tree",
-      "source-qq-music-olive-tree"
+      "source-qq-music-olive-tree",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-olive-tree-1979",
+      "source-itunes-lookup-purchase-olive-tree-1979"
     ],
-    "notes": "Producer and original physical formats remain unknown. The supplied encyclopedia page has a likely swapped title-track lyric/music field, so that credit still needs official booklet verification.",
+    "notes": "Producer and original physical formats remain unknown. The supplied encyclopedia page has a likely swapped title-track lyric/music field, so that credit still needs official booklet verification. Format audit: MusicBrainz media rows list official cassette releases, a later Digital Media release, and a later SACD; CD appears only on a pseudo-release row and is not modeled as confirmed.",
     "status": "partial",
     "titleLocalized": {
       "en": "The Olive Tree",
@@ -298,17 +337,25 @@
     "label": "拍譜唱片",
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "vinyl"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "vinyl"
       ],
       "streaming": [
         {
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/001dHtAR4DVCk8",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=28270",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -533,9 +580,11 @@
     },
     "sources": [
       "source-wikipedia-zh-blessing-album",
-      "source-qq-music-blessing"
+      "source-qq-music-blessing",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-blessing-1982"
     ],
-    "notes": "Imported from the accepted Stage 6B review. QQ provides current platform metadata and durations. Wikipedia identifies this as Chyi Yu’s second Mandarin studio album and notes a later 1998 reissue as 天使之詩; exact original day/month remains unconfirmed, so the QQ publicTime is retained as a platform date.",
+    "notes": "Imported from the accepted Stage 6B review. QQ provides current platform metadata and durations. Wikipedia identifies this as Chyi Yu’s second Mandarin studio album and notes a later 1998 reissue as 天使之詩; exact original day/month remains unconfirmed, so the QQ publicTime is retained as a platform date. Format audit: MusicBrainz lists the 1982 Taiwan release as 12-inch vinyl; the 1998 CD appears as the separate Angels Poem reissue.",
     "status": "partial"
   },
   {
@@ -557,11 +606,11 @@
     "label": "金聲唱片",
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "cassette"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "cassette"
       ],
       "streaming": [
         {
@@ -781,9 +830,10 @@
     "sources": [
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
-      "source-qq-music-you-are-all-my-memories"
+      "source-qq-music-you-are-all-my-memories",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B review. QQ confirms the platform title, order, durations, and publicTime. English Wikipedia supplies track-credit orientation but has a cleanup warning and an apparent section-year inconsistency, so credits remain partial pending booklet verification.",
+    "notes": "Imported from the accepted Stage 6B review. QQ confirms the platform title, order, durations, and publicTime. English Wikipedia supplies track-credit orientation but has a cleanup warning and an apparent section-year inconsistency, so credits remain partial pending booklet verification. Format audit: MusicBrainz lists the official Taiwan release as Cassette.",
     "status": "partial"
   },
   {
@@ -805,11 +855,13 @@
     "label": "滾石唱片",
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "cassette",
+      "CD"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "cassette",
+        "CD"
       ],
       "streaming": [
         {
@@ -1029,9 +1081,10 @@
     "sources": [
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
-      "source-qq-music-only-you"
+      "source-qq-music-only-you",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B review. QQ order is used for 歌 and 雨絲 because English Wikipedia appears to conflict with the platform order. English Wikipedia instrument notes are treated cautiously and not fully normalized.",
+    "notes": "Imported from the accepted Stage 6B review. QQ order is used for 歌 and 雨絲 because English Wikipedia appears to conflict with the platform order. English Wikipedia instrument notes are treated cautiously and not fully normalized. Format audit: MusicBrainz lists the original Taiwan cassette and a later Taiwan CD issue.",
     "status": "partial"
   },
   {
@@ -1077,7 +1130,32 @@
           "accessRegion": "China mainland"
         }
       ],
-      "purchase": []
+      "purchase": [
+        {
+          "label": "Apple Music / iTunes Store (Taiwan)",
+          "platform": "itunes-store",
+          "url": "https://music.apple.com/tw/album/%3F%3F/152297986",
+          "kind": "purchase",
+          "isOfficial": true,
+          "accessRegion": "Taiwan"
+        },
+        {
+          "label": "Apple Music / iTunes Store (Hong Kong)",
+          "platform": "itunes-store",
+          "url": "https://music.apple.com/hk/album/%3F%3F/152297986",
+          "kind": "purchase",
+          "isOfficial": true,
+          "accessRegion": "Hong Kong"
+        },
+        {
+          "label": "Apple Music / iTunes Store (United States)",
+          "platform": "itunes-store",
+          "url": "https://music.apple.com/us/album/%3F%3F/152297986",
+          "kind": "purchase",
+          "isOfficial": true,
+          "accessRegion": "United States"
+        }
+      ]
     },
     "tracks": [
       {
@@ -1317,7 +1395,8 @@
       "source-wikipedia-yue-echo-album",
       "source-apple-music-echo",
       "source-qq-music-echo",
-      "source-user-task-0618-2"
+      "source-user-task-0618-2",
+      "source-itunes-lookup-purchase-echo-1985"
     ],
     "notes": "Co-performed with Pan Yue-yun. The supplied encyclopedia source says the album was first released on cassette and vinyl, then reissued on CD the following January.",
     "status": "partial",
@@ -1332,7 +1411,9 @@
     "slug": "stories-1987",
     "title": "Stories",
     "titleLocalized": {
-      "en": "Stories"
+      "en": "Stories",
+      "zh-Hant": "Stories",
+      "zh-Hans": "Stories"
     },
     "releaseDate": "1987-10-01",
     "releaseType": "studio-album",
@@ -1354,6 +1435,14 @@
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/002PXFzT2OfnOr",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=28265",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -1542,7 +1631,8 @@
     "sources": [
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
-      "source-qq-music-stories"
+      "source-qq-music-stories",
+      "source-netease-cloud-music-stories-1987"
     ],
     "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as Chyi Yu’s English cover-album debut. QQ supplies current platform order/durations; English Wikipedia supplies original-performer/source-year orientation and producer context.",
     "status": "partial"
@@ -1566,7 +1656,7 @@
     "label": "滾石唱片",
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "digital"
     ],
     "availability": {
       "physical": [
@@ -1577,6 +1667,14 @@
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/0044p8A40NlwtI",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=28264",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -1737,9 +1835,11 @@
     "sources": [
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
-      "source-qq-music-whoever-finds-this-i-love-you"
+      "source-qq-music-whoever-finds-this-i-love-you",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
     ],
-    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as an English cover album. English Wikipedia notes MTV filming context and Chinese track titles; full writer/composer credits remain unnormalized pending stronger sources.",
+    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as an English cover album. English Wikipedia notes MTV filming context and Chinese track titles; full writer/composer credits remain unnormalized pending stronger sources. Format audit: MusicBrainz currently exposes an official Digital Media release; original physical format remains unverified.",
     "status": "partial"
   },
   {
@@ -1761,17 +1861,25 @@
     "label": "滾石唱片",
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "CD"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "CD"
       ],
       "streaming": [
         {
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/0015HYXU1OC9sz",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=28263",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -1934,9 +2042,11 @@
     "sources": [
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
-      "source-qq-music-paradise-bird"
+      "source-qq-music-paradise-bird",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-paradise-bird-1988"
     ],
-    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as an English cover album. Reggie Verghese is represented as producer and Joan Of Arc duet collaborator, not as album-level main artist.",
+    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as an English cover album. Reggie Verghese is represented as producer and Joan Of Arc duet collaborator, not as album-level main artist. Format audit: MusicBrainz lists the official Taiwan release as CD.",
     "status": "partial"
   },
   {
@@ -1959,17 +2069,25 @@
     "label": "滾石唱片",
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "cassette"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "cassette"
       ],
       "streaming": [
         {
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/000KBpK92BWC1n",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=28261",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -2235,9 +2353,11 @@
     "sources": [
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
-      "source-qq-music-you-meiyou-zhe-zhong-shuofa"
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-you-meiyou-zhe-zhong-shuofa-1988"
     ],
-    "notes": "Imported from the accepted Stage 6B review with gap note. QQ returns positions 1-10 and 12, apparently omitting/hiding position 11, while English Wikipedia lists 窗外有藍天 / A Room With a View as position 11. Luo Hong-wu is represented only as the track performer on 一面湖水.",
+    "notes": "Imported from the accepted Stage 6B review with gap note. QQ returns positions 1-10 and 12, apparently omitting/hiding position 11, while English Wikipedia lists 窗外有藍天 / A Room With a View as position 11. Luo Hong-wu is represented only as the track performer on 一面湖水. Format audit: MusicBrainz lists the official China release as Cassette.",
     "status": "partial"
   },
   {
@@ -2245,7 +2365,9 @@
     "slug": "where-have-all-the-flowers-gone-1990",
     "title": "Where Have All the Flowers Gone",
     "titleLocalized": {
-      "en": "Where Have All the Flowers Gone"
+      "en": "Where Have All the Flowers Gone",
+      "zh-Hant": "Where Have All the Flowers Gone",
+      "zh-Hans": "Where Have All the Flowers Gone"
     },
     "releaseDate": "1990-04-01",
     "releaseType": "studio-album",
@@ -2256,11 +2378,11 @@
     "label": "滾石唱片",
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "CD"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "CD"
       ],
       "streaming": [
         {
@@ -2438,9 +2560,10 @@
     "sources": [
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
-      "source-qq-music-where-have-all-the-flowers-gone"
+      "source-qq-music-where-have-all-the-flowers-gone",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as an English cover album. Writer/source details are kept in track notes rather than normalized person credits.",
+    "notes": "Imported from the accepted Stage 6B partial review. Modeled as a studio album with notes identifying it as an English cover album. Writer/source details are kept in track notes rather than normalized person credits. Format audit: MusicBrainz lists the official China release as CD.",
     "status": "partial"
   },
   {
@@ -2689,6 +2812,7 @@
     "title": "Dare to Love (1978-1990)",
     "titleLocalized": {
       "en": "Dare to Love (1978-1990)",
+      "zh-Hant": "中文個人聲音自傳 敢愛 (1978-1990)",
       "zh-Hans": "中文个人声音自传 敢爱 (1978-1990)"
     },
     "titleOriginal": "中文个人声音自传 敢爱 (1978-1990)",
@@ -2701,11 +2825,11 @@
     "label": null,
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "CD"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "CD"
       ],
       "streaming": [
         {
@@ -2900,9 +3024,10 @@
     },
     "sources": [
       "source-qq-music-dare-to-love",
-      "source-user-task-0623-1"
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B review. Modeled as a Chinese-language compilation. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are not imported because the crawled QQ album API did not expose them.",
+    "notes": "Imported from the accepted Stage 6B review. Modeled as a Chinese-language compilation. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are not imported because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists the official Taiwan release as CD.",
     "status": "partial"
   },
   {
@@ -2911,7 +3036,8 @@
     "title": "Dare to Dream (1978-1990)",
     "titleLocalized": {
       "en": "Dare to Dream (1978-1990)",
-      "zh-Hans": "英文个人声音自传 敢梦 (1978-1990)"
+      "zh-Hant": "Dare to Dream (1978-1990)",
+      "zh-Hans": "Dare to Dream (1978-1990)"
     },
     "titleOriginal": "英文个人声音自传 敢梦 (1978-1990)",
     "releaseDate": "1994-05-01",
@@ -2923,7 +3049,7 @@
     "label": null,
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "digital"
     ],
     "availability": {
       "physical": [
@@ -3122,9 +3248,10 @@
     },
     "sources": [
       "source-qq-music-dare-to-dream",
-      "source-user-task-0623-1"
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B review. Modeled as an English-language compilation and preserves QQ Music English track titles as the release titles. Writer/composer credits are left blank pending a booklet or primary credit source.",
+    "notes": "Imported from the accepted Stage 6B review. Modeled as an English-language compilation and preserves QQ Music English track titles as the release titles. Writer/composer credits are left blank pending a booklet or primary credit source. Format audit: MusicBrainz currently exposes an official Digital Media release; original physical format remains unverified.",
     "status": "partial"
   },
   {
@@ -3132,7 +3259,9 @@
     "slug": "chyis-tears-1996",
     "title": "CHYI'S TEARS",
     "titleLocalized": {
-      "en": "CHYI'S TEARS"
+      "en": "CHYI'S TEARS",
+      "zh-Hant": "CHYI'S TEARS",
+      "zh-Hans": "CHYI'S TEARS"
     },
     "releaseDate": "1996-01-01",
     "releaseType": "studio-album",
@@ -3350,7 +3479,9 @@
     "slug": "i-swear-1996",
     "title": "I Swear",
     "titleLocalized": {
-      "en": "I Swear"
+      "en": "I Swear",
+      "zh-Hant": "I Swear",
+      "zh-Hans": "I Swear"
     },
     "releaseDate": "1996-02-14",
     "releaseType": "collaboration",
@@ -3552,7 +3683,9 @@
     "slug": "wonderful-world-1997",
     "title": "Wonderful World",
     "titleLocalized": {
-      "en": "Wonderful World"
+      "en": "Wonderful World",
+      "zh-Hant": "Wonderful World",
+      "zh-Hans": "Wonderful World"
     },
     "releaseDate": "1997-01-31",
     "releaseType": "collaboration",
@@ -3764,11 +3897,11 @@
     "label": "滾石唱片",
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "CD"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "CD"
       ],
       "streaming": [
         {
@@ -3788,7 +3921,32 @@
           "accessRegion": "China mainland"
         }
       ],
-      "purchase": []
+      "purchase": [
+        {
+          "label": "Apple Music / iTunes Store (Taiwan)",
+          "platform": "itunes-store",
+          "url": "https://music.apple.com/tw/album/%3F%3F%3F%3F%3F%3F%3F/161876832",
+          "kind": "purchase",
+          "isOfficial": true,
+          "accessRegion": "Taiwan"
+        },
+        {
+          "label": "Apple Music / iTunes Store (Hong Kong)",
+          "platform": "itunes-store",
+          "url": "https://music.apple.com/hk/album/%3F%3F%3F%3F%3F%3F%3F/161876832",
+          "kind": "purchase",
+          "isOfficial": true,
+          "accessRegion": "Hong Kong"
+        },
+        {
+          "label": "Apple Music / iTunes Store (United States)",
+          "platform": "itunes-store",
+          "url": "https://music.apple.com/us/album/%3F%3F%3F%3F%3F%3F%3F/161876832",
+          "kind": "purchase",
+          "isOfficial": true,
+          "accessRegion": "United States"
+        }
+      ]
     },
     "tracks": [
       {
@@ -3804,6 +3962,11 @@
           "composedBy": [
             "person-chi-chin"
           ]
+        },
+        "titleOnReleaseLocalized": {
+          "en": "Bird and Fish",
+          "zh-Hant": "飛鳥與魚",
+          "zh-Hans": "飞鸟与鱼"
         }
       },
       {
@@ -3820,6 +3983,11 @@
           "composedBy": [
             "person-kuo-tzu"
           ]
+        },
+        "titleOnReleaseLocalized": {
+          "en": "Awakening (For Lin Juemin)",
+          "zh-Hant": "覺 (遙寄林覺民)",
+          "zh-Hans": "觉 (遥寄林觉民)"
         }
       },
       {
@@ -3835,6 +4003,11 @@
           "composedBy": [
             "person-chi-chin"
           ]
+        },
+        "titleOnReleaseLocalized": {
+          "en": "Is There",
+          "zh-Hant": "有沒有",
+          "zh-Hans": "有没有"
         }
       },
       {
@@ -3850,6 +4023,11 @@
           "composedBy": [
             "person-li-tai-hsiang"
           ]
+        },
+        "titleOnReleaseLocalized": {
+          "en": "Since You Asked",
+          "zh-Hant": "既然你問起",
+          "zh-Hans": "既然你问起"
         }
       },
       {
@@ -3865,6 +4043,11 @@
           "composedBy": [
             "person-wu-bai"
           ]
+        },
+        "titleOnReleaseLocalized": {
+          "en": "Women and Children I",
+          "zh-Hant": "女人與小孩 I",
+          "zh-Hans": "女人与小孩 I"
         }
       },
       {
@@ -3880,6 +4063,11 @@
           "composedBy": [
             "person-huang-shu-chun"
           ]
+        },
+        "titleOnReleaseLocalized": {
+          "en": "Topic",
+          "zh-Hant": "話題",
+          "zh-Hans": "话题"
         }
       },
       {
@@ -3895,6 +4083,11 @@
           "composedBy": [
             "person-kuo-tzu"
           ]
+        },
+        "titleOnReleaseLocalized": {
+          "en": "The Crying Camel",
+          "zh-Hant": "哭泣的駱駝",
+          "zh-Hans": "哭泣的骆驼"
         }
       },
       {
@@ -3908,6 +4101,11 @@
             "person-chyi-yu"
           ],
           "composedBy": []
+        },
+        "titleOnReleaseLocalized": {
+          "en": "Happiness",
+          "zh-Hant": "幸福",
+          "zh-Hans": "幸福"
         }
       },
       {
@@ -3921,6 +4119,11 @@
             "person-lin-xi"
           ],
           "composedBy": []
+        },
+        "titleOnReleaseLocalized": {
+          "en": "Languid",
+          "zh-Hant": "懶洋洋",
+          "zh-Hans": "懒洋洋"
         }
       },
       {
@@ -3936,6 +4139,11 @@
           "composedBy": [
             "person-lee-tai-ming"
           ]
+        },
+        "titleOnReleaseLocalized": {
+          "en": "Forty Unrelated Years",
+          "zh-Hant": "四十個無親無故的年頭",
+          "zh-Hans": "四十个无亲无故的年头"
         }
       },
       {
@@ -3951,6 +4159,11 @@
           "composedBy": [
             "person-li-tai-hsiang"
           ]
+        },
+        "titleOnReleaseLocalized": {
+          "en": "Sighing Bottle",
+          "zh-Hant": "嘆息瓶",
+          "zh-Hans": "叹息瓶"
         }
       },
       {
@@ -3966,6 +4179,11 @@
           "composedBy": [
             "person-wu-bai"
           ]
+        },
+        "titleOnReleaseLocalized": {
+          "en": "Women and Children II",
+          "zh-Hant": "女人與小孩 II",
+          "zh-Hans": "女人与小孩 II"
         }
       }
     ],
@@ -3981,10 +4199,17 @@
     "sources": [
       "source-wikipedia-yue-camel-bird-fish",
       "source-apple-music-camel-bird-fish",
-      "source-qq-music-camel-bird-fish"
+      "source-qq-music-camel-bird-fish",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-itunes-lookup-purchase-camel-bird-fish-1997"
     ],
-    "notes": "Producer and physical-format details remain unknown. Apple Music and QQ Music confirm current streaming availability.",
-    "status": "partial"
+    "notes": "Producer and physical-format details remain unknown. Apple Music and QQ Music confirm current streaming availability. Format audit: MusicBrainz lists the official Taiwan release as a two-disc CD set.",
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Camel Bird Fish",
+      "zh-Hant": "駱駝‧飛鳥‧魚",
+      "zh-Hans": "骆驼‧飞鸟‧鱼"
+    }
   },
   {
     "id": "release-angels-poem-1998",
@@ -3992,6 +4217,7 @@
     "title": "Angels' Poem",
     "titleLocalized": {
       "en": "Angels' Poem",
+      "zh-Hant": "天使之詩",
       "zh-Hans": "天使之诗"
     },
     "titleOriginal": "天使之诗",
@@ -4004,11 +4230,11 @@
     "label": null,
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "CD"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "CD"
       ],
       "streaming": [
         {
@@ -4222,9 +4448,10 @@
     "sources": [
       "source-qq-music-angels-poem",
       "source-wikipedia-zh-blessing-album",
-      "source-user-task-0623-1"
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B review. Modeled as a 1998 reissue of Blessing because the task note flagged the matching track list and the existing Blessing review source identifies it as a later reissue. QQ supplies the platform date, order, and durations.",
+    "notes": "Imported from the accepted Stage 6B review. Modeled as a 1998 reissue of Blessing because the task note flagged the matching track list and the existing Blessing review source identifies it as a later reissue. QQ supplies the platform date, order, and durations. Format audit: MusicBrainz lists Angels Poem / Poems of the Angel as a 1998 Taiwan CD reissue.",
     "status": "partial"
   },
   {
@@ -4232,7 +4459,9 @@
     "slug": "cest-la-vie-1999",
     "title": "C'est La Vie",
     "titleLocalized": {
-      "en": "C'est La Vie"
+      "en": "C'est La Vie",
+      "zh-Hant": "C'est La Vie",
+      "zh-Hans": "C'est La Vie"
     },
     "releaseDate": "1999-11-01",
     "releaseType": "studio-album",
@@ -4243,11 +4472,11 @@
     "label": null,
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "CD"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "CD"
       ],
       "streaming": [
         {
@@ -4502,9 +4731,10 @@
     },
     "sources": [
       "source-qq-music-cest-la-vie",
-      "source-user-task-0623-1"
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B review. Modeled as a Chyi Yu English-cover studio album with several collaboration tracks; QQ Music supplies current platform order, durations, and singer lists. Original writer/composer credits remain blank pending booklet or primary-credit verification.",
+    "notes": "Imported from the accepted Stage 6B review. Modeled as a Chyi Yu English-cover studio album with several collaboration tracks; QQ Music supplies current platform order, durations, and singer lists. Original writer/composer credits remain blank pending booklet or primary-credit verification. Format audit: MusicBrainz lists the official Taiwan release as a two-disc CD set.",
     "status": "partial"
   },
   {
@@ -5240,7 +5470,12 @@
       "source-user-task-0618-2"
     ],
     "notes": "Modeled separately from the 2002 Hong Kong concert event. The local QQ Music screenshot confirms the 2003-04-01 live album has 37 listed tracks across three discs. Song identity and cover/original credits remain partial where no internal song record exists.",
-    "status": "partial"
+    "status": "partial",
+    "titleLocalized": {
+      "en": "The Unheard Of Chyi",
+      "zh-Hant": "The Unheard Of Chyi",
+      "zh-Hans": "The Unheard Of Chyi"
+    }
   },
   {
     "id": "release-chanting-for-you-2-peace-of-mind-2004",
@@ -5248,6 +5483,7 @@
     "title": "Chanting for You, Vol. 2: Peace of Mind - Discovering Courage",
     "titleLocalized": {
       "en": "Chanting for You, Vol. 2: Peace of Mind - Discovering Courage",
+      "zh-Hant": "唱經給你聽之二 安心-發現了勇氣",
       "zh-Hans": "唱经给你听之二 安心-发现了勇气"
     },
     "titleOriginal": "唱经给你听之二 安心-发现了勇气",
@@ -5260,11 +5496,11 @@
     "label": null,
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "CD"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "CD"
       ],
       "streaming": [
         {
@@ -5333,9 +5569,10 @@
     },
     "sources": [
       "source-qq-music-chanting-for-you-2-peace-of-mind",
-      "source-user-task-0623-2"
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them.",
+    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists the official Taiwan release as CD.",
     "status": "partial"
   },
   {
@@ -5344,6 +5581,7 @@
     "title": "Chanting for You, Vol. 1: Peaceful Heart - Therefore More Beautiful",
     "titleLocalized": {
       "en": "Chanting for You, Vol. 1: Peaceful Heart - Therefore More Beautiful",
+      "zh-Hant": "唱經給你聽之一 順心-因此更美麗",
       "zh-Hans": "唱经给你听之一 顺心-因此更美丽"
     },
     "titleOriginal": "唱经给你听之一 顺心-因此更美丽",
@@ -5356,11 +5594,11 @@
     "label": null,
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "CD"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "CD"
       ],
       "streaming": [
         {
@@ -5429,9 +5667,10 @@
     },
     "sources": [
       "source-qq-music-chanting-for-you-1-peaceful-heart",
-      "source-user-task-0623-2"
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them.",
+    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists the official Taiwan release as CD.",
     "status": "partial"
   },
   {
@@ -5440,6 +5679,7 @@
     "title": "Chanting for You, Vol. 3: Happy Journey - Therefore Becoming Happy",
     "titleLocalized": {
       "en": "Chanting for You, Vol. 3: Happy Journey - Therefore Becoming Happy",
+      "zh-Hant": "唱經給你聽之三 快樂行-所以變快樂",
       "zh-Hans": "唱经给你听之三 快乐行-所以变快乐"
     },
     "titleOriginal": "唱经给你听之三 快乐行-所以变快乐",
@@ -5452,11 +5692,12 @@
     "label": null,
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "CD",
+      "digital"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "CD"
       ],
       "streaming": [
         {
@@ -5595,9 +5836,10 @@
     },
     "sources": [
       "source-qq-music-chanting-for-you-3-happy-journey",
-      "source-user-task-0623-2"
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release with several short-version tracks from the same series. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them.",
+    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release with several short-version tracks from the same series. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists official Taiwan CD editions and an official Digital Media edition.",
     "status": "partial"
   },
   {
@@ -5606,6 +5848,7 @@
     "title": "Buddha Heart",
     "titleLocalized": {
       "en": "Buddha Heart",
+      "zh-Hant": "佛心",
       "zh-Hans": "佛心"
     },
     "titleOriginal": "佛心",
@@ -5629,6 +5872,14 @@
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/002sng513UxoZf",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=28224",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -5719,7 +5970,8 @@
     },
     "sources": [
       "source-qq-music-buddha-heart",
-      "source-user-task-0623-2"
+      "source-user-task-0623-2",
+      "source-netease-cloud-music-buddha-heart-2004"
     ],
     "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them.",
     "status": "partial"
@@ -5729,7 +5981,9 @@
     "slug": "the-voice-2010",
     "title": "The Voice",
     "titleLocalized": {
-      "en": "The Voice"
+      "en": "The Voice",
+      "zh-Hant": "The Voice",
+      "zh-Hans": "The Voice"
     },
     "releaseDate": "2010-03-15",
     "releaseType": "studio-album",
@@ -5740,11 +5994,11 @@
     "label": null,
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "CD"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "CD"
       ],
       "streaming": [
         {
@@ -5981,9 +6235,10 @@
     "sources": [
       "source-qq-music-the-voice",
       "source-wikipedia-en-chyi-yu",
-      "source-user-task-0623-2"
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as an English/French/Latin-language cover and sacred-song studio album. QQ supplies current platform titles, durations, and publicTime, while English Wikipedia fills the missing Amazing Grace track and supplies lyric/music credit orientation. The QQ Music API skips position 3 and then runs through 11 for 10 tracks; restored position 3 remains pending platform/booklet confirmation. Track credits remain partial pending a booklet or primary-credit source.",
+    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as an English/French/Latin-language cover and sacred-song studio album. QQ supplies current platform titles, durations, and publicTime, while English Wikipedia fills the missing Amazing Grace track and supplies lyric/music credit orientation. The QQ Music API skips position 3 and then runs through 11 for 10 tracks; restored position 3 remains pending platform/booklet confirmation. Track credits remain partial pending a booklet or primary-credit source. Format audit: MusicBrainz lists the official Taiwan release as CD.",
     "status": "partial"
   },
   {
@@ -6049,11 +6304,11 @@
     "label": null,
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "CD"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "CD"
       ],
       "streaming": [
         {
@@ -6261,9 +6516,10 @@
     "sources": [
       "source-qq-music-clouds",
       "source-wikipedia-en-chyi-yu",
-      "source-user-task-0623-2"
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as an English-language sacred/holiday cover album. QQ supplies current platform titles, durations, and publicTime, while English Wikipedia identifies the album as Over the Cloud / 雲端, fills the missing I Saw The Light track, and supplies lyric/music credit orientation. The QQ Music API returns positions 2-10 for 9 tracks; restored position 1 remains pending platform/booklet confirmation. Track credits remain partial pending a booklet or primary-credit source.",
+    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as an English-language sacred/holiday cover album. QQ supplies current platform titles, durations, and publicTime, while English Wikipedia identifies the album as Over the Cloud / 雲端, fills the missing I Saw The Light track, and supplies lyric/music credit orientation. The QQ Music API returns positions 2-10 for 9 tracks; restored position 1 remains pending platform/booklet confirmation. Track credits remain partial pending a booklet or primary-credit source. Format audit: MusicBrainz lists the official Taiwan release as CD.",
     "status": "partial"
   },
   {
@@ -6272,6 +6528,7 @@
     "title": "Morning Bell Gatha / Cundi Mantra",
     "titleLocalized": {
       "en": "Morning Bell Gatha / Cundi Mantra",
+      "zh-Hant": "叩鐘偈 準提神咒",
       "zh-Hans": "叩钟偈 准提神咒"
     },
     "titleOriginal": "叩钟偈 准提神咒",
@@ -6368,6 +6625,7 @@
     "title": "Eight Auspicious Prayer / Thirty-Seven Practices of Bodhisattvas",
     "titleLocalized": {
       "en": "Eight Auspicious Prayer / Thirty-Seven Practices of Bodhisattvas",
+      "zh-Hant": "八聖吉祥祈請文 / 佛子行 三十七誦",
       "zh-Hans": "八圣吉祥祈请文 / 佛子行 三十七诵"
     },
     "titleOriginal": "八圣吉祥祈请文 / 佛子行 三十七诵",
@@ -6464,6 +6722,7 @@
     "title": "Kshitigarbha Praise",
     "titleLocalized": {
       "en": "Kshitigarbha Praise",
+      "zh-Hant": "地藏讚",
       "zh-Hans": "地藏赞"
     },
     "titleOriginal": "地藏赞",
@@ -6487,6 +6746,14 @@
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/001dszrS1pURh7",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=35589535",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -6605,7 +6872,8 @@
     },
     "sources": [
       "source-qq-music-kshitigarbha-praise",
-      "source-user-task-0623-2"
+      "source-user-task-0623-2",
+      "source-netease-cloud-music-kshitigarbha-praise-2017"
     ],
     "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious compilation because the task note flagged it as a compilation lead and QQ track titles overlap the 2014 and 2015 religious releases. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them.",
     "status": "partial"
@@ -6616,6 +6884,7 @@
     "title": "Ape Sounds",
     "titleLocalized": {
       "en": "Ape Sounds",
+      "zh-Hant": "猿聲猿音",
       "zh-Hans": "猿声猿音"
     },
     "titleOriginal": "猿声猿音",
@@ -6628,17 +6897,23 @@
     "label": null,
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "digital"
     ],
     "availability": {
-      "physical": [
-        "unknown"
-      ],
+      "physical": [],
       "streaming": [
         {
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/0011j7lw42q4Bd",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=93959102",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -6743,9 +7018,11 @@
     },
     "sources": [
       "source-qq-music-ape-sounds",
-      "source-user-task-0623-2"
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-ape-sounds-2020"
     ],
-    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them.",
+    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists the official release as Digital Media.",
     "status": "partial"
   },
   {
@@ -6772,21 +7049,52 @@
     ],
     "availability": {
       "physical": [],
-      "streaming": [],
+      "streaming": [
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=286440976",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
       "purchase": []
     },
     "tracks": [
       {
         "position": 1,
-        "song": null,
-        "titleOnRelease": "一念之間",
+        "song": "song-one-thought-between-in-water",
+        "titleOnRelease": "一念之間 - 在水中",
         "titleOnReleaseLocalized": {
-          "en": "One Thought Between",
-          "zh-Hant": "一念之間",
-          "zh-Hans": "一念之间"
+          "en": "One Thought Between - In Water",
+          "zh-Hant": "一念之間 - 在水中",
+          "zh-Hans": "一念之间 - 在水中"
         },
         "duration": null,
-        "versionNote": "Wu Tsing-fong EP/single noted by Chinese Wikipedia and the 2025 concert-source trail as a Chyi Yu lyric/co-vocal collaboration. QQ Music public search did not expose a matching official album/song record on 2026-06-25.",
+        "versionNote": "One of the two versions named by Wu Tsing-fong and Chyi Yu source rows. Kept as a version track inside the digital single; duration and composer remain unresolved.",
+        "performers": [
+          "person-wu-tsing-fong",
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [
+            "person-chyi-yu"
+          ],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": "song-one-thought-between-in-air",
+        "titleOnRelease": "一念之間 - 在空中",
+        "titleOnReleaseLocalized": {
+          "en": "One Thought Between - In Air",
+          "zh-Hant": "一念之間 - 在空中",
+          "zh-Hans": "一念之间 - 在空中"
+        },
+        "duration": null,
+        "versionNote": "One of the two versions named by Wu Tsing-fong and Chyi Yu source rows. Kept as a version track inside the digital single; duration and composer remain unresolved.",
         "performers": [
           "person-wu-tsing-fong",
           "person-chyi-yu"
@@ -6814,9 +7122,751 @@
     },
     "sources": [
       "source-wikipedia-zh-chyi-yu",
-      "source-bilibili-grace-still-chengdu-guest-wu-tsing-fong"
+      "source-bilibili-grace-still-chengdu-guest-wu-tsing-fong",
+      "source-netease-cloud-music-one-thought-between-2025",
+      "source-wikipedia-zh-wu-tsing-fong"
     ],
-    "notes": "Added from the release wrap-up audit because the maintainer flagged Wu Tsing-fong's 2025 EP/single and Chinese Wikipedia lists a 2025-09-12 release. The archive records this as partial until an official platform page is found; QQ Music public search queries for 一念之间/一念之間 with Wu Tsing-fong and Chyi Yu returned no direct matches on 2026-06-25.",
+    "notes": "Updated during the release wrap-up audit as the Wu Tsing-fong / Chyi Yu 2025 collaboration single. Chinese Wikipedia pages for both artists confirm the 2025-09-12 collaboration and the two versions; Wu Tsing-fong's page confirms the lyric credit to Chyi Yu. NetEase Cloud Music supplies an official China-mainland album page, with its platform publish date returned as 2025-09-11. Composer and duration fields remain unresolved.",
     "status": "partial"
+  },
+  {
+    "id": "release-ming-tian-hui-geng-hao-1985",
+    "slug": "ming-tian-hui-geng-hao-1985",
+    "title": "Tomorrow Will Be Better",
+    "titleLocalized": {
+      "en": "Tomorrow Will Be Better",
+      "zh-Hant": "明天會更好",
+      "zh-Hans": "明天会更好"
+    },
+    "titleOriginal": "明天會更好",
+    "releaseType": "collaboration",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "digital"
+    ],
+    "availability": {
+      "physical": [],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/003nsRyO0lXC8F",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "Tomorrow Will Be Better",
+        "titleOnReleaseLocalized": {
+          "en": "Tomorrow Will Be Better",
+          "zh-Hant": "明天會更好",
+          "zh-Hans": "明天会更好"
+        },
+        "duration": null,
+        "versionNote": "Collaborative charity single; only Chyi Yu participation is modeled here for now.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-ming-tian-hui-geng-hao",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "notes": "Added during release coverage pass. MusicBrainz lists this as a Chyi Yu-related single release group; QQ Music exposes the collaborative charity single and names 齐豫 among the performers. Full edition metadata and format remain pending. Format audit: MusicBrainz lists the available release row as Digital Media.",
+    "status": "partial"
+  },
+  {
+    "id": "release-unforgettable-stories-of-chyi",
+    "slug": "unforgettable-stories-of-chyi",
+    "title": "The Unforgettable Stories of CHYI",
+    "titleLocalized": {
+      "en": "The Unforgettable Stories of CHYI",
+      "zh-Hant": "The Unforgettable Stories of CHYI",
+      "zh-Hans": "The Unforgettable Stories of CHYI"
+    },
+    "titleOriginal": null,
+    "releaseType": "compilation",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "CD"
+    ],
+    "availability": {
+      "physical": [
+        "CD"
+      ],
+      "streaming": [],
+      "purchase": []
+    },
+    "tracks": [],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "notes": "Added as a coverage placeholder because MusicBrainz lists this Chyi Yu album/release group without a first-release date. Needs independent platform or catalog confirmation before track-level import. Format audit: MusicBrainz lists a promotional China CD release.",
+    "status": "partial"
+  },
+  {
+    "id": "release-rolling-stone-24k-gold-collection-chyi-yu",
+    "slug": "rolling-stone-24k-gold-collection-chyi-yu",
+    "title": "Rolling Stone 24K Gold Collection: Chyi Yu",
+    "titleLocalized": {
+      "en": "Rolling Stone 24K Gold Collection: Chyi Yu",
+      "zh-Hant": "滾石珍藏版金碟系列·齊豫24K黃金精選",
+      "zh-Hans": "滚石珍藏版金碟系列·齐豫24K黄金精选"
+    },
+    "titleOriginal": "滚石珍藏版金金碟系列·齐豫24K黄金精选",
+    "releaseType": "compilation",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "CD"
+    ],
+    "availability": {
+      "physical": [
+        "CD"
+      ],
+      "streaming": [],
+      "purchase": []
+    },
+    "tracks": [],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "notes": "Added as a coverage placeholder from MusicBrainz. No current official streaming or purchase page was found in the point-1 check; full edition metadata remains pending. Format audit: MusicBrainz lists the release as CD.",
+    "status": "partial"
+  },
+  {
+    "id": "release-chanting-for-you-trilogy",
+    "slug": "chanting-for-you-trilogy",
+    "title": "Chanting for You: Peaceful Heart, Peace of Mind, Happy Journey Trilogy",
+    "titleLocalized": {
+      "en": "Chanting for You: Peaceful Heart, Peace of Mind, Happy Journey Trilogy",
+      "zh-Hant": "唱經給你聽：順心、安心、快樂行三部曲",
+      "zh-Hans": "唱经给你听-顺心、安心、快乐行三部曲"
+    },
+    "titleOriginal": "唱經給你聽：順心、安心、快樂行三部曲",
+    "releaseType": "compilation",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "digital"
+    ],
+    "availability": {
+      "physical": [],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/0028EWRB3rOxLB",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=142531526",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-trilogy",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-chanting-for-you-trilogy"
+    ],
+    "notes": "Added during release coverage pass as the combined trilogy release in addition to the separately modeled 2004 volumes. QQ Music exposes albumMID 0028EWRB3rOxLB; full track and format reconciliation is deferred to the format/platform passes. Format audit: MusicBrainz lists the combined trilogy release as Digital Media.",
+    "status": "partial"
+  },
+  {
+    "id": "release-reunion-chyi-yu-folk-best-1998",
+    "slug": "reunion-chyi-yu-folk-best-1998",
+    "title": "Reunion: Chyi Yu Folk Best Selection",
+    "titleLocalized": {
+      "en": "Reunion: Chyi Yu Folk Best Selection",
+      "zh-Hant": "重逢齊豫民歌精選輯",
+      "zh-Hans": "重逢齐豫民歌精选辑"
+    },
+    "titleOriginal": "重逢齊豫民歌精選輯",
+    "releaseType": "compilation",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "CD"
+    ],
+    "availability": {
+      "physical": [
+        "CD"
+      ],
+      "streaming": [
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=28251",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-reunion-chyi-yu-folk-best-1998"
+    ],
+    "notes": "Added as a coverage placeholder because MusicBrainz lists this 1998 compilation. QQ public search did not return a direct album match on 2026-06-26. Format audit: MusicBrainz lists the official Taiwan release as CD.",
+    "status": "partial",
+    "releaseDate": "1998"
+  },
+  {
+    "id": "release-singles-1997-1999",
+    "slug": "singles-1997-1999",
+    "title": "Singles 1997-1999",
+    "titleLocalized": {
+      "en": "Singles 1997-1999",
+      "zh-Hant": "Singles 1997-1999",
+      "zh-Hans": "Singles 1997-1999"
+    },
+    "titleOriginal": "Singles 1997-1999",
+    "releaseType": "compilation",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "unknown"
+    ],
+    "availability": {
+      "physical": [
+        "unknown"
+      ],
+      "streaming": [],
+      "purchase": []
+    },
+    "tracks": [],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-wikipedia-zh-chyi-yu"
+    ],
+    "notes": "Added as a Wikipedia-led coverage placeholder because the Chinese Wikipedia Chyi Yu discography lists Singles 1997-1999, while QQ public search and the MusicBrainz release-group check did not expose a matching release group on 2026-06-26. Track list, date, and format remain unresolved.",
+    "status": "partial"
+  },
+  {
+    "id": "release-twenty-year-selection-olive-tree-2002",
+    "slug": "twenty-year-selection-olive-tree-2002",
+    "title": "Twenty Year Selection: Forever Olive Tree",
+    "titleLocalized": {
+      "en": "Twenty Year Selection: Forever Olive Tree",
+      "zh-Hant": "二十年精選：永遠的橄欖樹",
+      "zh-Hans": "二十年精选：永远的橄榄树"
+    },
+    "titleOriginal": "二十年精選：永遠的橄欖樹",
+    "releaseType": "compilation",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "CD"
+    ],
+    "availability": {
+      "physical": [
+        "CD"
+      ],
+      "streaming": [],
+      "purchase": []
+    },
+    "tracks": [],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "notes": "Added as a coverage placeholder because MusicBrainz lists this 2002 compilation. QQ public search did not return a direct album match on 2026-06-26. Format audit: MusicBrainz lists the official release as a two-disc CD set.",
+    "status": "partial",
+    "releaseDate": "2002"
+  },
+  {
+    "id": "release-indescribable-night-2003",
+    "slug": "indescribable-night-2003",
+    "title": "Indescribable Night",
+    "titleLocalized": {
+      "en": "Indescribable Night",
+      "zh-Hant": "Indescribable Night",
+      "zh-Hans": "Indescribable Night"
+    },
+    "titleOriginal": "Indescribable Night",
+    "releaseType": "single",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "unknown"
+    ],
+    "availability": {
+      "physical": [
+        "unknown"
+      ],
+      "streaming": [
+        {
+          "label": "QQ Music album context",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/000tfZ2r2SzQJw",
+          "kind": "metadata",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "Indescribable Night",
+        "titleOnReleaseLocalized": {
+          "en": "Indescribable Night"
+        },
+        "duration": null,
+        "versionNote": "QQ currently exposes this as the bonus/live track within The Unheard Of Chyi.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-unheard-of-chyi"
+    ],
+    "notes": "Added as a partial single because Wikipedia discography sources list Indescribable Night separately. QQ Music currently exposes the track only inside The Unheard Of Chyi, so this may represent a bonus-disc/single edition rather than an independently streamable release.",
+    "status": "partial",
+    "releaseDate": "2003"
+  },
+  {
+    "id": "release-rolling-stone-hk-golden-decade-2014",
+    "slug": "rolling-stone-hk-golden-decade-2014",
+    "title": "Rock Records Hong Kong Golden Decade: Chyi Yu Best Selection",
+    "titleLocalized": {
+      "en": "Rock Records Hong Kong Golden Decade: Chyi Yu Best Selection",
+      "zh-Hant": "滾石香港黃金十年：齊豫精選",
+      "zh-Hans": "滚石香港黄金十年齐豫精选"
+    },
+    "titleOriginal": "滾石香港黃金十年：齊豫精選",
+    "releaseType": "compilation",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "CD"
+    ],
+    "availability": {
+      "physical": [
+        "CD"
+      ],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/000DHe0T4AKocB",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "NetEase Cloud Music",
+          "platform": "netease-cloud-music",
+          "url": "https://music.163.com/#/album?id=28241",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-rolling-stone-hk-golden-decade",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-rolling-stone-hk-golden-decade-2014"
+    ],
+    "notes": "Added during release coverage pass. MusicBrainz lists a 2014 compilation and QQ Music exposes albumMID 000DHe0T4AKocB; track-level import remains pending. Format audit: MusicBrainz lists the official Hong Kong release as CD.",
+    "status": "partial",
+    "releaseDate": "2014-04-11"
+  },
+  {
+    "id": "release-childhood-blue-sky-olive-tree-2017",
+    "slug": "childhood-blue-sky-olive-tree-2017",
+    "title": "Childhood, Blue Sky, Olive Tree: Memory Trilogy",
+    "titleLocalized": {
+      "en": "Childhood, Blue Sky, Olive Tree: Memory Trilogy",
+      "zh-Hant": "童年・藍天・橄欖樹 回憶三部曲",
+      "zh-Hans": "童年・蓝天・橄榄树 回忆三部曲"
+    },
+    "titleOriginal": "童年・藍天・橄欖樹 回憶三部曲",
+    "releaseType": "compilation",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "CD"
+    ],
+    "availability": {
+      "physical": [
+        "CD"
+      ],
+      "streaming": [],
+      "purchase": []
+    },
+    "tracks": [],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "notes": "Added as a coverage placeholder because MusicBrainz lists this 2017 compilation. QQ public search did not return a direct album match on 2026-06-26. Format audit: MusicBrainz lists the Malaysia release as a three-disc CD set.",
+    "status": "partial",
+    "releaseDate": "2017"
+  },
+  {
+    "id": "release-not-saying-goodbye-2018",
+    "slug": "not-saying-goodbye-2018",
+    "title": "Not Saying Goodbye (Dear Sanmao)",
+    "titleLocalized": {
+      "en": "Not Saying Goodbye (Dear Sanmao)",
+      "zh-Hant": "不曾告別（三毛姐姐如晤）",
+      "zh-Hans": "不曾告别（三毛姐姐如晤）"
+    },
+    "titleOriginal": "不曾告別（三毛姐姐如晤）",
+    "releaseType": "single",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "digital"
+    ],
+    "availability": {
+      "physical": [],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/003TxYB21KagCJ",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "Not Saying Goodbye (Dear Sanmao)",
+        "titleOnReleaseLocalized": {
+          "en": "Not Saying Goodbye (Dear Sanmao)",
+          "zh-Hant": "不曾告別（三毛姐姐如晤）",
+          "zh-Hans": "不曾告别（三毛姐姐如晤）"
+        },
+        "duration": null,
+        "versionNote": "Collaborative single; full performer and writer credits pending.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-not-saying-goodbye",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "notes": "Added during release coverage pass. MusicBrainz lists the 2018 single and QQ Music exposes a collaborative track credited to 齐豫, 潘越雲, 李艾璇, and 黃韻玲. Full credits remain pending. Format audit: MusicBrainz lists the official release as Digital Media.",
+    "status": "partial",
+    "releaseDate": "2018-08-10"
+  },
+  {
+    "id": "release-amazing-grace-2020",
+    "slug": "amazing-grace-2020",
+    "title": "Amazing Grace",
+    "titleLocalized": {
+      "en": "Amazing Grace",
+      "zh-Hant": "奇異恩典",
+      "zh-Hans": "奇异恩典"
+    },
+    "titleOriginal": "奇異恩典",
+    "releaseType": "single",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "digital"
+    ],
+    "availability": {
+      "physical": [],
+      "streaming": [],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "Amazing Grace",
+        "titleOnReleaseLocalized": {
+          "en": "Amazing Grace",
+          "zh-Hant": "奇異恩典",
+          "zh-Hans": "奇异恩典"
+        },
+        "duration": null,
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "notes": "Added as a coverage placeholder because MusicBrainz lists this 2020 single. QQ public search did not return a direct album match on 2026-06-26; platform corroboration remains pending. Format audit: MusicBrainz lists the official release as Digital Media.",
+    "status": "partial",
+    "releaseDate": "2020-12-31"
+  },
+  {
+    "id": "release-you-are-my-angel-2021",
+    "slug": "you-are-my-angel-2021",
+    "title": "You Are My Angel",
+    "titleLocalized": {
+      "en": "You Are My Angel",
+      "zh-Hant": "你是我的天使",
+      "zh-Hans": "你是我的天使"
+    },
+    "titleOriginal": "你是我的天使",
+    "releaseType": "single",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "digital"
+    ],
+    "availability": {
+      "physical": [],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/003imCBy1GesvL",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "You Are My Angel",
+        "titleOnReleaseLocalized": {
+          "en": "You Are My Angel",
+          "zh-Hant": "你是我的天使",
+          "zh-Hans": "你是我的天使"
+        },
+        "duration": null,
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-you-are-my-angel-single",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "notes": "Added during release coverage pass. MusicBrainz lists the 2021 single and QQ Music exposes albumMID 003imCBy1GesvL by 齐豫. Full credits remain pending. Format audit: MusicBrainz lists the official release as Digital Media.",
+    "status": "partial",
+    "releaseDate": "2021-10-17"
   }
 ]

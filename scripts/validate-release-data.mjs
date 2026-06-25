@@ -4,8 +4,15 @@ import path from "node:path";
 const root = process.cwd();
 
 function readJson(relativePath) {
-  return JSON.parse(fs.readFileSync(path.join(root, relativePath), "utf8"));
+  const text = fs.readFileSync(path.join(root, relativePath), "utf8");
+  if (text.charCodeAt(0) === 0xfeff) {
+    addError(`${relativePath} starts with a UTF-8 BOM`);
+  }
+  return JSON.parse(text);
 }
+
+const errors = [];
+const warnings = [];
 
 const releases = readJson("data/releases.json");
 const appearances = readJson("data/appearances.json");
@@ -16,8 +23,17 @@ const sources = readJson("data/sources.json");
 const sourceIds = new Set(sources.map((source) => source.id));
 const songIds = new Set(songs.map((song) => song.id));
 const personIds = new Set(people.map((person) => person.id));
-const errors = [];
-const warnings = [];
+
+const textDatasets = [
+  ["data/releases.json", releases],
+  ["data/appearances.json", appearances],
+  ["data/songs.json", songs],
+  ["data/people.json", people],
+  ["data/sources.json", sources],
+  ["data/concerts.json", readJson("data/concerts.json")],
+  ["data/music-shows.json", readJson("data/music-shows.json")],
+  ["data/media-links.json", readJson("data/media-links.json")]
+];
 
 function addError(message) {
   errors.push(message);
@@ -113,10 +129,6 @@ for (const release of releases) {
   for (const track of release.tracks || []) {
     validateTrackCredits(track, release);
   }
-  walkText(release, [release.id], (text, textPath) => {
-    if (text.includes("??")) addError(`${textPath} contains literal ??`);
-    if (text.includes("\uFFFD")) addError(`${textPath} contains replacement character`);
-  });
 }
 
 for (const appearance of appearances) {
@@ -127,7 +139,10 @@ for (const appearance of appearances) {
       addError(`Appearance ${appearance.id} references missing related song ${songId}`);
     }
   }
-  walkText(appearance, [appearance.id], (text, textPath) => {
+}
+
+for (const [datasetPath, dataset] of textDatasets) {
+  walkText(dataset, [datasetPath], (text, textPath) => {
     if (text.includes("??")) addError(`${textPath} contains literal ??`);
     if (text.includes("\uFFFD")) addError(`${textPath} contains replacement character`);
   });

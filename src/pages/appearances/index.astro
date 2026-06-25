@@ -4,6 +4,7 @@ import ContributionPanel from "../../components/ContributionPanel.astro";
 import { appearanceAvailabilityChecks, appearances } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
 import {
+  appearanceTypeValues,
   availabilityValues,
   i18nAttrs,
   labelValueValues,
@@ -39,8 +40,8 @@ const contributionActions = [
                 <span {...i18nAttrs(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}>
                   {valueForLocale(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}
                 </span>
-                <span {...i18nAttrs(labelValueValues("label.type", appearance.appearanceType))}>
-                  {valueForLocale(labelValueValues("label.type", appearance.appearanceType))}
+                <span {...i18nAttrs(labelValueValues("label.type", appearanceTypeValues(appearance.appearanceType)))}>
+                  {valueForLocale(labelValueValues("label.type", appearanceTypeValues(appearance.appearanceType)))}
                 </span>
                 {appearance.programOrWork ? (
                   <span {...i18nAttrs(labelValueValues("label.work", appearance.programOrWork))}>
