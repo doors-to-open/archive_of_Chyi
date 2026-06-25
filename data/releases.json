@@ -4078,6 +4078,147 @@
     "status": "partial"
   },
   {
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "unknown"
+    ],
+    "availability": {
+      "physical": [
+        "unknown"
+      ],
+      "streaming": [],
+      "purchase": []
+    },
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "status": "partial",
+    "id": "release-whispering-steppes-desirous-water-1998",
+    "slug": "whispering-steppes-desirous-water-1998",
+    "title": "Whispering Steppes - Desirous Water",
+    "titleOriginal": "天浴 - 慾水",
+    "titleLocalized": {
+      "en": "Whispering Steppes - Desirous Water",
+      "zh-Hant": "天浴 - 慾水",
+      "zh-Hans": "天浴 - 欲水"
+    },
+    "releaseDate": "1998",
+    "releaseType": "soundtrack",
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "Windflower",
+        "titleOnReleaseLocalized": {
+          "en": "Windflower",
+          "zh-Hant": "風之花",
+          "zh-Hans": "风之花"
+        },
+        "duration": null,
+        "versionNote": "English Wikipedia lists original-credit context: Seals and Crofts.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "Whispering Steppes",
+        "titleOnReleaseLocalized": {
+          "en": "Whispering Steppes",
+          "zh-Hant": "細雨咽咽的的草原",
+          "zh-Hans": "细雨咽咽的的草原"
+        },
+        "duration": null,
+        "versionNote": "English Wikipedia gives words by Chyi Yu and composition/arrangement by Johnny Chen.",
+        "credits": {
+          "lyricsBy": [
+            "person-chyi-yu"
+          ],
+          "composedBy": [
+            "Johnny Chen"
+          ]
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "Turning",
+        "titleOnReleaseLocalized": {
+          "en": "Turning",
+          "zh-Hant": "流轉",
+          "zh-Hans": "流转"
+        },
+        "duration": null,
+        "versionNote": "English Wikipedia lists original-credit context: Suzanne Ciani.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": [
+            "person-suzanne-ciani"
+          ]
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "The Rose",
+        "titleOnReleaseLocalized": {
+          "en": "The Rose",
+          "zh-Hant": "玫瑰",
+          "zh-Hans": "玫瑰"
+        },
+        "duration": null,
+        "versionNote": "English Wikipedia lists this as a Chyi Yu and Sandy Lam duet with original-credit context: Amanda McBroom.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "performers": [
+          "person-chyi-yu",
+          "person-sandy-lam"
+        ]
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "I Swear",
+        "titleOnReleaseLocalized": {
+          "en": "I Swear",
+          "zh-Hant": "我發誓",
+          "zh-Hans": "我发誓"
+        },
+        "duration": null,
+        "versionNote": "English Wikipedia lists this as a Chyi Yu, Sandy Lam, Teresa Carpio, and Prudence Liew collaboration.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "performers": [
+          "person-chyi-yu",
+          "person-sandy-lam",
+          "person-teresa-carpio",
+          "person-prudence-liew"
+        ]
+      }
+    ],
+    "sources": [
+      "source-wikipedia-en-chyi-yu"
+    ],
+    "notes": "English Wikipedia lists Whispering Steppes - Desirous Water / 天浴 - 慾水 as movie soundtrack material and gives a five-track table. Added as a partial English-Wikipedia-oriented soundtrack record after removing unsupported Chinese-Wikipedia-only stubs; exact catalog metadata and platform/booklet source remain pending. The English page header says 1988, but the film Tian Yu / Xiu Xiu is otherwise a 1998 film, so the year is kept as 1998 pending source cleanup."
+  },
+  {
     "id": "release-angels-poem-1998",
     "slug": "angels-poem-1998",
     "title": "Angels' Poem",
@@ -4725,6 +4866,83 @@
     ],
     "notes": "Imported from the accepted Stage 6B review. Modeled as a Chyi Yu English-cover studio album with several collaboration tracks; QQ Music supplies current platform order, durations, and singer lists. Original writer/composer credits remain blank pending booklet or primary-credit verification.",
     "status": "partial"
+  },
+  {
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "unknown"
+    ],
+    "availability": {
+      "physical": [
+        "unknown"
+      ],
+      "streaming": [],
+      "purchase": []
+    },
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "status": "partial",
+    "id": "release-impression-liu-sanjie-2003",
+    "slug": "impression-liu-sanjie-2003",
+    "title": "Impression Liu Sanjie",
+    "titleOriginal": "印象·劉三姐",
+    "titleLocalized": {
+      "en": "Impression Liu Sanjie",
+      "zh-Hant": "印象·劉三姐",
+      "zh-Hans": "印象·刘三姐"
+    },
+    "releaseDate": "2003",
+    "releaseType": "other",
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "籐纏樹",
+        "titleOnReleaseLocalized": {
+          "en": "籐纏樹",
+          "zh-Hant": "籐纏樹",
+          "zh-Hans": "藤缠树"
+        },
+        "duration": null,
+        "versionNote": "English Wikipedia section title lists this song under the Impression Liu Sanjie concept album.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "多謝了",
+        "titleOnReleaseLocalized": {
+          "en": "多謝了",
+          "zh-Hant": "多謝了",
+          "zh-Hans": "多谢了"
+        },
+        "duration": null,
+        "versionNote": "English Wikipedia section title lists this song under the Impression Liu Sanjie concept album.",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "sources": [
+      "source-wikipedia-en-chyi-yu"
+    ],
+    "notes": "English Wikipedia lists 2003 Impression Liu Sanjie / 印象·劉三姐 as a concept album produced and released only in Mainland China, with section-title song leads 籐纏樹 and 多謝了. Kept as a partial English-Wikipedia-supported stub pending a stronger catalog or platform source."
   },
   {
     "id": "release-the-unheard-of-chyi-2003",
@@ -6126,6 +6344,50 @@
       "source-user-task-0623-2"
     ],
     "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as an English/French/Latin-language cover and sacred-song studio album. QQ supplies current platform titles, durations, and publicTime, while English Wikipedia fills the missing Amazing Grace track and supplies lyric/music credit orientation. The QQ Music API skips position 3 and then runs through 11 for 10 tracks; restored position 3 remains pending platform/booklet confirmation. Track credits remain partial pending a booklet or primary-credit source.",
+    "status": "partial"
+  },
+  {
+    "id": "release-thirty-seven-teachings-of-buddha-2011",
+    "slug": "thirty-seven-teachings-of-buddha-2011",
+    "title": "The 37 Teachings of Buddha",
+    "titleOriginal": "佛子行三十七誦",
+    "titleLocalized": {
+      "en": "The 37 Teachings of Buddha",
+      "zh-Hant": "佛子行三十七誦",
+      "zh-Hans": "佛子行三十七诵"
+    },
+    "releaseDate": "2011",
+    "releaseType": "other",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "unknown"
+    ],
+    "availability": {
+      "physical": [
+        "unknown"
+      ],
+      "streaming": [],
+      "purchase": []
+    },
+    "tracks": [],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-wikipedia-en-chyi-yu"
+    ],
+    "notes": "English Wikipedia lists The 37 Teachings of Buddha / 佛子行三十七誦 as a 2011 Chyi Yu Buddhist release. Added as an empty partial stub because it may overlap later QQ religious-release candidates and needs a platform/booklet source before track-level import.",
     "status": "partial"
   },
   {

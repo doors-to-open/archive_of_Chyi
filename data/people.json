@@ -204,7 +204,7 @@
     "nameOriginal": "吳青峰",
     "aliases": ["Wu Qing-feng", "吴青峰"],
     "roles": ["vocalist", "guest"],
-    "sources": ["source-bilibili-grace-still-beijing-full", "source-baike-singer-2019"],
+    "sources": ["source-bilibili-grace-still-beijing-full", "source-baike-singer-2019", "source-bilibili-grace-still-chengdu-guest-wu-tsing-fong"],
     "notes": "Guest at the 2025 Beijing concert and participant/host figure in Singer 2019.",
     "status": "partial"
   },
@@ -457,18 +457,9 @@
     "id": "person-sandy-lam",
     "slug": "sandy-lam",
     "displayName": "Sandy Lam",
-    "aliases": [
-      "Lin Yilian",
-      "Lam Yik Lin"
-    ],
-    "roles": [
-      "vocalist"
-    ],
-    "sources": [
-      "source-qq-music-wonderful-world",
-      "source-qq-music-i-swear",
-      "source-qq-music-cest-la-vie"
-    ],
+    "aliases": ["Lin Yilian", "Lam Yik Lin"],
+    "roles": ["vocalist"],
+    "sources": ["source-qq-music-wonderful-world", "source-qq-music-i-swear", "source-qq-music-cest-la-vie"],
     "notes": "QQ Music lists Sandy Lam on the Stage 6B collaboration and appearance-album candidates.",
     "status": "partial",
     "nameOriginal": "林忆莲"
@@ -477,17 +468,9 @@
     "id": "person-prudence-liew",
     "slug": "prudence-liew",
     "displayName": "Prudence Liew",
-    "aliases": [
-      "Liu Meijun"
-    ],
-    "roles": [
-      "vocalist"
-    ],
-    "sources": [
-      "source-qq-music-wonderful-world",
-      "source-qq-music-i-swear",
-      "source-qq-music-cest-la-vie"
-    ],
+    "aliases": ["Liu Meijun"],
+    "roles": ["vocalist"],
+    "sources": ["source-qq-music-wonderful-world", "source-qq-music-i-swear", "source-qq-music-cest-la-vie"],
     "notes": "QQ Music lists Prudence Liew on the Stage 6B collaboration and appearance-album candidates.",
     "status": "partial",
     "nameOriginal": "刘美君"
@@ -496,16 +479,9 @@
     "id": "person-teresa-carpio",
     "slug": "teresa-carpio",
     "displayName": "Teresa Carpio",
-    "aliases": [
-      "Du Lisha"
-    ],
-    "roles": [
-      "vocalist"
-    ],
-    "sources": [
-      "source-qq-music-i-swear",
-      "source-qq-music-cest-la-vie"
-    ],
+    "aliases": ["Du Lisha"],
+    "roles": ["vocalist"],
+    "sources": ["source-qq-music-i-swear", "source-qq-music-cest-la-vie"],
     "notes": "QQ Music lists Teresa Carpio on the Stage 6B collaboration candidates.",
     "status": "partial",
     "nameOriginal": "杜丽莎"
@@ -514,15 +490,9 @@
     "id": "person-leslie-cheung",
     "slug": "leslie-cheung",
     "displayName": "Leslie Cheung",
-    "aliases": [
-      "Zhang Guorong"
-    ],
-    "roles": [
-      "vocalist"
-    ],
-    "sources": [
-      "source-qq-music-i-swear"
-    ],
+    "aliases": ["Zhang Guorong"],
+    "roles": ["vocalist"],
+    "sources": ["source-qq-music-i-swear"],
     "notes": "QQ Music lists Leslie Cheung on the I Swear album candidate.",
     "status": "partial",
     "nameOriginal": "张国荣"
@@ -532,15 +502,20 @@
     "slug": "suzanne-ciani",
     "displayName": "Suzanne Ciani",
     "aliases": [],
-    "roles": [
-      "composer",
-      "instrumentalist",
-      "vocalist"
-    ],
-    "sources": [
-      "source-qq-music-turning-collaboration"
-    ],
+    "roles": ["composer", "instrumentalist", "vocalist"],
+    "sources": ["source-qq-music-turning-collaboration"],
     "notes": "QQ Music lists Suzanne Ciani on the Turning collaboration candidate.",
+    "status": "partial"
+  },
+  {
+    "id": "person-cheng-fangyuan",
+    "slug": "cheng-fangyuan",
+    "displayName": "Cheng Fangyuan",
+    "nameOriginal": "成方圆",
+    "aliases": ["Cheng Fang-yuan", "成方圓"],
+    "roles": ["vocalist", "instrumentalist", "guest"],
+    "sources": ["source-bilibili-grace-still-shenzhen-official-rolling-stone", "source-bilibili-grace-still-shenzhen-full-shdvdjne", "source-bilibili-grace-still-shenzhen-full-woohoohey", "source-bilibili-grace-still-changsha-chaptered-shdvdjne", "source-bilibili-grace-still-changsha-full-zongteng", "source-bilibili-grace-still-changsha-full-likegem", "source-bilibili-grace-still-changsha-guest-cheng-fangyuan"],
+    "notes": "Guest at Chyi Yu's 2026-04-18 Changsha and 2026-05-16 Shenzhen Still Grace / 風采依舊·在 concerts. Bilibili chapter metadata also identifies guest duet, guest solo, and erhu solo material across these tour stops.",
     "status": "partial"
   }
 ]
