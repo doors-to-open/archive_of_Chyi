@@ -2241,97 +2241,6 @@
     "status": "partial"
   },
   {
-    "id": "release-eight-taels-of-gold-ost-1989",
-    "slug": "eight-taels-of-gold-ost-1989",
-    "title": "Eight Taels of Gold soundtrack",
-    "titleOriginal": "八兩金 原聲帶",
-    "releaseDate": "1989",
-    "releaseType": "soundtrack",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "unknown"
-    ],
-    "availability": {
-      "physical": [
-        "unknown"
-      ],
-      "streaming": [
-        {
-          "label": "QQ Music OST link",
-          "platform": "qq-music",
-          "url": "https://c6.y.qq.com/base/fcgi-bin/u?__=4XObUwID78Tu",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "China mainland"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [
-      {
-        "position": 1,
-        "song": "song-boat-song",
-        "titleOnRelease": "船歌",
-        "duration": null,
-        "versionNote": "Chyi Yu vocal appearance on the film soundtrack.",
-        "credits": {
-          "lyricsBy": [
-            "person-luo-dayou"
-          ],
-          "composedBy": [
-            "person-luo-dayou"
-          ]
-        }
-      },
-      {
-        "position": 2,
-        "song": "song-red-cotton",
-        "titleOnRelease": "紅棉",
-        "duration": null,
-        "versionNote": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 3,
-        "song": "song-mess",
-        "titleOnRelease": "亂",
-        "duration": null,
-        "versionNote": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      }
-    ],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [
-        "person-luo-dayou"
-      ],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-user-task-0618-2",
-      "source-qq-music-eight-taels-of-gold-ost",
-      "source-wikipedia-zh-eight-taels-of-gold-film",
-      "source-douban-eight-taels-of-gold"
-    ],
-    "notes": "Partial release record focused on the Chyi Yu vocal-appearance subset identified by the project maintainer. The complete OST album track list still needs extraction from an official platform page.",
-    "status": "partial"
-  },
-  {
     "id": "release-where-have-all-the-flowers-gone-1990",
     "slug": "where-have-all-the-flowers-gone-1990",
     "title": "Where Have All the Flowers Gone",
@@ -4078,147 +3987,6 @@
     "status": "partial"
   },
   {
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "unknown"
-    ],
-    "availability": {
-      "physical": [
-        "unknown"
-      ],
-      "streaming": [],
-      "purchase": []
-    },
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "status": "partial",
-    "id": "release-whispering-steppes-desirous-water-1998",
-    "slug": "whispering-steppes-desirous-water-1998",
-    "title": "Whispering Steppes - Desirous Water",
-    "titleOriginal": "天浴 - 慾水",
-    "titleLocalized": {
-      "en": "Whispering Steppes - Desirous Water",
-      "zh-Hant": "天浴 - 慾水",
-      "zh-Hans": "天浴 - 欲水"
-    },
-    "releaseDate": "1998",
-    "releaseType": "soundtrack",
-    "tracks": [
-      {
-        "position": 1,
-        "song": null,
-        "titleOnRelease": "Windflower",
-        "titleOnReleaseLocalized": {
-          "en": "Windflower",
-          "zh-Hant": "風之花",
-          "zh-Hans": "风之花"
-        },
-        "duration": null,
-        "versionNote": "English Wikipedia lists original-credit context: Seals and Crofts.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 2,
-        "song": null,
-        "titleOnRelease": "Whispering Steppes",
-        "titleOnReleaseLocalized": {
-          "en": "Whispering Steppes",
-          "zh-Hant": "細雨咽咽的的草原",
-          "zh-Hans": "细雨咽咽的的草原"
-        },
-        "duration": null,
-        "versionNote": "English Wikipedia gives words by Chyi Yu and composition/arrangement by Johnny Chen.",
-        "credits": {
-          "lyricsBy": [
-            "person-chyi-yu"
-          ],
-          "composedBy": [
-            "Johnny Chen"
-          ]
-        }
-      },
-      {
-        "position": 3,
-        "song": null,
-        "titleOnRelease": "Turning",
-        "titleOnReleaseLocalized": {
-          "en": "Turning",
-          "zh-Hant": "流轉",
-          "zh-Hans": "流转"
-        },
-        "duration": null,
-        "versionNote": "English Wikipedia lists original-credit context: Suzanne Ciani.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": [
-            "person-suzanne-ciani"
-          ]
-        }
-      },
-      {
-        "position": 4,
-        "song": null,
-        "titleOnRelease": "The Rose",
-        "titleOnReleaseLocalized": {
-          "en": "The Rose",
-          "zh-Hant": "玫瑰",
-          "zh-Hans": "玫瑰"
-        },
-        "duration": null,
-        "versionNote": "English Wikipedia lists this as a Chyi Yu and Sandy Lam duet with original-credit context: Amanda McBroom.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        },
-        "performers": [
-          "person-chyi-yu",
-          "person-sandy-lam"
-        ]
-      },
-      {
-        "position": 5,
-        "song": null,
-        "titleOnRelease": "I Swear",
-        "titleOnReleaseLocalized": {
-          "en": "I Swear",
-          "zh-Hant": "我發誓",
-          "zh-Hans": "我发誓"
-        },
-        "duration": null,
-        "versionNote": "English Wikipedia lists this as a Chyi Yu, Sandy Lam, Teresa Carpio, and Prudence Liew collaboration.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        },
-        "performers": [
-          "person-chyi-yu",
-          "person-sandy-lam",
-          "person-teresa-carpio",
-          "person-prudence-liew"
-        ]
-      }
-    ],
-    "sources": [
-      "source-wikipedia-en-chyi-yu"
-    ],
-    "notes": "English Wikipedia lists Whispering Steppes - Desirous Water / 天浴 - 慾水 as movie soundtrack material and gives a five-track table. Added as a partial English-Wikipedia-oriented soundtrack record after removing unsupported Chinese-Wikipedia-only stubs; exact catalog metadata and platform/booklet source remain pending. The English page header says 1988, but the film Tian Yu / Xiu Xiu is otherwise a 1998 film, so the year is kept as 1998 pending source cleanup."
-  },
-  {
     "id": "release-angels-poem-1998",
     "slug": "angels-poem-1998",
     "title": "Angels' Poem",
@@ -4457,134 +4225,6 @@
       "source-user-task-0623-1"
     ],
     "notes": "Imported from the accepted Stage 6B review. Modeled as a 1998 reissue of Blessing because the task note flagged the matching track list and the existing Blessing review source identifies it as a later reissue. QQ supplies the platform date, order, and durations.",
-    "status": "partial"
-  },
-  {
-    "id": "release-turning-1998",
-    "slug": "turning-1998",
-    "title": "Turning",
-    "titleLocalized": {
-      "en": "Turning"
-    },
-    "releaseDate": "1998-10-13",
-    "releaseType": "collaboration",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu",
-      "person-suzanne-ciani"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "unknown"
-    ],
-    "availability": {
-      "physical": [
-        "unknown"
-      ],
-      "streaming": [
-        {
-          "label": "QQ Music",
-          "platform": "qq-music",
-          "url": "https://y.qq.com/n/ryqq/albumDetail/001yzGlZ0TvAQm",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "China mainland"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [
-      {
-        "position": 1,
-        "song": "song-turning",
-        "titleOnRelease": "Turning",
-        "titleOnReleaseLocalized": {
-          "en": "Turning"
-        },
-        "duration": "4:11",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        },
-        "performers": [
-          "person-chyi-yu",
-          "person-suzanne-ciani"
-        ]
-      },
-      {
-        "position": 2,
-        "song": null,
-        "titleOnRelease": "The Velocity of Love (Inst.)",
-        "titleOnReleaseLocalized": {
-          "en": "The Velocity of Love (Inst.)"
-        },
-        "duration": "4:31",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 3,
-        "song": null,
-        "titleOnRelease": "Princess",
-        "titleOnReleaseLocalized": {
-          "en": "Princess"
-        },
-        "duration": "4:19",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 4,
-        "song": null,
-        "titleOnRelease": "Eagle (Live)",
-        "titleOnReleaseLocalized": {
-          "en": "Eagle (Live)"
-        },
-        "duration": "5:06",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 5,
-        "song": null,
-        "titleOnRelease": "Til Time and Times Are Done",
-        "titleOnReleaseLocalized": {
-          "en": "Til Time and Times Are Done"
-        },
-        "duration": "4:06",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      }
-    ],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu",
-        "person-suzanne-ciani"
-      ]
-    },
-    "sources": [
-      "source-qq-music-turning-collaboration",
-      "source-user-task-0623-1"
-    ],
-    "notes": "Imported from the accepted Stage 6B review as a Chyi Yu and Suzanne Ciani collaboration/appearance release. QQ Music lists Chyi Yu on the five-track 1998 Turning release title track. The separate 1999 Suzanne Ciani Turning candidate is kept as a draft lead only because its QQ singer list did not include Chyi Yu.",
     "status": "partial"
   },
   {
@@ -6396,9 +6036,10 @@
     "title": "Over the Cloud",
     "titleLocalized": {
       "en": "Over the Cloud",
-      "zh-Hans": "??"
+      "zh-Hant": "雲端",
+      "zh-Hans": "云端"
     },
-    "titleOriginal": "云端",
+    "titleOriginal": "雲端",
     "releaseDate": "2011-09-12",
     "releaseType": "studio-album",
     "artist": "person-chyi-yu",
@@ -6622,7 +6263,7 @@
       "source-wikipedia-en-chyi-yu",
       "source-user-task-0623-2"
     ],
-    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as an English-language sacred/holiday cover album. QQ supplies current platform titles, durations, and publicTime, while English Wikipedia identifies the album as Over the Cloud / ??, fills the missing I Saw The Light track, and supplies lyric/music credit orientation. The QQ Music API returns positions 2-10 for 9 tracks; restored position 1 remains pending platform/booklet confirmation. Track credits remain partial pending a booklet or primary-credit source.",
+    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as an English-language sacred/holiday cover album. QQ supplies current platform titles, durations, and publicTime, while English Wikipedia identifies the album as Over the Cloud / 雲端, fills the missing I Saw The Light track, and supplies lyric/music credit orientation. The QQ Music API returns positions 2-10 for 9 tracks; restored position 1 remains pending platform/booklet confirmation. Track credits remain partial pending a booklet or primary-credit source.",
     "status": "partial"
   },
   {
@@ -7105,6 +6746,77 @@
       "source-user-task-0623-2"
     ],
     "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them.",
+    "status": "partial"
+  },
+  {
+    "id": "release-one-thought-between-2025",
+    "slug": "one-thought-between-2025",
+    "title": "One Thought Between",
+    "titleLocalized": {
+      "en": "One Thought Between",
+      "zh-Hant": "一念之間",
+      "zh-Hans": "一念之间"
+    },
+    "titleOriginal": "一念之間",
+    "releaseDate": "2025-09-12",
+    "releaseType": "single",
+    "artist": "person-wu-tsing-fong",
+    "artists": [
+      "person-wu-tsing-fong",
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "digital"
+    ],
+    "availability": {
+      "physical": [],
+      "streaming": [],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "一念之間",
+        "titleOnReleaseLocalized": {
+          "en": "One Thought Between",
+          "zh-Hant": "一念之間",
+          "zh-Hans": "一念之间"
+        },
+        "duration": null,
+        "versionNote": "Wu Tsing-fong EP/single noted by Chinese Wikipedia and the 2025 concert-source trail as a Chyi Yu lyric/co-vocal collaboration. QQ Music public search did not expose a matching official album/song record on 2026-06-25.",
+        "performers": [
+          "person-wu-tsing-fong",
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [
+            "person-chyi-yu"
+          ],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "lyricist": [
+        "person-chyi-yu"
+      ],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-wu-tsing-fong",
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-wikipedia-zh-chyi-yu",
+      "source-bilibili-grace-still-chengdu-guest-wu-tsing-fong"
+    ],
+    "notes": "Added from the release wrap-up audit because the maintainer flagged Wu Tsing-fong's 2025 EP/single and Chinese Wikipedia lists a 2025-09-12 release. The archive records this as partial until an official platform page is found; QQ Music public search queries for 一念之间/一念之間 with Wu Tsing-fong and Chyi Yu returned no direct matches on 2026-06-25.",
     "status": "partial"
   }
 ]

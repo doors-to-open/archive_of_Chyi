@@ -2,13 +2,17 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { appearanceAvailabilityChecks, appearances, linkCreditLabel } from "../../lib/archive";
+import { appearanceAvailabilityChecks, appearances, linkCreditLabel, personNames } from "../../lib/archive";
 import {
   availabilityValues,
   countValues,
   i18nAttrs,
+  joinValues,
   labelValueValues,
+  personIdsValues,
+  textValues,
   titleValues,
+  trackTitleValues,
   uiText,
   valueForLocale
 } from "../../lib/i18n";
@@ -21,6 +25,24 @@ export function getStaticPaths() {
 }
 
 const { appearance } = Astro.props;
+
+function appearanceTrackTitleValues(track: NonNullable<typeof appearance.tracks>[number]) {
+  return track.titleLocalized
+    ? trackTitleValues({
+        position: track.position,
+        song: track.song,
+        titleOnRelease: track.title,
+        titleOnReleaseLocalized: track.titleLocalized,
+        duration: track.duration || null,
+        versionNote: track.notes || null,
+        credits: track.credits
+      })
+    : textValues(track.title);
+}
+
+function trackNumber(track: NonNullable<typeof appearance.tracks>[number]) {
+  return track.position ? `${track.position}.` : "";
+}
 ---
 
 <BaseLayout title={`${appearance.title} | All for Chyi Yu`}>
@@ -46,6 +68,11 @@ const { appearance } = Astro.props;
         <span {...i18nAttrs(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}>
           {valueForLocale(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}
         </span>
+        {appearance.tracks?.length ? (
+          <span {...i18nAttrs(countValues(appearance.tracks.length, "count.song", "count.songs"))}>
+            {valueForLocale(countValues(appearance.tracks.length, "count.song", "count.songs"))}
+          </span>
+        ) : null}
       </div>
       <div class="availability-row availability-row-detail" aria-label="Access summary">
         {appearanceAvailabilityChecks(appearance).map(([label, available]) => {
@@ -54,6 +81,44 @@ const { appearance } = Astro.props;
         })}
       </div>
     </article>
+
+    {appearance.tracks?.length ? (
+      <section class="section detail-panel">
+        <h2 {...i18nAttrs(uiText("label.appearanceTracks"))}>{valueForLocale(uiText("label.appearanceTracks"))}</h2>
+        <div class="track-credit-list">
+          {appearance.tracks.map((track) => {
+            const title = appearanceTrackTitleValues(track);
+            const numberedTitle = trackNumber(track)
+              ? joinValues([textValues(`${trackNumber(track)} `), title], "")
+              : title;
+            return (
+              <article class="track-credit-row">
+                <h3 {...i18nAttrs(numberedTitle)}>{valueForLocale(numberedTitle)}</h3>
+                <div class="record-meta-table">
+                  {track.performers?.length ? (
+                    <span {...i18nAttrs(labelValueValues("label.performedBy", personIdsValues(track.performers)))}>
+                      {valueForLocale(labelValueValues("label.performedBy", personIdsValues(track.performers))) || personNames(track.performers)}
+                    </span>
+                  ) : null}
+                  <span {...i18nAttrs(labelValueValues("label.lyrics", personIdsValues(track.credits.lyricsBy, uiText("value.notRecorded"))))}>
+                    {valueForLocale(labelValueValues("label.lyrics", personIdsValues(track.credits.lyricsBy, uiText("value.notRecorded"))))}
+                  </span>
+                  <span {...i18nAttrs(labelValueValues("label.music", personIdsValues(track.credits.composedBy, uiText("value.notRecorded"))))}>
+                    {valueForLocale(labelValueValues("label.music", personIdsValues(track.credits.composedBy, uiText("value.notRecorded"))))}
+                  </span>
+                  {track.duration ? (
+                    <span {...i18nAttrs(labelValueValues("label.duration", track.duration))}>
+                      {valueForLocale(labelValueValues("label.duration", track.duration))}
+                    </span>
+                  ) : null}
+                </div>
+                {track.notes ? <p>{track.notes}</p> : null}
+              </article>
+            );
+          })}
+        </div>
+      </section>
+    ) : null}
 
     <section class="section detail-panel">
       <h2 {...i18nAttrs(uiText("label.links"))}>{valueForLocale(uiText("label.links"))}</h2>

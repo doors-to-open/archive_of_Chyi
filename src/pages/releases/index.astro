@@ -6,7 +6,9 @@ import {
   personName,
   releaseAvailabilityChecks,
   releaseArtists,
+  releaseCategoryTags,
   releaseLiveRecordCount,
+  releasePrimaryCategory,
   releaseProducers,
   releases,
   songSummaries
@@ -20,6 +22,8 @@ import {
   labelValueValues,
   personIdValues,
   personIdsValues,
+  releaseCategoryValues,
+  releaseTypeValues,
   titleValues,
   uiText,
   valueForLocale
@@ -36,10 +40,22 @@ const contributionActions = [
     href: contributionPageUrl({ kind: "track", recordType: "Track", recordPath: "/releases/" })
   }
 ];
+const releaseFilterOptions = [
+  { value: "", label: uiText("option.allReleases") },
+  { value: "studio", label: uiText("option.studioAlbums") },
+  { value: "ep-single", label: uiText("option.epSingles") },
+  { value: "compilation", label: uiText("option.compilations") },
+  { value: "collaboration", label: uiText("option.collaborations") },
+  { value: "english-cover", label: uiText("option.englishCoverAlbums") },
+  { value: "religious", label: uiText("option.religiousAlbums") },
+  { value: "live", label: uiText("option.liveAlbums") },
+  { value: "reissue", label: uiText("option.reissues") },
+  { value: "other", label: uiText("option.otherReleases") }
+];
 ---
 
 <BaseLayout title="Releases | All for Chyi Yu">
-  <section class="page-shell" data-sort-root>
+  <section class="page-shell" data-sort-root data-filter-root>
     <p class="page-kicker" {...i18nAttrs(uiText("nav.releases"))}>{valueForLocale(uiText("nav.releases"))}</p>
     <h1 class="page-title" {...i18nAttrs(uiText("nav.releases"))}>{valueForLocale(uiText("nav.releases"))}</h1>
     <p class="page-intro" {...i18nAttrs(uiText("page.releases.intro"))}>{valueForLocale(uiText("page.releases.intro"))}</p>
@@ -54,6 +70,17 @@ const contributionActions = [
           <button type="button" data-view-option data-view-value="songs" aria-pressed="false">
             <span {...i18nAttrs(uiText("option.songs"))}>{valueForLocale(uiText("option.songs"))}</span>
           </button>
+        </div>
+      </fieldset>
+
+      <fieldset class="filter-option-group release-filter-group">
+        <legend {...i18nAttrs(uiText("label.category"))}>{valueForLocale(uiText("label.category"))}</legend>
+        <div class="filter-options" data-filter-options data-filter-key="release-tags">
+          {releaseFilterOptions.map((option, index) => (
+            <button type="button" data-filter-option data-filter-value={option.value} aria-pressed={index === 0 ? "true" : "false"}>
+              <span {...i18nAttrs(option.label)}>{valueForLocale(option.label)}</span>
+            </button>
+          ))}
         </div>
       </fieldset>
 
@@ -81,7 +108,7 @@ const contributionActions = [
         </div>
       </fieldset>
 
-      <p data-sort-count>{valueForLocale(countValues(releases.length, "count.album", "count.albums"))}</p>
+      <p data-sort-count data-filter-count>{valueForLocale(countValues(releases.length, "count.album", "count.albums"))}</p>
     </div>
 
     <div
@@ -97,23 +124,42 @@ const contributionActions = [
         const producer = personIdsValues(release.credits.producer || release.credits.producers || []);
         const artists = release.artists?.length ? personIdsValues(release.artists) : personIdValues(release.artist);
         const liveRecordCount = releaseLiveRecordCount(release);
+        const releaseTags = releaseCategoryTags(release);
+        const primaryCategory = releasePrimaryCategory(release);
+        const categoryValues = releaseCategoryValues(primaryCategory);
+        const typeValues = releaseTypeValues(release.releaseType);
         return (
           <a
             class="record-card"
             href={`/releases/${release.slug}/`}
+            data-filter-item
             data-sort-item
             data-sort-index={index}
             data-sort-date={release.releaseDate || ""}
             data-sort-alpha={`${release.title} ${release.titleOriginal || ""}`.toLocaleLowerCase("en-US")}
             data-sort-live={liveRecordCount}
+            data-release-tags={releaseTags.join("|")}
+            data-search={[
+              release.title,
+              release.titleOriginal,
+              ...Object.values(release.titleLocalized || {}),
+              release.releaseType,
+              releaseTags.join(" "),
+              release.label,
+              releaseArtists(release),
+              releaseProducers(release)
+            ].filter(Boolean).join(" ")}
           >
             <h2 {...i18nAttrs(releaseTitle)}>{valueForLocale(releaseTitle)}</h2>
             <div class="record-meta-table">
               <span {...i18nAttrs(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}>
                 {valueForLocale(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}
               </span>
-              <span {...i18nAttrs(labelValueValues("label.type", release.releaseType))}>
-                {valueForLocale(labelValueValues("label.type", release.releaseType))}
+              <span {...i18nAttrs(labelValueValues("label.category", categoryValues))}>
+                {valueForLocale(labelValueValues("label.category", categoryValues))}
+              </span>
+              <span {...i18nAttrs(labelValueValues("label.type", typeValues))}>
+                {valueForLocale(labelValueValues("label.type", typeValues))}
               </span>
               <span {...i18nAttrs(countValues(release.tracks.length, "count.song", "count.songs"))}>
                 {valueForLocale(countValues(release.tracks.length, "count.song", "count.songs"))}

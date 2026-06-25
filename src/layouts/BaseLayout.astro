@@ -106,14 +106,6 @@ const appendixItems = [
         base: "singular" | "plural",
         fallback: string
       ) => localizedAttribute(element, `count-label-${base}`, element?.getAttribute(`data-count-label-${base}`) || fallback);
-      const defaultCountLabel = (count: number) => {
-        const labels = {
-          en: count === 1 ? "record" : "records",
-          "zh-Hant": "筆紀錄",
-          "zh-Hans": "条记录"
-        } as Record<string, string>;
-        return labels[activeLocale()] || labels.en;
-      };
       const readyLabel = () => ({
         en: "Ready",
         "zh-Hant": "就緒",
@@ -203,9 +195,11 @@ const appendixItems = [
           });
 
           if (count) {
+            const singular = countLabel(root, "singular", "record");
+            const plural = countLabel(root, "plural", `${singular}s`);
             count.textContent = requiresFilter && !hasActiveFilter
               ? readyLabel()
-              : `${visibleCount} ${defaultCountLabel(visibleCount)}`;
+              : `${visibleCount} ${visibleCount === 1 ? singular : plural}`;
           }
 
           if (empty) {
@@ -294,8 +288,8 @@ const appendixItems = [
           if (count) {
             const activePanel = visiblePanels[0];
             const visibleItems = activePanel
-              ? activePanel.querySelectorAll("[data-sort-item]").length
-              : root.querySelectorAll("[data-sort-item]").length;
+              ? activePanel.querySelectorAll("[data-sort-item]:not([hidden])").length
+              : root.querySelectorAll("[data-sort-item]:not([hidden])").length;
             const singular =
               countLabel(activePanel, "singular", "") ||
               countLabel(root, "singular", "record");

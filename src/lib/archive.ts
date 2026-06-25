@@ -66,6 +66,21 @@ export type Track = {
   };
 };
 
+export type AppearanceTrack = {
+  position: number | null;
+  song: string | null;
+  title: string;
+  titleLocalized?: LocalizedText;
+  role?: string | null;
+  performers?: string[];
+  duration?: string | null;
+  credits: {
+    lyricsBy: string[];
+    composedBy: string[];
+  };
+  notes?: string | null;
+};
+
 export type ArchiveLink = {
   label: string;
   platform?: string;
@@ -164,6 +179,7 @@ export type Appearance = {
   programOrWork?: string | null;
   role?: string | null;
   relatedSongs: string[];
+  tracks?: AppearanceTrack[];
   mediaLinks: ArchiveLink[];
   sources: string[];
   notes?: string;
@@ -299,14 +315,91 @@ export function releaseFormatLabels(release: Release) {
 }
 
 export function releaseAvailabilityChecks(release: Release) {
-  return [
+  const checks: Array<[string, boolean]> = [
     ["CD", release.formats.includes("CD")],
     ["DVD", release.formats.includes("DVD")],
     ["Vinyl", release.formats.includes("vinyl")],
     ["Cassette", release.formats.includes("cassette")],
-    ["Streaming", Boolean(release.availability?.streaming?.length)],
-    ["Buy", Boolean(release.availability?.purchase?.length)]
-  ] as Array<[string, boolean]>;
+    ["Streaming", Boolean(release.availability?.streaming?.length)]
+  ];
+  if (release.availability?.purchase?.length) {
+    checks.push(["Buy", true]);
+  }
+  return checks;
+}
+
+export function releaseCategoryTags(release: Release) {
+  const englishCoverReleaseIds = new Set([
+    "release-whoever-finds-this-i-love-you-1988",
+    "release-where-have-all-the-flowers-gone-1990",
+    "release-dare-to-dream-1994",
+    "release-chyis-tears-1996",
+    "release-the-voice-2010",
+    "release-clouds-2011"
+  ]);
+  const text = [
+    release.id,
+    release.releaseType,
+    release.title,
+    release.titleOriginal,
+    release.notes,
+    ...release.tracks.map((track) => [
+      track.titleOnRelease,
+      track.versionNote,
+      track.titleOnReleaseLocalized ? Object.values(track.titleOnReleaseLocalized).join(" ") : ""
+    ].join(" "))
+  ].join(" ").toLocaleLowerCase("en-US");
+  const tags = new Set<string>();
+
+  if (release.releaseType === "studio-album") tags.add("studio");
+  if (release.releaseType === "single" || release.releaseType === "ep") tags.add("ep-single");
+  if (release.releaseType === "compilation") tags.add("compilation");
+  if (release.releaseType === "collaboration") tags.add("collaboration");
+  if (release.releaseType === "live-album") tags.add("live");
+  if (release.releaseType === "reissue") tags.add("reissue");
+  if (release.releaseType === "other") tags.add("other");
+
+  if (
+    englishCoverReleaseIds.has(release.id) ||
+    text.includes("english-language") ||
+    text.includes("english cover") ||
+    text.includes("cover album")
+  ) {
+    tags.add("english-cover");
+  }
+  if (
+    text.includes("buddha") ||
+    text.includes("chanting") ||
+    text.includes("cundi") ||
+    text.includes("prayer") ||
+    text.includes("sutra") ||
+    text.includes("佛") ||
+    text.includes("經") ||
+    text.includes("经") ||
+    text.includes("咒") ||
+    text.includes("誦") ||
+    text.includes("诵")
+  ) {
+    tags.add("religious");
+  }
+
+  return Array.from(tags);
+}
+
+export function releasePrimaryCategory(release: Release) {
+  const priority = [
+    "studio",
+    "ep-single",
+    "compilation",
+    "collaboration",
+    "live",
+    "reissue",
+    "english-cover",
+    "religious",
+    "other"
+  ];
+  const tags = releaseCategoryTags(release);
+  return priority.find((tag) => tags.includes(tag)) || release.releaseType;
 }
 
 export function concertAvailabilityChecks(concert: Concert) {
@@ -330,7 +423,8 @@ export function appearanceAvailabilityChecks(appearance: Appearance) {
   return [
     ["Watch", appearance.mediaLinks.some((link) => link.kind === "watch")],
     ["Streaming", appearance.mediaLinks.some((link) => link.kind === "streaming")],
-    ["Metadata", appearance.mediaLinks.some((link) => link.kind === "metadata")]
+    ["Metadata", appearance.mediaLinks.some((link) => link.kind === "metadata")],
+    ["Tracks", Boolean(appearance.tracks?.length)]
   ] as Array<[string, boolean]>;
 }
 

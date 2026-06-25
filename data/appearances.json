@@ -2,13 +2,17 @@
   {
     "id": "appearance-eight-taels-of-gold-ost",
     "slug": "eight-taels-of-gold-ost",
-    "title": "Eight Taels of Gold soundtrack vocals",
-    "titleOriginal": "八兩金 原聲帶",
+    "title": "Eight Taels of Gold OST",
+    "titleOriginal": "八兩金 OST",
     "date": "1989-12-21",
     "appearanceType": "soundtrack",
     "programOrWork": "Eight Taels of Gold",
     "role": "OST vocal appearance",
-    "relatedSongs": ["song-boat-song", "song-red-cotton", "song-mess"],
+    "relatedSongs": [
+      "song-boat-song",
+      "song-red-cotton",
+      "song-mess"
+    ],
     "mediaLinks": [
       {
         "label": "QQ Music soundtrack",
@@ -31,13 +35,6 @@
         "url": "https://www.imdb.com/title/tt0099079/",
         "kind": "metadata",
         "isOfficial": false
-      },
-      {
-        "label": "Related soundtrack release",
-        "platform": "internal",
-        "url": "/releases/eight-taels-of-gold-ost-1989/",
-        "kind": "release-link",
-        "isOfficial": true
       }
     ],
     "sources": [
@@ -46,7 +43,262 @@
       "source-wikipedia-zh-eight-taels-of-gold-film",
       "source-qq-music-eight-taels-of-gold-ost"
     ],
-    "notes": "The follow-up note identifies Chyi Yu vocal appearances on 船歌, 紅棉, and 亂. Douban confirms the 1989-12-21 film date and Mabel Cheung credit; the public film pages checked in this pass did not expose a stable official full-film streaming URL, so the current official access link is the QQ Music soundtrack.",
+    "notes": "Modeled as an appearance rather than a release: the archive only has the Chyi Yu vocal-appearance subset from the Eight Taels of Gold OST. Listed songs are 船歌, 紅棉, and 亂; only 船歌 has source-backed lyric/music credits so far.",
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Eight Taels of Gold OST",
+      "zh-Hant": "八兩金 OST",
+      "zh-Hans": "八两金 OST"
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-boat-song",
+        "title": "船歌",
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [
+            "person-luo-dayou"
+          ],
+          "composedBy": [
+            "person-luo-dayou"
+          ]
+        },
+        "notes": "Chyi Yu vocal appearance on the film soundtrack."
+      },
+      {
+        "position": 2,
+        "song": "song-red-cotton",
+        "title": "紅棉",
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending."
+      },
+      {
+        "position": 3,
+        "song": "song-mess",
+        "title": "亂",
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": "Chyi Yu vocal appearance noted in the follow-up task; full credit detail pending."
+      }
+    ]
+  },
+  {
+    "id": "appearance-turning-1999",
+    "slug": "turning-1999",
+    "title": "Turning appearance",
+    "titleLocalized": {
+      "en": "Turning appearance"
+    },
+    "titleOriginal": "Turning",
+    "date": "1999-09-14",
+    "appearanceType": "collaboration",
+    "programOrWork": "Turning",
+    "role": "Vocal appearance",
+    "relatedSongs": [
+      "song-turning"
+    ],
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-turning",
+        "title": "Turning",
+        "titleLocalized": {
+          "en": "Turning"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu",
+          "person-suzanne-ciani"
+        ],
+        "duration": "4:09",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": [
+            "person-suzanne-ciani"
+          ]
+        },
+        "notes": "User-supplied QQ short link resolves to Suzanne Ciani album MID 002HM2yh0OU8N2 with track 1 Turning. QQ API singer fields list Suzanne Ciani; the earlier QQ collaboration source lists Chyi Yu on the 1998 title-track candidate, so the Chyi Yu contribution is retained as a partial appearance pending booklet-level credits."
+      }
+    ],
+    "mediaLinks": [
+      {
+        "label": "QQ Music album",
+        "platform": "qq-music",
+        "url": "https://y.qq.com/n/ryqq/albumDetail/002HM2yh0OU8N2",
+        "kind": "streaming",
+        "isOfficial": true,
+        "accessRegion": "China mainland",
+        "notes": "Resolved from the project-maintainer short link https://c6.y.qq.com/base/fcgi-bin/u?__=oPura17l7ywU on 2026-06-25."
+      },
+      {
+        "label": "QQ Music collaboration candidate",
+        "platform": "qq-music",
+        "url": "https://y.qq.com/n/ryqq/albumDetail/001yzGlZ0TvAQm",
+        "kind": "metadata",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
+      }
+    ],
+    "sources": [
+      "source-qq-music-turning-suzanne-ciani-1999",
+      "source-qq-music-turning-collaboration",
+      "source-user-task-0623-1"
+    ],
+    "notes": "Moved from Releases to Appearances per the release wrap-up task. The user-supplied QQ short link resolves to a 12-track Suzanne Ciani album dated 1999-09-14; only the title track is retained here as the Chyi Yu-related voice-appearance record.",
+    "status": "partial"
+  },
+  {
+    "id": "appearance-whispering-steppes-desirous-water-ost",
+    "slug": "whispering-steppes-desirous-water-ost",
+    "title": "Whispering Steppes - Desirous Water OST",
+    "titleLocalized": {
+      "en": "Whispering Steppes - Desirous Water OST",
+      "zh-Hant": "天浴 - 慾水 OST",
+      "zh-Hans": "天浴 - 欲水 OST"
+    },
+    "titleOriginal": "天浴 - 慾水 OST",
+    "date": "1998",
+    "appearanceType": "soundtrack",
+    "programOrWork": "Tian Yu / Xiu Xiu: The Sent Down Girl",
+    "role": "OST vocal appearance",
+    "relatedSongs": [],
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "title": "Windflower",
+        "titleLocalized": {
+          "en": "Windflower",
+          "zh-Hant": "風之花",
+          "zh-Hans": "风之花"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": "English Wikipedia lists original-credit context: Seals and Crofts."
+      },
+      {
+        "position": 2,
+        "song": null,
+        "title": "Whispering Steppes",
+        "titleLocalized": {
+          "en": "Whispering Steppes",
+          "zh-Hant": "細雨咽咽的的草原",
+          "zh-Hans": "细雨咽咽的的草原"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [
+            "person-chyi-yu"
+          ],
+          "composedBy": [
+            "Johnny Chen"
+          ]
+        },
+        "notes": "English Wikipedia gives words by Chyi Yu and composition/arrangement by Johnny Chen."
+      },
+      {
+        "position": 3,
+        "song": null,
+        "title": "Turning",
+        "titleLocalized": {
+          "en": "Turning",
+          "zh-Hant": "流轉",
+          "zh-Hans": "流转"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": [
+            "person-suzanne-ciani"
+          ]
+        },
+        "notes": "English Wikipedia lists original-credit context: Suzanne Ciani."
+      },
+      {
+        "position": 4,
+        "song": null,
+        "title": "The Rose",
+        "titleLocalized": {
+          "en": "The Rose",
+          "zh-Hant": "玫瑰",
+          "zh-Hans": "玫瑰"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu",
+          "person-sandy-lam"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": "English Wikipedia lists this as a Chyi Yu and Sandy Lam duet with original-credit context: Amanda McBroom."
+      },
+      {
+        "position": 5,
+        "song": null,
+        "title": "I Swear",
+        "titleLocalized": {
+          "en": "I Swear",
+          "zh-Hant": "我發誓",
+          "zh-Hans": "我发誓"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu",
+          "person-sandy-lam",
+          "person-teresa-carpio",
+          "person-prudence-liew"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": "English Wikipedia lists this as a Chyi Yu, Sandy Lam, Teresa Carpio, and Prudence Liew collaboration."
+      }
+    ],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu"
+    ],
+    "notes": "Moved from Releases to Appearances because this is soundtrack/film vocal material rather than a Chyi Yu release. English Wikipedia supplies the five-track table and partial credit context; catalog metadata, formats, and official platform availability remain unresolved.",
     "status": "partial"
   },
   {
@@ -69,7 +321,10 @@
         "accessRegion": "China mainland"
       }
     ],
-    "sources": ["source-user-task-0618-2", "source-bilibili-kangsi-coming-2004"],
+    "sources": [
+      "source-user-task-0618-2",
+      "source-bilibili-kangsi-coming-2004"
+    ],
     "notes": "Bilibili exposes an official-platform page for the 2004 Kangsi Coming season. The exact Chyi Yu episode title/date still needs pinpointing within the season list.",
     "status": "partial"
   }

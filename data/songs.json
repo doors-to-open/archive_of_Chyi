@@ -287,14 +287,13 @@
     "lyricsBy": ["person-luo-dayou"],
     "composedBy": ["person-luo-dayou"],
     "arrangedBy": [],
-    "relatedReleases": ["release-eight-taels-of-gold-ost-1989"],
+    "relatedReleases": [],
     "knownConcerts": ["concert-unheard-of-chyi-2002-hong-kong", "concert-grace-still-beijing-2025"],
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-grace-still-beijing-full", "source-user-task-0618-1", "source-user-task-0618-2", "source-qq-music-eight-taels-of-gold-ost"],
-    "notes": "Eight Taels of Gold sources identify 船歌 as the film theme song sung by Chyi Yu and credited to Lo Ta-yu; live-performance links are also modeled separately.",
+    "notes": "Eight Taels of Gold sources identify 船歌 as the film theme song sung by Chyi Yu and credited to Lo Ta-yu; soundtrack usage is modeled as an appearance, while live-performance links are modeled separately.",
     "status": "partial",
-    "firstKnownRelease": "release-eight-taels-of-gold-ost-1989",
     "titleLocalized": {
       "en": "Boat Song",
       "zh-Hant": "船歌"
@@ -426,12 +425,12 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "relatedReleases": ["release-eight-taels-of-gold-ost-1989"],
+    "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": ["source-user-task-0618-1", "source-user-task-0618-2", "source-qq-music-eight-taels-of-gold-ost"],
-    "notes": "Mentioned in the task note as an Eight Taels of Gold soundtrack vocal appearance; needs public-source verification.",
+    "notes": "Mentioned in the task note as an Eight Taels of Gold soundtrack vocal appearance; soundtrack usage is modeled in Appearances and needs fuller public-credit verification.",
     "status": "needs-source",
     "titleLocalized": {
       "en": "Red Cotton",
@@ -449,12 +448,12 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "relatedReleases": ["release-eight-taels-of-gold-ost-1989"],
+    "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": ["source-user-task-0618-1", "source-user-task-0618-2", "source-qq-music-eight-taels-of-gold-ost"],
-    "notes": "Mentioned in the task note as an Eight Taels of Gold soundtrack vocal appearance; needs public-source verification.",
+    "notes": "Mentioned in the task note as an Eight Taels of Gold soundtrack vocal appearance; soundtrack usage is modeled in Appearances and needs fuller public-credit verification.",
     "status": "needs-source",
     "titleLocalized": {
       "en": "Mess",
@@ -903,17 +902,14 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "firstKnownRelease": "release-turning-1998",
-    "relatedReleases": [
-      "release-turning-1998"
-    ],
+    "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": [
       "source-qq-music-turning-collaboration"
     ],
-    "notes": "QQ Music lists Chyi Yu and Suzanne Ciani as singers on the five-track 1998 Turning release title track. The later 1999 Suzanne Ciani album candidate is left draft-only because QQ did not list Chyi Yu as singer there.",
+    "notes": "Modeled as a Chyi Yu voice appearance rather than a release placement. QQ Music has both a 1998 collaboration candidate and the user-supplied 1999 Suzanne Ciani album link; fuller booklet credits remain pending.",
     "status": "partial"
   }
 ]

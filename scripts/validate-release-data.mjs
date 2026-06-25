@@ -1,0 +1,157 @@
+import fs from "node:fs";
+import path from "node:path";
+
+const root = process.cwd();
+
+function readJson(relativePath) {
+  return JSON.parse(fs.readFileSync(path.join(root, relativePath), "utf8"));
+}
+
+const releases = readJson("data/releases.json");
+const appearances = readJson("data/appearances.json");
+const songs = readJson("data/songs.json");
+const people = readJson("data/people.json");
+const sources = readJson("data/sources.json");
+
+const sourceIds = new Set(sources.map((source) => source.id));
+const songIds = new Set(songs.map((song) => song.id));
+const personIds = new Set(people.map((person) => person.id));
+const errors = [];
+const warnings = [];
+
+function addError(message) {
+  errors.push(message);
+}
+
+function addWarning(message) {
+  warnings.push(message);
+}
+
+function expectUnique(items, field, label) {
+  const seen = new Map();
+  for (const item of items) {
+    const value = item[field];
+    if (!value) {
+      addError(`${label} ${item.id || "(missing id)"} is missing ${field}`);
+      continue;
+    }
+    if (seen.has(value)) {
+      addError(`${label} ${item.id} duplicates ${field} "${value}" from ${seen.get(value)}`);
+    } else {
+      seen.set(value, item.id);
+    }
+  }
+}
+
+function pathLabel(parts) {
+  return parts.filter(Boolean).join(".");
+}
+
+function walkText(value, parts, visitor) {
+  if (typeof value === "string") {
+    visitor(value, pathLabel(parts));
+    return;
+  }
+  if (Array.isArray(value)) {
+    value.forEach((entry, index) => walkText(entry, [...parts, `[${index}]`], visitor));
+    return;
+  }
+  if (value && typeof value === "object") {
+    for (const [key, entry] of Object.entries(value)) {
+      walkText(entry, [...parts, key], visitor);
+    }
+  }
+}
+
+function validateSourceRefs(record, label) {
+  for (const sourceId of record.sources || []) {
+    if (!sourceIds.has(sourceId)) {
+      addError(`${label} ${record.id} references missing source ${sourceId}`);
+    }
+  }
+}
+
+function validateTrackCredits(track, release) {
+  for (const role of ["lyricsBy", "composedBy"]) {
+    for (const credit of track.credits?.[role] || []) {
+      if (!personIds.has(credit) && /^person-/.test(credit)) {
+        addError(`${release.id} track "${track.titleOnRelease}" references missing ${role} person ${credit}`);
+      }
+    }
+  }
+  if (track.song && !songIds.has(track.song)) {
+    addError(`${release.id} track "${track.titleOnRelease}" references missing song ${track.song}`);
+  }
+}
+
+function validateLinks(links, label) {
+  for (const [index, link] of (links || []).entries()) {
+    if (!link.label) addError(`${label} link ${index + 1} is missing label`);
+    if (!link.url) addError(`${label} link ${index + 1} is missing url`);
+    if (link.kind === "streaming" && !link.accessRegion) {
+      addWarning(`${label} streaming link "${link.label || index + 1}" has no accessRegion`);
+    }
+  }
+}
+
+expectUnique(releases, "id", "Release");
+expectUnique(releases, "slug", "Release");
+expectUnique(appearances, "id", "Appearance");
+expectUnique(appearances, "slug", "Appearance");
+
+for (const release of releases) {
+  validateSourceRefs(release, "Release");
+  validateLinks(release.availability?.streaming, `Release ${release.id} streaming`);
+  validateLinks(release.availability?.purchase, `Release ${release.id} purchase`);
+
+  if (release.releaseType === "soundtrack") {
+    addError(`Release ${release.id} is still modeled as soundtrack; soundtrack vocal appearances belong in appearances`);
+  }
+  if (release.id === "release-turning-1998") {
+    addError("release-turning-1998 is still modeled as a release; task requires moving Turning to appearances");
+  }
+  for (const track of release.tracks || []) {
+    validateTrackCredits(track, release);
+  }
+  walkText(release, [release.id], (text, textPath) => {
+    if (text.includes("??")) addError(`${textPath} contains literal ??`);
+    if (text.includes("\uFFFD")) addError(`${textPath} contains replacement character`);
+  });
+}
+
+for (const appearance of appearances) {
+  validateSourceRefs(appearance, "Appearance");
+  validateLinks(appearance.mediaLinks, `Appearance ${appearance.id}`);
+  for (const songId of appearance.relatedSongs || []) {
+    if (!songIds.has(songId)) {
+      addError(`Appearance ${appearance.id} references missing related song ${songId}`);
+    }
+  }
+  walkText(appearance, [appearance.id], (text, textPath) => {
+    if (text.includes("??")) addError(`${textPath} contains literal ??`);
+    if (text.includes("\uFFFD")) addError(`${textPath} contains replacement character`);
+  });
+}
+
+if (!releases.some((release) =>
+  release.id === "release-one-thought-between-2025" ||
+  release.titleOriginal?.includes("一念") ||
+  release.titleLocalized?.["zh-Hant"]?.includes("一念") ||
+  release.titleLocalized?.["zh-Hans"]?.includes("一念")
+)) {
+  addWarning("No obvious Wu Tsing-fong/Chyi Yu 2025 EP candidate is modeled yet");
+}
+
+for (const warning of warnings) {
+  console.warn(`Warning: ${warning}`);
+}
+
+if (errors.length) {
+  console.error(`Release data validation failed with ${errors.length} error(s):`);
+  for (const error of errors) {
+    console.error(`- ${error}`);
+  }
+  process.exit(1);
+}
+
+console.log(`Release data validation passed for ${releases.length} releases and ${appearances.length} appearances.`);

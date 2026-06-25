@@ -8,6 +8,7 @@
     "build": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro build",
     "preview": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro preview --host 127.0.0.1",
     "check": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro check",
+    "validate:releases": "node scripts/validate-release-data.mjs",
     "import:allowlist": "node scripts/import/crawl-url.mjs --list-sources",
     "import:crawl": "node scripts/import/crawl-url.mjs",
     "import:qq-album": "node scripts/import/qq-album.mjs"

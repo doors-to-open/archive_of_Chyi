@@ -154,6 +154,8 @@ const ui = {
   },
   "label.view": { en: "View", "zh-Hant": "視圖", "zh-Hans": "视图" },
   "label.sort": { en: "Sort", "zh-Hant": "排序", "zh-Hans": "排序" },
+  "label.filter": { en: "Filter", "zh-Hant": "篩選", "zh-Hans": "筛选" },
+  "label.category": { en: "Category", "zh-Hant": "分類", "zh-Hans": "分类" },
   "label.sortTracks": { en: "Sort tracks", "zh-Hant": "曲目排序", "zh-Hans": "曲目排序" },
   "label.keyword": { en: "Keyword", "zh-Hant": "關鍵字", "zh-Hans": "关键词" },
   "label.section": { en: "Section", "zh-Hant": "分類", "zh-Hans": "分类" },
@@ -196,6 +198,7 @@ const ui = {
   "label.clipLinks": { en: "Clip links", "zh-Hant": "片段連結", "zh-Hans": "片段链接" },
   "label.liveRecords": { en: "Live records", "zh-Hant": "現場紀錄", "zh-Hans": "现场记录" },
   "label.tracks": { en: "Tracks", "zh-Hant": "曲目", "zh-Hans": "曲目" },
+  "label.appearanceTracks": { en: "Appearance tracks", "zh-Hant": "出現曲目", "zh-Hans": "出现曲目" },
   "label.songs": { en: "Songs", "zh-Hant": "歌曲", "zh-Hans": "歌曲" },
   "label.albums": { en: "Albums", "zh-Hant": "專輯", "zh-Hans": "专辑" },
   "label.clips": { en: "Clips", "zh-Hant": "片段", "zh-Hans": "片段" },
@@ -253,6 +256,16 @@ const ui = {
   "option.mostLive": { en: "Most live", "zh-Hant": "現場最多", "zh-Hans": "现场最多" },
   "option.leastLive": { en: "Least live", "zh-Hant": "現場最少", "zh-Hans": "现场最少" },
   "option.albumOrder": { en: "Album order", "zh-Hant": "專輯順序", "zh-Hans": "专辑顺序" },
+  "option.allReleases": { en: "All releases", "zh-Hant": "全部發行", "zh-Hans": "全部发行" },
+  "option.studioAlbums": { en: "Studio albums", "zh-Hant": "錄音室專輯", "zh-Hans": "录音室专辑" },
+  "option.epSingles": { en: "EPs / singles", "zh-Hant": "EP / 單曲", "zh-Hans": "EP / 单曲" },
+  "option.compilations": { en: "Compilations", "zh-Hant": "合輯", "zh-Hans": "合辑" },
+  "option.collaborations": { en: "Collaborations", "zh-Hant": "合作", "zh-Hans": "合作" },
+  "option.englishCoverAlbums": { en: "English cover albums", "zh-Hant": "英文翻唱專輯", "zh-Hans": "英文翻唱专辑" },
+  "option.religiousAlbums": { en: "Religious albums", "zh-Hant": "宗教 / 唱經", "zh-Hans": "宗教 / 唱经" },
+  "option.liveAlbums": { en: "Live albums", "zh-Hant": "現場專輯", "zh-Hans": "现场专辑" },
+  "option.reissues": { en: "Reissues", "zh-Hant": "再版", "zh-Hans": "再版" },
+  "option.otherReleases": { en: "Other", "zh-Hant": "其他", "zh-Hans": "其他" },
   "option.allSections": { en: "All sections", "zh-Hant": "全部分類", "zh-Hans": "全部分类" },
   "option.allTypes": { en: "All types", "zh-Hant": "全部類型", "zh-Hans": "全部类型" },
   "option.allLevels": { en: "All levels", "zh-Hant": "全部等級", "zh-Hans": "全部等级" },
@@ -433,6 +446,35 @@ export function sourceCategoryValues(category: string): LocaleValues {
     person: { en: "Person", "zh-Hant": "人物", "zh-Hans": "人物" }
   };
   return categories[category] || textValues(category);
+}
+
+export function releaseTypeValues(type: string): LocaleValues {
+  const types: Record<string, LocaleValues> = {
+    "studio-album": uiText("option.studioAlbums"),
+    single: uiText("option.epSingles"),
+    ep: uiText("option.epSingles"),
+    compilation: uiText("option.compilations"),
+    collaboration: uiText("option.collaborations"),
+    "live-album": uiText("option.liveAlbums"),
+    reissue: uiText("option.reissues"),
+    other: uiText("option.otherReleases")
+  };
+  return types[type] || textValues(type);
+}
+
+export function releaseCategoryValues(category: string): LocaleValues {
+  const categories: Record<string, LocaleValues> = {
+    studio: uiText("option.studioAlbums"),
+    "ep-single": uiText("option.epSingles"),
+    compilation: uiText("option.compilations"),
+    collaboration: uiText("option.collaborations"),
+    "english-cover": uiText("option.englishCoverAlbums"),
+    religious: uiText("option.religiousAlbums"),
+    live: uiText("option.liveAlbums"),
+    reissue: uiText("option.reissues"),
+    other: uiText("option.otherReleases")
+  };
+  return categories[category] || releaseTypeValues(category);
 }
 
 export function originValues(label: string): LocaleValues {
