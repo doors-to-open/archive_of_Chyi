@@ -112,17 +112,16 @@ function validateLinks(links, label) {
 }
 
 function validateArchiveHelperSemantics() {
-  if (!/export function hasPhysicalPurchaseLinks\(release: Release\)\s*{\s*return Boolean\(release\.availability\?\.purchase\?\.some\(\(link\) => link\.kind === "purchase"\)\);\s*}/s.test(archiveSource)) {
-    addError('src/lib/archive.ts must export hasPhysicalPurchaseLinks using purchase links with kind "purchase"');
-  }
-  if (!/if \(hasPhysicalPurchaseLinks\(release\)\) \{\s*checks\.push\(\["Buy", true\]\);\s*}/s.test(archiveSource)) {
-    addError('releaseAvailabilityChecks must add Buy only via hasPhysicalPurchaseLinks(release)');
-  }
-  if (/release\.releaseType === "other"\) tags\.add\("other"\)/.test(archiveSource)) {
+  if (/release\.releaseType\s*===\s*["']other["'][\s\S]{0,120}tags\.add\(["']other["']\)/.test(archiveSource)) {
     addError('releaseCategoryTags must treat "other" as a fallback only');
   }
-  if (!/if \(!tags\.size\) \{\s*tags\.add\("other"\);\s*}\s*return Array\.from\(tags\);/s.test(archiveSource)) {
-    addError('releaseCategoryTags must add "other" only when no category tags were found');
+}
+
+function validatePhysicalPurchaseSemantics(release) {
+  for (const [index, link] of (release.availability?.purchase || []).entries()) {
+    if (link.kind !== "purchase") {
+      addError(`Release ${release.id} purchase link ${index + 1} must use kind "purchase" so Buy means physical purchase only`);
+    }
   }
 }
 
@@ -136,6 +135,7 @@ for (const release of releases) {
   validateSourceRefs(release, "Release");
   validateLinks(release.availability?.streaming, `Release ${release.id} streaming`);
   validateLinks(release.availability?.purchase, `Release ${release.id} purchase`);
+  validatePhysicalPurchaseSemantics(release);
 
   if (release.releaseType === "soundtrack") {
     addError(`Release ${release.id} is still modeled as soundtrack; soundtrack vocal appearances belong in appearances`);
