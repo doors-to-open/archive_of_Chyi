@@ -19,6 +19,7 @@ const appearances = readJson("data/appearances.json");
 const songs = readJson("data/songs.json");
 const people = readJson("data/people.json");
 const sources = readJson("data/sources.json");
+const archiveSource = fs.readFileSync(path.join(root, "src/lib/archive.ts"), "utf8");
 
 const sourceIds = new Set(sources.map((source) => source.id));
 const songIds = new Set(songs.map((song) => song.id));
@@ -110,10 +111,26 @@ function validateLinks(links, label) {
   }
 }
 
+function validateArchiveHelperSemantics() {
+  if (!/export function hasPhysicalPurchaseLinks\(release: Release\)\s*{\s*return Boolean\(release\.availability\?\.purchase\?\.some\(\(link\) => link\.kind === "purchase"\)\);\s*}/s.test(archiveSource)) {
+    addError('src/lib/archive.ts must export hasPhysicalPurchaseLinks using purchase links with kind "purchase"');
+  }
+  if (!/if \(hasPhysicalPurchaseLinks\(release\)\) \{\s*checks\.push\(\["Buy", true\]\);\s*}/s.test(archiveSource)) {
+    addError('releaseAvailabilityChecks must add Buy only via hasPhysicalPurchaseLinks(release)');
+  }
+  if (/release\.releaseType === "other"\) tags\.add\("other"\)/.test(archiveSource)) {
+    addError('releaseCategoryTags must treat "other" as a fallback only');
+  }
+  if (!/if \(!tags\.size\) \{\s*tags\.add\("other"\);\s*}\s*return Array\.from\(tags\);/s.test(archiveSource)) {
+    addError('releaseCategoryTags must add "other" only when no category tags were found');
+  }
+}
+
 expectUnique(releases, "id", "Release");
 expectUnique(releases, "slug", "Release");
 expectUnique(appearances, "id", "Appearance");
 expectUnique(appearances, "slug", "Appearance");
+validateArchiveHelperSemantics();
 
 for (const release of releases) {
   validateSourceRefs(release, "Release");
