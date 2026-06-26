@@ -845,5 +845,113 @@
     ],
     "notes": "Guest at Chyi Yu's 2026-04-18 Changsha and 2026-05-16 Shenzhen Still Grace / 風采依舊·在 concerts. Bilibili chapter metadata also identifies guest duet, guest solo, and erhu solo material across these tour stops.",
     "status": "partial"
+  },
+  {
+    "id": "person-chang-ta-chun",
+    "slug": "chang-ta-chun",
+    "displayName": "Chang Ta-chun",
+    "nameOriginal": "張大春",
+    "aliases": [
+      "Zhang Dachun",
+      "张大春"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-ming-tian-hui-geng-hao"
+    ],
+    "notes": "Credited as a Mandarin lyricist for Tomorrow Will Be Better in the checked source.",
+    "status": "partial"
+  },
+  {
+    "id": "person-hsu-nai-sheng",
+    "slug": "hsu-nai-sheng",
+    "displayName": "Hsu Nai-sheng",
+    "nameOriginal": "許乃勝",
+    "aliases": [
+      "Xu Naisheng",
+      "许乃胜"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-ming-tian-hui-geng-hao"
+    ],
+    "notes": "Credited as a Mandarin lyricist for Tomorrow Will Be Better in the checked source.",
+    "status": "partial"
+  },
+  {
+    "id": "person-lee-shou-chuan",
+    "slug": "lee-shou-chuan",
+    "displayName": "Lee Shou-chuan",
+    "nameOriginal": "李壽全",
+    "aliases": [
+      "Li Shouquan",
+      "李寿全"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-ming-tian-hui-geng-hao"
+    ],
+    "notes": "Credited as a Mandarin lyricist for Tomorrow Will Be Better in the checked source.",
+    "status": "partial"
+  },
+  {
+    "id": "person-chiu-fu-sheng",
+    "slug": "chiu-fu-sheng",
+    "displayName": "Chiu Fu-sheng",
+    "nameOriginal": "邱復生",
+    "aliases": [
+      "Qiu Fusheng",
+      "邱复生"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-ming-tian-hui-geng-hao"
+    ],
+    "notes": "Credited as a Mandarin lyricist for Tomorrow Will Be Better in the checked source.",
+    "status": "partial"
+  },
+  {
+    "id": "person-sylvia-chang",
+    "slug": "sylvia-chang",
+    "displayName": "Sylvia Chang",
+    "nameOriginal": "張艾嘉",
+    "aliases": [
+      "Chang Ai-chia",
+      "Zhang Aijia",
+      "张艾嘉"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-ming-tian-hui-geng-hao"
+    ],
+    "notes": "Credited as a Mandarin lyricist for Tomorrow Will Be Better in the checked source.",
+    "status": "partial"
+  },
+  {
+    "id": "person-chan-hung-chih",
+    "slug": "chan-hung-chih",
+    "displayName": "Chan Hung-chih",
+    "nameOriginal": "詹宏志",
+    "aliases": [
+      "Zhan Hongzhi"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [
+      "source-wikipedia-zh-ming-tian-hui-geng-hao"
+    ],
+    "notes": "Credited as a Mandarin lyricist for Tomorrow Will Be Better in the checked source.",
+    "status": "partial"
   }
 ]

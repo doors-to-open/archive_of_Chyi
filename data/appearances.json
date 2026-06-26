@@ -359,5 +359,255 @@
     ],
     "notes": "Bilibili exposes an official-platform page for the 2004 Kangsi Coming season. The exact Chyi Yu episode title/date still needs pinpointing within the season list.",
     "status": "partial"
+  },
+  {
+    "id": "appearance-impression-liu-sanjie-ost",
+    "slug": "impression-liu-sanjie-ost",
+    "title": "Impression Liu Sanjie OST",
+    "titleOriginal": "印象·劉三姐 OST",
+    "titleLocalized": {
+      "en": "Impression Liu Sanjie OST",
+      "zh-Hant": "印象·劉三姐 OST",
+      "zh-Hans": "印象·刘三姐 OST"
+    },
+    "date": "2003",
+    "appearanceType": "soundtrack",
+    "programOrWork": "Impression Liu Sanjie",
+    "role": "OST vocal appearance",
+    "relatedSongs": [],
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "title": "籐纏樹",
+        "titleLocalized": {
+          "en": "籐纏樹",
+          "zh-Hant": "籐纏樹",
+          "zh-Hans": "藤缠树"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": "Listed under the Impression Liu Sanjie soundtrack/concept work; public lyricist/composer credits remain unresolved."
+      },
+      {
+        "position": 2,
+        "song": null,
+        "title": "多謝了",
+        "titleLocalized": {
+          "en": "多謝了",
+          "zh-Hant": "多謝了",
+          "zh-Hans": "多谢了"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": "Listed under the Impression Liu Sanjie soundtrack/concept work; public lyricist/composer credits remain unresolved."
+      }
+    ],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu"
+    ],
+    "notes": "Moved from Releases to Appearances because the user confirmed Impression Liu Sanjie should be treated as OST material, not a Chyi Yu-owned release.",
+    "status": "partial"
+  },
+  {
+    "id": "appearance-ming-tian-hui-geng-hao-1985",
+    "slug": "ming-tian-hui-geng-hao-1985",
+    "title": "Tomorrow Will Be Better",
+    "titleOriginal": "明天會更好",
+    "titleLocalized": {
+      "en": "Tomorrow Will Be Better",
+      "zh-Hant": "明天會更好",
+      "zh-Hans": "明天会更好"
+    },
+    "date": "1985",
+    "appearanceType": "collaboration",
+    "programOrWork": "Tomorrow Will Be Better",
+    "role": "charity single vocal appearance",
+    "relatedSongs": [],
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "title": "Tomorrow Will Be Better",
+        "titleLocalized": {
+          "en": "Tomorrow Will Be Better",
+          "zh-Hant": "明天會更好",
+          "zh-Hans": "明天会更好"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [
+            "person-luo-dayou",
+            "person-chang-ta-chun",
+            "person-hsu-nai-sheng",
+            "person-lee-shou-chuan",
+            "person-chiu-fu-sheng",
+            "person-sylvia-chang",
+            "person-chan-hung-chih"
+          ],
+          "composedBy": [
+            "person-luo-dayou"
+          ]
+        },
+        "notes": "Chyi Yu is modeled as a participating vocalist only; the full charity ensemble is intentionally not expanded into People. Mandarin lyric and music credits follow the Chinese Wikipedia source; the Cantonese lyric credit is not modeled for this Mandarin appearance track."
+      }
+    ],
+    "mediaLinks": [
+      {
+        "label": "QQ Music single",
+        "platform": "qq-music",
+        "url": "https://y.qq.com/n/ryqq/albumDetail/003nsRyO0lXC8F",
+        "kind": "streaming",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
+      }
+    ],
+    "sources": [
+      "source-qq-music-ming-tian-hui-geng-hao",
+      "source-wikipedia-zh-ming-tian-hui-geng-hao"
+    ],
+    "notes": "Moved from Releases to Appearances because this is a charity collaboration with many performers rather than a Chyi Yu-owned release.",
+    "status": "partial"
+  },
+  {
+    "id": "appearance-da-ming-feng-hua-ost",
+    "slug": "da-ming-feng-hua-ost",
+    "title": "Da Ming Feng Hua OST",
+    "titleOriginal": "大明风华 OST",
+    "titleLocalized": {
+      "en": "Da Ming Feng Hua OST",
+      "zh-Hans": "大明风华 OST"
+    },
+    "date": "2019-12-25",
+    "appearanceType": "soundtrack",
+    "programOrWork": "大明风华",
+    "role": "OST vocal appearance",
+    "relatedSongs": [],
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "title": "上古情歌",
+        "titleLocalized": {
+          "zh-Hans": "上古情歌"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": "4:47",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": "QQ Music lists Chyi Yu on this 大明风华 television-drama interlude; public lyricist/composer credits remain unresolved in the checked source."
+      }
+    ],
+    "mediaLinks": [
+      {
+        "label": "QQ Music soundtrack",
+        "platform": "qq-music",
+        "url": "https://y.qq.com/n/ryqq/albumDetail/000N3TNl045I3N",
+        "kind": "streaming",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
+      }
+    ],
+    "sources": [
+      "source-qq-music-album-000n3tnl045i3n"
+    ],
+    "notes": "Added from the QQ Music task link resolved on 2026-06-26. Only the Chyi Yu vocal track is modeled here; QQ Music exposes the track as 上古情歌 with subtitle 《大明风华》电视剧插曲, so the appearance container is modeled as the 大明风华 OST/work rather than as a standalone Chyi Yu release.",
+    "status": "partial"
+  },
+  {
+    "id": "appearance-kuai-le-tian-tang",
+    "slug": "kuai-le-tian-tang",
+    "title": "Happy Paradise",
+    "titleOriginal": "快乐天堂",
+    "titleLocalized": {
+      "en": "Happy Paradise",
+      "zh-Hant": "快樂天堂",
+      "zh-Hans": "快乐天堂"
+    },
+    "date": "1987-01-15",
+    "appearanceType": "collaboration",
+    "programOrWork": "快乐天堂",
+    "role": "album vocal appearance",
+    "relatedSongs": [],
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "title": "快乐天堂",
+        "titleLocalized": {
+          "en": "Happy Paradise",
+          "zh-Hant": "快樂天堂",
+          "zh-Hans": "快乐天堂"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": "4:01",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": "QQ Music lists Chyi Yu among the singers on the title track. The full ensemble is intentionally not expanded into People."
+      },
+      {
+        "position": 9,
+        "song": null,
+        "title": "让它自由",
+        "titleLocalized": {
+          "zh-Hant": "讓它自由",
+          "zh-Hans": "让它自由"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": "9:00",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": "QQ Music lists Chyi Yu as the singer on this album track."
+      }
+    ],
+    "mediaLinks": [
+      {
+        "label": "QQ Music album",
+        "platform": "qq-music",
+        "url": "https://y.qq.com/n/ryqq/albumDetail/0046qI8I2raSXn",
+        "kind": "streaming",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
+      }
+    ],
+    "sources": [
+      "source-qq-music-album-0046qi8i2rasxn"
+    ],
+    "notes": "Added from the QQ Music task link resolved on 2026-06-26. This is an album-level collaboration appearance; only Chyi Yu-relevant tracks are modeled and the full ensemble is intentionally not expanded into People.",
+    "status": "partial"
   }
 ]

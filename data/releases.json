@@ -48,32 +48,7 @@
           "accessRegion": "China mainland"
         }
       ],
-      "purchase": [
-        {
-          "label": "Apple Music / iTunes Store (Taiwan)",
-          "platform": "itunes-store",
-          "url": "https://music.apple.com/tw/album/%3F%3F%3F/1894989610",
-          "kind": "purchase",
-          "isOfficial": true,
-          "accessRegion": "Taiwan"
-        },
-        {
-          "label": "Apple Music / iTunes Store (Hong Kong)",
-          "platform": "itunes-store",
-          "url": "https://music.apple.com/hk/album/%3F%3F%3F/1894989610",
-          "kind": "purchase",
-          "isOfficial": true,
-          "accessRegion": "Hong Kong"
-        },
-        {
-          "label": "Apple Music / iTunes Store (United States)",
-          "platform": "itunes-store",
-          "url": "https://music.apple.com/us/album/%3F%3F%3F/1894989610",
-          "kind": "purchase",
-          "isOfficial": true,
-          "accessRegion": "United States"
-        }
-      ]
+      "purchase": []
     },
     "tracks": [
       {
@@ -306,8 +281,7 @@
       "source-apple-music-olive-tree",
       "source-qq-music-olive-tree",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-olive-tree-1979",
-      "source-itunes-lookup-purchase-olive-tree-1979"
+      "source-netease-cloud-music-olive-tree-1979"
     ],
     "notes": "Producer and original physical formats remain unknown. The supplied encyclopedia page has a likely swapped title-track lyric/music field, so that credit still needs official booklet verification. Format audit: MusicBrainz media rows list official cassette releases, a later Digital Media release, and a later SACD; CD appears only on a pseudo-release row and is not modeled as confirmed.",
     "status": "partial",
@@ -1130,32 +1104,7 @@
           "accessRegion": "China mainland"
         }
       ],
-      "purchase": [
-        {
-          "label": "Apple Music / iTunes Store (Taiwan)",
-          "platform": "itunes-store",
-          "url": "https://music.apple.com/tw/album/%3F%3F/152297986",
-          "kind": "purchase",
-          "isOfficial": true,
-          "accessRegion": "Taiwan"
-        },
-        {
-          "label": "Apple Music / iTunes Store (Hong Kong)",
-          "platform": "itunes-store",
-          "url": "https://music.apple.com/hk/album/%3F%3F/152297986",
-          "kind": "purchase",
-          "isOfficial": true,
-          "accessRegion": "Hong Kong"
-        },
-        {
-          "label": "Apple Music / iTunes Store (United States)",
-          "platform": "itunes-store",
-          "url": "https://music.apple.com/us/album/%3F%3F/152297986",
-          "kind": "purchase",
-          "isOfficial": true,
-          "accessRegion": "United States"
-        }
-      ]
+      "purchase": []
     },
     "tracks": [
       {
@@ -1395,8 +1344,7 @@
       "source-wikipedia-yue-echo-album",
       "source-apple-music-echo",
       "source-qq-music-echo",
-      "source-user-task-0618-2",
-      "source-itunes-lookup-purchase-echo-1985"
+      "source-user-task-0618-2"
     ],
     "notes": "Co-performed with Pan Yue-yun. The supplied encyclopedia source says the album was first released on cassette and vinyl, then reissued on CD the following January.",
     "status": "partial",
@@ -3921,32 +3869,7 @@
           "accessRegion": "China mainland"
         }
       ],
-      "purchase": [
-        {
-          "label": "Apple Music / iTunes Store (Taiwan)",
-          "platform": "itunes-store",
-          "url": "https://music.apple.com/tw/album/%3F%3F%3F%3F%3F%3F%3F/161876832",
-          "kind": "purchase",
-          "isOfficial": true,
-          "accessRegion": "Taiwan"
-        },
-        {
-          "label": "Apple Music / iTunes Store (Hong Kong)",
-          "platform": "itunes-store",
-          "url": "https://music.apple.com/hk/album/%3F%3F%3F%3F%3F%3F%3F/161876832",
-          "kind": "purchase",
-          "isOfficial": true,
-          "accessRegion": "Hong Kong"
-        },
-        {
-          "label": "Apple Music / iTunes Store (United States)",
-          "platform": "itunes-store",
-          "url": "https://music.apple.com/us/album/%3F%3F%3F%3F%3F%3F%3F/161876832",
-          "kind": "purchase",
-          "isOfficial": true,
-          "accessRegion": "United States"
-        }
-      ]
+      "purchase": []
     },
     "tracks": [
       {
@@ -4200,8 +4123,7 @@
       "source-wikipedia-yue-camel-bird-fish",
       "source-apple-music-camel-bird-fish",
       "source-qq-music-camel-bird-fish",
-      "source-musicbrainz-chyi-yu-release-media",
-      "source-itunes-lookup-purchase-camel-bird-fish-1997"
+      "source-musicbrainz-chyi-yu-release-media"
     ],
     "notes": "Producer and physical-format details remain unknown. Apple Music and QQ Music confirm current streaming availability. Format audit: MusicBrainz lists the official Taiwan release as a two-disc CD set.",
     "status": "partial",
@@ -4736,83 +4658,6 @@
     ],
     "notes": "Imported from the accepted Stage 6B review. Modeled as a Chyi Yu English-cover studio album with several collaboration tracks; QQ Music supplies current platform order, durations, and singer lists. Original writer/composer credits remain blank pending booklet or primary-credit verification. Format audit: MusicBrainz lists the official Taiwan release as a two-disc CD set.",
     "status": "partial"
-  },
-  {
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "unknown"
-    ],
-    "availability": {
-      "physical": [
-        "unknown"
-      ],
-      "streaming": [],
-      "purchase": []
-    },
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "status": "partial",
-    "id": "release-impression-liu-sanjie-2003",
-    "slug": "impression-liu-sanjie-2003",
-    "title": "Impression Liu Sanjie",
-    "titleOriginal": "印象·劉三姐",
-    "titleLocalized": {
-      "en": "Impression Liu Sanjie",
-      "zh-Hant": "印象·劉三姐",
-      "zh-Hans": "印象·刘三姐"
-    },
-    "releaseDate": "2003",
-    "releaseType": "other",
-    "tracks": [
-      {
-        "position": 1,
-        "song": null,
-        "titleOnRelease": "籐纏樹",
-        "titleOnReleaseLocalized": {
-          "en": "籐纏樹",
-          "zh-Hant": "籐纏樹",
-          "zh-Hans": "藤缠树"
-        },
-        "duration": null,
-        "versionNote": "English Wikipedia section title lists this song under the Impression Liu Sanjie concept album.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 2,
-        "song": null,
-        "titleOnRelease": "多謝了",
-        "titleOnReleaseLocalized": {
-          "en": "多謝了",
-          "zh-Hant": "多謝了",
-          "zh-Hans": "多谢了"
-        },
-        "duration": null,
-        "versionNote": "English Wikipedia section title lists this song under the Impression Liu Sanjie concept album.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      }
-    ],
-    "sources": [
-      "source-wikipedia-en-chyi-yu"
-    ],
-    "notes": "English Wikipedia lists 2003 Impression Liu Sanjie / 印象·劉三姐 as a concept album produced and released only in Mainland China, with section-title song leads 籐纏樹 and 多謝了. Kept as a partial English-Wikipedia-supported stub pending a stronger catalog or platform source."
   },
   {
     "id": "release-the-unheard-of-chyi-2003",
@@ -7127,75 +6972,6 @@
       "source-wikipedia-zh-wu-tsing-fong"
     ],
     "notes": "Updated during the release wrap-up audit as the Wu Tsing-fong / Chyi Yu 2025 collaboration single. Chinese Wikipedia pages for both artists confirm the 2025-09-12 collaboration and the two versions; Wu Tsing-fong's page confirms the lyric credit to Chyi Yu. NetEase Cloud Music supplies an official China-mainland album page, with its platform publish date returned as 2025-09-11. Composer and duration fields remain unresolved.",
-    "status": "partial"
-  },
-  {
-    "id": "release-ming-tian-hui-geng-hao-1985",
-    "slug": "ming-tian-hui-geng-hao-1985",
-    "title": "Tomorrow Will Be Better",
-    "titleLocalized": {
-      "en": "Tomorrow Will Be Better",
-      "zh-Hant": "明天會更好",
-      "zh-Hans": "明天会更好"
-    },
-    "titleOriginal": "明天會更好",
-    "releaseType": "collaboration",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "digital"
-    ],
-    "availability": {
-      "physical": [],
-      "streaming": [
-        {
-          "label": "QQ Music",
-          "platform": "qq-music",
-          "url": "https://y.qq.com/n/ryqq/albumDetail/003nsRyO0lXC8F",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "China mainland"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [
-      {
-        "position": 1,
-        "song": null,
-        "titleOnRelease": "Tomorrow Will Be Better",
-        "titleOnReleaseLocalized": {
-          "en": "Tomorrow Will Be Better",
-          "zh-Hant": "明天會更好",
-          "zh-Hans": "明天会更好"
-        },
-        "duration": null,
-        "versionNote": "Collaborative charity single; only Chyi Yu participation is modeled here for now.",
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      }
-    ],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-musicbrainz-chyi-yu-release-groups",
-      "source-qq-music-ming-tian-hui-geng-hao",
-      "source-musicbrainz-chyi-yu-release-media"
-    ],
-    "notes": "Added during release coverage pass. MusicBrainz lists this as a Chyi Yu-related single release group; QQ Music exposes the collaborative charity single and names 齐豫 among the performers. Full edition metadata and format remain pending. Format audit: MusicBrainz lists the available release row as Digital Media.",
     "status": "partial"
   },
   {
