@@ -83,7 +83,7 @@ const releaseFilterOptions = [
 
       <label class="release-filter-select-label">
         <span {...i18nAttrs(uiText("label.category"))}>{valueForLocale(uiText("label.category"))}</span>
-        <select data-filter-select data-filter-key="release-tags" aria-label={valueForLocale(uiText("label.category"))}>
+        <select data-filter-select data-filter-key="release-tags">
           {releaseFilterOptions.map((option) => (
             <option value={option.value} {...i18nAttrs(option.label)}>{valueForLocale(option.label)}</option>
           ))}
