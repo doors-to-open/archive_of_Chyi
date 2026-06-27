@@ -206,6 +206,8 @@ const appendixItems = [
             empty.textContent = requiresFilter && !hasActiveFilter ? initialEmptyText() : noResultsText();
             empty.toggleAttribute("hidden", requiresFilter && !hasActiveFilter ? false : visibleCount !== 0);
           }
+
+          window.dispatchEvent(new CustomEvent("archive-filter-change"));
         };
 
         searchInput?.addEventListener("input", update);
@@ -230,6 +232,8 @@ const appendixItems = [
         const viewOptions = Array.from(root.querySelectorAll("[data-view-option]"));
         const panels = Array.from(root.querySelectorAll("[data-view-panel]"));
         const count = root.querySelector("[data-sort-count]");
+        const paginationControls = root.querySelector("[data-pagination-controls]");
+        const pageState: Record<string, { page: number; pageSize: number }> = {};
 
         const activeView = () => {
           const active = root.querySelector("[data-view-option][aria-pressed='true']");
@@ -277,6 +281,97 @@ const appendixItems = [
             .forEach((item) => container.appendChild(item));
         };
 
+        const paginatedAttr = "data-paginated-hidden";
+
+        const paginatePanel = (panel: Element) => {
+          if (!panel.hasAttribute("data-paginate")) return;
+          const container = panel.querySelector("[data-sort-container]") || panel;
+          const panelId = panel.getAttribute("data-view-panel") || "default";
+          const pageSize = Number(panel.getAttribute("data-page-size")) || 24;
+          if (!pageState[panelId]) pageState[panelId] = { page: 1, pageSize };
+          const state = pageState[panelId];
+          state.pageSize = pageSize;
+
+          const allItems = Array.from(container.querySelectorAll(":scope > [data-sort-item]"));
+          allItems.forEach((item) => item.removeAttribute(paginatedAttr));
+
+          const visibleItems = allItems.filter((item) => !item.hasAttribute("hidden"));
+          const total = visibleItems.length;
+          const totalPages = Math.max(1, Math.ceil(total / state.pageSize));
+          if (state.page > totalPages) state.page = totalPages;
+          if (state.page < 1) state.page = 1;
+
+          const start = (state.page - 1) * state.pageSize;
+          const end = Math.min(start + state.pageSize, total);
+          visibleItems.slice(start, end);
+          visibleItems.slice(0, start).forEach((item) => item.setAttribute(paginatedAttr, ""));
+          visibleItems.slice(end).forEach((item) => item.setAttribute(paginatedAttr, ""));
+
+          (panel as any).__pagination = { total, start: start + 1, end, totalPages, page: state.page, pageSize };
+        };
+
+        const renderPaginationControls = () => {
+          if (!paginationControls) return;
+          const activePanel = activePanels()[0];
+          if (!activePanel || !activePanel.hasAttribute("data-paginate")) {
+            paginationControls.setAttribute("hidden", "");
+            return;
+          }
+          const p = (activePanel as any).__pagination;
+          if (!p) { paginationControls.setAttribute("hidden", ""); return; }
+          if (p.totalPages <= 1) {
+            paginationControls.setAttribute("hidden", "");
+            return;
+          }
+          paginationControls.removeAttribute("hidden");
+
+          const locale = activeLocale();
+          const locLabel = (base: string) =>
+            paginationControls.getAttribute(`data-i18n-${base}-${localeSuffix(locale)}`) ||
+            paginationControls.getAttribute(`data-i18n-${base}-en`) || "";
+
+          const panelId = activePanel.getAttribute("data-view-panel") || "default";
+          const state = pageState[panelId];
+          const singular = countLabel(activePanel, "singular", "record");
+          const plural = countLabel(activePanel, "plural", `${singular}s`);
+          const label = p.total === 1 ? singular : plural;
+
+          let buttonsHTML = "";
+          // Prev
+          if (state.page > 1) {
+            buttonsHTML += `<button type="button" data-page-btn="prev" aria-label="${locLabel("prev")}">${locLabel("prev")}</button>`;
+          }
+          // Page numbers with ellipsis
+          const maxButtons = 7;
+          let pages: (number | "ellipsis")[] = [];
+          if (p.totalPages <= maxButtons) {
+            pages = Array.from({ length: p.totalPages }, (_, i) => i + 1);
+          } else {
+            const current = state.page;
+            const left = Math.max(1, current - 1);
+            const right = Math.min(p.totalPages, current + 1);
+            pages = [1];
+            if (left > 2) pages.push("ellipsis");
+            for (let i = left; i <= right; i++) pages.push(i);
+            if (right < p.totalPages - 1) pages.push("ellipsis");
+            if (p.totalPages > 1) pages.push(p.totalPages);
+          }
+          for (const pg of pages) {
+            if (pg === "ellipsis") {
+              buttonsHTML += `<span class="pagination-ellipsis" aria-hidden="true">…</span>`;
+            } else {
+              const pressed = pg === state.page ? "true" : "false";
+              buttonsHTML += `<button type="button" data-page-btn="${pg}" aria-pressed="${pressed}">${pg}</button>`;
+            }
+          }
+          // Next
+          if (state.page < p.totalPages) {
+            buttonsHTML += `<button type="button" data-page-btn="next" aria-label="${locLabel("next")}">${locLabel("next")}</button>`;
+          }
+
+          paginationControls.innerHTML = `<span class="pagination-info">${locLabel("showing")} ${p.start}–${p.end} ${locLabel("of")} ${p.total} ${label}</span><div class="pagination-buttons">${buttonsHTML}</div>`;
+        };
+
         const update = () => {
           const visiblePanels = activePanels();
           panels.forEach((panel) => {
@@ -285,9 +380,21 @@ const appendixItems = [
 
           visiblePanels.forEach(sortPanel);
 
+          // Reset page to 1 on view/sort/filter change unless we're responding to a page click
+          if (!(window as any).__paginationClick) {
+            visiblePanels.forEach((panel) => {
+              const panelId = panel.getAttribute("data-view-panel") || "default";
+              if (pageState[panelId]) pageState[panelId].page = 1;
+            });
+          }
+          (window as any).__paginationClick = false;
+
+          visiblePanels.forEach(paginatePanel);
+
           if (count) {
             const activePanel = visiblePanels[0];
-            const visibleItems = activePanel
+            const p = (activePanel as any).__pagination;
+            const totalItems = activePanel
               ? activePanel.querySelectorAll("[data-sort-item]:not([hidden])").length
               : root.querySelectorAll("[data-sort-item]:not([hidden])").length;
             const singular =
@@ -296,9 +403,40 @@ const appendixItems = [
             const plural =
               countLabel(activePanel, "plural", "") ||
               countLabel(root, "plural", `${singular}s`);
-            count.textContent = `${visibleItems} ${visibleItems === 1 ? singular : plural}`;
+            const label = totalItems === 1 ? singular : plural;
+            if (p && p.totalPages > 1) {
+              const locale = activeLocale();
+              const locLabel = (base: string) =>
+                paginationControls?.getAttribute(`data-i18n-${base}-${localeSuffix(locale)}`) ||
+                paginationControls?.getAttribute(`data-i18n-${base}-en`) || "";
+              count.textContent = `${locLabel("showing")} ${p.start}–${p.end} ${locLabel("of")} ${totalItems} ${label}`;
+            } else {
+              count.textContent = `${totalItems} ${label}`;
+            }
           }
+
+          renderPaginationControls();
         };
+
+        if (paginationControls) {
+          paginationControls.addEventListener("click", (event) => {
+            const target = event.target as HTMLElement;
+            const btn = target.closest("[data-page-btn]") as HTMLElement | null;
+            if (!btn) return;
+            const activePanel = activePanels()[0];
+            if (!activePanel) return;
+            const panelId = activePanel.getAttribute("data-view-panel") || "default";
+            const state = pageState[panelId];
+            if (!state) return;
+            const action = btn.getAttribute("data-page-btn");
+            const p = (activePanel as any).__pagination;
+            if (action === "prev") state.page = Math.max(1, state.page - 1);
+            else if (action === "next") state.page = Math.min(p.totalPages, state.page + 1);
+            else state.page = Number(action) || 1;
+            (window as any).__paginationClick = true;
+            update();
+          });
+        }
 
         viewOptions.forEach((option) => {
           option.addEventListener("click", () => {
@@ -318,6 +456,7 @@ const appendixItems = [
 
         sortSelect?.addEventListener("change", update);
         window.addEventListener("archive-locale-change", update);
+        window.addEventListener("archive-filter-change", update);
         update();
       });
 

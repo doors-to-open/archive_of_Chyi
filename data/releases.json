@@ -98,7 +98,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-qing-meng-hu",
         "titleOnRelease": "青夢湖",
         "duration": "3:35",
         "versionNote": "Song record not modeled yet.",
@@ -117,7 +117,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-ai-zhi-si",
         "titleOnRelease": "愛之死 (Instrumental)",
         "duration": "2:43",
         "versionNote": "Instrumental track; song record not modeled yet.",
@@ -151,7 +151,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-wo-zai-meng-zhong-ku-qi-le",
         "titleOnRelease": "我在夢中哭泣了",
         "duration": "3:52",
         "versionNote": "Song record not modeled yet.",
@@ -170,7 +170,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-yao-lan-qu",
         "titleOnRelease": "搖籃曲",
         "duration": "2:26",
         "versionNote": "Song record not modeled yet.",
@@ -221,7 +221,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-ai-de-shi-jie",
         "titleOnRelease": "愛的世界",
         "duration": "2:57",
         "versionNote": "Song record not modeled yet.",
@@ -240,7 +240,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-yu-gan",
         "titleOnRelease": "預感",
         "duration": "2:12",
         "versionNote": "Song record not modeled yet.",
@@ -259,7 +259,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-zhui-zhu-yu-chong-feng",
         "titleOnRelease": "追逐與重逢 (Instrumental)",
         "duration": "2:39",
         "versionNote": "Instrumental track; song record not modeled yet.",
@@ -418,7 +418,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-feng",
         "titleOnRelease": "風",
         "titleOnReleaseLocalized": {
           "zh-Hant": "風",
@@ -437,7 +437,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-chuan-shuo",
         "titleOnRelease": "傳說",
         "titleOnReleaseLocalized": {
           "zh-Hant": "傳說",
@@ -456,7 +456,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-yan",
         "titleOnRelease": "雁",
         "titleOnReleaseLocalized": {
           "zh-Hant": "雁",
@@ -475,7 +475,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-mu-yang-nv",
         "titleOnRelease": "牧羊女",
         "titleOnReleaseLocalized": {
           "zh-Hant": "牧羊女",
@@ -494,7 +494,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-chun-tian-de-fu-diao",
         "titleOnRelease": "春天的浮雕",
         "titleOnReleaseLocalized": {
           "zh-Hant": "春天的浮雕",
@@ -513,7 +513,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-hai-tang-wen-shen",
         "titleOnRelease": "海棠紋身",
         "titleOnReleaseLocalized": {
           "zh-Hant": "海棠紋身",
@@ -532,7 +532,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-du-shi-xuan-lu",
         "titleOnRelease": "都市旋律",
         "titleOnReleaseLocalized": {
           "zh-Hant": "都市旋律",
@@ -555,7 +555,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-xing",
         "titleOnRelease": "星",
         "titleOnReleaseLocalized": {
           "zh-Hant": "星",
@@ -664,7 +664,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-san-yue-de-feng",
         "titleOnRelease": "三月的風",
         "titleOnReleaseLocalized": {
           "zh-Hant": "三月的風",
@@ -683,7 +683,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-fu-yun-ge",
         "titleOnRelease": "浮雲歌",
         "titleOnReleaseLocalized": {
           "zh-Hant": "浮雲歌",
@@ -702,7 +702,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-ta-de-mou-zi",
         "titleOnRelease": "他的眸子",
         "titleOnReleaseLocalized": {
           "zh-Hant": "他的眸子",
@@ -721,7 +721,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-jin-nian-de-hu-pan-hui-hen-leng",
         "titleOnRelease": "今年的湖畔會很冷",
         "titleOnReleaseLocalized": {
           "zh-Hant": "今年的湖畔會很冷",
@@ -740,7 +740,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-yi-duo-qing-lian",
         "titleOnRelease": "一朵青蓮",
         "titleOnReleaseLocalized": {
           "zh-Hant": "一朵青蓮",
@@ -759,7 +759,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-lu-si",
         "titleOnRelease": "鷺鷥",
         "titleOnReleaseLocalized": {
           "zh-Hant": "鷺鷥",
@@ -797,7 +797,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-tan-qin-de-nu-hai",
         "titleOnRelease": "彈琴的女孩",
         "titleOnReleaseLocalized": {
           "zh-Hant": "彈琴的女孩",
@@ -816,7 +816,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-qing-qing-de-zou-lai-ni-shen-ying",
         "titleOnRelease": "輕輕的走來你身影",
         "titleOnReleaseLocalized": {
           "zh-Hant": "輕輕的走來你身影",
@@ -904,7 +904,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-qu-ba",
         "titleOnRelease": "去罷",
         "titleOnReleaseLocalized": {
           "zh-Hant": "去罷",
@@ -923,7 +923,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-shan-zhi-lu",
         "titleOnRelease": "山之旅",
         "titleOnReleaseLocalized": {
           "zh-Hant": "山之旅",
@@ -942,7 +942,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-shui-tian-yin",
         "titleOnRelease": "水天吟",
         "titleOnReleaseLocalized": {
           "zh-Hant": "水天吟",
@@ -961,7 +961,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-shan-yun-you",
         "titleOnRelease": "山雲遊",
         "titleOnReleaseLocalized": {
           "zh-Hant": "山雲遊",
@@ -980,7 +980,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-miao-xiao",
         "titleOnRelease": "渺小",
         "titleOnReleaseLocalized": {
           "zh-Hant": "渺小",
@@ -999,7 +999,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-bie-ning-wo-teng",
         "titleOnRelease": "別擰我，疼",
         "titleOnReleaseLocalized": {
           "zh-Hant": "別擰我，疼",
@@ -1037,7 +1037,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-xi-zi",
         "titleOnRelease": "戲子",
         "titleOnReleaseLocalized": {
           "zh-Hant": "戲子",
@@ -1056,7 +1056,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-ge",
         "titleOnRelease": "歌",
         "titleOnReleaseLocalized": {
           "zh-Hant": "歌",
@@ -1177,7 +1177,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-gui-wai",
         "titleOnRelease": "軌外",
         "duration": "3:43",
         "versionNote": "Includes Sanmao spoken narration.",
@@ -1196,7 +1196,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-mi",
         "titleOnRelease": "謎",
         "duration": "2:54",
         "versionNote": null,
@@ -1234,7 +1234,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-fei",
         "titleOnRelease": "飛",
         "duration": "3:42",
         "versionNote": "Performed by Pan Yue-yun.",
@@ -1278,7 +1278,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-sha-mo",
         "titleOnRelease": "沙漠",
         "duration": "5:36",
         "versionNote": "Includes Sanmao spoken narration.",
@@ -1316,7 +1316,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-shuang",
         "titleOnRelease": "孀",
         "duration": "5:42",
         "versionNote": "Includes Sanmao spoken narration.",
@@ -1335,7 +1335,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-shuo-gei-zi-ji-ting",
         "titleOnRelease": "說給自己聽",
         "duration": "4:17",
         "versionNote": null,
@@ -1354,7 +1354,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-yuan-fang",
         "titleOnRelease": "遠方",
         "duration": "3:19",
         "versionNote": "Includes Sanmao spoken narration; performed by Pan Yue-yun.",
@@ -1508,7 +1508,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-light-a-light",
         "titleOnRelease": "Light A Light",
         "titleOnReleaseLocalized": {
           "en": "Light A Light",
@@ -1523,7 +1523,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-castles-in-the-air",
         "titleOnRelease": "Castles In The Air",
         "titleOnReleaseLocalized": {
           "en": "Castles In The Air",
@@ -1538,7 +1538,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-windmills-of-your-mind",
         "titleOnRelease": "Windmills Of Your Mind",
         "titleOnReleaseLocalized": {
           "en": "Windmills Of Your Mind",
@@ -1553,7 +1553,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-love-s-in-disguise",
         "titleOnRelease": "Love's In Disguise",
         "titleOnReleaseLocalized": {
           "en": "Love's In Disguise",
@@ -1568,7 +1568,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-unknown-musician",
         "titleOnRelease": "Unknown Musician",
         "titleOnReleaseLocalized": {
           "en": "Unknown Musician",
@@ -1583,7 +1583,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-if-you-say-my-eyes-are-beautiful",
         "titleOnRelease": "If You Say My Eyes Are Beautiful",
         "titleOnReleaseLocalized": {
           "en": "If You Say My Eyes Are Beautiful",
@@ -1613,7 +1613,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-like-a-hero",
         "titleOnRelease": "Like A Hero",
         "titleOnReleaseLocalized": {
           "en": "Like A Hero",
@@ -1628,7 +1628,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-requiem",
         "titleOnRelease": "Requiem",
         "titleOnReleaseLocalized": {
           "en": "Requiem",
@@ -1718,7 +1718,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-you-got-a-nerve",
         "titleOnRelease": "You Got A Nerve",
         "titleOnReleaseLocalized": {
           "en": "You Got A Nerve",
@@ -1733,7 +1733,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-waiting-for-the-morning",
         "titleOnRelease": "Waiting for the morning",
         "titleOnReleaseLocalized": {
           "en": "Waiting for the morning",
@@ -1748,7 +1748,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-make-no-mistake-he-s-mine",
         "titleOnRelease": "Make no mistake, he's mine",
         "titleOnReleaseLocalized": {
           "en": "Make no mistake, he's mine",
@@ -1767,7 +1767,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-he-s-so-beautiful-to-me",
         "titleOnRelease": "He's so beautiful to me",
         "titleOnReleaseLocalized": {
           "en": "He's so beautiful to me",
@@ -1782,7 +1782,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-angels-roses-and-rain",
         "titleOnRelease": "Angels, Roses And Rain",
         "titleOnReleaseLocalized": {
           "en": "Angels, Roses And Rain",
@@ -1797,7 +1797,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-lady-on-the-other-side-of-town",
         "titleOnRelease": "Lady On The Other Side Of Town",
         "titleOnReleaseLocalized": {
           "en": "Lady On The Other Side Of Town",
@@ -1842,7 +1842,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-yesterday-when-i-was-young",
         "titleOnRelease": "Yesterday when I was young",
         "titleOnReleaseLocalized": {
           "en": "Yesterday when I was young",
@@ -1931,7 +1931,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-only-love",
         "titleOnRelease": "Only Love",
         "titleOnReleaseLocalized": {
           "en": "Only Love",
@@ -1946,7 +1946,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-paradise-bird",
         "titleOnRelease": "Paradise Bird",
         "titleOnReleaseLocalized": {
           "en": "Paradise Bird",
@@ -1961,7 +1961,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-gypsy",
         "titleOnRelease": "Gypsy",
         "titleOnReleaseLocalized": {
           "en": "Gypsy",
@@ -1976,7 +1976,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-graveyard-angel",
         "titleOnRelease": "Graveyard Angel",
         "titleOnReleaseLocalized": {
           "en": "Graveyard Angel",
@@ -1991,7 +1991,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-tonight",
         "titleOnRelease": "Tonight",
         "titleOnReleaseLocalized": {
           "en": "Tonight",
@@ -2006,7 +2006,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-it-was-love",
         "titleOnRelease": "It Was Love",
         "titleOnReleaseLocalized": {
           "en": "It Was Love",
@@ -2021,7 +2021,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-islands",
         "titleOnRelease": "Islands",
         "titleOnReleaseLocalized": {
           "en": "Islands",
@@ -2036,7 +2036,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-joan-of-arc",
         "titleOnRelease": "Joan Of Arc",
         "titleOnReleaseLocalized": {
           "en": "Joan Of Arc",
@@ -2055,7 +2055,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-broken-heroes",
         "titleOnRelease": "Broken Heroes",
         "titleOnReleaseLocalized": {
           "en": "Broken Heroes",
@@ -2189,7 +2189,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-wang-le-shu-yang",
         "titleOnRelease": "忘了數羊",
         "titleOnReleaseLocalized": {
           "en": "Fail to Count the Sheep",
@@ -2209,7 +2209,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-xue-zhong-lian",
         "titleOnRelease": "雪中蓮",
         "titleOnReleaseLocalized": {
           "en": "The Lily in Snow",
@@ -2229,7 +2229,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-na-ge-jiao-lao-de-ren",
         "titleOnRelease": "那個叫老的人",
         "titleOnReleaseLocalized": {
           "en": "The Man Named Old",
@@ -2269,7 +2269,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-leng-leng-de-xin",
         "titleOnRelease": "冷冷的心",
         "titleOnReleaseLocalized": {
           "en": "Chilly Heart",
@@ -2289,7 +2289,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-xi-shuo-cong-tou",
         "titleOnRelease": "細說從頭",
         "titleOnReleaseLocalized": {
           "en": "Telling from Beginning",
@@ -2333,7 +2333,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-song-e58d81e4ba8c",
         "titleOnRelease": "十二個夜晚",
         "titleOnReleaseLocalized": {
           "en": "Twelve Nights",
@@ -2353,7 +2353,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-chuang-wai-you-lan-tian",
         "titleOnRelease": "窗外有藍天",
         "titleOnReleaseLocalized": {
           "en": "A Room With a View",
@@ -2373,7 +2373,7 @@
       },
       {
         "position": 12,
-        "song": null,
+        "song": "song-yuan-nv",
         "titleOnRelease": "怨女",
         "titleOnReleaseLocalized": {
           "en": "Rouge of the North",
@@ -2460,7 +2460,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-find-the-cost-of-freedom",
         "titleOnRelease": "Find The Cost Of Freedom",
         "titleOnReleaseLocalized": {
           "en": "Find The Cost Of Freedom",
@@ -2475,7 +2475,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-borderline",
         "titleOnRelease": "Borderline",
         "titleOnReleaseLocalized": {
           "en": "Borderline",
@@ -2490,7 +2490,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-senses-in-flight",
         "titleOnRelease": "Senses In Flight",
         "titleOnReleaseLocalized": {
           "en": "Senses In Flight",
@@ -2505,7 +2505,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-unborn-heart",
         "titleOnRelease": "Unborn Heart",
         "titleOnReleaseLocalized": {
           "en": "Unborn Heart",
@@ -2520,7 +2520,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-wind-beneath-my-wings",
         "titleOnRelease": "Wind Beneath My Wings",
         "titleOnReleaseLocalized": {
           "en": "Wind Beneath My Wings",
@@ -2535,7 +2535,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-children-of-the-80-s",
         "titleOnRelease": "Children Of The 80's",
         "titleOnReleaseLocalized": {
           "en": "Children Of The 80's",
@@ -2565,7 +2565,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-the-end-of-the-innocence",
         "titleOnRelease": "The End Of The Innocence",
         "titleOnReleaseLocalized": {
           "en": "The End Of The Innocence",
@@ -2580,7 +2580,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-longer",
         "titleOnRelease": "Longer",
         "titleOnReleaseLocalized": {
           "en": "Longer",
@@ -2595,7 +2595,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-light-in-the-darkness",
         "titleOnRelease": "Light In The Darkness",
         "titleOnReleaseLocalized": {
           "en": "Light In The Darkness",
@@ -2691,7 +2691,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-the-music-of-the-night",
         "titleOnRelease": "The Music of The Night",
         "titleOnReleaseLocalized": {
           "en": "The Music of The Night",
@@ -2706,7 +2706,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-vino-de-amor",
         "titleOnRelease": "Vino de Amor",
         "titleOnReleaseLocalized": {
           "en": "Vino de Amor",
@@ -2721,7 +2721,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-a-twist-of-fate",
         "titleOnRelease": "A Twist of Fate",
         "titleOnReleaseLocalized": {
           "en": "A Twist of Fate",
@@ -2736,7 +2736,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-brave-new-world",
         "titleOnRelease": "Brave New World",
         "titleOnReleaseLocalized": {
           "en": "Brave New World",
@@ -2751,7 +2751,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-love-of-my-life",
         "titleOnRelease": "Love of My Life",
         "titleOnReleaseLocalized": {
           "en": "Love of My Life",
@@ -2766,7 +2766,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-glitter-and-dust",
         "titleOnRelease": "Glitter And Dust",
         "titleOnReleaseLocalized": {
           "en": "Glitter And Dust",
@@ -2781,7 +2781,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-plaisir-d-amour",
         "titleOnRelease": "Plaisir D'amour",
         "titleOnReleaseLocalized": {
           "en": "Plaisir D'amour",
@@ -2800,7 +2800,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-forever-bound",
         "titleOnRelease": "Forever Bound",
         "titleOnReleaseLocalized": {
           "en": "Forever Bound",
@@ -2815,7 +2815,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-the-vision",
         "titleOnRelease": "The Vision",
         "titleOnReleaseLocalized": {
           "en": "The Vision",
@@ -2830,7 +2830,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-recuerdos-de-la-alhambra",
         "titleOnRelease": "Recuerdos de la Alhambra",
         "titleOnReleaseLocalized": {
           "en": "Recuerdos de la Alhambra",
@@ -2845,7 +2845,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-careless-love",
         "titleOnRelease": "Careless Love",
         "titleOnReleaseLocalized": {
           "en": "Careless Love",
@@ -2860,7 +2860,7 @@
       },
       {
         "position": 12,
-        "song": null,
+        "song": "song-she-ll-never-know",
         "titleOnRelease": "She'll Never Know",
         "titleOnReleaseLocalized": {
           "en": "She'll Never Know",
@@ -3089,7 +3089,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-if-you-really-dont-want",
         "titleOnRelease": "如果真的不要",
         "titleOnReleaseLocalized": {
           "zh-Hans": "如果真的不要"
@@ -3198,7 +3198,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-danny-s-song",
         "titleOnRelease": "Danny's Song",
         "titleOnReleaseLocalized": {
           "en": "Danny's Song"
@@ -3212,7 +3212,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-sad-lisa",
         "titleOnRelease": "Sad Lisa",
         "titleOnReleaseLocalized": {
           "en": "Sad Lisa"
@@ -3240,7 +3240,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-borderline",
         "titleOnRelease": "Borderline",
         "titleOnReleaseLocalized": {
           "en": "Borderline"
@@ -3254,7 +3254,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-unborn-heart",
         "titleOnRelease": "Unborn Heart",
         "titleOnReleaseLocalized": {
           "en": "Unborn Heart"
@@ -3282,7 +3282,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-paradise-bird",
         "titleOnRelease": "Paradise Bird",
         "titleOnReleaseLocalized": {
           "en": "Paradise Bird"
@@ -3296,7 +3296,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-diamonds-and-rust",
         "titleOnRelease": "Diamonds And Rust",
         "titleOnReleaseLocalized": {
           "en": "Diamonds And Rust"
@@ -3310,7 +3310,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-angels-roses-and-rain",
         "titleOnRelease": "Angels, Roses And Rain",
         "titleOnReleaseLocalized": {
           "en": "Angels, Roses And Rain"
@@ -3338,7 +3338,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-like-a-hero",
         "titleOnRelease": "Like a Hero",
         "titleOnReleaseLocalized": {
           "en": "Like a Hero"
@@ -3352,7 +3352,7 @@
       },
       {
         "position": 12,
-        "song": null,
+        "song": "song-wind-beneath-my-wings",
         "titleOnRelease": "Wind Beneath My Wings",
         "titleOnReleaseLocalized": {
           "en": "Wind Beneath My Wings"
@@ -3477,7 +3477,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-babes-in-the-wood",
         "titleOnRelease": "Babes In The Wood",
         "titleOnReleaseLocalized": {
           "en": "Babes In The Wood",
@@ -3492,7 +3492,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-cry",
         "titleOnRelease": "Cry",
         "titleOnReleaseLocalized": {
           "en": "Cry",
@@ -3507,7 +3507,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-you-can-t-say",
         "titleOnRelease": "You Can't Say",
         "titleOnReleaseLocalized": {
           "en": "You Can't Say",
@@ -3522,7 +3522,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-concrete-sea",
         "titleOnRelease": "Concrete Sea",
         "titleOnReleaseLocalized": {
           "en": "Concrete Sea",
@@ -3537,7 +3537,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-prologue-winter-song",
         "titleOnRelease": "Prologue - Winter Song",
         "titleOnReleaseLocalized": {
           "en": "Prologue - Winter Song",
@@ -3552,7 +3552,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-knife",
         "titleOnRelease": "Knife",
         "titleOnReleaseLocalized": {
           "en": "Knife",
@@ -3567,7 +3567,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-you-are-the-reason",
         "titleOnRelease": "You Are The Reason",
         "titleOnReleaseLocalized": {
           "en": "You Are The Reason",
@@ -3582,7 +3582,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-send-in-the-clowns",
         "titleOnRelease": "Send In the Clowns",
         "titleOnReleaseLocalized": {
           "en": "Send In the Clowns",
@@ -3597,7 +3597,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-big-dream",
         "titleOnRelease": "Big Dream",
         "titleOnReleaseLocalized": {
           "en": "Big Dream",
@@ -3717,7 +3717,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-jue-for-lin-juemin",
         "titleOnRelease": "覺 (遙寄林覺民)",
         "duration": "4:41",
         "versionNote": "Song record not modeled yet.",
@@ -3738,7 +3738,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-you-mei-you",
         "titleOnRelease": "有沒有",
         "duration": "4:26",
         "versionNote": "Song record not modeled yet.",
@@ -3758,7 +3758,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-ji-ran-ni-wen-qi",
         "titleOnRelease": "既然你問起",
         "duration": "6:22",
         "versionNote": "Song record not modeled yet.",
@@ -3778,7 +3778,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-nu-ren-yu-xiao-hai-1",
         "titleOnRelease": "女人與小孩 I",
         "duration": "4:01",
         "versionNote": "Song record not modeled yet.",
@@ -3798,7 +3798,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-hua-ti",
         "titleOnRelease": "話題",
         "duration": "4:24",
         "versionNote": "Song record not modeled yet.",
@@ -3856,7 +3856,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-lan-yang-yang",
         "titleOnRelease": "懶洋洋",
         "duration": "4:33",
         "versionNote": "Song record not modeled yet.",
@@ -3874,7 +3874,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-si-shi-ge-wu-qin-wu-gu-de-nian-tou",
         "titleOnRelease": "四十個無親無故的年頭",
         "duration": "4:53",
         "versionNote": "Song record not modeled yet.",
@@ -3894,7 +3894,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-tan-xi-ping",
         "titleOnRelease": "嘆息瓶",
         "duration": "7:15",
         "versionNote": "Song record not modeled yet.",
@@ -3914,7 +3914,7 @@
       },
       {
         "position": 12,
-        "song": null,
+        "song": "song-nu-ren-yu-xiao-hai-2",
         "titleOnRelease": "女人與小孩 II",
         "duration": "4:07",
         "versionNote": "Song record not modeled yet.",
@@ -4042,7 +4042,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-feng",
         "titleOnRelease": "风",
         "titleOnReleaseLocalized": {
           "zh-Hans": "风"
@@ -4060,7 +4060,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-chuan-shuo",
         "titleOnRelease": "传说",
         "titleOnReleaseLocalized": {
           "zh-Hans": "传说"
@@ -4078,7 +4078,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-yan",
         "titleOnRelease": "雁",
         "titleOnReleaseLocalized": {
           "zh-Hans": "雁"
@@ -4096,7 +4096,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-mu-yang-nv",
         "titleOnRelease": "牧羊女",
         "titleOnReleaseLocalized": {
           "zh-Hans": "牧羊女"
@@ -4114,7 +4114,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-chun-tian-de-fu-diao",
         "titleOnRelease": "春天的浮雕",
         "titleOnReleaseLocalized": {
           "zh-Hans": "春天的浮雕"
@@ -4132,7 +4132,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-hai-tang-wen-shen",
         "titleOnRelease": "海棠纹身",
         "titleOnReleaseLocalized": {
           "zh-Hans": "海棠纹身"
@@ -4150,7 +4150,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-du-shi-xuan-lu",
         "titleOnRelease": "都市旋律",
         "titleOnReleaseLocalized": {
           "zh-Hans": "都市旋律"
@@ -4168,7 +4168,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-xing",
         "titleOnRelease": "星",
         "titleOnReleaseLocalized": {
           "zh-Hans": "星"
@@ -4284,7 +4284,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-shi-qi-sui",
         "titleOnRelease": "十七岁",
         "titleOnReleaseLocalized": {
           "zh-Hans": "十七岁"
@@ -4298,7 +4298,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-songs-and-silhouettes",
         "titleOnRelease": "Songs And Silhouettes",
         "titleOnReleaseLocalized": {
           "en": "Songs And Silhouettes"
@@ -4312,7 +4312,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-edge-of-dream",
         "titleOnRelease": "Edge Of Dream",
         "titleOnReleaseLocalized": {
           "en": "Edge Of Dream"
@@ -4326,7 +4326,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-qiao-di",
         "titleOnRelease": "乔第",
         "titleOnReleaseLocalized": {
           "zh-Hans": "乔第"
@@ -4340,7 +4340,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-shi-guang",
         "titleOnRelease": "时光",
         "titleOnReleaseLocalized": {
           "zh-Hans": "时光"
@@ -4354,7 +4354,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-er-wo-shi-ru-ci-ai-ni",
         "titleOnRelease": "而我是如此爱你",
         "titleOnReleaseLocalized": {
           "zh-Hans": "而我是如此爱你"
@@ -4368,7 +4368,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-wishful-milenio",
         "titleOnRelease": "Wishful Milenio",
         "titleOnReleaseLocalized": {
           "en": "Wishful Milenio"
@@ -4400,7 +4400,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-xi-yu-ye-ye-de-cao-yuan",
         "titleOnRelease": "细语咽咽的草原",
         "titleOnReleaseLocalized": {
           "zh-Hans": "细语咽咽的草原"
@@ -4414,7 +4414,7 @@
       },
       {
         "position": 12,
-        "song": null,
+        "song": "song-liu-zhuan",
         "titleOnRelease": "流转",
         "titleOnReleaseLocalized": {
           "zh-Hans": "流转"
@@ -4428,7 +4428,7 @@
       },
       {
         "position": 13,
-        "song": null,
+        "song": "song-mei-gui",
         "titleOnRelease": "玫瑰",
         "titleOnReleaseLocalized": {
           "zh-Hans": "玫瑰"
@@ -4466,7 +4466,7 @@
       },
       {
         "position": 15,
-        "song": null,
+        "song": "song-twist-in-my-sobriety",
         "titleOnRelease": "Twist In My Sobriety",
         "titleOnReleaseLocalized": {
           "en": "Twist In My Sobriety"
@@ -4544,7 +4544,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-xu",
         "titleOnRelease": "序 (Live)",
         "duration": null,
         "versionNote": "Live program opening.",
@@ -4631,7 +4631,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-bu-yao-wen-wo-wei-shen-me",
         "titleOnRelease": "不要問我為什麼 (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -4709,7 +4709,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-shu-yu-ai-qing-de",
         "titleOnRelease": "屬於愛情的 (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -4741,7 +4741,7 @@
       },
       {
         "position": 13,
-        "song": null,
+        "song": "song-cuo-guo",
         "titleOnRelease": "錯過 (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -4824,7 +4824,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-moonlight-flower",
         "titleOnRelease": "Moonlight Flower (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -4839,7 +4839,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-xing-xing",
         "titleOnRelease": "星星 (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -4873,7 +4873,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-ling-yi-zhong-xing-xing",
         "titleOnRelease": "另一種星星 (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -4904,7 +4904,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-yi-qie-dou-cong-zhe-si-ge-he-xian-kai-shi",
         "titleOnRelease": "一切都從這四個和弦開始 (Live)",
         "duration": null,
         "versionNote": "Live spoken/program track.",
@@ -4935,7 +4935,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-gei-wo-de-zhu-fu",
         "titleOnRelease": "給我的祝福 (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -4951,7 +4951,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-spring-story",
         "titleOnRelease": "春天的故事 (Live)",
         "duration": null,
         "versionNote": "Live version; song record not modeled yet.",
@@ -5081,7 +5081,7 @@
       },
       {
         "position": 19,
-        "song": null,
+        "song": "song-jia-qiang-ji-yi",
         "titleOnRelease": "加強記憶 (Live)",
         "duration": null,
         "versionNote": "Live program track.",
@@ -5116,7 +5116,7 @@
       },
       {
         "position": 21,
-        "song": null,
+        "song": "song-ba",
         "titleOnRelease": "跋 (Live)",
         "duration": null,
         "versionNote": "Live program closing track.",
@@ -5132,7 +5132,7 @@
       },
       {
         "position": 1,
-        "song": null,
+        "song": "song-indescribable-night",
         "titleOnRelease": "Indescribable Night (Live)",
         "duration": null,
         "versionNote": "Live bonus track.",
@@ -5227,7 +5227,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-guan-yin-pu-sa-ji",
         "titleOnRelease": "观音菩萨偈",
         "titleOnReleaseLocalized": {
           "zh-Hans": "观音菩萨偈"
@@ -5241,7 +5241,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-qing-jing-fa-shen-fo",
         "titleOnRelease": "清净法身佛",
         "titleOnReleaseLocalized": {
           "zh-Hans": "清净法身佛"
@@ -5255,7 +5255,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-fan-yin-da-bei-zhou",
         "titleOnRelease": "梵音大悲咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "梵音大悲咒"
@@ -5269,7 +5269,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-guan-shi-yin-pu-sa-fa-yuan-ji",
         "titleOnRelease": "观世音菩萨发愿偈 (大悲咒版)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "观世音菩萨发愿偈 (大悲咒版)"
@@ -5283,7 +5283,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-pu-men-song",
         "titleOnRelease": "普门颂",
         "titleOnReleaseLocalized": {
           "zh-Hans": "普门颂"
@@ -5376,7 +5376,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-ave-maria-de-lourdes",
         "titleOnRelease": "Ave Maria De Lourdes",
         "titleOnReleaseLocalized": {
           "en": "Ave Maria De Lourdes"
@@ -5394,7 +5394,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-annie-s-song",
         "titleOnRelease": "Annie's Song",
         "titleOnReleaseLocalized": {
           "en": "Annie's Song"
@@ -5430,7 +5430,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-sailing",
         "titleOnRelease": "Sailing",
         "titleOnReleaseLocalized": {
           "en": "Sailing"
@@ -5448,7 +5448,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-silent-night",
         "titleOnRelease": "Silent Night",
         "titleOnReleaseLocalized": {
           "en": "Silent Night"
@@ -5466,7 +5466,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-when-a-child-is-born",
         "titleOnRelease": "When A Child Is Born",
         "titleOnReleaseLocalized": {
           "en": "When A Child Is Born"
@@ -5487,7 +5487,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-it-came-upon-the-midnight-cle",
         "titleOnRelease": "It Came Upon The Midnight Cle",
         "titleOnReleaseLocalized": {
           "en": "It Came Upon The Midnight Cle"
@@ -5505,7 +5505,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-we-shall-overcome",
         "titleOnRelease": "We Shall Overcome",
         "titleOnReleaseLocalized": {
           "en": "We Shall Overcome"
@@ -5529,7 +5529,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-you-light-up-my-life",
         "titleOnRelease": "You Light Up My Life",
         "titleOnReleaseLocalized": {
           "en": "You Light Up My Life"
@@ -5547,7 +5547,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-joy-to-the-world",
         "titleOnRelease": "Joy To The World",
         "titleOnReleaseLocalized": {
           "en": "Joy To The World"
@@ -5565,7 +5565,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-morning-has-broken",
         "titleOnRelease": "Morning Has Broken",
         "titleOnReleaseLocalized": {
           "en": "Morning Has Broken"
@@ -5668,7 +5668,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-i-saw-the-light",
         "titleOnRelease": "I Saw The Light",
         "titleOnReleaseLocalized": {
           "en": "I Saw The Light"
@@ -5686,7 +5686,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-how-great-thou-art",
         "titleOnRelease": "How Great Thou Art",
         "titleOnReleaseLocalized": {
           "en": "How Great Thou Art"
@@ -5704,7 +5704,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-angel",
         "titleOnRelease": "Angel",
         "titleOnReleaseLocalized": {
           "en": "Angel"
@@ -5722,7 +5722,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-santa-claus-is-coming-to-town",
         "titleOnRelease": "Santa Claus Is Coming To Town",
         "titleOnReleaseLocalized": {
           "en": "Santa Claus Is Coming To Town"
@@ -5740,7 +5740,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-in-the-sweet-by-and-by",
         "titleOnRelease": "In The Sweet By and By",
         "titleOnReleaseLocalized": {
           "en": "In The Sweet By and By"
@@ -5758,7 +5758,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-the-wayfaring-stranger",
         "titleOnRelease": "The Wayfaring Stranger",
         "titleOnReleaseLocalized": {
           "en": "The Wayfaring Stranger"
@@ -5776,7 +5776,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-white-christmas",
         "titleOnRelease": "White Christmas",
         "titleOnReleaseLocalized": {
           "en": "White Christmas"
@@ -5794,7 +5794,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-crying-in-the-chapel",
         "titleOnRelease": "Crying In The Chapel",
         "titleOnReleaseLocalized": {
           "en": "Crying In The Chapel"
@@ -5812,7 +5812,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-jingle-bells",
         "titleOnRelease": "Jingle Bells",
         "titleOnReleaseLocalized": {
           "en": "Jingle Bells"
@@ -5830,7 +5830,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-will-the-circle-be-unbroken",
         "titleOnRelease": "Will The Circle Be Unbroken",
         "titleOnReleaseLocalized": {
           "en": "Will The Circle Be Unbroken"
@@ -5931,7 +5931,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-chen-zhong-ji",
         "titleOnRelease": "晨钟偈",
         "titleOnReleaseLocalized": {
           "zh-Hans": "晨钟偈"
@@ -5945,7 +5945,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-zhun-ti-shen-zhou",
         "titleOnRelease": "准提神咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "准提神咒"
@@ -5959,7 +5959,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-mu-zhong-ji",
         "titleOnRelease": "暮钟偈",
         "titleOnReleaseLocalized": {
           "zh-Hans": "暮钟偈"
@@ -6055,7 +6055,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-ba-sheng-ji-xiang-qi-qing-wen",
         "titleOnRelease": "八圣吉祥祈请文",
         "titleOnReleaseLocalized": {
           "zh-Hans": "八圣吉祥祈请文"
@@ -6069,7 +6069,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-fo-zi-xing-san-shi-qi-song",
         "titleOnRelease": "佛子行 三十七诵 (一)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "佛子行 三十七诵 (一)"
@@ -6083,7 +6083,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-fo-zi-xing-san-shi-qi-song",
         "titleOnRelease": "佛子行 三十七诵 (二)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "佛子行 三十七诵 (二)"
@@ -6187,7 +6187,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-fo-zi-xing-san-shi-qi-song",
         "titleOnRelease": "佛子行 三十七诵 (一)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "佛子行 三十七诵 (一)"
@@ -6201,7 +6201,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-song-e4bd9be5ad90",
         "titleOnRelease": "佛子行三十七诵 (二)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "佛子行三十七诵 (二)"
@@ -6215,7 +6215,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-zhun-ti-shen-zhou",
         "titleOnRelease": "准提神咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "准提神咒"
@@ -6229,7 +6229,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-chen-zhong-ji",
         "titleOnRelease": "晨钟偈",
         "titleOnReleaseLocalized": {
           "zh-Hans": "晨钟偈"
@@ -6243,7 +6243,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-mu-zhong-ji",
         "titleOnRelease": "暮钟偈",
         "titleOnReleaseLocalized": {
           "zh-Hans": "暮钟偈"
@@ -6257,7 +6257,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-ba-sheng-ji-xiang-qi-qing-wen",
         "titleOnRelease": "八圣吉祥祈请文",
         "titleOnReleaseLocalized": {
           "zh-Hans": "八圣吉祥祈请文"
@@ -6271,7 +6271,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-di-zang-zan",
         "titleOnRelease": "地藏赞",
         "titleOnReleaseLocalized": {
           "zh-Hans": "地藏赞"
@@ -6374,7 +6374,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-qi-fo-mie-zui-zhen-yan",
         "titleOnRelease": "七佛灭罪真言",
         "titleOnReleaseLocalized": {
           "zh-Hans": "七佛灭罪真言"
@@ -6388,7 +6388,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-xiao-zai-ji-xiang-shen-zhou",
         "titleOnRelease": "消灾吉祥神咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "消灾吉祥神咒"
@@ -6402,7 +6402,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-yao-shi-guan-ding-zhen-yan",
         "titleOnRelease": "药师灌顶真言",
         "titleOnReleaseLocalized": {
           "zh-Hans": "药师灌顶真言"
@@ -6416,7 +6416,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-gong-de-bao-shan-shen-zhou",
         "titleOnRelease": "功德宝山神咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "功德宝山神咒"
@@ -6430,7 +6430,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-xu-kong-zang-pu-sa-yi-chi-bu-wang-zhou",
         "titleOnRelease": "虚空藏菩萨忆持不忘咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "虚空藏菩萨忆持不忘咒"
@@ -6444,7 +6444,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-song-bie",
         "titleOnRelease": "送别",
         "titleOnReleaseLocalized": {
           "zh-Hans": "送别"
@@ -6654,7 +6654,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-chan-hui-wen",
         "titleOnRelease": "忏悔文",
         "titleOnReleaseLocalized": {
           "zh-Hans": "忏悔文"
@@ -6671,7 +6671,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-da-ji-xiang-tian-nu-zhou",
         "titleOnRelease": "大吉祥天女咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "大吉祥天女咒"
@@ -6688,7 +6688,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-bo-ruo-bo-luo-mi-duo-xin-jing",
         "titleOnRelease": "般若波罗蜜多心经",
         "titleOnReleaseLocalized": {
           "zh-Hans": "般若波罗蜜多心经"
@@ -6705,7 +6705,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-da-ci-da-bei-guan-shi-yin",
         "titleOnRelease": "大慈大悲观世音",
         "titleOnReleaseLocalized": {
           "zh-Hans": "大慈大悲观世音"
@@ -6722,7 +6722,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-da-bei-zhou",
         "titleOnRelease": "大悲咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "大悲咒"
@@ -6739,7 +6739,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-liu-zi-da-ming-zhou",
         "titleOnRelease": "六字大明咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "六字大明咒"
@@ -6756,7 +6756,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-bo-ruo-bo-luo-mi-duo-xin-jing",
         "titleOnRelease": "般若波罗蜜多心经 (短版)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "般若波罗蜜多心经 (短版)"
@@ -6773,7 +6773,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-da-bei-zhou",
         "titleOnRelease": "大悲咒 (短版)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "大悲咒 (短版)"
@@ -6790,7 +6790,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-liu-zi-da-ming-zhou",
         "titleOnRelease": "六字大明咒 (短版)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "六字大明咒 (短版)"
@@ -6807,7 +6807,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-chan-hui-wen",
         "titleOnRelease": "忏悔文 (短版)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "忏悔文 (短版)"
@@ -6824,7 +6824,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-wang-jiang-nan-gui-yi-san-bao-zan",
         "titleOnRelease": "望江南 归依三宝赞",
         "titleOnReleaseLocalized": {
           "zh-Hans": "望江南 归依三宝赞"
@@ -6841,7 +6841,7 @@
       },
       {
         "position": 12,
-        "song": null,
+        "song": "song-meng",
         "titleOnRelease": "梦",
         "titleOnReleaseLocalized": {
           "zh-Hans": "梦"
@@ -6858,7 +6858,7 @@
       },
       {
         "position": 13,
-        "song": null,
+        "song": "song-lian-hua-chu-chu-kai",
         "titleOnRelease": "莲花处处开",
         "titleOnReleaseLocalized": {
           "zh-Hans": "莲花处处开"
@@ -6875,7 +6875,7 @@
       },
       {
         "position": 14,
-        "song": null,
+        "song": "song-da-ji-xiang-tian-nu-zhou",
         "titleOnRelease": "大吉祥天女咒 (短版)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "大吉祥天女咒 (短版)"
@@ -6958,7 +6958,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-chan-hui-wen",
         "titleOnRelease": "忏悔文",
         "titleOnReleaseLocalized": {
           "zh-Hans": "忏悔文"
@@ -6972,7 +6972,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-da-ji-xiang-tian-nu-zhou",
         "titleOnRelease": "大吉祥天女咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "大吉祥天女咒"
@@ -6986,7 +6986,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-bo-ruo-bo-luo-mi-duo-xin-jing",
         "titleOnRelease": "般若波罗蜜多心经",
         "titleOnReleaseLocalized": {
           "zh-Hans": "般若波罗蜜多心经"
@@ -7064,7 +7064,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-da-ci-da-bei-guan-shi-yin",
         "titleOnRelease": "大慈大悲观世音",
         "titleOnReleaseLocalized": {
           "zh-Hans": "大慈大悲观世音"
@@ -7078,7 +7078,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-da-bei-zhou",
         "titleOnRelease": "大悲咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "大悲咒"
@@ -7092,7 +7092,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-liu-zi-da-ming-zhou",
         "titleOnRelease": "六字大明咒",
         "titleOnReleaseLocalized": {
           "zh-Hans": "六字大明咒"
@@ -7171,7 +7171,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-bo-ruo-bo-luo-mi-duo-xin-jing",
         "titleOnRelease": "般若波罗蜜多心经 (短版)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "般若波罗蜜多心经 (短版)"
@@ -7185,7 +7185,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-da-bei-zhou",
         "titleOnRelease": "大悲咒 (短版)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "大悲咒 (短版)"
@@ -7199,7 +7199,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-liu-zi-da-ming-zhou",
         "titleOnRelease": "六字大明咒 (短版)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "六字大明咒 (短版)"
@@ -7213,7 +7213,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-chan-hui-wen",
         "titleOnRelease": "忏悔文 (短版)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "忏悔文 (短版)"
@@ -7227,7 +7227,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-wang-jiang-nan-gui-yi-san-bao-zan",
         "titleOnRelease": "望江南 归依三宝赞",
         "titleOnReleaseLocalized": {
           "zh-Hans": "望江南 归依三宝赞"
@@ -7241,7 +7241,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-meng",
         "titleOnRelease": "梦",
         "titleOnReleaseLocalized": {
           "zh-Hans": "梦"
@@ -7255,7 +7255,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-lian-hua-chu-chu-kai",
         "titleOnRelease": "莲花处处开",
         "titleOnReleaseLocalized": {
           "zh-Hans": "莲花处处开"
@@ -7269,7 +7269,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-da-ji-xiang-tian-nu-zhou",
         "titleOnRelease": "大吉祥天女咒 (短版)",
         "titleOnReleaseLocalized": {
           "zh-Hans": "大吉祥天女咒 (短版)"
@@ -7352,7 +7352,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-not-saying-goodbye",
         "titleOnRelease": "Not Saying Goodbye (Dear Sanmao)",
         "titleOnReleaseLocalized": {
           "en": "Not Saying Goodbye (Dear Sanmao)",
@@ -7448,7 +7448,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-you-are-my-angel",
         "titleOnRelease": "You Are My Angel",
         "titleOnReleaseLocalized": {
           "en": "You Are My Angel",

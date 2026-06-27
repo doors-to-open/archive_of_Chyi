@@ -207,7 +207,7 @@ for (const song of songs) {
 
 function validateLiveLinkage(entries, recordLabel) {
   for (const entry of entries) {
-    if (entry.song) continue;
+    if (entry.song || (entry.songParts && entry.songParts.length)) continue;
     const n = normalizeTitle(entry.titlePerformed);
     if (!n) continue;
     const trackMatch = releaseTrackTitles.get(n);
@@ -228,6 +228,21 @@ for (const concert of concerts) {
 }
 for (const show of musicShows) {
   validateLiveLinkage(show.performedSongs || [], `Music show ${show.id}`);
+}
+
+// Mirror check: release tracks with song=null whose title matches an existing song record
+for (const release of releases) {
+  for (const track of release.tracks || []) {
+    if (track.song) continue;
+    const n = normalizeTitle(track.titleOnRelease);
+    if (!n) continue;
+    const songMatch = songTitles.get(n);
+    if (songMatch) {
+      addError(
+        `Release ${release.id} track "${track.titleOnRelease}" has no song id but matches song record ${songMatch.id}; link it so the track is connected to its canonical song`
+      );
+    }
+  }
 }
 
 for (const warning of warnings) {

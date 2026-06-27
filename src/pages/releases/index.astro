@@ -121,6 +121,8 @@ const releaseFilterOptions = [
       class="section archive-grid"
       data-view-panel="albums"
       data-sort-container
+      data-paginate
+      data-page-size="24"
       data-count-label-singular="album"
       data-count-label-plural="albums"
       {...i18nCountLabelAttrs(uiText("count.album"), uiText("count.albums"))}
@@ -199,6 +201,8 @@ const releaseFilterOptions = [
       class="section archive-grid"
       data-view-panel="songs"
       data-sort-container
+      data-paginate
+      data-page-size="24"
       data-count-label-singular="song"
       data-count-label-plural="songs"
       {...i18nCountLabelAttrs(uiText("count.song"), uiText("count.songs"))}
@@ -215,6 +219,22 @@ const releaseFilterOptions = [
         />
       ))}
     </div>
+
+    <div class="pagination-controls" data-pagination-controls
+      data-i18n-showing-en="Showing"
+      data-i18n-showing-zh-hant="顯示"
+      data-i18n-showing-zh-hans="显示"
+      data-i18n-of-en="of"
+      data-i18n-of-zh-hant="共"
+      data-i18n-of-zh-hans="共"
+      data-i18n-prev-en="Previous"
+      data-i18n-prev-zh-hant="上一頁"
+      data-i18n-prev-zh-hans="上一页"
+      data-i18n-next-en="Next"
+      data-i18n-next-zh-hant="下一頁"
+      data-i18n-next-zh-hans="下一页"
+      hidden
+    ></div>
 
     <ContributionPanel
       text="Propose a missing release or track-level addition with source links."

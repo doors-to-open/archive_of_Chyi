@@ -242,7 +242,7 @@
       },
       {
         "position": 15,
-        "song": null,
+        "song": "song-moon-night-flower",
         "titlePerformed": "Moon Night Flower",
         "collaborators": [],
         "mediaLinks": [
@@ -593,7 +593,18 @@
             "credit": "豫见梵音"
           }
         ],
-        "notes": "Medley listed in the full-video description; component song identity records are not modeled yet."
+        "notes": "Medley listed in the full-video description; component song identity records are not modeled yet.",
+        "songParts": [
+          "song-ru-guo",
+          "song-rang-wo-men-kan-yun-qu",
+          "song-zhuo-ni-qiu",
+          "song-lan-hua-cao",
+          "song-tong-nian",
+          "song-xiang-jian-xiao-lu",
+          "song-wai-po-de-peng-hu-wan",
+          "song-tong-zhuo-de-ni",
+          "song-guang-yin-de-gu-shi"
+        ]
       },
       {
         "position": 7,
@@ -672,7 +683,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-zhu-wo-xing-fu",
         "titlePerformed": "祝我幸福",
         "originalPerformer": "Faith Yang",
         "collaborators": [
@@ -692,7 +703,7 @@
       },
       {
         "position": 12,
-        "song": null,
+        "song": "song-zong-fa-shao-nv",
         "titlePerformed": "棕髮少女",
         "collaborators": [
           "person-wu-tsing-fong"
@@ -768,11 +779,17 @@
         "titlePerformed": "時代組曲：綠島小夜曲 / 蘇州河邊 / 相思河畔 / 情人的眼淚",
         "collaborators": [],
         "mediaLinks": [],
-        "notes": "Medley listed in the full-video description; component song identity records are not modeled yet."
+        "notes": "Medley listed in the full-video description; component song identity records are not modeled yet.",
+        "songParts": [
+          "song-lu-dao-xiao-ye-qu",
+          "song-su-zhou-he-bian",
+          "song-xiang-si-he-pan",
+          "song-qing-ren-de-yan-lei"
+        ]
       },
       {
         "position": 17,
-        "song": null,
+        "song": "song-hai-shang-hua",
         "titlePerformed": "海上花",
         "collaborators": [],
         "mediaLinks": []
@@ -786,14 +803,14 @@
       },
       {
         "position": 19,
-        "song": null,
+        "song": "song-wen-fo",
         "titlePerformed": "問佛",
         "collaborators": [],
         "mediaLinks": []
       },
       {
         "position": 20,
-        "song": null,
+        "song": "song-nu-ren-hua",
         "titlePerformed": "女人花",
         "originalPerformer": "Anita Mui",
         "collaborators": [],
@@ -853,7 +870,7 @@
       },
       {
         "position": 27,
-        "song": null,
+        "song": "song-zhang-sheng-xiang-qi",
         "titlePerformed": "掌聲響起",
         "collaborators": [],
         "mediaLinks": []
@@ -982,11 +999,17 @@
             "credit": "shdvdjne"
           }
         ],
-        "notes": "Medley listed across the fan-upload metadata; component song identity records are not modeled yet."
+        "notes": "Medley listed across the fan-upload metadata; component song identity records are not modeled yet.",
+        "songParts": [
+          "song-lu-dao-xiao-ye-qu",
+          "song-su-zhou-he-bian",
+          "song-xiang-si-he-pan",
+          "song-qing-ren-de-yan-lei"
+        ]
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-500-miles-scarborough-fair",
         "titlePerformed": "500 Miles / Scarborough Fair",
         "collaborators": [],
         "mediaLinks": [
@@ -1040,7 +1063,16 @@
             "credit": "shdvdjne"
           }
         ],
-        "notes": "The shdvdjne upload splits this medley across p=9 and p=10."
+        "notes": "The shdvdjne upload splits this medley across p=9 and p=10.",
+        "songParts": [
+          "song-lan-hua-cao",
+          "song-tong-nian",
+          "song-xiang-jian-xiao-lu",
+          "song-wai-po-de-peng-hu-wan",
+          "song-qia-si-ni-de-wen-rou",
+          "song-tong-zhuo-de-ni",
+          "song-guang-yin-de-gu-shi"
+        ]
       },
       {
         "position": 6,
@@ -1093,7 +1125,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-si-sui-de-hai-liu-ma",
         "titlePerformed": "四歲的海騮馬",
         "collaborators": [
           "person-cheng-fangyuan"
@@ -1127,11 +1159,15 @@
             "credit": "shdvdjne"
           }
         ],
-        "notes": "Guest medley with Cheng Fangyuan."
+        "notes": "Guest medley with Cheng Fangyuan.",
+        "songParts": [
+          "song-ai-de-zhen-yan",
+          "song-shi-fou"
+        ]
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-wo-yao-ni",
         "titlePerformed": "我要你",
         "collaborators": [
           "person-cheng-fangyuan"
@@ -1246,7 +1282,7 @@
       },
       {
         "position": 18,
-        "song": null,
+        "song": "song-wen-fo",
         "titlePerformed": "問佛",
         "collaborators": [],
         "mediaLinks": [
@@ -1278,7 +1314,7 @@
       },
       {
         "position": 20,
-        "song": null,
+        "song": "song-nu-ren-hua",
         "titlePerformed": "女人花",
         "originalPerformer": "Anita Mui",
         "collaborators": [],
@@ -1339,6 +1375,10 @@
             "isOfficial": false,
             "credit": "shdvdjne"
           }
+        ],
+        "songParts": [
+          "song-zhang-sheng-xiang-qi",
+          "song-sailing"
         ]
       },
       {
@@ -1375,7 +1415,7 @@
       },
       {
         "position": 26,
-        "song": null,
+        "song": "song-qi-dao",
         "titlePerformed": "祈禱",
         "collaborators": [],
         "mediaLinks": [
@@ -1591,7 +1631,18 @@
             "credit": "你这泼猴休得无礼"
           }
         ],
-        "notes": "Medley listed in full-upload descriptions; component song identity records are not modeled yet."
+        "notes": "Medley listed in full-upload descriptions; component song identity records are not modeled yet.",
+        "songParts": [
+          "song-ru-guo",
+          "song-rang-wo-men-kan-yun-qu",
+          "song-zhuo-ni-qiu",
+          "song-lan-hua-cao",
+          "song-tong-nian",
+          "song-xiang-jian-xiao-lu",
+          "song-wai-po-de-peng-hu-wan",
+          "song-tong-zhuo-de-ni",
+          "song-guang-yin-de-gu-shi"
+        ]
       },
       {
         "position": 7,
@@ -1670,7 +1721,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-yi-nian-zhi-jian",
         "titlePerformed": "一念之間",
         "collaborators": [
           "person-wu-tsing-fong"
@@ -1696,7 +1747,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-zhu-wo-xing-fu",
         "titlePerformed": "祝我幸福",
         "originalPerformer": "Faith Yang",
         "collaborators": [
@@ -1715,7 +1766,7 @@
       },
       {
         "position": 12,
-        "song": null,
+        "song": "song-zong-fa-shao-nv",
         "titlePerformed": "棕髮少女",
         "collaborators": [
           "person-wu-tsing-fong"
@@ -1842,11 +1893,17 @@
             "credit": "你这泼猴休得无礼"
           }
         ],
-        "notes": "Medley listed in full-upload descriptions; component song identity records are not modeled yet."
+        "notes": "Medley listed in full-upload descriptions; component song identity records are not modeled yet.",
+        "songParts": [
+          "song-lu-dao-xiao-ye-qu",
+          "song-su-zhou-he-bian",
+          "song-xiang-si-he-pan",
+          "song-qing-ren-de-yan-lei"
+        ]
       },
       {
         "position": 17,
-        "song": null,
+        "song": "song-hai-shang-hua",
         "titlePerformed": "海上花",
         "collaborators": [],
         "mediaLinks": [
@@ -1894,7 +1951,7 @@
       },
       {
         "position": 19,
-        "song": null,
+        "song": "song-wen-fo",
         "titlePerformed": "問佛",
         "collaborators": [],
         "mediaLinks": [
@@ -2086,7 +2143,7 @@
       },
       {
         "position": 27,
-        "song": null,
+        "song": "song-zhang-sheng-xiang-qi",
         "titlePerformed": "掌聲響起",
         "collaborators": [],
         "mediaLinks": [
@@ -2224,11 +2281,17 @@
             "credit": "宗腾"
           }
         ],
-        "notes": "Medley listed in the detailed full-upload chapter metadata; component song identity records are not modeled yet."
+        "notes": "Medley listed in the detailed full-upload chapter metadata; component song identity records are not modeled yet.",
+        "songParts": [
+          "song-lu-dao-xiao-ye-qu",
+          "song-su-zhou-he-bian",
+          "song-xiang-si-he-pan",
+          "song-qing-ren-de-yan-lei"
+        ]
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-500-miles",
         "titlePerformed": "500 Miles",
         "collaborators": [],
         "mediaLinks": [
@@ -2245,7 +2308,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-scarborough-fair",
         "titlePerformed": "Scarborough Fair",
         "collaborators": [],
         "mediaLinks": [
@@ -2292,7 +2355,16 @@
             "credit": "宗腾"
           }
         ],
-        "notes": "Medley listed in the detailed full-upload chapter metadata; component song identity records are not modeled yet."
+        "notes": "Medley listed in the detailed full-upload chapter metadata; component song identity records are not modeled yet.",
+        "songParts": [
+          "song-lan-hua-cao",
+          "song-tong-nian",
+          "song-xiang-jian-xiao-lu",
+          "song-wai-po-de-peng-hu-wan",
+          "song-qia-si-ni-de-wen-rou",
+          "song-tong-zhuo-de-ni",
+          "song-guang-yin-de-gu-shi"
+        ]
       },
       {
         "position": 7,
@@ -2367,11 +2439,15 @@
             "credit": "夕霧岬"
           }
         ],
-        "notes": "Guest duet with Cheng Fangyuan; title order varies between uploads as 愛的箴言 / 是否 and 是否 / 愛的箴言."
+        "notes": "Guest duet with Cheng Fangyuan; title order varies between uploads as 愛的箴言 / 是否 and 是否 / 愛的箴言.",
+        "songParts": [
+          "song-ai-de-zhen-yan",
+          "song-shi-fou"
+        ]
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-wo-yao-ni",
         "titlePerformed": "我要你",
         "collaborators": [
           "person-cheng-fangyuan"
@@ -2495,7 +2571,7 @@
       },
       {
         "position": 18,
-        "song": null,
+        "song": "song-wen-fo",
         "titlePerformed": "問佛",
         "collaborators": [],
         "mediaLinks": [
@@ -2527,7 +2603,7 @@
       },
       {
         "position": 20,
-        "song": null,
+        "song": "song-gu-yan",
         "titlePerformed": "鴻雁",
         "collaborators": [],
         "mediaLinks": [
@@ -2543,7 +2619,7 @@
       },
       {
         "position": 21,
-        "song": null,
+        "song": "song-nu-ren-hua",
         "titlePerformed": "女人花",
         "collaborators": [],
         "mediaLinks": [
@@ -2604,7 +2680,11 @@
             "credit": "宗腾"
           }
         ],
-        "notes": "Paired performance listed as one chapter in the detailed full upload."
+        "notes": "Paired performance listed as one chapter in the detailed full upload.",
+        "songParts": [
+          "song-zhang-sheng-xiang-qi",
+          "song-sailing"
+        ]
       },
       {
         "position": 25,
@@ -2624,7 +2704,7 @@
       },
       {
         "position": 26,
-        "song": null,
+        "song": "song-qi-dao",
         "titlePerformed": "祈禱",
         "collaborators": [],
         "mediaLinks": [

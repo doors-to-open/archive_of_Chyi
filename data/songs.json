@@ -709,7 +709,8 @@
       "en": "Red Cotton",
       "zh-Hant": "紅棉",
       "zh-Hans": "红棉"
-    }
+    },
+    "firstKnownRelease": "appearance-eight-taels-of-gold-ost"
   },
   {
     "id": "song-mess",
@@ -738,7 +739,8 @@
       "en": "Mess",
       "zh-Hant": "亂",
       "zh-Hans": "乱"
-    }
+    },
+    "firstKnownRelease": "appearance-eight-taels-of-gold-ost"
   },
   {
     "id": "song-blessing",
@@ -1322,7 +1324,8 @@
       "source-qq-music-turning-suzanne-ciani-1999"
     ],
     "notes": "Modeled as a Chyi Yu voice appearance rather than a Chyi Yu release. QQ Music has both a 1998 collaboration candidate listing Chyi Yu and Suzanne Ciani on the title track and the user-supplied 1999 Suzanne Ciani album context; fuller booklet credits remain pending.",
-    "status": "partial"
+    "status": "partial",
+    "firstKnownRelease": "appearance-turning-1999"
   },
   {
     "id": "song-one-thought-between-in-water",
@@ -1434,7 +1437,9 @@
     "composedBy": [],
     "arrangedBy": [],
     "firstKnownRelease": "release-dare-to-love-1994",
-    "relatedReleases": [],
+    "relatedReleases": [
+      "release-the-unheard-of-chyi-2003"
+    ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong"
     ],
@@ -1461,7 +1466,9 @@
     "composedBy": [],
     "arrangedBy": [],
     "firstKnownRelease": "release-stories-1987",
-    "relatedReleases": [],
+    "relatedReleases": [
+      "release-dare-to-dream-1994"
+    ],
     "knownConcerts": [
       "concert-grace-still-shenzhen-2026",
       "concert-grace-still-changsha-2026"
@@ -1528,7 +1535,9 @@
     ],
     "arrangedBy": [],
     "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
-    "relatedReleases": [],
+    "relatedReleases": [
+      "release-dare-to-love-1994"
+    ],
     "knownConcerts": [
       "concert-grace-still-shenzhen-2026",
       "concert-grace-still-changsha-2026"
@@ -1604,6 +1613,6491 @@
       "source-qq-music-you-meiyou-zhe-zhong-shuofa"
     ],
     "notes": "Promoted from the 1988 album track to connect concert performances.",
+    "status": "partial"
+  },
+  {
+    "id": "song-qing-meng-hu",
+    "slug": "qing-meng-hu",
+    "title": "青夢湖",
+    "titleOriginal": "青夢湖",
+    "titleLocalized": {
+      "zh-Hant": "青夢湖",
+      "zh-Hans": "青梦湖"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-rongzi"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-olive-tree-1979",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-yue-olive-tree-album",
+      "source-apple-music-olive-tree",
+      "source-qq-music-olive-tree",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-olive-tree-1979",
+      "source-spotify-olive-tree-1979",
+      "source-youtube-music-olive-tree-1979"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-ai-zhi-si",
+    "slug": "ai-zhi-si",
+    "title": "愛之死",
+    "titleOriginal": "愛之死",
+    "titleLocalized": {
+      "zh-Hant": "愛之死 (Instrumental)",
+      "zh-Hans": "爱之死 (演奏曲)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-olive-tree-1979",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-yue-olive-tree-album",
+      "source-apple-music-olive-tree",
+      "source-qq-music-olive-tree",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-olive-tree-1979",
+      "source-spotify-olive-tree-1979",
+      "source-youtube-music-olive-tree-1979"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-wo-zai-meng-zhong-ku-qi-le",
+    "slug": "wo-zai-meng-zhong-ku-qi-le",
+    "title": "我在夢中哭泣了",
+    "titleOriginal": "我在夢中哭泣了",
+    "titleLocalized": {
+      "zh-Hant": "我在夢中哭泣了",
+      "zh-Hans": "我在梦中哭泣了"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-li-tai-hsiang"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-olive-tree-1979",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-yue-olive-tree-album",
+      "source-apple-music-olive-tree",
+      "source-qq-music-olive-tree",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-olive-tree-1979",
+      "source-spotify-olive-tree-1979",
+      "source-youtube-music-olive-tree-1979"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-yao-lan-qu",
+    "slug": "yao-lan-qu",
+    "title": "搖籃曲",
+    "titleOriginal": "搖籃曲",
+    "titleLocalized": {
+      "zh-Hant": "搖籃曲",
+      "zh-Hans": "摇篮曲"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-olive-tree-1979",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-yue-olive-tree-album",
+      "source-apple-music-olive-tree",
+      "source-qq-music-olive-tree",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-olive-tree-1979",
+      "source-spotify-olive-tree-1979",
+      "source-youtube-music-olive-tree-1979"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-ai-de-shi-jie",
+    "slug": "ai-de-shi-jie",
+    "title": "愛的世界",
+    "titleOriginal": "愛的世界",
+    "titleLocalized": {
+      "zh-Hant": "愛的世界",
+      "zh-Hans": "爱的世界"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-li-tai-hsiang"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-olive-tree-1979",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-yue-olive-tree-album",
+      "source-apple-music-olive-tree",
+      "source-qq-music-olive-tree",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-olive-tree-1979",
+      "source-spotify-olive-tree-1979",
+      "source-youtube-music-olive-tree-1979"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-yu-gan",
+    "slug": "yu-gan",
+    "title": "預感",
+    "titleOriginal": "預感",
+    "titleLocalized": {
+      "zh-Hant": "預感",
+      "zh-Hans": "预感"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-li-tai-hsiang"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-olive-tree-1979",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-yue-olive-tree-album",
+      "source-apple-music-olive-tree",
+      "source-qq-music-olive-tree",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-olive-tree-1979",
+      "source-spotify-olive-tree-1979",
+      "source-youtube-music-olive-tree-1979"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-zhui-zhu-yu-chong-feng",
+    "slug": "zhui-zhu-yu-chong-feng",
+    "title": "追逐與重逢",
+    "titleOriginal": "追逐與重逢",
+    "titleLocalized": {
+      "zh-Hant": "追逐與重逢 (Instrumental)",
+      "zh-Hans": "追逐与重逢 (演奏曲)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-olive-tree-1979",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-yue-olive-tree-album",
+      "source-apple-music-olive-tree",
+      "source-qq-music-olive-tree",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-olive-tree-1979",
+      "source-spotify-olive-tree-1979",
+      "source-youtube-music-olive-tree-1979"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-feng",
+    "slug": "feng",
+    "title": "風",
+    "titleOriginal": "風",
+    "titleLocalized": {
+      "zh-Hant": "風",
+      "zh-Hans": "风"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-sanmao"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-blessing-1982",
+    "relatedReleases": [
+      "release-angels-poem-1998"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-zh-blessing-album",
+      "source-qq-music-blessing",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-blessing-1982"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-chuan-shuo",
+    "slug": "chuan-shuo",
+    "title": "傳說",
+    "titleOriginal": "傳說",
+    "titleLocalized": {
+      "zh-Hant": "傳說",
+      "zh-Hans": "传说"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-yu-kwang-chung"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-blessing-1982",
+    "relatedReleases": [
+      "release-angels-poem-1998"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-zh-blessing-album",
+      "source-qq-music-blessing",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-blessing-1982"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-yan",
+    "slug": "yan",
+    "title": "雁",
+    "titleOriginal": "雁",
+    "titleLocalized": {
+      "zh-Hant": "雁",
+      "zh-Hans": "雁"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-yeh-wei-lien"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-blessing-1982",
+    "relatedReleases": [
+      "release-angels-poem-1998"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-zh-blessing-album",
+      "source-qq-music-blessing",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-blessing-1982"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-mu-yang-nv",
+    "slug": "mu-yang-nv",
+    "title": "牧羊女",
+    "titleOriginal": "牧羊女",
+    "titleLocalized": {
+      "zh-Hant": "牧羊女",
+      "zh-Hans": "牧羊女"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-zheng-chouyu"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-blessing-1982",
+    "relatedReleases": [
+      "release-angels-poem-1998"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-zh-blessing-album",
+      "source-qq-music-blessing",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-blessing-1982"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-chun-tian-de-fu-diao",
+    "slug": "chun-tian-de-fu-diao",
+    "title": "春天的浮雕",
+    "titleOriginal": "春天的浮雕",
+    "titleLocalized": {
+      "zh-Hant": "春天的浮雕",
+      "zh-Hans": "春天的浮雕"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-lo-men"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-blessing-1982",
+    "relatedReleases": [
+      "release-angels-poem-1998"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-zh-blessing-album",
+      "source-qq-music-blessing",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-blessing-1982"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-hai-tang-wen-shen",
+    "slug": "hai-tang-wen-shen",
+    "title": "海棠紋身",
+    "titleOriginal": "海棠紋身",
+    "titleLocalized": {
+      "zh-Hant": "海棠紋身",
+      "zh-Hans": "海棠纹身"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-yu-kwang-chung"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-blessing-1982",
+    "relatedReleases": [
+      "release-angels-poem-1998"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-zh-blessing-album",
+      "source-qq-music-blessing",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-blessing-1982"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-du-shi-xuan-lu",
+    "slug": "du-shi-xuan-lu",
+    "title": "都市旋律",
+    "titleOriginal": "都市旋律",
+    "titleLocalized": {
+      "zh-Hant": "都市旋律",
+      "zh-Hans": "都市旋律"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-lo-men"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-blessing-1982",
+    "relatedReleases": [
+      "release-angels-poem-1998"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-zh-blessing-album",
+      "source-qq-music-blessing",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-blessing-1982"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-xing",
+    "slug": "xing",
+    "title": "星",
+    "titleOriginal": "星",
+    "titleLocalized": {
+      "zh-Hant": "星",
+      "zh-Hans": "星"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-lo-ching"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-blessing-1982",
+    "relatedReleases": [
+      "release-angels-poem-1998"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-zh-blessing-album",
+      "source-qq-music-blessing",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-blessing-1982"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-san-yue-de-feng",
+    "slug": "san-yue-de-feng",
+    "title": "三月的風",
+    "titleOriginal": "三月的風",
+    "titleLocalized": {
+      "zh-Hant": "三月的風",
+      "zh-Hans": "三月的风"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-wang-yu-ping"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-are-all-my-memories-1983",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-are-all-my-memories",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-fu-yun-ge",
+    "slug": "fu-yun-ge",
+    "title": "浮雲歌",
+    "titleOriginal": "浮雲歌",
+    "titleLocalized": {
+      "zh-Hant": "浮雲歌",
+      "zh-Hans": "浮云歌"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-wang-yu-ping"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-are-all-my-memories-1983",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-are-all-my-memories",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-ta-de-mou-zi",
+    "slug": "ta-de-mou-zi",
+    "title": "他的眸子",
+    "titleOriginal": "他的眸子",
+    "titleLocalized": {
+      "zh-Hant": "他的眸子",
+      "zh-Hans": "他的眸子"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-wang-yu-ping"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-are-all-my-memories-1983",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-are-all-my-memories",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-jin-nian-de-hu-pan-hui-hen-leng",
+    "slug": "jin-nian-de-hu-pan-hui-hen-leng",
+    "title": "今年的湖畔會很冷",
+    "titleOriginal": "今年的湖畔會很冷",
+    "titleLocalized": {
+      "zh-Hant": "今年的湖畔會很冷",
+      "zh-Hans": "今年的湖畔会很冷"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-shen-lu-bai"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-are-all-my-memories-1983",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-are-all-my-memories",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-yi-duo-qing-lian",
+    "slug": "yi-duo-qing-lian",
+    "title": "一朵青蓮",
+    "titleOriginal": "一朵青蓮",
+    "titleLocalized": {
+      "zh-Hant": "一朵青蓮",
+      "zh-Hans": "一朵青莲"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-rongzi"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-are-all-my-memories-1983",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-are-all-my-memories",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-lu-si",
+    "slug": "lu-si",
+    "title": "鷺鷥",
+    "titleOriginal": "鷺鷥",
+    "titleLocalized": {
+      "zh-Hant": "鷺鷥",
+      "zh-Hans": "鹭鸶"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-kao-shang-chin"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-are-all-my-memories-1983",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-are-all-my-memories",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-tan-qin-de-nu-hai",
+    "slug": "tan-qin-de-nu-hai",
+    "title": "彈琴的女孩",
+    "titleOriginal": "彈琴的女孩",
+    "titleLocalized": {
+      "zh-Hant": "彈琴的女孩",
+      "zh-Hans": "弹琴的女孩"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-zui-yun"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-are-all-my-memories-1983",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-are-all-my-memories",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-qing-qing-de-zou-lai-ni-shen-ying",
+    "slug": "qing-qing-de-zou-lai-ni-shen-ying",
+    "title": "輕輕的走來你身影",
+    "titleOriginal": "輕輕的走來你身影",
+    "titleLocalized": {
+      "zh-Hant": "輕輕的走來你身影",
+      "zh-Hans": "轻轻的走来你身影"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-lin-lu"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-are-all-my-memories-1983",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-are-all-my-memories",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-qu-ba",
+    "slug": "qu-ba",
+    "title": "去罷",
+    "titleOriginal": "去罷",
+    "titleLocalized": {
+      "zh-Hant": "去罷",
+      "zh-Hans": "去吧"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-xu-zhimo"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-only-you-1984",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-only-you",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-shan-zhi-lu",
+    "slug": "shan-zhi-lu",
+    "title": "山之旅",
+    "titleOriginal": "山之旅",
+    "titleLocalized": {
+      "zh-Hant": "山之旅",
+      "zh-Hans": "山之旅"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-lin-lu"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-only-you-1984",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-only-you",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-shui-tian-yin",
+    "slug": "shui-tian-yin",
+    "title": "水天吟",
+    "titleOriginal": "水天吟",
+    "titleLocalized": {
+      "zh-Hant": "水天吟",
+      "zh-Hans": "水天吟"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-lo-men"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-only-you-1984",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-only-you",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-shan-yun-you",
+    "slug": "shan-yun-you",
+    "title": "山雲遊",
+    "titleOriginal": "山雲遊",
+    "titleLocalized": {
+      "zh-Hant": "山雲遊",
+      "zh-Hans": "山云游"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-lo-men"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-only-you-1984",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-only-you",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-miao-xiao",
+    "slug": "miao-xiao",
+    "title": "渺小",
+    "titleOriginal": "渺小",
+    "titleLocalized": {
+      "zh-Hant": "渺小",
+      "zh-Hans": "渺小"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-xu-zhimo"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-only-you-1984",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-only-you",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-bie-ning-wo-teng",
+    "slug": "bie-ning-wo-teng",
+    "title": "別擰我，疼",
+    "titleOriginal": "別擰我，疼",
+    "titleLocalized": {
+      "zh-Hant": "別擰我，疼",
+      "zh-Hans": "别拧我，疼"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-xu-zhimo"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-only-you-1984",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-only-you",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-xi-zi",
+    "slug": "xi-zi",
+    "title": "戲子",
+    "titleOriginal": "戲子",
+    "titleLocalized": {
+      "zh-Hant": "戲子",
+      "zh-Hans": "戏子"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-xi-murong"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-only-you-1984",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-only-you",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-ge",
+    "slug": "ge",
+    "title": "歌",
+    "titleOriginal": "歌",
+    "titleLocalized": {
+      "zh-Hant": "歌",
+      "zh-Hans": "歌"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-ya-xian"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-only-you-1984",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-only-you",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-gui-wai",
+    "slug": "gui-wai",
+    "title": "軌外",
+    "titleOriginal": "軌外",
+    "titleLocalized": {
+      "zh-Hant": "軌外",
+      "zh-Hans": "轨外"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-sanmao"
+    ],
+    "composedBy": [
+      "person-lee-tai-ming"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-echo-1985",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-echo-album",
+      "source-apple-music-echo",
+      "source-qq-music-echo",
+      "source-user-task-0618-2",
+      "source-spotify-echo-1985"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-mi",
+    "slug": "mi",
+    "title": "謎",
+    "titleOriginal": "謎",
+    "titleLocalized": {
+      "zh-Hant": "謎",
+      "zh-Hans": "谜"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-sanmao"
+    ],
+    "composedBy": [
+      "person-weng-hsiao-liang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-echo-1985",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-echo-album",
+      "source-apple-music-echo",
+      "source-qq-music-echo",
+      "source-user-task-0618-2",
+      "source-spotify-echo-1985"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-fei",
+    "slug": "fei",
+    "title": "飛",
+    "titleOriginal": "飛",
+    "titleLocalized": {
+      "zh-Hant": "飛",
+      "zh-Hans": "飞"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-sanmao"
+    ],
+    "composedBy": [
+      "person-li-tsung-sheng"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-echo-1985",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-echo-album",
+      "source-apple-music-echo",
+      "source-qq-music-echo",
+      "source-user-task-0618-2",
+      "source-spotify-echo-1985"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-sha-mo",
+    "slug": "sha-mo",
+    "title": "沙漠",
+    "titleOriginal": "沙漠",
+    "titleLocalized": {
+      "zh-Hant": "沙漠",
+      "zh-Hans": "沙漠"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-sanmao"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-echo-1985",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-echo-album",
+      "source-apple-music-echo",
+      "source-qq-music-echo",
+      "source-user-task-0618-2",
+      "source-spotify-echo-1985"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-shuang",
+    "slug": "shuang",
+    "title": "孀",
+    "titleOriginal": "孀",
+    "titleLocalized": {
+      "zh-Hant": "孀",
+      "zh-Hans": "孀"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-sanmao"
+    ],
+    "composedBy": [
+      "person-chen-yang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-echo-1985",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-echo-album",
+      "source-apple-music-echo",
+      "source-qq-music-echo",
+      "source-user-task-0618-2",
+      "source-spotify-echo-1985"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-shuo-gei-zi-ji-ting",
+    "slug": "shuo-gei-zi-ji-ting",
+    "title": "說給自己聽",
+    "titleOriginal": "說給自己聽",
+    "titleLocalized": {
+      "zh-Hant": "說給自己聽",
+      "zh-Hans": "说给自己听"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-sanmao"
+    ],
+    "composedBy": [
+      "person-lee-tai-ming"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-echo-1985",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-echo-album",
+      "source-apple-music-echo",
+      "source-qq-music-echo",
+      "source-user-task-0618-2",
+      "source-spotify-echo-1985"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-yuan-fang",
+    "slug": "yuan-fang",
+    "title": "遠方",
+    "titleOriginal": "遠方",
+    "titleLocalized": {
+      "zh-Hant": "遠方",
+      "zh-Hans": "远方"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-sanmao"
+    ],
+    "composedBy": [
+      "person-wang-hsin-lien"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-echo-1985",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-echo-album",
+      "source-apple-music-echo",
+      "source-qq-music-echo",
+      "source-user-task-0618-2",
+      "source-spotify-echo-1985"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-light-a-light",
+    "slug": "light-a-light",
+    "title": "Light A Light",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Light A Light",
+      "zh-Hans": "Light A Light"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-stories-1987",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-stories",
+      "source-netease-cloud-music-stories-1987"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-castles-in-the-air",
+    "slug": "castles-in-the-air",
+    "title": "Castles In The Air",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Castles In The Air",
+      "zh-Hans": "Castles In The Air"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-stories-1987",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-stories",
+      "source-netease-cloud-music-stories-1987"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-windmills-of-your-mind",
+    "slug": "windmills-of-your-mind",
+    "title": "Windmills Of Your Mind",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Windmills Of Your Mind",
+      "zh-Hans": "Windmills Of Your Mind"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-stories-1987",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-stories",
+      "source-netease-cloud-music-stories-1987"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-love-s-in-disguise",
+    "slug": "love-s-in-disguise",
+    "title": "Love's In Disguise",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Love's In Disguise",
+      "zh-Hans": "Love's In Disguise"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-stories-1987",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-stories",
+      "source-netease-cloud-music-stories-1987"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-unknown-musician",
+    "slug": "unknown-musician",
+    "title": "Unknown Musician",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Unknown Musician",
+      "zh-Hans": "Unknown Musician"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-stories-1987",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-stories",
+      "source-netease-cloud-music-stories-1987"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-if-you-say-my-eyes-are-beautiful",
+    "slug": "if-you-say-my-eyes-are-beautiful",
+    "title": "If You Say My Eyes Are Beautiful",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "If You Say My Eyes Are Beautiful",
+      "zh-Hans": "If You Say My Eyes Are Beautiful"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-stories-1987",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-stories",
+      "source-netease-cloud-music-stories-1987"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-like-a-hero",
+    "slug": "like-a-hero",
+    "title": "Like A Hero",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Like A Hero",
+      "zh-Hans": "Like A Hero"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-stories-1987",
+    "relatedReleases": [
+      "release-dare-to-dream-1994"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-stories",
+      "source-netease-cloud-music-stories-1987"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-requiem",
+    "slug": "requiem",
+    "title": "Requiem",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Requiem",
+      "zh-Hans": "Requiem"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-stories-1987",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-stories",
+      "source-netease-cloud-music-stories-1987"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-you-got-a-nerve",
+    "slug": "you-got-a-nerve",
+    "title": "You Got A Nerve",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "You Got A Nerve",
+      "zh-Hans": "You Got A Nerve"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-whoever-finds-this-i-love-you",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-waiting-for-the-morning",
+    "slug": "waiting-for-the-morning",
+    "title": "Waiting for the morning",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Waiting for the morning",
+      "zh-Hans": "Waiting for the morning"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-whoever-finds-this-i-love-you",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-make-no-mistake-he-s-mine",
+    "slug": "make-no-mistake-he-s-mine",
+    "title": "Make no mistake, he's mine",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Make no mistake, he's mine",
+      "zh-Hans": "Make no mistake, he's mine"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-whoever-finds-this-i-love-you",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-he-s-so-beautiful-to-me",
+    "slug": "he-s-so-beautiful-to-me",
+    "title": "He's so beautiful to me",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "He's so beautiful to me",
+      "zh-Hans": "He's so beautiful to me"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-whoever-finds-this-i-love-you",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-angels-roses-and-rain",
+    "slug": "angels-roses-and-rain",
+    "title": "Angels, Roses And Rain",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Angels, Roses And Rain",
+      "zh-Hans": "Angels, Roses And Rain"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
+    "relatedReleases": [
+      "release-dare-to-dream-1994"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-whoever-finds-this-i-love-you",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-lady-on-the-other-side-of-town",
+    "slug": "lady-on-the-other-side-of-town",
+    "title": "Lady On The Other Side Of Town",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Lady On The Other Side Of Town",
+      "zh-Hans": "Lady On The Other Side Of Town"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-whoever-finds-this-i-love-you",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-yesterday-when-i-was-young",
+    "slug": "yesterday-when-i-was-young",
+    "title": "Yesterday when I was young",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Yesterday when I was young",
+      "zh-Hans": "Yesterday when I was young"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-whoever-finds-this-i-love-you",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-only-love",
+    "slug": "only-love",
+    "title": "Only Love",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Only Love",
+      "zh-Hans": "Only Love"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-paradise-bird-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-paradise-bird",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-paradise-bird-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-paradise-bird",
+    "slug": "paradise-bird",
+    "title": "Paradise Bird",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Paradise Bird",
+      "zh-Hans": "Paradise Bird"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-paradise-bird-1988",
+    "relatedReleases": [
+      "release-dare-to-dream-1994"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-paradise-bird",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-paradise-bird-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-gypsy",
+    "slug": "gypsy",
+    "title": "Gypsy",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Gypsy",
+      "zh-Hans": "Gypsy"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-paradise-bird-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-paradise-bird",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-paradise-bird-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-graveyard-angel",
+    "slug": "graveyard-angel",
+    "title": "Graveyard Angel",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Graveyard Angel",
+      "zh-Hans": "Graveyard Angel"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-paradise-bird-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-paradise-bird",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-paradise-bird-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-tonight",
+    "slug": "tonight",
+    "title": "Tonight",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Tonight",
+      "zh-Hans": "Tonight"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-paradise-bird-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-paradise-bird",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-paradise-bird-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-it-was-love",
+    "slug": "it-was-love",
+    "title": "It Was Love",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "It Was Love",
+      "zh-Hans": "It Was Love"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-paradise-bird-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-paradise-bird",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-paradise-bird-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-islands",
+    "slug": "islands",
+    "title": "Islands",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Islands",
+      "zh-Hans": "Islands"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-paradise-bird-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-paradise-bird",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-paradise-bird-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-joan-of-arc",
+    "slug": "joan-of-arc",
+    "title": "Joan Of Arc",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Joan Of Arc",
+      "zh-Hans": "Joan Of Arc"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-paradise-bird-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-paradise-bird",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-paradise-bird-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-broken-heroes",
+    "slug": "broken-heroes",
+    "title": "Broken Heroes",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Broken Heroes",
+      "zh-Hans": "Broken Heroes"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-paradise-bird-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-paradise-bird",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-paradise-bird-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-wang-le-shu-yang",
+    "slug": "wang-le-shu-yang",
+    "title": "Fail to Count the Sheep",
+    "titleOriginal": "忘了數羊",
+    "titleLocalized": {
+      "en": "Fail to Count the Sheep",
+      "zh-Hant": "忘了數羊",
+      "zh-Hans": "忘了数羊"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-lo-sheng-er"
+    ],
+    "composedBy": [
+      "person-lo-sheng-er"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-you-meiyou-zhe-zhong-shuofa-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-xue-zhong-lian",
+    "slug": "xue-zhong-lian",
+    "title": "The Lily in Snow",
+    "titleOriginal": "雪中蓮",
+    "titleLocalized": {
+      "en": "The Lily in Snow",
+      "zh-Hant": "雪中蓮",
+      "zh-Hans": "雪中莲"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-chen-gui-fen"
+    ],
+    "composedBy": [
+      "person-hong"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-you-meiyou-zhe-zhong-shuofa-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-na-ge-jiao-lao-de-ren",
+    "slug": "na-ge-jiao-lao-de-ren",
+    "title": "The Man Named Old",
+    "titleOriginal": "那個叫老的人",
+    "titleLocalized": {
+      "en": "The Man Named Old",
+      "zh-Hant": "那個叫老的人",
+      "zh-Hans": "那个叫老的人"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-zhan-de-mao"
+    ],
+    "composedBy": [
+      "person-hong"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-you-meiyou-zhe-zhong-shuofa-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-leng-leng-de-xin",
+    "slug": "leng-leng-de-xin",
+    "title": "Chilly Heart",
+    "titleOriginal": "冷冷的心",
+    "titleLocalized": {
+      "en": "Chilly Heart",
+      "zh-Hant": "冷冷的心",
+      "zh-Hans": "冷冷的心"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-hong"
+    ],
+    "composedBy": [
+      "person-lin-long-xuan"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-you-meiyou-zhe-zhong-shuofa-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-xi-shuo-cong-tou",
+    "slug": "xi-shuo-cong-tou",
+    "title": "Telling from Beginning",
+    "titleOriginal": "細說從頭",
+    "titleLocalized": {
+      "en": "Telling from Beginning",
+      "zh-Hant": "細說從頭",
+      "zh-Hans": "细说从头"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-li-tsung-sheng"
+    ],
+    "composedBy": [
+      "person-li-tsung-sheng"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-you-meiyou-zhe-zhong-shuofa-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-song-e58d81e4ba8c",
+    "slug": "song-e58d81e4ba8c",
+    "title": "Twelve Nights",
+    "titleOriginal": "十二個夜晚",
+    "titleLocalized": {
+      "en": "Twelve Nights",
+      "zh-Hant": "十二個夜晚",
+      "zh-Hans": "十二个夜晚"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-chyi-yu"
+    ],
+    "composedBy": [
+      "person-hong"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-you-meiyou-zhe-zhong-shuofa-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-chuang-wai-you-lan-tian",
+    "slug": "chuang-wai-you-lan-tian",
+    "title": "A Room With a View",
+    "titleOriginal": "窗外有藍天",
+    "titleLocalized": {
+      "en": "A Room With a View",
+      "zh-Hant": "窗外有藍天",
+      "zh-Hans": "窗外有蓝天"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-liang-hong-zhi"
+    ],
+    "composedBy": [
+      "person-liang-hong-zhi"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-you-meiyou-zhe-zhong-shuofa-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-yuan-nv",
+    "slug": "yuan-nv",
+    "title": "Rouge of the North",
+    "titleOriginal": "怨女",
+    "titleLocalized": {
+      "en": "Rouge of the North",
+      "zh-Hant": "怨女",
+      "zh-Hans": "怨女"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-lu-szu-chih"
+    ],
+    "composedBy": [
+      "person-chang-hong-yi"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-you-meiyou-zhe-zhong-shuofa-1988"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-find-the-cost-of-freedom",
+    "slug": "find-the-cost-of-freedom",
+    "title": "Find The Cost Of Freedom",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Find The Cost Of Freedom",
+      "zh-Hans": "Find The Cost Of Freedom"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-where-have-all-the-flowers-gone",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-borderline",
+    "slug": "borderline",
+    "title": "Borderline",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Borderline",
+      "zh-Hans": "Borderline"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
+    "relatedReleases": [
+      "release-dare-to-dream-1994"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-where-have-all-the-flowers-gone",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-senses-in-flight",
+    "slug": "senses-in-flight",
+    "title": "Senses In Flight",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Senses In Flight",
+      "zh-Hans": "Senses In Flight"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-where-have-all-the-flowers-gone",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-unborn-heart",
+    "slug": "unborn-heart",
+    "title": "Unborn Heart",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Unborn Heart",
+      "zh-Hans": "Unborn Heart"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
+    "relatedReleases": [
+      "release-dare-to-dream-1994"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-where-have-all-the-flowers-gone",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-wind-beneath-my-wings",
+    "slug": "wind-beneath-my-wings",
+    "title": "Wind Beneath My Wings",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Wind Beneath My Wings",
+      "zh-Hans": "Wind Beneath My Wings"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
+    "relatedReleases": [
+      "release-dare-to-dream-1994"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-where-have-all-the-flowers-gone",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-children-of-the-80-s",
+    "slug": "children-of-the-80-s",
+    "title": "Children Of The 80's",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Children Of The 80's",
+      "zh-Hans": "Children Of The 80's"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-where-have-all-the-flowers-gone",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-the-end-of-the-innocence",
+    "slug": "the-end-of-the-innocence",
+    "title": "The End Of The Innocence",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "The End Of The Innocence",
+      "zh-Hans": "The End Of The Innocence"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-where-have-all-the-flowers-gone",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-longer",
+    "slug": "longer",
+    "title": "Longer",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Longer",
+      "zh-Hans": "Longer"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-where-have-all-the-flowers-gone",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-light-in-the-darkness",
+    "slug": "light-in-the-darkness",
+    "title": "Light In The Darkness",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Light In The Darkness",
+      "zh-Hans": "Light In The Darkness"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-where-have-all-the-flowers-gone",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-the-music-of-the-night",
+    "slug": "the-music-of-the-night",
+    "title": "The Music of The Night",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "The Music of The Night",
+      "zh-Hans": "The Music of The Night"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-vino-de-amor",
+    "slug": "vino-de-amor",
+    "title": "Vino de Amor",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Vino de Amor",
+      "zh-Hans": "Vino de Amor"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-a-twist-of-fate",
+    "slug": "a-twist-of-fate",
+    "title": "A Twist of Fate",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "A Twist of Fate",
+      "zh-Hans": "A Twist of Fate"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-brave-new-world",
+    "slug": "brave-new-world",
+    "title": "Brave New World",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Brave New World",
+      "zh-Hans": "Brave New World"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-love-of-my-life",
+    "slug": "love-of-my-life",
+    "title": "Love of My Life",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Love of My Life",
+      "zh-Hans": "Love of My Life"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-glitter-and-dust",
+    "slug": "glitter-and-dust",
+    "title": "Glitter And Dust",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Glitter And Dust",
+      "zh-Hans": "Glitter And Dust"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-plaisir-d-amour",
+    "slug": "plaisir-d-amour",
+    "title": "Plaisir D'amour",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Plaisir D'amour",
+      "zh-Hans": "Plaisir D'amour"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-forever-bound",
+    "slug": "forever-bound",
+    "title": "Forever Bound",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Forever Bound",
+      "zh-Hans": "Forever Bound"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-the-vision",
+    "slug": "the-vision",
+    "title": "The Vision",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "The Vision",
+      "zh-Hans": "The Vision"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-recuerdos-de-la-alhambra",
+    "slug": "recuerdos-de-la-alhambra",
+    "title": "Recuerdos de la Alhambra",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Recuerdos de la Alhambra",
+      "zh-Hans": "Recuerdos de la Alhambra"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-careless-love",
+    "slug": "careless-love",
+    "title": "Careless Love",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Careless Love",
+      "zh-Hans": "Careless Love"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-she-ll-never-know",
+    "slug": "she-ll-never-know",
+    "title": "She'll Never Know",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "She'll Never Know",
+      "zh-Hans": "She'll Never Know"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-love-of-my-life-1993",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-love-of-my-life",
+      "source-spotify-love-of-my-life-1993",
+      "source-youtube-music-love-of-my-life-1993"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-danny-s-song",
+    "slug": "danny-s-song",
+    "title": "Danny's Song",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Danny's Song"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-dare-to-dream-1994",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-dare-to-dream",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-dare-to-dream-1994",
+      "source-youtube-music-dare-to-dream-1994"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-sad-lisa",
+    "slug": "sad-lisa",
+    "title": "Sad Lisa",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Sad Lisa"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-dare-to-dream-1994",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-dare-to-dream",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-dare-to-dream-1994",
+      "source-youtube-music-dare-to-dream-1994"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-babes-in-the-wood",
+    "slug": "babes-in-the-wood",
+    "title": "Babes In The Wood",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Babes In The Wood",
+      "zh-Hans": "Babes In The Wood"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chyis-tears-1996",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-chyis-tears",
+      "source-spotify-chyis-tears-1996",
+      "source-youtube-music-chyis-tears-1996"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-cry",
+    "slug": "cry",
+    "title": "Cry",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Cry",
+      "zh-Hans": "Cry"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chyis-tears-1996",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-chyis-tears",
+      "source-spotify-chyis-tears-1996",
+      "source-youtube-music-chyis-tears-1996"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-you-can-t-say",
+    "slug": "you-can-t-say",
+    "title": "You Can't Say",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "You Can't Say",
+      "zh-Hans": "You Can't Say"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chyis-tears-1996",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-chyis-tears",
+      "source-spotify-chyis-tears-1996",
+      "source-youtube-music-chyis-tears-1996"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-concrete-sea",
+    "slug": "concrete-sea",
+    "title": "Concrete Sea",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Concrete Sea",
+      "zh-Hans": "Concrete Sea"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chyis-tears-1996",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-chyis-tears",
+      "source-spotify-chyis-tears-1996",
+      "source-youtube-music-chyis-tears-1996"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-prologue-winter-song",
+    "slug": "prologue-winter-song",
+    "title": "Prologue - Winter Song",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Prologue - Winter Song",
+      "zh-Hans": "Prologue - Winter Song"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chyis-tears-1996",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-chyis-tears",
+      "source-spotify-chyis-tears-1996",
+      "source-youtube-music-chyis-tears-1996"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-knife",
+    "slug": "knife",
+    "title": "Knife",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Knife",
+      "zh-Hans": "Knife"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chyis-tears-1996",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-chyis-tears",
+      "source-spotify-chyis-tears-1996",
+      "source-youtube-music-chyis-tears-1996"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-you-are-the-reason",
+    "slug": "you-are-the-reason",
+    "title": "You Are The Reason",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "You Are The Reason",
+      "zh-Hans": "You Are The Reason"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chyis-tears-1996",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-chyis-tears",
+      "source-spotify-chyis-tears-1996",
+      "source-youtube-music-chyis-tears-1996"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-send-in-the-clowns",
+    "slug": "send-in-the-clowns",
+    "title": "Send In the Clowns",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Send In the Clowns",
+      "zh-Hans": "Send In the Clowns"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chyis-tears-1996",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-chyis-tears",
+      "source-spotify-chyis-tears-1996",
+      "source-youtube-music-chyis-tears-1996"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-big-dream",
+    "slug": "big-dream",
+    "title": "Big Dream",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Big Dream",
+      "zh-Hans": "Big Dream"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chyis-tears-1996",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-chyis-tears",
+      "source-spotify-chyis-tears-1996",
+      "source-youtube-music-chyis-tears-1996"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-jue-for-lin-juemin",
+    "slug": "jue-for-lin-juemin",
+    "title": "Awakening (For Lin Juemin)",
+    "titleOriginal": "覺",
+    "titleLocalized": {
+      "en": "Awakening (For Lin Juemin)",
+      "zh-Hant": "覺 (遙寄林覺民)",
+      "zh-Hans": "觉 (遥寄林觉民)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-hsu-chang-te",
+      "person-chyi-yu"
+    ],
+    "composedBy": [
+      "person-kuo-tzu"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-camel-bird-fish-1997",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish",
+      "source-apple-music-camel-bird-fish",
+      "source-qq-music-camel-bird-fish",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-camel-bird-fish-1997",
+      "source-youtube-music-camel-bird-fish-1997"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-you-mei-you",
+    "slug": "you-mei-you",
+    "title": "Is There",
+    "titleOriginal": "有沒有",
+    "titleLocalized": {
+      "en": "Is There",
+      "zh-Hant": "有沒有",
+      "zh-Hans": "有没有"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-chyi-yu"
+    ],
+    "composedBy": [
+      "person-chi-chin"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-camel-bird-fish-1997",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish",
+      "source-apple-music-camel-bird-fish",
+      "source-qq-music-camel-bird-fish",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-camel-bird-fish-1997",
+      "source-youtube-music-camel-bird-fish-1997"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-ji-ran-ni-wen-qi",
+    "slug": "ji-ran-ni-wen-qi",
+    "title": "Since You Asked",
+    "titleOriginal": "既然你問起",
+    "titleLocalized": {
+      "en": "Since You Asked",
+      "zh-Hant": "既然你問起",
+      "zh-Hans": "既然你问起"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-li-ge-di"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-camel-bird-fish-1997",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish",
+      "source-apple-music-camel-bird-fish",
+      "source-qq-music-camel-bird-fish",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-camel-bird-fish-1997",
+      "source-youtube-music-camel-bird-fish-1997"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-nu-ren-yu-xiao-hai-1",
+    "slug": "nu-ren-yu-xiao-hai-1",
+    "title": "Women and Children I",
+    "titleOriginal": "女人與小孩 I",
+    "titleLocalized": {
+      "en": "Women and Children I",
+      "zh-Hant": "女人與小孩 I",
+      "zh-Hans": "女人与小孩 I"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-li-ge-di"
+    ],
+    "composedBy": [
+      "person-wu-bai"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-camel-bird-fish-1997",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish",
+      "source-apple-music-camel-bird-fish",
+      "source-qq-music-camel-bird-fish",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-camel-bird-fish-1997",
+      "source-youtube-music-camel-bird-fish-1997"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-hua-ti",
+    "slug": "hua-ti",
+    "title": "Topic",
+    "titleOriginal": "話題",
+    "titleLocalized": {
+      "en": "Topic",
+      "zh-Hant": "話題",
+      "zh-Hans": "话题"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-huang-shu-chun"
+    ],
+    "composedBy": [
+      "person-huang-shu-chun"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-camel-bird-fish-1997",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish",
+      "source-apple-music-camel-bird-fish",
+      "source-qq-music-camel-bird-fish",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-camel-bird-fish-1997",
+      "source-youtube-music-camel-bird-fish-1997"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-lan-yang-yang",
+    "slug": "lan-yang-yang",
+    "title": "Languid",
+    "titleOriginal": "懶洋洋",
+    "titleLocalized": {
+      "en": "Languid",
+      "zh-Hant": "懶洋洋",
+      "zh-Hans": "懒洋洋"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-lin-xi"
+    ],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-camel-bird-fish-1997",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish",
+      "source-apple-music-camel-bird-fish",
+      "source-qq-music-camel-bird-fish",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-camel-bird-fish-1997",
+      "source-youtube-music-camel-bird-fish-1997"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-si-shi-ge-wu-qin-wu-gu-de-nian-tou",
+    "slug": "si-shi-ge-wu-qin-wu-gu-de-nian-tou",
+    "title": "Forty Unrelated Years",
+    "titleOriginal": "四十個無親無故的年頭",
+    "titleLocalized": {
+      "en": "Forty Unrelated Years",
+      "zh-Hant": "四十個無親無故的年頭",
+      "zh-Hans": "四十个无亲无故的年头"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-chyi-yu"
+    ],
+    "composedBy": [
+      "person-lee-tai-ming"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-camel-bird-fish-1997",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish",
+      "source-apple-music-camel-bird-fish",
+      "source-qq-music-camel-bird-fish",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-camel-bird-fish-1997",
+      "source-youtube-music-camel-bird-fish-1997"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-tan-xi-ping",
+    "slug": "tan-xi-ping",
+    "title": "Sighing Bottle",
+    "titleOriginal": "嘆息瓶",
+    "titleLocalized": {
+      "en": "Sighing Bottle",
+      "zh-Hant": "嘆息瓶",
+      "zh-Hans": "叹息瓶"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-li-ge-di"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-camel-bird-fish-1997",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish",
+      "source-apple-music-camel-bird-fish",
+      "source-qq-music-camel-bird-fish",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-camel-bird-fish-1997",
+      "source-youtube-music-camel-bird-fish-1997"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-nu-ren-yu-xiao-hai-2",
+    "slug": "nu-ren-yu-xiao-hai-2",
+    "title": "Women and Children II",
+    "titleOriginal": "女人與小孩 II",
+    "titleLocalized": {
+      "en": "Women and Children II",
+      "zh-Hant": "女人與小孩 II",
+      "zh-Hans": "女人与小孩 II"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-li-ge-di"
+    ],
+    "composedBy": [
+      "person-wu-bai"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-camel-bird-fish-1997",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-camel-bird-fish",
+      "source-apple-music-camel-bird-fish",
+      "source-qq-music-camel-bird-fish",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-camel-bird-fish-1997",
+      "source-youtube-music-camel-bird-fish-1997"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-shi-qi-sui",
+    "slug": "shi-qi-sui",
+    "title": "十七岁",
+    "titleOriginal": "十七岁",
+    "titleLocalized": {
+      "zh-Hans": "十七岁"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-songs-and-silhouettes",
+    "slug": "songs-and-silhouettes",
+    "title": "Songs And Silhouettes",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Songs And Silhouettes"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-edge-of-dream",
+    "slug": "edge-of-dream",
+    "title": "Edge Of Dream",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Edge Of Dream"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-qiao-di",
+    "slug": "qiao-di",
+    "title": "乔第",
+    "titleOriginal": "乔第",
+    "titleLocalized": {
+      "zh-Hans": "乔第"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-shi-guang",
+    "slug": "shi-guang",
+    "title": "时光",
+    "titleOriginal": "时光",
+    "titleLocalized": {
+      "zh-Hans": "时光"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-er-wo-shi-ru-ci-ai-ni",
+    "slug": "er-wo-shi-ru-ci-ai-ni",
+    "title": "而我是如此爱你",
+    "titleOriginal": "而我是如此爱你",
+    "titleLocalized": {
+      "zh-Hans": "而我是如此爱你"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-wishful-milenio",
+    "slug": "wishful-milenio",
+    "title": "Wishful Milenio",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Wishful Milenio"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-xi-yu-ye-ye-de-cao-yuan",
+    "slug": "xi-yu-ye-ye-de-cao-yuan",
+    "title": "细语咽咽的草原",
+    "titleOriginal": "细语咽咽的草原",
+    "titleLocalized": {
+      "zh-Hans": "细语咽咽的草原"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-liu-zhuan",
+    "slug": "liu-zhuan",
+    "title": "流转",
+    "titleOriginal": "流转",
+    "titleLocalized": {
+      "zh-Hans": "流转"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-mei-gui",
+    "slug": "mei-gui",
+    "title": "玫瑰",
+    "titleOriginal": "玫瑰",
+    "titleLocalized": {
+      "zh-Hans": "玫瑰"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-twist-in-my-sobriety",
+    "slug": "twist-in-my-sobriety",
+    "title": "Twist In My Sobriety",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Twist In My Sobriety"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-cest-la-vie-1999",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-cest-la-vie",
+      "source-user-task-0623-1",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-xu",
+    "slug": "xu",
+    "title": "序",
+    "titleOriginal": "序",
+    "titleLocalized": {
+      "en": "序 (Live)",
+      "zh-Hant": "序 (Live)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-bu-yao-wen-wo-wei-shen-me",
+    "slug": "bu-yao-wen-wo-wei-shen-me",
+    "title": "不要問我為什麼",
+    "titleOriginal": "不要問我為什麼",
+    "titleLocalized": {
+      "en": "不要問我為什麼 (Live)",
+      "zh-Hant": "不要問我為什麼 (Live)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-shu-yu-ai-qing-de",
+    "slug": "shu-yu-ai-qing-de",
+    "title": "屬於愛情的",
+    "titleOriginal": "屬於愛情的",
+    "titleLocalized": {
+      "en": "屬於愛情的 (Live)",
+      "zh-Hant": "屬於愛情的 (Live)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-cuo-guo",
+    "slug": "cuo-guo",
+    "title": "錯過",
+    "titleOriginal": "錯過",
+    "titleLocalized": {
+      "en": "錯過 (Live)",
+      "zh-Hant": "錯過 (Live)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-moonlight-flower",
+    "slug": "moonlight-flower",
+    "title": "Moonlight Flower",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Moonlight Flower (Live)"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-xing-xing",
+    "slug": "xing-xing",
+    "title": "星星",
+    "titleOriginal": "星星",
+    "titleLocalized": {
+      "en": "星星 (Live)",
+      "zh-Hant": "星星 (Live)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-ling-yi-zhong-xing-xing",
+    "slug": "ling-yi-zhong-xing-xing",
+    "title": "另一種星星",
+    "titleOriginal": "另一種星星",
+    "titleLocalized": {
+      "en": "另一種星星 (Live)",
+      "zh-Hant": "另一種星星 (Live)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-yi-qie-dou-cong-zhe-si-ge-he-xian-kai-shi",
+    "slug": "yi-qie-dou-cong-zhe-si-ge-he-xian-kai-shi",
+    "title": "一切都從這四個和弦開始",
+    "titleOriginal": "一切都從這四個和弦開始",
+    "titleLocalized": {
+      "en": "一切都從這四個和弦開始 (Live)",
+      "zh-Hant": "一切都從這四個和弦開始 (Live)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-gei-wo-de-zhu-fu",
+    "slug": "gei-wo-de-zhu-fu",
+    "title": "給我的祝福",
+    "titleOriginal": "給我的祝福",
+    "titleLocalized": {
+      "en": "給我的祝福 (Live)",
+      "zh-Hant": "給我的祝福 (Live)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-jia-qiang-ji-yi",
+    "slug": "jia-qiang-ji-yi",
+    "title": "加強記憶",
+    "titleOriginal": "加強記憶",
+    "titleLocalized": {
+      "en": "加強記憶 (Live)",
+      "zh-Hant": "加強記憶 (Live)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-ba",
+    "slug": "ba",
+    "title": "跋",
+    "titleOriginal": "跋",
+    "titleLocalized": {
+      "en": "跋 (Live)",
+      "zh-Hant": "跋 (Live)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-indescribable-night",
+    "slug": "indescribable-night",
+    "title": "Indescribable Night",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Indescribable Night (Live)"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters",
+      "source-qq-music-unheard-of-chyi",
+      "source-local-qq-unheard-track-image",
+      "source-user-task-0618-2"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-guan-yin-pu-sa-ji",
+    "slug": "guan-yin-pu-sa-ji",
+    "title": "观音菩萨偈",
+    "titleOriginal": "观音菩萨偈",
+    "titleLocalized": {
+      "zh-Hans": "观音菩萨偈"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-buddha-heart-2004",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-buddha-heart",
+      "source-user-task-0623-2",
+      "source-netease-cloud-music-buddha-heart-2004"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-qing-jing-fa-shen-fo",
+    "slug": "qing-jing-fa-shen-fo",
+    "title": "清净法身佛",
+    "titleOriginal": "清净法身佛",
+    "titleLocalized": {
+      "zh-Hans": "清净法身佛"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-buddha-heart-2004",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-buddha-heart",
+      "source-user-task-0623-2",
+      "source-netease-cloud-music-buddha-heart-2004"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-fan-yin-da-bei-zhou",
+    "slug": "fan-yin-da-bei-zhou",
+    "title": "梵音大悲咒",
+    "titleOriginal": "梵音大悲咒",
+    "titleLocalized": {
+      "zh-Hans": "梵音大悲咒"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-buddha-heart-2004",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-buddha-heart",
+      "source-user-task-0623-2",
+      "source-netease-cloud-music-buddha-heart-2004"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-guan-shi-yin-pu-sa-fa-yuan-ji",
+    "slug": "guan-shi-yin-pu-sa-fa-yuan-ji",
+    "title": "观世音菩萨发愿偈",
+    "titleOriginal": "观世音菩萨发愿偈",
+    "titleLocalized": {
+      "zh-Hans": "观世音菩萨发愿偈 (大悲咒版)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-buddha-heart-2004",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-buddha-heart",
+      "source-user-task-0623-2",
+      "source-netease-cloud-music-buddha-heart-2004"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-pu-men-song",
+    "slug": "pu-men-song",
+    "title": "普门颂",
+    "titleOriginal": "普门颂",
+    "titleLocalized": {
+      "zh-Hans": "普门颂"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-buddha-heart-2004",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-buddha-heart",
+      "source-user-task-0623-2",
+      "source-netease-cloud-music-buddha-heart-2004"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-ave-maria-de-lourdes",
+    "slug": "ave-maria-de-lourdes",
+    "title": "Ave Maria De Lourdes",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Ave Maria De Lourdes"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "Public Domain"
+    ],
+    "composedBy": [
+      "Public Domain"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-voice-2010",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-the-voice",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-the-voice-2010",
+      "source-youtube-music-the-voice-2010"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-annie-s-song",
+    "slug": "annie-s-song",
+    "title": "Annie's Song",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Annie's Song"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-john-denver"
+    ],
+    "composedBy": [
+      "person-john-denver"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-voice-2010",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-the-voice",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-the-voice-2010",
+      "source-youtube-music-the-voice-2010"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-sailing",
+    "slug": "sailing",
+    "title": "Sailing",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Sailing"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-gavin-sutherland"
+    ],
+    "composedBy": [
+      "person-gavin-sutherland"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-voice-2010",
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-the-voice",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-the-voice-2010",
+      "source-youtube-music-the-voice-2010"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-silent-night",
+    "slug": "silent-night",
+    "title": "Silent Night",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Silent Night"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "Public Domain"
+    ],
+    "composedBy": [
+      "Public Domain"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-voice-2010",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-the-voice",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-the-voice-2010",
+      "source-youtube-music-the-voice-2010"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-when-a-child-is-born",
+    "slug": "when-a-child-is-born",
+    "title": "When A Child Is Born",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "When A Child Is Born"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-maurizio-seymandi",
+      "person-francesco-specchia",
+      "person-alberto-salerno"
+    ],
+    "composedBy": [
+      "person-ciro-dammicco",
+      "person-dario-baldan-bembo"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-voice-2010",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-the-voice",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-the-voice-2010",
+      "source-youtube-music-the-voice-2010"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-it-came-upon-the-midnight-cle",
+    "slug": "it-came-upon-the-midnight-cle",
+    "title": "It Came Upon The Midnight Cle",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "It Came Upon The Midnight Cle"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "Public Domain"
+    ],
+    "composedBy": [
+      "Public Domain"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-voice-2010",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-the-voice",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-the-voice-2010",
+      "source-youtube-music-the-voice-2010"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-we-shall-overcome",
+    "slug": "we-shall-overcome",
+    "title": "We Shall Overcome",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "We Shall Overcome"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-pete-seeger",
+      "person-hamilton",
+      "person-zilphia-horton",
+      "person-guy-carawan"
+    ],
+    "composedBy": [
+      "person-pete-seeger",
+      "person-hamilton",
+      "person-zilphia-horton",
+      "person-guy-carawan"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-voice-2010",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-the-voice",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-the-voice-2010",
+      "source-youtube-music-the-voice-2010"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-you-light-up-my-life",
+    "slug": "you-light-up-my-life",
+    "title": "You Light Up My Life",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "You Light Up My Life"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-joe-brooks"
+    ],
+    "composedBy": [
+      "person-joe-brooks"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-voice-2010",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-the-voice",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-the-voice-2010",
+      "source-youtube-music-the-voice-2010"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-joy-to-the-world",
+    "slug": "joy-to-the-world",
+    "title": "Joy To The World",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Joy To The World"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "Public Domain"
+    ],
+    "composedBy": [
+      "Public Domain"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-voice-2010",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-the-voice",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-the-voice-2010",
+      "source-youtube-music-the-voice-2010"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-morning-has-broken",
+    "slug": "morning-has-broken",
+    "title": "Morning Has Broken",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Morning Has Broken"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-gordon-lorenz",
+      "person-eleanor-farjeon"
+    ],
+    "composedBy": [
+      "person-gordon-lorenz",
+      "person-eleanor-farjeon"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-voice-2010",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-the-voice",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-the-voice-2010",
+      "source-youtube-music-the-voice-2010"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-i-saw-the-light",
+    "slug": "i-saw-the-light",
+    "title": "I Saw The Light",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "I Saw The Light"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-hank-williams-sr"
+    ],
+    "composedBy": [
+      "person-hank-williams-sr"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-clouds-2011",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-clouds",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-clouds-2011",
+      "source-youtube-music-clouds-2011"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-how-great-thou-art",
+    "slug": "how-great-thou-art",
+    "title": "How Great Thou Art",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "How Great Thou Art"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-stuart-k-hine"
+    ],
+    "composedBy": [
+      "person-stuart-k-hine"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-clouds-2011",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-clouds",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-clouds-2011",
+      "source-youtube-music-clouds-2011"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-angel",
+    "slug": "angel",
+    "title": "Angel",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Angel"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-sarah-mclachlan"
+    ],
+    "composedBy": [
+      "person-sarah-mclachlan"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-clouds-2011",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-clouds",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-clouds-2011",
+      "source-youtube-music-clouds-2011"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-santa-claus-is-coming-to-town",
+    "slug": "santa-claus-is-coming-to-town",
+    "title": "Santa Claus Is Coming To Town",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Santa Claus Is Coming To Town"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-haven-gillespie"
+    ],
+    "composedBy": [
+      "person-j-fred-coots"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-clouds-2011",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-clouds",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-clouds-2011",
+      "source-youtube-music-clouds-2011"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-in-the-sweet-by-and-by",
+    "slug": "in-the-sweet-by-and-by",
+    "title": "In The Sweet By and By",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "In The Sweet By and By"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "Traditional"
+    ],
+    "composedBy": [
+      "Traditional"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-clouds-2011",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-clouds",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-clouds-2011",
+      "source-youtube-music-clouds-2011"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-the-wayfaring-stranger",
+    "slug": "the-wayfaring-stranger",
+    "title": "The Wayfaring Stranger",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "The Wayfaring Stranger"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "Traditional"
+    ],
+    "composedBy": [
+      "Traditional"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-clouds-2011",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-clouds",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-clouds-2011",
+      "source-youtube-music-clouds-2011"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-white-christmas",
+    "slug": "white-christmas",
+    "title": "White Christmas",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "White Christmas"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-irving-berlin"
+    ],
+    "composedBy": [
+      "person-irving-berlin"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-clouds-2011",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-clouds",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-clouds-2011",
+      "source-youtube-music-clouds-2011"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-crying-in-the-chapel",
+    "slug": "crying-in-the-chapel",
+    "title": "Crying In The Chapel",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Crying In The Chapel"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "person-artie-glenn"
+    ],
+    "composedBy": [
+      "person-artie-glenn"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-clouds-2011",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-clouds",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-clouds-2011",
+      "source-youtube-music-clouds-2011"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-jingle-bells",
+    "slug": "jingle-bells",
+    "title": "Jingle Bells",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Jingle Bells"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "Traditional"
+    ],
+    "composedBy": [
+      "Traditional"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-clouds-2011",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-clouds",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-clouds-2011",
+      "source-youtube-music-clouds-2011"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-will-the-circle-be-unbroken",
+    "slug": "will-the-circle-be-unbroken",
+    "title": "Will The Circle Be Unbroken",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Will The Circle Be Unbroken"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [
+      "Traditional"
+    ],
+    "composedBy": [
+      "Traditional"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-clouds-2011",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-clouds",
+      "source-wikipedia-en-chyi-yu",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-clouds-2011",
+      "source-youtube-music-clouds-2011"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-chen-zhong-ji",
+    "slug": "chen-zhong-ji",
+    "title": "晨钟偈",
+    "titleOriginal": "晨钟偈",
+    "titleLocalized": {
+      "zh-Hans": "晨钟偈"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-morning-bell-gatha-cundi-mantra-2014",
+    "relatedReleases": [
+      "release-kshitigarbha-praise-2017"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-morning-bell-gatha-cundi-mantra",
+      "source-user-task-0623-2",
+      "source-youtube-music-cundi-mantra-2014",
+      "source-youtube-music-morning-bell-gatha-2014",
+      "source-kugou-morning-bell-gatha-cundi-mantra-2014"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-zhun-ti-shen-zhou",
+    "slug": "zhun-ti-shen-zhou",
+    "title": "准提神咒",
+    "titleOriginal": "准提神咒",
+    "titleLocalized": {
+      "zh-Hans": "准提神咒"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-morning-bell-gatha-cundi-mantra-2014",
+    "relatedReleases": [
+      "release-kshitigarbha-praise-2017"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-morning-bell-gatha-cundi-mantra",
+      "source-user-task-0623-2",
+      "source-youtube-music-cundi-mantra-2014",
+      "source-youtube-music-morning-bell-gatha-2014",
+      "source-kugou-morning-bell-gatha-cundi-mantra-2014"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-mu-zhong-ji",
+    "slug": "mu-zhong-ji",
+    "title": "暮钟偈",
+    "titleOriginal": "暮钟偈",
+    "titleLocalized": {
+      "zh-Hans": "暮钟偈"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-morning-bell-gatha-cundi-mantra-2014",
+    "relatedReleases": [
+      "release-kshitigarbha-praise-2017"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-morning-bell-gatha-cundi-mantra",
+      "source-user-task-0623-2",
+      "source-youtube-music-cundi-mantra-2014",
+      "source-youtube-music-morning-bell-gatha-2014",
+      "source-kugou-morning-bell-gatha-cundi-mantra-2014"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-ba-sheng-ji-xiang-qi-qing-wen",
+    "slug": "ba-sheng-ji-xiang-qi-qing-wen",
+    "title": "八圣吉祥祈请文",
+    "titleOriginal": "八圣吉祥祈请文",
+    "titleLocalized": {
+      "zh-Hans": "八圣吉祥祈请文"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-eight-auspicious-prayer-thirty-seven-practices-2015",
+    "relatedReleases": [
+      "release-kshitigarbha-praise-2017"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-eight-auspicious-prayer-thirty-seven-practices",
+      "source-user-task-0623-2",
+      "source-spotify-eight-auspicious-prayer-thirty-seven-practices-2015",
+      "source-youtube-music-eight-auspicious-prayer-thirty-seven-practices-2015",
+      "source-kugou-eight-auspicious-prayer-thirty-seven-practices-2015"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-fo-zi-xing-san-shi-qi-song",
+    "slug": "fo-zi-xing-san-shi-qi-song",
+    "title": "佛子行 三十七诵",
+    "titleOriginal": "佛子行 三十七诵",
+    "titleLocalized": {
+      "zh-Hans": "佛子行 三十七诵 (一)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-eight-auspicious-prayer-thirty-seven-practices-2015",
+    "relatedReleases": [
+      "release-kshitigarbha-praise-2017"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-eight-auspicious-prayer-thirty-seven-practices",
+      "source-user-task-0623-2",
+      "source-spotify-eight-auspicious-prayer-thirty-seven-practices-2015",
+      "source-youtube-music-eight-auspicious-prayer-thirty-seven-practices-2015",
+      "source-kugou-eight-auspicious-prayer-thirty-seven-practices-2015"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-song-e4bd9be5ad90",
+    "slug": "song-e4bd9be5ad90",
+    "title": "佛子行三十七诵",
+    "titleOriginal": "佛子行三十七诵",
+    "titleLocalized": {
+      "zh-Hans": "佛子行三十七诵 (二)"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-kshitigarbha-praise-2017",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-kshitigarbha-praise",
+      "source-user-task-0623-2",
+      "source-netease-cloud-music-kshitigarbha-praise-2017",
+      "source-spotify-kshitigarbha-praise-2017",
+      "source-youtube-music-kshitigarbha-praise-2017",
+      "source-kugou-kshitigarbha-praise-2017"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-di-zang-zan",
+    "slug": "di-zang-zan",
+    "title": "地藏赞",
+    "titleOriginal": "地藏赞",
+    "titleLocalized": {
+      "zh-Hans": "地藏赞"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-kshitigarbha-praise-2017",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-kshitigarbha-praise",
+      "source-user-task-0623-2",
+      "source-netease-cloud-music-kshitigarbha-praise-2017",
+      "source-spotify-kshitigarbha-praise-2017",
+      "source-youtube-music-kshitigarbha-praise-2017",
+      "source-kugou-kshitigarbha-praise-2017"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-qi-fo-mie-zui-zhen-yan",
+    "slug": "qi-fo-mie-zui-zhen-yan",
+    "title": "七佛灭罪真言",
+    "titleOriginal": "七佛灭罪真言",
+    "titleLocalized": {
+      "zh-Hans": "七佛灭罪真言"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-ape-sounds-2020",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-ape-sounds",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-ape-sounds-2020",
+      "source-spotify-ape-sounds-2020",
+      "source-youtube-music-ape-sounds-2020",
+      "source-kugou-ape-sounds-2020"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-xiao-zai-ji-xiang-shen-zhou",
+    "slug": "xiao-zai-ji-xiang-shen-zhou",
+    "title": "消灾吉祥神咒",
+    "titleOriginal": "消灾吉祥神咒",
+    "titleLocalized": {
+      "zh-Hans": "消灾吉祥神咒"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-ape-sounds-2020",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-ape-sounds",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-ape-sounds-2020",
+      "source-spotify-ape-sounds-2020",
+      "source-youtube-music-ape-sounds-2020",
+      "source-kugou-ape-sounds-2020"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-yao-shi-guan-ding-zhen-yan",
+    "slug": "yao-shi-guan-ding-zhen-yan",
+    "title": "药师灌顶真言",
+    "titleOriginal": "药师灌顶真言",
+    "titleLocalized": {
+      "zh-Hans": "药师灌顶真言"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-ape-sounds-2020",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-ape-sounds",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-ape-sounds-2020",
+      "source-spotify-ape-sounds-2020",
+      "source-youtube-music-ape-sounds-2020",
+      "source-kugou-ape-sounds-2020"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-gong-de-bao-shan-shen-zhou",
+    "slug": "gong-de-bao-shan-shen-zhou",
+    "title": "功德宝山神咒",
+    "titleOriginal": "功德宝山神咒",
+    "titleLocalized": {
+      "zh-Hans": "功德宝山神咒"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-ape-sounds-2020",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-ape-sounds",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-ape-sounds-2020",
+      "source-spotify-ape-sounds-2020",
+      "source-youtube-music-ape-sounds-2020",
+      "source-kugou-ape-sounds-2020"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-xu-kong-zang-pu-sa-yi-chi-bu-wang-zhou",
+    "slug": "xu-kong-zang-pu-sa-yi-chi-bu-wang-zhou",
+    "title": "虚空藏菩萨忆持不忘咒",
+    "titleOriginal": "虚空藏菩萨忆持不忘咒",
+    "titleLocalized": {
+      "zh-Hans": "虚空藏菩萨忆持不忘咒"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-ape-sounds-2020",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-ape-sounds",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-ape-sounds-2020",
+      "source-spotify-ape-sounds-2020",
+      "source-youtube-music-ape-sounds-2020",
+      "source-kugou-ape-sounds-2020"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-song-bie",
+    "slug": "song-bie",
+    "title": "送别",
+    "titleOriginal": "送别",
+    "titleLocalized": {
+      "zh-Hans": "送别"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-ape-sounds-2020",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-ape-sounds",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-ape-sounds-2020",
+      "source-spotify-ape-sounds-2020",
+      "source-youtube-music-ape-sounds-2020",
+      "source-kugou-ape-sounds-2020"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-chan-hui-wen",
+    "slug": "chan-hui-wen",
+    "title": "忏悔文",
+    "titleOriginal": "忏悔文",
+    "titleLocalized": {
+      "zh-Hans": "忏悔文"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chanting-for-you-1-peaceful-heart-2004",
+    "relatedReleases": [
+      "release-chanting-for-you-trilogy",
+      "release-chanting-for-you-3-happy-journey-2004"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-trilogy",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-chanting-for-you-trilogy"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-da-ji-xiang-tian-nu-zhou",
+    "slug": "da-ji-xiang-tian-nu-zhou",
+    "title": "大吉祥天女咒",
+    "titleOriginal": "大吉祥天女咒",
+    "titleLocalized": {
+      "zh-Hans": "大吉祥天女咒"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chanting-for-you-1-peaceful-heart-2004",
+    "relatedReleases": [
+      "release-chanting-for-you-trilogy",
+      "release-chanting-for-you-3-happy-journey-2004"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-trilogy",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-chanting-for-you-trilogy"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-bo-ruo-bo-luo-mi-duo-xin-jing",
+    "slug": "bo-ruo-bo-luo-mi-duo-xin-jing",
+    "title": "般若波罗蜜多心经",
+    "titleOriginal": "般若波罗蜜多心经",
+    "titleLocalized": {
+      "zh-Hans": "般若波罗蜜多心经"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chanting-for-you-1-peaceful-heart-2004",
+    "relatedReleases": [
+      "release-chanting-for-you-trilogy",
+      "release-chanting-for-you-3-happy-journey-2004"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-trilogy",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-chanting-for-you-trilogy"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-da-ci-da-bei-guan-shi-yin",
+    "slug": "da-ci-da-bei-guan-shi-yin",
+    "title": "大慈大悲观世音",
+    "titleOriginal": "大慈大悲观世音",
+    "titleLocalized": {
+      "zh-Hans": "大慈大悲观世音"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chanting-for-you-2-peace-of-mind-2004",
+    "relatedReleases": [
+      "release-chanting-for-you-trilogy"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-trilogy",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-chanting-for-you-trilogy"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-da-bei-zhou",
+    "slug": "da-bei-zhou",
+    "title": "大悲咒",
+    "titleOriginal": "大悲咒",
+    "titleLocalized": {
+      "zh-Hans": "大悲咒"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chanting-for-you-2-peace-of-mind-2004",
+    "relatedReleases": [
+      "release-chanting-for-you-trilogy",
+      "release-chanting-for-you-3-happy-journey-2004"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-trilogy",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-chanting-for-you-trilogy"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-liu-zi-da-ming-zhou",
+    "slug": "liu-zi-da-ming-zhou",
+    "title": "六字大明咒",
+    "titleOriginal": "六字大明咒",
+    "titleLocalized": {
+      "zh-Hans": "六字大明咒"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chanting-for-you-2-peace-of-mind-2004",
+    "relatedReleases": [
+      "release-chanting-for-you-trilogy",
+      "release-chanting-for-you-3-happy-journey-2004"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-trilogy",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-chanting-for-you-trilogy"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-wang-jiang-nan-gui-yi-san-bao-zan",
+    "slug": "wang-jiang-nan-gui-yi-san-bao-zan",
+    "title": "望江南 归依三宝赞",
+    "titleOriginal": "望江南 归依三宝赞",
+    "titleLocalized": {
+      "zh-Hans": "望江南 归依三宝赞"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chanting-for-you-3-happy-journey-2004",
+    "relatedReleases": [
+      "release-chanting-for-you-trilogy"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-trilogy",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-chanting-for-you-trilogy"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-meng",
+    "slug": "meng",
+    "title": "梦",
+    "titleOriginal": "梦",
+    "titleLocalized": {
+      "zh-Hans": "梦"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chanting-for-you-3-happy-journey-2004",
+    "relatedReleases": [
+      "release-chanting-for-you-trilogy"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-trilogy",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-chanting-for-you-trilogy"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-lian-hua-chu-chu-kai",
+    "slug": "lian-hua-chu-chu-kai",
+    "title": "莲花处处开",
+    "titleOriginal": "莲花处处开",
+    "titleLocalized": {
+      "zh-Hans": "莲花处处开"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-chanting-for-you-3-happy-journey-2004",
+    "relatedReleases": [
+      "release-chanting-for-you-trilogy"
+    ],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-trilogy",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-chanting-for-you-trilogy"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-not-saying-goodbye",
+    "slug": "not-saying-goodbye",
+    "title": "Not Saying Goodbye",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Not Saying Goodbye (Dear Sanmao)",
+      "zh-Hant": "不曾告別（三毛姐姐如晤）",
+      "zh-Hans": "不曾告别（三毛姐姐如晤）"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-not-saying-goodbye-2018",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-not-saying-goodbye",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-not-saying-goodbye-2018",
+      "source-kugou-not-saying-goodbye-2018"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-you-are-my-angel",
+    "slug": "you-are-my-angel",
+    "title": "You Are My Angel",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "You Are My Angel",
+      "zh-Hant": "你是我的天使",
+      "zh-Hans": "你是我的天使"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-are-my-angel-2021",
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-you-are-my-angel-single",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-spotify-you-are-my-angel-2021",
+      "source-youtube-music-you-are-my-angel-2021",
+      "source-kugou-you-are-my-angel-2021"
+    ],
+    "status": "partial"
+  },
+  {
+    "id": "song-moon-night-flower",
+    "slug": "moon-night-flower",
+    "title": "Moon Night Flower",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-unheard-of-chyi-2002-hong-kong"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-zhu-wo-xing-fu",
+    "slug": "zhu-wo-xing-fu",
+    "title": "祝我幸福",
+    "titleOriginal": "祝我幸福",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
+    ],
+    "knownMusicShows": [
+      "music-show-singer-2019"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-zong-fa-shao-nv",
+    "slug": "zong-fa-shao-nv",
+    "title": "棕髮少女",
+    "titleOriginal": "棕髮少女",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-hai-shang-hua",
+    "slug": "hai-shang-hua",
+    "title": "海上花",
+    "titleOriginal": "海上花",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-wen-fo",
+    "slug": "wen-fo",
+    "title": "問佛",
+    "titleOriginal": "問佛",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-nu-ren-hua",
+    "slug": "nu-ren-hua",
+    "title": "女人花",
+    "titleOriginal": "女人花",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [
+      "music-show-singer-2019",
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-zhang-sheng-xiang-qi",
+    "slug": "zhang-sheng-xiang-qi",
+    "title": "掌聲響起",
+    "titleOriginal": "掌聲響起",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-500-miles-scarborough-fair",
+    "slug": "500-miles-scarborough-fair",
+    "title": "500 Miles / Scarborough Fair",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-si-sui-de-hai-liu-ma",
+    "slug": "si-sui-de-hai-liu-ma",
+    "title": "四歲的海騮馬",
+    "titleOriginal": "四歲的海騮馬",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-wo-yao-ni",
+    "slug": "wo-yao-ni",
+    "title": "我要你",
+    "titleOriginal": "我要你",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-qi-dao",
+    "slug": "qi-dao",
+    "title": "祈禱",
+    "titleOriginal": "祈禱",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-yi-nian-zhi-jian",
+    "slug": "yi-nian-zhi-jian",
+    "title": "一念之間",
+    "titleOriginal": "一念之間",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-chengdu-2025"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-500-miles",
+    "slug": "500-miles",
+    "title": "500 Miles",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-scarborough-fair",
+    "slug": "scarborough-fair",
+    "title": "Scarborough Fair",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-gu-yan",
+    "slug": "gu-yan",
+    "title": "鴻雁",
+    "titleOriginal": "鴻雁",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-yin-wei-ai-qing",
+    "slug": "yin-wei-ai-qing",
+    "title": "因為愛情",
+    "titleOriginal": "因為愛情",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-singer-2019",
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-zhi-fou-zhi-fou",
+    "slug": "zhi-fou-zhi-fou",
+    "title": "知否知否",
+    "titleOriginal": "知否知否",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-singer-2019"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-tian-shi-yu-lang",
+    "slug": "tian-shi-yu-lang",
+    "title": "天使與狼",
+    "titleOriginal": "天使與狼",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-wai-mian-de-shi-jie",
+    "slug": "wai-mian-de-shi-jie",
+    "title": "外面的世界",
+    "titleOriginal": "外面的世界",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-ai-pin-cai-hui-ying",
+    "slug": "ai-pin-cai-hui-ying",
+    "title": "愛拼才會贏",
+    "titleOriginal": "愛拼才會贏",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-tian-xia-you-qing-ren",
+    "slug": "tian-xia-you-qing-ren",
+    "title": "天下有情人",
+    "titleOriginal": "天下有情人",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-wo-zhi-zai-hu-ni",
+    "slug": "wo-zhi-zai-hu-ni",
+    "title": "我只在乎你",
+    "titleOriginal": "我只在乎你",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-hua-ji",
+    "slug": "hua-ji",
+    "title": "花祭",
+    "titleOriginal": "花祭",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-wo-yuan-yi",
+    "slug": "wo-yuan-yi",
+    "title": "我願意",
+    "titleOriginal": "我願意",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-qia-si-ni-de-wen-rou",
+    "slug": "qia-si-ni-de-wen-rou",
+    "title": "恰似你的溫柔",
+    "titleOriginal": "恰似你的溫柔",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-xiang-jian-de-xiao-lu",
+    "slug": "xiang-jian-de-xiao-lu",
+    "title": "鄉間的小路",
+    "titleOriginal": "鄉間的小路",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-cheng-li-de-yue-guang",
+    "slug": "cheng-li-de-yue-guang",
+    "title": "城裡的月光",
+    "titleOriginal": "城裡的月光",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-song-e58f88e8a68b",
+    "slug": "song-e58f88e8a68b",
+    "title": "又見溜溜的她",
+    "titleOriginal": "又見溜溜的她",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-yue-liang-dai-biao-wo-de-xin",
+    "slug": "yue-liang-dai-biao-wo-de-xin",
+    "title": "月亮代表我的心",
+    "titleOriginal": "月亮代表我的心",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-ru-guo",
+    "slug": "ru-guo",
+    "title": "如果",
+    "titleOriginal": "如果",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-rang-wo-men-kan-yun-qu",
+    "slug": "rang-wo-men-kan-yun-qu",
+    "title": "讓我們看雲去",
+    "titleOriginal": "讓我們看雲去",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-zhuo-ni-qiu",
+    "slug": "zhuo-ni-qiu",
+    "title": "捉泥鰍",
+    "titleOriginal": "捉泥鰍",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-lan-hua-cao",
+    "slug": "lan-hua-cao",
+    "title": "蘭花草",
+    "titleOriginal": "蘭花草",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-tong-nian",
+    "slug": "tong-nian",
+    "title": "童年",
+    "titleOriginal": "童年",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-xiang-jian-xiao-lu",
+    "slug": "xiang-jian-xiao-lu",
+    "title": "鄉間小路",
+    "titleOriginal": "鄉間小路",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-wai-po-de-peng-hu-wan",
+    "slug": "wai-po-de-peng-hu-wan",
+    "title": "外婆的澎湖灣",
+    "titleOriginal": "外婆的澎湖灣",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-tong-zhuo-de-ni",
+    "slug": "tong-zhuo-de-ni",
+    "title": "同桌的你",
+    "titleOriginal": "同桌的你",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-guang-yin-de-gu-shi",
+    "slug": "guang-yin-de-gu-shi",
+    "title": "光陰的故事",
+    "titleOriginal": "光陰的故事",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-lu-dao-xiao-ye-qu",
+    "slug": "lu-dao-xiao-ye-qu",
+    "title": "綠島小夜曲",
+    "titleOriginal": "綠島小夜曲",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-su-zhou-he-bian",
+    "slug": "su-zhou-he-bian",
+    "title": "蘇州河邊",
+    "titleOriginal": "蘇州河邊",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-xiang-si-he-pan",
+    "slug": "xiang-si-he-pan",
+    "title": "相思河畔",
+    "titleOriginal": "相思河畔",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-qing-ren-de-yan-lei",
+    "slug": "qing-ren-de-yan-lei",
+    "title": "情人的眼淚",
+    "titleOriginal": "情人的眼淚",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-ai-de-zhen-yan",
+    "slug": "ai-de-zhen-yan",
+    "title": "愛的箴言",
+    "titleOriginal": "愛的箴言",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [
+      "music-show-singer-2019",
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-shi-fou",
+    "slug": "shi-fou",
+    "title": "是否",
+    "titleOriginal": "是否",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [
+      "music-show-singer-2019",
+      "music-show-dream-star-partner-2013"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-bu-yao-gao-bie",
+    "slug": "bu-yao-gao-bie",
+    "title": "不要告別",
+    "titleOriginal": "不要告別",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-singer-2019"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-gao-bie",
+    "slug": "gao-bie",
+    "title": "告別",
+    "titleOriginal": "告別",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-singer-2019"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-yin-xing-de-chi-bang",
+    "slug": "yin-xing-de-chi-bang",
+    "title": "隱形的翅膀",
+    "titleOriginal": "隱形的翅膀",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-singer-2019"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-you-raise-me-up",
+    "slug": "you-raise-me-up",
+    "title": "You Raise Me Up",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-singer-2019"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
+    "status": "partial"
+  },
+  {
+    "id": "song-xue-luo-xia-de-sheng-yin",
+    "slug": "xue-luo-xia-de-sheng-yin",
+    "title": "雪落下的聲音",
+    "titleOriginal": "雪落下的聲音",
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [
+      "music-show-singer-2019"
+    ],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Live-only performance; no album track linked yet.",
     "status": "partial"
   }
 ]

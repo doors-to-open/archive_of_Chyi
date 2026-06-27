@@ -124,6 +124,7 @@ export type SongPerformance = {
   position: number | null;
   date?: string | null;
   song: string | null;
+  songParts?: string[];
   titlePerformed: string;
   titlePerformedLocalized?: LocalizedText;
   originalPerformer?: string | null;
@@ -472,13 +473,13 @@ export function releasesForSong(songId: string) {
 
 export function concertsForSong(songId: string) {
   return concerts.filter((concert) =>
-    concert.setlist.some((entry) => entry.song === songId)
+    concert.setlist.some((entry) => entry.song === songId || (entry.songParts || []).includes(songId))
   );
 }
 
 export function musicShowsForSong(songId: string) {
   return musicShows.filter((show) =>
-    show.performedSongs.some((entry) => entry.song === songId)
+    show.performedSongs.some((entry) => entry.song === songId || (entry.songParts || []).includes(songId))
   );
 }
 
@@ -558,7 +559,7 @@ export function releasePlacementsForSong(songId: string): SongReleasePlacement[]
 export function liveRecordsForSong(songId: string): SongLiveRecord[] {
   const concertRecords = concerts.flatMap((concert) =>
     concert.setlist
-      .filter((entry) => entry.song === songId)
+      .filter((entry) => entry.song === songId || (entry.songParts || []).includes(songId))
       .map((entry) => ({
         kind: "concert" as const,
         category: "Concert",
@@ -573,7 +574,7 @@ export function liveRecordsForSong(songId: string): SongLiveRecord[] {
 
   const musicShowRecords = musicShows.flatMap((show) =>
     show.performedSongs
-      .filter((entry) => entry.song === songId)
+      .filter((entry) => entry.song === songId || (entry.songParts || []).includes(songId))
       .map((entry) => ({
         kind: "music-show" as const,
         category: "Music show",

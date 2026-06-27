@@ -25,7 +25,11 @@
         "mediaLinks": [],
         "date": "2019-01-18",
         "originalPerformer": "Su Rui / Teresa Teng",
-        "notes": "Medley listed in the schedule table."
+        "notes": "Medley listed in the schedule table.",
+        "songParts": [
+          "song-shi-fou",
+          "song-ai-de-zhen-yan"
+        ]
       },
       {
         "position": 3,
@@ -47,7 +51,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-nu-ren-hua",
         "titlePerformed": "女人花",
         "collaborators": [],
         "mediaLinks": [],
@@ -62,7 +66,11 @@
         "mediaLinks": [],
         "date": "2019-02-15",
         "originalPerformer": "Li Chin-ling / Li Tai-hsiang",
-        "notes": "Medley listed in the schedule table."
+        "notes": "Medley listed in the schedule table.",
+        "songParts": [
+          "song-bu-yao-gao-bie",
+          "song-gao-bie"
+        ]
       },
       {
         "position": 7,
@@ -99,7 +107,11 @@
         "mediaLinks": [],
         "date": "2019-03-15",
         "originalPerformer": "Angela Chang / Secret Garden",
-        "notes": "Medley listed in the schedule table."
+        "notes": "Medley listed in the schedule table.",
+        "songParts": [
+          "song-yin-xing-de-chi-bang",
+          "song-you-raise-me-up"
+        ]
       },
       {
         "position": 11,
@@ -109,11 +121,15 @@
         "mediaLinks": [],
         "date": "2019-03-22",
         "originalPerformer": "Faith Yang / Lu Hu",
-        "notes": "Medley listed in the schedule table."
+        "notes": "Medley listed in the schedule table.",
+        "songParts": [
+          "song-zhu-wo-xing-fu",
+          "song-xue-luo-xia-de-sheng-yin"
+        ]
       },
       {
         "position": 12,
-        "song": null,
+        "song": "song-yin-wei-ai-qing",
         "titlePerformed": "因為愛情",
         "collaborators": [
           "person-mao-buyi"
@@ -124,7 +140,7 @@
       },
       {
         "position": 13,
-        "song": null,
+        "song": "song-zhi-fou-zhi-fou",
         "titlePerformed": "知否知否",
         "collaborators": [
           "person-hu-xia"
@@ -180,7 +196,7 @@
     "performedSongs": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-tian-shi-yu-lang",
         "titlePerformed": "天使與狼",
         "collaborators": [
           "person-chi-chin"
@@ -202,7 +218,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-wai-mian-de-shi-jie",
         "titlePerformed": "外面的世界",
         "collaborators": [
           "person-chi-chin"
@@ -213,7 +229,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-ai-pin-cai-hui-ying",
         "titlePerformed": "愛拼才會贏",
         "collaborators": [
           "person-chi-chin"
@@ -224,7 +240,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-tian-xia-you-qing-ren",
         "titlePerformed": "天下有情人",
         "collaborators": [
           "person-li-wei"
@@ -235,7 +251,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-wo-zhi-zai-hu-ni",
         "titlePerformed": "我只在乎你",
         "collaborators": [
           "person-chi-chin"
@@ -265,7 +281,11 @@
         "mediaLinks": [],
         "date": "2013-11-29",
         "originalPerformer": "Su Rui / Teresa Teng",
-        "notes": "Medley listed in the schedule table."
+        "notes": "Medley listed in the schedule table.",
+        "songParts": [
+          "song-shi-fou",
+          "song-ai-de-zhen-yan"
+        ]
       },
       {
         "position": 9,
@@ -281,7 +301,7 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-nu-ren-hua",
         "titlePerformed": "女人花",
         "collaborators": [
           "person-chi-chin"
@@ -292,7 +312,7 @@
       },
       {
         "position": 11,
-        "song": null,
+        "song": "song-hua-ji",
         "titlePerformed": "花祭",
         "collaborators": [
           "person-chi-chin",
@@ -305,7 +325,7 @@
       },
       {
         "position": 12,
-        "song": null,
+        "song": "song-wo-yuan-yi",
         "titlePerformed": "我願意",
         "collaborators": [
           "person-chi-chin"
@@ -316,7 +336,7 @@
       },
       {
         "position": 13,
-        "song": null,
+        "song": "song-qia-si-ni-de-wen-rou",
         "titlePerformed": "恰似你的溫柔",
         "collaborators": [
           "person-chi-chin"
@@ -327,7 +347,7 @@
       },
       {
         "position": 14,
-        "song": null,
+        "song": "song-xiang-jian-de-xiao-lu",
         "titlePerformed": "鄉間的小路",
         "collaborators": [
           "person-cheng-lin"
@@ -338,7 +358,7 @@
       },
       {
         "position": 15,
-        "song": null,
+        "song": "song-cheng-li-de-yue-guang",
         "titlePerformed": "城裡的月光",
         "collaborators": [
           "person-chi-chin"
@@ -361,7 +381,7 @@
       },
       {
         "position": 17,
-        "song": null,
+        "song": "song-song-e58f88e8a68b",
         "titlePerformed": "又見溜溜的她",
         "collaborators": [
           "person-chi-chin"
@@ -372,7 +392,7 @@
       },
       {
         "position": 18,
-        "song": null,
+        "song": "song-yin-wei-ai-qing",
         "titlePerformed": "因為愛情",
         "collaborators": [
           "person-chi-chin"
@@ -383,7 +403,7 @@
       },
       {
         "position": 19,
-        "song": null,
+        "song": "song-yue-liang-dai-biao-wo-de-xin",
         "titlePerformed": "月亮代表我的心",
         "collaborators": [
           "person-chi-chin"
