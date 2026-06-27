@@ -200,9 +200,7 @@ const releaseTags = releaseCategoryTags(release);
             ))}
           </div>
         </div>
-      ) : (
-        <p class="muted" {...i18nAttrs(uiText("empty.noPurchase"))}>{valueForLocale(uiText("empty.noPurchase"))}</p>
-      )}
+      ) : null}
     </section>
 
     <section class="section">
