@@ -1882,5 +1882,77 @@
     "citation": "Kugou. \"上古情歌.\"",
     "reliability": "high",
     "notes": "Verified from Kugou's public singer album endpoint and used as official China-mainland streaming availability."
+  },
+  {
+    "id": "source-netease-cloud-music-liu-jin-sui-yue-2020",
+    "sourceType": "platform",
+    "title": "流金岁月 on NetEase Cloud Music",
+    "authorOrPublisher": "NetEase Cloud Music",
+    "date": null,
+    "url": "https://music.163.com/#/album?id=98108076",
+    "accessDate": "2026-06-27",
+    "citation": "NetEase Cloud Music. \"流金岁月.\"",
+    "reliability": "high",
+    "notes": "Public album metadata identifies Chyi Yu as artist, Rolling Stone as company, 2020-11-17 publish date, and the lead track as 流金岁月 (电影原声版)."
+  },
+  {
+    "id": "source-kugou-liu-jin-sui-yue-2020",
+    "sourceType": "platform",
+    "title": "流金岁月 on Kugou",
+    "authorOrPublisher": "Kugou",
+    "date": null,
+    "url": "https://www.kugou.com/album/info/nx81i23/",
+    "accessDate": "2026-06-27",
+    "citation": "Kugou. \"流金岁月.\"",
+    "reliability": "high",
+    "notes": "Verified from Kugou's public singer album endpoint and used as official China-mainland streaming availability."
+  },
+  {
+    "id": "source-netease-cloud-music-left-ear-star-2017",
+    "sourceType": "platform",
+    "title": "我在夜里偷看过一颗星星 on NetEase Cloud Music",
+    "authorOrPublisher": "NetEase Cloud Music",
+    "date": null,
+    "url": "https://music.163.com/#/album?id=36103080",
+    "accessDate": "2026-06-27",
+    "citation": "NetEase Cloud Music. \"我在夜里偷看过一颗星星.\"",
+    "reliability": "high",
+    "notes": "Public album and song metadata credit Chyi Chin and Chyi Yu and identify the song as 电视剧《左耳》特别插曲 / 电视剧《左耳》插曲."
+  },
+  {
+    "id": "source-kugou-left-ear-star-2017",
+    "sourceType": "platform",
+    "title": "我在夜里偷看过一颗星星 on Kugou",
+    "authorOrPublisher": "Kugou",
+    "date": null,
+    "url": "https://www.kugou.com/album/info/23ujwae/",
+    "accessDate": "2026-06-27",
+    "citation": "Kugou. \"我在夜里偷看过一颗星星.\"",
+    "reliability": "high",
+    "notes": "Verified from Kugou's public singer album endpoint; Kugou lists the album under Chyi Yu's singer page and the album artist as Chyi Chin."
+  },
+  {
+    "id": "source-netease-cloud-music-shenhua-qinghua-shendiao-1995",
+    "sourceType": "platform",
+    "title": "神话·情话 on NetEase Cloud Music",
+    "authorOrPublisher": "NetEase Cloud Music",
+    "date": null,
+    "url": "https://music.163.com/#/song?id=186596",
+    "accessDate": "2026-06-27",
+    "citation": "NetEase Cloud Music. \"神话·情话.\"",
+    "reliability": "high",
+    "notes": "Public song metadata credits Wakin Chau and Chyi Yu and identifies the song as 无线电视剧集《神雕侠侣》主题曲 / 《神雕侠侣》电视剧主题曲."
+  },
+  {
+    "id": "source-netease-cloud-music-tianxia-youqingren-shendiao-1995",
+    "sourceType": "platform",
+    "title": "天下有情人 on NetEase Cloud Music",
+    "authorOrPublisher": "NetEase Cloud Music",
+    "date": null,
+    "url": "https://music.163.com/#/song?id=4878604",
+    "accessDate": "2026-06-27",
+    "citation": "NetEase Cloud Music. \"天下有情人.\"",
+    "reliability": "high",
+    "notes": "Public song metadata credits Wakin Chau and Chyi Yu and identifies the song as the Mandarin theme-song version for the 1995 TVB 神雕侠侣 series."
   }
 ]

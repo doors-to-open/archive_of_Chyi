@@ -953,5 +953,23 @@
     ],
     "notes": "Credited as a Mandarin lyricist for Tomorrow Will Be Better in the checked source.",
     "status": "partial"
+  },
+  {
+    "id": "person-wakin-chau",
+    "slug": "wakin-chau",
+    "displayName": "Wakin Chau",
+    "nameOriginal": "周華健",
+    "aliases": [
+      "Emil Chau",
+      "周华健"
+    ],
+    "roles": [
+      "vocalist"
+    ],
+    "sources": [
+      "source-netease-cloud-music-tianxia-youqingren-shendiao-1995"
+    ],
+    "notes": "Duet vocalist with Chyi Yu on the checked Shen Diao Xia Lu theme-song platform sources.",
+    "status": "partial"
   }
 ]
