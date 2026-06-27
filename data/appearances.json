@@ -539,10 +539,19 @@
         "kind": "streaming",
         "isOfficial": true,
         "accessRegion": "China mainland"
+      },
+      {
+        "label": "Kugou",
+        "platform": "kugou",
+        "url": "https://www.kugou.com/album/info/l3qet35/",
+        "kind": "streaming",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
       }
     ],
     "sources": [
-      "source-qq-music-album-000n3tnl045i3n"
+      "source-qq-music-album-000n3tnl045i3n",
+      "source-kugou-shanggu-qingge-2019"
     ],
     "notes": "Added from the QQ Music task link resolved on 2026-06-26. Only the Chyi Yu vocal track is modeled here; QQ Music exposes the track as 上古情歌 with subtitle 《大明风华》电视剧插曲, so the appearance container is modeled as the 大明风华 OST/work rather than as a standalone Chyi Yu release.",
     "status": "partial"

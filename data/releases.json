@@ -6570,6 +6570,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/kpin2d/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -6631,7 +6639,8 @@
       "source-qq-music-morning-bell-gatha-cundi-mantra",
       "source-user-task-0623-2",
       "source-youtube-music-cundi-mantra-2014",
-      "source-youtube-music-morning-bell-gatha-2014"
+      "source-youtube-music-morning-bell-gatha-2014",
+      "source-kugou-morning-bell-gatha-cundi-mantra-2014"
     ],
     "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them.",
     "status": "partial"
@@ -6685,6 +6694,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzz9a8/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -6746,7 +6763,8 @@
       "source-qq-music-eight-auspicious-prayer-thirty-seven-practices",
       "source-user-task-0623-2",
       "source-spotify-eight-auspicious-prayer-thirty-seven-practices-2015",
-      "source-youtube-music-eight-auspicious-prayer-thirty-seven-practices-2015"
+      "source-youtube-music-eight-auspicious-prayer-thirty-seven-practices-2015",
+      "source-kugou-eight-auspicious-prayer-thirty-seven-practices-2015"
     ],
     "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them.",
     "status": "partial"
@@ -6808,6 +6826,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/2laa5a2/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -6926,7 +6952,8 @@
       "source-user-task-0623-2",
       "source-netease-cloud-music-kshitigarbha-praise-2017",
       "source-spotify-kshitigarbha-praise-2017",
-      "source-youtube-music-kshitigarbha-praise-2017"
+      "source-youtube-music-kshitigarbha-praise-2017",
+      "source-kugou-kshitigarbha-praise-2017"
     ],
     "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious compilation because the task note flagged it as a compilation lead and QQ track titles overlap the 2014 and 2015 religious releases. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them.",
     "status": "partial"
@@ -6986,6 +7013,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/n5sq7cd/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -7091,7 +7126,8 @@
       "source-musicbrainz-chyi-yu-release-media",
       "source-netease-cloud-music-ape-sounds-2020",
       "source-spotify-ape-sounds-2020",
-      "source-youtube-music-ape-sounds-2020"
+      "source-youtube-music-ape-sounds-2020",
+      "source-kugou-ape-sounds-2020"
     ],
     "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists the official release as Digital Media.",
     "status": "partial"
@@ -7144,6 +7180,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/2nxn4sd9/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -7213,7 +7257,8 @@
       "source-netease-cloud-music-one-thought-between-2025",
       "source-wikipedia-zh-wu-tsing-fong",
       "source-spotify-one-thought-between-2025",
-      "source-youtube-music-one-thought-between-2025"
+      "source-youtube-music-one-thought-between-2025",
+      "source-kugou-one-thought-between-2025"
     ],
     "notes": "Updated during the release wrap-up audit as the Wu Tsing-fong / Chyi Yu 2025 collaboration single. Chinese Wikipedia pages for both artists confirm the 2025-09-12 collaboration and the two versions; Wu Tsing-fong's page confirms the lyric credit to Chyi Yu. NetEase Cloud Music supplies an official China-mainland album page, with its platform publish date returned as 2025-09-11. Composer and duration fields remain unresolved.",
     "status": "partial"
@@ -7773,6 +7818,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/5p1ojc9/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -7808,7 +7861,8 @@
       "source-musicbrainz-chyi-yu-release-groups",
       "source-qq-music-not-saying-goodbye",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-spotify-not-saying-goodbye-2018"
+      "source-spotify-not-saying-goodbye-2018",
+      "source-kugou-not-saying-goodbye-2018"
     ],
     "notes": "Added during release coverage pass. MusicBrainz lists the 2018 single and QQ Music exposes a collaborative track credited to 齐豫, 潘越雲, 李艾璇, and 黃韻玲. Full credits remain pending. Format audit: MusicBrainz lists the official release as Digital Media.",
     "status": "partial",
@@ -7939,6 +7993,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/tnq650e/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -7975,7 +8037,8 @@
       "source-qq-music-you-are-my-angel-single",
       "source-musicbrainz-chyi-yu-release-media",
       "source-spotify-you-are-my-angel-2021",
-      "source-youtube-music-you-are-my-angel-2021"
+      "source-youtube-music-you-are-my-angel-2021",
+      "source-kugou-you-are-my-angel-2021"
     ],
     "notes": "Added during release coverage pass. MusicBrainz lists the 2021 single and QQ Music exposes albumMID 003imCBy1GesvL by 齐豫. Full credits remain pending. Format audit: MusicBrainz lists the official release as Digital Media.",
     "status": "partial",
