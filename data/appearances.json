@@ -844,5 +844,136 @@
     ],
     "notes": "Added from platform metadata that identifies the Cantonese theme song 神话·情话 and Mandarin version 天下有情人 as 1995 TVB 神雕侠侣 theme-song material, both performed by Wakin Chau and Chyi Yu.",
     "status": "partial"
+  },
+  {
+    "id": "appearance-i-swear-1996",
+    "slug": "i-swear-1996",
+    "title": "I Swear",
+    "titleLocalized": {
+      "en": "I Swear",
+      "zh-Hant": "I Swear",
+      "zh-Hans": "I Swear"
+    },
+    "date": "1996-02-14",
+    "appearanceType": "album-guest-vocal",
+    "programOrWork": "I Swear",
+    "role": "guest vocalist",
+    "relatedSongs": [
+      "song-i-swear"
+    ],
+    "mediaLinks": [
+      {
+        "label": "QQ Music",
+        "platform": "qq-music",
+        "url": "https://y.qq.com/n/ryqq/albumDetail/001cBThs33TPVb",
+        "kind": "streaming",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
+      }
+    ],
+    "sources": [
+      "source-qq-music-i-swear",
+      "source-user-task-0623-1"
+    ],
+    "notes": "Converted from a release record. Imported from the accepted Stage 6B review as a Chyi Yu vocal-appearance release. QQ Music lists Chyi Yu on the title track with Sandy Lam, Teresa Carpio, and Prudence Liew; the remaining track list is retained for album context.",
+    "status": "partial",
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-i-swear",
+        "title": "I Swear",
+        "titleLocalized": {
+          "en": "I Swear"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-sandy-lam",
+          "person-teresa-carpio",
+          "person-prudence-liew",
+          "person-chyi-yu"
+        ],
+        "duration": "4:10",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "appearance-wonderful-world-1997",
+    "slug": "wonderful-world-1997",
+    "title": "Wonderful World",
+    "titleLocalized": {
+      "en": "Wonderful World",
+      "zh-Hant": "Wonderful World",
+      "zh-Hans": "Wonderful World"
+    },
+    "date": "1997-01-31",
+    "appearanceType": "album-guest-vocal",
+    "programOrWork": "Wonderful World",
+    "role": "guest vocalist",
+    "relatedSongs": [
+      "song-rhythm-of-my-heart",
+      "song-what-a-wonderful-world"
+    ],
+    "mediaLinks": [
+      {
+        "label": "QQ Music",
+        "platform": "qq-music",
+        "url": "https://y.qq.com/n/ryqq/albumDetail/003UfFju1WEHjC",
+        "kind": "streaming",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
+      }
+    ],
+    "sources": [
+      "source-qq-music-wonderful-world",
+      "source-user-task-0623-1"
+    ],
+    "notes": "Converted from a release record. Imported from the accepted Stage 6B review as a Chyi Yu vocal-appearance release. QQ Music lists Chyi Yu on Rhythm Of My Heart and What A Wonderful World; the remaining track list is retained for album context.",
+    "status": "partial",
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-rhythm-of-my-heart",
+        "title": "Rhythm Of My Heart",
+        "titleLocalized": {
+          "en": "Rhythm Of My Heart"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-sandy-lam",
+          "person-chyi-yu"
+        ],
+        "duration": "4:12",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": null
+      },
+      {
+        "position": 2,
+        "song": "song-what-a-wonderful-world",
+        "title": "What A Wonderful World",
+        "titleLocalized": {
+          "en": "What A Wonderful World"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-sandy-lam",
+          "person-prudence-liew",
+          "person-chyi-yu"
+        ],
+        "duration": "3:39",
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        },
+        "notes": null
+      }
+    ]
   }
 ]

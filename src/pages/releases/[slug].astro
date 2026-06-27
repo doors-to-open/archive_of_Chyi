@@ -9,10 +9,8 @@ import {
   personName,
   releaseAvailabilityChecks,
   releaseArtists,
-  releaseCategoryTags,
   releasePrimaryCategory,
   hasPhysicalPurchaseLinks,
-  releaseFormatLabels,
   releaseProducers,
   releases,
   songSummary,
@@ -32,9 +30,10 @@ import {
   releaseCategoryValues,
   textValues,
   titleValues,
-  trackTitleValues,
   uiText,
-  valueForLocale
+  valueForLocale,
+  originalReleaseTitle,
+  originalTrackTitle
 } from "../../lib/i18n";
 import type { ArchiveLink } from "../../lib/archive";
 
@@ -62,22 +61,12 @@ function trackNumber(track: (typeof release.tracks)[number]) {
     .join(".");
 }
 
-function groupedLinks(links: ArchiveLink[] | undefined) {
-  const groups = new Map<string, ArchiveLink[]>();
-  for (const link of links || []) {
-    const key = link.accessRegion || "Recorded";
-    groups.set(key, [...(groups.get(key) || []), link]);
-  }
-  return Array.from(groups.entries()).map(([region, regionLinks]) => ({ region, links: regionLinks }));
-}
-
 function platformName(link: ArchiveLink) {
   return link.platform || link.label;
 }
 
 const primaryCategory = releasePrimaryCategory(release);
 const categoryValues = releaseCategoryValues(primaryCategory);
-const releaseTags = releaseCategoryTags(release);
 ---
 
 <BaseLayout title={`${release.title} | All for Chyi Yu`}>
@@ -89,7 +78,7 @@ const releaseTags = releaseCategoryTags(release);
     {...i18nCountLabelAttrs(uiText("count.entry"), uiText("count.entries"))}
   >
     <p class="page-kicker" {...i18nAttrs(uiText("nav.releases"))}>{valueForLocale(uiText("nav.releases"))}</p>
-    <h1 class="page-title record-page-title" {...i18nAttrs(titleValues(release))}>{valueForLocale(titleValues(release))}</h1>
+    <h1 class="page-title record-page-title">{originalReleaseTitle(release)}</h1>
 
     <article class="section detail-panel">
       <RecordStatus status={release.status} />
@@ -115,19 +104,9 @@ const releaseTags = releaseCategoryTags(release);
         <span {...i18nAttrs(labelValueValues("label.category", categoryValues))}>
           {valueForLocale(labelValueValues("label.category", categoryValues))}
         </span>
-        {releaseFormatLabels(release).length ? (
-          <span {...i18nAttrs(labelValueValues("label.formats", releaseFormatLabels(release).join(", ")))}>
-            {valueForLocale(labelValueValues("label.formats", releaseFormatLabels(release).join(", ")))}
-          </span>
-        ) : null}
         <span {...i18nAttrs(labelValueValues("label.label", release.label || uiText("value.unknown")))}>
           {valueForLocale(labelValueValues("label.label", release.label || uiText("value.unknown")))}
         </span>
-        {releaseTags.length ? (
-          <span {...i18nAttrs(labelValueValues("label.filter", releaseTags.map((tag) => valueForLocale(releaseCategoryValues(tag))).join(", ")))}>
-            {valueForLocale(labelValueValues("label.filter", releaseTags.map((tag) => valueForLocale(releaseCategoryValues(tag))).join(", ")))}
-          </span>
-        ) : null}
       </div>
       <div class="availability-row availability-row-detail" aria-label="Availability summary">
         {releaseAvailabilityChecks(release).map(([label, available]) => {
@@ -138,32 +117,20 @@ const releaseTags = releaseCategoryTags(release);
     </article>
 
     <section class="section detail-panel">
-      <h2 {...i18nAttrs(uiText("label.availability"))}>{valueForLocale(uiText("label.availability"))}</h2>
+      <h2 {...i18nAttrs(uiText("label.streaming"))}>{valueForLocale(uiText("label.streaming"))}</h2>
       {release.availability?.streaming?.length ? (
         <div class="availability-link-grid">
-          <h3 {...i18nAttrs(uiText("label.streaming"))}>{valueForLocale(uiText("label.streaming"))}</h3>
-          <div class="availability-grid-head" aria-hidden="true">
-            <span {...i18nAttrs(uiText("label.region"))}>{valueForLocale(uiText("label.region"))}</span>
-            <span {...i18nAttrs(uiText("label.platform"))}>{valueForLocale(uiText("label.platform"))}</span>
-          </div>
-          <div class="availability-cells">
-            {groupedLinks(release.availability.streaming).map((group) => (
-              <div class="availability-cell">
-                <strong>{group.region}</strong>
-                <div class="platform-links">
-                  {group.links.map((link) => (
-                    <a href={link.url} title={link.notes || link.label}>
-                      <span>{platformName(link)}</span>
-                      {link.isOfficial !== false ? (
-                        <small {...i18nAttrs(uiText("value.official"))}>{valueForLocale(uiText("value.official"))}</small>
-                      ) : null}
-                      {link.isOfficial === false ? (
-                        <small {...i18nAttrs(uiText("value.unofficial"))}>{valueForLocale(uiText("value.unofficial"))}</small>
-                      ) : null}
-                    </a>
-                  ))}
-                </div>
-              </div>
+          <div class="platform-links platform-links-flat">
+            {release.availability.streaming.map((link) => (
+              <a href={link.url} title={link.notes || link.label}>
+                <span>{platformName(link)}</span>
+                {link.isOfficial !== false ? (
+                  <small {...i18nAttrs(uiText("value.official"))}>{valueForLocale(uiText("value.official"))}</small>
+                ) : null}
+                {link.isOfficial === false ? (
+                  <small {...i18nAttrs(uiText("value.unofficial"))}>{valueForLocale(uiText("value.unofficial"))}</small>
+                ) : null}
+              </a>
             ))}
           </div>
         </div>
@@ -175,28 +142,17 @@ const releaseTags = releaseCategoryTags(release);
       {hasPhysicalPurchaseLinks(release) ? (
         <div class="availability-link-grid">
           <h3 {...i18nAttrs(uiText("label.purchase"))}>{valueForLocale(uiText("label.purchase"))}</h3>
-          <div class="availability-grid-head" aria-hidden="true">
-            <span {...i18nAttrs(uiText("label.region"))}>{valueForLocale(uiText("label.region"))}</span>
-            <span {...i18nAttrs(uiText("label.platform"))}>{valueForLocale(uiText("label.platform"))}</span>
-          </div>
-          <div class="availability-cells">
-            {groupedLinks(release.availability?.purchase).map((group) => (
-              <div class="availability-cell">
-                <strong>{group.region}</strong>
-                <div class="platform-links">
-                  {group.links.map((link) => (
-                    <a href={link.url} title={link.notes || link.label}>
-                      <span>{platformName(link)}</span>
-                      {link.isOfficial !== false ? (
-                        <small {...i18nAttrs(uiText("value.official"))}>{valueForLocale(uiText("value.official"))}</small>
-                      ) : null}
-                      {link.isOfficial === false ? (
-                        <small {...i18nAttrs(uiText("value.unofficial"))}>{valueForLocale(uiText("value.unofficial"))}</small>
-                      ) : null}
-                    </a>
-                  ))}
-                </div>
-              </div>
+          <div class="platform-links platform-links-flat">
+            {release.availability?.purchase?.map((link) => (
+              <a href={link.url} title={link.notes || link.label}>
+                <span>{platformName(link)}</span>
+                {link.isOfficial !== false ? (
+                  <small {...i18nAttrs(uiText("value.official"))}>{valueForLocale(uiText("value.official"))}</small>
+                ) : null}
+                {link.isOfficial === false ? (
+                  <small {...i18nAttrs(uiText("value.unofficial"))}>{valueForLocale(uiText("value.unofficial"))}</small>
+                ) : null}
+              </a>
             ))}
           </div>
         </div>
@@ -238,10 +194,9 @@ const releaseTags = releaseCategoryTags(release);
           const summary = track.song ? trackSummaries.get(track.song) : undefined;
           const linkedConcerts = linkedSong ? concertsForSong(linkedSong.id) : [];
           const linkedMusicShows = linkedSong ? musicShowsForSong(linkedSong.id) : [];
-          const trackTitle = trackTitleValues(track);
           const numberedTitle = trackNumber(track)
-            ? joinValues([textValues(`${trackNumber(track)}. `), trackTitle], "")
-            : trackTitle;
+            ? `${trackNumber(track)}. ${originalTrackTitle(track)}`
+            : originalTrackTitle(track);
           const summaryMeta = summary
             ? joinValues([originValues(summary.originLabel), countValues(summary.liveCount, "count.liveRecord", "count.liveRecords")])
             : uiText("value.unmodeledSong");
@@ -266,7 +221,7 @@ const releaseTags = releaseCategoryTags(release);
               data-sort-live={summary?.liveCount || 0}
             >
               <summary>
-                <span {...i18nAttrs(numberedTitle)}>{valueForLocale(numberedTitle)}</span>
+                <span>{numberedTitle}</span>
                 <span class="summary-meta" {...i18nAttrs(summaryMeta)}>{valueForLocale(summaryMeta)}</span>
               </summary>
 

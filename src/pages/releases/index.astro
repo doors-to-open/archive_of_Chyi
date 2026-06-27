@@ -24,10 +24,10 @@ import {
   personIdValues,
   personIdsValues,
   releaseCategoryValues,
-  titleValues,
   uiText,
   valueForLocale,
-  withCountValues
+  withCountValues,
+  originalReleaseTitle
 } from "../../lib/i18n";
 
 const summaries = songSummaries();
@@ -126,7 +126,6 @@ const releaseFilterOptions = [
       {...i18nCountLabelAttrs(uiText("count.album"), uiText("count.albums"))}
     >
       {releases.map((release, index) => {
-        const releaseTitle = titleValues(release);
         const producer = personIdsValues(release.credits.producer || release.credits.producers || []);
         const artists = release.artists?.length ? personIdsValues(release.artists) : personIdValues(release.artist);
         const liveRecordCount = releaseLiveRecordCount(release);
@@ -155,7 +154,7 @@ const releaseFilterOptions = [
               releaseProducers(release)
             ].filter(Boolean).join(" ")}
           >
-            <h2 {...i18nAttrs(releaseTitle)}>{valueForLocale(releaseTitle)}</h2>
+            <h2>{originalReleaseTitle(release)}</h2>
             <div class="record-meta-table">
               <span {...i18nAttrs(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}>
                 {valueForLocale(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}

@@ -7,12 +7,13 @@ import {
   joinValues,
   originValues,
   personIdsValues,
-  textValues,
-  titleValues,
-  trackTitleValues,
   performanceTitleValues,
+  textValues,
   uiText,
-  valueForLocale
+  valueForLocale,
+  originalSongTitle,
+  originalReleaseTitle,
+  originalTrackTitle
 } from "../lib/i18n";
 
 type Props = {
@@ -22,12 +23,12 @@ type Props = {
 
 const { summary, ...attrs } = Astro.props;
 
-const title = titleValues(summary.song);
+const songTitle = originalSongTitle(summary.song);
 const origin = originValues(summary.originLabel);
 const primaryAlbum = summary.albumReleases[0];
 const albumLabel = primaryAlbum
   ? joinValues([
-      titleValues(primaryAlbum),
+      textValues(originalReleaseTitle(primaryAlbum)),
       summary.albumReleases.length > 1
         ? textValues(`+ ${summary.albumReleases.length - 1} more`, `另 ${summary.albumReleases.length - 1} 張`, `另 ${summary.albumReleases.length - 1} 张`)
         : ""
@@ -43,7 +44,7 @@ const credits = joinValues([personIdsValues(summary.song.lyricsBy), personIdsVal
 
 <details class="record-card compact-record-card song-summary-card" {...attrs}>
   <summary>
-    <span {...i18nAttrs(title)}>{valueForLocale(title)}</span>
+    <span>{songTitle}</span>
     <span class="summary-meta" {...i18nAttrs(summaryMeta)}>{valueForLocale(summaryMeta)}</span>
   </summary>
 
@@ -64,21 +65,20 @@ const credits = joinValues([personIdsValues(summary.song.lyricsBy), personIdsVal
       <h3 {...i18nAttrs(uiText("label.albums"))}>{valueForLocale(uiText("label.albums"))}</h3>
       {summary.releasePlacements.length ? (
         summary.releasePlacements.map((placement) => {
-          const releaseTitle = titleValues(placement.release);
-          const trackTitle = trackTitleValues(placement.track);
-          const label = joinValues([
-            releaseTitle,
-            placement.track.disc ? textValues(`D${placement.track.disc}`) : "",
-            placement.track.position ? textValues(String(placement.track.position)) : ""
-          ], " / ");
+          const releaseTitleText = originalReleaseTitle(placement.release);
+          const label = [
+            releaseTitleText,
+            placement.track.disc ? `D${placement.track.disc}` : "",
+            placement.track.position ? String(placement.track.position) : ""
+          ].filter(Boolean).join(" / ");
           const trackDiffers = placement.track.titleOnRelease !== summary.song.title;
           return (
             <p>
-              <a href={placement.href} {...i18nAttrs(label)}>{valueForLocale(label)}</a>
+              <a href={placement.href}>{label}</a>
               {trackDiffers ? (
                 <>
                   {" / "}
-                  <span {...i18nAttrs(trackTitle)}>{valueForLocale(trackTitle)}</span>
+                  <span>{originalTrackTitle(placement.track)}</span>
                 </>
               ) : ""}
             </p>
@@ -86,10 +86,9 @@ const credits = joinValues([personIdsValues(summary.song.lyricsBy), personIdsVal
         })
       ) : summary.albumReleases.length ? (
         summary.albumReleases.map((release) => {
-          const releaseTitle = titleValues(release);
           return (
             <p>
-              <a href={`/releases/${release.slug}/`} {...i18nAttrs(releaseTitle)}>{valueForLocale(releaseTitle)}</a>
+              <a href={`/releases/${release.slug}/`}>{originalReleaseTitle(release)}</a>
               {release.releaseDate ? ` / ${release.releaseDate}` : ""}
             </p>
           );

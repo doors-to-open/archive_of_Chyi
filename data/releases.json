@@ -15,12 +15,14 @@
     "formats": [
       "cassette",
       "SACD",
-      "digital"
+      "digital",
+      "vinyl"
     ],
     "availability": {
       "physical": [
         "cassette",
-        "SACD"
+        "SACD",
+        "vinyl"
       ],
       "streaming": [
         {
@@ -62,6 +64,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/kvx301/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -351,6 +361,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/26sjmp67/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -612,6 +630,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/kr5qc1/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -860,6 +886,14 @@
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/002Nwhn04bkAWp",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzzd7b/",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -1128,6 +1162,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/kkzwca/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -1399,11 +1441,11 @@
     "label": "滾石唱片",
     "catalogNumber": null,
     "formats": [
-      "unknown"
+      "vinyl"
     ],
     "availability": {
       "physical": [
-        "unknown"
+        "vinyl"
       ],
       "streaming": [
         {
@@ -1418,6 +1460,14 @@
           "label": "NetEase Cloud Music",
           "platform": "netease-cloud-music",
           "url": "https://music.163.com/#/album?id=28265",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/kjq8de/",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -1653,6 +1703,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzzg4d/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -1858,6 +1916,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/2efv2e0/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -2044,11 +2110,13 @@
     "label": "滾石唱片",
     "catalogNumber": null,
     "formats": [
-      "cassette"
+      "cassette",
+      "vinyl"
     ],
     "availability": {
       "physical": [
-        "cassette"
+        "cassette",
+        "vinyl"
       ],
       "streaming": [
         {
@@ -2063,6 +2131,14 @@
           "label": "NetEase Cloud Music",
           "platform": "netease-cloud-music",
           "url": "https://music.163.com/#/album?id=28261",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzz5e7/",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -2353,17 +2429,27 @@
     "label": "滾石唱片",
     "catalogNumber": null,
     "formats": [
-      "CD"
+      "CD",
+      "vinyl"
     ],
     "availability": {
       "physical": [
-        "CD"
+        "CD",
+        "vinyl"
       ],
       "streaming": [
         {
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/001iskHR2Hs4Zm",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzzh57/",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -2590,6 +2676,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzze8a/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -2840,6 +2934,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzz786/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -3081,6 +3183,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzzc86/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -3322,6 +3432,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzz46c/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -3513,415 +3631,6 @@
     "status": "partial"
   },
   {
-    "id": "release-i-swear-1996",
-    "slug": "i-swear-1996",
-    "title": "I Swear",
-    "titleLocalized": {
-      "en": "I Swear",
-      "zh-Hant": "I Swear",
-      "zh-Hans": "I Swear"
-    },
-    "releaseDate": "1996-02-14",
-    "releaseType": "collaboration",
-    "artist": "person-sandy-lam",
-    "artists": [
-      "person-sandy-lam"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "unknown"
-    ],
-    "availability": {
-      "physical": [
-        "unknown"
-      ],
-      "streaming": [
-        {
-          "label": "QQ Music",
-          "platform": "qq-music",
-          "url": "https://y.qq.com/n/ryqq/albumDetail/001cBThs33TPVb",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "China mainland"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [
-      {
-        "position": 1,
-        "song": null,
-        "titleOnRelease": "I Will Always Love You",
-        "titleOnReleaseLocalized": {
-          "en": "I Will Always Love You"
-        },
-        "duration": "4:34",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 2,
-        "song": "song-i-swear",
-        "titleOnRelease": "I Swear",
-        "titleOnReleaseLocalized": {
-          "en": "I Swear"
-        },
-        "duration": "4:10",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        },
-        "performers": [
-          "person-sandy-lam",
-          "person-teresa-carpio",
-          "person-prudence-liew",
-          "person-chyi-yu"
-        ]
-      },
-      {
-        "position": 3,
-        "song": null,
-        "titleOnRelease": "Brave",
-        "titleOnReleaseLocalized": {
-          "en": "Brave"
-        },
-        "duration": "4:47",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 4,
-        "song": null,
-        "titleOnRelease": "(Was It) Only Just A Dream",
-        "titleOnReleaseLocalized": {
-          "en": "(Was It) Only Just A Dream"
-        },
-        "duration": "4:29",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 5,
-        "song": null,
-        "titleOnRelease": "Cuts Both Ways",
-        "titleOnReleaseLocalized": {
-          "en": "Cuts Both Ways"
-        },
-        "duration": "3:10",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 6,
-        "song": null,
-        "titleOnRelease": "When Can I See You",
-        "titleOnReleaseLocalized": {
-          "en": "When Can I See You"
-        },
-        "duration": "3:52",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 7,
-        "song": null,
-        "titleOnRelease": "In Another Life",
-        "titleOnReleaseLocalized": {
-          "en": "In Another Life"
-        },
-        "duration": "4:26",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 8,
-        "song": null,
-        "titleOnRelease": "From Now On",
-        "titleOnReleaseLocalized": {
-          "en": "From Now On"
-        },
-        "duration": "4:09",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 9,
-        "song": null,
-        "titleOnRelease": "Hero",
-        "titleOnReleaseLocalized": {
-          "en": "Hero"
-        },
-        "duration": "4:07",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 10,
-        "song": null,
-        "titleOnRelease": "I Swear (Instrumental)",
-        "titleOnReleaseLocalized": {
-          "en": "I Swear (Instrumental)"
-        },
-        "duration": "4:09",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      }
-    ],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-sandy-lam",
-        "person-teresa-carpio",
-        "person-prudence-liew",
-        "person-chyi-yu",
-        "person-leslie-cheung"
-      ]
-    },
-    "sources": [
-      "source-qq-music-i-swear",
-      "source-user-task-0623-1"
-    ],
-    "notes": "Imported from the accepted Stage 6B review as a Chyi Yu vocal-appearance release. QQ Music lists Chyi Yu on the title track with Sandy Lam, Teresa Carpio, and Prudence Liew; the remaining track list is retained for album context.",
-    "status": "partial"
-  },
-  {
-    "id": "release-wonderful-world-1997",
-    "slug": "wonderful-world-1997",
-    "title": "Wonderful World",
-    "titleLocalized": {
-      "en": "Wonderful World",
-      "zh-Hant": "Wonderful World",
-      "zh-Hans": "Wonderful World"
-    },
-    "releaseDate": "1997-01-31",
-    "releaseType": "collaboration",
-    "artist": "person-sandy-lam",
-    "artists": [
-      "person-sandy-lam"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "unknown"
-    ],
-    "availability": {
-      "physical": [
-        "unknown"
-      ],
-      "streaming": [
-        {
-          "label": "QQ Music",
-          "platform": "qq-music",
-          "url": "https://y.qq.com/n/ryqq/albumDetail/003UfFju1WEHjC",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "China mainland"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [
-      {
-        "position": 1,
-        "song": "song-rhythm-of-my-heart",
-        "titleOnRelease": "Rhythm Of My Heart",
-        "titleOnReleaseLocalized": {
-          "en": "Rhythm Of My Heart"
-        },
-        "duration": "4:12",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        },
-        "performers": [
-          "person-sandy-lam",
-          "person-chyi-yu"
-        ]
-      },
-      {
-        "position": 2,
-        "song": "song-what-a-wonderful-world",
-        "titleOnRelease": "What A Wonderful World",
-        "titleOnReleaseLocalized": {
-          "en": "What A Wonderful World"
-        },
-        "duration": "3:39",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        },
-        "performers": [
-          "person-sandy-lam",
-          "person-prudence-liew",
-          "person-chyi-yu"
-        ]
-      },
-      {
-        "position": 3,
-        "song": null,
-        "titleOnRelease": "Waiting For",
-        "titleOnReleaseLocalized": {
-          "en": "Waiting For"
-        },
-        "duration": "3:19",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 4,
-        "song": null,
-        "titleOnRelease": "The Rose",
-        "titleOnReleaseLocalized": {
-          "en": "The Rose"
-        },
-        "duration": "3:55",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 5,
-        "song": null,
-        "titleOnRelease": "Take A Bow",
-        "titleOnReleaseLocalized": {
-          "en": "Take A Bow"
-        },
-        "duration": "5:25",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 6,
-        "song": null,
-        "titleOnRelease": "Seasons Of Love",
-        "titleOnReleaseLocalized": {
-          "en": "Seasons Of Love"
-        },
-        "duration": "4:32",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 7,
-        "song": null,
-        "titleOnRelease": "Because You Loved Me",
-        "titleOnReleaseLocalized": {
-          "en": "Because You Loved Me"
-        },
-        "duration": "4:38",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 8,
-        "song": null,
-        "titleOnRelease": "If You Don't Know Me By Now",
-        "titleOnReleaseLocalized": {
-          "en": "If You Don't Know Me By Now"
-        },
-        "duration": "3:32",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 9,
-        "song": null,
-        "titleOnRelease": "Daddy's Home",
-        "titleOnReleaseLocalized": {
-          "en": "Daddy's Home"
-        },
-        "duration": "3:34",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 10,
-        "song": null,
-        "titleOnRelease": "To Love Somebody",
-        "titleOnReleaseLocalized": {
-          "en": "To Love Somebody"
-        },
-        "duration": "3:52",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      }
-    ],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-sandy-lam",
-        "person-chyi-yu",
-        "person-prudence-liew"
-      ]
-    },
-    "sources": [
-      "source-qq-music-wonderful-world",
-      "source-user-task-0623-1"
-    ],
-    "notes": "Imported from the accepted Stage 6B review as a Chyi Yu vocal-appearance release. QQ Music lists Chyi Yu on Rhythm Of My Heart and What A Wonderful World; the remaining track list is retained for album context.",
-    "status": "partial"
-  },
-  {
     "id": "release-camel-bird-fish-1997",
     "slug": "camel-bird-fish-1997",
     "title": "Camel Bird Fish",
@@ -3973,6 +3682,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzz3e6/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -4274,6 +3991,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzzfd5/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -4513,6 +4238,14 @@
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/003accQt00fpLk",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/l06p4e/",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -4793,6 +4526,14 @@
           "label": "QQ Music",
           "platform": "qq-music",
           "url": "https://y.qq.com/n/ryqq/albumDetail/000tfZ2r2SzQJw",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/aoat21/",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -5431,371 +5172,6 @@
     }
   },
   {
-    "id": "release-chanting-for-you-2-peace-of-mind-2004",
-    "slug": "chanting-for-you-2-peace-of-mind-2004",
-    "title": "Chanting for You, Vol. 2: Peace of Mind - Discovering Courage",
-    "titleLocalized": {
-      "en": "Chanting for You, Vol. 2: Peace of Mind - Discovering Courage",
-      "zh-Hant": "唱經給你聽之二 安心-發現了勇氣",
-      "zh-Hans": "唱经给你听之二 安心-发现了勇气"
-    },
-    "titleOriginal": "唱经给你听之二 安心-发现了勇气",
-    "releaseDate": "2004-02-13",
-    "releaseType": "other",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "CD"
-    ],
-    "availability": {
-      "physical": [
-        "CD"
-      ],
-      "streaming": [
-        {
-          "label": "QQ Music",
-          "platform": "qq-music",
-          "url": "https://y.qq.com/n/ryqq/albumDetail/003ACKkW4JByTv",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "China mainland"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [
-      {
-        "position": 1,
-        "song": null,
-        "titleOnRelease": "大慈大悲观世音",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "大慈大悲观世音"
-        },
-        "duration": "16:03",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 2,
-        "song": null,
-        "titleOnRelease": "大悲咒",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "大悲咒"
-        },
-        "duration": "15:04",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 3,
-        "song": null,
-        "titleOnRelease": "六字大明咒",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "六字大明咒"
-        },
-        "duration": "15:09",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      }
-    ],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-qq-music-chanting-for-you-2-peace-of-mind",
-      "source-user-task-0623-2",
-      "source-musicbrainz-chyi-yu-release-media"
-    ],
-    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists the official Taiwan release as CD.",
-    "status": "partial"
-  },
-  {
-    "id": "release-chanting-for-you-1-peaceful-heart-2004",
-    "slug": "chanting-for-you-1-peaceful-heart-2004",
-    "title": "Chanting for You, Vol. 1: Peaceful Heart - Therefore More Beautiful",
-    "titleLocalized": {
-      "en": "Chanting for You, Vol. 1: Peaceful Heart - Therefore More Beautiful",
-      "zh-Hant": "唱經給你聽之一 順心-因此更美麗",
-      "zh-Hans": "唱经给你听之一 顺心-因此更美丽"
-    },
-    "titleOriginal": "唱经给你听之一 顺心-因此更美丽",
-    "releaseDate": "2004-02-20",
-    "releaseType": "other",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "CD"
-    ],
-    "availability": {
-      "physical": [
-        "CD"
-      ],
-      "streaming": [
-        {
-          "label": "QQ Music",
-          "platform": "qq-music",
-          "url": "https://y.qq.com/n/ryqq/albumDetail/0039vSTA2XbNQH",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "China mainland"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [
-      {
-        "position": 1,
-        "song": null,
-        "titleOnRelease": "忏悔文",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "忏悔文"
-        },
-        "duration": "15:11",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 2,
-        "song": null,
-        "titleOnRelease": "大吉祥天女咒",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "大吉祥天女咒"
-        },
-        "duration": "14:46",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 3,
-        "song": null,
-        "titleOnRelease": "般若波罗蜜多心经",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "般若波罗蜜多心经"
-        },
-        "duration": "14:02",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      }
-    ],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-qq-music-chanting-for-you-1-peaceful-heart",
-      "source-user-task-0623-2",
-      "source-musicbrainz-chyi-yu-release-media"
-    ],
-    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists the official Taiwan release as CD.",
-    "status": "partial"
-  },
-  {
-    "id": "release-chanting-for-you-3-happy-journey-2004",
-    "slug": "chanting-for-you-3-happy-journey-2004",
-    "title": "Chanting for You, Vol. 3: Happy Journey - Therefore Becoming Happy",
-    "titleLocalized": {
-      "en": "Chanting for You, Vol. 3: Happy Journey - Therefore Becoming Happy",
-      "zh-Hant": "唱經給你聽之三 快樂行-所以變快樂",
-      "zh-Hans": "唱经给你听之三 快乐行-所以变快乐"
-    },
-    "titleOriginal": "唱经给你听之三 快乐行-所以变快乐",
-    "releaseDate": "2004-03-08",
-    "releaseType": "other",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "CD",
-      "digital"
-    ],
-    "availability": {
-      "physical": [
-        "CD"
-      ],
-      "streaming": [
-        {
-          "label": "QQ Music",
-          "platform": "qq-music",
-          "url": "https://y.qq.com/n/ryqq/albumDetail/0029u4DH0xdQIE",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "China mainland"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [
-      {
-        "position": 1,
-        "song": null,
-        "titleOnRelease": "般若波罗蜜多心经 (短版)",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "般若波罗蜜多心经 (短版)"
-        },
-        "duration": "4:20",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 2,
-        "song": null,
-        "titleOnRelease": "大悲咒 (短版)",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "大悲咒 (短版)"
-        },
-        "duration": "5:40",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 3,
-        "song": null,
-        "titleOnRelease": "六字大明咒 (短版)",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "六字大明咒 (短版)"
-        },
-        "duration": "5:30",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 4,
-        "song": null,
-        "titleOnRelease": "忏悔文 (短版)",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "忏悔文 (短版)"
-        },
-        "duration": "5:20",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 5,
-        "song": null,
-        "titleOnRelease": "望江南 归依三宝赞",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "望江南 归依三宝赞"
-        },
-        "duration": "3:58",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 6,
-        "song": null,
-        "titleOnRelease": "梦",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "梦"
-        },
-        "duration": "3:41",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 7,
-        "song": null,
-        "titleOnRelease": "莲花处处开",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "莲花处处开"
-        },
-        "duration": "4:05",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      },
-      {
-        "position": 8,
-        "song": null,
-        "titleOnRelease": "大吉祥天女咒 (短版)",
-        "titleOnReleaseLocalized": {
-          "zh-Hans": "大吉祥天女咒 (短版)"
-        },
-        "duration": "4:25",
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      }
-    ],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-qq-music-chanting-for-you-3-happy-journey",
-      "source-user-task-0623-2",
-      "source-musicbrainz-chyi-yu-release-media"
-    ],
-    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release with several short-version tracks from the same series. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists official Taiwan CD editions and an official Digital Media edition.",
-    "status": "partial"
-  },
-  {
     "id": "release-buddha-heart-2004",
     "slug": "buddha-heart-2004",
     "title": "Buddha Heart",
@@ -5833,6 +5209,14 @@
           "label": "NetEase Cloud Music",
           "platform": "netease-cloud-music",
           "url": "https://music.163.com/#/album?id=28224",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/rey6tbd/",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
@@ -5977,6 +5361,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/bzza83/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -6213,60 +5605,6 @@
     "status": "partial"
   },
   {
-    "id": "release-thirty-seven-teachings-of-buddha-2011",
-    "slug": "thirty-seven-teachings-of-buddha-2011",
-    "title": "The 37 Teachings of Buddha",
-    "titleOriginal": "佛子行三十七誦",
-    "titleLocalized": {
-      "en": "The 37 Teachings of Buddha",
-      "zh-Hant": "佛子行三十七誦",
-      "zh-Hans": "佛子行三十七诵"
-    },
-    "releaseDate": "2011",
-    "releaseType": "other",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "unknown"
-    ],
-    "availability": {
-      "physical": [
-        "unknown"
-      ],
-      "streaming": [
-        {
-          "label": "Spotify",
-          "platform": "spotify",
-          "url": "https://open.spotify.com/album/5BMUTxg5A0PeIdBpiVMhgC",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "Global"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-wikipedia-en-chyi-yu",
-      "source-spotify-thirty-seven-teachings-of-buddha-2011"
-    ],
-    "notes": "English Wikipedia lists The 37 Teachings of Buddha / 佛子行三十七誦 as a 2011 Chyi Yu Buddhist release. Added as an empty partial stub because it may overlap later QQ religious-release candidates and needs a platform/booklet source before track-level import.",
-    "status": "partial"
-  },
-  {
     "id": "release-clouds-2011",
     "slug": "clouds-2011",
     "title": "Over the Cloud",
@@ -6315,6 +5653,14 @@
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "Global"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/KG1197990/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
         }
       ],
       "purchase": []
@@ -7264,111 +6610,13 @@
     "status": "partial"
   },
   {
-    "id": "release-unforgettable-stories-of-chyi",
-    "slug": "unforgettable-stories-of-chyi",
-    "title": "The Unforgettable Stories of CHYI",
-    "titleLocalized": {
-      "en": "The Unforgettable Stories of CHYI",
-      "zh-Hant": "The Unforgettable Stories of CHYI",
-      "zh-Hans": "The Unforgettable Stories of CHYI"
-    },
-    "titleOriginal": null,
-    "releaseType": "compilation",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "CD"
-    ],
-    "availability": {
-      "physical": [
-        "CD"
-      ],
-      "streaming": [],
-      "purchase": []
-    },
-    "tracks": [],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-musicbrainz-chyi-yu-release-groups",
-      "source-musicbrainz-chyi-yu-release-media"
-    ],
-    "notes": "Added as a coverage placeholder because MusicBrainz lists this Chyi Yu album/release group without a first-release date. Needs independent platform or catalog confirmation before track-level import. Format audit: MusicBrainz lists a promotional China CD release.",
-    "status": "partial"
-  },
-  {
-    "id": "release-rolling-stone-24k-gold-collection-chyi-yu",
-    "slug": "rolling-stone-24k-gold-collection-chyi-yu",
-    "title": "Rolling Stone 24K Gold Collection: Chyi Yu",
-    "titleLocalized": {
-      "en": "Rolling Stone 24K Gold Collection: Chyi Yu",
-      "zh-Hant": "滾石珍藏版金碟系列·齊豫24K黃金精選",
-      "zh-Hans": "滚石珍藏版金碟系列·齐豫24K黄金精选"
-    },
-    "titleOriginal": "滚石珍藏版金金碟系列·齐豫24K黄金精选",
-    "releaseType": "compilation",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "CD"
-    ],
-    "availability": {
-      "physical": [
-        "CD"
-      ],
-      "streaming": [
-        {
-          "label": "Spotify",
-          "platform": "spotify",
-          "url": "https://open.spotify.com/album/4vbBII99p72iPLw7WQk0mQ",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "Global"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-musicbrainz-chyi-yu-release-groups",
-      "source-musicbrainz-chyi-yu-release-media",
-      "source-spotify-rolling-stone-24k-gold-collection-chyi-yu"
-    ],
-    "notes": "Added as a coverage placeholder from MusicBrainz. No current official streaming or purchase page was found in the point-1 check; full edition metadata remains pending. Format audit: MusicBrainz lists the release as CD.",
-    "status": "partial"
-  },
-  {
     "id": "release-chanting-for-you-trilogy",
     "slug": "chanting-for-you-trilogy",
     "title": "Chanting for You: Peaceful Heart, Peace of Mind, Happy Journey Trilogy",
     "titleLocalized": {
       "en": "Chanting for You: Peaceful Heart, Peace of Mind, Happy Journey Trilogy",
       "zh-Hant": "唱經給你聽：順心、安心、快樂行三部曲",
-      "zh-Hans": "唱经给你听-顺心、安心、快乐行三部曲"
+      "zh-Hans": "唱经给你听：顺心、安心、快乐行三部曲"
     },
     "titleOriginal": "唱經給你聽：順心、安心、快樂行三部曲",
     "releaseType": "compilation",
@@ -7403,232 +6651,240 @@
       ],
       "purchase": []
     },
-    "tracks": [],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-musicbrainz-chyi-yu-release-groups",
-      "source-qq-music-chanting-trilogy",
-      "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-chanting-for-you-trilogy"
-    ],
-    "notes": "Added during release coverage pass as the combined trilogy release in addition to the separately modeled 2004 volumes. QQ Music exposes albumMID 0028EWRB3rOxLB; full track and format reconciliation is deferred to the format/platform passes. Format audit: MusicBrainz lists the combined trilogy release as Digital Media.",
-    "status": "partial"
-  },
-  {
-    "id": "release-reunion-chyi-yu-folk-best-1998",
-    "slug": "reunion-chyi-yu-folk-best-1998",
-    "title": "Reunion: Chyi Yu Folk Best Selection",
-    "titleLocalized": {
-      "en": "Reunion: Chyi Yu Folk Best Selection",
-      "zh-Hant": "重逢齊豫民歌精選輯",
-      "zh-Hans": "重逢齐豫民歌精选辑"
-    },
-    "titleOriginal": "重逢齊豫民歌精選輯",
-    "releaseType": "compilation",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "CD"
-    ],
-    "availability": {
-      "physical": [
-        "CD"
-      ],
-      "streaming": [
-        {
-          "label": "NetEase Cloud Music",
-          "platform": "netease-cloud-music",
-          "url": "https://music.163.com/#/album?id=28251",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "China mainland"
-        },
-        {
-          "label": "Spotify",
-          "platform": "spotify",
-          "url": "https://open.spotify.com/album/17fYLx2gKeoyde7dER8ttA",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "Global"
-        },
-        {
-          "label": "YouTube Music",
-          "platform": "youtube-music",
-          "url": "https://music.youtube.com/browse/MPREb_RiHgzbbZVEd",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "Global"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-musicbrainz-chyi-yu-release-groups",
-      "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-reunion-chyi-yu-folk-best-1998",
-      "source-spotify-reunion-chyi-yu-folk-best-1998",
-      "source-youtube-music-reunion-chyi-yu-folk-best-1998"
-    ],
-    "notes": "Added as a coverage placeholder because MusicBrainz lists this 1998 compilation. QQ public search did not return a direct album match on 2026-06-26. Format audit: MusicBrainz lists the official Taiwan release as CD.",
-    "status": "partial",
-    "releaseDate": "1998"
-  },
-  {
-    "id": "release-singles-1997-1999",
-    "slug": "singles-1997-1999",
-    "title": "Singles 1997-1999",
-    "titleLocalized": {
-      "en": "Singles 1997-1999",
-      "zh-Hant": "Singles 1997-1999",
-      "zh-Hans": "Singles 1997-1999"
-    },
-    "titleOriginal": "Singles 1997-1999",
-    "releaseType": "compilation",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "unknown"
-    ],
-    "availability": {
-      "physical": [
-        "unknown"
-      ],
-      "streaming": [],
-      "purchase": []
-    },
-    "tracks": [],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-wikipedia-zh-chyi-yu"
-    ],
-    "notes": "Added as a Wikipedia-led coverage placeholder because the Chinese Wikipedia Chyi Yu discography lists Singles 1997-1999, while QQ public search and the MusicBrainz release-group check did not expose a matching release group on 2026-06-26. Track list, date, and format remain unresolved.",
-    "status": "partial"
-  },
-  {
-    "id": "release-twenty-year-selection-olive-tree-2002",
-    "slug": "twenty-year-selection-olive-tree-2002",
-    "title": "Twenty Year Selection: Forever Olive Tree",
-    "titleLocalized": {
-      "en": "Twenty Year Selection: Forever Olive Tree",
-      "zh-Hant": "二十年精選：永遠的橄欖樹",
-      "zh-Hans": "二十年精选：永远的橄榄树"
-    },
-    "titleOriginal": "二十年精選：永遠的橄欖樹",
-    "releaseType": "compilation",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "CD"
-    ],
-    "availability": {
-      "physical": [
-        "CD"
-      ],
-      "streaming": [],
-      "purchase": []
-    },
-    "tracks": [],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-musicbrainz-chyi-yu-release-groups",
-      "source-musicbrainz-chyi-yu-release-media"
-    ],
-    "notes": "Added as a coverage placeholder because MusicBrainz lists this 2002 compilation. QQ public search did not return a direct album match on 2026-06-26. Format audit: MusicBrainz lists the official release as a two-disc CD set.",
-    "status": "partial",
-    "releaseDate": "2002"
-  },
-  {
-    "id": "release-indescribable-night-2003",
-    "slug": "indescribable-night-2003",
-    "title": "Indescribable Night",
-    "titleLocalized": {
-      "en": "Indescribable Night",
-      "zh-Hant": "Indescribable Night",
-      "zh-Hans": "Indescribable Night"
-    },
-    "titleOriginal": "Indescribable Night",
-    "releaseType": "single",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "unknown"
-    ],
-    "availability": {
-      "physical": [
-        "unknown"
-      ],
-      "streaming": [
-        {
-          "label": "QQ Music album context",
-          "platform": "qq-music",
-          "url": "https://y.qq.com/n/ryqq/albumDetail/000tfZ2r2SzQJw",
-          "kind": "metadata",
-          "isOfficial": true,
-          "accessRegion": "China mainland"
-        }
-      ],
-      "purchase": []
-    },
     "tracks": [
       {
         "position": 1,
         "song": null,
-        "titleOnRelease": "Indescribable Night",
+        "titleOnRelease": "忏悔文",
         "titleOnReleaseLocalized": {
-          "en": "Indescribable Night"
+          "zh-Hans": "忏悔文"
         },
-        "duration": null,
-        "versionNote": "QQ currently exposes this as the bonus/live track within The Unheard Of Chyi.",
+        "duration": "15:11",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "大吉祥天女咒",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "大吉祥天女咒"
+        },
+        "duration": "14:46",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "般若波罗蜜多心经",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "般若波罗蜜多心经"
+        },
+        "duration": "14:02",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "大慈大悲观世音",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "大慈大悲观世音"
+        },
+        "duration": "16:03",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "大悲咒",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "大悲咒"
+        },
+        "duration": "15:04",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "六字大明咒",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "六字大明咒"
+        },
+        "duration": "15:09",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titleOnRelease": "般若波罗蜜多心经 (短版)",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "般若波罗蜜多心经 (短版)"
+        },
+        "duration": "4:20",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "大悲咒 (短版)",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "大悲咒 (短版)"
+        },
+        "duration": "5:40",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titleOnRelease": "六字大明咒 (短版)",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "六字大明咒 (短版)"
+        },
+        "duration": "5:30",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titleOnRelease": "忏悔文 (短版)",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "忏悔文 (短版)"
+        },
+        "duration": "5:20",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 11,
+        "song": null,
+        "titleOnRelease": "望江南 归依三宝赞",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "望江南 归依三宝赞"
+        },
+        "duration": "3:58",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 12,
+        "song": null,
+        "titleOnRelease": "梦",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "梦"
+        },
+        "duration": "3:41",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 13,
+        "song": null,
+        "titleOnRelease": "莲花处处开",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "莲花处处开"
+        },
+        "duration": "4:05",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 14,
+        "song": null,
+        "titleOnRelease": "大吉祥天女咒 (短版)",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "大吉祥天女咒 (短版)"
+        },
+        "duration": "4:25",
+        "versionNote": null,
+        "performers": [
+          "person-chyi-yu"
+        ],
         "credits": {
           "lyricsBy": [],
           "composedBy": []
@@ -7645,25 +6901,27 @@
       ]
     },
     "sources": [
-      "source-wikipedia-en-chyi-yu",
-      "source-wikipedia-zh-chyi-yu",
-      "source-qq-music-unheard-of-chyi"
+      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-trilogy",
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-netease-cloud-music-chanting-for-you-trilogy"
     ],
-    "notes": "Added as a partial single because Wikipedia discography sources list Indescribable Night separately. QQ Music currently exposes the track only inside The Unheard Of Chyi, so this may represent a bonus-disc/single edition rather than an independently streamable release.",
+    "notes": "Combined trilogy digital release compiling the three 2004 Chanting for You volumes. QQ Music exposes albumMID 0028EWRB3rOxLB with publicTime 2004-04-23 and 14 tracks. Writer/composer credits are left blank because the crawled QQ album API did not expose them.",
     "status": "partial",
-    "releaseDate": "2003"
+    "releaseDate": "2004-04-23"
   },
   {
-    "id": "release-rolling-stone-hk-golden-decade-2014",
-    "slug": "rolling-stone-hk-golden-decade-2014",
-    "title": "Rock Records Hong Kong Golden Decade: Chyi Yu Best Selection",
+    "id": "release-chanting-for-you-1-peaceful-heart-2004",
+    "slug": "chanting-for-you-1-peaceful-heart-2004",
+    "title": "Chanting for You, Vol. 1: Peaceful Heart - Therefore More Beautiful",
     "titleLocalized": {
-      "en": "Rock Records Hong Kong Golden Decade: Chyi Yu Best Selection",
-      "zh-Hant": "滾石香港黃金十年：齊豫精選",
-      "zh-Hans": "滚石香港黄金十年齐豫精选"
+      "en": "Chanting for You, Vol. 1: Peaceful Heart - Therefore More Beautiful",
+      "zh-Hant": "唱經給你聽之一 順心-因此更美麗",
+      "zh-Hans": "唱经给你听之一 顺心-因此更美丽"
     },
-    "titleOriginal": "滾石香港黃金十年：齊豫精選",
-    "releaseType": "compilation",
+    "titleOriginal": "唱经给你听之一 顺心-因此更美丽",
+    "releaseDate": "2004-02-20",
+    "releaseType": "other",
     "artist": "person-chyi-yu",
     "artists": [
       "person-chyi-yu"
@@ -7681,39 +6939,66 @@
         {
           "label": "QQ Music",
           "platform": "qq-music",
-          "url": "https://y.qq.com/n/ryqq/albumDetail/000DHe0T4AKocB",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/0039vSTA2XbNQH",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
         },
         {
-          "label": "NetEase Cloud Music",
-          "platform": "netease-cloud-music",
-          "url": "https://music.163.com/#/album?id=28241",
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/j21u98/",
           "kind": "streaming",
           "isOfficial": true,
           "accessRegion": "China mainland"
-        },
-        {
-          "label": "Spotify",
-          "platform": "spotify",
-          "url": "https://open.spotify.com/album/6NS4ZSK6DpgftPWEIfSILJ",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "Global"
-        },
-        {
-          "label": "YouTube Music",
-          "platform": "youtube-music",
-          "url": "https://music.youtube.com/browse/MPREb_HlfEk7eC4cb",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "Global"
         }
       ],
       "purchase": []
     },
-    "tracks": [],
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "忏悔文",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "忏悔文"
+        },
+        "duration": "15:11",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "大吉祥天女咒",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "大吉祥天女咒"
+        },
+        "duration": "14:46",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "般若波罗蜜多心经",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "般若波罗蜜多心经"
+        },
+        "duration": "14:02",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
     "credits": {
       "arranger": [],
       "composer": [],
@@ -7724,28 +7009,25 @@
       ]
     },
     "sources": [
-      "source-musicbrainz-chyi-yu-release-groups",
-      "source-qq-music-rolling-stone-hk-golden-decade",
-      "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-rolling-stone-hk-golden-decade-2014",
-      "source-spotify-rolling-stone-hk-golden-decade-2014",
-      "source-youtube-music-rolling-stone-hk-golden-decade-2014"
+      "source-qq-music-chanting-for-you-1-peaceful-heart",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Added during release coverage pass. MusicBrainz lists a 2014 compilation and QQ Music exposes albumMID 000DHe0T4AKocB; track-level import remains pending. Format audit: MusicBrainz lists the official Hong Kong release as CD.",
-    "status": "partial",
-    "releaseDate": "2014-04-11"
+    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists the official Taiwan release as CD.",
+    "status": "partial"
   },
   {
-    "id": "release-childhood-blue-sky-olive-tree-2017",
-    "slug": "childhood-blue-sky-olive-tree-2017",
-    "title": "Childhood, Blue Sky, Olive Tree: Memory Trilogy",
+    "id": "release-chanting-for-you-2-peace-of-mind-2004",
+    "slug": "chanting-for-you-2-peace-of-mind-2004",
+    "title": "Chanting for You, Vol. 2: Peace of Mind - Discovering Courage",
     "titleLocalized": {
-      "en": "Childhood, Blue Sky, Olive Tree: Memory Trilogy",
-      "zh-Hant": "童年・藍天・橄欖樹 回憶三部曲",
-      "zh-Hans": "童年・蓝天・橄榄树 回忆三部曲"
+      "en": "Chanting for You, Vol. 2: Peace of Mind - Discovering Courage",
+      "zh-Hant": "唱經給你聽之二 安心-發現了勇氣",
+      "zh-Hans": "唱经给你听之二 安心-发现了勇气"
     },
-    "titleOriginal": "童年・藍天・橄欖樹 回憶三部曲",
-    "releaseType": "compilation",
+    "titleOriginal": "唱经给你听之二 安心-发现了勇气",
+    "releaseDate": "2004-02-13",
+    "releaseType": "other",
     "artist": "person-chyi-yu",
     "artists": [
       "person-chyi-yu"
@@ -7759,10 +7041,70 @@
       "physical": [
         "CD"
       ],
-      "streaming": [],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/003ACKkW4JByTv",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/smrohbe/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
       "purchase": []
     },
-    "tracks": [],
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "大慈大悲观世音",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "大慈大悲观世音"
+        },
+        "duration": "16:03",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "大悲咒",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "大悲咒"
+        },
+        "duration": "15:04",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "六字大明咒",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "六字大明咒"
+        },
+        "duration": "15:09",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
     "credits": {
       "arranger": [],
       "composer": [],
@@ -7773,12 +7115,189 @@
       ]
     },
     "sources": [
-      "source-musicbrainz-chyi-yu-release-groups",
+      "source-qq-music-chanting-for-you-2-peace-of-mind",
+      "source-user-task-0623-2",
       "source-musicbrainz-chyi-yu-release-media"
     ],
-    "notes": "Added as a coverage placeholder because MusicBrainz lists this 2017 compilation. QQ public search did not return a direct album match on 2026-06-26. Format audit: MusicBrainz lists the Malaysia release as a three-disc CD set.",
-    "status": "partial",
-    "releaseDate": "2017"
+    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists the official Taiwan release as CD.",
+    "status": "partial"
+  },
+  {
+    "id": "release-chanting-for-you-3-happy-journey-2004",
+    "slug": "chanting-for-you-3-happy-journey-2004",
+    "title": "Chanting for You, Vol. 3: Happy Journey - Therefore Becoming Happy",
+    "titleLocalized": {
+      "en": "Chanting for You, Vol. 3: Happy Journey - Therefore Becoming Happy",
+      "zh-Hant": "唱經給你聽之三 快樂行-所以變快樂",
+      "zh-Hans": "唱经给你听之三 快乐行-所以变快乐"
+    },
+    "titleOriginal": "唱经给你听之三 快乐行-所以变快乐",
+    "releaseDate": "2004-03-08",
+    "releaseType": "other",
+    "artist": "person-chyi-yu",
+    "artists": [
+      "person-chyi-yu"
+    ],
+    "label": null,
+    "catalogNumber": null,
+    "formats": [
+      "CD",
+      "digital"
+    ],
+    "availability": {
+      "physical": [
+        "CD"
+      ],
+      "streaming": [
+        {
+          "label": "QQ Music",
+          "platform": "qq-music",
+          "url": "https://y.qq.com/n/ryqq/albumDetail/0029u4DH0xdQIE",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        },
+        {
+          "label": "Kugou",
+          "platform": "kugou",
+          "url": "https://www.kugou.com/album/info/tepqub0/",
+          "kind": "streaming",
+          "isOfficial": true,
+          "accessRegion": "China mainland"
+        }
+      ],
+      "purchase": []
+    },
+    "tracks": [
+      {
+        "position": 1,
+        "song": null,
+        "titleOnRelease": "般若波罗蜜多心经 (短版)",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "般若波罗蜜多心经 (短版)"
+        },
+        "duration": "4:20",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titleOnRelease": "大悲咒 (短版)",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "大悲咒 (短版)"
+        },
+        "duration": "5:40",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titleOnRelease": "六字大明咒 (短版)",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "六字大明咒 (短版)"
+        },
+        "duration": "5:30",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titleOnRelease": "忏悔文 (短版)",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "忏悔文 (短版)"
+        },
+        "duration": "5:20",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titleOnRelease": "望江南 归依三宝赞",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "望江南 归依三宝赞"
+        },
+        "duration": "3:58",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titleOnRelease": "梦",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "梦"
+        },
+        "duration": "3:41",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titleOnRelease": "莲花处处开",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "莲花处处开"
+        },
+        "duration": "4:05",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titleOnRelease": "大吉祥天女咒 (短版)",
+        "titleOnReleaseLocalized": {
+          "zh-Hans": "大吉祥天女咒 (短版)"
+        },
+        "duration": "4:25",
+        "versionNote": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": []
+        }
+      }
+    ],
+    "credits": {
+      "arranger": [],
+      "composer": [],
+      "producer": [],
+      "soundtrack": [],
+      "vocalist": [
+        "person-chyi-yu"
+      ]
+    },
+    "sources": [
+      "source-qq-music-chanting-for-you-3-happy-journey",
+      "source-user-task-0623-2",
+      "source-musicbrainz-chyi-yu-release-media"
+    ],
+    "notes": "Imported from the accepted Stage 6B part 3 review. Modeled as a religious chanting release with several short-version tracks from the same series. QQ supplies current platform order, titles, durations, and publicTime; writer/composer credits are left blank because the crawled QQ album API did not expose them. Format audit: MusicBrainz lists official Taiwan CD editions and an official Digital Media edition.",
+    "status": "partial"
   },
   {
     "id": "release-not-saying-goodbye-2018",
@@ -7867,85 +7386,6 @@
     "notes": "Added during release coverage pass. MusicBrainz lists the 2018 single and QQ Music exposes a collaborative track credited to 齐豫, 潘越雲, 李艾璇, and 黃韻玲. Full credits remain pending. Format audit: MusicBrainz lists the official release as Digital Media.",
     "status": "partial",
     "releaseDate": "2018-08-10"
-  },
-  {
-    "id": "release-amazing-grace-2020",
-    "slug": "amazing-grace-2020",
-    "title": "Amazing Grace",
-    "titleLocalized": {
-      "en": "Amazing Grace",
-      "zh-Hant": "奇異恩典",
-      "zh-Hans": "奇异恩典"
-    },
-    "titleOriginal": "奇異恩典",
-    "releaseType": "single",
-    "artist": "person-chyi-yu",
-    "artists": [
-      "person-chyi-yu"
-    ],
-    "label": null,
-    "catalogNumber": null,
-    "formats": [
-      "digital"
-    ],
-    "availability": {
-      "physical": [],
-      "streaming": [
-        {
-          "label": "Spotify",
-          "platform": "spotify",
-          "url": "https://open.spotify.com/album/7vd6x238IRqGivqLP0kEi6",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "Global"
-        },
-        {
-          "label": "YouTube Music",
-          "platform": "youtube-music",
-          "url": "https://music.youtube.com/browse/MPREb_sL9qQN5bSuX",
-          "kind": "streaming",
-          "isOfficial": true,
-          "accessRegion": "Global"
-        }
-      ],
-      "purchase": []
-    },
-    "tracks": [
-      {
-        "position": 1,
-        "song": null,
-        "titleOnRelease": "Amazing Grace",
-        "titleOnReleaseLocalized": {
-          "en": "Amazing Grace",
-          "zh-Hant": "奇異恩典",
-          "zh-Hans": "奇异恩典"
-        },
-        "duration": null,
-        "versionNote": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": []
-        }
-      }
-    ],
-    "credits": {
-      "arranger": [],
-      "composer": [],
-      "producer": [],
-      "soundtrack": [],
-      "vocalist": [
-        "person-chyi-yu"
-      ]
-    },
-    "sources": [
-      "source-musicbrainz-chyi-yu-release-groups",
-      "source-musicbrainz-chyi-yu-release-media",
-      "source-spotify-amazing-grace-2020",
-      "source-youtube-music-amazing-grace-2020"
-    ],
-    "notes": "Added as a coverage placeholder because MusicBrainz lists this 2020 single. QQ public search did not return a direct album match on 2026-06-26; platform corroboration remains pending. Format audit: MusicBrainz lists the official release as Digital Media.",
-    "status": "partial",
-    "releaseDate": "2020-12-31"
   },
   {
     "id": "release-you-are-my-angel-2021",

@@ -728,6 +728,11 @@ details[open].record-card summary::after {
   gap: 0.4rem;
 }
 
+.platform-links-flat {
+  border-top: 1px solid var(--line);
+  padding-top: 0.8rem;
+}
+
 .platform-links a {
   align-items: center;
   border: 1px solid var(--line);

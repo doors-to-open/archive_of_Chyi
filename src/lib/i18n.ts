@@ -1,4 +1,4 @@
-import { byId, people } from "./archive";
+import { byId, people, releaseCategoryTags } from "./archive";
 import type {
   Appearance,
   Concert,
@@ -420,6 +420,25 @@ export function titleValues(item: Song | Release | Concert | MusicShow | Appeara
 
 export function trackTitleValues(track: Track): LocaleValues {
   return localizedValues(track.titleOnReleaseLocalized, track.titleOnRelease);
+}
+
+export function originalReleaseTitle(release: Release): string {
+  const isEnglishCover = releaseCategoryTags(release).includes("english-cover");
+  if (isEnglishCover) {
+    return release.titleLocalized?.en || release.title;
+  }
+  return release.titleOriginal || release.title;
+}
+
+export function originalTrackTitle(track: Track): string {
+  return track.titleOnRelease;
+}
+
+export function originalSongTitle(song: Song): string {
+  if (song.language === "English") {
+    return song.titleLocalized?.en || song.title;
+  }
+  return song.titleOriginal || song.title;
 }
 
 export function performanceTitleValues(entry: SongPerformance, fallbackSong?: Song): LocaleValues {
