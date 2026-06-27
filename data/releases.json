@@ -778,7 +778,7 @@
       },
       {
         "position": 8,
-        "song": null,
+        "song": "song-ju-tan",
         "titleOnRelease": "菊嘆",
         "titleOnReleaseLocalized": {
           "zh-Hant": "菊嘆",
@@ -1256,7 +1256,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-xiao-meng-hu-die",
         "titleOnRelease": "曉夢蝴蝶",
         "duration": "3:00",
         "versionNote": "Performed by Pan Yue-yun.",
@@ -1598,7 +1598,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-diamonds-and-rust",
         "titleOnRelease": "Diamonds And Rust",
         "titleOnReleaseLocalized": {
           "en": "Diamonds And Rust",
@@ -2169,7 +2169,7 @@
       },
       {
         "position": 2,
-        "song": null,
+        "song": "song-if-you-really-dont-want",
         "titleOnRelease": "如果真的不要",
         "titleOnReleaseLocalized": {
           "en": "If You Really Don't Want",
@@ -2309,7 +2309,7 @@
       },
       {
         "position": 9,
-        "song": null,
+        "song": "song-a-piece-of-lake",
         "titleOnRelease": "一面湖水",
         "titleOnReleaseLocalized": {
           "en": "A Piece of Lake",
@@ -2949,7 +2949,7 @@
     "tracks": [
       {
         "position": 1,
-        "song": null,
+        "song": "song-spring-story",
         "titleOnRelease": "春天的故事",
         "titleOnReleaseLocalized": {
           "zh-Hans": "春天的故事"
@@ -5412,7 +5412,7 @@
       },
       {
         "position": 3,
-        "song": null,
+        "song": "song-amazing-grace",
         "titleOnRelease": "Amazing Grace",
         "titleOnReleaseLocalized": {
           "en": "Amazing Grace"

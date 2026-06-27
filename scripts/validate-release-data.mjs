@@ -19,6 +19,8 @@ const appearances = readJson("data/appearances.json");
 const songs = readJson("data/songs.json");
 const people = readJson("data/people.json");
 const sources = readJson("data/sources.json");
+const concerts = readJson("data/concerts.json");
+const musicShows = readJson("data/music-shows.json");
 const archiveSource = fs.readFileSync(path.join(root, "src/lib/archive.ts"), "utf8");
 
 const sourceIds = new Set(sources.map((source) => source.id));
@@ -172,6 +174,60 @@ if (!releases.some((release) =>
   release.titleLocalized?.["zh-Hans"]?.includes("一念")
 )) {
   addWarning("No obvious Wu Tsing-fong/Chyi Yu 2025 EP candidate is modeled yet");
+}
+
+// Live-performance linkage check: flag concert/show entries whose song is null
+// but whose title matches a release track or an existing song record. These are
+// silent linkage gaps that hide live performances from the songs view and stats.
+function normalizeTitle(value) {
+  if (!value) return "";
+  return String(value)
+    .toLowerCase()
+    .replace(/\s+/g, "")
+    .replace(/[（(].*?[)）]/g, "")
+    .replace(/[、,，/／·・?!！？.。]/g, "")
+    .replace(/live$/g, "")
+    .replace(/清唱$/g, "");
+}
+
+const releaseTrackTitles = new Map();
+for (const release of releases) {
+  for (const track of release.tracks || []) {
+    const n = normalizeTitle(track.titleOnRelease);
+    if (n) releaseTrackTitles.set(n, { release, track });
+  }
+}
+const songTitles = new Map();
+for (const song of songs) {
+  for (const t of [song.title, song.titleOriginal, ...(song.aliases || [])]) {
+    const n = normalizeTitle(t);
+    if (n) songTitles.set(n, song);
+  }
+}
+
+function validateLiveLinkage(entries, recordLabel) {
+  for (const entry of entries) {
+    if (entry.song) continue;
+    const n = normalizeTitle(entry.titlePerformed);
+    if (!n) continue;
+    const trackMatch = releaseTrackTitles.get(n);
+    const songMatch = songTitles.get(n);
+    if (trackMatch || songMatch) {
+      const matchDesc = trackMatch
+        ? `release track ${trackMatch.release.id} "${trackMatch.track.titleOnRelease}"`
+        : `song record ${songMatch.id}`;
+      addError(
+        `${recordLabel} setlist entry "${entry.titlePerformed}" has no song id but matches ${matchDesc}; link it to a song record so the live performance is tracked`
+      );
+    }
+  }
+}
+
+for (const concert of concerts) {
+  validateLiveLinkage(concert.setlist || [], `Concert ${concert.id}`);
+}
+for (const show of musicShows) {
+  validateLiveLinkage(show.performedSongs || [], `Music show ${show.id}`);
 }
 
 for (const warning of warnings) {

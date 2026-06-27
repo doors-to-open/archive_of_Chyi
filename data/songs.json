@@ -803,7 +803,9 @@
       "concert-grace-still-beijing-2025",
       "concert-grace-still-chengdu-2025"
     ],
-    "knownMusicShows": [],
+    "knownMusicShows": [
+      "music-show-singer-2019"
+    ],
     "mediaLinks": [],
     "sources": [
       "source-wikipedia-zh-blessing-album",
@@ -1209,7 +1211,9 @@
     "relatedReleases": [
       "release-the-unheard-of-chyi-2003"
     ],
-    "knownConcerts": [],
+    "knownConcerts": [
+      "concert-unheard-of-chyi-2002-hong-kong"
+    ],
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": [
@@ -1368,7 +1372,9 @@
     "composedBy": [],
     "arrangedBy": [],
     "relatedReleases": [],
-    "knownConcerts": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025"
+    ],
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": [
@@ -1379,5 +1385,225 @@
     "status": "partial",
     "notes": "One of the two 2025 Wu Tsing-fong and Chyi Yu collaboration-single versions. Checked sources confirm Chyi Yu as lyricist; composer credit remains unresolved.",
     "firstKnownRelease": "release-one-thought-between-2025"
+  },
+  {
+    "id": "song-ju-tan",
+    "slug": "ju-tan",
+    "title": "菊嘆",
+    "titleOriginal": "菊嘆",
+    "titleLocalized": {
+      "zh-Hant": "菊嘆",
+      "zh-Hans": "菊叹"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-xiang-yang"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-are-all-my-memories-1983",
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-chyi-yu",
+      "source-qq-music-you-are-all-my-memories"
+    ],
+    "notes": "Promoted from the 1983 album track to connect concert performances.",
+    "status": "partial"
+  },
+  {
+    "id": "song-spring-story",
+    "slug": "spring-story",
+    "title": "春天的故事",
+    "titleOriginal": "春天的故事",
+    "titleLocalized": {
+      "zh-Hans": "春天的故事"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-dare-to-love-1994",
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-unheard-of-chyi-2002-hong-kong"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-dare-to-love"
+    ],
+    "notes": "Promoted from the Dare to Love compilation track to connect the 2002 concert performance. Credits pending.",
+    "status": "partial"
+  },
+  {
+    "id": "song-diamonds-and-rust",
+    "slug": "diamonds-and-rust",
+    "title": "Diamonds and Rust",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Diamonds And Rust",
+      "zh-Hans": "Diamonds And Rust"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-stories-1987",
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-qq-music-stories"
+    ],
+    "notes": "Cover; original performer Joan Baez, 1975. Promoted to connect concert performances. Credits pending.",
+    "status": "partial"
+  },
+  {
+    "id": "song-xiao-meng-hu-die",
+    "slug": "xiao-meng-hu-die",
+    "title": "曉夢蝴蝶",
+    "titleOriginal": "曉夢蝴蝶",
+    "titleLocalized": {
+      "zh-Hant": "曉夢蝴蝶",
+      "zh-Hans": "晓梦蝴蝶"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-sanmao"
+    ],
+    "composedBy": [
+      "person-chen-chih-yuan"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-echo-1985",
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-yue-echo-album",
+      "source-qq-music-echo"
+    ],
+    "notes": "Promoted from the Echo album track to connect concert performances.",
+    "status": "partial"
+  },
+  {
+    "id": "song-if-you-really-dont-want",
+    "slug": "if-you-really-dont-want",
+    "title": "If You Really Don't Want",
+    "titleOriginal": "如果真的不要",
+    "titleLocalized": {
+      "en": "If You Really Don't Want",
+      "zh-Hant": "如果真的不要",
+      "zh-Hans": "如果真的不要"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-wang-hsin-lien"
+    ],
+    "composedBy": [
+      "person-hong"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa"
+    ],
+    "notes": "Promoted from the 1988 album track to connect concert performances.",
+    "status": "partial"
+  },
+  {
+    "id": "song-amazing-grace",
+    "slug": "amazing-grace",
+    "title": "Amazing Grace",
+    "titleOriginal": null,
+    "titleLocalized": {
+      "en": "Amazing Grace"
+    },
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-the-voice-2010",
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-qq-music-the-voice",
+      "source-wikipedia-en-chyi-yu"
+    ],
+    "notes": "Traditional hymn. Promoted to connect concert performances. Credits left as Public Domain on the album track.",
+    "status": "partial"
+  },
+  {
+    "id": "song-a-piece-of-lake",
+    "slug": "a-piece-of-lake",
+    "title": "A Piece of Lake",
+    "titleOriginal": "一面湖水",
+    "titleLocalized": {
+      "en": "A Piece of Lake",
+      "zh-Hant": "一面湖水",
+      "zh-Hans": "一面湖水"
+    },
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [
+      "person-wang-hsin-lien"
+    ],
+    "composedBy": [
+      "person-hong"
+    ],
+    "arrangedBy": [],
+    "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
+    ],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa"
+    ],
+    "notes": "Promoted from the 1988 album track to connect concert performances.",
+    "status": "partial"
   }
 ]

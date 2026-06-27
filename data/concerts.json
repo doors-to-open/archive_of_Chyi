@@ -308,7 +308,7 @@
       },
       {
         "position": 19,
-        "song": null,
+        "song": "song-spring-story",
         "titlePerformed": "春天的故事",
         "collaborators": [],
         "mediaLinks": [
@@ -324,7 +324,7 @@
       },
       {
         "position": 20,
-        "song": null,
+        "song": "song-windflowers",
         "titlePerformed": "Wind Flowers",
         "originalPerformer": "Seals and Crofts",
         "collaborators": [],
@@ -455,7 +455,11 @@
       }
     ],
     "officialRecording": true,
-    "sources": ["source-bilibili-unheard-full-hd", "source-bilibili-unheard-full-480p", "source-bilibili-unheard-chapters"],
+    "sources": [
+      "source-bilibili-unheard-full-hd",
+      "source-bilibili-unheard-full-480p",
+      "source-bilibili-unheard-chapters"
+    ],
     "sourceQuality": "fan-upload-with-release-context",
     "notes": "Modeled as one concert item because the supplied source gives the concert as a two-day Hong Kong Coliseum run, but does not distinguish per-day setlists. Official DVD/live-album material is represented separately under Releases; this concert page emphasizes fan-uploaded show material.",
     "status": "partial"
@@ -469,7 +473,9 @@
     "city": "Beijing",
     "countryOrRegion": "China",
     "eventType": "concert",
-    "guests": ["person-wu-tsing-fong"],
+    "guests": [
+      "person-wu-tsing-fong"
+    ],
     "setlist": [
       {
         "position": 1,
@@ -494,7 +500,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-ju-tan",
         "titlePerformed": "菊嘆",
         "collaborators": [],
         "mediaLinks": [
@@ -608,7 +614,9 @@
         "position": 9,
         "song": "song-happiness",
         "titlePerformed": "幸福",
-        "collaborators": ["person-wu-tsing-fong"],
+        "collaborators": [
+          "person-wu-tsing-fong"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili guest segment, chapter 1",
@@ -638,9 +646,11 @@
       },
       {
         "position": 10,
-        "song": null,
+        "song": "song-one-thought-between-in-air",
         "titlePerformed": "一念之間 - 在空中",
-        "collaborators": ["person-wu-tsing-fong"],
+        "collaborators": [
+          "person-wu-tsing-fong"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili guest segment, chapter 2",
@@ -665,7 +675,9 @@
         "song": null,
         "titlePerformed": "祝我幸福",
         "originalPerformer": "Faith Yang",
-        "collaborators": ["person-wu-tsing-fong"],
+        "collaborators": [
+          "person-wu-tsing-fong"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili guest segment, chapter 2",
@@ -682,7 +694,9 @@
         "position": 12,
         "song": null,
         "titlePerformed": "棕髮少女",
-        "collaborators": ["person-wu-tsing-fong"],
+        "collaborators": [
+          "person-wu-tsing-fong"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili clip",
@@ -904,7 +918,22 @@
       }
     ],
     "officialRecording": false,
-    "sources": ["source-bilibili-grace-still-beijing-full", "source-bilibili-grace-still-beijing-full-yujian-fanyin", "source-bilibili-grace-still-beijing-full-lilililixia", "source-bilibili-grace-still-beijing-clip-ju-tan-yu-si", "source-bilibili-grace-still-beijing-clip-yu-si-xiwujia", "source-bilibili-grace-still-beijing-clip-yu-si-shenglang", "source-bilibili-grace-still-beijing-clip-folk-medley", "source-bilibili-grace-still-beijing-guest-wu-tsing-fong", "source-bilibili-grace-still-beijing-clip-happiness", "source-bilibili-grace-still-beijing-clip-brown-haired-girl", "source-bilibili-grace-still-beijing-clip-zui-ai", "source-bilibili-grace-still-beijing-clip-friendship", "source-bilibili-grace-still-beijing-clip-li-xianglan", "source-bilibili-grace-still-beijing-clip-yu-si"],
+    "sources": [
+      "source-bilibili-grace-still-beijing-full",
+      "source-bilibili-grace-still-beijing-full-yujian-fanyin",
+      "source-bilibili-grace-still-beijing-full-lilililixia",
+      "source-bilibili-grace-still-beijing-clip-ju-tan-yu-si",
+      "source-bilibili-grace-still-beijing-clip-yu-si-xiwujia",
+      "source-bilibili-grace-still-beijing-clip-yu-si-shenglang",
+      "source-bilibili-grace-still-beijing-clip-folk-medley",
+      "source-bilibili-grace-still-beijing-guest-wu-tsing-fong",
+      "source-bilibili-grace-still-beijing-clip-happiness",
+      "source-bilibili-grace-still-beijing-clip-brown-haired-girl",
+      "source-bilibili-grace-still-beijing-clip-zui-ai",
+      "source-bilibili-grace-still-beijing-clip-friendship",
+      "source-bilibili-grace-still-beijing-clip-li-xianglan",
+      "source-bilibili-grace-still-beijing-clip-yu-si"
+    ],
     "sourceQuality": "fan-upload",
     "notes": "Fan-upload metadata identifies the guest as Wu Tsing-fong and lists the full setlist. The 2026-06-25 event-scoped Bilibili review added alternate full uploads and song-level clips, but official recording availability has not been found.",
     "status": "partial"
@@ -918,7 +947,9 @@
     "city": "Shenzhen",
     "countryOrRegion": "China",
     "eventType": "concert",
-    "guests": ["person-cheng-fangyuan"],
+    "guests": [
+      "person-cheng-fangyuan"
+    ],
     "setlist": [
       {
         "position": 1,
@@ -972,7 +1003,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-diamonds-and-rust",
         "titlePerformed": "Diamonds and Rust",
         "collaborators": [],
         "mediaLinks": [
@@ -1013,7 +1044,7 @@
       },
       {
         "position": 6,
-        "song": null,
+        "song": "song-xiao-meng-hu-die",
         "titlePerformed": "曉夢蝴蝶",
         "collaborators": [],
         "mediaLinks": [
@@ -1064,7 +1095,9 @@
         "position": 9,
         "song": null,
         "titlePerformed": "四歲的海騮馬",
-        "collaborators": ["person-cheng-fangyuan"],
+        "collaborators": [
+          "person-cheng-fangyuan"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili chaptered fan upload, p15",
@@ -1081,7 +1114,9 @@
         "position": 10,
         "song": null,
         "titlePerformed": "愛的箴言 / 是否",
-        "collaborators": ["person-cheng-fangyuan"],
+        "collaborators": [
+          "person-cheng-fangyuan"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili chaptered fan upload, p17",
@@ -1098,7 +1133,9 @@
         "position": 11,
         "song": null,
         "titlePerformed": "我要你",
-        "collaborators": ["person-cheng-fangyuan"],
+        "collaborators": [
+          "person-cheng-fangyuan"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili full fan upload, p8",
@@ -1161,7 +1198,7 @@
       },
       {
         "position": 15,
-        "song": null,
+        "song": "song-if-you-really-dont-want",
         "titlePerformed": "如果真的不要",
         "collaborators": [],
         "mediaLinks": [
@@ -1225,7 +1262,7 @@
       },
       {
         "position": 19,
-        "song": null,
+        "song": "song-amazing-grace",
         "titlePerformed": "Amazing Grace",
         "collaborators": [],
         "mediaLinks": [
@@ -1258,7 +1295,7 @@
       },
       {
         "position": 21,
-        "song": null,
+        "song": "song-a-piece-of-lake",
         "titlePerformed": "一面湖水",
         "collaborators": [],
         "mediaLinks": [
@@ -1388,7 +1425,12 @@
       }
     ],
     "officialRecording": false,
-    "sources": ["source-bilibili-grace-still-shenzhen-official-rolling-stone", "source-bilibili-grace-still-shenzhen-full-shdvdjne", "source-bilibili-grace-still-shenzhen-full-woohoohey", "source-bilibili-grace-still-shenzhen-full-wowozaichiyikou"],
+    "sources": [
+      "source-bilibili-grace-still-shenzhen-official-rolling-stone",
+      "source-bilibili-grace-still-shenzhen-full-shdvdjne",
+      "source-bilibili-grace-still-shenzhen-full-woohoohey",
+      "source-bilibili-grace-still-shenzhen-full-wowozaichiyikou"
+    ],
     "sourceQuality": "official-platform-and-fan-upload",
     "notes": "Official Rolling Stone Bilibili metadata supports the 2026 Shenzhen event context. Fan-upload metadata identifies guest Cheng Fangyuan and provides the setlist; event-scoped Bilibili discovery on 2026-06-25 added alternate full recordings for cross-checking. Venue remains unconfirmed, and fan-upload observations should not be treated as final official event facts.",
     "status": "partial"
@@ -1402,7 +1444,9 @@
     "city": "Chengdu",
     "countryOrRegion": "China",
     "eventType": "concert",
-    "guests": ["person-wu-tsing-fong"],
+    "guests": [
+      "person-wu-tsing-fong"
+    ],
     "setlist": [
       {
         "position": 1,
@@ -1478,7 +1522,7 @@
       },
       {
         "position": 4,
-        "song": null,
+        "song": "song-ju-tan",
         "titlePerformed": "菊嘆",
         "collaborators": [],
         "mediaLinks": [
@@ -1602,7 +1646,9 @@
         "position": 9,
         "song": "song-happiness",
         "titlePerformed": "幸福",
-        "collaborators": ["person-wu-tsing-fong"],
+        "collaborators": [
+          "person-wu-tsing-fong"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili Wu Tsing-fong guest segment",
@@ -1626,7 +1672,9 @@
         "position": 10,
         "song": null,
         "titlePerformed": "一念之間",
-        "collaborators": ["person-wu-tsing-fong"],
+        "collaborators": [
+          "person-wu-tsing-fong"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili Wu Tsing-fong guest segment",
@@ -1651,7 +1699,9 @@
         "song": null,
         "titlePerformed": "祝我幸福",
         "originalPerformer": "Faith Yang",
-        "collaborators": ["person-wu-tsing-fong"],
+        "collaborators": [
+          "person-wu-tsing-fong"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili Wu Tsing-fong guest segment",
@@ -1667,7 +1717,9 @@
         "position": 12,
         "song": null,
         "titlePerformed": "棕髮少女",
-        "collaborators": ["person-wu-tsing-fong"],
+        "collaborators": [
+          "person-wu-tsing-fong"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili Wu Tsing-fong guest segment",
@@ -1866,7 +1918,7 @@
       },
       {
         "position": 20,
-        "song": null,
+        "song": "song-amazing-grace",
         "titlePerformed": "Amazing Grace",
         "collaborators": [],
         "mediaLinks": [
@@ -1890,7 +1942,7 @@
       },
       {
         "position": 21,
-        "song": null,
+        "song": "song-a-piece-of-lake",
         "titlePerformed": "一面湖水",
         "collaborators": [],
         "mediaLinks": [
@@ -2117,7 +2169,13 @@
       }
     ],
     "officialRecording": false,
-    "sources": ["source-bilibili-grace-still-chengdu-full-tangrj", "source-bilibili-grace-still-chengdu-full-kepler", "source-bilibili-grace-still-chengdu-full-lilililixia", "source-bilibili-grace-still-chengdu-guest-wu-tsing-fong", "source-bilibili-grace-still-chengdu-chaptered-houge"],
+    "sources": [
+      "source-bilibili-grace-still-chengdu-full-tangrj",
+      "source-bilibili-grace-still-chengdu-full-kepler",
+      "source-bilibili-grace-still-chengdu-full-lilililixia",
+      "source-bilibili-grace-still-chengdu-guest-wu-tsing-fong",
+      "source-bilibili-grace-still-chengdu-chaptered-houge"
+    ],
     "sourceQuality": "fan-upload",
     "notes": "Fan-upload metadata identifies the 2025-09-06 Chengdu stop, guest Wu Tsing-fong, and full setlist. Event-scoped Bilibili discovery on 2026-06-25 added alternate full recordings, a guest-segment upload, and chaptered song clips. Venue and official recording availability remain unconfirmed.",
     "status": "partial"
@@ -2131,7 +2189,9 @@
     "city": "Changsha",
     "countryOrRegion": "China",
     "eventType": "concert",
-    "guests": ["person-cheng-fangyuan"],
+    "guests": [
+      "person-cheng-fangyuan"
+    ],
     "setlist": [
       {
         "position": 1,
@@ -2202,7 +2262,7 @@
       },
       {
         "position": 5,
-        "song": null,
+        "song": "song-diamonds-and-rust",
         "titlePerformed": "Diamonds and Rust",
         "collaborators": [],
         "mediaLinks": [
@@ -2236,7 +2296,7 @@
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-xiao-meng-hu-die",
         "titlePerformed": "曉夢蝴蝶",
         "collaborators": [],
         "mediaLinks": [
@@ -2286,7 +2346,9 @@
         "position": 10,
         "song": null,
         "titlePerformed": "愛的箴言 / 是否",
-        "collaborators": ["person-cheng-fangyuan"],
+        "collaborators": [
+          "person-cheng-fangyuan"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili detailed chaptered full upload, p17",
@@ -2311,7 +2373,9 @@
         "position": 11,
         "song": null,
         "titlePerformed": "我要你",
-        "collaborators": ["person-cheng-fangyuan"],
+        "collaborators": [
+          "person-cheng-fangyuan"
+        ],
         "mediaLinks": [
           {
             "label": "Bilibili detailed chaptered full upload, p18",
@@ -2374,7 +2438,7 @@
       },
       {
         "position": 15,
-        "song": null,
+        "song": "song-if-you-really-dont-want",
         "titlePerformed": "如果真的不要",
         "collaborators": [],
         "mediaLinks": [
@@ -2447,7 +2511,7 @@
       },
       {
         "position": 19,
-        "song": null,
+        "song": "song-amazing-grace",
         "titlePerformed": "Amazing Grace",
         "collaborators": [],
         "mediaLinks": [
@@ -2495,7 +2559,7 @@
       },
       {
         "position": 22,
-        "song": null,
+        "song": "song-a-piece-of-lake",
         "titlePerformed": "一面湖水",
         "collaborators": [],
         "mediaLinks": [
@@ -2635,7 +2699,13 @@
       }
     ],
     "officialRecording": false,
-    "sources": ["source-bilibili-grace-still-changsha-chaptered-shdvdjne", "source-bilibili-grace-still-changsha-full-zongteng", "source-bilibili-grace-still-changsha-full-likegem", "source-bilibili-grace-still-changsha-chaptered-gem-evonne", "source-bilibili-grace-still-changsha-guest-cheng-fangyuan"],
+    "sources": [
+      "source-bilibili-grace-still-changsha-chaptered-shdvdjne",
+      "source-bilibili-grace-still-changsha-full-zongteng",
+      "source-bilibili-grace-still-changsha-full-likegem",
+      "source-bilibili-grace-still-changsha-chaptered-gem-evonne",
+      "source-bilibili-grace-still-changsha-guest-cheng-fangyuan"
+    ],
     "sourceQuality": "fan-upload",
     "notes": "Fan-upload metadata identifies the 2026-04-18 Changsha stop of Still Grace / 風采依舊·在, guest Cheng Fangyuan, and a detailed setlist. Event-scoped Bilibili discovery on 2026-06-25 added full, chaptered, partial, and guest-segment recordings. Venue and official recording availability remain unconfirmed.",
     "status": "partial"
