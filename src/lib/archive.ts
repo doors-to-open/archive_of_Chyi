@@ -245,7 +245,7 @@ export type SongSummary = {
   href: string;
   originLabel: "Original" | "Cover" | "Unresolved";
   albumLabel: string;
-  albumReleases: Release[];
+  albumReleases: AlbumRecord[];
   releasePlacements: SongReleasePlacement[];
   liveRecords: SongLiveRecord[];
   concertCount: number;
@@ -490,6 +490,18 @@ export function displayTitle(item: { title: string; titleOriginal?: string }) {
   return item.titleOriginal ? `${item.title} / ${item.titleOriginal}` : item.title;
 }
 
+export type AlbumRecord = Release | Appearance;
+
+export function albumRecordForId(id: string): AlbumRecord | undefined {
+  return byId(releases, id) ?? byId(appearances, id);
+}
+
+export function albumHref(album: AlbumRecord): string {
+  return album.id.startsWith("appearance-")
+    ? `/appearances/${album.slug}/`
+    : `/releases/${album.slug}/`;
+}
+
 export function localizedTextValues(value: LocalizedText | undefined) {
   return value ? Object.values(value).filter((item): item is string => Boolean(item)) : [];
 }
@@ -581,12 +593,12 @@ export function liveRecordsForSong(songId: string): SongLiveRecord[] {
 
 export function songSummary(song: Song): SongSummary {
   const releasePlacements = releasePlacementsForSong(song.id);
-  const directReleases = [
-    song.firstKnownRelease ? byId(releases, song.firstKnownRelease) : undefined,
-    ...song.relatedReleases.map((releaseId) => byId(releases, releaseId)),
+  const directAlbums = [
+    song.firstKnownRelease ? albumRecordForId(song.firstKnownRelease) : undefined,
+    ...song.relatedReleases.map((albumId) => albumRecordForId(albumId)),
     ...releasePlacements.map((placement) => placement.release)
-  ].filter(Boolean) as Release[];
-  const albumReleases = uniqueById(directReleases);
+  ].filter(Boolean) as AlbumRecord[];
+  const albumReleases = uniqueById(directAlbums);
   const liveRecords = liveRecordsForSong(song.id);
   const concertCount = liveRecords.filter((record) => record.kind === "concert").length;
   const musicShowCount = liveRecords.filter((record) => record.kind === "music-show").length;
@@ -596,15 +608,15 @@ export function songSummary(song: Song): SongSummary {
     : albumReleases.length
       ? "Original"
       : "Unresolved";
-  const primaryRelease = albumReleases[0];
-  const albumLabel = primaryRelease
-    ? `${displayTitle(primaryRelease)}${albumReleases.length > 1 ? ` + ${albumReleases.length - 1} more` : ""}`
+  const primaryAlbum = albumReleases[0];
+  const albumLabel = primaryAlbum
+    ? `${displayTitle(primaryAlbum)}${albumReleases.length > 1 ? ` + ${albumReleases.length - 1} more` : ""}`
     : "No linked album";
 
   return {
     song,
     title: displayTitle(song),
-    href: primaryRelease ? `/releases/${primaryRelease.slug}/` : "/releases/",
+    href: primaryAlbum ? albumHref(primaryAlbum) : "/releases/",
     originLabel,
     albumLabel,
     albumReleases,

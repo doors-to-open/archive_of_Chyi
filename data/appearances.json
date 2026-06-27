@@ -214,12 +214,12 @@
         "duration": null,
         "credits": {
           "lyricsBy": [
-            "Jimmy Seals",
-            "Dan Crofts"
+            "person-jimmy-seals",
+            "person-dan-crofts"
           ],
           "composedBy": [
-            "Jimmy Seals",
-            "Dan Crofts"
+            "person-jimmy-seals",
+            "person-dan-crofts"
           ]
         },
         "notes": "Chyi Yu page soundtrack table lists original credit as Seals, Jimmy/Crofts, Dan."
@@ -243,7 +243,7 @@
             "person-chyi-yu"
           ],
           "composedBy": [
-            "Johnny Chen"
+            "person-johnny-chen"
           ]
         },
         "notes": "Chyi Yu page soundtrack table gives words by Chyi Yu and composition/arrangement by Johnny Chen."
@@ -287,10 +287,10 @@
         "duration": null,
         "credits": {
           "lyricsBy": [
-            "Amanda McBroom"
+            "person-amanda-mcbroom"
           ],
           "composedBy": [
-            "Amanda McBroom"
+            "person-amanda-mcbroom"
           ]
         },
         "notes": "Chyi Yu page soundtrack table lists this Chyi Yu/Sandy Lam duet with Amanda McBroom original-credit context; spelling normalized against The Rose song source."
@@ -314,12 +314,12 @@
         "duration": null,
         "credits": {
           "lyricsBy": [
-            "Frank Myers",
-            "Gary Baker"
+            "person-frank-myers",
+            "person-gary-baker"
           ],
           "composedBy": [
-            "Frank Myers",
-            "Gary Baker"
+            "person-frank-myers",
+            "person-gary-baker"
           ]
         },
         "notes": "Chyi Yu page soundtrack table lists this quartet vocal appearance and original credit as Frank Myers/Gary Baker."

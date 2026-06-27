@@ -971,5 +971,785 @@
     ],
     "notes": "Duet vocalist with Chyi Yu on the checked Shen Diao Xia Lu theme-song platform sources.",
     "status": "partial"
+  },
+  {
+    "id": "person-zheng-chouyu",
+    "slug": "zheng-chouyu",
+    "displayName": "Zheng Chouyu",
+    "nameOriginal": "鄭愁予",
+    "aliases": [
+      "Cheng Chou-yu",
+      "郑愁予"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Taiwanese poet credited as lyricist on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-wang-xiaohu",
+    "slug": "wang-xiaohu",
+    "displayName": "Wang Xiaohu",
+    "nameOriginal": "王小虎",
+    "aliases": [
+      "王小虎"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Lyricist credited on Blessing.",
+    "status": "partial"
+  },
+  {
+    "id": "person-hou-dejian",
+    "slug": "hou-dejian",
+    "displayName": "Hou Dejian",
+    "nameOriginal": "侯德健",
+    "aliases": [
+      "Hou De-jian",
+      "侯德建"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Taiwanese songwriter credited as lyricist on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-li-minyong",
+    "slug": "li-minyong",
+    "displayName": "Li Minyong",
+    "nameOriginal": "李敏勇",
+    "aliases": [
+      "Li Min-yong",
+      "李敏勇"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Taiwanese poet credited as lyricist on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-chen-ke-hua",
+    "slug": "chen-ke-hua",
+    "displayName": "Chen Ke-hua",
+    "nameOriginal": "陳克華",
+    "aliases": [
+      "Chen Kehua",
+      "陈克华"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Taiwanese poet credited as lyricist on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-hong",
+    "slug": "hong",
+    "displayName": "Hong",
+    "nameOriginal": "虹",
+    "aliases": [
+      "虹"
+    ],
+    "roles": [
+      "composer"
+    ],
+    "sources": [],
+    "notes": "Composer credited as 虹 on Chyi Yu records; full identity pending confirmation.",
+    "status": "partial"
+  },
+  {
+    "id": "person-yu-kwang-chung",
+    "slug": "yu-kwang-chung",
+    "displayName": "Yu Kwang-chung",
+    "nameOriginal": "余光中",
+    "aliases": [
+      "Yu Guangzhong",
+      "余光中"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-yeh-wei-lien",
+    "slug": "yeh-wei-lien",
+    "displayName": "Yeh Wei-lien",
+    "nameOriginal": "葉維廉",
+    "aliases": [
+      "Ye Weilian",
+      "叶维廉"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-lo-men",
+    "slug": "lo-men",
+    "displayName": "Lo Men",
+    "nameOriginal": "羅門",
+    "aliases": [
+      "Luo Men",
+      "罗门"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-lo-ching",
+    "slug": "lo-ching",
+    "displayName": "Lo Ching",
+    "nameOriginal": "羅青",
+    "aliases": [
+      "Luo Qing",
+      "罗青"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-wang-yu-ping",
+    "slug": "wang-yu-ping",
+    "displayName": "Wang Yu-ping",
+    "nameOriginal": "王玉萍",
+    "aliases": [
+      "Wang Yuping",
+      "王玉萍"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-shen-lu-bai",
+    "slug": "shen-lu-bai",
+    "displayName": "Shen Lu-bai",
+    "nameOriginal": "沈呂百",
+    "aliases": [
+      "Shen Lvbai",
+      "沈吕百"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-kao-shang-chin",
+    "slug": "kao-shang-chin",
+    "displayName": "Kao Shang-chin",
+    "nameOriginal": "高上秦",
+    "aliases": [
+      "Gao Shangqin",
+      "高上秦"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-xiang-yang",
+    "slug": "xiang-yang",
+    "displayName": "Xiang Yang",
+    "nameOriginal": "向陽",
+    "aliases": [
+      "向阳"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-zui-yun",
+    "slug": "zui-yun",
+    "displayName": "Zui Yun",
+    "nameOriginal": "醉雲",
+    "aliases": [
+      "醉云"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-lin-lu",
+    "slug": "lin-lu",
+    "displayName": "Lin Lu",
+    "nameOriginal": "林綠",
+    "aliases": [
+      "林绿"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-xu-zhimo",
+    "slug": "xu-zhimo",
+    "displayName": "Xu Zhimo",
+    "nameOriginal": "徐志摩",
+    "aliases": [
+      "徐志摩"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-xi-murong",
+    "slug": "xi-murong",
+    "displayName": "Xi Murong",
+    "nameOriginal": "席慕蓉",
+    "aliases": [
+      "席慕容"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-ya-xian",
+    "slug": "ya-xian",
+    "displayName": "Ya Xian",
+    "nameOriginal": "瘂弦",
+    "aliases": [
+      "痖弦"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-lo-sheng-er",
+    "slug": "lo-sheng-er",
+    "displayName": "Lo Sheng-er",
+    "nameOriginal": "羅聖爾",
+    "aliases": [
+      "Luo Shenger",
+      "罗圣尔"
+    ],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-chen-gui-fen",
+    "slug": "chen-gui-fen",
+    "displayName": "Chen Gui-fen",
+    "nameOriginal": "陳桂芬",
+    "aliases": [
+      "Chen Guifen",
+      "陈桂芬"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-zhan-de-mao",
+    "slug": "zhan-de-mao",
+    "displayName": "Zhan De-mao",
+    "nameOriginal": "詹德茂",
+    "aliases": [
+      "Zhan Demao",
+      "詹德茂"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-lin-long-xuan",
+    "slug": "lin-long-xuan",
+    "displayName": "Lin Long-xuan",
+    "nameOriginal": "林隆旋",
+    "aliases": [
+      "Lin Longxuan",
+      "林隆旋"
+    ],
+    "roles": [
+      "composer"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-liang-hong-zhi",
+    "slug": "liang-hong-zhi",
+    "displayName": "Liang Hong-zhi",
+    "nameOriginal": "梁弘志",
+    "aliases": [
+      "Liang Hongzhi",
+      "梁弘志"
+    ],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-lu-szu-chih",
+    "slug": "lu-szu-chih",
+    "displayName": "Lu Szu-chih",
+    "nameOriginal": "呂思志",
+    "aliases": [
+      "Lu Sizhi",
+      "吕思志"
+    ],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-chang-hong-yi",
+    "slug": "chang-hong-yi",
+    "displayName": "Chang Hong-yi",
+    "nameOriginal": "張弘毅",
+    "aliases": [
+      "Zhang Hongyi",
+      "张弘毅"
+    ],
+    "roles": [
+      "composer"
+    ],
+    "sources": [],
+    "notes": "Credited on Chyi Yu records.",
+    "status": "partial"
+  },
+  {
+    "id": "person-john-denver",
+    "slug": "john-denver",
+    "displayName": "John Denver",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-gavin-sutherland",
+    "slug": "gavin-sutherland",
+    "displayName": "Gavin Sutherland",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-maurizio-seymandi",
+    "slug": "maurizio-seymandi",
+    "displayName": "Maurizio Seymandi",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-francesco-specchia",
+    "slug": "francesco-specchia",
+    "displayName": "Francesco Specchia",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-alberto-salerno",
+    "slug": "alberto-salerno",
+    "displayName": "Alberto Salerno",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-ciro-dammicco",
+    "slug": "ciro-dammicco",
+    "displayName": "Ciro Dammicco (Zacar)",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-dario-baldan-bembo",
+    "slug": "dario-baldan-bembo",
+    "displayName": "Dario Baldan Bembo",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-pete-seeger",
+    "slug": "pete-seeger",
+    "displayName": "Pete Seeger",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-hamilton",
+    "slug": "hamilton",
+    "displayName": "Hamilton",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-zilphia-horton",
+    "slug": "zilphia-horton",
+    "displayName": "Zilphia Horton",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-guy-carawan",
+    "slug": "guy-carawan",
+    "displayName": "Guy Carawan",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-joe-brooks",
+    "slug": "joe-brooks",
+    "displayName": "Joe Brooks",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-gordon-lorenz",
+    "slug": "gordon-lorenz",
+    "displayName": "Gordon Lorenz",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-eleanor-farjeon",
+    "slug": "eleanor-farjeon",
+    "displayName": "Eleanor Farjeon",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-hank-williams-sr",
+    "slug": "hank-williams-sr",
+    "displayName": "Hank Williams Sr.",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-stuart-k-hine",
+    "slug": "stuart-k-hine",
+    "displayName": "Stuart K. Hine",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-sarah-mclachlan",
+    "slug": "sarah-mclachlan",
+    "displayName": "Sarah McLachlan",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-haven-gillespie",
+    "slug": "haven-gillespie",
+    "displayName": "Haven Gillespie",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-j-fred-coots",
+    "slug": "j-fred-coots",
+    "displayName": "J. Fred Coots",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-irving-berlin",
+    "slug": "irving-berlin",
+    "displayName": "Irving Berlin",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-artie-glenn",
+    "slug": "artie-glenn",
+    "displayName": "Artie Glenn",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-jimmy-seals",
+    "slug": "jimmy-seals",
+    "displayName": "Jimmy Seals",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-dan-crofts",
+    "slug": "dan-crofts",
+    "displayName": "Dan Crofts",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-johnny-chen",
+    "slug": "johnny-chen",
+    "displayName": "Johnny Chen",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-amanda-mcbroom",
+    "slug": "amanda-mcbroom",
+    "displayName": "Amanda McBroom",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-frank-myers",
+    "slug": "frank-myers",
+    "displayName": "Frank Myers",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-gary-baker",
+    "slug": "gary-baker",
+    "displayName": "Gary Baker",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
   }
 ]

@@ -1,4 +1,5 @@
 import { byId, people, releaseCategoryTags } from "./archive";
+import type { AlbumRecord } from "./archive";
 import type {
   Appearance,
   Concert,
@@ -428,6 +429,13 @@ export function originalReleaseTitle(release: Release): string {
     return release.titleLocalized?.en || release.title;
   }
   return release.titleOriginal || release.title;
+}
+
+export function originalAlbumTitle(album: AlbumRecord): string {
+  if (album.id.startsWith("appearance-")) {
+    return album.titleOriginal || album.title;
+  }
+  return originalReleaseTitle(album as Release);
 }
 
 export function originalTrackTitle(track: Track): string {

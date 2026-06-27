@@ -1,5 +1,6 @@
 ---
-import type { SongSummary } from "../lib/archive";
+import type { SongSummary, AlbumRecord } from "../lib/archive";
+import { albumHref } from "../lib/archive";
 import RecordStatus from "./RecordStatus.astro";
 import {
   countValues,
@@ -13,6 +14,7 @@ import {
   valueForLocale,
   originalSongTitle,
   originalReleaseTitle,
+  originalAlbumTitle,
   originalTrackTitle
 } from "../lib/i18n";
 
@@ -28,7 +30,7 @@ const origin = originValues(summary.originLabel);
 const primaryAlbum = summary.albumReleases[0];
 const albumLabel = primaryAlbum
   ? joinValues([
-      textValues(originalReleaseTitle(primaryAlbum)),
+      textValues(originalAlbumTitle(primaryAlbum)),
       summary.albumReleases.length > 1
         ? textValues(`+ ${summary.albumReleases.length - 1} more`, `另 ${summary.albumReleases.length - 1} 張`, `另 ${summary.albumReleases.length - 1} 张`)
         : ""
@@ -63,33 +65,34 @@ const credits = joinValues([personIdsValues(summary.song.lyricsBy), personIdsVal
 
     <div class="nested-links">
       <h3 {...i18nAttrs(uiText("label.albums"))}>{valueForLocale(uiText("label.albums"))}</h3>
-      {summary.releasePlacements.length ? (
-        summary.releasePlacements.map((placement) => {
-          const releaseTitleText = originalReleaseTitle(placement.release);
-          const label = [
-            releaseTitleText,
-            placement.track.disc ? `D${placement.track.disc}` : "",
-            placement.track.position ? String(placement.track.position) : ""
-          ].filter(Boolean).join(" / ");
-          const trackDiffers = placement.track.titleOnRelease !== summary.song.title;
+      {summary.albumReleases.length ? (
+        summary.albumReleases.map((album: AlbumRecord) => {
+          const placement = summary.releasePlacements.find((p) => p.release.id === album.id);
+          if (placement) {
+            const releaseTitleText = originalReleaseTitle(placement.release);
+            const label = [
+              releaseTitleText,
+              placement.track.disc ? `D${placement.track.disc}` : "",
+              placement.track.position ? String(placement.track.position) : ""
+            ].filter(Boolean).join(" / ");
+            const trackDiffers = placement.track.titleOnRelease !== summary.song.title;
+            return (
+              <p>
+                <a href={placement.href}>{label}</a>
+                {trackDiffers ? (
+                  <>
+                    {" / "}
+                    <span>{originalTrackTitle(placement.track)}</span>
+                  </>
+                ) : ""}
+              </p>
+            );
+          }
+          const albumDate = "releaseDate" in album ? album.releaseDate : ("date" in album ? album.date : undefined);
           return (
             <p>
-              <a href={placement.href}>{label}</a>
-              {trackDiffers ? (
-                <>
-                  {" / "}
-                  <span>{originalTrackTitle(placement.track)}</span>
-                </>
-              ) : ""}
-            </p>
-          );
-        })
-      ) : summary.albumReleases.length ? (
-        summary.albumReleases.map((release) => {
-          return (
-            <p>
-              <a href={`/releases/${release.slug}/`}>{originalReleaseTitle(release)}</a>
-              {release.releaseDate ? ` / ${release.releaseDate}` : ""}
+              <a href={albumHref(album)}>{originalAlbumTitle(album)}</a>
+              {albumDate ? ` / ${albumDate}` : ""}
             </p>
           );
         })

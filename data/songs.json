@@ -19,13 +19,19 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-olive-tree-1979",
     "relatedReleases": [
-      "release-olive-tree-1979"
+      "release-dare-to-love-1994",
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong",
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
     ],
-    "knownMusicShows": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
     "mediaLinks": [],
     "sources": [
       "source-wikipedia-en-chyi-yu",
@@ -56,11 +62,13 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-olive-tree-1979",
     "relatedReleases": [
-      "release-olive-tree-1979"
+      "release-dare-to-love-1994",
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong",
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -92,13 +100,17 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-olive-tree-1979",
     "relatedReleases": [
-      "release-olive-tree-1979"
+      "release-dare-to-love-1994",
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong",
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
     ],
-    "knownMusicShows": [],
+    "knownMusicShows": [
+      "music-show-singer-2019"
+    ],
     "mediaLinks": [],
     "sources": [
       "source-wikipedia-yue-olive-tree-album",
@@ -126,11 +138,13 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-olive-tree-1979",
     "relatedReleases": [
-      "release-olive-tree-1979"
+      "release-dare-to-love-1994",
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong",
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -166,11 +180,15 @@
     ],
     "firstKnownRelease": "release-echo-1985",
     "relatedReleases": [
-      "release-echo-1985"
+      "release-dare-to-love-1994",
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong",
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -205,11 +223,14 @@
       "person-chen-chih-yuan"
     ],
     "firstKnownRelease": "release-echo-1985",
-    "relatedReleases": [
-      "release-echo-1985"
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
     ],
-    "knownConcerts": [],
-    "knownMusicShows": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
     "mediaLinks": [],
     "sources": [
       "source-wikipedia-yue-echo-album",
@@ -241,9 +262,7 @@
     ],
     "arrangedBy": [],
     "firstKnownRelease": "release-echo-1985",
-    "relatedReleases": [
-      "release-echo-1985"
-    ],
+    "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [
       "music-show-singer-2019"
@@ -283,13 +302,18 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-camel-bird-fish-1997",
     "relatedReleases": [
-      "release-camel-bird-fish-1997"
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong",
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
     ],
-    "knownMusicShows": [],
+    "knownMusicShows": [
+      "music-show-singer-2019"
+    ],
     "mediaLinks": [],
     "sources": [
       "source-wikipedia-yue-camel-bird-fish",
@@ -316,11 +340,12 @@
     "composedBy": [],
     "arrangedBy": [],
     "firstKnownRelease": "release-camel-bird-fish-1997",
-    "relatedReleases": [
-      "release-camel-bird-fish-1997"
-    ],
+    "relatedReleases": [],
     "knownConcerts": [
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -352,10 +377,11 @@
     ],
     "arrangedBy": [],
     "firstKnownRelease": "release-camel-bird-fish-1997",
-    "relatedReleases": [
-      "release-camel-bird-fish-1997"
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
     ],
-    "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": [
@@ -380,11 +406,15 @@
     "composedBy": [],
     "arrangedBy": [],
     "relatedReleases": [
-      "release-stories-1987"
+      "release-dare-to-dream-1994",
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong",
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -411,11 +441,13 @@
     "composedBy": [],
     "arrangedBy": [],
     "relatedReleases": [
-      "release-whoever-finds-this-i-love-you-1988"
+      "release-dare-to-dream-1994",
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong",
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
     ],
     "knownMusicShows": [
       "music-show-dream-star-partner-2013"
@@ -450,12 +482,19 @@
       "person-luo-dayou"
     ],
     "arrangedBy": [],
-    "relatedReleases": [],
+    "relatedReleases": [
+      "release-the-unheard-of-chyi-2003"
+    ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong",
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
     ],
-    "knownMusicShows": [],
+    "knownMusicShows": [
+      "music-show-dream-star-partner-2013"
+    ],
     "mediaLinks": [],
     "sources": [
       "source-bilibili-unheard-full-hd",
@@ -469,7 +508,8 @@
     "titleLocalized": {
       "en": "Boat Song",
       "zh-Hant": "船歌"
-    }
+    },
+    "firstKnownRelease": "release-dare-to-love-1994"
   },
   {
     "id": "song-li-xianglan",
@@ -501,7 +541,8 @@
       "en": "Li Xianglan",
       "zh-Hant": "李香蘭",
       "zh-Hans": "李香兰"
-    }
+    },
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003"
   },
   {
     "id": "song-zui-ai",
@@ -518,9 +559,12 @@
     "relatedReleases": [],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong",
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
     ],
-    "knownMusicShows": [],
+    "knownMusicShows": [
+      "music-show-singer-2019"
+    ],
     "mediaLinks": [],
     "sources": [
       "source-bilibili-unheard-full-hd",
@@ -532,7 +576,8 @@
       "en": "Most Beloved",
       "zh-Hant": "最愛",
       "zh-Hans": "最爱"
-    }
+    },
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003"
   },
   {
     "id": "song-friendship",
@@ -578,7 +623,10 @@
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -604,17 +652,18 @@
     ],
     "language": "Mandarin",
     "lyricsBy": [
-      "鄭愁予"
+      "person-zheng-chouyu"
     ],
     "composedBy": [
       "person-li-tai-hsiang"
     ],
     "arrangedBy": [],
     "relatedReleases": [
-      "release-only-you-1984"
+      "release-dare-to-love-1994"
     ],
     "knownConcerts": [
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -704,7 +753,7 @@
     "aliases": [],
     "language": "Mandarin",
     "lyricsBy": [
-      "王小虎"
+      "person-wang-xiaohu"
     ],
     "composedBy": [
       "person-li-tai-hsiang"
@@ -712,7 +761,8 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-blessing-1982",
     "relatedReleases": [
-      "release-blessing-1982"
+      "release-angels-poem-1998",
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong"
@@ -747,10 +797,11 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-blessing-1982",
     "relatedReleases": [
-      "release-blessing-1982"
+      "release-angels-poem-1998"
     ],
     "knownConcerts": [
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -776,7 +827,7 @@
     ],
     "language": "Mandarin",
     "lyricsBy": [
-      "侯德健"
+      "person-hou-dejian"
     ],
     "composedBy": [
       "person-li-tai-hsiang"
@@ -784,10 +835,11 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-you-are-all-my-memories-1983",
     "relatedReleases": [
-      "release-you-are-all-my-memories-1983"
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-chengdu-2025"
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -814,7 +866,7 @@
     ],
     "language": "Mandarin",
     "lyricsBy": [
-      "李敏勇"
+      "person-li-minyong"
     ],
     "composedBy": [
       "person-li-tai-hsiang"
@@ -822,7 +874,7 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-only-you-1984",
     "relatedReleases": [
-      "release-only-you-1984"
+      "release-dare-to-love-1994"
     ],
     "knownConcerts": [],
     "knownMusicShows": [],
@@ -848,19 +900,23 @@
     "aliases": [],
     "language": "Mandarin",
     "lyricsBy": [
-      "陳克華"
+      "person-chen-ke-hua"
     ],
     "composedBy": [
-      "虹"
+      "person-hong"
     ],
     "arrangedBy": [],
     "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
     "relatedReleases": [
-      "release-you-meiyou-zhe-zhong-shuofa-1988"
+      "release-dare-to-love-1994",
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong",
-      "concert-grace-still-beijing-2025"
+      "concert-grace-still-beijing-2025",
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-chengdu-2025",
+      "concert-grace-still-changsha-2026"
     ],
     "knownMusicShows": [
       "music-show-dream-star-partner-2013"
@@ -891,12 +947,13 @@
       "person-chyi-yu"
     ],
     "composedBy": [
-      "虹"
+      "person-hong"
     ],
     "arrangedBy": [],
     "firstKnownRelease": "release-you-meiyou-zhe-zhong-shuofa-1988",
     "relatedReleases": [
-      "release-you-meiyou-zhe-zhong-shuofa-1988"
+      "release-dare-to-love-1994",
+      "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong"
@@ -924,7 +981,6 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-stories-1987",
     "relatedReleases": [
-      "release-stories-1987",
       "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
@@ -951,9 +1007,10 @@
       "zh-Hant": "誰撿到這張紙條 我愛你",
       "zh-Hans": "谁捡到这张纸条 我爱你"
     },
-    "titleOriginal": "誰撿到這張紙條 我愛你",
+    "titleOriginal": "Whoever Finds This, I Love You",
     "aliases": [
-      "Whoever Finds This I Love You"
+      "Whoever Finds This I Love You",
+      "誰撿到這張紙條 我愛你"
     ],
     "language": "English",
     "lyricsBy": [],
@@ -961,8 +1018,8 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
     "relatedReleases": [
-      "release-whoever-finds-this-i-love-you-1988",
-      "release-the-unheard-of-chyi-2003"
+      "release-the-unheard-of-chyi-2003",
+      "release-dare-to-dream-1994"
     ],
     "knownConcerts": [
       "concert-unheard-of-chyi-2002-hong-kong"
@@ -986,9 +1043,10 @@
       "zh-Hant": "花兒都到哪兒去了？",
       "zh-Hans": "花儿都到哪儿去了？"
     },
-    "titleOriginal": "花兒都到哪兒去了？",
+    "titleOriginal": "Where Have All the Flowers Gone?",
     "aliases": [
-      "Where Have All The Flowers Gone"
+      "Where Have All The Flowers Gone",
+      "花兒都到哪兒去了？"
     ],
     "language": "English",
     "lyricsBy": [],
@@ -996,7 +1054,6 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
     "relatedReleases": [
-      "release-where-have-all-the-flowers-gone-1990",
       "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
@@ -1026,7 +1083,6 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-chyis-tears-1996",
     "relatedReleases": [
-      "release-chyis-tears-1996",
       "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
@@ -1059,10 +1115,11 @@
     "composedBy": [],
     "arrangedBy": [],
     "firstKnownRelease": "release-chyis-tears-1996",
-    "relatedReleases": [
-      "release-chyis-tears-1996"
+    "relatedReleases": [],
+    "knownConcerts": [
+      "concert-grace-still-shenzhen-2026",
+      "concert-grace-still-changsha-2026"
     ],
-    "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": [
@@ -1086,7 +1143,6 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [
-      "release-cest-la-vie-1999",
       "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
@@ -1110,7 +1166,7 @@
       "en": "C'est La Vie",
       "zh-Hans": "这就是人生"
     },
-    "titleOriginal": "这就是人生",
+    "titleOriginal": "C'est La Vie",
     "aliases": [
       "这就是人生"
     ],
@@ -1120,7 +1176,6 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [
-      "release-cest-la-vie-1999",
       "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [
@@ -1152,7 +1207,6 @@
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [
-      "release-cest-la-vie-1999",
       "release-the-unheard-of-chyi-2003"
     ],
     "knownConcerts": [],
@@ -1177,9 +1231,8 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "firstKnownRelease": "release-i-swear-1996",
+    "firstKnownRelease": "appearance-i-swear-1996",
     "relatedReleases": [
-      "release-i-swear-1996",
       "release-cest-la-vie-1999"
     ],
     "knownConcerts": [],
@@ -1206,10 +1259,8 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "firstKnownRelease": "release-wonderful-world-1997",
-    "relatedReleases": [
-      "release-wonderful-world-1997"
-    ],
+    "firstKnownRelease": "appearance-wonderful-world-1997",
+    "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -1233,10 +1284,8 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "firstKnownRelease": "release-wonderful-world-1997",
-    "relatedReleases": [
-      "release-wonderful-world-1997"
-    ],
+    "firstKnownRelease": "appearance-wonderful-world-1997",
+    "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -1288,9 +1337,7 @@
     ],
     "composedBy": [],
     "arrangedBy": [],
-    "relatedReleases": [
-      "release-one-thought-between-2025"
-    ],
+    "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -1300,7 +1347,8 @@
       "source-netease-cloud-music-one-thought-between-2025"
     ],
     "status": "partial",
-    "notes": "One of the two 2025 Wu Tsing-fong and Chyi Yu collaboration-single versions. Checked sources confirm Chyi Yu as lyricist; composer credit remains unresolved."
+    "notes": "One of the two 2025 Wu Tsing-fong and Chyi Yu collaboration-single versions. Checked sources confirm Chyi Yu as lyricist; composer credit remains unresolved.",
+    "firstKnownRelease": "release-one-thought-between-2025"
   },
   {
     "id": "song-one-thought-between-in-air",
@@ -1319,9 +1367,7 @@
     ],
     "composedBy": [],
     "arrangedBy": [],
-    "relatedReleases": [
-      "release-one-thought-between-2025"
-    ],
+    "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
@@ -1331,6 +1377,7 @@
       "source-netease-cloud-music-one-thought-between-2025"
     ],
     "status": "partial",
-    "notes": "One of the two 2025 Wu Tsing-fong and Chyi Yu collaboration-single versions. Checked sources confirm Chyi Yu as lyricist; composer credit remains unresolved."
+    "notes": "One of the two 2025 Wu Tsing-fong and Chyi Yu collaboration-single versions. Checked sources confirm Chyi Yu as lyricist; composer credit remains unresolved.",
+    "firstKnownRelease": "release-one-thought-between-2025"
   }
 ]
