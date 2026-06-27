@@ -318,6 +318,10 @@ export function releaseFormatLabels(release: Release) {
   ].filter(Boolean);
 }
 
+export function hasPhysicalPurchaseLinks(release: Release) {
+  return Boolean(release.availability?.purchase?.some((link) => link.kind === "purchase"));
+}
+
 export function releaseAvailabilityChecks(release: Release) {
   const checks: Array<[string, boolean]> = [
     ["CD", release.formats.includes("CD")],
@@ -326,7 +330,7 @@ export function releaseAvailabilityChecks(release: Release) {
     ["Cassette", release.formats.includes("cassette")],
     ["Streaming", Boolean(release.availability?.streaming?.length)]
   ];
-  if (release.availability?.purchase?.length) {
+  if (hasPhysicalPurchaseLinks(release)) {
     checks.push(["Buy", true]);
   }
   return checks;
@@ -373,8 +377,6 @@ export function releaseCategoryTags(release: Release) {
   if (release.releaseType === "collaboration") tags.add("collaboration");
   if (release.releaseType === "live-album") tags.add("live");
   if (release.releaseType === "reissue") tags.add("reissue");
-  if (release.releaseType === "other") tags.add("other");
-
   if (
     englishCoverReleaseIds.has(release.id) ||
     text.includes("english-language") ||
@@ -392,6 +394,10 @@ export function releaseCategoryTags(release: Release) {
     text.includes("sutra")
   ) {
     tags.add("religious");
+  }
+
+  if (!tags.size) {
+    tags.add("other");
   }
 
   return Array.from(tags);

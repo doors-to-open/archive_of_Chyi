@@ -19,6 +19,7 @@ const appearances = readJson("data/appearances.json");
 const songs = readJson("data/songs.json");
 const people = readJson("data/people.json");
 const sources = readJson("data/sources.json");
+const archiveSource = fs.readFileSync(path.join(root, "src/lib/archive.ts"), "utf8");
 
 const sourceIds = new Set(sources.map((source) => source.id));
 const songIds = new Set(songs.map((song) => song.id));
@@ -110,15 +111,31 @@ function validateLinks(links, label) {
   }
 }
 
+function validateArchiveHelperSemantics() {
+  if (/release\.releaseType\s*===\s*["']other["'][\s\S]{0,120}tags\.add\(["']other["']\)/.test(archiveSource)) {
+    addError('releaseCategoryTags must treat "other" as a fallback only');
+  }
+}
+
+function validatePhysicalPurchaseSemantics(release) {
+  for (const [index, link] of (release.availability?.purchase || []).entries()) {
+    if (link.kind !== "purchase") {
+      addError(`Release ${release.id} purchase link ${index + 1} must use kind "purchase" so Buy means physical purchase only`);
+    }
+  }
+}
+
 expectUnique(releases, "id", "Release");
 expectUnique(releases, "slug", "Release");
 expectUnique(appearances, "id", "Appearance");
 expectUnique(appearances, "slug", "Appearance");
+validateArchiveHelperSemantics();
 
 for (const release of releases) {
   validateSourceRefs(release, "Release");
   validateLinks(release.availability?.streaming, `Release ${release.id} streaming`);
   validateLinks(release.availability?.purchase, `Release ${release.id} purchase`);
+  validatePhysicalPurchaseSemantics(release);
 
   if (release.releaseType === "soundtrack") {
     addError(`Release ${release.id} is still modeled as soundtrack; soundtrack vocal appearances belong in appearances`);

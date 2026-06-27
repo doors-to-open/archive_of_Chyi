@@ -24,7 +24,6 @@ import {
   personIdValues,
   personIdsValues,
   releaseCategoryValues,
-  releaseTypeValues,
   titleValues,
   uiText,
   valueForLocale,
@@ -82,16 +81,14 @@ const releaseFilterOptions = [
         </div>
       </fieldset>
 
-      <fieldset class="filter-option-group release-filter-group">
-        <legend {...i18nAttrs(uiText("label.category"))}>{valueForLocale(uiText("label.category"))}</legend>
-        <div class="filter-options" data-filter-options data-filter-key="release-tags">
-          {releaseFilterOptions.map((option, index) => (
-            <button type="button" data-filter-option data-filter-value={option.value} aria-pressed={index === 0 ? "true" : "false"}>
-              <span {...i18nAttrs(option.label)}>{valueForLocale(option.label)}</span>
-            </button>
+      <label class="release-filter-select-label">
+        <span {...i18nAttrs(uiText("label.category"))}>{valueForLocale(uiText("label.category"))}</span>
+        <select data-filter-select data-filter-key="release-tags">
+          {releaseFilterOptions.map((option) => (
+            <option value={option.value} {...i18nAttrs(option.label)}>{valueForLocale(option.label)}</option>
           ))}
-        </div>
-      </fieldset>
+        </select>
+      </label>
 
       <fieldset class="filter-option-group sort-option-group">
         <legend {...i18nAttrs(uiText("label.sort"))}>{valueForLocale(uiText("label.sort"))}</legend>
@@ -136,7 +133,6 @@ const releaseFilterOptions = [
         const releaseTags = releaseCategoryTags(release);
         const primaryCategory = releasePrimaryCategory(release);
         const categoryValues = releaseCategoryValues(primaryCategory);
-        const typeValues = releaseTypeValues(release.releaseType);
         return (
           <a
             class="record-card"
@@ -166,9 +162,6 @@ const releaseFilterOptions = [
               </span>
               <span {...i18nAttrs(labelValueValues("label.category", categoryValues))}>
                 {valueForLocale(labelValueValues("label.category", categoryValues))}
-              </span>
-              <span {...i18nAttrs(labelValueValues("label.type", typeValues))}>
-                {valueForLocale(labelValueValues("label.type", typeValues))}
               </span>
               <span {...i18nAttrs(countValues(release.tracks.length, "count.song", "count.songs"))}>
                 {valueForLocale(countValues(release.tracks.length, "count.song", "count.songs"))}

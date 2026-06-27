@@ -1272,42 +1272,6 @@
     "notes": "NetEase public album search matched the release to album id 28241; platform publish date returned 2003-03-31."
   },
   {
-    "id": "source-itunes-lookup-purchase-olive-tree-1979",
-    "sourceType": "platform",
-    "title": "The Olive Tree iTunes purchase availability",
-    "authorOrPublisher": "Apple iTunes Search API",
-    "date": null,
-    "url": "https://itunes.apple.com/lookup?id=1894989610",
-    "accessDate": "2026-06-26",
-    "citation": "Apple iTunes Search API. \"橄欖樹.\"",
-    "reliability": "high",
-    "notes": "Lookup for Taiwan, Hong Kong, and United States returned collection prices (9.99 USD / 200 TWD / 58 HKD) and region-specific Apple Music/iTunes album URLs."
-  },
-  {
-    "id": "source-itunes-lookup-purchase-echo-1985",
-    "sourceType": "platform",
-    "title": "Echo iTunes purchase availability",
-    "authorOrPublisher": "Apple iTunes Search API",
-    "date": null,
-    "url": "https://itunes.apple.com/lookup?id=152297986",
-    "accessDate": "2026-06-26",
-    "citation": "Apple iTunes Search API. \"回聲.\"",
-    "reliability": "high",
-    "notes": "Lookup for Taiwan, Hong Kong, and United States returned collection prices (7.59 USD / 200 TWD / 55 HKD) and region-specific Apple Music/iTunes album URLs."
-  },
-  {
-    "id": "source-itunes-lookup-purchase-camel-bird-fish-1997",
-    "sourceType": "platform",
-    "title": "Camel Bird Fish iTunes purchase availability",
-    "authorOrPublisher": "Apple iTunes Search API",
-    "date": null,
-    "url": "https://itunes.apple.com/lookup?id=161876832",
-    "accessDate": "2026-06-26",
-    "citation": "Apple iTunes Search API. \"駱駝飛鳥魚.\"",
-    "reliability": "high",
-    "notes": "Lookup for Taiwan, Hong Kong, and United States returned collection prices (8.28 USD / 200 TWD / 58 HKD) and region-specific Apple Music/iTunes album URLs."
-  },
-  {
     "id": "source-wikipedia-the-rose-song",
     "sourceType": "encyclopedia",
     "title": "The Rose (song)",
@@ -1330,5 +1294,41 @@
     "citation": "Wikipedia contributors. \"吴青峰.\" Wikipedia.",
     "reliability": "medium",
     "notes": "Used for the 2025 collaboration-single table row: 一念之間, release date 2025-09-12, co-vocal with 齊豫, two versions (在空中 and 在水中), and lyric credit to 齊豫."
+  },
+  {
+    "id": "source-qq-music-album-000n3tnl045i3n",
+    "sourceType": "platform",
+    "title": "上古情歌 on QQ Music",
+    "authorOrPublisher": "QQ Music",
+    "date": null,
+    "url": "https://y.qq.com/n/ryqq/albumDetail/000N3TNl045I3N",
+    "accessDate": "2026-06-26",
+    "citation": "QQ Music. \"上古情歌.\"",
+    "reliability": "high",
+    "notes": "QQ Music API returned albumMID 000N3TNl045I3N, publicTime 2019-12-25, one track, and singer 齐豫; album subtitle identifies the track as the 大明风华 television-drama interlude."
+  },
+  {
+    "id": "source-qq-music-album-0046qi8i2rasxn",
+    "sourceType": "platform",
+    "title": "快乐天堂 on QQ Music",
+    "authorOrPublisher": "QQ Music",
+    "date": null,
+    "url": "https://y.qq.com/n/ryqq/albumDetail/0046qI8I2raSXn",
+    "accessDate": "2026-06-26",
+    "citation": "QQ Music. \"快乐天堂.\"",
+    "reliability": "high",
+    "notes": "QQ Music API returned albumMID 0046qI8I2raSXn, publicTime 1987-01-15, and 11 tracks; Chyi Yu appears on 快乐天堂 and 让它自由."
+  },
+  {
+    "id": "source-wikipedia-zh-ming-tian-hui-geng-hao",
+    "sourceType": "encyclopedia",
+    "title": "明天會更好",
+    "authorOrPublisher": "Wikipedia contributors",
+    "date": null,
+    "url": "https://zh.wikipedia.org/wiki/%E6%98%8E%E5%A4%A9%E6%9C%83%E6%9B%B4%E5%A5%BD",
+    "accessDate": "2026-06-26",
+    "citation": "Wikipedia contributors. \"明天會更好.\" Wikipedia.",
+    "reliability": "medium",
+    "notes": "Used narrowly for Mandarin 作詞 and 作曲 credits: 羅大佑、張大春、許乃勝、李壽全、邱復生、張艾嘉、詹宏志; music by 羅大佑."
   }
 ]
