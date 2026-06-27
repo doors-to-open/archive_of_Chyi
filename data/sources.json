@@ -1954,5 +1954,41 @@
     "citation": "NetEase Cloud Music. \"天下有情人.\"",
     "reliability": "high",
     "notes": "Public song metadata credits Wakin Chau and Chyi Yu and identifies the song as the Mandarin theme-song version for the 1995 TVB 神雕侠侣 series."
+  },
+  {
+    "id": "source-qq-music-album-002dwrft4nl5hz",
+    "sourceType": "platform",
+    "title": "流金岁月 on QQ Music",
+    "authorOrPublisher": "QQ Music",
+    "date": null,
+    "url": "https://y.qq.com/n/ryqq/albumDetail/002dWrfT4Nl5hZ",
+    "accessDate": "2026-06-27",
+    "citation": "QQ Music. \"流金岁月.\"",
+    "reliability": "high",
+    "notes": "Resolved from the maintainer-supplied QQ Music short link https://c6.y.qq.com/base/fcgi-bin/u?__=dmpKGOI4HeZf. Public MusicU album-songlist metadata returned albumID 15591314, albumMID 002dWrfT4Nl5hZ, publicTime 2020-11-17, and 3 tracks including 流金岁月 (电影原声版)."
+  },
+  {
+    "id": "source-wikipedia-en-no7-cherry-lane",
+    "sourceType": "encyclopedia",
+    "title": "No.7 Cherry Lane",
+    "authorOrPublisher": "Wikipedia contributors",
+    "date": null,
+    "url": "https://en.wikipedia.org/wiki/No.7_Cherry_Lane",
+    "accessDate": "2026-06-27",
+    "citation": "Wikipedia contributors. \"No.7 Cherry Lane.\" Wikipedia.",
+    "reliability": "medium",
+    "notes": "Used as a secondary cross-check for the English film title and 2019 Hong Kong-Chinese animated-film identity; music placement is sourced separately from platform metadata and project-maintainer review."
+  },
+  {
+    "id": "source-wikipedia-zh-no7-cherry-lane",
+    "sourceType": "encyclopedia",
+    "title": "繼園臺七號",
+    "authorOrPublisher": "Wikipedia contributors",
+    "date": null,
+    "url": "https://zh.wikipedia.org/wiki/%E7%B9%BC%E5%9C%92%E8%87%BA%E4%B8%83%E8%99%9F",
+    "accessDate": "2026-06-27",
+    "citation": "Wikipedia contributors. \"繼園臺七號.\" Wikipedia.",
+    "reliability": "medium",
+    "notes": "Used as a secondary cross-check for the traditional Chinese film title and 2019 Hong Kong animated-film identity; music placement is sourced separately from platform metadata and project-maintainer review."
   }
 ]

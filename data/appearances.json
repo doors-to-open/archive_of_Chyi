@@ -630,17 +630,17 @@
   },
   {
     "id": "appearance-liu-jin-sui-yue-ost",
-    "slug": "liu-jin-sui-yue-ost",
-    "title": "Liu Jin Sui Yue OST",
-    "titleOriginal": "流金岁月 OST",
+    "slug": "no7-cherry-lane-ost",
+    "title": "No.7 Cherry Lane OST",
+    "titleOriginal": "繼園臺七號 OST",
     "titleLocalized": {
-      "en": "Liu Jin Sui Yue OST",
-      "zh-Hant": "流金歲月 OST",
-      "zh-Hans": "流金岁月 OST"
+      "en": "No.7 Cherry Lane OST",
+      "zh-Hant": "繼園臺七號 OST",
+      "zh-Hans": "继园台七号 OST"
     },
     "date": "2020-11-17",
     "appearanceType": "soundtrack",
-    "programOrWork": "流金岁月",
+    "programOrWork": "繼園臺七號",
     "role": "OST vocal appearance",
     "relatedSongs": [],
     "tracks": [
@@ -657,12 +657,12 @@
         "performers": [
           "person-chyi-yu"
         ],
-        "duration": "3:09",
+        "duration": "3:08",
         "credits": {
           "lyricsBy": [],
           "composedBy": []
         },
-        "notes": "NetEase Cloud Music exposes this Chyi Yu track as the film-soundtrack version. The platform album also lists piano and string versions that are not modeled as Chyi Yu vocal appearances pending fuller credit verification."
+        "notes": "QQ Music, NetEase Cloud Music, and Kugou expose this Chyi Yu track as the film-soundtrack version. The platform album also lists piano and string versions that are not modeled as Chyi Yu vocal appearances pending fuller credit verification."
       }
     ],
     "mediaLinks": [
@@ -681,13 +681,24 @@
         "kind": "streaming",
         "isOfficial": true,
         "accessRegion": "China mainland"
+      },
+      {
+        "label": "QQ Music album",
+        "platform": "qq-music",
+        "url": "https://y.qq.com/n/ryqq/albumDetail/002dWrfT4Nl5hZ",
+        "kind": "streaming",
+        "isOfficial": true,
+        "accessRegion": "China mainland"
       }
     ],
     "sources": [
       "source-netease-cloud-music-liu-jin-sui-yue-2020",
-      "source-kugou-liu-jin-sui-yue-2020"
+      "source-kugou-liu-jin-sui-yue-2020",
+      "source-qq-music-album-002dwrft4nl5hz",
+      "source-wikipedia-en-no7-cherry-lane",
+      "source-wikipedia-zh-no7-cherry-lane"
     ],
-    "notes": "Added as a soundtrack appearance because NetEase lists the lead Chyi Yu track as 流金岁月 (电影原声版). The exact work identity is kept to the platform title until a booklet or production source is found.",
+    "notes": "Modeled as a soundtrack appearance for 繼園臺七號 / No.7 Cherry Lane. QQ Music, NetEase Cloud Music, and Kugou verify the 2020-11-17 流金岁月 album/track metadata and the 电影原声版 track label; Wikipedia film pages are used only to corroborate the English and Chinese film-title identity. Full booklet/production credits remain unresolved.",
     "status": "partial"
   },
   {
