@@ -755,22 +755,6 @@ details[open].record-card summary::after {
   text-transform: none;
 }
 
-.format-checklist {
-  border-top: 1px solid var(--line-soft);
-  display: grid;
-  gap: 0.55rem;
-  margin-top: 1rem;
-  padding-top: 1rem;
-}
-
-.format-checklist h3 {
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 620;
-  margin: 0;
-  text-transform: uppercase;
-}
-
 @media (max-width: 620px) {
   .availability-grid-head {
     display: none;

@@ -11,6 +11,7 @@ import {
   releaseArtists,
   releaseCategoryTags,
   releasePrimaryCategory,
+  hasPhysicalPurchaseLinks,
   releaseFormatLabels,
   releaseProducers,
   releases,
@@ -29,7 +30,6 @@ import {
   personIdValues,
   personIdsValues,
   releaseCategoryValues,
-  releaseTypeValues,
   textValues,
   titleValues,
   trackTitleValues,
@@ -115,9 +115,11 @@ const releaseTags = releaseCategoryTags(release);
         <span {...i18nAttrs(labelValueValues("label.category", categoryValues))}>
           {valueForLocale(labelValueValues("label.category", categoryValues))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.type", releaseTypeValues(release.releaseType)))}>
-          {valueForLocale(labelValueValues("label.type", releaseTypeValues(release.releaseType)))}
-        </span>
+        {releaseFormatLabels(release).length ? (
+          <span {...i18nAttrs(labelValueValues("label.formats", releaseFormatLabels(release).join(", ")))}>
+            {valueForLocale(labelValueValues("label.formats", releaseFormatLabels(release).join(", ")))}
+          </span>
+        ) : null}
         <span {...i18nAttrs(labelValueValues("label.label", release.label || uiText("value.unknown")))}>
           {valueForLocale(labelValueValues("label.label", release.label || uiText("value.unknown")))}
         </span>
@@ -170,7 +172,7 @@ const releaseTags = releaseCategoryTags(release);
           <p class="empty-state" {...i18nAttrs(uiText("empty.noStreaming"))}>{valueForLocale(uiText("empty.noStreaming"))}</p>
         </>
       )}
-      {release.availability?.purchase?.length ? (
+      {hasPhysicalPurchaseLinks(release) ? (
         <div class="availability-link-grid">
           <h3 {...i18nAttrs(uiText("label.purchase"))}>{valueForLocale(uiText("label.purchase"))}</h3>
           <div class="availability-grid-head" aria-hidden="true">
@@ -178,7 +180,7 @@ const releaseTags = releaseCategoryTags(release);
             <span {...i18nAttrs(uiText("label.platform"))}>{valueForLocale(uiText("label.platform"))}</span>
           </div>
           <div class="availability-cells">
-            {groupedLinks(release.availability.purchase).map((group) => (
+            {groupedLinks(release.availability?.purchase).map((group) => (
               <div class="availability-cell">
                 <strong>{group.region}</strong>
                 <div class="platform-links">
@@ -201,16 +203,6 @@ const releaseTags = releaseCategoryTags(release);
       ) : (
         <p class="muted" {...i18nAttrs(uiText("empty.noPurchase"))}>{valueForLocale(uiText("empty.noPurchase"))}</p>
       )}
-      {releaseFormatLabels(release).length ? (
-        <div class="format-checklist">
-          <h3 {...i18nAttrs(uiText("label.physicalFormats"))}>{valueForLocale(uiText("label.physicalFormats"))}</h3>
-          <div class="availability-row availability-row-detail">
-            {releaseFormatLabels(release).map((format) => (
-              <span class="available">{format}</span>
-            ))}
-          </div>
-        </div>
-      ) : null}
     </section>
 
     <section class="section">
