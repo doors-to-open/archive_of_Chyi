@@ -479,11 +479,20 @@
         "kind": "streaming",
         "isOfficial": true,
         "accessRegion": "China mainland"
+      },
+      {
+        "label": "Spotify",
+        "platform": "spotify",
+        "url": "https://open.spotify.com/album/4uV2SfVqzQ9iq9h8w9L5a2",
+        "kind": "streaming",
+        "isOfficial": true,
+        "accessRegion": "Global"
       }
     ],
     "sources": [
       "source-qq-music-ming-tian-hui-geng-hao",
-      "source-wikipedia-zh-ming-tian-hui-geng-hao"
+      "source-wikipedia-zh-ming-tian-hui-geng-hao",
+      "source-spotify-ming-tian-hui-geng-hao-1985"
     ],
     "notes": "Moved from Releases to Appearances because this is a charity collaboration with many performers rather than a Chyi Yu-owned release.",
     "status": "partial"
