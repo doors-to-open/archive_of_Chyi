@@ -1591,7 +1591,10 @@
     "titleLocalized": {
       "en": "Amazing Grace"
     },
-    "aliases": [],
+    "aliases": [
+      "奇異恩典",
+      "奇异恩典"
+    ],
     "language": "English",
     "lyricsBy": [],
     "composedBy": [],
@@ -5013,7 +5016,9 @@
     "titleLocalized": {
       "zh-Hans": "十七岁"
     },
-    "aliases": [],
+    "aliases": [
+      "At Seventeen"
+    ],
     "language": "Mandarin",
     "lyricsBy": [],
     "composedBy": [],
@@ -5088,7 +5093,9 @@
     "titleLocalized": {
       "zh-Hans": "乔第"
     },
-    "aliases": [],
+    "aliases": [
+      "Geordie"
+    ],
     "language": "Mandarin",
     "lyricsBy": [],
     "composedBy": [],
@@ -6848,7 +6855,10 @@
     "titleLocalized": {
       "zh-Hans": "般若波罗蜜多心经"
     },
-    "aliases": [],
+    "aliases": [
+      "般若波羅密多心經",
+      "般若波羅蜜多心經"
+    ],
     "language": "Mandarin",
     "lyricsBy": [],
     "composedBy": [],
@@ -7021,7 +7031,9 @@
     "titleLocalized": {
       "zh-Hans": "莲花处处开"
     },
-    "aliases": [],
+    "aliases": [
+      "一念心清淨蓮花處處開"
+    ],
     "language": "Mandarin",
     "lyricsBy": [],
     "composedBy": [],
@@ -8005,7 +8017,9 @@
     "slug": "ai-de-zhen-yan",
     "title": "愛的箴言",
     "titleOriginal": "愛的箴言",
-    "aliases": [],
+    "aliases": [
+      "爱的笺言"
+    ],
     "language": "Mandarin",
     "lyricsBy": [],
     "composedBy": [],
@@ -8208,5 +8222,419 @@
     "sources": [],
     "notes": "Folk song performed at the 2004 齐家欢 Beijing concert. Concert cover-performance identity; release/credit details incomplete.",
     "status": "partial"
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-gun-gun-hong-chen",
+    "slug": "gun-gun-hong-chen",
+    "title": "滾滾紅塵",
+    "titleOriginal": "滚滚红尘",
+    "aliases": [
+      "滚滚红尘"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [
+      "person-luo-dayou"
+    ],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 陳淑樺/羅大佑, 1990 film 滾滾紅塵 theme. 羅大佑 composed. Concert cover-performance identity for statistics; Chyi Yu performs as a duet with Pan Yue-yun at Echo shows."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-zhui-meng-ren",
+    "slug": "zhui-meng-ren",
+    "title": "追夢人",
+    "titleOriginal": "追梦人",
+    "aliases": [
+      "追梦人"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [
+      "person-luo-dayou"
+    ],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 羅大佑, 1991 film 天若有情 theme. 羅大佑 composed. Concert cover-performance identity for statistics."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-tian-tang",
+    "slug": "tian-tang",
+    "title": "天堂",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 鄭怡, 1983. Concert cover-performance identity for statistics."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-tian-kong",
+    "slug": "tian-kong",
+    "title": "天空",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 王菲, 1994. Concert cover-performance identity for statistics; at fenghua-charity-2018 Chyi Yu sings harmony in a duet with 吳青峰."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-ai-de-dai-jia",
+    "slug": "ai-de-dai-jia",
+    "title": "愛的代價",
+    "titleOriginal": "爱的代价",
+    "aliases": [
+      "爱的代价"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [
+      "person-li-tsung-sheng"
+    ],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 李宗盛 (張艾嘉 first sang), 李宗盛 composed. Concert cover-performance identity for statistics."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-ming-tian-wo-yao-jia-gei-ni",
+    "slug": "ming-tian-wo-yao-jia-gei-ni",
+    "title": "明天我要嫁给你",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [
+      "person-wakin-chau"
+    ],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 周華健, 1993. 周華健 composed. Concert cover-performance identity for statistics; performed as a duet with 周華健 at gan-en-charity-2017."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-shen-mo-shi-jin",
+    "slug": "shen-mo-shi-jin",
+    "title": "沈默是金",
+    "titleOriginal": "沉默是金",
+    "aliases": [
+      "沉默是金"
+    ],
+    "language": "Cantonese",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 許冠傑/張國榮, 1988 Cantonese. Concert cover-performance identity for statistics; performed as a medley with 海海人生 at fenghua-charity-2018."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-hai-hai-ren-sheng",
+    "slug": "hai-hai-ren-sheng",
+    "title": "海海人生",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "Taiwanese",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 陳盈潔, 1988 Taiwanese. Concert cover-performance identity for statistics; performed as a medley with 沈默是金 at fenghua-charity-2018."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-yi-dong-de-xin",
+    "slug": "yi-dong-de-xin",
+    "title": "驛動的心",
+    "titleOriginal": "驿动的心",
+    "aliases": [
+      "驿动的心"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [
+      "person-liang-hong-zhi"
+    ],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 姜育恆, 1987. 梁弘志 composed. Concert cover-performance identity for statistics; performed as a group finale at jing-dian concerts."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-ye-lai-xiang",
+    "slug": "ye-lai-xiang",
+    "title": "夜來香",
+    "titleOriginal": "夜来香",
+    "aliases": [
+      "夜来香"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 李香蘭, 1944 classic. 黎錦光 composed. Concert cover-performance identity for statistics; part of an opening suite at fenghua-charity-2018."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-qi-shi-dou-shi-yi-yang",
+    "slug": "qi-shi-dou-shi-yi-yang",
+    "title": "其實都是一樣",
+    "titleOriginal": "其实都是一样",
+    "aliases": [
+      "其实都是一样"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 齊秦, 1990. Concert cover-performance identity for statistics; performed as a duet with 齊秦 at tian-shi-yu-lang-2008."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-and-i-love-you-so",
+    "slug": "and-i-love-you-so",
+    "title": "And I Love You So",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Cover; original performer Perry Como, 1975. Concert cover-performance identity for statistics; performed at mei-li-ren-sheng-1999-taipei."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-dancing-queen",
+    "slug": "dancing-queen",
+    "title": "Dancing Queen",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Cover; original performer ABBA, 1976. Concert cover-performance identity for statistics; group closing number at zhen-ai-nv-ren-2017-macau."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-when-will-i-see-you-again",
+    "slug": "when-will-i-see-you-again",
+    "title": "When Will I See You Again",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "English",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Cover; original performer The Three Degrees, 1974. Concert cover-performance identity for statistics; group number at zhen-ai-nv-ren-2017-macau."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-kan-wo-ting-wo",
+    "slug": "kan-wo-ting-wo",
+    "title": "看我聽我",
+    "titleOriginal": "看我看我",
+    "aliases": [
+      "看我看我"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Campus folk song (校園民歌). Concert cover-performance identity for statistics; performed as a duet with 趙詠華 at fenghua-charity-2018."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-fu-yun-you-zi",
+    "slug": "fu-yun-you-zi",
+    "title": "浮雲遊子",
+    "titleOriginal": "浮云游子",
+    "aliases": [
+      "浮云游子"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Campus folk song (校園民歌); 蘇來 composed, 陳明韶 original 1980. Concert cover-performance identity for statistics; performed as a duet with 趙詠華 at fenghua-charity-2018."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-feng-zhong-de-zao-chen",
+    "slug": "feng-zhong-de-zao-chen",
+    "title": "風中的早晨",
+    "titleOriginal": "风中的早晨",
+    "aliases": [
+      "风中的早晨"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Campus folk song (校園民歌); 王夢麟 composed/original 1980. Concert cover-performance identity for statistics; performed as a duet with 趙詠華 at fenghua-charity-2018."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-a-lan-na",
+    "slug": "a-lan-na",
+    "title": "阿蘭娜",
+    "titleOriginal": "阿兰娜",
+    "aliases": [
+      "阿兰娜"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Campus folk song (校園民歌). Concert cover-performance identity for statistics; part of an opening suite at fenghua-charity-2018."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-qian-gua",
+    "slug": "qian-gua",
+    "title": "牽掛",
+    "titleOriginal": "牵挂",
+    "aliases": [
+      "牵挂"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Campus folk song (校園民歌). Concert cover-performance identity for statistics; performed in a medley with 不曾告別 at Echo shows."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-wo-de-si-nian",
+    "slug": "wo-de-si-nian",
+    "title": "我的思念",
+    "titleOriginal": null,
+    "aliases": [],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Cover; original performer 蔡琴. Concert cover-performance identity for statistics; performed at echoes-back-2022."
+  },
+  {
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "status": "partial",
+    "id": "song-wu-yan-de-ge",
+    "slug": "wu-yan-de-ge",
+    "title": "無言的歌",
+    "titleOriginal": "无言的歌",
+    "aliases": [
+      "无言的歌"
+    ],
+    "language": "Mandarin",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "notes": "Cover-performance identity for statistics; original performer pending. Performed at echoes-back-2022."
   }
 ]

@@ -2986,5 +2986,29 @@
     "citation": null,
     "reliability": "medium",
     "notes": "Biography-style source mirroring the 2014-04-18 桃园少年辅育院 心幸福音乐会 mention."
+  },
+  {
+    "id": "source-cnw-zhen-ai-nv-ren-tour-setlist",
+    "sourceType": "news",
+    "title": "CNW setlist report on Power Woman 珍爱女人 concert tour structure",
+    "authorOrPublisher": "CNW News",
+    "date": "2010-11-22",
+    "url": "https://www.cnwnews.com/html/ent/cn_yykx/20101122/281172.html",
+    "accessDate": "2026-06-28",
+    "citation": null,
+    "reliability": "high",
+    "notes": "Describes the 珍爱女人 tour setlist structure: opening group medley (爱的笺言/是否), then each singer performs representative works. Explicitly names Chyi Yu performing 橄榄树 and 欢颜, and a 夢田 duet with Pan Yue-yun memorializing 三毛. Applies to the tour across cities."
+  },
+  {
+    "id": "source-jendow-zhen-ai-nv-ren-2011-beijing",
+    "sourceType": "encyclopedia-event",
+    "title": "Jendow wiki: Power Woman 珍爱女人 内地巡演 北京站",
+    "authorOrPublisher": "Jendow",
+    "date": null,
+    "url": "https://www.jendow.com.tw/wiki/Power%20Woman%E2%80%9C%E7%8F%8D%E6%84%9B%E5%A5%B3%E4%BA%BA%E2%80%9D%E5%85%A7%E5%9C%B0%E5%B7%A1%E6%BC%94%E5%8C%97%E4%BA%AC%E7%AB%99",
+    "accessDate": "2026-06-28",
+    "citation": null,
+    "reliability": "medium-high",
+    "notes": "Confirms Beijing stop and the 夢田 duet with Pan Yue-yun memorializing 三毛's 20th death anniversary."
   }
 ]

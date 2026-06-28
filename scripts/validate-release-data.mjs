@@ -274,17 +274,38 @@ for (const concert of concerts) {
   }
 }
 
-// song.knownConcerts backref: any concert setlist referencing a song should appear in that song's knownConcerts
-const songToConcerts = new Map();
-for (const song of songs) songToConcerts.set(song.id, new Set(song.knownConcerts || []));
-for (const concert of concerts) {
+// song.knownConcerts/knownMusicShows are derived, not manually maintained (plan §2/§10).
+// The derived liveRecordsForSong pipeline in archive.ts computes concert→song links from
+// setlist entries, so the backref is not enforced here. knownConcerts/knownMusicShows are
+// treated as optional legacy fields.
+
+// Concert media dedup: no URL may appear twice within a concert's mediaLinks + setlist[].mediaLinks,
+// and a concert-level clip must not also appear at setlist level (would be silently double-counted).
+function collectConcertUrls(concert) {
+  const concertUrls = new Map();
+  for (const link of concert.mediaLinks || []) {
+    if (!link.url) continue;
+    concertUrls.set(link.url, (concertUrls.get(link.url) || 0) + 1);
+  }
+  const setlistUrls = new Map();
   for (const entry of concert.setlist || []) {
-    const ids = [entry.song, ...(entry.songParts || [])].filter(Boolean);
-    for (const songId of ids) {
-      const refs = songToConcerts.get(songId);
-      if (refs && !refs.has(concert.id)) {
-        addError(`Concert ${concert.id} performs song ${songId} but song.knownConcerts does not list ${concert.id}`);
-      }
+    for (const link of entry.mediaLinks || []) {
+      if (!link.url) continue;
+      setlistUrls.set(link.url, (setlistUrls.get(link.url) || 0) + 1);
+    }
+  }
+  return { concertUrls, setlistUrls };
+}
+
+for (const concert of concerts) {
+  const { concertUrls, setlistUrls } = collectConcertUrls(concert);
+  for (const [url, count] of concertUrls) {
+    if (count > 1) addWarning(`Concert ${concert.id} has duplicate concert-level media URL ${url}`);
+  }
+  for (const [url, count] of setlistUrls) {
+    if (count > 1) addWarning(`Concert ${concert.id} repeats setlist-level media URL ${url} across entries (may be one clip spanning consecutive songs)`);
+    if (concertUrls.has(url)) {
+      addWarning(`Concert ${concert.id} media URL ${url} appears at both concert level and setlist level; consider removing the concert-level copy`);
     }
   }
 }

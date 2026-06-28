@@ -2232,14 +2232,6 @@
         "kind": "video",
         "isOfficial": false,
         "credit": "理理理理夏"
-      },
-      {
-        "label": "Wu Tsing-fong guest segment",
-        "platform": "bilibili",
-        "url": "https://www.bilibili.com/video/BV1YWYMzyEYZ/",
-        "kind": "video",
-        "isOfficial": false,
-        "credit": "imhaohao__"
       }
     ],
     "officialRecording": false,
@@ -2785,14 +2777,6 @@
         "kind": "video",
         "isOfficial": false,
         "credit": "GEM_Evonne"
-      },
-      {
-        "label": "Cheng Fangyuan guest intro and duet segment",
-        "platform": "bilibili",
-        "url": "https://www.bilibili.com/video/BV16idWB3Ek2/",
-        "kind": "video",
-        "isOfficial": false,
-        "credit": "夕霧岬"
       }
     ],
     "officialRecording": false,
@@ -2823,7 +2807,264 @@
     "tags": [
       "solo"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-and-i-love-you-so",
+        "titlePerformed": "And I Love You So",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 1",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=1",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "song": "song-whoever-finds-this-i-love-you",
+        "titlePerformed": "Whoever Finds This,I Love You",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 2",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=2",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "song": "song-shi-qi-sui",
+        "titlePerformed": "At Seventeen",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 3",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=3",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "song": "song-qiao-di",
+        "titlePerformed": "Geordie",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 4",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=4",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 5,
+        "song": "song-wishful-milenio",
+        "titlePerformed": "Wishful Milenio",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 5",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=5",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "song": "song-stories",
+        "titlePerformed": "Stories",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 6",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=6",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 7,
+        "song": "song-tears",
+        "titlePerformed": "Tears-Donde Voy",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 7",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=7",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 8,
+        "song": "song-forever",
+        "titlePerformed": "Forever",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 8",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=8",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 9,
+        "song": "song-where-have-all-the-flowers-gone",
+        "titlePerformed": "Where Have All The Flowers Gone",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 9",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=9",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 10,
+        "song": "song-diamonds-and-rust",
+        "titlePerformed": "Diamonds And Rust",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 10",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=10",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 11,
+        "song": "song-danny-s-song",
+        "titlePerformed": "Danny’s song",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 11",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=11",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 12,
+        "song": "song-twist-in-my-sobriety",
+        "titlePerformed": "Twist In My Sobriety",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 12",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=12",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 13,
+        "song": "song-edge-of-dream",
+        "titlePerformed": "Edge Of Dream",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 13",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=13",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 14,
+        "song": "song-all-souls-night",
+        "titlePerformed": "All Souls Night",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 14",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=14",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 15,
+        "song": "song-cest-la-vie",
+        "titlePerformed": "C'est La Vie",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 15",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1EM4112757/?p=15",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "大大大象_Ya"
+          }
+        ]
+      },
+      {
+        "position": 16,
+        "song": null,
+        "titlePerformed": "之跟姐姐学吉他_标清",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 3",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1ix411r7SP/?p=3",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "WeAreLambily"
+          }
+        ]
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Fan composite, 15-part",
@@ -2864,7 +3105,7 @@
       "source-bilibili-mei-li-ren-sheng-1999"
     ],
     "sourceQuality": "fan-upload; exact venue unconfirmed",
-    "notes": "Maintainer confirmed the shell and all four media candidates. Reference row gives 1999-12-09 and 台北; fan-upload metadata confirms the 1999 美麗人生 event but not the exact date or venue.",
+    "notes": "Maintainer confirmed the shell and all four media candidates. Reference row gives 1999-12-09 and 台北; fan-upload metadata confirms the 1999 美麗人生 event but not the exact date or venue. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -2883,7 +3124,145 @@
     "tags": [
       "solo"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": null,
+        "titlePerformed": "Opening",
+        "collaborators": [],
+        "notes": "Non-song opening segment."
+      },
+      {
+        "position": 2,
+        "song": "song-forever",
+        "titlePerformed": "Forever",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-walking-in-the-rain",
+        "titlePerformed": "走在雨中",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": "song-any-words-like-this",
+        "titlePerformed": "有没有这种说法",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-whoever-finds-this-i-love-you",
+        "titlePerformed": "Whoever finds this, I love you",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": "song-high-heels-in-september",
+        "titlePerformed": "九月的高跟鞋",
+        "collaborators": []
+      },
+      {
+        "position": 8,
+        "song": "song-stories",
+        "titlePerformed": "Stories",
+        "collaborators": []
+      },
+      {
+        "position": 9,
+        "song": "song-blessing",
+        "titlePerformed": "祝福",
+        "collaborators": []
+      },
+      {
+        "position": 10,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌",
+        "collaborators": []
+      },
+      {
+        "position": 11,
+        "song": "song-all-souls-night",
+        "titlePerformed": "All Souls Night",
+        "collaborators": []
+      },
+      {
+        "position": 12,
+        "song": "song-moon-night-flower",
+        "titlePerformed": "Moon night flower",
+        "collaborators": []
+      },
+      {
+        "position": 13,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": []
+      },
+      {
+        "position": 14,
+        "song": "song-vincent",
+        "titlePerformed": "Vincent",
+        "collaborators": []
+      },
+      {
+        "position": 15,
+        "song": "song-where-have-all-the-flowers-gone",
+        "titlePerformed": "Where have all the flowers gone",
+        "collaborators": []
+      },
+      {
+        "position": 16,
+        "song": "song-spring-story",
+        "titlePerformed": "春天的故事",
+        "collaborators": []
+      },
+      {
+        "position": 17,
+        "song": "song-windflowers",
+        "titlePerformed": "Wind flower",
+        "collaborators": [
+          "person-wakin-chau"
+        ],
+        "notes": "Duet with 周华健 (Wakin Chau)."
+      },
+      {
+        "position": 18,
+        "song": "song-flying-bird-and-fish",
+        "titlePerformed": "飞鸟与鱼",
+        "collaborators": []
+      },
+      {
+        "position": 19,
+        "song": "song-cest-la-vie",
+        "titlePerformed": "C'est La Vie",
+        "collaborators": []
+      },
+      {
+        "position": 20,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": []
+      },
+      {
+        "position": 21,
+        "song": "song-memory",
+        "titlePerformed": "Memory",
+        "collaborators": []
+      },
+      {
+        "position": 22,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树 (清唱)",
+        "collaborators": [],
+        "notes": "A cappella reprise."
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -2892,7 +3271,7 @@
       "source-epochtimes-chyi-2003-taipei-pre-event"
     ],
     "sourceQuality": "news-backed; no public media found",
-    "notes": "Maintainer confirmed the event shell. News sources confirm the two-day run at Taipei International Convention Center; no exact public video was found in this pass.",
+    "notes": "Maintainer confirmed the event shell. News sources confirm the two-day run at Taipei International Convention Center; no exact public video was found in this pass. Setlist recovered 2026-06-28 from the official VCD release tracklist (美丽邂逅演唱会, douban music subject 1458145). The released VCD documents 22 tracks across two discs; the full concert also included 一條日光大道, 春天的浮雕, and 佛歌 大吉祥天女咒 per Epoch Times news coverage, but those are not on the VCD. Wind flower is a duet with 周华健.",
     "status": "partial"
   },
   {
@@ -3125,7 +3504,174 @@
     "tags": [
       "collaboration"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-chuan-shuo",
+        "titlePerformed": "傳說",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-daylight-avenue",
+        "titlePerformed": "一條日光的大道",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-blessing",
+        "titlePerformed": "祝福",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": "song-high-heels-in-september",
+        "titlePerformed": "九月的高跟鞋",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-flying-bird-and-fish",
+        "titlePerformed": "飛鳥與魚",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": "song-chun-tian-de-fu-diao",
+        "titlePerformed": "春天的浮雕",
+        "collaborators": []
+      },
+      {
+        "position": 8,
+        "song": "song-yu-si",
+        "titlePerformed": "雨絲",
+        "collaborators": []
+      },
+      {
+        "position": 9,
+        "song": "song-you-are-all-my-memories",
+        "titlePerformed": "你是我所有的回憶",
+        "collaborators": []
+      },
+      {
+        "position": 10,
+        "song": "song-teng-chan-shu",
+        "titlePerformed": "藤纏樹",
+        "collaborators": [
+          "person-chi-chin"
+        ],
+        "notes": "Duet with 齊秦."
+      },
+      {
+        "position": 11,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田",
+        "collaborators": [
+          "person-chi-chin"
+        ],
+        "notes": "Duet with 齊秦."
+      },
+      {
+        "position": 12,
+        "song": "song-hua-ji",
+        "titlePerformed": "花祭",
+        "collaborators": []
+      },
+      {
+        "position": 13,
+        "song": "song-answer",
+        "titlePerformed": "答案 + Vincent",
+        "songParts": [
+          "song-answer",
+          "song-vincent"
+        ],
+        "collaborators": []
+      },
+      {
+        "position": 14,
+        "song": "song-qiu-chan",
+        "titlePerformed": "秋蟬 + 小茉莉 + 如果",
+        "songParts": [
+          "song-qiu-chan",
+          "song-xiao-mo-li",
+          "song-ru-guo"
+        ],
+        "collaborators": []
+      },
+      {
+        "position": 15,
+        "song": "song-xiang-jian-de-xiao-lu",
+        "titlePerformed": "鄉間的小路",
+        "collaborators": []
+      },
+      {
+        "position": 16,
+        "song": "song-whoever-finds-this-i-love-you",
+        "titlePerformed": "Whoever Finds This, I Love You",
+        "collaborators": []
+      },
+      {
+        "position": 17,
+        "song": "song-ju-tan",
+        "titlePerformed": "菊嘆",
+        "collaborators": []
+      },
+      {
+        "position": 18,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹",
+        "collaborators": []
+      },
+      {
+        "position": 19,
+        "song": "song-seven-oclock",
+        "titlePerformed": "七點鐘",
+        "collaborators": []
+      },
+      {
+        "position": 20,
+        "song": "song-only-you",
+        "titlePerformed": "有一個人",
+        "collaborators": []
+      },
+      {
+        "position": 21,
+        "song": "song-cest-la-vie",
+        "titlePerformed": "C'est La Vie",
+        "collaborators": []
+      },
+      {
+        "position": 22,
+        "song": "song-stories",
+        "titlePerformed": "Stories",
+        "collaborators": []
+      },
+      {
+        "position": 23,
+        "song": "song-walking-in-the-rain",
+        "titlePerformed": "走在雨中",
+        "collaborators": []
+      },
+      {
+        "position": 24,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "歡顏",
+        "collaborators": []
+      },
+      {
+        "position": 25,
+        "song": "song-da-ji-xiang-tian-nu-zhou",
+        "titlePerformed": "大吉祥天女咒",
+        "collaborators": [],
+        "notes": "佛歌."
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Official recording, 720p",
@@ -3167,7 +3713,7 @@
       "source-bilibili-nian-lun-2004-shanghai-official-tv"
     ],
     "sourceQuality": "official-recording-and-platform-metadata",
-    "notes": "Maintainer confirmed the shell and accepted all three Bilibili candidates plus the YouTube single-song clip. Setlist not modeled in this pass; the Bilibili description includes a 23-item track list for follow-up.",
+    "notes": "Maintainer confirmed the shell and accepted all three Bilibili candidates plus the YouTube single-song clip. Setlist not modeled in this pass; the Bilibili description includes a 23-item track list for follow-up. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation. Setlist recovered 2026-06-29 from the official pre-event setlist announcement (Epoch Times, 齊豫演唱會曲目曝光, https://www.epochtimes.com/b5/4/11/30/n732842.htm). Replaces the earlier mechanical-extraction placeholder, which had only junk-label entries. 齊秦 guest duets (藤纏樹, 夢田) included; the 齊秦 solo segment (大約在冬季＋原來的我) is excluded per the Chyi-Yu-only rule (per the qi-jia-huan-2004-beijing precedent).",
     "status": "partial"
   },
   {
@@ -3191,7 +3737,126 @@
       "anniversary",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-stories",
+        "titlePerformed": "Stories",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-walking-in-the-rain",
+        "titlePerformed": "走在雨中",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-flying-bird-and-fish",
+        "titlePerformed": "飞鸟与鱼",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-whoever-finds-this-i-love-you",
+        "titlePerformed": "Whoever Finds This, I Love You",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": "song-vincent",
+        "titlePerformed": "Vincent",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-high-heels-in-september",
+        "titlePerformed": "九月的高跟鞋",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": "song-qi-shi-dou-shi-yi-yang",
+        "titlePerformed": "其实都是一样",
+        "collaborators": [
+          "person-chi-chin"
+        ]
+      },
+      {
+        "position": 8,
+        "song": "song-you-are-all-my-memories",
+        "titlePerformed": "你是我所有的回忆",
+        "collaborators": []
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titlePerformed": "星 + 答案",
+        "collaborators": [],
+        "songParts": [
+          "song-xing",
+          "song-answer"
+        ]
+      },
+      {
+        "position": 10,
+        "song": "song-ju-tan",
+        "titlePerformed": "菊叹",
+        "collaborators": []
+      },
+      {
+        "position": 11,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": []
+      },
+      {
+        "position": 12,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 13,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌",
+        "collaborators": []
+      },
+      {
+        "position": 14,
+        "song": "song-a-piece-of-lake",
+        "titlePerformed": "一面湖水",
+        "collaborators": [
+          "person-chi-chin"
+        ]
+      },
+      {
+        "position": 15,
+        "song": null,
+        "titlePerformed": "橄榄树 + 狼",
+        "collaborators": [
+          "person-chi-chin"
+        ],
+        "songParts": [
+          "song-olive-tree"
+        ],
+        "notes": "Encore medley with Chyi Chin's 狼; Chyi Yu performs 橄榄树."
+      },
+      {
+        "position": 16,
+        "song": "song-wo-yuan-yi",
+        "titlePerformed": "我愿意",
+        "collaborators": [],
+        "notes": "Encore."
+      },
+      {
+        "position": 17,
+        "song": "song-teng-chan-shu",
+        "titlePerformed": "藤缠树",
+        "collaborators": [],
+        "notes": "Encore."
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Encore fragment, 2008.3.1",
@@ -3209,7 +3874,7 @@
       "source-sohu-tian-shi-yu-lang-2008"
     ],
     "sourceQuality": "news-backed; short fragment media",
-    "notes": "Date corrected from the reference's 2007-03 to 2008-03-01 per maintainer review and news evidence. The anniversary tour also played 台中, 高雄, and 台南; those tour-stop dates remain unknown and are not imported as separate records until stronger sources are found. Treat 1988 天使与狼 media as a separate event.",
+    "notes": "Date corrected from the reference's 2007-03 to 2008-03-01 per maintainer review and news evidence. The anniversary tour also played 台中, 高雄, and 台南; those tour-stop dates remain unknown and are not imported as separate records until stronger sources are found. Treat 1988 天使与狼 media as a separate event. Setlist cloned from the Beijing leg of the same tour (concert-tian-shi-yu-lang-2008-beijing) as a partial draft; pending Taipei-specific source confirmation. City-specific encore/guest variations may exist.",
     "status": "partial"
   },
   {
@@ -3237,7 +3902,55 @@
     "tags": [
       "collaboration"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-you-are-all-my-memories",
+        "titlePerformed": "你是我所有的回憶",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-stories",
+        "titlePerformed": "Stories",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-lian-hua-chu-chu-kai",
+        "titlePerformed": "一念心清淨蓮花處處開",
+        "collaborators": [],
+        "notes": "佛歌; 唐代居士龐蘊佛詩. Not yet modeled in songs.json."
+      },
+      {
+        "position": 5,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Duet with 潘越雲; prefaced by a 三毛 recording."
+      },
+      {
+        "position": 7,
+        "song": "song-yi-dong-de-xin",
+        "titlePerformed": "驛動的心",
+        "collaborators": [],
+        "notes": "Group finale with all singers (周治平/潘越雲/齊豫/羅大佑/娃娃); 梁弘志作品. Not yet modeled."
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -3245,7 +3958,7 @@
       "source-pchome-jing-dian-jin-qu-2007"
     ],
     "sourceQuality": "attendee-report; no public media found",
-    "notes": "Maintainer confirmed the event shell. Multi-artist concert with 齊豫, 羅大佑, 潘越雲, 周治平, and 金智娟. 周治平 and 金智娟 are listed by display name because no person records exist yet.",
+    "notes": "Maintainer confirmed the event shell. Multi-artist concert with 齊豫, 羅大佑, 潘越雲, 周治平, and 金智娟. 周治平 and 金智娟 are listed by display name because no person records exist yet. Setlist recovered 2026-06-28 from a detailed attendee report (PChome blog by Gina, https://mypaper.pchome.com.tw/ck8428/post/1295180563). Multi-artist 經典金曲好聽音樂會 (周治平/潘越雲/齊豫/羅大佑/娃娃); this setlist follows the Chyi-Yu-only rule, including her solo segment (你是我所有的回憶/船歌/Stories/一念心清淨蓮花處處開/橄欖樹), her 夢田 duet with 潘越雲, and the all-singer 驛動的心 finale. Pure 周治平/潘越雲/羅大佑/娃娃 solo segments excluded.",
     "status": "partial"
   },
   {
@@ -3268,7 +3981,350 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-mi",
+        "titlePerformed": "謎",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 1",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=1",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "song": "song-seven-oclock",
+        "titlePerformed": "七點鐘",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 2",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=2",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "song": "song-sha-mo",
+        "titlePerformed": "沙漠",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 3",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=3",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "song": "song-olive-tree",
+        "titlePerformed": "在那遙遠的地方&橄欖樹&Talking",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 4",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=4",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          },
+          {
+            "label": "Chaptered Bilibili part 19",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=19",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          },
+          {
+            "label": "Chaptered Bilibili part 20",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=20",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          },
+          {
+            "label": "Chaptered Bilibili part 26",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=26",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 5,
+        "song": "song-shui-tian-yin",
+        "titlePerformed": "水天吟",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 5",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=5",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "歡顏",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 6",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=6",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 7,
+        "song": "song-feng",
+        "titlePerformed": "風",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 8",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=8",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 8,
+        "song": "song-zui-ai",
+        "titlePerformed": "最愛",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 10",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=10",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 9,
+        "song": "song-gao-bie",
+        "titlePerformed": "告別",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 11",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=11",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 10,
+        "song": "song-bu-yao-gao-bie",
+        "titlePerformed": "不要告別",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 12",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=12",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 11,
+        "song": "song-gun-gun-hong-chen",
+        "titlePerformed": "滾滾紅塵",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 13",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=13",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          },
+          {
+            "label": "Chaptered Bilibili part 28",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=28",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 12,
+        "song": "song-yuan-fang",
+        "titlePerformed": "遠方",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 14",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=14",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          },
+          {
+            "label": "Chaptered Bilibili part 29",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=29",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 13,
+        "song": "song-daylight-avenue",
+        "titlePerformed": "一條日光大道",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 16",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=16",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          },
+          {
+            "label": "Chaptered Bilibili part 17",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=17",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          },
+          {
+            "label": "Chaptered Bilibili part 18",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=18",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 14,
+        "song": "song-zhang-sheng-xiang-qi",
+        "titlePerformed": "掌聲響起",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 21",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=21",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 15,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 23",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=23",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 16,
+        "song": "song-qian-gua",
+        "titlePerformed": "牽掛+不曾告別",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 24",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=24",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ],
+        "songParts": [
+          "song-qian-gua",
+          "song-not-saying-goodbye"
+        ]
+      },
+      {
+        "position": 17,
+        "song": "song-zhui-meng-ren",
+        "titlePerformed": "追夢人",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 25",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fW411F71w/?p=25",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 18,
+        "song": null,
+        "titlePerformed": "夢田 clip",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Full fan upload",
@@ -3294,7 +4350,7 @@
       "source-ettoday-echo-2018-taipei"
     ],
     "sourceQuality": "news-backed; fan-upload",
-    "notes": "Maintainer confirmed the shell. Bilibili BV1fW411F71w confirmed as a full fan upload; YouTube clip BgxbCfMKfCM accepted; YouTube news clip wIvftvwz4hM rejected.",
+    "notes": "Maintainer confirmed the shell. Bilibili BV1fW411F71w confirmed as a full fan upload; YouTube clip BgxbCfMKfCM accepted; YouTube news clip wIvftvwz4hM rejected. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -3317,7 +4373,112 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树+在那遥远的地方",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 1",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV11W411X7CR/?p=1",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 2",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV11W411X7CR/?p=2",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "song": "song-zhui-meng-ren",
+        "titlePerformed": "追梦人",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 3",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV11W411X7CR/?p=3",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "song": "song-not-saying-goodbye",
+        "titlePerformed": "不曾告别",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 4",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV11W411X7CR/?p=4",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 5,
+        "song": "song-jin-shi",
+        "titlePerformed": "今世",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 5",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV11W411X7CR/?p=5",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "song": "song-shuang",
+        "titlePerformed": "孀",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 6",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV11W411X7CR/?p=6",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "是我在弹着古筝"
+          }
+        ]
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titlePerformed": "在那遙遠的地方 / 橄欖樹 clip",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Partial concert",
@@ -3343,7 +4504,7 @@
       "source-bjzgh-echo-2018-beijing"
     ],
     "sourceQuality": "news-backed; partial fan media",
-    "notes": "Maintainer accepted both media links. Full performance list/setlist has not been collected yet.",
+    "notes": "Maintainer accepted both media links. Full performance list/setlist has not been collected yet. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -3366,7 +4527,124 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-mi",
+        "titlePerformed": "謎",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-seven-oclock",
+        "titlePerformed": "七點鐘",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-sha-mo",
+        "titlePerformed": "沙漠",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-olive-tree",
+        "titlePerformed": "在那遙遠的地方&橄欖樹&Talking",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 5,
+        "song": "song-shui-tian-yin",
+        "titlePerformed": "水天吟",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "歡顏",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": "song-feng",
+        "titlePerformed": "風",
+        "collaborators": []
+      },
+      {
+        "position": 8,
+        "song": "song-zui-ai",
+        "titlePerformed": "最愛",
+        "collaborators": []
+      },
+      {
+        "position": 9,
+        "song": "song-gao-bie",
+        "titlePerformed": "告別",
+        "collaborators": []
+      },
+      {
+        "position": 10,
+        "song": "song-bu-yao-gao-bie",
+        "titlePerformed": "不要告別",
+        "collaborators": []
+      },
+      {
+        "position": 11,
+        "song": "song-gun-gun-hong-chen",
+        "titlePerformed": "滾滾紅塵",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 12,
+        "song": "song-yuan-fang",
+        "titlePerformed": "遠方",
+        "collaborators": []
+      },
+      {
+        "position": 13,
+        "song": "song-daylight-avenue",
+        "titlePerformed": "一條日光大道",
+        "collaborators": []
+      },
+      {
+        "position": 14,
+        "song": "song-zhang-sheng-xiang-qi",
+        "titlePerformed": "掌聲響起",
+        "collaborators": []
+      },
+      {
+        "position": 15,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田",
+        "collaborators": []
+      },
+      {
+        "position": 16,
+        "song": "song-qian-gua",
+        "titlePerformed": "牽掛+不曾告別",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved.",
+        "songParts": [
+          "song-qian-gua",
+          "song-not-saying-goodbye"
+        ]
+      },
+      {
+        "position": 17,
+        "song": "song-zhui-meng-ren",
+        "titlePerformed": "追夢人",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 18,
+        "song": null,
+        "titlePerformed": "夢田 clip",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -3374,7 +4652,7 @@
       "source-dawuhan-echo-2018-wuhan"
     ],
     "sourceQuality": "news-backed; no Chyi Yu media confirmed",
-    "notes": "Maintainer confirmed the event shell but rejected the available Bilibili media candidate because it features Pan Yue-yun rather than Chyi Yu.",
+    "notes": "Maintainer confirmed the event shell but rejected the available Bilibili media candidate because it features Pan Yue-yun rather than Chyi Yu. Setlist cloned 2026-06-28 from concert-echo-2018-taipei (same tour) as a partial draft; pending Wuhan-specific source confirmation. City-specific encore/guest variations may exist.",
     "status": "partial"
   },
   {
@@ -3397,7 +4675,152 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-seven-oclock",
+        "titlePerformed": "七点钟",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titlePerformed": "Talking（给包邮区来不了的歌迷）",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 3,
+        "song": "song-feng",
+        "titlePerformed": "风",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-bu-yao-gao-bie",
+        "titlePerformed": "不要告别+告别",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": "song-gun-gun-hong-chen",
+        "titlePerformed": "滚滚红尘",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-daylight-avenue",
+        "titlePerformed": "一条日光大道（“阿潘，你也一起唱吧”）",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titlePerformed": "Talking（“橄榄树！”）",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 8,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树+在那遥远的地方",
+        "collaborators": []
+      },
+      {
+        "position": 9,
+        "song": "song-zhang-sheng-xiang-qi",
+        "titlePerformed": "掌声响起",
+        "collaborators": []
+      },
+      {
+        "position": 10,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": []
+      },
+      {
+        "position": 11,
+        "song": "song-not-saying-goodbye",
+        "titlePerformed": "不曾告别（“不叫没有告别”）",
+        "collaborators": []
+      },
+      {
+        "position": 12,
+        "song": "song-yuan-fang",
+        "titlePerformed": "远方",
+        "collaborators": []
+      },
+      {
+        "position": 13,
+        "song": "song-mi",
+        "titlePerformed": "谜",
+        "collaborators": []
+      },
+      {
+        "position": 14,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": []
+      },
+      {
+        "position": 15,
+        "song": "song-a-piece-of-lake",
+        "titlePerformed": "一面湖水",
+        "collaborators": []
+      },
+      {
+        "position": 16,
+        "song": "song-zui-ai",
+        "titlePerformed": "最爱",
+        "collaborators": []
+      },
+      {
+        "position": 17,
+        "song": "song-jin-shi",
+        "titlePerformed": "今世",
+        "collaborators": []
+      },
+      {
+        "position": 18,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 19,
+        "song": "song-gun-gun-hong-chen",
+        "titlePerformed": "滚滚红尘",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 20,
+        "song": "song-zhui-meng-ren",
+        "titlePerformed": "追梦人",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 21,
+        "song": null,
+        "titlePerformed": "掌声响起来",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 22,
+        "song": "song-not-saying-goodbye",
+        "titlePerformed": "不曾告别",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 23,
+        "song": null,
+        "titlePerformed": "風 clip",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Partial concert clip",
@@ -3423,7 +4846,7 @@
       "source-zaobao-echo-2019-singapore"
     ],
     "sourceQuality": "news-backed; fan-clip",
-    "notes": "Maintainer confirmed the shell and accepted YouTube clips 0kS-NhcZU8I and mP0crKRoHqM; rejected NPjf20XSAf0 as a pre-event official/prior-event clip.",
+    "notes": "Maintainer confirmed the shell and accepted YouTube clips 0kS-NhcZU8I and mP0crKRoHqM; rejected NPjf20XSAf0 as a pre-event official/prior-event clip. Setlist cloned 2026-06-28 from concert-echo-2019-guangzhou (same tour) as a partial draft; pending Singapore-specific source confirmation. City-specific encore/guest variations may exist.",
     "status": "partial"
   },
   {
@@ -3446,7 +4869,406 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-seven-oclock",
+        "titlePerformed": "七点钟",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 1",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=1",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          },
+          {
+            "label": "Chaptered Bilibili part 2",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=2",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titlePerformed": "Talking（给包邮区来不了的歌迷）",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 2",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=2",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          },
+          {
+            "label": "Chaptered Bilibili part 8",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=8",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "song": "song-feng",
+        "titlePerformed": "风",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 3",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=3",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "song": "song-bu-yao-gao-bie",
+        "titlePerformed": "不要告别+告别",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 4",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=4",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          },
+          {
+            "label": "Chaptered Bilibili part 10",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=10",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 5,
+        "song": "song-gun-gun-hong-chen",
+        "titlePerformed": "滚滚红尘",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 5",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=5",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          },
+          {
+            "label": "Chaptered Bilibili part 11",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=11",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "song": "song-daylight-avenue",
+        "titlePerformed": "一条日光大道（“阿潘，你也一起唱吧”）",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 7",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=7",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          },
+          {
+            "label": "Chaptered Bilibili part 9",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=9",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titlePerformed": "Talking（“橄榄树！”）",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 8,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树+在那遥远的地方",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 9",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=9",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          },
+          {
+            "label": "Chaptered Bilibili part 14",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=14",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 9,
+        "song": "song-zhang-sheng-xiang-qi",
+        "titlePerformed": "掌声响起",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 10",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=10",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          }
+        ]
+      },
+      {
+        "position": 10,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 12",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=12",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          },
+          {
+            "label": "Chaptered Bilibili part 15",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=15",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 11,
+        "song": "song-not-saying-goodbye",
+        "titlePerformed": "不曾告别（“不叫没有告别”）",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 13",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=13",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          },
+          {
+            "label": "Chaptered Bilibili part 16",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=16",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 12,
+        "song": "song-yuan-fang",
+        "titlePerformed": "远方",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 14",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV194411D7XZ/?p=14",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "不为难的胖虎"
+          }
+        ]
+      },
+      {
+        "position": 13,
+        "song": "song-mi",
+        "titlePerformed": "谜",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 1",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=1",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 14,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 3",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=3",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 15,
+        "song": "song-a-piece-of-lake",
+        "titlePerformed": "一面湖水",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 4",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=4",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 16,
+        "song": "song-zui-ai",
+        "titlePerformed": "最爱",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 5",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=5",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 17,
+        "song": "song-jin-shi",
+        "titlePerformed": "今世",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 7",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=7",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 18,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 8",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=8",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 19,
+        "song": "song-gun-gun-hong-chen",
+        "titlePerformed": "滚滚红尘",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 20,
+        "song": "song-zhui-meng-ren",
+        "titlePerformed": "追梦人",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 12",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=12",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 21,
+        "song": null,
+        "titlePerformed": "掌声响起来",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 13",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1aE41137yP/?p=13",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "GEM_Evonne"
+          }
+        ]
+      },
+      {
+        "position": 22,
+        "song": "song-not-saying-goodbye",
+        "titlePerformed": "不曾告别",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 23,
+        "song": null,
+        "titlePerformed": "風 clip",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Full fan recording (禁二传)",
@@ -3488,7 +5310,7 @@
       "source-ycpai-echo-2019-guangzhou"
     ],
     "sourceQuality": "news-backed; fan-upload (rights-sensitive)",
-    "notes": "Maintainer confirmed the shell and all three Bilibili links plus the XHS canonical link. YouTube VSuvviLw__g rejected for poor quality. The 禁二传 upload is linked only; the archive does not download, mirror, repost, or re-upload fan videos.",
+    "notes": "Maintainer confirmed the shell and all three Bilibili links plus the XHS canonical link. YouTube VSuvviLw__g rejected for poor quality. The 禁二传 upload is linked only; the archive does not download, mirror, repost, or re-upload fan videos. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -3511,7 +5333,82 @@
       "festival",
       "collaboration"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": null,
+        "titlePerformed": "Official short clip",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titlePerformed": "Official short clip, 一條日光大道×海洋",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹 clip, Radio Taiwan International",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌+talking clip",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 5,
+        "song": "song-daylight-avenue",
+        "titlePerformed": "一條日光大道 clip",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-zui-ai",
+        "titlePerformed": "最愛 clip",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": "song-walking-in-the-rain",
+        "titlePerformed": "走在雨中 clip",
+        "collaborators": []
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titlePerformed": "Amazing Grace clip (day 1)",
+        "collaborators": []
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titlePerformed": "Amazing Grace clip (day 2)",
+        "collaborators": []
+      },
+      {
+        "position": 10,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田 clip",
+        "collaborators": []
+      },
+      {
+        "position": 11,
+        "song": "song-meng",
+        "titlePerformed": "夢 clip",
+        "collaborators": []
+      },
+      {
+        "position": 12,
+        "song": null,
+        "titlePerformed": "民歌組曲 clip (1)",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Official short clip",
@@ -3616,7 +5513,7 @@
       "source-wikipedia-chyi-yu-events"
     ],
     "sourceQuality": "festival; official and fan clips",
-    "notes": "Maintainer confirmed the two-day range 2019-10-25/2019-10-26. Kept official YouTube KAik_JrfkrQ (rejected Bilibili repost BV1nJ411U7hR), official o_wNaQER-cc, Radio Taiwan kGaSifEcs1U, and the 陈四毛小朋友 fan clips. Rejected YouTube news clip F9Gy9i4oCQI and the XHS repost. Setlist not modeled as an ordered list; clips confirm individual performances.",
+    "notes": "Maintainer confirmed the two-day range 2019-10-25/2019-10-26. Kept official YouTube KAik_JrfkrQ (rejected Bilibili repost BV1nJ411U7hR), official o_wNaQER-cc, Radio Taiwan kGaSifEcs1U, and the 陈四毛小朋友 fan clips. Rejected YouTube news clip F9Gy9i4oCQI and the XHS repost. Setlist not modeled as an ordered list; clips confirm individual performances. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -3639,7 +5536,158 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "南京 欢颜",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 1",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1d4rVBiEfF/?p=1",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "WeAreLambily"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "song": "song-angel",
+        "titlePerformed": "南京 angel",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 2",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1d4rVBiEfF/?p=2",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "WeAreLambily"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titlePerformed": "南京 浮生",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 3",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1d4rVBiEfF/?p=3",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "WeAreLambily"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "song": "song-jin-shi",
+        "titlePerformed": "南京 今世",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 4",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1d4rVBiEfF/?p=4",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "WeAreLambily"
+          }
+        ]
+      },
+      {
+        "position": 5,
+        "song": "song-sha-mo",
+        "titlePerformed": "南京 沙漠",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 5",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1d4rVBiEfF/?p=5",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "WeAreLambily"
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "song": null,
+        "titlePerformed": "南京 相思",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 6",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1d4rVBiEfF/?p=6",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "WeAreLambily"
+          }
+        ]
+      },
+      {
+        "position": 7,
+        "song": "song-a-piece-of-lake",
+        "titlePerformed": "南京 一面湖水",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 7",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1d4rVBiEfF/?p=7",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "WeAreLambily"
+          }
+        ]
+      },
+      {
+        "position": 8,
+        "song": null,
+        "titlePerformed": "南京 追梦人",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 8",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1d4rVBiEfF/?p=8",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "WeAreLambily"
+          }
+        ]
+      },
+      {
+        "position": 9,
+        "song": "song-shui-tian-yin",
+        "titlePerformed": "南京 水天吟",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 9",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1d4rVBiEfF/?p=9",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "WeAreLambily"
+          }
+        ]
+      },
+      {
+        "position": 10,
+        "song": null,
+        "titlePerformed": "夢田 clip",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Partial concert",
@@ -3664,7 +5712,7 @@
       "source-cri-echo-2018-nanjing"
     ],
     "sourceQuality": "news-backed; fan-upload (date corrected from reference)",
-    "notes": "Reference row listed 2019-10-27, but ticket/news and Bilibili evidence point to 2018-10-27; maintainer confirmed the correction.",
+    "notes": "Reference row listed 2019-10-27, but ticket/news and Bilibili evidence point to 2018-10-27; maintainer confirmed the correction. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -3689,7 +5737,190 @@
       "charity",
       "collaboration"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-ye-lai-xiang",
+        "titlePerformed": "夜來香",
+        "collaborators": [],
+        "notes": "Opening suite (夜來香/蘇州河畔/阿蘭娜). Cover of 李香蘭 classic."
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titlePerformed": "蘇州河畔",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-a-lan-na",
+        "titlePerformed": "阿蘭娜",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-ye-lai-xiang",
+        "titlePerformed": "夜來香 (suite reprise)",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": "song-whoever-finds-this-i-love-you",
+        "titlePerformed": "Whoever Finds This, I Love You",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "歡顏",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": "song-meng",
+        "titlePerformed": "夢",
+        "collaborators": [],
+        "notes": "Buddhist-themed; 王安石 lyrics, 黃韻玲 music."
+      },
+      {
+        "position": 8,
+        "song": "song-yin-xing-de-chi-bang",
+        "titlePerformed": "隱形的翅膀",
+        "collaborators": [],
+        "notes": "Cover of 張韶涵."
+      },
+      {
+        "position": 9,
+        "song": "song-shen-mo-shi-jin",
+        "titlePerformed": "沈默是金 + 海海人生",
+        "collaborators": [],
+        "notes": "Medley; covers 許冠傑/張國榮 (粵語) and 陳盈潔 (台語).",
+        "songParts": [
+          "song-shen-mo-shi-jin",
+          "song-hai-hai-ren-sheng"
+        ]
+      },
+      {
+        "position": 10,
+        "song": "song-zhang-sheng-xiang-qi",
+        "titlePerformed": "掌聲響起",
+        "collaborators": [],
+        "notes": "Cover of 鳳飛飛."
+      },
+      {
+        "position": 11,
+        "song": "song-fu-yun-you-zi",
+        "titlePerformed": "浮雲遊子",
+        "collaborators": [
+          "趙詠華"
+        ],
+        "notes": "Duet with 趙詠華; folk-music medley segment."
+      },
+      {
+        "position": 12,
+        "song": "song-kan-wo-ting-wo",
+        "titlePerformed": "看我聽我",
+        "collaborators": [
+          "趙詠華"
+        ]
+      },
+      {
+        "position": 13,
+        "song": "song-qiu-chan",
+        "titlePerformed": "秋蟬",
+        "collaborators": [
+          "趙詠華"
+        ]
+      },
+      {
+        "position": 14,
+        "song": "song-feng-zhong-de-zao-chen",
+        "titlePerformed": "風中的早晨",
+        "collaborators": [
+          "趙詠華"
+        ]
+      },
+      {
+        "position": 15,
+        "song": "song-ru-guo",
+        "titlePerformed": "如果",
+        "collaborators": [
+          "趙詠華"
+        ]
+      },
+      {
+        "position": 16,
+        "song": "song-rang-wo-men-kan-yun-qu",
+        "titlePerformed": "讓我們看雲去",
+        "collaborators": [
+          "趙詠華"
+        ]
+      },
+      {
+        "position": 17,
+        "song": "song-qia-si-ni-de-wen-rou",
+        "titlePerformed": "恰似你的溫柔",
+        "collaborators": [
+          "趙詠華"
+        ],
+        "notes": "Duet with 趙詠華; cover of 蔡琴."
+      },
+      {
+        "position": 18,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹",
+        "collaborators": [
+          "吳青峰"
+        ],
+        "notes": "Duet with 吳青峰."
+      },
+      {
+        "position": 19,
+        "song": "song-tian-kong",
+        "titlePerformed": "天空",
+        "collaborators": [
+          "吳青峰"
+        ],
+        "notes": "Duet with 吳青峰; cover of 王菲. Chyi Yu sings harmony."
+      },
+      {
+        "position": 20,
+        "song": "song-tian-tang",
+        "titlePerformed": "天堂",
+        "collaborators": [
+          "趙詠華",
+          "吳青峰"
+        ],
+        "notes": "Trio with 趙詠華 and 吳青峰; cover of 鄭怡."
+      },
+      {
+        "position": 21,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田",
+        "collaborators": [
+          "趙詠華",
+          "吳青峰"
+        ],
+        "notes": "Trio with 趙詠華 and 吳青峰; originally 齊豫/潘越雲."
+      },
+      {
+        "position": 22,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": [],
+        "notes": "Encore."
+      },
+      {
+        "position": 23,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹 (encore reprise)",
+        "collaborators": [
+          "趙詠華",
+          "吳青峰"
+        ],
+        "notes": "Encore trio reprise with 趙詠華 and 吳青峰."
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Official TV recording (公视), fan capture",
@@ -3734,7 +5965,7 @@
       "source-youtube-fenghua-2018-encore"
     ],
     "sourceQuality": "official TV recording; charity concert",
-    "notes": "Date corrected from reference's 2019-11-24 to 2018-11-24 per maintainer; the event was held 2018-11-24 and broadcast on 公视 on 2019-02-04. Charity concert with donation to 菩提長青村. XHS candidate rejected as unauthorized. 趙詠華 listed by display name because no person record exists yet.",
+    "notes": "Date corrected from reference's 2019-11-24 to 2018-11-24 per maintainer; the event was held 2018-11-24 and broadcast on 公视 on 2019-02-04. Charity concert with donation to 菩提長青村. XHS candidate rejected as unauthorized. 趙詠華 listed by display name because no person record exists yet. Setlist recovered 2026-06-28 from detailed attendee setlist report (PChome blog post by 白菜2, https://mypaper.pchome.com.tw/yyq/post/1376610521, 2018-11-24). Three-artist bill; this setlist follows the Chyi-Yu-only rule, including her solo items, her duets with 趙詠華 and 吳青峰, and the closing trio. Pure 吳青峰/趙詠華 solo segments excluded. 夜來香/蘇州河畔/阿蘭娜 form an opening suite.",
     "status": "partial"
   },
   {
@@ -3803,7 +6034,195 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-mi",
+        "titlePerformed": "謎",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-seven-oclock",
+        "titlePerformed": "七點鐘",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": [],
+        "notes": "Replaced 水天吟 from the 2018 tour."
+      },
+      {
+        "position": 4,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "歡顏",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": "song-wu-yan-de-ge",
+        "titlePerformed": "無言的歌",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-fei",
+        "titlePerformed": "飛",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": "song-xiao-meng-hu-die",
+        "titlePerformed": "曉夢蝴蝶",
+        "collaborators": []
+      },
+      {
+        "position": 8,
+        "song": "song-sha-mo",
+        "titlePerformed": "沙漠",
+        "collaborators": []
+      },
+      {
+        "position": 9,
+        "song": "song-feng",
+        "titlePerformed": "風",
+        "collaborators": [],
+        "notes": "三毛作詞; rare track from 祝福 (1982)."
+      },
+      {
+        "position": 10,
+        "song": "song-a-piece-of-lake",
+        "titlePerformed": "一面湖水",
+        "collaborators": []
+      },
+      {
+        "position": 11,
+        "song": "song-zui-ai",
+        "titlePerformed": "最愛",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ]
+      },
+      {
+        "position": 12,
+        "song": "song-jin-shi",
+        "titlePerformed": "今世",
+        "collaborators": []
+      },
+      {
+        "position": 13,
+        "song": "song-shuang",
+        "titlePerformed": "孀",
+        "collaborators": []
+      },
+      {
+        "position": 14,
+        "song": "song-flying-bird-and-fish",
+        "titlePerformed": "飛鳥與魚",
+        "collaborators": [],
+        "notes": "Replaced 有一個人 (1983) from the 2018 tour."
+      },
+      {
+        "position": 15,
+        "song": "song-bu-yao-gao-bie",
+        "titlePerformed": "不要告別 + 告別",
+        "songParts": [
+          "song-bu-yao-gao-bie",
+          "song-gao-bie"
+        ],
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "齊豫 sings 不要告別 (1973), 潘越雲 sings 告別 (1984)."
+      },
+      {
+        "position": 16,
+        "song": "song-wo-de-si-nian",
+        "titlePerformed": "我的思念",
+        "collaborators": []
+      },
+      {
+        "position": 17,
+        "song": "song-gun-gun-hong-chen",
+        "titlePerformed": "滾滾紅塵",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Duet with 潘越雲."
+      },
+      {
+        "position": 18,
+        "song": "song-yuan-fang",
+        "titlePerformed": "遠方",
+        "collaborators": []
+      },
+      {
+        "position": 19,
+        "song": "song-high-heels-in-september",
+        "titlePerformed": "九月的高跟鞋",
+        "collaborators": [],
+        "notes": "Replaced 菊嘆 from the 2018 tour."
+      },
+      {
+        "position": 20,
+        "song": "song-bo-ruo-bo-luo-mi-duo-xin-jing",
+        "titlePerformed": "般若波羅密多心經",
+        "collaborators": [],
+        "notes": "齊版 (2004) Buddhist chant; new addition vs 2018 tour."
+      },
+      {
+        "position": 21,
+        "song": "song-daylight-avenue",
+        "titlePerformed": "一條日光大道",
+        "collaborators": [],
+        "notes": "齊版 (1982); 三毛作詞."
+      },
+      {
+        "position": 22,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "潘越雲 sings harmony."
+      },
+      {
+        "position": 23,
+        "song": "song-zhui-meng-ren",
+        "titlePerformed": "追夢人",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "羅大佑作; duet."
+      },
+      {
+        "position": 24,
+        "song": "song-amazing-grace",
+        "titlePerformed": "奇異恩典",
+        "collaborators": [],
+        "notes": "Encore; 齊版 (2020) Amazing Grace with Chinese lyrics."
+      },
+      {
+        "position": 25,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Encore duet."
+      },
+      {
+        "position": 26,
+        "song": "song-not-saying-goodbye",
+        "titlePerformed": "不曾告別",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Encore duet; 2018 song."
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -3811,7 +6230,7 @@
       "source-youtube-echoes-back-2022-promo"
     ],
     "sourceQuality": "official promo; no concert media confirmed",
-    "notes": "Maintainer confirmed the 2022 Taipei Echoes Back event shell but rejected all media links as concert media. YouTube RouuoLHYJXg routed to appearances instead of this concert record.",
+    "notes": "Maintainer confirmed the 2022 Taipei Echoes Back event shell but rejected all media links as concert media. YouTube RouuoLHYJXg routed to appearances instead of this concert record. Setlist recovered 2026-06-28 from a detailed attendee report (vocus.cc, DD, 2022-12-19, https://vocus.cc/article/63a07548fd8978000100c946). The 回聲 Echoes Back 2022 co-billed 齊豫+潘越雲 anniversary concert at 臺北流行音樂中心; per the echo-2018 precedent both singers repertoire is included, with 潘越雲 solos marked via collaborators. 2022 setlist differs from the 2018 tour: 水天吟→答案, 有一個人→飛鳥與魚, 菊嘆→九月的高跟鞋, plus added 般若波羅密多心經 and 奇異恩典 (encore, replacing 掌聲響起).",
     "status": "partial"
   },
   {
@@ -3838,7 +6257,55 @@
       "collaboration",
       "festival"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-you-are-all-my-memories",
+        "titlePerformed": "你是我所有的回憶",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-stories",
+        "titlePerformed": "Stories",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-lian-hua-chu-chu-kai",
+        "titlePerformed": "一念心清淨蓮花處處開",
+        "collaborators": [],
+        "notes": "佛歌; 唐代居士龐蘊佛詩. Not yet modeled in songs.json."
+      },
+      {
+        "position": 5,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Duet with 潘越雲; prefaced by a 三毛 recording."
+      },
+      {
+        "position": 7,
+        "song": "song-yi-dong-de-xin",
+        "titlePerformed": "驛動的心",
+        "collaborators": [],
+        "notes": "Group finale with all singers (周治平/潘越雲/齊豫/羅大佑/娃娃); 梁弘志作品. Not yet modeled."
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -3847,7 +6314,7 @@
       "source-jsclub-jingdian-2008-genting"
     ],
     "sourceQuality": "news-backed; no public media found",
-    "notes": "Date corrected from reference's 2008-03-05 to 2008-05-03 per public evidence and maintainer confirmation. Multi-artist concert with 罗大佑, 齐豫, 潘越云, 周治平 at Genting. 周治平 listed by display name because no person record exists yet.",
+    "notes": "Date corrected from reference's 2008-03-05 to 2008-05-03 per public evidence and maintainer confirmation. Multi-artist concert with 罗大佑, 齐豫, 潘越云, 周治平 at Genting. 周治平 listed by display name because no person record exists yet. Setlist cloned 2026-06-28 from concert-jing-dian-jin-qu-hao-ting-2007-taipei (same tour) as a partial draft; pending Genting Highlands-specific source confirmation. City-specific encore/guest variations may exist.",
     "status": "partial"
   },
   {
@@ -3876,51 +6343,131 @@
         "position": 1,
         "song": "song-stories",
         "titlePerformed": "Stories",
-        "collaborators": []
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 2",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=2",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 2,
         "song": "song-walking-in-the-rain",
         "titlePerformed": "走在雨中",
-        "collaborators": []
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 3",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=3",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 3,
         "song": "song-flying-bird-and-fish",
         "titlePerformed": "飞鸟与鱼",
-        "collaborators": []
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 4",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=4",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 4,
         "song": "song-whoever-finds-this-i-love-you",
         "titlePerformed": "Whoever Finds This, I Love You",
-        "collaborators": []
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 5",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=5",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 5,
         "song": "song-vincent",
         "titlePerformed": "Vincent",
-        "collaborators": []
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 6",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=6",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 6,
         "song": "song-high-heels-in-september",
         "titlePerformed": "九月的高跟鞋",
-        "collaborators": []
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 7",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=7",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 7,
-        "song": null,
+        "song": "song-qi-shi-dou-shi-yi-yang",
         "titlePerformed": "其实都是一样",
         "collaborators": [
           "person-chi-chin"
+        ],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 8",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=8",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
         ]
       },
       {
         "position": 8,
         "song": "song-you-are-all-my-memories",
         "titlePerformed": "你是我所有的回忆",
-        "collaborators": []
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 9",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=9",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 9,
@@ -3930,31 +6477,81 @@
         "songParts": [
           "song-xing",
           "song-answer"
+        ],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 10",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=10",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
         ]
       },
       {
         "position": 10,
         "song": "song-ju-tan",
         "titlePerformed": "菊叹",
-        "collaborators": []
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 11",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=11",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 11,
         "song": "song-your-smiling-face",
         "titlePerformed": "欢颜",
-        "collaborators": []
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 12",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=12",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 12,
         "song": "song-olive-tree",
         "titlePerformed": "橄榄树",
-        "collaborators": []
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 13",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=13",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 13,
         "song": "song-boat-song",
         "titlePerformed": "船歌",
-        "collaborators": []
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 14",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=14",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 14,
@@ -3962,6 +6559,16 @@
         "titlePerformed": "一面湖水",
         "collaborators": [
           "person-chi-chin"
+        ],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 15",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=15",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
         ]
       },
       {
@@ -3974,21 +6581,51 @@
         "songParts": [
           "song-olive-tree"
         ],
-        "notes": "Encore medley with Chyi Chin's 狼; Chyi Yu performs 橄榄树."
+        "notes": "Encore medley with Chyi Chin's 狼; Chyi Yu performs 橄榄树.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 16",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=16",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 16,
-        "song": null,
+        "song": "song-wo-yuan-yi",
         "titlePerformed": "我愿意",
         "collaborators": [],
-        "notes": "Encore."
+        "notes": "Encore.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 17",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=17",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       },
       {
         "position": 17,
         "song": "song-teng-chan-shu",
         "titlePerformed": "藤缠树",
         "collaborators": [],
-        "notes": "Encore."
+        "notes": "Encore.",
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 18",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/?p=18",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "齐豫花园"
+          }
+        ]
       }
     ],
     "mediaLinks": [
@@ -4061,7 +6698,32 @@
       "collaboration",
       "anniversary"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -4071,7 +6733,7 @@
       "source-chinadaily-rollings-tone-30-2011-beijing"
     ],
     "sourceQuality": "news-backed; no Chyi Yu media confirmed",
-    "notes": "Maintainer confirmed the Beijing shell but rejected all media candidates. Chyi Yu performed 橄榄树 per news/photo evidence. Multi-artist Rolling Stone 30 anniversary concert at the Bird's Nest.",
+    "notes": "Maintainer confirmed the Beijing shell but rejected all media candidates. Chyi Yu performed 橄榄树 per news/photo evidence. Multi-artist Rolling Stone 30 anniversary concert at the Bird's Nest. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial"
   },
   {
@@ -4098,15 +6760,51 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-ai-de-zhen-yan",
+        "titlePerformed": "爱的笺言 + 是否 (opening group medley with Pan Yue-yun)",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Tour opening: Pan Yue-yun and Chyi Yu sing 爱的笺言 and 是否 with overlapping melodies.",
+        "songParts": [
+          "song-ai-de-zhen-yan",
+          "song-shi-fou"
+        ]
+      },
+      {
+        "position": 2,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Duet with Pan Yue-yun memorializing 三毛."
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
       "source-project-concert-reference-list",
-      "source-cnw-zhen-ai-nv-ren-2011-wuhan"
+      "source-cnw-zhen-ai-nv-ren-2011-wuhan",
+      "source-cnw-zhen-ai-nv-ren-tour-setlist"
     ],
     "sourceQuality": "news-backed; no public media found",
-    "notes": "Maintainer confirmed Wuhan shell but rejected all media. Bilibili BV1ax411E78q belongs to a separate 珍爱女人 Singapore event, not Wuhan. 黄小琥 and 万芳 listed by display name because no person records exist yet.",
+    "notes": "Maintainer confirmed Wuhan shell but rejected all media. Bilibili BV1ax411E78q belongs to a separate 珍爱女人 Singapore event, not Wuhan. 黄小琥 and 万芳 listed by display name because no person records exist yet. Setlist recovered 2026-06-28 from tour-level news source (source-cnw-zhen-ai-nv-ren-tour-setlist): Chyi Yu segment of the multi-artist Power Woman 珍爱女人 bill. Confirmed songs: 橄榄树, 欢颜, 梦田 (duet with Pan Yue-yun). Pending city-specific source confirmation; city-specific encore/guest variations may exist.",
     "status": "partial"
   },
   {
@@ -4133,16 +6831,52 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-ai-de-zhen-yan",
+        "titlePerformed": "爱的笺言 + 是否 (opening group medley with Pan Yue-yun)",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Tour opening: Pan Yue-yun and Chyi Yu sing 爱的笺言 and 是否 with overlapping melodies.",
+        "songParts": [
+          "song-ai-de-zhen-yan",
+          "song-shi-fou"
+        ]
+      },
+      {
+        "position": 2,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Duet with Pan Yue-yun memorializing 三毛."
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
       "source-project-concert-reference-list",
       "source-sina-zhen-ai-nv-ren-2011-beijing",
-      "source-chinanews-zhen-ai-nv-ren-2011-beijing"
+      "source-chinanews-zhen-ai-nv-ren-2011-beijing",
+      "source-cnw-zhen-ai-nv-ren-tour-setlist"
     ],
     "sourceQuality": "news-backed; no public media found",
-    "notes": "Maintainer-appended during Batch 3 review. Beijing stop of the Power Woman 珍爱女人 tour at 五棵松体育馆.",
+    "notes": "Maintainer-appended during Batch 3 review. Beijing stop of the Power Woman 珍爱女人 tour at 五棵松体育馆. Setlist recovered 2026-06-28 from tour-level news source (source-cnw-zhen-ai-nv-ren-tour-setlist): Chyi Yu segment of the multi-artist Power Woman 珍爱女人 bill. Confirmed songs: 橄榄树, 欢颜, 梦田 (duet with Pan Yue-yun). Pending city-specific source confirmation; city-specific encore/guest variations may exist.",
     "status": "partial"
   },
   {
@@ -4169,14 +6903,50 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-ai-de-zhen-yan",
+        "titlePerformed": "爱的笺言 + 是否 (opening group medley with Pan Yue-yun)",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Tour opening: Pan Yue-yun and Chyi Yu sing 爱的笺言 and 是否 with overlapping melodies.",
+        "songParts": [
+          "song-ai-de-zhen-yan",
+          "song-shi-fou"
+        ]
+      },
+      {
+        "position": 2,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Duet with Pan Yue-yun memorializing 三毛."
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
-      "source-project-concert-reference-list"
+      "source-project-concert-reference-list",
+      "source-cnw-zhen-ai-nv-ren-tour-setlist"
     ],
     "sourceQuality": "reference-only; no independent Kunming source found",
-    "notes": "Maintainer confirmed the Kunming shell from the reference. Fresh public web search did not find an independent exact Kunming article in this pass.",
+    "notes": "Maintainer confirmed the Kunming shell from the reference. Fresh public web search did not find an independent exact Kunming article in this pass. Setlist recovered 2026-06-28 from tour-level news source (source-cnw-zhen-ai-nv-ren-tour-setlist): Chyi Yu segment of the multi-artist Power Woman 珍爱女人 bill. Confirmed songs: 橄榄树, 欢颜, 梦田 (duet with Pan Yue-yun). Pending city-specific source confirmation; city-specific encore/guest variations may exist.",
     "status": "partial"
   },
   {
@@ -4216,7 +6986,32 @@
       "collaboration",
       "anniversary"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Chyi Yu clip: 答案/橄榄树/angel/梦田",
@@ -4236,7 +7031,7 @@
       "source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu"
     ],
     "sourceQuality": "news-backed; Chyi Yu clip",
-    "notes": "Maintainer confirmed shell and kept Bilibili BV1u44y1E78v. Three-day run 2011-10-05/06/07 at Mercedes-Benz Arena. Non-Chyi Yu YouTube clips rejected.",
+    "notes": "Maintainer confirmed shell and kept Bilibili BV1u44y1E78v. Three-day run 2011-10-05/06/07 at Mercedes-Benz Arena. Non-Chyi Yu YouTube clips rejected. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial"
   },
   {
@@ -4270,7 +7065,32 @@
       "collaboration",
       "anniversary"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -4279,7 +7099,7 @@
       "source-cflac-rollings-tone-30-2011-shenzhen"
     ],
     "sourceQuality": "news-backed; no Chyi Yu media confirmed",
-    "notes": "Maintainer confirmed shell and no media. Chyi Yu performed 橄榄树 per news evidence. Bilibili BV1u44y1E78v is Shanghai, not Shenzhen.",
+    "notes": "Maintainer confirmed shell and no media. Chyi Yu performed 橄榄树 per news evidence. Bilibili BV1u44y1E78v is Shanghai, not Shenzhen. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial"
   },
   {
@@ -4298,7 +7118,87 @@
     "tags": [
       "solo"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-annie-s-song",
+        "titlePerformed": "Annie's Song",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-jingle-bells",
+        "titlePerformed": "Jingle Bells",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-santa-claus-is-coming-to-town",
+        "titlePerformed": "Santa Claus Is Coming to Town",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": "song-silent-night",
+        "titlePerformed": "Silent Night",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-xiang-jian-de-xiao-lu",
+        "titlePerformed": "鄉間的小路",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": []
+      },
+      {
+        "position": 8,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹",
+        "collaborators": []
+      },
+      {
+        "position": 9,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "歡顏",
+        "collaborators": []
+      },
+      {
+        "position": 10,
+        "song": "song-ju-tan",
+        "titlePerformed": "菊嘆",
+        "collaborators": []
+      },
+      {
+        "position": 11,
+        "song": "song-diamonds-and-rust",
+        "titlePerformed": "Diamonds and Rust",
+        "collaborators": []
+      },
+      {
+        "position": 12,
+        "song": "song-vincent",
+        "titlePerformed": "Vincent",
+        "collaborators": []
+      },
+      {
+        "position": 13,
+        "song": "song-nu-ren-hua",
+        "titlePerformed": "女人花",
+        "collaborators": [],
+        "notes": "Cover of 梅艷芳."
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -4308,7 +7208,7 @@
       "source-pixnet-yun-duan-2012-taipei"
     ],
     "sourceQuality": "news-backed; no public media found",
-    "notes": "Maintainer confirmed the shell and rejected YouTube QvOnod7ZS7Y as a news clip, not performance media. Small Live House concert, ~90 minutes, nearly 20 songs.",
+    "notes": "Maintainer confirmed the shell and rejected YouTube QvOnod7ZS7Y as a news clip, not performance media. Small Live House concert, ~90 minutes, nearly 20 songs. Setlist recovered 2026-06-28 from an attendee review (Pixnet blog by ned921, 2012-02-11, https://ned921.pixnet.net/blog/posts/4036302726). The review is impressionistic and does not give a confirmed order; positions are approximate, in the review's mention order. The reviewer notes the ~90-minute set leaned heavily on The Voice and 雲端 album religious/English songs plus early folk hits; ~20 songs total per news, so this partial list (~13) is incomplete. Omitted songs per the reviewer include 走在雨中, 春天的故事, 你是我所有的回憶, 九月的高跟鞋, 一條日光大道, Stories, Whoever finds this I love you.",
     "status": "partial"
   },
   {
@@ -4373,16 +7273,52 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-ai-de-zhen-yan",
+        "titlePerformed": "爱的笺言 + 是否 (opening group medley with Pan Yue-yun)",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Tour opening: Pan Yue-yun and Chyi Yu sing 爱的笺言 and 是否 with overlapping melodies.",
+        "songParts": [
+          "song-ai-de-zhen-yan",
+          "song-shi-fou"
+        ]
+      },
+      {
+        "position": 2,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Duet with Pan Yue-yun memorializing 三毛."
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
       "source-project-concert-reference-list",
       "source-blogspot-zhen-ai-nv-ren-2012-macau",
-      "source-wikipedia-venetian-macau-venue-list"
+      "source-wikipedia-venetian-macau-venue-list",
+      "source-cnw-zhen-ai-nv-ren-tour-setlist"
     ],
     "sourceQuality": "news-backed; no 2012 media found",
-    "notes": "Maintainer confirmed shell and rejected all media for this 2012 Macau event. 2017 Macau 珍爱女人 clips belong to a separate event (Batch 6). 2009 Genting 珍爱女人 clips are a separate future lead.",
+    "notes": "Maintainer confirmed shell and rejected all media for this 2012 Macau event. 2017 Macau 珍爱女人 clips belong to a separate event (Batch 6). 2009 Genting 珍爱女人 clips are a separate future lead. Setlist recovered 2026-06-28 from tour-level news source (source-cnw-zhen-ai-nv-ren-tour-setlist): Chyi Yu segment of the multi-artist Power Woman 珍爱女人 bill. Confirmed songs: 橄榄树, 欢颜, 梦田 (duet with Pan Yue-yun). Pending city-specific source confirmation; city-specific encore/guest variations may exist.",
     "status": "partial"
   },
   {
@@ -4424,7 +7360,32 @@
       "collaboration",
       "anniversary"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -4433,7 +7394,7 @@
       "source-zjol-rollings-tone-30-2012-hangzhou-traffic"
     ],
     "sourceQuality": "news-backed; no Chyi Yu media found",
-    "notes": "Maintainer confirmed shell and rejected unrelated Shanghai/Taipei Rolling Stone media candidates.",
+    "notes": "Maintainer confirmed shell and rejected unrelated Shanghai/Taipei Rolling Stone media candidates. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial"
   },
   {
@@ -4469,7 +7430,32 @@
       "collaboration",
       "anniversary"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -4477,7 +7463,7 @@
       "source-chinanews-rollings-tone-30-2012-chengdu"
     ],
     "sourceQuality": "news-backed; no Chyi Yu media found",
-    "notes": "Maintainer confirmed shell and rejected unrelated 1993 Chyi Chin Chengdu videos.",
+    "notes": "Maintainer confirmed shell and rejected unrelated 1993 Chyi Chin Chengdu videos. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial"
   },
   {
@@ -4521,7 +7507,32 @@
       "collaboration",
       "anniversary"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -4530,7 +7541,7 @@
       "source-baike-so-rollings-tone-30-2012-wuhan"
     ],
     "sourceQuality": "news-backed; no Chyi Yu media found",
-    "notes": "Maintainer confirmed shell and rejected the Shanghai 2011 clip for this Wuhan item.",
+    "notes": "Maintainer confirmed shell and rejected the Shanghai 2011 clip for this Wuhan item. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial"
   },
   {
@@ -4576,7 +7587,32 @@
       "collaboration",
       "anniversary"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [],
     "officialRecording": false,
     "sources": [
@@ -4586,7 +7622,7 @@
       "source-epochtimes-rollings-tone-30-2012-guangzhou"
     ],
     "sourceQuality": "news-backed; no Chyi Yu media found",
-    "notes": "Maintainer confirmed shell and rejected the promo/thanks clip and unrelated Shanghai 2011 clip. Rolling Stone 30 tour finale.",
+    "notes": "Maintainer confirmed shell and rejected the promo/thanks clip and unrelated Shanghai 2011 clip. Rolling Stone 30 tour finale. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial"
   },
   {
@@ -4606,7 +7642,72 @@
       "solo",
       "charity"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹(安可重唱)",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 1",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV13u411r7Vg/?p=1",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "ssssshou"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "song": "song-cheng-li-de-yue-guang",
+        "titlePerformed": "城裡的月光",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 2",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV13u411r7Vg/?p=2",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "ssssshou"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 3",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV13u411r7Vg/?p=3",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "ssssshou"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "乐队介绍+部分橄榄树+欢颜+今年的湖畔会很冷+答案",
+        "collaborators": [],
+        "mediaLinks": [
+          {
+            "label": "Chaptered Bilibili part 4",
+            "platform": "bilibili",
+            "url": "https://www.bilibili.com/video/BV13u411r7Vg/?p=4",
+            "kind": "video",
+            "isOfficial": false,
+            "credit": "ssssshou"
+          }
+        ]
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Official MV (橄榄树), kept for concert context",
@@ -4617,15 +7718,6 @@
         "credit": "滚石唱片 ROCK RECORDS"
       },
       {
-        "label": "橄欖樹（安可重唱）— Bilibili P1",
-        "platform": "bilibili",
-        "url": "https://www.bilibili.com/video/BV13u411r7Vg/?p=1",
-        "kind": "video",
-        "isOfficial": false,
-        "credit": "ssssshou",
-        "notes": "Mainland alternate for YouTube npaDlC3Bd58."
-      },
-      {
         "label": "橄欖樹（安可重唱）— YouTube source",
         "platform": "youtube",
         "url": "https://www.youtube.com/watch?v=npaDlC3Bd58",
@@ -4634,30 +7726,12 @@
         "credit": null
       },
       {
-        "label": "城裡的月光 — Bilibili P2",
-        "platform": "bilibili",
-        "url": "https://www.bilibili.com/video/BV13u411r7Vg/?p=2",
-        "kind": "video",
-        "isOfficial": false,
-        "credit": "ssssshou",
-        "notes": "Mainland alternate for YouTube KFgWE-EVJo0."
-      },
-      {
         "label": "城裡的月光 — YouTube source",
         "platform": "youtube",
         "url": "https://www.youtube.com/watch?v=KFgWE-EVJo0",
         "kind": "video",
         "isOfficial": false,
         "credit": null
-      },
-      {
-        "label": "Angel — Bilibili P3",
-        "platform": "bilibili",
-        "url": "https://www.bilibili.com/video/BV13u411r7Vg/?p=3",
-        "kind": "video",
-        "isOfficial": false,
-        "credit": "ssssshou",
-        "notes": "Mainland alternate for YouTube KZUWBaVza-0."
       },
       {
         "label": "Angel — YouTube source",
@@ -4676,7 +7750,7 @@
       "source-pixnet-olive-tree-2014-taipei"
     ],
     "sourceQuality": "news-backed; fan clips with cross-platform alternates",
-    "notes": "Maintainer confirmed shell and kept YouTube 5tOEP4WCCj8, rejected YouTube x_QgBYY42G8. Each performance item has a Bilibili (Mainland alternate) and YouTube (global source) link. 公益演唱会，感念李泰祥；票房盈余捐赠慈善团体.",
+    "notes": "Maintainer confirmed shell and kept YouTube 5tOEP4WCCj8, rejected YouTube x_QgBYY42G8. Each performance item has a Bilibili (Mainland alternate) and YouTube (global source) link. 公益演唱会，感念李泰祥；票房盈余捐赠慈善团体. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -4695,7 +7769,32 @@
     "tags": [
       "solo"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹(安可重唱)",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-cheng-li-de-yue-guang",
+        "titlePerformed": "城裡的月光",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "乐队介绍+部分橄榄树+欢颜+今年的湖畔会很冷+答案",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Full fan recording (YouTube source)",
@@ -4721,7 +7820,7 @@
       "source-sina-olive-tree-2014-guangzhou"
     ],
     "sourceQuality": "news-backed; full fan recording",
-    "notes": "Maintainer confirmed shell and rejected YouTube x5ELT6ZdOSM (promo clip). YouTube QntwxDPtFAA is the global source; Bilibili BV1PauhzNEyq is the Mainland alternate.",
+    "notes": "Maintainer confirmed shell and rejected YouTube x5ELT6ZdOSM (promo clip). YouTube QntwxDPtFAA is the global source; Bilibili BV1PauhzNEyq is the Mainland alternate. Setlist cloned 2026-06-28 from concert-olive-tree-2014-taipei (same tour) as a partial draft; pending Guangzhou-specific source confirmation. City-specific encore/guest variations may exist.",
     "status": "partial"
   },
   {
@@ -4740,7 +7839,32 @@
     "tags": [
       "solo"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹(安可重唱)",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-cheng-li-de-yue-guang",
+        "titlePerformed": "城裡的月光",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "乐队介绍+部分橄榄树+欢颜+今年的湖畔会很冷+答案",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "民歌組曲 — YouTube source",
@@ -4791,7 +7915,7 @@
       "source-biography-olive-tree-2014-singapore"
     ],
     "sourceQuality": "biography-style shell; fan clips",
-    "notes": "Maintainer confirmed shell and all listed media. 民歌組曲 and 百樂門組曲 each have a Bilibili/YouTube alternate pair; 菩提樹 is a standalone YouTube clip.",
+    "notes": "Maintainer confirmed shell and all listed media. 民歌組曲 and 百樂門組曲 each have a Bilibili/YouTube alternate pair; 菩提樹 is a standalone YouTube clip. Setlist cloned 2026-06-28 from concert-olive-tree-2014-taipei (same tour) as a partial draft; pending Singapore-specific source confirmation. City-specific encore/guest variations may exist.",
     "status": "partial"
   },
   {
@@ -4826,7 +7950,21 @@
       "festival",
       "collaboration"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": null,
+        "titlePerformed": "Encore segment",
+        "collaborators": [],
+        "notes": "Non-song segment (opening/talk/encore); song identity not resolved."
+      },
+      {
+        "position": 2,
+        "song": "song-walking-in-the-rain",
+        "titlePerformed": "走在雨中 clip",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Encore segment",
@@ -4852,7 +7990,7 @@
       "source-tongji-minge-2015-shanghai"
     ],
     "sourceQuality": "news-backed; fan clips",
-    "notes": "Maintainer confirmed shell, kept both Bilibili clips, and rejected BV1Ei4y1e7Kt (慶功宴講話 clip). BV1P4411s71u preserved as a lead for another 2007 event. Multi-artist folk-song concert; most performers listed by display name because no person records exist yet.",
+    "notes": "Maintainer confirmed shell, kept both Bilibili clips, and rejected BV1Ei4y1e7Kt (慶功宴講話 clip). BV1P4411s71u preserved as a lead for another 2007 event. Multi-artist folk-song concert; most performers listed by display name because no person records exist yet. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -4876,7 +8014,38 @@
       "charity",
       "collaboration"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": null,
+        "titlePerformed": "HOME 家 — YouTube foundation source",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-how-great-thou-art",
+        "titlePerformed": "How Great Thou Art",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹 (齊豫&孫燕姿 short clip)",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-ai-de-dai-jia",
+        "titlePerformed": "愛的代價 (齊豫 李宗盛)",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": "song-walking-in-the-rain",
+        "titlePerformed": "走在雨中 (現場版)",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "HOME 家 — YouTube foundation source",
@@ -4943,7 +8112,7 @@
       "source-rmzxw-huai-nian-2015-singapore"
     ],
     "sourceQuality": "news-backed; foundation and fan clips",
-    "notes": "Charity concert for Ren Ci Hospital / 仁慈医院. Maintainer confirmed shell and accepted keeps/rejects. HOME 家 has a foundation-channel YouTube source and a Bilibili Mainland alternate. 李宗盛 and 孙燕姿 listed by display name because no person records exist yet.",
+    "notes": "Charity concert for Ren Ci Hospital / 仁慈医院. Maintainer confirmed shell and accepted keeps/rejects. HOME 家 has a foundation-channel YouTube source and a Bilibili Mainland alternate. 李宗盛 and 孙燕姿 listed by display name because no person records exist yet. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -4974,7 +8143,20 @@
       "charity",
       "collaboration"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": null,
+        "titlePerformed": "Chyi Yu CUT, 36:57",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-yin-xing-de-chi-bang",
+        "titlePerformed": "隱形的翅膀 clip",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Chyi Yu CUT, 36:57",
@@ -5000,7 +8182,7 @@
       "source-yam-dian-deng-2016-taipei"
     ],
     "sourceQuality": "news-backed; fan clips",
-    "notes": "Maintainer confirmed the 2016-03-06 event shell. BV1qR4y1M77p belongs to a separate 2016-03-26 event (向国军致敬演唱会 点灯节目) and is not kept here. Performers listed by display name where no person records exist.",
+    "notes": "Maintainer confirmed the 2016-03-06 event shell. BV1qR4y1M77p belongs to a separate 2016-03-26 event (向国军致敬演唱会 点灯节目) and is not kept here. Performers listed by display name where no person records exist. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -5028,7 +8210,39 @@
       "collaboration",
       "anniversary"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ],
+        "notes": "Duet with Pan Yue-yun per clip description."
+      },
+      {
+        "position": 2,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-bu-yao-gao-bie",
+        "titlePerformed": "不要告别+告别",
+        "songParts": [
+          "song-bu-yao-gao-bie",
+          "song-gao-bie"
+        ],
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "齊豫部分 clip",
@@ -5046,7 +8260,7 @@
       "source-sznews-minge-40-2016-shenzhen"
     ],
     "sourceQuality": "news-backed; fan clip",
-    "notes": "Maintainer confirmed the Shenzhen shell. Kept YouTube wU1rdzm90F8 only; rejected Bilibili BV12x411k7gd (belongs to Taipei 民歌四十) and YouTube N1mT2QlV6XA (meet-and-greet side activity).",
+    "notes": "Maintainer confirmed the Shenzhen shell. Kept YouTube wU1rdzm90F8 only; rejected Bilibili BV12x411k7gd (belongs to Taipei 民歌四十) and YouTube N1mT2QlV6XA (meet-and-greet side activity). Setlist recovered 2026-06-28 from YouTube clip description (wU1rdzm90F8, 齊豫部分, 12:10). Chyi Yu segment of the multi-artist 民歌40 深圳场 folk concert: 梦田 (duet with Pan Yue-yun), 欢颜, 不要告别+告别, 橄榄树.",
     "status": "partial"
   },
   {
@@ -5069,7 +8283,101 @@
       "charity",
       "collaboration"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-answer",
+        "titlePerformed": "答案",
+        "collaborators": [
+          "person-wakin-chau"
+        ],
+        "notes": "Duet segment with 周华健 (Wakin Chau)."
+      },
+      {
+        "position": 2,
+        "song": "song-ming-tian-wo-yao-jia-gei-ni",
+        "titlePerformed": "明天我要嫁给你",
+        "collaborators": [
+          "person-wakin-chau"
+        ],
+        "notes": "Duet with 周华健; not yet modeled in songs.json."
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titlePerformed": "恰似你的温柔",
+        "collaborators": [
+          "person-wakin-chau"
+        ],
+        "notes": "Duet with 周华健 (review writes 恰是你的温柔); not yet modeled."
+      },
+      {
+        "position": 4,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": "song-blessing",
+        "titlePerformed": "祝福",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": "song-li-xianglan",
+        "titlePerformed": "李香兰",
+        "collaborators": []
+      },
+      {
+        "position": 8,
+        "song": "song-angel",
+        "titlePerformed": "Angel",
+        "collaborators": []
+      },
+      {
+        "position": 9,
+        "song": "song-stories",
+        "titlePerformed": "Stories",
+        "collaborators": []
+      },
+      {
+        "position": 10,
+        "song": "song-da-ci-da-bei-guan-shi-yin",
+        "titlePerformed": "大慈大悲观世音",
+        "collaborators": [],
+        "notes": "Buddhist chant dedicated to beneficiary groups."
+      },
+      {
+        "position": 11,
+        "song": "song-how-great-thou-art",
+        "titlePerformed": "How Great Thou Art",
+        "collaborators": [],
+        "notes": "Christian hymn dedicated to beneficiary groups."
+      },
+      {
+        "position": 12,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": [],
+        "notes": "Encore."
+      },
+      {
+        "position": 13,
+        "song": "song-tian-xia-you-qing-ren",
+        "titlePerformed": "天下有情人",
+        "collaborators": [
+          "person-wakin-chau"
+        ],
+        "notes": "Closing duet with 周华健; 1995 神雕侠侣 theme."
+      }
+    ],
     "mediaLinks": [
       {
         "label": "8world news/video clip (YouTube source)",
@@ -5097,7 +8405,7 @@
       "source-8world-gan-en-2017-news-clip"
     ],
     "sourceQuality": "news-backed; supporting-evidence video",
-    "notes": "Maintainer confirmed the shell and kept the 8world news/video clip on both YouTube and Bilibili as supporting evidence and video media. 齐豫 and 周华健 performed zero-fee; raised over 5 million SGD.",
+    "notes": "Maintainer confirmed the shell and kept the 8world news/video clip on both YouTube and Bilibili as supporting evidence and video media. 齐豫 and 周华健 performed zero-fee; raised over 5 million SGD. Setlist recovered 2026-06-28 from Zaobao post-event review (source-zaobao-gan-en-2017-singapore-review, reliability high). Names Chyi Yu duet segment with 周华健 (答案/明天我要嫁给你/恰似你的温柔), solo segment (欢颜/祝福/船歌/李香兰/Angel/Stories/大慈大悲观世音/How Great Thou Art), and encore (橄榄树/天下有情人 duet). 明天我要嫁给你 and 恰似你的温柔 not yet modeled in songs.json.",
     "status": "partial"
   },
   {
@@ -5124,7 +8432,34 @@
       "collaboration",
       "concert-series"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": null,
+        "titlePerformed": "試著了解 (group opening, partial capture)",
+        "collaborators": [],
+        "notes": "Group number; fan recording captures only the tail end."
+      },
+      {
+        "position": 2,
+        "song": "song-when-will-i-see-you-again",
+        "titlePerformed": "When Will I See You Again (group)",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-ai-de-dai-jia",
+        "titlePerformed": "愛的代價 (Chyi Yu feature)",
+        "collaborators": [],
+        "notes": "Cover of 李宗盛 song; Chyi Yu leads this segment per fan-recording notes."
+      },
+      {
+        "position": 4,
+        "song": "song-dancing-queen",
+        "titlePerformed": "Dancing Queen (group closing)",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "齐豫部分 fan recording, 17:55",
@@ -5141,7 +8476,7 @@
       "source-roundyule-zhen-ai-nv-ren-2017-macau"
     ],
     "sourceQuality": "news-backed; fan recording",
-    "notes": "Maintainer confirmed the shell and kept only Bilibili BV1Yx41187ZR; rejected the two short YES娱乐 clips (BV1Xb411p7ff and BV1kx41187xs).",
+    "notes": "Maintainer confirmed the shell and kept only Bilibili BV1Yx41187ZR; rejected the two short YES娱乐 clips (BV1Xb411p7ff and BV1kx41187xs). Setlist recovered 2026-06-28 from fan recording description (Bilibili BV1Yx41187ZR, 17:55, Chyi Yu segment of the multi-artist 珍愛女人 2017 Macau bill). The fan recording captures only the collaborative/group segments; Chyi Yu solo segment (likely per tour pattern: 橄榄树/欢颜) is pending evidence. Song ids pending: these are covers/group songs not yet modeled in songs.json.",
     "status": "partial"
   },
   {
@@ -5163,7 +8498,50 @@
     "tags": [
       "collaboration"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": null,
+        "titlePerformed": "Full fan upload, 73:15 (YouTube source)",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": null,
+        "titlePerformed": "Full fan upload, 73:15 (Bilibili alternate)",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": null,
+        "titlePerformed": "Partial fan upload, 42:53",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": null,
+        "titlePerformed": "You Raise Me Up clip",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": null,
+        "titlePerformed": "You Raise Me Up clip (alternate)",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-flying-bird-and-fish",
+        "titlePerformed": "飛鳥與魚 clip",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titlePerformed": "Youku album (evidence/media lead)",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Full fan upload, 73:15 (YouTube source)",
@@ -5230,7 +8608,7 @@
       "source-youku-chuan-yue-2017-genting"
     ],
     "sourceQuality": "platform-album and fan uploads",
-    "notes": "Maintainer confirmed the shell. Kept YouTube vTVNbawZ9kg and Bilibili BV1Pu4y1S7kc as alternate links for the same 73-minute fan upload, plus partial/clips and the Youku album lead. Rejected BV1xmu8zNE36 (duplicate repost) and kbRpHhWFZqU (official short clip, retained only as shell evidence).",
+    "notes": "Maintainer confirmed the shell. Kept YouTube vTVNbawZ9kg and Bilibili BV1Pu4y1S7kc as alternate links for the same 73-minute fan upload, plus partial/clips and the Youku album lead. Rejected BV1xmu8zNE36 (duplicate repost) and kbRpHhWFZqU (official short clip, retained only as shell evidence). Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -5250,7 +8628,14 @@
       "festival",
       "anniversary"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-you-are-all-my-memories",
+        "titlePerformed": "你是我所有的回憶 clip",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "你是我所有的回憶 clip",
@@ -5268,7 +8653,7 @@
       "source-bilibili-minge-50-2025-taipei-fan"
     ],
     "sourceQuality": "news-backed; fan clip",
-    "notes": "Maintainer confirmed the two-day shell and venue 台北小巨蛋. Kept only Bilibili BV1DdAfenEjS; rejected YouTube news clips kHtwf82-MqQ, s2nfwuxAMMU, and ncXKKpF8FjQ as media.",
+    "notes": "Maintainer confirmed the two-day shell and venue 台北小巨蛋. Kept only Bilibili BV1DdAfenEjS; rejected YouTube news clips kHtwf82-MqQ, s2nfwuxAMMU, and ncXKKpF8FjQ as media. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
@@ -5292,7 +8677,26 @@
       "charity",
       "collaboration"
     ],
-    "setlist": [],
+    "setlist": [
+      {
+        "position": 1,
+        "song": null,
+        "titlePerformed": "Official full upload",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田 excerpt (齊豫、趙詠華)",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-da-ji-xiang-tian-nu-zhou",
+        "titlePerformed": "大吉祥天女咒 excerpt (齊豫、趙詠華)",
+        "collaborators": []
+      }
+    ],
     "mediaLinks": [
       {
         "label": "Official full upload",
@@ -5325,7 +8729,7 @@
       "source-ren-ji-fu-bao-yong-heng-2025-taipei"
     ],
     "sourceQuality": "official recording",
-    "notes": "Maintainer confirmed the shell and kept the official 人間福報 full upload plus both official excerpts. 趙詠華 listed by display name because no person record exists yet. Religious/charity cultural concert for 佛光山 39th anniversary and 人間福報 25th anniversary.",
+    "notes": "Maintainer confirmed the shell and kept the official 人間福報 full upload plus both official excerpts. 趙詠華 listed by display name because no person record exists yet. Religious/charity cultural concert for 佛光山 39th anniversary and 人間福報 25th anniversary. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial"
   },
   {
