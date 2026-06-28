@@ -143,7 +143,9 @@ export type Concert = {
   city?: string | null;
   countryOrRegion?: string | null;
   eventType: string;
+  performers?: string[];
   guests?: string[];
+  tags?: string[];
   setlist: SongPerformance[];
   mediaLinks: ArchiveLink[];
   officialRecording?: boolean;
@@ -427,6 +429,47 @@ export function concertAvailabilityChecks(concert: Concert) {
     ["Audio", concert.mediaLinks.some((link) => link.kind === "audio")],
     ["Clips", concert.setlist.some((entry) => entry.mediaLinks?.length)]
   ] as Array<[string, boolean]>;
+}
+
+const CHYI_YU_PERSON_ID = "person-chyi-yu";
+
+function hasNonChyiPerformer(concert: Concert) {
+  const performers = concert.performers || [];
+  return performers.some((id) => id !== CHYI_YU_PERSON_ID && !id.toLowerCase().includes("chyi"));
+}
+
+export function concertCategoryTags(concert: Concert) {
+  const tags = new Set<string>(concert.tags || []);
+  if (tags.size) return Array.from(tags);
+
+  if (concert.eventType === "festival") tags.add("festival");
+  if ((concert.guests || []).length > 0 && !tags.has("collaboration")) tags.add("guest");
+  if (hasNonChyiPerformer(concert)) tags.add("collaboration");
+
+  const notes = (concert.notes || "").toLocaleLowerCase("en-US");
+  if (notes.includes("charity") || notes.includes("慈善")) tags.add("charity");
+  if (notes.includes("religious") || notes.includes("chanting") || notes.includes("宗教") || notes.includes("法會") || notes.includes("法会")) tags.add("religious");
+  if (notes.includes("anniversary") || notes.includes("周年") || notes.includes("民歌四十") || notes.includes("民歌五十")) tags.add("anniversary");
+  if (concert.eventType === "concert-series") tags.add("concert-series");
+
+  if (!tags.size) tags.add("other");
+  return Array.from(tags);
+}
+
+export function concertPrimaryCategory(concert: Concert) {
+  const priority = [
+    "festival",
+    "concert-series",
+    "collaboration",
+    "guest",
+    "charity",
+    "religious",
+    "anniversary",
+    "solo",
+    "other"
+  ];
+  const tags = concertCategoryTags(concert);
+  return priority.find((tag) => tags.includes(tag)) || concert.eventType;
 }
 
 export function showAvailabilityChecks(show: MusicShow) {

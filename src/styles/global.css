@@ -664,6 +664,64 @@ details[open].record-card summary::after {
   text-transform: uppercase;
 }
 
+.concert-controls-panel {
+  grid-template-columns: minmax(14rem, 0.5fr) minmax(20rem, 1fr) auto;
+}
+
+.concert-year-list {
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.concert-year-group {
+  border-bottom: 1px solid var(--line);
+}
+
+.concert-year-summary {
+  align-items: baseline;
+  cursor: pointer;
+  display: flex;
+  gap: 0.8rem;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0.75rem;
+}
+
+.concert-year-summary::-webkit-details-marker {
+  display: none;
+}
+
+.concert-year-summary::after {
+  color: var(--muted);
+  content: "+";
+  font-size: 1rem;
+  line-height: 1;
+  margin-left: auto;
+  text-align: right;
+}
+
+details[open].concert-year-group .concert-year-summary::after {
+  content: "\2013";
+}
+
+.concert-year-label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.concert-year-count {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.concert-year-group .archive-grid {
+  border-top: 0;
+}
+
 .record-meta-table {
   color: var(--muted);
   display: grid;

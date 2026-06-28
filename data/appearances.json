@@ -975,5 +975,37 @@
         "notes": null
       }
     ]
+  },
+  {
+    "id": "appearance-da-yun-shi-tang-chyi-yu-pan-yueyun-2022",
+    "slug": "da-yun-shi-tang-chyi-yu-pan-yueyun-2022",
+    "title": "Da Yun Shi Tang: Chyi Yu and Pan Yue-yun",
+    "titleOriginal": "大雲時堂：齊豫、潘越雲 再現經典之音",
+    "titleLocalized": {
+      "en": "Da Yun Shi Tang: Chyi Yu and Pan Yue-yun",
+      "zh-Hant": "大雲時堂：齊豫、潘越雲 再現經典之音",
+      "zh-Hans": "大云时堂：齐豫、潘越云 再现经典之音"
+    },
+    "date": "2022-12-07",
+    "appearanceType": "interview",
+    "programOrWork": "大雲時堂",
+    "role": "Guest interview / promo appearance",
+    "relatedSongs": [],
+    "mediaLinks": [
+      {
+        "label": "YouTube full episode",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=RouuoLHYJXg",
+        "kind": "watch",
+        "isOfficial": false,
+        "accessRegion": "Global",
+        "notes": "Uploader 大雲時堂; duration 47:18; upload date 2022-12-07."
+      }
+    ],
+    "sources": [
+      "source-youtube-da-yun-shi-tang-rouuolhyjxg"
+    ],
+    "notes": "Maintainer-requested appearance carry-over from the 2022 Taipei Echoes Back concert batch. Routed to appearances instead of concert media.",
+    "status": "partial"
   }
 ]

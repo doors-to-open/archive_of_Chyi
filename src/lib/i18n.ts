@@ -1,4 +1,5 @@
 import { byId, people, releaseCategoryTags } from "./archive";
+import { concertCategoryTags } from "./archive";
 import type { AlbumRecord } from "./archive";
 import type {
   Appearance,
@@ -271,6 +272,15 @@ const ui = {
   "option.liveAlbums": { en: "Live albums", "zh-Hant": "現場專輯", "zh-Hans": "现场专辑" },
   "option.reissues": { en: "Reissues", "zh-Hant": "再版", "zh-Hans": "再版" },
   "option.otherReleases": { en: "Other", "zh-Hant": "其他", "zh-Hans": "其他" },
+  "tag.solo": { en: "Solo", "zh-Hant": "個人", "zh-Hans": "个人" },
+  "tag.guest": { en: "Guest", "zh-Hant": "嘉賓", "zh-Hans": "嘉宾" },
+  "tag.collaboration": { en: "Collaboration", "zh-Hant": "合作", "zh-Hans": "合作" },
+  "tag.charity": { en: "Charity", "zh-Hant": "慈善", "zh-Hans": "慈善" },
+  "tag.festival": { en: "Festival", "zh-Hant": "音樂節", "zh-Hans": "音乐节" },
+  "tag.religious": { en: "Religious", "zh-Hant": "宗教", "zh-Hans": "宗教" },
+  "tag.anniversary": { en: "Anniversary", "zh-Hant": "周年", "zh-Hans": "周年" },
+  "tag.concert-series": { en: "Concert series", "zh-Hant": "系列演出", "zh-Hans": "系列演出" },
+  "tag.other": { en: "Other", "zh-Hant": "其他", "zh-Hans": "其他" },
   "option.allSections": { en: "All sections", "zh-Hant": "全部分類", "zh-Hans": "全部分类" },
   "option.allTypes": { en: "All types", "zh-Hant": "全部類型", "zh-Hans": "全部类型" },
   "option.allLevels": { en: "All levels", "zh-Hant": "全部等級", "zh-Hans": "全部等级" },
@@ -511,6 +521,29 @@ export function releaseCategoryValues(category: string): LocaleValues {
     other: uiText("option.otherReleases")
   };
   return categories[category] || releaseTypeValues(category);
+}
+
+export function concertTagValues(tag: string): LocaleValues {
+  const tags: Record<string, LocaleValues> = {
+    solo: uiText("tag.solo"),
+    guest: uiText("tag.guest"),
+    collaboration: uiText("tag.collaboration"),
+    charity: uiText("tag.charity"),
+    festival: uiText("tag.festival"),
+    religious: uiText("tag.religious"),
+    anniversary: uiText("tag.anniversary"),
+    "concert-series": uiText("tag.concert-series"),
+    other: uiText("tag.other")
+  };
+  return tags[tag] || textValues(tag);
+}
+
+export function concertTagsValues(concert: Concert): LocaleValues {
+  const tags = concertCategoryTags(concert);
+  return locales.reduce((values, locale) => {
+    values[locale] = tags.map((tag) => valueForLocale(concertTagValues(tag), locale)).join(", ");
+    return values;
+  }, {} as LocaleValues);
 }
 
 export function appearanceTypeValues(type: string): LocaleValues {

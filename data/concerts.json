@@ -452,13 +452,30 @@
         "url": "/releases/the-unheard-of-chyi-2003/",
         "kind": "release-link",
         "isOfficial": true
+      },
+      {
+        "label": "Full fan upload, alternate (same as YouTube K6eMTrSvW3c)",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV13FunzjEGM/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "优视部落"
+      },
+      {
+        "label": "Full fan upload, alternate (same as Bilibili BV13FunzjEGM)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=K6eMTrSvW3c",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "甄想天地【1】"
       }
     ],
     "officialRecording": true,
     "sources": [
       "source-bilibili-unheard-full-hd",
       "source-bilibili-unheard-full-480p",
-      "source-bilibili-unheard-chapters"
+      "source-bilibili-unheard-chapters",
+      "source-bilibili-unheard-2002-shorter-full"
     ],
     "sourceQuality": "fan-upload-with-release-context",
     "notes": "Modeled as one concert item because the supplied source gives the concert as a two-day Hong Kong Coliseum run, but does not distinguish per-day setlists. Official DVD/live-album material is represented separately under Releases; this concert page emphasizes fan-uploaded show material.",
@@ -2789,5 +2806,2744 @@
     "sourceQuality": "fan-upload",
     "notes": "Fan-upload metadata identifies the 2026-04-18 Changsha stop of Still Grace / 風采依舊·在, guest Cheng Fangyuan, and a detailed setlist. Event-scoped Bilibili discovery on 2026-06-25 added full, chaptered, partial, and guest-segment recordings. Venue and official recording availability remain unconfirmed.",
     "status": "partial"
+  },
+  {
+    "id": "concert-mei-li-ren-sheng-1999-taipei",
+    "slug": "mei-li-ren-sheng-1999-taipei",
+    "title": "C'est la vie / 美麗人生歌友會",
+    "date": "1999-12-09",
+    "venue": null,
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Fan composite, 15-part",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1EM4112757/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "大大大象_Ya"
+      },
+      {
+        "label": "Full fan recording, C'est la vie",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1ix411r7SP/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "WeAreLambily"
+      },
+      {
+        "label": "Event segment, learning guitar",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Cb411W73u/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "思齊96"
+      },
+      {
+        "label": "Full fan recording, 480P",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=rEot7d3XNOQ",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "齊豫Chyi Yu Unofficial Music Channel"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-bilibili-mei-li-ren-sheng-1999"
+    ],
+    "sourceQuality": "fan-upload; exact venue unconfirmed",
+    "notes": "Maintainer confirmed the shell and all four media candidates. Reference row gives 1999-12-09 and 台北; fan-upload metadata confirms the 1999 美麗人生 event but not the exact date or venue.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-hui-yi-shi-yu-ge-de-qi-yu-2003-taipei",
+    "slug": "hui-yi-shi-yu-ge-de-qi-yu-2003-taipei",
+    "title": "回憶那段詩與歌的奇遇",
+    "date": "2003-12-27/2003-12-28",
+    "venue": "Taipei International Convention Center",
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-epochtimes-chyi-2003-taipei-concert",
+      "source-epochtimes-chyi-2003-taipei-pre-event"
+    ],
+    "sourceQuality": "news-backed; no public media found",
+    "notes": "Maintainer confirmed the event shell. News sources confirm the two-day run at Taipei International Convention Center; no exact public video was found in this pass.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-qi-jia-huan-2004-beijing",
+    "slug": "qi-jia-huan-2004-beijing",
+    "title": "齊家歡北京演唱會",
+    "date": "2004-12-03",
+    "venue": "Capital Gymnasium",
+    "city": "Beijing",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-chi-chin"
+    ],
+    "guests": [
+      "person-chi-chin"
+    ],
+    "tags": [
+      "collaboration"
+    ],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-chuan-shuo",
+        "titlePerformed": "传说",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-daylight-avenue",
+        "titlePerformed": "一条日光的大道",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-blessing",
+        "titlePerformed": "祝福",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": "song-high-heels-in-september",
+        "titlePerformed": "九月的高跟鞋",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-flying-bird-and-fish",
+        "titlePerformed": "飞鸟与鱼",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": "song-chun-tian-de-fu-diao",
+        "titlePerformed": "春天的浮雕",
+        "collaborators": []
+      },
+      {
+        "position": 8,
+        "song": "song-yu-si",
+        "titlePerformed": "雨丝",
+        "collaborators": []
+      },
+      {
+        "position": 9,
+        "song": "song-you-are-all-my-memories",
+        "titlePerformed": "你是我所有的回忆",
+        "collaborators": []
+      },
+      {
+        "position": 10,
+        "song": "song-teng-chan-shu",
+        "titlePerformed": "藤缠树",
+        "collaborators": [
+          "person-chi-chin"
+        ]
+      },
+      {
+        "position": 11,
+        "song": "song-dream-field",
+        "titlePerformed": "梦田",
+        "collaborators": [
+          "person-chi-chin"
+        ]
+      },
+      {
+        "position": 12,
+        "song": "song-hua-ji",
+        "titlePerformed": "花祭",
+        "collaborators": [
+          "person-chi-chin"
+        ]
+      },
+      {
+        "position": 14,
+        "song": null,
+        "titlePerformed": "答案 / Vincent",
+        "collaborators": [],
+        "songParts": [
+          "song-answer",
+          "song-vincent"
+        ]
+      },
+      {
+        "position": 15,
+        "song": null,
+        "titlePerformed": "秋蝉 / 小茉莉 / 如果",
+        "collaborators": [],
+        "songParts": [
+          "song-qiu-chan",
+          "song-xiao-mo-li",
+          "song-ru-guo"
+        ]
+      },
+      {
+        "position": 16,
+        "song": "song-xiang-jian-de-xiao-lu",
+        "titlePerformed": "乡间的小路",
+        "collaborators": []
+      },
+      {
+        "position": 17,
+        "song": "song-whoever-finds-this-i-love-you",
+        "titlePerformed": "Whoever Finds This, I Love You",
+        "collaborators": []
+      },
+      {
+        "position": 18,
+        "song": "song-ju-tan",
+        "titlePerformed": "菊叹",
+        "collaborators": []
+      },
+      {
+        "position": 19,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 20,
+        "song": "song-seven-oclock",
+        "titlePerformed": "七点钟",
+        "collaborators": []
+      },
+      {
+        "position": 21,
+        "song": "song-only-you",
+        "titlePerformed": "有一个人",
+        "collaborators": []
+      },
+      {
+        "position": 22,
+        "song": "song-cest-la-vie",
+        "titlePerformed": "C'est la vie",
+        "collaborators": []
+      },
+      {
+        "position": 23,
+        "song": "song-stories",
+        "titlePerformed": "Stories",
+        "collaborators": []
+      },
+      {
+        "position": 24,
+        "song": "song-walking-in-the-rain",
+        "titlePerformed": "走在雨中",
+        "collaborators": []
+      },
+      {
+        "position": 25,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": []
+      },
+      {
+        "position": 26,
+        "song": "song-da-ji-xiang-tian-nu-zhou",
+        "titlePerformed": "大吉祥天女咒",
+        "collaborators": []
+      },
+      {
+        "position": 27,
+        "song": "song-meng",
+        "titlePerformed": "梦",
+        "collaborators": []
+      },
+      {
+        "position": 28,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树（清唱）",
+        "collaborators": [],
+        "notes": "A cappella/clear-singing version per setlist source."
+      }
+    ],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-sina-qi-jia-huan-2004-beijing-preview",
+      "source-sina-qi-jia-huan-2004-beijing-review",
+      "source-sina-qi-jia-huan-2004-beijing-setlist"
+    ],
+    "sourceQuality": "news-backed setlist; no public media found",
+    "notes": "Maintainer confirmed the shell and requested saving the setlist. Chyi Chin appears as both performer and guest; duet positions (10-12) are included as Chyi Yu performances. The 齐秦 solo segment (大约在冬季 / 原来的我) is excluded per the Chyi-Yu-only setlist rule.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-zhen-qing-nian-lun-2004-shanghai",
+    "slug": "zhen-qing-nian-lun-2004-shanghai",
+    "title": "真情年輪 / 年輪 上海演唱會",
+    "date": "2004-12-10",
+    "venue": "Shanghai Grand Stage",
+    "city": "Shanghai",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-chi-chin"
+    ],
+    "guests": [
+      "person-chi-chin"
+    ],
+    "tags": [
+      "collaboration"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Official recording, 720p",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1b1qHYGExJ/",
+        "kind": "video",
+        "isOfficial": true,
+        "credit": "齐豫花园"
+      },
+      {
+        "label": "Official TV recording, 东方电视台",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1ts4y1x7QN/",
+        "kind": "video",
+        "isOfficial": true,
+        "credit": "春天的日光 / 东方电视台"
+      },
+      {
+        "label": "Long fan upload",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Tx411W7iH/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "WeAreLambily"
+      },
+      {
+        "label": "Single-song clip, 有一個人",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=TAV8K7k23Io",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "齊豫花園"
+      }
+    ],
+    "officialRecording": true,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-bilibili-zhen-qing-nian-lun-2004-shanghai-official",
+      "source-bilibili-nian-lun-2004-shanghai-official-tv"
+    ],
+    "sourceQuality": "official-recording-and-platform-metadata",
+    "notes": "Maintainer confirmed the shell and accepted all three Bilibili candidates plus the YouTube single-song clip. Setlist not modeled in this pass; the Bilibili description includes a 23-item track list for follow-up.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-tian-shi-yu-lang-2008-taipei",
+    "slug": "tian-shi-yu-lang-2008-taipei",
+    "title": "天使與狼 20周年巡回演唱會 台北站",
+    "date": "2008-03-01",
+    "venue": "Taipei Arena",
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert-series",
+    "performers": [
+      "person-chyi-yu",
+      "person-chi-chin"
+    ],
+    "guests": [
+      "person-chi-chin"
+    ],
+    "tags": [
+      "collaboration",
+      "anniversary",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Encore fragment, 2008.3.1",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=QO090FLTDFo",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "vul3xu"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-epochtimes-tian-shi-yu-lang-2008-tour",
+      "source-sohu-tian-shi-yu-lang-2008"
+    ],
+    "sourceQuality": "news-backed; short fragment media",
+    "notes": "Date corrected from the reference's 2007-03 to 2008-03-01 per maintainer review and news evidence. The anniversary tour also played 台中, 高雄, and 台南; those tour-stop dates remain unknown and are not imported as separate records until stronger sources are found. Treat 1988 天使与狼 media as a separate event.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-jing-dian-jin-qu-hao-ting-2007-taipei",
+    "slug": "jing-dian-jin-qu-hao-ting-2007-taipei",
+    "title": "2007經典金曲「好聽」音樂會",
+    "date": "2007-09-14",
+    "venue": "Taipei International Convention Center",
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-luo-dayou",
+      "person-pan-yue-yun",
+      "周治平",
+      "金智娟"
+    ],
+    "guests": [
+      "person-luo-dayou",
+      "person-pan-yue-yun",
+      "周治平",
+      "金智娟"
+    ],
+    "tags": [
+      "collaboration"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-pchome-jing-dian-jin-qu-2007"
+    ],
+    "sourceQuality": "attendee-report; no public media found",
+    "notes": "Maintainer confirmed the event shell. Multi-artist concert with 齊豫, 羅大佑, 潘越雲, 周治平, and 金智娟. 周治平 and 金智娟 are listed by display name because no person records exist yet.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-echo-2018-taipei",
+    "slug": "echo-2018-taipei",
+    "title": "三個女人的壯闊人生—三毛·齊豫·潘越雲《回聲》演唱會",
+    "date": "2018-06-09",
+    "venue": "Taipei Arena",
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun"
+    ],
+    "guests": [
+      "person-pan-yue-yun"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Full fan upload",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1fW411F71w/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "是我在弹着古筝"
+      },
+      {
+        "label": "夢田 clip",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=BgxbCfMKfCM",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "axo2009"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-playmusic-echo-2018-taipei",
+      "source-ettoday-echo-2018-taipei"
+    ],
+    "sourceQuality": "news-backed; fan-upload",
+    "notes": "Maintainer confirmed the shell. Bilibili BV1fW411F71w confirmed as a full fan upload; YouTube clip BgxbCfMKfCM accepted; YouTube news clip wIvftvwz4hM rejected.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-echo-2018-beijing",
+    "slug": "echo-2018-beijing",
+    "title": "三毛·齊豫·潘越雲《回聲》演唱會 北京站",
+    "date": "2018-08-17",
+    "venue": "Beijing Workers' Gymnasium",
+    "city": "Beijing",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun"
+    ],
+    "guests": [
+      "person-pan-yue-yun"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Partial concert",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV11W411X7CR/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "是我在弹着古筝"
+      },
+      {
+        "label": "在那遙遠的地方 / 橄欖樹 clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1gW411Z7RD/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "WeAreLambily"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-china-com-echo-2018-beijing",
+      "source-bjzgh-echo-2018-beijing"
+    ],
+    "sourceQuality": "news-backed; partial fan media",
+    "notes": "Maintainer accepted both media links. Full performance list/setlist has not been collected yet.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-echo-2018-wuhan",
+    "slug": "echo-2018-wuhan",
+    "title": "三毛·齊豫·潘越雲《回聲》演唱會 武漢站",
+    "date": "2018-09-08",
+    "venue": "Wuhan Keting",
+    "city": "Wuhan",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun"
+    ],
+    "guests": [
+      "person-pan-yue-yun"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-dawuhan-echo-2018-wuhan"
+    ],
+    "sourceQuality": "news-backed; no Chyi Yu media confirmed",
+    "notes": "Maintainer confirmed the event shell but rejected the available Bilibili media candidate because it features Pan Yue-yun rather than Chyi Yu.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-echo-2019-singapore",
+    "slug": "echo-2019-singapore",
+    "title": "三個女人的壯闊人生—三毛·齊豫·潘越雲《回聲》演唱會 新加坡站",
+    "date": "2019-04-27",
+    "venue": "The Star Performing Arts Centre",
+    "city": "Singapore",
+    "countryOrRegion": "Singapore",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun"
+    ],
+    "guests": [
+      "person-pan-yue-yun"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Partial concert clip",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=0kS-NhcZU8I",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "M9+1"
+      },
+      {
+        "label": "不曾告別 clip",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=mP0crKRoHqM",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "hades"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-gevme-echo-2019-singapore",
+      "source-zaobao-echo-2019-singapore"
+    ],
+    "sourceQuality": "news-backed; fan-clip",
+    "notes": "Maintainer confirmed the shell and accepted YouTube clips 0kS-NhcZU8I and mP0crKRoHqM; rejected NPjf20XSAf0 as a pre-event official/prior-event clip.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-echo-2019-guangzhou",
+    "slug": "echo-2019-guangzhou",
+    "title": "三毛·齊豫·潘越雲《回聲》演唱會 廣州站",
+    "date": "2019-08-10",
+    "venue": "Guangzhou Central Station Showcase Center",
+    "city": "Guangzhou",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun"
+    ],
+    "guests": [
+      "person-pan-yue-yun"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Full fan recording (禁二传)",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1q7411n7Yn/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "du_xyii",
+        "notes": "Uploader explicitly says 禁二传, 禁商用. Link only; do not repost or mirror."
+      },
+      {
+        "label": "Partial concert",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV194411D7XZ/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "不为难的胖虎"
+      },
+      {
+        "label": "Song compilation",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1aE41137yP/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "GEM_Evonne"
+      },
+      {
+        "label": "風 clip",
+        "platform": "xiaohongshu",
+        "url": "https://www.xiaohongshu.com/explore/6975a4e8000000000a032ff0",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "momo"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-ycpai-echo-2019-guangzhou"
+    ],
+    "sourceQuality": "news-backed; fan-upload (rights-sensitive)",
+    "notes": "Maintainer confirmed the shell and all three Bilibili links plus the XHS canonical link. YouTube VSuvviLw__g rejected for poor quality. The 禁二传 upload is linked only; the archive does not download, mirror, repost, or re-upload fan videos.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-chishang-autumn-harvest-2019-taitung",
+    "slug": "chishang-autumn-harvest-2019-taitung",
+    "title": "2019池上秋收稻穗藝術節",
+    "date": "2019-10-25/2019-10-26",
+    "venue": "Chishang Rice Fields",
+    "city": "Taitung Chishang",
+    "countryOrRegion": "Taiwan",
+    "eventType": "festival",
+    "performers": [
+      "person-chyi-yu",
+      "陳建年"
+    ],
+    "guests": [
+      "陳建年"
+    ],
+    "tags": [
+      "festival",
+      "collaboration"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Official short clip",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=KAik_JrfkrQ",
+        "kind": "video",
+        "isOfficial": true,
+        "credit": "樂事達娛樂有限公司"
+      },
+      {
+        "label": "Official short clip, 一條日光大道×海洋",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=o_wNaQER-cc",
+        "kind": "video",
+        "isOfficial": true,
+        "credit": "台灣好"
+      },
+      {
+        "label": "橄欖樹 clip, Radio Taiwan International",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=kGaSifEcs1U",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "Radio Taiwan International"
+      },
+      {
+        "label": "船歌+talking clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1NE411q78K/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "陈四毛小朋友"
+      },
+      {
+        "label": "一條日光大道 clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1jE411q7Gd/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "陈四毛小朋友"
+      },
+      {
+        "label": "最愛 clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1jE411q7SN/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "陈四毛小朋友"
+      },
+      {
+        "label": "走在雨中 clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1PE411q7oY/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "陈四毛小朋友"
+      },
+      {
+        "label": "Amazing Grace clip (day 1)",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1LE411q7kv/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "陈四毛小朋友"
+      },
+      {
+        "label": "Amazing Grace clip (day 2)",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV14E411q7z8/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "陈四毛小朋友"
+      },
+      {
+        "label": "夢田 clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1NE411q7SC/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "陈四毛小朋友"
+      },
+      {
+        "label": "夢 clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1jE411q7MT/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "陈四毛小朋友"
+      },
+      {
+        "label": "民歌組曲 clip (1)",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1jE411q7nq/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "陈四毛小朋友"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-wikipedia-chyi-yu-events"
+    ],
+    "sourceQuality": "festival; official and fan clips",
+    "notes": "Maintainer confirmed the two-day range 2019-10-25/2019-10-26. Kept official YouTube KAik_JrfkrQ (rejected Bilibili repost BV1nJ411U7hR), official o_wNaQER-cc, Radio Taiwan kGaSifEcs1U, and the 陈四毛小朋友 fan clips. Rejected YouTube news clip F9Gy9i4oCQI and the XHS repost. Setlist not modeled as an ordered list; clips confirm individual performances.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-echo-2018-nanjing",
+    "slug": "echo-2018-nanjing",
+    "title": "三毛·齊豫·潘越雲《回聲》演唱會 南京站",
+    "date": "2018-10-27",
+    "venue": "Wutaishan Stadium",
+    "city": "Nanjing",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun"
+    ],
+    "guests": [
+      "person-pan-yue-yun"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Partial concert",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1d4rVBiEfF/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "WeAreLambily"
+      },
+      {
+        "label": "夢田 clip",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=4EM-2daGcZk",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "sunny大宁"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-cri-echo-2018-nanjing"
+    ],
+    "sourceQuality": "news-backed; fan-upload (date corrected from reference)",
+    "notes": "Reference row listed 2019-10-27, but ticket/news and Bilibili evidence point to 2018-10-27; maintainer confirmed the correction.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-fenghua-charity-2018-taipei",
+    "slug": "fenghua-charity-2018-taipei",
+    "title": "峰華齊唱慈善演唱會",
+    "date": "2018-11-24",
+    "venue": "Taipei International Convention Center",
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-wu-tsing-fong",
+      "趙詠華"
+    ],
+    "guests": [
+      "person-wu-tsing-fong",
+      "趙詠華"
+    ],
+    "tags": [
+      "charity",
+      "collaboration"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Official TV recording (公视), fan capture",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Vb411S7VY/",
+        "kind": "video",
+        "isOfficial": true,
+        "credit": "春天的日光",
+        "notes": "Official 公视 recording captured from TV by a fan. TV broadcast date was 2019-02-04."
+      },
+      {
+        "label": "Encore clip (same as YouTube Lxy6zwwS3NE)",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Kb411S7zc/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "沫言_-",
+        "notes": "Mainland access copy of YouTube Lxy6zwwS3NE."
+      },
+      {
+        "label": "Encore clip (original)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=Lxy6zwwS3NE",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "Gugi Chan"
+      },
+      {
+        "label": "民歌联唱 clip from official TV recording",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=zek7TbZ7Kv8",
+        "kind": "video",
+        "isOfficial": true,
+        "credit": "齊豫Chyi Yu Unofficial Music Channel"
+      }
+    ],
+    "officialRecording": true,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-wikipedia-chyi-yu-events",
+      "source-bilibili-fenghua-2018-taipei-tv",
+      "source-youtube-fenghua-2018-encore"
+    ],
+    "sourceQuality": "official TV recording; charity concert",
+    "notes": "Date corrected from reference's 2019-11-24 to 2018-11-24 per maintainer; the event was held 2018-11-24 and broadcast on 公视 on 2019-02-04. Charity concert with donation to 菩提長青村. XHS candidate rejected as unauthorized. 趙詠華 listed by display name because no person record exists yet.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-ai-yu-xi-wang-2019-jiayi",
+    "slug": "ai-yu-xi-wang-2019-jiayi",
+    "title": "愛與希望 展望未來 關懷演唱會",
+    "date": "2019-12-18",
+    "venue": "Chiayi Prison",
+    "city": "Chiayi",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "charity",
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Full performance (original)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=nep2NzV2Enc",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "世界大同"
+      },
+      {
+        "label": "Full performance (Mainland access copy)",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1ZE411s7Rr/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "在云端云游",
+        "notes": "Reposted from YouTube; retained as an access copy for users who cannot access YouTube."
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-youtube-aiyuxiwang-2019-jiayi"
+    ],
+    "sourceQuality": "maintainer-supplied platform links",
+    "notes": "Maintainer supplied Bilibili BV1ZE411s7Rr and identified YouTube nep2NzV2Enc as the original source. Bilibili metadata identifies 20191218 爱与希望、展望未来 演唱会 at 嘉义监狱.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-echoes-back-2022-taipei",
+    "slug": "echoes-back-2022-taipei",
+    "title": "三個女人的壯闊人生 三毛 齊豫 潘越雲《回聲 Echoes Back ~ 2022》演唱會",
+    "date": "2022-12-17",
+    "venue": "Taipei Pop Music Center",
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun"
+    ],
+    "guests": [
+      "person-pan-yue-yun"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-youtube-echoes-back-2022-promo"
+    ],
+    "sourceQuality": "official promo; no concert media confirmed",
+    "notes": "Maintainer confirmed the 2022 Taipei Echoes Back event shell but rejected all media links as concert media. YouTube RouuoLHYJXg routed to appearances instead of this concert record.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-jing-dian-hao-ting-2008-genting",
+    "slug": "jing-dian-hao-ting-2008-genting",
+    "title": "經典好聽音樂會2008",
+    "date": "2008-05-03",
+    "venue": "Genting Arena of the Stars",
+    "city": "Genting Highlands",
+    "countryOrRegion": "Malaysia",
+    "eventType": "concert",
+    "performers": [
+      "person-luo-dayou",
+      "person-chyi-yu",
+      "person-pan-yue-yun",
+      "周治平"
+    ],
+    "guests": [
+      "person-luo-dayou",
+      "person-pan-yue-yun",
+      "周治平"
+    ],
+    "tags": [
+      "collaboration",
+      "festival"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-epochtimes-jingdian-2008-genting",
+      "source-jsclub-jingdian-2008-genting"
+    ],
+    "sourceQuality": "news-backed; no public media found",
+    "notes": "Date corrected from reference's 2008-03-05 to 2008-05-03 per public evidence and maintainer confirmation. Multi-artist concert with 罗大佑, 齐豫, 潘越云, 周治平 at Genting. 周治平 listed by display name because no person record exists yet.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-tian-shi-yu-lang-2008-beijing",
+    "slug": "tian-shi-yu-lang-2008-beijing",
+    "title": "天使與狼演唱會 北京站",
+    "date": "2008-03-29",
+    "venue": "Beijing Workers' Gymnasium",
+    "city": "Beijing",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-chi-chin"
+    ],
+    "guests": [
+      "person-chi-chin"
+    ],
+    "tags": [
+      "collaboration",
+      "anniversary",
+      "concert-series"
+    ],
+    "setlist": [
+      {
+        "position": 1,
+        "song": "song-stories",
+        "titlePerformed": "Stories",
+        "collaborators": []
+      },
+      {
+        "position": 2,
+        "song": "song-walking-in-the-rain",
+        "titlePerformed": "走在雨中",
+        "collaborators": []
+      },
+      {
+        "position": 3,
+        "song": "song-flying-bird-and-fish",
+        "titlePerformed": "飞鸟与鱼",
+        "collaborators": []
+      },
+      {
+        "position": 4,
+        "song": "song-whoever-finds-this-i-love-you",
+        "titlePerformed": "Whoever Finds This, I Love You",
+        "collaborators": []
+      },
+      {
+        "position": 5,
+        "song": "song-vincent",
+        "titlePerformed": "Vincent",
+        "collaborators": []
+      },
+      {
+        "position": 6,
+        "song": "song-high-heels-in-september",
+        "titlePerformed": "九月的高跟鞋",
+        "collaborators": []
+      },
+      {
+        "position": 7,
+        "song": null,
+        "titlePerformed": "其实都是一样",
+        "collaborators": [
+          "person-chi-chin"
+        ]
+      },
+      {
+        "position": 8,
+        "song": "song-you-are-all-my-memories",
+        "titlePerformed": "你是我所有的回忆",
+        "collaborators": []
+      },
+      {
+        "position": 9,
+        "song": null,
+        "titlePerformed": "星 + 答案",
+        "collaborators": [],
+        "songParts": [
+          "song-xing",
+          "song-answer"
+        ]
+      },
+      {
+        "position": 10,
+        "song": "song-ju-tan",
+        "titlePerformed": "菊叹",
+        "collaborators": []
+      },
+      {
+        "position": 11,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "欢颜",
+        "collaborators": []
+      },
+      {
+        "position": 12,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄榄树",
+        "collaborators": []
+      },
+      {
+        "position": 13,
+        "song": "song-boat-song",
+        "titlePerformed": "船歌",
+        "collaborators": []
+      },
+      {
+        "position": 14,
+        "song": "song-a-piece-of-lake",
+        "titlePerformed": "一面湖水",
+        "collaborators": [
+          "person-chi-chin"
+        ]
+      },
+      {
+        "position": 15,
+        "song": null,
+        "titlePerformed": "橄榄树 + 狼",
+        "collaborators": [
+          "person-chi-chin"
+        ],
+        "songParts": [
+          "song-olive-tree"
+        ],
+        "notes": "Encore medley with Chyi Chin's 狼; Chyi Yu performs 橄榄树."
+      },
+      {
+        "position": 16,
+        "song": null,
+        "titlePerformed": "我愿意",
+        "collaborators": [],
+        "notes": "Encore."
+      },
+      {
+        "position": 17,
+        "song": "song-teng-chan-shu",
+        "titlePerformed": "藤缠树",
+        "collaborators": [],
+        "notes": "Encore."
+      }
+    ],
+    "mediaLinks": [
+      {
+        "label": "Full fan recording, 18-part",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1fJ4m1K7xF/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "齐豫花园"
+      },
+      {
+        "label": "Part 8 clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1rYPTzmEp7/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "战鼓LJ"
+      },
+      {
+        "label": "飛鳥與魚 fan-shot clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV14h411a7BY/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "老爺爺1966"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-sohu-tian-shi-yu-lang-2008-beijing",
+      "source-chinanews-tian-shi-yu-lang-2008-beijing-preview",
+      "source-bilibili-tian-shi-yu-lang-2008-beijing-full"
+    ],
+    "sourceQuality": "news-backed; full fan recording with setlist",
+    "notes": "Beijing stop of the 天使與狼 20th anniversary tour. Maintainer confirmed shell and kept all three Bilibili links; YouTube QO090FLTDFo was moved to the 2008-03-01 Taipei event. 大约在冬季 (齐秦 solo) excluded from setlist per the Chyi-Yu-only rule.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-rollings-tone-30-2011-beijing",
+    "slug": "rollings-tone-30-2011-beijing",
+    "title": "快樂天堂 滾石30演唱會 北京站",
+    "date": "2011-05-01",
+    "venue": "National Stadium (Bird's Nest)",
+    "city": "Beijing",
+    "countryOrRegion": "China",
+    "eventType": "festival",
+    "performers": [
+      "person-chyi-yu",
+      "person-chi-chin",
+      "person-wakin-chau",
+      "person-wu-bai",
+      "五月天",
+      "person-pan-yue-yun",
+      "辛晓琪",
+      "顺子"
+    ],
+    "guests": [
+      "person-chi-chin",
+      "person-wakin-chau",
+      "person-wu-bai",
+      "五月天",
+      "person-pan-yue-yun",
+      "辛晓琪",
+      "顺子"
+    ],
+    "tags": [
+      "festival",
+      "collaboration",
+      "anniversary"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-sina-rollings-tone-30-2011-beijing",
+      "source-cntv-rollings-tone-30-2011-beijing",
+      "source-chinadaily-rollings-tone-30-2011-beijing"
+    ],
+    "sourceQuality": "news-backed; no Chyi Yu media confirmed",
+    "notes": "Maintainer confirmed the Beijing shell but rejected all media candidates. Chyi Yu performed 橄榄树 per news/photo evidence. Multi-artist Rolling Stone 30 anniversary concert at the Bird's Nest.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-zhen-ai-nv-ren-2011-wuhan",
+    "slug": "zhen-ai-nv-ren-2011-wuhan",
+    "title": "Power Woman 珍愛女人巡迴演唱會 武漢站",
+    "date": "2011-08-21",
+    "venue": null,
+    "city": "Wuhan",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun",
+      "黄小琥",
+      "万芳"
+    ],
+    "guests": [
+      "person-pan-yue-yun",
+      "黄小琥",
+      "万芳"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-cnw-zhen-ai-nv-ren-2011-wuhan"
+    ],
+    "sourceQuality": "news-backed; no public media found",
+    "notes": "Maintainer confirmed Wuhan shell but rejected all media. Bilibili BV1ax411E78q belongs to a separate 珍爱女人 Singapore event, not Wuhan. 黄小琥 and 万芳 listed by display name because no person records exist yet.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-zhen-ai-nv-ren-2011-beijing",
+    "slug": "zhen-ai-nv-ren-2011-beijing",
+    "title": "Power Woman 珍愛女人巡迴演唱會 北京站",
+    "date": "2011-06-03",
+    "venue": "MasterCard Center (formerly Wukesong Arena)",
+    "city": "Beijing",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun",
+      "黄小琥",
+      "万芳"
+    ],
+    "guests": [
+      "person-pan-yue-yun",
+      "黄小琥",
+      "万芳"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-sina-zhen-ai-nv-ren-2011-beijing",
+      "source-chinanews-zhen-ai-nv-ren-2011-beijing"
+    ],
+    "sourceQuality": "news-backed; no public media found",
+    "notes": "Maintainer-appended during Batch 3 review. Beijing stop of the Power Woman 珍爱女人 tour at 五棵松体育馆.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-zhen-ai-nv-ren-2011-kunming",
+    "slug": "zhen-ai-nv-ren-2011-kunming",
+    "title": "Power Woman 珍愛女人巡迴演唱會 昆明站",
+    "date": "2011-09-03",
+    "venue": null,
+    "city": "Kunming",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun",
+      "黄小琥",
+      "万芳"
+    ],
+    "guests": [
+      "person-pan-yue-yun",
+      "黄小琥",
+      "万芳"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list"
+    ],
+    "sourceQuality": "reference-only; no independent Kunming source found",
+    "notes": "Maintainer confirmed the Kunming shell from the reference. Fresh public web search did not find an independent exact Kunming article in this pass.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-rollings-tone-30-2011-shanghai",
+    "slug": "rollings-tone-30-2011-shanghai",
+    "title": "滾石30週年上海演唱會",
+    "date": "2011-10-05/2011-10-07",
+    "venue": "Mercedes-Benz Arena",
+    "city": "Shanghai",
+    "countryOrRegion": "China",
+    "eventType": "festival",
+    "performers": [
+      "person-chyi-yu",
+      "person-wakin-chau",
+      "person-wu-bai",
+      "五月天",
+      "张震岳",
+      "任贤齐",
+      "杜德伟",
+      "person-pan-yue-yun",
+      "万芳",
+      "赵咏华"
+    ],
+    "guests": [
+      "person-wakin-chau",
+      "person-wu-bai",
+      "五月天",
+      "张震岳",
+      "任贤齐",
+      "杜德伟",
+      "person-pan-yue-yun",
+      "万芳",
+      "赵咏华"
+    ],
+    "tags": [
+      "festival",
+      "collaboration",
+      "anniversary"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Chyi Yu clip: 答案/橄榄树/angel/梦田",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1u44y1E78v/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "人生难得有奇遇Chyiyu"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-newton-rollings-tone-30-2011-shanghai",
+      "source-sina-rollings-tone-30-2011-shanghai-preview",
+      "source-cnw-rollings-tone-30-2011-shanghai",
+      "source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu"
+    ],
+    "sourceQuality": "news-backed; Chyi Yu clip",
+    "notes": "Maintainer confirmed shell and kept Bilibili BV1u44y1E78v. Three-day run 2011-10-05/06/07 at Mercedes-Benz Arena. Non-Chyi Yu YouTube clips rejected.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-rollings-tone-30-2011-shenzhen",
+    "slug": "rollings-tone-30-2011-shenzhen",
+    "title": "滾石30深圳演唱會",
+    "date": "2011-12-18",
+    "venue": "Shenzhen Bay Sports Center Stadium",
+    "city": "Shenzhen",
+    "countryOrRegion": "China",
+    "eventType": "festival",
+    "performers": [
+      "person-chyi-yu",
+      "person-wakin-chau",
+      "person-pan-yue-yun",
+      "person-wu-bai",
+      "五月天",
+      "任贤齐",
+      "刘若英"
+    ],
+    "guests": [
+      "person-wakin-chau",
+      "person-pan-yue-yun",
+      "person-wu-bai",
+      "五月天",
+      "任贤齐",
+      "刘若英"
+    ],
+    "tags": [
+      "festival",
+      "collaboration",
+      "anniversary"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-cntv-rollings-tone-30-2011-shenzhen",
+      "source-cflac-rollings-tone-30-2011-shenzhen"
+    ],
+    "sourceQuality": "news-backed; no Chyi Yu media confirmed",
+    "notes": "Maintainer confirmed shell and no media. Chyi Yu performed 橄榄树 per news evidence. Bilibili BV1u44y1E78v is Shanghai, not Shenzhen.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-yun-duan-2012-taipei",
+    "slug": "yun-duan-2012-taipei",
+    "title": "雲端演唱會",
+    "date": "2012-02-11",
+    "venue": "Huashan Art Center Legacy Taipei",
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-epochtimes-yun-duan-2012-taipei",
+      "source-cts-yun-duan-2012-taipei",
+      "source-pixnet-yun-duan-2012-taipei"
+    ],
+    "sourceQuality": "news-backed; no public media found",
+    "notes": "Maintainer confirmed the shell and rejected YouTube QvOnod7ZS7Y as a news clip, not performance media. Small Live House concert, ~90 minutes, nearly 20 songs.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-xin-xing-fu-2012-tainan",
+    "slug": "xin-xing-fu-2012-tainan",
+    "title": "心幸福音樂會",
+    "date": "2012-04-12",
+    "venue": "Tainan Prison",
+    "city": "Tainan",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "charity",
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "20120412 聆听心灵的奇遇·齐豫心幸福演唱会",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1vx411e76P/",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "WeAreLambily"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-epochtimes-xin-xing-fu-2012-tainan",
+      "source-bilibili-xin-xing-fu-2012-tainan"
+    ],
+    "sourceQuality": "news-backed; fan-upload",
+    "notes": "Maintainer confirmed shell and kept Bilibili BV1vx411e76P. Venue/city from news shell evidence; Bilibili metadata confirms date/title. Charity concert at 台南监狱 organized by 法鼓山人文社会基金会 and Ministry of Justice.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-zhen-ai-nv-ren-2012-macau",
+    "slug": "zhen-ai-nv-ren-2012-macau",
+    "title": "Power Woman 珍愛女人巡迴演唱會 澳門站",
+    "date": "2012-04-28",
+    "venue": "Venetian Macao Coati Hall",
+    "city": "Macau",
+    "countryOrRegion": "Macau",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun",
+      "万芳",
+      "顺子"
+    ],
+    "guests": [
+      "person-pan-yue-yun",
+      "万芳",
+      "顺子"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-blogspot-zhen-ai-nv-ren-2012-macau",
+      "source-wikipedia-venetian-macau-venue-list"
+    ],
+    "sourceQuality": "news-backed; no 2012 media found",
+    "notes": "Maintainer confirmed shell and rejected all media for this 2012 Macau event. 2017 Macau 珍爱女人 clips belong to a separate event (Batch 6). 2009 Genting 珍爱女人 clips are a separate future lead.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-rollings-tone-30-2012-hangzhou",
+    "slug": "rollings-tone-30-2012-hangzhou",
+    "title": "2012 滾石30 杭州演唱會",
+    "date": "2012-07-21",
+    "venue": "Huanglong Sports Center Stadium",
+    "city": "Hangzhou",
+    "countryOrRegion": "China",
+    "eventType": "festival",
+    "performers": [
+      "person-chyi-yu",
+      "person-wakin-chau",
+      "person-pan-yue-yun",
+      "任贤齐",
+      "黄品源",
+      "阿牛",
+      "杨乃文",
+      "person-wu-bai",
+      "辛晓琪",
+      "赵咏华",
+      "万芳"
+    ],
+    "guests": [
+      "person-wakin-chau",
+      "person-pan-yue-yun",
+      "任贤齐",
+      "黄品源",
+      "阿牛",
+      "杨乃文",
+      "person-wu-bai",
+      "辛晓琪",
+      "赵咏华",
+      "万芳"
+    ],
+    "tags": [
+      "festival",
+      "collaboration",
+      "anniversary"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-hangzhou-com-rollings-tone-30-2012-hangzhou",
+      "source-zjol-rollings-tone-30-2012-hangzhou-traffic"
+    ],
+    "sourceQuality": "news-backed; no Chyi Yu media found",
+    "notes": "Maintainer confirmed shell and rejected unrelated Shanghai/Taipei Rolling Stone media candidates.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-rollings-tone-30-2012-chengdu",
+    "slug": "rollings-tone-30-2012-chengdu",
+    "title": "全城熱戀 滾石30 成都演唱會",
+    "date": "2012-08-11",
+    "venue": "Chengdu Sports Center",
+    "city": "Chengdu",
+    "countryOrRegion": "China",
+    "eventType": "festival",
+    "performers": [
+      "person-chyi-yu",
+      "person-wakin-chau",
+      "person-pan-yue-yun",
+      "任贤齐",
+      "张震岳",
+      "万芳",
+      "辛晓琪",
+      "赵咏华"
+    ],
+    "guests": [
+      "person-wakin-chau",
+      "person-pan-yue-yun",
+      "任贤齐",
+      "张震岳",
+      "万芳",
+      "辛晓琪",
+      "赵咏华"
+    ],
+    "tags": [
+      "festival",
+      "collaboration",
+      "anniversary"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-chinanews-rollings-tone-30-2012-chengdu"
+    ],
+    "sourceQuality": "news-backed; no Chyi Yu media found",
+    "notes": "Maintainer confirmed shell and rejected unrelated 1993 Chyi Chin Chengdu videos.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-rollings-tone-30-2012-wuhan",
+    "slug": "rollings-tone-30-2012-wuhan",
+    "title": "2012 滾石30 武漢演唱會",
+    "date": "2012-10-20",
+    "venue": "Wuhan Sports Center Stadium (Zhuankou)",
+    "city": "Wuhan",
+    "countryOrRegion": "China",
+    "eventType": "festival",
+    "performers": [
+      "person-chyi-yu",
+      "person-wakin-chau",
+      "张震岳",
+      "任贤齐",
+      "五月天",
+      "杜德伟",
+      "person-pan-yue-yun",
+      "梁静茹",
+      "辛晓琪",
+      "陈绮贞",
+      "赵咏华",
+      "万芳"
+    ],
+    "guests": [
+      "person-wakin-chau",
+      "张震岳",
+      "任贤齐",
+      "五月天",
+      "杜德伟",
+      "person-pan-yue-yun",
+      "梁静茹",
+      "辛晓琪",
+      "陈绮贞",
+      "赵咏华",
+      "万芳"
+    ],
+    "tags": [
+      "festival",
+      "collaboration",
+      "anniversary"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-cnhubei-rollings-tone-30-2012-wuhan",
+      "source-baike-so-rollings-tone-30-2012-wuhan"
+    ],
+    "sourceQuality": "news-backed; no Chyi Yu media found",
+    "notes": "Maintainer confirmed shell and rejected the Shanghai 2011 clip for this Wuhan item.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-rollings-tone-30-2012-guangzhou",
+    "slug": "rollings-tone-30-2012-guangzhou",
+    "title": "滾石30 廣州演唱會",
+    "date": "2012-12-08",
+    "venue": "Tianhe Stadium",
+    "city": "Guangzhou",
+    "countryOrRegion": "China",
+    "eventType": "festival",
+    "performers": [
+      "person-chyi-yu",
+      "person-chi-chin",
+      "张震岳",
+      "顺子",
+      "任贤齐",
+      "光良",
+      "品冠",
+      "刘若英",
+      "person-wakin-chau",
+      "person-wu-bai",
+      "person-pan-yue-yun",
+      "万芳",
+      "陈绮贞"
+    ],
+    "guests": [
+      "person-chi-chin",
+      "张震岳",
+      "顺子",
+      "任贤齐",
+      "光良",
+      "品冠",
+      "刘若英",
+      "person-wakin-chau",
+      "person-wu-bai",
+      "person-pan-yue-yun",
+      "万芳",
+      "陈绮贞"
+    ],
+    "tags": [
+      "festival",
+      "collaboration",
+      "anniversary"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-sina-rollings-tone-30-2012-guangzhou",
+      "source-c114-rollings-tone-30-2012-guangzhou",
+      "source-epochtimes-rollings-tone-30-2012-guangzhou"
+    ],
+    "sourceQuality": "news-backed; no Chyi Yu media found",
+    "notes": "Maintainer confirmed shell and rejected the promo/thanks clip and unrelated Shanghai 2011 clip. Rolling Stone 30 tour finale.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-olive-tree-2014-taipei",
+    "slug": "olive-tree-2014-taipei",
+    "title": "橄欖樹2014台北演唱會",
+    "date": "2014-04-11",
+    "venue": "Taipei International Convention Center",
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "solo",
+      "charity"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Official MV (橄榄树), kept for concert context",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=5tOEP4WCCj8",
+        "kind": "video",
+        "isOfficial": true,
+        "credit": "滚石唱片 ROCK RECORDS"
+      },
+      {
+        "label": "橄欖樹（安可重唱）— Bilibili P1",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV13u411r7Vg/?p=1",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "ssssshou",
+        "notes": "Mainland alternate for YouTube npaDlC3Bd58."
+      },
+      {
+        "label": "橄欖樹（安可重唱）— YouTube source",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=npaDlC3Bd58",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      },
+      {
+        "label": "城裡的月光 — Bilibili P2",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV13u411r7Vg/?p=2",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "ssssshou",
+        "notes": "Mainland alternate for YouTube KFgWE-EVJo0."
+      },
+      {
+        "label": "城裡的月光 — YouTube source",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=KFgWE-EVJo0",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      },
+      {
+        "label": "Angel — Bilibili P3",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV13u411r7Vg/?p=3",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "ssssshou",
+        "notes": "Mainland alternate for YouTube KZUWBaVza-0."
+      },
+      {
+        "label": "Angel — YouTube source",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=KZUWBaVza-0",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-ettoday-olive-tree-2014-taipei",
+      "source-cna-olive-tree-2014-taipei",
+      "source-pixnet-olive-tree-2014-taipei"
+    ],
+    "sourceQuality": "news-backed; fan clips with cross-platform alternates",
+    "notes": "Maintainer confirmed shell and kept YouTube 5tOEP4WCCj8, rejected YouTube x_QgBYY42G8. Each performance item has a Bilibili (Mainland alternate) and YouTube (global source) link. 公益演唱会，感念李泰祥；票房盈余捐赠慈善团体.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-olive-tree-2014-guangzhou",
+    "slug": "olive-tree-2014-guangzhou",
+    "title": "橄欖樹2014廣州演唱會",
+    "date": "2014-09-27",
+    "venue": "Yangcheng Creative Industry Park Showcase Center, Central Station",
+    "city": "Guangzhou",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Full fan recording (YouTube source)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=QntwxDPtFAA",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      },
+      {
+        "label": "Full fan recording (Mainland alternate)",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1PauhzNEyq",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "优视部落",
+        "notes": "Mainland alternate; does not state repost/source."
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-sina-olive-tree-2014-guangzhou"
+    ],
+    "sourceQuality": "news-backed; full fan recording",
+    "notes": "Maintainer confirmed shell and rejected YouTube x5ELT6ZdOSM (promo clip). YouTube QntwxDPtFAA is the global source; Bilibili BV1PauhzNEyq is the Mainland alternate.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-olive-tree-2014-singapore",
+    "slug": "olive-tree-2014-singapore",
+    "title": "橄欖樹2014新加坡演唱會",
+    "date": "2014-12-20",
+    "venue": "Marina Bay Sands Theater",
+    "city": "Singapore",
+    "countryOrRegion": "Singapore",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "民歌組曲 — YouTube source",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=frPJQ8DER5E",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      },
+      {
+        "label": "民歌組曲 — Bilibili alternate",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1tx411Q77d",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null,
+        "notes": "Mainland alternate for YouTube frPJQ8DER5E."
+      },
+      {
+        "label": "百樂門組曲 — YouTube source",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=qUoE8U1d9K4",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      },
+      {
+        "label": "百樂門組曲 — Bilibili alternate",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1tx411Q7Ef",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null,
+        "notes": "Mainland alternate for YouTube qUoE8U1d9K4."
+      },
+      {
+        "label": "菩提樹 clip",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=b5dR_H9zyKw",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-biography-olive-tree-2014-singapore"
+    ],
+    "sourceQuality": "biography-style shell; fan clips",
+    "notes": "Maintainer confirmed shell and all listed media. 民歌組曲 and 百樂門組曲 each have a Bilibili/YouTube alternate pair; 菩提樹 is a standalone YouTube clip.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-minge-classics-2015-shanghai",
+    "slug": "minge-classics-2015-shanghai",
+    "title": "兩岸校園民歌經典名曲演唱會",
+    "date": "2015-07-18",
+    "venue": "Shanghai Grand Stage",
+    "city": "Shanghai",
+    "countryOrRegion": "China",
+    "eventType": "festival",
+    "performers": [
+      "苏芮",
+      "person-chyi-yu",
+      "叶佳修",
+      "person-pan-yue-yun",
+      "李建复",
+      "王梦麟",
+      "王海玲",
+      "金智娟"
+    ],
+    "guests": [
+      "苏芮",
+      "叶佳修",
+      "person-pan-yue-yun",
+      "李建复",
+      "王梦麟",
+      "王海玲",
+      "金智娟"
+    ],
+    "tags": [
+      "festival",
+      "collaboration"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Encore segment",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Gg4y1C7VU",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "古牧在线找羊"
+      },
+      {
+        "label": "走在雨中 clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1B64y1V77c",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "古牧在线找羊"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-xinmin-minge-2015-shanghai",
+      "source-tongji-minge-2015-shanghai"
+    ],
+    "sourceQuality": "news-backed; fan clips",
+    "notes": "Maintainer confirmed shell, kept both Bilibili clips, and rejected BV1Ei4y1e7Kt (慶功宴講話 clip). BV1P4411s71u preserved as a lead for another 2007 event. Multi-artist folk-song concert; most performers listed by display name because no person records exist yet.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-huai-nian-charity-2015-singapore",
+    "slug": "huai-nian-charity-2015-singapore",
+    "title": "懷念～因為有愛 慈善演唱會",
+    "date": "2015-11-14",
+    "venue": "The Star Theatre",
+    "city": "Singapore",
+    "countryOrRegion": "Singapore",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [
+      "person-chi-chin",
+      "李宗盛",
+      "孙燕姿"
+    ],
+    "tags": [
+      "charity",
+      "collaboration"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "HOME 家 — YouTube foundation source",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=oZ5RmcL9T_U",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "吴丽香纪念基金 Goh Lee Hiang Memorial Fund"
+      },
+      {
+        "label": "HOME 家 — Bilibili alternate",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Nb411W7d1",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "思齐96",
+        "notes": "Mainland alternate for YouTube oZ5RmcL9T_U."
+      },
+      {
+        "label": "How Great Thou Art",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=Vps_DnxfCDw",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "吴丽香纪念基金 Goh Lee Hiang Memorial Fund"
+      },
+      {
+        "label": "橄欖樹 (齊豫&孫燕姿 short clip)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=Uhj1biJzKNc",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      },
+      {
+        "label": "愛的代價 (齊豫 李宗盛)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=Fm8kGypX-wE",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      },
+      {
+        "label": "橄欖樹 (齊豫&孫燕姿)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=LEacDUi3UiE",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      },
+      {
+        "label": "走在雨中 (現場版)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=SYm5cL6oBJs",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-today-huai-nian-2015-singapore",
+      "source-rmzxw-huai-nian-2015-singapore"
+    ],
+    "sourceQuality": "news-backed; foundation and fan clips",
+    "notes": "Charity concert for Ren Ci Hospital / 仁慈医院. Maintainer confirmed shell and accepted keeps/rejects. HOME 家 has a foundation-channel YouTube source and a Bilibili Mainland alternate. 李宗盛 and 孙燕姿 listed by display name because no person records exist yet.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-dian-deng-ying-guang-2016-taipei",
+    "slug": "dian-deng-ying-guang-2016-taipei",
+    "title": "點燈・迎光－看見生命勇士公益演唱會",
+    "date": "2016-03-06",
+    "venue": "Taipei Zhongshan Hall Zhongzheng Auditorium",
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "李建复",
+      "林宥嘉",
+      "家家",
+      "黄裕翔",
+      "刘铭"
+    ],
+    "guests": [
+      "李建复",
+      "林宥嘉",
+      "家家",
+      "黄裕翔",
+      "刘铭"
+    ],
+    "tags": [
+      "charity",
+      "collaboration"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Chyi Yu CUT, 36:57",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=xR6m16yrS2I",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "齊豫Chyi Yu Unofficial Music Channel"
+      },
+      {
+        "label": "隱形的翅膀 clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Pb411m786",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "思齊96"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-cna-dian-deng-2016-taipei",
+      "source-yam-dian-deng-2016-taipei"
+    ],
+    "sourceQuality": "news-backed; fan clips",
+    "notes": "Maintainer confirmed the 2016-03-06 event shell. BV1qR4y1M77p belongs to a separate 2016-03-26 event (向国军致敬演唱会 点灯节目) and is not kept here. Performers listed by display name where no person records exist.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-minge-40-2016-shenzhen",
+    "slug": "minge-40-2016-shenzhen",
+    "title": "民歌40：再唱一段思想起 深圳演唱會",
+    "date": "2016-11-19",
+    "venue": "Shenzhen Bay Sports Center (ChunJian)",
+    "city": "Shenzhen",
+    "countryOrRegion": "China",
+    "eventType": "festival",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun",
+      "李宗盛",
+      "万芳"
+    ],
+    "guests": [
+      "person-pan-yue-yun",
+      "李宗盛",
+      "万芳"
+    ],
+    "tags": [
+      "festival",
+      "collaboration",
+      "anniversary"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "齊豫部分 clip",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=wU1rdzm90F8",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "Chyi's Fan"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-sohu-minge-40-2016-shenzhen",
+      "source-sznews-minge-40-2016-shenzhen"
+    ],
+    "sourceQuality": "news-backed; fan clip",
+    "notes": "Maintainer confirmed the Shenzhen shell. Kept YouTube wU1rdzm90F8 only; rejected Bilibili BV12x411k7gd (belongs to Taipei 民歌四十) and YouTube N1mT2QlV6XA (meet-and-greet side activity).",
+    "status": "partial"
+  },
+  {
+    "id": "concert-gan-en-charity-2017-singapore",
+    "slug": "gan-en-charity-2017-singapore",
+    "title": "感恩－因為有愛慈善演唱會",
+    "date": "2017-05-06",
+    "venue": "The Star Theatre",
+    "city": "Singapore",
+    "countryOrRegion": "Singapore",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-wakin-chau"
+    ],
+    "guests": [
+      "person-wakin-chau"
+    ],
+    "tags": [
+      "charity",
+      "collaboration"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "8world news/video clip (YouTube source)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1W5l3l3j5_w",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "8world"
+      },
+      {
+        "label": "8world news/video clip (Bilibili alternate)",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Kb411W7cq",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "思齊96",
+        "notes": "Mainland alternate for the same 8world clip."
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-zaobao-gan-en-2017-singapore-review",
+      "source-zaobao-gan-en-2017-singapore-preview",
+      "source-8world-gan-en-2017-news-clip"
+    ],
+    "sourceQuality": "news-backed; supporting-evidence video",
+    "notes": "Maintainer confirmed the shell and kept the 8world news/video clip on both YouTube and Bilibili as supporting evidence and video media. 齐豫 and 周华健 performed zero-fee; raised over 5 million SGD.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-zhen-ai-nv-ren-2017-macau",
+    "slug": "zhen-ai-nv-ren-2017-macau",
+    "title": "Power Woman 珍愛女人澳門演唱會",
+    "date": "2017-06-10",
+    "venue": "Venetian Macao Coati Hall",
+    "city": "Macau",
+    "countryOrRegion": "Macau",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun",
+      "万芳",
+      "林晓培"
+    ],
+    "guests": [
+      "person-pan-yue-yun",
+      "万芳",
+      "林晓培"
+    ],
+    "tags": [
+      "collaboration",
+      "concert-series"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "齐豫部分 fan recording, 17:55",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Yx41187ZR",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "Tinyking_"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-roundyule-zhen-ai-nv-ren-2017-macau"
+    ],
+    "sourceQuality": "news-backed; fan recording",
+    "notes": "Maintainer confirmed the shell and kept only Bilibili BV1Yx41187ZR; rejected the two short YES娱乐 clips (BV1Xb411p7ff and BV1kx41187xs).",
+    "status": "partial"
+  },
+  {
+    "id": "concert-chuan-yue-yu-jian-2017-genting",
+    "slug": "chuan-yue-yu-jian-2017-genting",
+    "title": "穿越・豫見雲頂演唱會",
+    "date": "2017-06-24",
+    "venue": "Arena of the Stars",
+    "city": "Genting Highlands",
+    "countryOrRegion": "Malaysia",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun"
+    ],
+    "guests": [
+      "person-pan-yue-yun"
+    ],
+    "tags": [
+      "collaboration"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Full fan upload, 73:15 (YouTube source)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=vTVNbawZ9kg",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "齊豫Chyi Yu Unofficial Music Channel"
+      },
+      {
+        "label": "Full fan upload, 73:15 (Bilibili alternate)",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Pu4y1S7kc",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "OMGPattiLuPone",
+        "notes": "Mainland alternate for YouTube vTVNbawZ9kg."
+      },
+      {
+        "label": "Partial fan upload, 42:53",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1XK4y1x7pV",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "潘氏小尾巴"
+      },
+      {
+        "label": "You Raise Me Up clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1UC411J7wE",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      },
+      {
+        "label": "You Raise Me Up clip (alternate)",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1qN411W7GJ",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null
+      },
+      {
+        "label": "飛鳥與魚 clip",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=e2eSpk2OwtQ",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "齊豫花園"
+      },
+      {
+        "label": "Youku album (evidence/media lead)",
+        "platform": "youku",
+        "url": "http://list.youku.com/albumlist/show/id_50643392",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": null,
+        "notes": "Youku album with multiple listed songs."
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-youku-chuan-yue-2017-genting"
+    ],
+    "sourceQuality": "platform-album and fan uploads",
+    "notes": "Maintainer confirmed the shell. Kept YouTube vTVNbawZ9kg and Bilibili BV1Pu4y1S7kc as alternate links for the same 73-minute fan upload, plus partial/clips and the Youku album lead. Rejected BV1xmu8zNE36 (duplicate repost) and kbRpHhWFZqU (official short clip, retained only as shell evidence).",
+    "status": "partial"
+  },
+  {
+    "id": "concert-minge-50-2025-taipei",
+    "slug": "minge-50-2025-taipei",
+    "title": "民歌五十演唱會",
+    "date": "2025-02-14/2025-02-15",
+    "venue": "Taipei Arena",
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "festival",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "festival",
+      "anniversary"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "你是我所有的回憶 clip",
+        "platform": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1DdAfenEjS",
+        "kind": "video",
+        "isOfficial": false,
+        "credit": "是我在弹着古筝"
+      }
+    ],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-youtube-minge-50-2025-taipei-news",
+      "source-bilibili-minge-50-2025-taipei-fan"
+    ],
+    "sourceQuality": "news-backed; fan clip",
+    "notes": "Maintainer confirmed the two-day shell and venue 台北小巨蛋. Kept only Bilibili BV1DdAfenEjS; rejected YouTube news clips kHtwf82-MqQ, s2nfwuxAMMU, and ncXKKpF8FjQ as media.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-yong-heng-de-xing-2025-taipei",
+    "slug": "yong-heng-de-xing-2025-taipei",
+    "title": "永恆的星──佛光山39周年暨人間福報25周年文化音樂會",
+    "date": "2025-04-01",
+    "venue": null,
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "赵咏华"
+    ],
+    "guests": [
+      "赵咏华"
+    ],
+    "tags": [
+      "religious",
+      "charity",
+      "collaboration"
+    ],
+    "setlist": [],
+    "mediaLinks": [
+      {
+        "label": "Official full upload",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=7ytRyO-RAhk",
+        "kind": "video",
+        "isOfficial": true,
+        "credit": "人間福報"
+      },
+      {
+        "label": "夢田 excerpt (齊豫、趙詠華)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=2k-7qLDuGLs",
+        "kind": "video",
+        "isOfficial": true,
+        "credit": "人間福報"
+      },
+      {
+        "label": "大吉祥天女咒 excerpt (齊豫、趙詠華)",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=94uOgD-nVVo",
+        "kind": "video",
+        "isOfficial": true,
+        "credit": "人間福報"
+      }
+    ],
+    "officialRecording": true,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-ren-ji-fu-bao-yong-heng-2025-taipei"
+    ],
+    "sourceQuality": "official recording",
+    "notes": "Maintainer confirmed the shell and kept the official 人間福報 full upload plus both official excerpts. 趙詠華 listed by display name because no person record exists yet. Religious/charity cultural concert for 佛光山 39th anniversary and 人間福報 25th anniversary.",
+    "status": "partial"
+  },
+  {
+    "id": "concert-jing-dian-yin-le-ye-2019-macau",
+    "slug": "jing-dian-yin-le-ye-2019-macau",
+    "title": "齊豫·齊秦經典音樂夜",
+    "date": "2019-10-20",
+    "venue": null,
+    "city": "Macau",
+    "countryOrRegion": "Macau",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu",
+      "person-chi-chin"
+    ],
+    "guests": [
+      "person-chi-chin"
+    ],
+    "tags": [
+      "collaboration"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list"
+    ],
+    "sourceQuality": "reference lead; needs independent source",
+    "notes": "Imported as a needs-source lead. Bilibili/YouTube searches returned unrelated Chyi Yu, Chyi Chin, 2002, or TV-program results; no reliable exact match found in this pass. Needs stronger public evidence before promotion.",
+    "status": "needs-source"
+  },
+  {
+    "id": "concert-tian-lai-zhi-yin-yun-ding-2008-malaysia",
+    "slug": "tian-lai-zhi-yin-yun-ding-2008-malaysia",
+    "title": "天籟之音雲頂演唱會",
+    "date": "2008-05",
+    "venue": "Arena of the Stars",
+    "city": "Genting Highlands",
+    "countryOrRegion": "Malaysia",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list"
+    ],
+    "sourceQuality": "reference lead; needs independent source",
+    "notes": "Imported as a needs-source lead. The 2008 reference row may conflict with the 2011 天籟之音绕云顶 evidence; maintainer chose not to merge this into the 2008 经典好听 shell and to treat 2011 evidence as a likely separate future event lead. Exact 2008 source not found.",
+    "status": "needs-source"
+  },
+  {
+    "id": "concert-xin-xing-fu-2013-pingdong",
+    "slug": "xin-xing-fu-2013-pingdong",
+    "title": "心幸福音樂會",
+    "date": "2013-04-24",
+    "venue": null,
+    "city": "Pingtung",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "charity",
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list"
+    ],
+    "sourceQuality": "reference lead; needs independent source",
+    "notes": "Imported as a needs-source lead. Targeted search returned the 2012-04-12 台南监狱 event, later 2014 桃园少年辅育院 references, and unrelated 2025 屏东民歌 results; no public Bilibili or YouTube performance candidate retained.",
+    "status": "needs-source"
+  },
+  {
+    "id": "concert-xin-xing-fu-2014-taoyuan",
+    "slug": "xin-xing-fu-2014-taoyuan",
+    "title": "心幸福音樂會·齊豫唱心歌",
+    "date": "2014-04-18",
+    "venue": "Taoyuan Youth Correctional Institution",
+    "city": "Taoyuan",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "charity",
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list",
+      "source-baidu-baike-chyi-yu-biography",
+      "source-360-baike-chyi-yu-biography"
+    ],
+    "sourceQuality": "reference lead; biography-style evidence only",
+    "notes": "Imported as a needs-source lead. Reference row said 台北, but biography-style evidence consistently points to 桃园少年辅育院; maintainer confirmed correcting the place and keeping as needs-source because no primary news article was located.",
+    "status": "needs-source"
+  },
+  {
+    "id": "concert-xin-xing-fu-2016-yilan",
+    "slug": "xin-xing-fu-2016-yilan",
+    "title": "心幸福音樂會",
+    "date": "2016-04-14",
+    "venue": "Yilan Prison",
+    "city": "Yilan",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "charity",
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list"
+    ],
+    "sourceQuality": "reference lead; needs independent source",
+    "notes": "Imported as a needs-source lead. Biography excerpts mention 法鼓山人文社会基金会 心幸福音乐会 at 宜兰监狱, but no primary page was located. No performance media found.",
+    "status": "needs-source"
+  },
+  {
+    "id": "concert-xin-xing-fu-2017-taizhong",
+    "slug": "xin-xing-fu-2017-taizhong",
+    "title": "心幸福音樂會",
+    "date": "2017-05-03",
+    "venue": null,
+    "city": "Taichung",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "charity",
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list"
+    ],
+    "sourceQuality": "reference lead; needs independent source",
+    "notes": "Imported as a needs-source lead. Search results surfaced a 2014 法鼓山 台中戒治所 心幸福 lead, but not a clean 2017-05-03 public source. No performance media found.",
+    "status": "needs-source"
+  },
+  {
+    "id": "concert-ai-ci-bei-guan-huai-2024-changhua",
+    "slug": "ai-ci-bei-guan-huai-2024-changhua",
+    "title": "愛、慈悲與關懷音樂會",
+    "date": "2024-11-06",
+    "venue": null,
+    "city": "Changhua",
+    "countryOrRegion": "Taiwan",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "charity",
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list"
+    ],
+    "sourceQuality": "reference lead; needs independent source",
+    "notes": "Imported as a needs-source lead. Reference row gives 2024-11-06 彰化; Bilibili/YouTube searches mostly found older unrelated 慈悲/关怀 charity performances. No performance media found.",
+    "status": "needs-source"
+  },
+  {
+    "id": "concert-a-na-ya-sanya-2025-hainan",
+    "slug": "a-na-ya-sanya-2025-hainan",
+    "title": "阿那亞・三亞新春音樂會",
+    "date": "2025-02-02",
+    "venue": "Aranya Sanya",
+    "city": "Sanya",
+    "countryOrRegion": "China",
+    "eventType": "concert",
+    "performers": [
+      "person-chyi-yu"
+    ],
+    "guests": [],
+    "tags": [
+      "solo"
+    ],
+    "setlist": [],
+    "mediaLinks": [],
+    "officialRecording": false,
+    "sources": [
+      "source-project-concert-reference-list"
+    ],
+    "sourceQuality": "reference lead; needs independent source",
+    "notes": "Imported as a needs-source lead. Reference row gives 2025-02-02 阿那亚·三亚新春音乐会 海南; Bilibili/YouTube searches returned unrelated 阿那亚 content or no results. No performance media found.",
+    "status": "needs-source"
   }
 ]

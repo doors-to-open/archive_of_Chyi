@@ -230,6 +230,65 @@ for (const show of musicShows) {
   validateLiveLinkage(show.performedSongs || [], `Music show ${show.id}`);
 }
 
+// Concert-specific validation
+expectUnique(concerts, "id", "Concert");
+expectUnique(concerts, "slug", "Concert");
+
+const datePattern = /^\d{4}-\d{2}-\d{2}(\/\d{4}-\d{2}-\d{2})?$|^\d{4}-\d{2}(-\d{2})?$|^\d{4}$/;
+for (const concert of concerts) {
+  validateSourceRefs(concert, "Concert");
+  validateLinks(concert.mediaLinks, `Concert ${concert.id}`);
+  if (concert.date && !datePattern.test(concert.date)) {
+    addError(`Concert ${concert.id} has unsortable date "${concert.date}"`);
+  }
+  if (concert.status === "needs-source" && concert.status === "confirmed") {
+    addError(`Concert ${concert.id} is marked both needs-source and confirmed`);
+  }
+  if (concert.status === "needs-source" && concert.sources.length === 0) {
+    addError(`Concert ${concert.id} is needs-source but has no source lead reference`);
+  }
+  for (const entry of concert.setlist || []) {
+    if (entry.song && !songIds.has(entry.song)) {
+      addError(`Concert ${concert.id} setlist entry "${entry.titlePerformed}" references missing song ${entry.song}`);
+    }
+    for (const partId of entry.songParts || []) {
+      if (!songIds.has(partId)) {
+        addError(`Concert ${concert.id} setlist entry "${entry.titlePerformed}" references missing songPart ${partId}`);
+      }
+    }
+    for (const personId of entry.collaborators || []) {
+      if (/^person-/.test(personId) && !personIds.has(personId)) {
+        addError(`Concert ${concert.id} setlist entry "${entry.titlePerformed}" references missing collaborator person ${personId}`);
+      }
+    }
+  }
+  for (const personId of concert.performers || []) {
+    if (/^person-/.test(personId) && !personIds.has(personId)) {
+      addError(`Concert ${concert.id} references missing performer person ${personId}`);
+    }
+  }
+  for (const personId of concert.guests || []) {
+    if (/^person-/.test(personId) && !personIds.has(personId)) {
+      addError(`Concert ${concert.id} references missing guest person ${personId}`);
+    }
+  }
+}
+
+// song.knownConcerts backref: any concert setlist referencing a song should appear in that song's knownConcerts
+const songToConcerts = new Map();
+for (const song of songs) songToConcerts.set(song.id, new Set(song.knownConcerts || []));
+for (const concert of concerts) {
+  for (const entry of concert.setlist || []) {
+    const ids = [entry.song, ...(entry.songParts || [])].filter(Boolean);
+    for (const songId of ids) {
+      const refs = songToConcerts.get(songId);
+      if (refs && !refs.has(concert.id)) {
+        addError(`Concert ${concert.id} performs song ${songId} but song.knownConcerts does not list ${concert.id}`);
+      }
+    }
+  }
+}
+
 // Mirror check: release tracks with song=null whose title matches an existing song record
 for (const release of releases) {
   for (const track of release.tracks || []) {
