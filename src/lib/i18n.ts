@@ -180,6 +180,7 @@ const ui = {
   "label.physicalFormats": { en: "Physical formats", "zh-Hant": "實體格式", "zh-Hans": "实体格式" },
   "label.episode": { en: "Episode", "zh-Hant": "集數", "zh-Hans": "集数" },
   "label.collaborators": { en: "Collaborators", "zh-Hant": "合作者", "zh-Hans": "合作者" },
+  "label.coPerformers": { en: "Co-performers", "zh-Hant": "共同演出者", "zh-Hans": "共同演出者" },
   "label.guests": { en: "Guests", "zh-Hant": "嘉賓", "zh-Hans": "嘉宾" },
   "label.role": { en: "Role", "zh-Hant": "角色", "zh-Hans": "角色" },
   "label.work": { en: "Work", "zh-Hant": "作品", "zh-Hans": "作品" },
@@ -455,6 +456,18 @@ export function localizedValues(
 
 export function titleValues(item: Song | Release | Concert | MusicShow | Appearance): LocaleValues {
   return localizedValues(item.titleLocalized, item.title, "titleOriginal" in item ? item.titleOriginal : undefined);
+}
+
+export function concertDisplayTitleValues(concert: Concert): LocaleValues {
+  const base = titleValues(concert);
+  const qualifier = concert.version || concert.anniversaryYear || "";
+  const year = (concert.date || "").split("/")[0].slice(0, 4);
+  const place = concert.city || "";
+  return locales.reduce((values, locale) => {
+    const title = [base[locale], qualifier].filter(Boolean).join(" ");
+    values[locale] = [title, year, place].filter(Boolean).join(" / ");
+    return values;
+  }, {} as LocaleValues);
 }
 
 export function trackTitleValues(track: Track): LocaleValues {

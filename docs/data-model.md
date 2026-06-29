@@ -117,6 +117,7 @@ Suggested fields:
 - `role`: `headliner`, `co-headliner`, or `guest`
 - `series`
 - `version`
+- `anniversaryYear`: anniversary number such as `30`, `40`, or `50`; use this instead of `version` for anniversary concerts
 - `host`
 - `nature`: `commercial` or `non-commercial`
 - `category`: commercial `solo`, `collaboration`, `anniversary`, `guest`, or `other`; non-commercial `charity`, `religion`, `festival`, or `other`

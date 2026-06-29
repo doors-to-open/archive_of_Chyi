@@ -691,7 +691,7 @@ details[open].record-card summary::after {
   grid-template-columns: minmax(0, 1fr) auto auto 1rem;
   list-style: none;
   margin: 0;
-  padding: 1rem 0.75rem;
+  padding: 1.25rem 0.75rem;
 }
 
 .concert-group-summary::-webkit-details-marker {
@@ -711,16 +711,16 @@ details[open].concert-group .concert-group-summary::after {
 }
 
 .concert-group-title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 1.25;
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.concert-group-kind,
+.concert-group-note,
 .concert-group-count {
   color: var(--muted);
   font-size: 0.78rem;
@@ -1525,7 +1525,7 @@ details[open].concert-year-group .concert-year-summary::after {
     grid-template-columns: minmax(0, 1fr) 1rem;
   }
 
-  .concert-group-kind,
+  .concert-group-note,
   .concert-group-count {
     grid-column: 1;
   }

@@ -5,6 +5,7 @@ import RecordStatus from "../../components/RecordStatus.astro";
 import {
   byId,
   concertAvailabilityChecks,
+  concertCoPerformerIds,
   concerts,
   linkPlatformList,
   linkCreditLabel,
@@ -34,6 +35,9 @@ export function getStaticPaths() {
 
 const { concert } = Astro.props;
 const hasHost = concert.role === "guest" && concert.host;
+const isCollaboration = concert.nature === "commercial" && concert.category === "collaboration";
+const participantIds = isCollaboration ? concertCoPerformerIds(concert) : concert.guests || [];
+const participantLabel = isCollaboration ? "label.coPerformers" : "label.guests";
 ---
 
 <BaseLayout title={`${concert.title} | All for Chyi Yu`}>
@@ -59,18 +63,13 @@ const hasHost = concert.role === "guest" && concert.host;
         <span {...i18nAttrs(labelValueValues("label.venue", concert.venue || uiText("value.unknown")))}>
           {valueForLocale(labelValueValues("label.venue", concert.venue || uiText("value.unknown")))}
         </span>
-        {concert.version ? (
-          <span {...i18nAttrs(labelValueValues("label.version", concert.version))}>
-            {valueForLocale(labelValueValues("label.version", concert.version))}
-          </span>
-        ) : null}
         {hasHost ? (
           <span {...i18nAttrs(labelValueValues("label.host", personIdValues(concert.host!)))}>
             {valueForLocale(labelValueValues("label.host", personIdValues(concert.host!)))}
           </span>
         ) : null}
-        <span {...i18nAttrs(labelValueValues("label.guests", concert.guests?.length ? personIdsValues(concert.guests) : uiText("value.noneRecorded")))}>
-          {valueForLocale(labelValueValues("label.guests", concert.guests?.length ? personIdsValues(concert.guests) : uiText("value.noneRecorded")))}
+        <span {...i18nAttrs(labelValueValues(participantLabel, participantIds.length ? personIdsValues(participantIds) : uiText("value.noneRecorded")))}>
+          {valueForLocale(labelValueValues(participantLabel, participantIds.length ? personIdsValues(participantIds) : uiText("value.noneRecorded")))}
         </span>
       </div>
       <div class="availability-row availability-row-detail" aria-label="Recording availability summary">

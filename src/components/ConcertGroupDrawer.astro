@@ -3,10 +3,10 @@ import type { Concert, ConcertGroupKind } from "../lib/archive";
 import type { LocaleValues } from "../lib/i18n";
 import ConcertRecordCard from "./ConcertRecordCard.astro";
 import {
-  concertGroupKindValues,
   countValues,
   i18nAttrs,
   i18nCountLabelAttrs,
+  textValues,
   uiText,
   valueForLocale
 } from "../lib/i18n";
@@ -34,6 +34,11 @@ type Props = {
 };
 
 const { group } = Astro.props;
+const groupNote = group.kind === "tour"
+  ? textValues("Tour, expand for details", "\u5de1\u6f14\uff0c\u5c55\u958b\u67e5\u770b\u7d30\u7bc0", "\u5de1\u6f14\uff0c\u5c55\u5f00\u67e5\u770b\u7ec6\u8282")
+  : group.kind === "host"
+    ? textValues("Host, expand for details", "\u4e3b\u8fa6\uff0c\u5c55\u958b\u67e5\u770b\u7d30\u7bc0", "\u4e3b\u529e\uff0c\u5c55\u5f00\u67e5\u770b\u7ec6\u8282")
+    : textValues("List, expand for details", "\u5217\u8868\uff0c\u5c55\u958b\u67e5\u770b\u7d30\u7bc0", "\u5217\u8868\uff0c\u5c55\u5f00\u67e5\u770b\u7ec6\u8282");
 ---
 
 <details
@@ -49,8 +54,8 @@ const { group } = Astro.props;
 >
   <summary class="concert-group-summary">
     <span class="concert-group-title" {...i18nAttrs(group.title)}>{valueForLocale(group.title)}</span>
-    <span class="concert-group-kind" {...i18nAttrs(concertGroupKindValues(group.kind))}>
-      {valueForLocale(concertGroupKindValues(group.kind))}
+    <span class="concert-group-note" {...i18nAttrs(groupNote)}>
+      {valueForLocale(groupNote)}
     </span>
     <span class="concert-group-count" data-concert-group-count>
       {valueForLocale(countValues(group.count, "count.concert", "count.concerts"))}

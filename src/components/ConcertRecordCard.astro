@@ -2,12 +2,13 @@
 import type { Concert } from "../lib/archive";
 import {
   concertAvailabilityChecks,
+  concertCoPerformerIds,
   concertGuestIds,
-  personNames
 } from "../lib/archive";
 import {
   availabilityValues,
   concertCategoryValues,
+  concertDisplayTitleValues,
   concertNatureValues,
   countValues,
   i18nAttrs,
@@ -15,8 +16,6 @@ import {
   labelValueValues,
   personIdValues,
   personIdsValues,
-  titleValues,
-  uiText,
   valueForLocale
 } from "../lib/i18n";
 
@@ -35,11 +34,13 @@ type Props = {
 
 const { concert } = Astro.props;
 const guestIds = concertGuestIds(concert);
+const coPerformerIds = concertCoPerformerIds(concert);
+const isCollaboration = concert.nature === "commercial" && concert.category === "collaboration";
 const classificationValues = joinValues(
   [concertNatureValues(concert.nature), concertCategoryValues(concert.category)],
   " / "
 );
-const location = [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown");
+const displayTitle = concertDisplayTitleValues(concert);
 ---
 
 <a
@@ -57,30 +58,14 @@ const location = [concert.city, concert.countryOrRegion].filter(Boolean).join(",
   data-concert-guest={guestIds.length ? guestIds.join("|") : "none"}
   data-search={concert.searchText || ""}
 >
-  <h2 {...i18nAttrs(titleValues(concert))}>{valueForLocale(titleValues(concert))}</h2>
+  <h2 {...i18nAttrs(displayTitle)}>{valueForLocale(displayTitle)}</h2>
   <div class="record-meta-table">
-    <span {...i18nAttrs(labelValueValues("label.date", concert.date || uiText("value.unknown")))}>
-      {valueForLocale(labelValueValues("label.date", concert.date || uiText("value.unknown")))}
-    </span>
     <span {...i18nAttrs(labelValueValues("label.category", classificationValues))}>
       {valueForLocale(labelValueValues("label.category", classificationValues))}
-    </span>
-    <span {...i18nAttrs(labelValueValues("label.location", location))}>
-      {valueForLocale(labelValueValues("label.location", location))}
     </span>
     <span {...i18nAttrs(countValues(concert.setlist.length, "count.song", "count.songs"))}>
       {valueForLocale(countValues(concert.setlist.length, "count.song", "count.songs"))}
     </span>
-    {concert.version ? (
-      <span {...i18nAttrs(labelValueValues("label.version", concert.version))}>
-        {valueForLocale(labelValueValues("label.version", concert.version))}
-      </span>
-    ) : null}
-    {concert.venue ? (
-      <span {...i18nAttrs(labelValueValues("label.venue", concert.venue))}>
-        {valueForLocale(labelValueValues("label.venue", concert.venue))}
-      </span>
-    ) : null}
   </div>
   <div class="availability-row" aria-label="Recording availability summary">
     {concertAvailabilityChecks(concert).map(([label, available]) => {
@@ -93,9 +78,14 @@ const location = [concert.city, concert.countryOrRegion].filter(Boolean).join(",
       {valueForLocale(labelValueValues("label.host", personIdValues(concert.host)))}
     </p>
   ) : null}
-  {concert.guests?.length && concert.role !== "guest" ? (
+  {isCollaboration && coPerformerIds.length ? (
+    <p {...i18nAttrs(labelValueValues("label.coPerformers", personIdsValues(coPerformerIds)))}>
+      {valueForLocale(labelValueValues("label.coPerformers", personIdsValues(coPerformerIds)))}
+    </p>
+  ) : null}
+  {!isCollaboration && concert.guests?.length && concert.role !== "guest" ? (
     <p {...i18nAttrs(labelValueValues("label.guests", personIdsValues(concert.guests)))}>
-      {valueForLocale(labelValueValues("label.guests", personIdsValues(concert.guests))) || `Guests: ${personNames(concert.guests)}`}
+      {valueForLocale(labelValueValues("label.guests", personIdsValues(concert.guests)))}
     </p>
   ) : null}
 </a>

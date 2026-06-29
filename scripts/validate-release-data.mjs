@@ -249,6 +249,9 @@ for (const concert of concerts) {
   } else if (!concert.category || !concertCategoriesByNature[concert.nature].has(concert.category)) {
     addError(`Concert ${concert.id} has invalid category "${concert.category || ""}" for nature "${concert.nature}"`);
   }
+  if (concert.anniversaryYear && !/^\d{1,3}$/.test(concert.anniversaryYear)) {
+    addError(`Concert ${concert.id} has invalid anniversaryYear "${concert.anniversaryYear}"`);
+  }
   if (concert.groupKey || concert.groupKind || concert.groupTitle || concert.groupTitleLocalized) {
     if (!concert.groupKey) addError(`Concert ${concert.id} has group metadata without groupKey`);
     if (!concert.groupKind || !concertGroupKinds.has(concert.groupKind)) {

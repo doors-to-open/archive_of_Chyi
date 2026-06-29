@@ -992,13 +992,13 @@
     "tags": [],
     "nature": "commercial",
     "category": "solo",
-    "groupKey": "grace-still",
+    "groupKey": "grace-still-1p0",
     "groupKind": "tour",
-    "groupTitle": "Grace Still",
+    "groupTitle": "Grace Still 1.0",
     "groupTitleLocalized": {
-      "en": "Grace Still",
-      "zh-Hant": "風采依舊 在",
-      "zh-Hans": "风采依旧 在"
+      "en": "Grace Still 1.0",
+      "zh-Hant": "風采依舊 在 1.0",
+      "zh-Hans": "风采依旧 在 1.0"
     }
   },
   {
@@ -1531,13 +1531,13 @@
     "tags": [],
     "nature": "commercial",
     "category": "solo",
-    "groupKey": "grace-still",
+    "groupKey": "grace-still-2p0",
     "groupKind": "tour",
-    "groupTitle": "Grace Still",
+    "groupTitle": "Grace Still 2.0",
     "groupTitleLocalized": {
-      "en": "Grace Still",
-      "zh-Hant": "風采依舊 在",
-      "zh-Hans": "风采依旧 在"
+      "en": "Grace Still 2.0",
+      "zh-Hant": "風采依舊 在 2.0",
+      "zh-Hans": "风采依旧 在 2.0"
     }
   },
   {
@@ -2304,13 +2304,13 @@
     "tags": [],
     "nature": "commercial",
     "category": "solo",
-    "groupKey": "grace-still",
+    "groupKey": "grace-still-1p0",
     "groupKind": "tour",
-    "groupTitle": "Grace Still",
+    "groupTitle": "Grace Still 1.0",
     "groupTitleLocalized": {
-      "en": "Grace Still",
-      "zh-Hant": "風采依舊 在",
-      "zh-Hans": "风采依旧 在"
+      "en": "Grace Still 1.0",
+      "zh-Hant": "風采依舊 在 1.0",
+      "zh-Hans": "风采依旧 在 1.0"
     }
   },
   {
@@ -2868,13 +2868,13 @@
     "tags": [],
     "nature": "commercial",
     "category": "solo",
-    "groupKey": "grace-still",
+    "groupKey": "grace-still-2p0",
     "groupKind": "tour",
-    "groupTitle": "Grace Still",
+    "groupTitle": "Grace Still 2.0",
     "groupTitleLocalized": {
-      "en": "Grace Still",
-      "zh-Hant": "風采依舊 在",
-      "zh-Hans": "风采依旧 在"
+      "en": "Grace Still 2.0",
+      "zh-Hant": "風采依舊 在 2.0",
+      "zh-Hans": "风采依旧 在 2.0"
     }
   },
   {
@@ -3590,15 +3590,7 @@
     "role": "co-headliner",
     "series": null,
     "nature": "commercial",
-    "category": "collaboration",
-    "groupKey": "qi-chin-2004",
-    "groupKind": "tour",
-    "groupTitle": "Chyi Yu and Chyi Chin 2004",
-    "groupTitleLocalized": {
-      "en": "Chyi Yu and Chyi Chin 2004",
-      "zh-Hant": "齊豫與齊秦 2004",
-      "zh-Hans": "齐豫与齐秦 2004"
-    }
+    "category": "collaboration"
   },
   {
     "id": "concert-zhen-qing-nian-lun-2004-shanghai",
@@ -3836,15 +3828,7 @@
     "role": "co-headliner",
     "series": null,
     "nature": "commercial",
-    "category": "collaboration",
-    "groupKey": "qi-chin-2004",
-    "groupKind": "tour",
-    "groupTitle": "Chyi Yu and Chyi Chin 2004",
-    "groupTitleLocalized": {
-      "en": "Chyi Yu and Chyi Chin 2004",
-      "zh-Hant": "齊豫與齊秦 2004",
-      "zh-Hans": "齐豫与齐秦 2004"
-    }
+    "category": "collaboration"
   },
   {
     "id": "concert-tian-shi-yu-lang-2008-taipei",
@@ -3862,9 +3846,7 @@
     "guests": [
       "person-chi-chin"
     ],
-    "tags": [
-      "anniversary"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -4012,7 +3994,7 @@
     "role": "co-headliner",
     "series": "angel-wolf",
     "nature": "commercial",
-    "category": "anniversary",
+    "category": "collaboration",
     "groupKey": "angel-wolf",
     "groupKind": "tour",
     "groupTitle": "Angel and Wolf",
@@ -4111,7 +4093,7 @@
     "role": "headliner",
     "series": null,
     "nature": "commercial",
-    "category": "solo",
+    "category": "collaboration",
     "groupKey": "classic-hao-ting",
     "groupKind": "tour",
     "groupTitle": "Classic Hao Ting",
@@ -6535,9 +6517,7 @@
       "person-pan-yue-yun",
       "周治平"
     ],
-    "tags": [
-      "festival"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -6605,7 +6585,7 @@
     "role": "guest",
     "series": null,
     "nature": "commercial",
-    "category": "guest",
+    "category": "collaboration",
     "groupKey": "classic-hao-ting",
     "groupKind": "tour",
     "groupTitle": "Classic Hao Ting",
@@ -6631,9 +6611,7 @@
     "guests": [
       "person-chi-chin"
     ],
-    "tags": [
-      "anniversary"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -6968,7 +6946,7 @@
     "role": "co-headliner",
     "series": "angel-wolf",
     "nature": "commercial",
-    "category": "anniversary",
+    "category": "collaboration",
     "groupKey": "angel-wolf",
     "groupKind": "tour",
     "groupTitle": "Angel and Wolf",
@@ -6981,7 +6959,7 @@
   {
     "id": "concert-rollings-tone-30-2011-beijing",
     "slug": "rollings-tone-30-2011-beijing",
-    "title": "Rolling Stone 30",
+    "title": "Rolling Stone",
     "date": "2011-05-01",
     "venue": "National Stadium (Bird's Nest)",
     "city": "Beijing",
@@ -7006,10 +6984,7 @@
       "辛晓琪",
       "顺子"
     ],
-    "tags": [
-      "festival",
-      "anniversary"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -7048,14 +7023,14 @@
     "notes": "Maintainer confirmed the Beijing shell but rejected all media candidates. Chyi Yu performed 橄榄树 per news/photo evidence. Multi-artist Rolling Stone 30 anniversary concert at the Bird's Nest. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial",
     "titleLocalized": {
-      "en": "Rolling Stone 30",
-      "zh-Hant": "滾石30",
-      "zh-Hans": "滚石30"
+      "en": "Rolling Stone",
+      "zh-Hant": "滾石",
+      "zh-Hans": "滚石"
     },
     "role": "guest",
     "series": "rolling-stone-30",
     "nature": "commercial",
-    "category": "guest",
+    "category": "anniversary",
     "groupKey": "rolling-stone-30",
     "groupKind": "tour",
     "groupTitle": "Rolling Stone 30",
@@ -7063,7 +7038,8 @@
       "en": "Rolling Stone 30",
       "zh-Hant": "滾石30",
       "zh-Hans": "滚石30"
-    }
+    },
+    "anniversaryYear": "30"
   },
   {
     "id": "concert-zhen-ai-nv-ren-2011-wuhan",
@@ -7323,7 +7299,7 @@
   {
     "id": "concert-rollings-tone-30-2011-shanghai",
     "slug": "rollings-tone-30-2011-shanghai",
-    "title": "Rolling Stone 30",
+    "title": "Rolling Stone",
     "date": "2011-10-05/2011-10-07",
     "venue": "Mercedes-Benz Arena",
     "city": "Shanghai",
@@ -7352,10 +7328,7 @@
       "万芳",
       "赵咏华"
     ],
-    "tags": [
-      "festival",
-      "anniversary"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -7404,14 +7377,14 @@
     "notes": "Maintainer confirmed shell and kept Bilibili BV1u44y1E78v. Three-day run 2011-10-05/06/07 at Mercedes-Benz Arena. Non-Chyi Yu YouTube clips rejected. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial",
     "titleLocalized": {
-      "en": "Rolling Stone 30",
-      "zh-Hant": "滾石30",
-      "zh-Hans": "滚石30"
+      "en": "Rolling Stone",
+      "zh-Hant": "滾石",
+      "zh-Hans": "滚石"
     },
     "role": "guest",
     "series": "rolling-stone-30",
     "nature": "commercial",
-    "category": "guest",
+    "category": "anniversary",
     "groupKey": "rolling-stone-30",
     "groupKind": "tour",
     "groupTitle": "Rolling Stone 30",
@@ -7419,12 +7392,13 @@
       "en": "Rolling Stone 30",
       "zh-Hant": "滾石30",
       "zh-Hans": "滚石30"
-    }
+    },
+    "anniversaryYear": "30"
   },
   {
     "id": "concert-rollings-tone-30-2011-shenzhen",
     "slug": "rollings-tone-30-2011-shenzhen",
-    "title": "Rolling Stone 30",
+    "title": "Rolling Stone",
     "date": "2011-12-18",
     "venue": "Shenzhen Bay Sports Center Stadium",
     "city": "Shenzhen",
@@ -7447,10 +7421,7 @@
       "任贤齐",
       "刘若英"
     ],
-    "tags": [
-      "festival",
-      "anniversary"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -7488,14 +7459,14 @@
     "notes": "Maintainer confirmed shell and no media. Chyi Yu performed 橄榄树 per news evidence. Bilibili BV1u44y1E78v is Shanghai, not Shenzhen. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial",
     "titleLocalized": {
-      "en": "Rolling Stone 30",
-      "zh-Hant": "滾石30",
-      "zh-Hans": "滚石30"
+      "en": "Rolling Stone",
+      "zh-Hant": "滾石",
+      "zh-Hans": "滚石"
     },
     "role": "guest",
     "series": "rolling-stone-30",
     "nature": "commercial",
-    "category": "guest",
+    "category": "anniversary",
     "groupKey": "rolling-stone-30",
     "groupKind": "tour",
     "groupTitle": "Rolling Stone 30",
@@ -7503,7 +7474,8 @@
       "en": "Rolling Stone 30",
       "zh-Hant": "滾石30",
       "zh-Hans": "滚石30"
-    }
+    },
+    "anniversaryYear": "30"
   },
   {
     "id": "concert-yun-duan-2012-taipei",
@@ -7764,7 +7736,7 @@
   {
     "id": "concert-rollings-tone-30-2012-hangzhou",
     "slug": "rollings-tone-30-2012-hangzhou",
-    "title": "Rolling Stone 30",
+    "title": "Rolling Stone",
     "date": "2012-07-21",
     "venue": "Huanglong Sports Center Stadium",
     "city": "Hangzhou",
@@ -7795,10 +7767,7 @@
       "赵咏华",
       "万芳"
     ],
-    "tags": [
-      "festival",
-      "anniversary"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -7836,14 +7805,14 @@
     "notes": "Maintainer confirmed shell and rejected unrelated Shanghai/Taipei Rolling Stone media candidates. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial",
     "titleLocalized": {
-      "en": "Rolling Stone 30",
-      "zh-Hant": "滾石30",
-      "zh-Hans": "滚石30"
+      "en": "Rolling Stone",
+      "zh-Hant": "滾石",
+      "zh-Hans": "滚石"
     },
     "role": "guest",
     "series": "rolling-stone-30",
     "nature": "commercial",
-    "category": "guest",
+    "category": "anniversary",
     "groupKey": "rolling-stone-30",
     "groupKind": "tour",
     "groupTitle": "Rolling Stone 30",
@@ -7851,12 +7820,13 @@
       "en": "Rolling Stone 30",
       "zh-Hant": "滾石30",
       "zh-Hans": "滚石30"
-    }
+    },
+    "anniversaryYear": "30"
   },
   {
     "id": "concert-rollings-tone-30-2012-chengdu",
     "slug": "rollings-tone-30-2012-chengdu",
-    "title": "Rolling Stone 30",
+    "title": "Rolling Stone",
     "date": "2012-08-11",
     "venue": "Chengdu Sports Center",
     "city": "Chengdu",
@@ -7881,10 +7851,7 @@
       "辛晓琪",
       "赵咏华"
     ],
-    "tags": [
-      "festival",
-      "anniversary"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -7921,14 +7888,14 @@
     "notes": "Maintainer confirmed shell and rejected unrelated 1993 Chyi Chin Chengdu videos. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial",
     "titleLocalized": {
-      "en": "Rolling Stone 30",
-      "zh-Hant": "滾石30",
-      "zh-Hans": "滚石30"
+      "en": "Rolling Stone",
+      "zh-Hant": "滾石",
+      "zh-Hans": "滚石"
     },
     "role": "guest",
     "series": "rolling-stone-30",
     "nature": "commercial",
-    "category": "guest",
+    "category": "anniversary",
     "groupKey": "rolling-stone-30",
     "groupKind": "tour",
     "groupTitle": "Rolling Stone 30",
@@ -7936,12 +7903,13 @@
       "en": "Rolling Stone 30",
       "zh-Hant": "滾石30",
       "zh-Hans": "滚石30"
-    }
+    },
+    "anniversaryYear": "30"
   },
   {
     "id": "concert-rollings-tone-30-2012-wuhan",
     "slug": "rollings-tone-30-2012-wuhan",
-    "title": "Rolling Stone 30",
+    "title": "Rolling Stone",
     "date": "2012-10-20",
     "venue": "Wuhan Sports Center Stadium (Zhuankou)",
     "city": "Wuhan",
@@ -7974,10 +7942,7 @@
       "赵咏华",
       "万芳"
     ],
-    "tags": [
-      "festival",
-      "anniversary"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -8015,14 +7980,14 @@
     "notes": "Maintainer confirmed shell and rejected the Shanghai 2011 clip for this Wuhan item. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial",
     "titleLocalized": {
-      "en": "Rolling Stone 30",
-      "zh-Hant": "滾石30",
-      "zh-Hans": "滚石30"
+      "en": "Rolling Stone",
+      "zh-Hant": "滾石",
+      "zh-Hans": "滚石"
     },
     "role": "guest",
     "series": "rolling-stone-30",
     "nature": "commercial",
-    "category": "guest",
+    "category": "anniversary",
     "groupKey": "rolling-stone-30",
     "groupKind": "tour",
     "groupTitle": "Rolling Stone 30",
@@ -8030,12 +7995,13 @@
       "en": "Rolling Stone 30",
       "zh-Hant": "滾石30",
       "zh-Hans": "滚石30"
-    }
+    },
+    "anniversaryYear": "30"
   },
   {
     "id": "concert-rollings-tone-30-2012-guangzhou",
     "slug": "rollings-tone-30-2012-guangzhou",
-    "title": "Rolling Stone 30",
+    "title": "Rolling Stone",
     "date": "2012-12-08",
     "venue": "Tianhe Stadium",
     "city": "Guangzhou",
@@ -8070,10 +8036,7 @@
       "万芳",
       "陈绮贞"
     ],
-    "tags": [
-      "festival",
-      "anniversary"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -8112,14 +8075,14 @@
     "notes": "Maintainer confirmed shell and rejected the promo/thanks clip and unrelated Shanghai 2011 clip. Rolling Stone 30 tour finale. Setlist recovered 2026-06-28: Chyi Yu segment of the multi-artist 滚石30 anniversary bill. Song list (答案/橄榄树/Angel/梦田) per Bilibili clip metadata for the Shanghai stop (source-bilibili-rollings-tone-30-2011-shanghai-chyi-yu) and 橄榄树 cross-confirmed by CNTV/CFLAC for Shenzhen 2011. Propagated across the tour as partial; city-specific confirmation pending.",
     "status": "partial",
     "titleLocalized": {
-      "en": "Rolling Stone 30",
-      "zh-Hant": "滾石30",
-      "zh-Hans": "滚石30"
+      "en": "Rolling Stone",
+      "zh-Hant": "滾石",
+      "zh-Hans": "滚石"
     },
     "role": "guest",
     "series": "rolling-stone-30",
     "nature": "commercial",
-    "category": "guest",
+    "category": "anniversary",
     "groupKey": "rolling-stone-30",
     "groupKind": "tour",
     "groupTitle": "Rolling Stone 30",
@@ -8127,7 +8090,8 @@
       "en": "Rolling Stone 30",
       "zh-Hant": "滾石30",
       "zh-Hans": "滚石30"
-    }
+    },
+    "anniversaryYear": "30"
   },
   {
     "id": "concert-olive-tree-2014-taipei",
@@ -8142,9 +8106,7 @@
       "person-chyi-yu"
     ],
     "guests": [],
-    "tags": [
-      "charity"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -8262,8 +8224,8 @@
     },
     "role": "headliner",
     "series": null,
-    "nature": "non-commercial",
-    "category": "charity",
+    "nature": "commercial",
+    "category": "solo",
     "groupKey": "olive-tree-2014",
     "groupKind": "tour",
     "groupTitle": "Olive Tree 2014",
@@ -8496,9 +8458,7 @@
       "王海玲",
       "金智娟"
     ],
-    "tags": [
-      "festival"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -8548,16 +8508,8 @@
     },
     "role": "guest",
     "series": null,
-    "nature": "non-commercial",
-    "category": "festival",
-    "groupKey": "minge",
-    "groupKind": "theme",
-    "groupTitle": "Folk",
-    "groupTitleLocalized": {
-      "en": "Folk",
-      "zh-Hant": "民歌",
-      "zh-Hans": "民歌"
-    }
+    "nature": "commercial",
+    "category": "collaboration"
   },
   {
     "id": "concert-huai-nian-charity-2015-singapore",
@@ -8700,7 +8652,7 @@
   {
     "id": "concert-dian-deng-ying-guang-2016-taipei",
     "slug": "dian-deng-ying-guang-2016-taipei",
-    "title": "Light Up and See Life Warriors",
+    "title": "Light Up and Welcome Light: See Life Warriors",
     "date": "2016-03-06",
     "venue": "Taipei Zhongshan Hall Zhongzheng Auditorium",
     "city": "Taipei",
@@ -8766,9 +8718,9 @@
     "notes": "Maintainer confirmed the 2016-03-06 event shell. BV1qR4y1M77p belongs to a separate 2016-03-26 event (向国军致敬演唱会 点灯节目) and is not kept here. Performers listed by display name where no person records exist. Setlist recovered 2026-06-28 from chaptered video metadata via scripts/extract-setlist-from-chapters.mjs; song links are mechanically matched and reviewable. Marked partial pending per-city source confirmation.",
     "status": "partial",
     "titleLocalized": {
-      "en": "Light Up and See Life Warriors",
-      "zh-Hant": "點燈迎光看見生命勇士",
-      "zh-Hans": "点灯迎光看见生命勇士"
+      "en": "Light Up and Welcome Light: See Life Warriors",
+      "zh-Hant": "點燈迎光 看見生命勇士",
+      "zh-Hans": "点灯迎光 看见生命勇士"
     },
     "role": "headliner",
     "series": null,
@@ -8795,10 +8747,7 @@
       "李宗盛",
       "万芳"
     ],
-    "tags": [
-      "festival",
-      "anniversary"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -8858,9 +8807,8 @@
     },
     "role": "guest",
     "series": "minge",
-    "version": "40",
-    "nature": "non-commercial",
-    "category": "festival",
+    "nature": "commercial",
+    "category": "anniversary",
     "groupKey": "minge",
     "groupKind": "theme",
     "groupTitle": "Folk",
@@ -8868,7 +8816,8 @@
       "en": "Folk",
       "zh-Hant": "民歌",
       "zh-Hans": "民歌"
-    }
+    },
+    "anniversaryYear": "40"
   },
   {
     "id": "concert-gan-en-charity-2017-singapore",
@@ -9268,10 +9217,7 @@
       "person-chyi-yu"
     ],
     "guests": [],
-    "tags": [
-      "festival",
-      "anniversary"
-    ],
+    "tags": [],
     "setlist": [
       {
         "position": 1,
@@ -9306,9 +9252,8 @@
     },
     "role": "guest",
     "series": "minge",
-    "version": "50",
-    "nature": "non-commercial",
-    "category": "festival",
+    "nature": "commercial",
+    "category": "anniversary",
     "groupKey": "minge",
     "groupKind": "theme",
     "groupTitle": "Folk",
@@ -9316,7 +9261,8 @@
       "en": "Folk",
       "zh-Hant": "民歌",
       "zh-Hans": "民歌"
-    }
+    },
+    "anniversaryYear": "50"
   },
   {
     "id": "concert-yong-heng-de-xing-2025-taipei",
@@ -9517,7 +9463,7 @@
   {
     "id": "concert-xin-xing-fu-2014-taoyuan",
     "slug": "xin-xing-fu-2014-taoyuan",
-    "title": "Heart Happiness: Chyi Yu Sings Heart Songs",
+    "title": "Heart Happiness",
     "date": "2014-04-18",
     "venue": "Taoyuan Youth Correctional Institution",
     "city": "Taoyuan",
@@ -9542,9 +9488,9 @@
     "notes": "Imported as a needs-source lead. Reference row said 台北, but biography-style evidence consistently points to 桃园少年辅育院; maintainer confirmed correcting the place and keeping as needs-source because no primary news article was located.",
     "status": "needs-source",
     "titleLocalized": {
-      "en": "Heart Happiness: Chyi Yu Sings Heart Songs",
-      "zh-Hant": "心幸福：齊豫唱心歌",
-      "zh-Hans": "心幸福：齐豫唱心歌"
+      "en": "Heart Happiness",
+      "zh-Hant": "心幸福",
+      "zh-Hans": "心幸福"
     },
     "role": "headliner",
     "series": null,
@@ -9683,7 +9629,7 @@
   {
     "id": "concert-a-na-ya-sanya-2025-hainan",
     "slug": "a-na-ya-sanya-2025-hainan",
-    "title": "Aranya New Spring",
+    "title": "Aranya Sanya New Spring Music Concert",
     "date": "2025-02-02",
     "venue": "Aranya Sanya",
     "city": "Sanya",
@@ -9704,9 +9650,9 @@
     "notes": "Imported as a needs-source lead. Reference row gives 2025-02-02 阿那亚·三亚新春音乐会 海南; Bilibili/YouTube searches returned unrelated 阿那亚 content or no results. No performance media found.",
     "status": "needs-source",
     "titleLocalized": {
-      "en": "Aranya New Spring",
-      "zh-Hant": "阿那亞新春",
-      "zh-Hans": "阿那亚新春"
+      "en": "Aranya Sanya New Spring Music Concert",
+      "zh-Hant": "阿那亞三亞新春音樂會",
+      "zh-Hans": "阿那亚三亚新春音乐会"
     },
     "role": "headliner",
     "series": null,

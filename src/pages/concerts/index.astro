@@ -17,6 +17,7 @@ import {
 import { contributionPageUrl } from "../../lib/contribution";
 import {
   concertCategoryValues,
+  concertDisplayTitleValues,
   concertNatureValues,
   countValues,
   i18nAttrs,
@@ -43,7 +44,7 @@ function sortDate(concert: typeof concerts[number]) {
 }
 
 function titleAlpha(concert: typeof concerts[number]) {
-  return `${concert.title} ${concert.titleLocalized?.en || ""}`.toLocaleLowerCase("en-US");
+  return Object.values(concertDisplayTitleValues(concert)).join(" ").toLocaleLowerCase("en-US");
 }
 
 function concertSearchText(concert: typeof concerts[number]) {
@@ -57,6 +58,7 @@ function concertSearchText(concert: typeof concerts[number]) {
     concert.countryOrRegion,
     concert.nature,
     concert.category,
+    concert.anniversaryYear,
     concert.groupTitle,
     ...Object.values(concert.groupTitleLocalized || {}),
     personNames(concert.guests),

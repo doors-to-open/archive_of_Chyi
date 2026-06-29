@@ -73,6 +73,7 @@ Controls:
 - Refine solo concerts by guest name or no guests.
 - View Chyi Yu guest appearances flat by default, with optional host grouping.
 - Sort old-new, new-old, A-Z, and Z-A; grouped drawers sort by the group earliest event date.
+- Concert index titles include title, version or anniversary year when needed, year, and city; date/location/venue remain on detail pages.
 
 ### `/concerts/[slug]/`
 

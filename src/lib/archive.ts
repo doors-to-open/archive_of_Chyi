@@ -156,6 +156,7 @@ export type Concert = {
   role?: ConcertRole;
   series?: string | null;
   version?: string | null;
+  anniversaryYear?: string | null;
   host?: string | null;
   nature: ConcertNature;
   category: ConcertCategory;
@@ -532,6 +533,11 @@ export function concertRegion(concert: Concert): string {
 
 export function concertGuestIds(concert: Concert): string[] {
   return (concert.guests || []).filter((id) => id !== CHYI_YU_PERSON_ID);
+}
+
+export function concertCoPerformerIds(concert: Concert): string[] {
+  const ids = [...(concert.performers || []), ...(concert.guests || [])];
+  return Array.from(new Set(ids)).filter((id) => id !== CHYI_YU_PERSON_ID && !id.toLocaleLowerCase("en-US").includes("chyi-yu"));
 }
 
 export function showAvailabilityChecks(show: MusicShow) {
