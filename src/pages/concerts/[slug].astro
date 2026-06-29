@@ -18,6 +18,7 @@ import {
   joinValues,
   labelValueValues,
   performanceTitleValues,
+  personIdValues,
   personIdsValues,
   titleValues,
   uiText,
@@ -32,6 +33,7 @@ export function getStaticPaths() {
 }
 
 const { concert } = Astro.props;
+const hasHost = concert.role === "guest" && concert.host;
 ---
 
 <BaseLayout title={`${concert.title} | All for Chyi Yu`}>
@@ -57,6 +59,16 @@ const { concert } = Astro.props;
         <span {...i18nAttrs(labelValueValues("label.venue", concert.venue || uiText("value.unknown")))}>
           {valueForLocale(labelValueValues("label.venue", concert.venue || uiText("value.unknown")))}
         </span>
+        {concert.version ? (
+          <span {...i18nAttrs(labelValueValues("label.version", concert.version))}>
+            {valueForLocale(labelValueValues("label.version", concert.version))}
+          </span>
+        ) : null}
+        {hasHost ? (
+          <span {...i18nAttrs(labelValueValues("label.host", personIdValues(concert.host!)))}>
+            {valueForLocale(labelValueValues("label.host", personIdValues(concert.host!)))}
+          </span>
+        ) : null}
         <span {...i18nAttrs(labelValueValues("label.guests", concert.guests?.length ? personIdsValues(concert.guests) : uiText("value.noneRecorded")))}>
           {valueForLocale(labelValueValues("label.guests", concert.guests?.length ? personIdsValues(concert.guests) : uiText("value.noneRecorded")))}
         </span>

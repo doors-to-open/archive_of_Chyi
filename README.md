@@ -41,3 +41,16 @@ npm run dev
 ```
 
 The dev server binds to `127.0.0.1` by default. Use `npm run build` for a production build and `npm run check` for Astro diagnostics.
+
+## Versioning
+
+Releases are tracked in [CHANGELOG.md](CHANGELOG.md) (Keep a Changelog format) and tagged with Semantic Versioning. Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/):
+
+- `feat:` a new feature
+- `fix:` a bug fix
+- `chore:` tooling, deps, or housekeeping
+- `docs:` documentation only
+- `refactor:` code changes that neither fix a bug nor add a feature
+- `data:` data-file edits (concerts, releases, sources, etc.)
+
+A `feat` or `fix` commit may include a `!` after the type to signal a breaking change (e.g. `feat(concerts)!: ...`).

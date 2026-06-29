@@ -4,9 +4,15 @@ import ContributionPanel from "../../components/ContributionPanel.astro";
 import {
   concertAvailabilityChecks,
   concertCategoryTags,
+  concertGuestIds,
   concertPrimaryCategory,
+  concertRegion,
+  concertSeriesKeys,
+  concertSeriesHomeStages,
+  concertYearStage,
   concerts,
-  personNames
+  personNames,
+  personName
 } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
 import {
@@ -16,7 +22,9 @@ import {
   i18nAttrs,
   i18nCountLabelAttrs,
   labelValueValues,
+  personIdValues,
   personIdsValues,
+  seriesValues,
   titleValues,
   uiText,
   valueForLocale,
@@ -30,6 +38,9 @@ const contributionActions = [
   }
 ];
 
+const seriesHomeStages = concertSeriesHomeStages();
+const seriesKeys = concertSeriesKeys();
+
 function concertTagCount(tag: string) {
   return tag ? concerts.filter((c) => concertCategoryTags(c).includes(tag)).length : concerts.length;
 }
@@ -37,17 +48,66 @@ function concertTagCount(tag: string) {
 const concertFilterOptions = [
   { value: "", label: uiText("option.allReleases") },
   { value: "solo", label: uiText("tag.solo") },
+  { value: "concert-series", label: uiText("tag.concert-series") },
   { value: "guest", label: uiText("tag.guest") },
   { value: "collaboration", label: uiText("tag.collaboration") },
   { value: "charity", label: uiText("tag.charity") },
   { value: "festival", label: uiText("tag.festival") },
   { value: "religious", label: uiText("tag.religious") },
   { value: "anniversary", label: uiText("tag.anniversary") },
-  { value: "concert-series", label: uiText("tag.concert-series") },
   { value: "other", label: uiText("tag.other") }
 ].map((option) => ({
   ...option,
   label: withCountValues(option.label, concertTagCount(option.value))
+}));
+
+const yearStageOptions = [
+  { value: "", label: uiText("option.allYears") },
+  { value: "early", label: uiText("stage.early") },
+  { value: "2000s", label: uiText("stage.2000s") },
+  { value: "2010s", label: uiText("stage.2010s") },
+  { value: "2020s", label: uiText("stage.2020s") }
+].map((option) => ({
+  ...option,
+  label: withCountValues(
+    option.label,
+    option.value ? concerts.filter((c) => concertYearStage(c, seriesHomeStages) === option.value).length : concerts.length
+  )
+}));
+
+const regionOptions = [
+  { value: "", label: uiText("option.allRegions") },
+  { value: "taiwan", label: uiText("region.taiwan") },
+  { value: "hongkong", label: uiText("region.hongkong") },
+  { value: "mainland", label: uiText("region.mainland") },
+  { value: "overseas", label: uiText("region.overseas") }
+].map((option) => ({
+  ...option,
+  label: withCountValues(
+    option.label,
+    option.value ? concerts.filter((c) => concertRegion(c) === option.value).length : concerts.length
+  )
+}));
+
+// Sub-filter: guests appearing on Chyi Yu's solo (headliner, non-series) concerts.
+const soloGuestIds = Array.from(
+  new Set(
+    concerts
+      .filter((c) => c.role === "headliner" && !c.series)
+      .flatMap((c) => concertGuestIds(c))
+      .filter((id) => id.startsWith("person-"))
+  )
+).sort((a, b) => personName(a).localeCompare(personName(b), "en"));
+
+const seriesOptions = [
+  { value: "", label: uiText("option.allSeries") },
+  ...seriesKeys.map((key) => ({ value: key, label: seriesValues(key) }))
+].map((option) => ({
+  ...option,
+  label: withCountValues(
+    option.label,
+    option.value ? concerts.filter((c) => c.series === option.value).length : concerts.filter((c) => c.series).length
+  )
 }));
 
 function sortDate(concert: typeof concerts[number]) {
@@ -67,19 +127,124 @@ for (const concert of concerts) {
   concertsByYear.get(year)!.push(concert);
 }
 const sortedYears = Array.from(concertsByYear.keys()).sort((a, b) => (a === "Unknown" ? -1 : b === "Unknown" ? 1 : b.localeCompare(a)));
+
+type RenderedConcert = typeof concerts[number] & {
+  tags: string[];
+  primary: string;
+  categoryValues: ReturnType<typeof concertTagValues>;
+  date: string;
+  alpha: string;
+  search: string;
+  stage: string;
+  region: string;
+  series: string | null;
+  version: string | null;
+  guestIds: string[];
+};
+
+function renderConcert(concert: typeof concerts[number]): RenderedConcert {
+  const tags = concertCategoryTags(concert);
+  const primary = concertPrimaryCategory(concert);
+  const categoryValues = concertTagValues(primary);
+  const date = sortDate(concert);
+  const alpha = `${concert.title} ${concert.titleLocalized?.en || ""}`.toLocaleLowerCase("en-US");
+  const search = [
+    concert.title,
+    ...Object.values(concert.titleLocalized || {}),
+    concert.date,
+    concert.eventType,
+    concert.venue,
+    concert.city,
+    concert.countryOrRegion,
+    tags.join(" "),
+    personNames(concert.guests),
+    personNames(concert.performers)
+  ].filter(Boolean).join(" ");
+  return {
+    ...concert,
+    tags,
+    primary,
+    categoryValues,
+    date,
+    alpha,
+    search,
+    stage: concertYearStage(concert, seriesHomeStages),
+    region: concertRegion(concert),
+    series: concert.series ?? null,
+    version: concert.version ?? null,
+    guestIds: concertGuestIds(concert)
+  };
+}
+
+const rendered = concerts.map(renderConcert);
+const renderedByYear = new Map<string, RenderedConcert[]>();
+for (const r of rendered) {
+  const year = yearOf(r);
+  if (!renderedByYear.has(year)) renderedByYear.set(year, []);
+  renderedByYear.get(year)!.push(r);
+}
 ---
 
 <BaseLayout title="Concerts | All for Chyi Yu">
-  <section class="page-shell" data-sort-root data-filter-root>
+  <section class="page-shell" data-sort-root data-filter-root data-concert-page>
     <p class="page-kicker" {...i18nAttrs(uiText("nav.concerts"))}>{valueForLocale(uiText("nav.concerts"))}</p>
     <h1 class="page-title" {...i18nAttrs(uiText("nav.concerts"))}>{valueForLocale(uiText("nav.concerts"))}</h1>
     <p class="page-intro" {...i18nAttrs(uiText("page.concerts.intro"))}>{valueForLocale(uiText("page.concerts.intro"))}</p>
 
     <div class="section filter-panel concert-controls-panel">
+      <fieldset class="filter-option-group">
+        <legend {...i18nAttrs(uiText("label.view"))}>{valueForLocale(uiText("label.view"))}</legend>
+        <div class="filter-options">
+          <button type="button" data-view-option data-view-value="by-year" aria-pressed="true">
+            <span {...i18nAttrs(uiText("option.byYear"))}>{valueForLocale(uiText("option.byYear"))}</span>
+          </button>
+          <button type="button" data-view-option data-view-value="all" aria-pressed="false">
+            <span {...i18nAttrs(uiText("option.allAtOnce"))}>{valueForLocale(uiText("option.allAtOnce"))}</span>
+          </button>
+        </div>
+      </fieldset>
+
       <label class="release-filter-select-label">
         <span {...i18nAttrs(uiText("label.category"))}>{valueForLocale(uiText("label.category"))}</span>
         <select data-filter-select data-filter-key="concert-tags">
           {concertFilterOptions.map((option) => (
+            <option value={option.value} {...i18nAttrs(option.label)}>{valueForLocale(option.label)}</option>
+          ))}
+        </select>
+      </label>
+
+      <label class="release-filter-select-label">
+        <span {...i18nAttrs(uiText("label.yearStage"))}>{valueForLocale(uiText("label.yearStage"))}</span>
+        <select data-filter-select data-filter-key="concert-year-stage">
+          {yearStageOptions.map((option) => (
+            <option value={option.value} {...i18nAttrs(option.label)}>{valueForLocale(option.label)}</option>
+          ))}
+        </select>
+      </label>
+
+      <label class="release-filter-select-label">
+        <span {...i18nAttrs(uiText("label.region"))}>{valueForLocale(uiText("label.region"))}</span>
+        <select data-filter-select data-filter-key="concert-region">
+          {regionOptions.map((option) => (
+            <option value={option.value} {...i18nAttrs(option.label)}>{valueForLocale(option.label)}</option>
+          ))}
+        </select>
+      </label>
+
+      <label class="release-filter-select-label" data-subfilter data-subfilter-for="solo" hidden>
+        <span {...i18nAttrs(uiText("label.guests"))}>{valueForLocale(uiText("label.guests"))}</span>
+        <select data-filter-select data-filter-key="concert-guest" data-subfilter-select>
+          <option value="" {...i18nAttrs(uiText("option.allGuests"))}>{valueForLocale(uiText("option.allGuests"))}</option>
+          {soloGuestIds.map((id) => (
+            <option value={id} {...i18nAttrs(personIdValues(id))}>{valueForLocale(personIdValues(id))}</option>
+          ))}
+        </select>
+      </label>
+
+      <label class="release-filter-select-label" data-subfilter data-subfilter-for="concert-series" hidden>
+        <span {...i18nAttrs(uiText("label.series"))}>{valueForLocale(uiText("label.series"))}</span>
+        <select data-filter-select data-filter-key="concert-series" data-subfilter-select>
+          {seriesOptions.map((option) => (
             <option value={option.value} {...i18nAttrs(option.label)}>{valueForLocale(option.label)}</option>
           ))}
         </select>
@@ -94,19 +259,28 @@ const sortedYears = Array.from(concertsByYear.keys()).sort((a, b) => (a === "Unk
           <button type="button" data-sort-option data-sort-value="date-desc" aria-pressed="true">
             <span {...i18nAttrs(uiText("option.newest"))}>{valueForLocale(uiText("option.newest"))}</span>
           </button>
+          <button type="button" data-sort-option data-sort-value="alpha-asc" aria-pressed="false">
+            A-Z
+          </button>
+          <button type="button" data-sort-option data-sort-value="alpha-desc" aria-pressed="false">
+            Z-A
+          </button>
         </div>
       </fieldset>
 
       <p data-sort-count data-filter-count>{valueForLocale(countValues(concerts.length, "count.concert", "count.concerts"))}</p>
     </div>
 
-    <div class="section concert-year-list" data-concert-year-list
+    <div
+      class="section concert-year-list"
+      data-view-panel="by-year"
+      data-concert-year-list
       data-count-label-singular="concert"
       data-count-label-plural="concerts"
       {...i18nCountLabelAttrs(uiText("count.concert"), uiText("count.concerts"))}
     >
       {sortedYears.map((year) => {
-        const yearConcerts = concertsByYear.get(year)!;
+        const yearConcerts = renderedByYear.get(year)!;
         const visibleCount = yearConcerts.length;
         return (
           <details class="concert-year-group" data-year-group data-year={year} open={sortedYears.indexOf(year) < 3}>
@@ -115,75 +289,158 @@ const sortedYears = Array.from(concertsByYear.keys()).sort((a, b) => (a === "Unk
               <span class="concert-year-count" data-year-count>{valueForLocale(countValues(visibleCount, "count.concert", "count.concerts"))}</span>
             </summary>
             <div class="archive-grid">
-              {yearConcerts.map((concert, index) => {
-                const tags = concertCategoryTags(concert);
-                const primary = concertPrimaryCategory(concert);
-                const categoryValues = concertTagValues(primary);
-                const date = sortDate(concert);
-                const alpha = `${concert.title} ${concert.titleLocalized?.en || ""}`.toLocaleLowerCase("en-US");
-                const search = [
-                  concert.title,
-                  ...Object.values(concert.titleLocalized || {}),
-                  concert.date,
-                  concert.eventType,
-                  concert.venue,
-                  concert.city,
-                  concert.countryOrRegion,
-                  tags.join(" "),
-                  personNames(concert.guests),
-                  personNames(concert.performers)
-                ].filter(Boolean).join(" ");
-                return (
-                  <a
-                    class="record-card"
-                    href={`/concerts/${concert.slug}/`}
-                    data-filter-item
-                    data-sort-item
-                    data-sort-index={index}
-                    data-sort-date={date}
-                    data-sort-alpha={alpha}
-                    data-concert-tags={tags.join("|")}
-                    data-search={search}
-                  >
-                    <h2 {...i18nAttrs(titleValues(concert))}>{valueForLocale(titleValues(concert))}</h2>
-                    <div class="record-meta-table">
-                      <span {...i18nAttrs(labelValueValues("label.date", concert.date || uiText("value.unknown")))}>
-                        {valueForLocale(labelValueValues("label.date", concert.date || uiText("value.unknown")))}
+              {yearConcerts.map((concert, index) => (
+                <a
+                  class="record-card"
+                  href={`/concerts/${concert.slug}/`}
+                  data-filter-item
+                  data-sort-item
+                  data-sort-index={index}
+                  data-sort-date={concert.date}
+                  data-sort-alpha={concert.alpha}
+                  data-concert-tags={concert.tags.join("|")}
+                  data-concert-year-stage={concert.stage}
+                  data-concert-region={concert.region}
+                  data-concert-series={concert.series || ""}
+                  data-concert-guest={concert.guestIds.join("|")}
+                  data-search={concert.search}
+                >
+                  <h2 {...i18nAttrs(titleValues(concert))}>{valueForLocale(titleValues(concert))}</h2>
+                  <div class="record-meta-table">
+                    <span {...i18nAttrs(labelValueValues("label.date", concert.date || uiText("value.unknown")))}>
+                      {valueForLocale(labelValueValues("label.date", concert.date || uiText("value.unknown")))}
+                    </span>
+                    <span {...i18nAttrs(labelValueValues("label.category", concert.categoryValues))}>
+                      {valueForLocale(labelValueValues("label.category", concert.categoryValues))}
+                    </span>
+                    <span {...i18nAttrs(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}>
+                      {valueForLocale(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}
+                    </span>
+                    <span {...i18nAttrs(countValues(concert.setlist.length, "count.song", "count.songs"))}>
+                      {valueForLocale(countValues(concert.setlist.length, "count.song", "count.songs"))}
+                    </span>
+                    {concert.version ? (
+                      <span {...i18nAttrs(labelValueValues("label.version", concert.version))}>
+                        {valueForLocale(labelValueValues("label.version", concert.version))}
                       </span>
-                      <span {...i18nAttrs(labelValueValues("label.category", categoryValues))}>
-                        {valueForLocale(labelValueValues("label.category", categoryValues))}
-                      </span>
-                      <span {...i18nAttrs(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}>
-                        {valueForLocale(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}
-                      </span>
-                      <span {...i18nAttrs(countValues(concert.setlist.length, "count.song", "count.songs"))}>
-                        {valueForLocale(countValues(concert.setlist.length, "count.song", "count.songs"))}
-                      </span>
-                      {concert.venue ? (
-                        <span {...i18nAttrs(labelValueValues("label.venue", concert.venue))}>
-                          {valueForLocale(labelValueValues("label.venue", concert.venue))}
-                        </span>
-                      ) : null}
-                    </div>
-                    <div class="availability-row" aria-label="Recording availability summary">
-                      {concertAvailabilityChecks(concert).map(([label, available]) => {
-                        const values = availabilityValues(label);
-                        return <span class={available ? "available" : ""} {...i18nAttrs(values)}>{valueForLocale(values)}</span>;
-                      })}
-                    </div>
-                    {concert.guests?.length ? (
-                      <p {...i18nAttrs(labelValueValues("label.guests", personIdsValues(concert.guests)))}>
-                        {valueForLocale(labelValueValues("label.guests", personIdsValues(concert.guests))) || `Guests: ${personNames(concert.guests)}`}
-                      </p>
                     ) : null}
-                  </a>
-                );
-              })}
+                    {concert.venue ? (
+                      <span {...i18nAttrs(labelValueValues("label.venue", concert.venue))}>
+                        {valueForLocale(labelValueValues("label.venue", concert.venue))}
+                      </span>
+                    ) : null}
+                  </div>
+                  <div class="availability-row" aria-label="Recording availability summary">
+                    {concertAvailabilityChecks(concert).map(([label, available]) => {
+                      const values = availabilityValues(label);
+                      return <span class={available ? "available" : ""} {...i18nAttrs(values)}>{valueForLocale(values)}</span>;
+                    })}
+                  </div>
+                  {concert.role === "guest" && concert.host ? (
+                    <p {...i18nAttrs(labelValueValues("label.host", personIdValues(concert.host)))}>
+                      {valueForLocale(labelValueValues("label.host", personIdValues(concert.host)))}
+                    </p>
+                  ) : null}
+                  {concert.guests?.length && concert.role !== "guest" ? (
+                    <p {...i18nAttrs(labelValueValues("label.guests", personIdsValues(concert.guests)))}>
+                      {valueForLocale(labelValueValues("label.guests", personIdsValues(concert.guests))) || `Guests: ${personNames(concert.guests)}`}
+                    </p>
+                  ) : null}
+                </a>
+              ))}
             </div>
           </details>
         );
       })}
     </div>
+
+    <div
+      class="section archive-grid"
+      data-view-panel="all"
+      data-sort-container
+      data-paginate
+      data-page-size="24"
+      data-count-label-singular="concert"
+      data-count-label-plural="concerts"
+      {...i18nCountLabelAttrs(uiText("count.concert"), uiText("count.concerts"))}
+      hidden
+    >
+      {rendered.map((concert, index) => (
+        <a
+          class="record-card"
+          href={`/concerts/${concert.slug}/`}
+          data-filter-item
+          data-sort-item
+          data-sort-index={index}
+          data-sort-date={concert.date}
+          data-sort-alpha={concert.alpha}
+          data-concert-tags={concert.tags.join("|")}
+          data-concert-year-stage={concert.stage}
+          data-concert-region={concert.region}
+          data-concert-series={concert.series || ""}
+          data-concert-guest={concert.guestIds.join("|")}
+          data-search={concert.search}
+        >
+          <h2 {...i18nAttrs(titleValues(concert))}>{valueForLocale(titleValues(concert))}</h2>
+          <div class="record-meta-table">
+            <span {...i18nAttrs(labelValueValues("label.date", concert.date || uiText("value.unknown")))}>
+              {valueForLocale(labelValueValues("label.date", concert.date || uiText("value.unknown")))}
+            </span>
+            <span {...i18nAttrs(labelValueValues("label.category", concert.categoryValues))}>
+              {valueForLocale(labelValueValues("label.category", concert.categoryValues))}
+            </span>
+            <span {...i18nAttrs(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}>
+              {valueForLocale(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}
+            </span>
+            <span {...i18nAttrs(countValues(concert.setlist.length, "count.song", "count.songs"))}>
+              {valueForLocale(countValues(concert.setlist.length, "count.song", "count.songs"))}
+            </span>
+            {concert.version ? (
+              <span {...i18nAttrs(labelValueValues("label.version", concert.version))}>
+                {valueForLocale(labelValueValues("label.version", concert.version))}
+              </span>
+            ) : null}
+            {concert.venue ? (
+              <span {...i18nAttrs(labelValueValues("label.venue", concert.venue))}>
+                {valueForLocale(labelValueValues("label.venue", concert.venue))}
+              </span>
+            ) : null}
+          </div>
+          <div class="availability-row" aria-label="Recording availability summary">
+            {concertAvailabilityChecks(concert).map(([label, available]) => {
+              const values = availabilityValues(label);
+              return <span class={available ? "available" : ""} {...i18nAttrs(values)}>{valueForLocale(values)}</span>;
+            })}
+          </div>
+          {concert.role === "guest" && concert.host ? (
+            <p {...i18nAttrs(labelValueValues("label.host", personIdValues(concert.host)))}>
+              {valueForLocale(labelValueValues("label.host", personIdValues(concert.host)))}
+            </p>
+          ) : null}
+          {concert.guests?.length && concert.role !== "guest" ? (
+            <p {...i18nAttrs(labelValueValues("label.guests", personIdsValues(concert.guests)))}>
+              {valueForLocale(labelValueValues("label.guests", personIdsValues(concert.guests))) || `Guests: ${personNames(concert.guests)}`}
+            </p>
+          ) : null}
+        </a>
+      ))}
+    </div>
+
+    <div class="pagination-controls" data-pagination-controls
+      data-i18n-showing-en="Showing"
+      data-i18n-showing-zh-hant="顯示"
+      data-i18n-showing-zh-hans="显示"
+      data-i18n-of-en="of"
+      data-i18n-of-zh-hant="共"
+      data-i18n-of-zh-hans="共"
+      data-i18n-prev-en="Previous"
+      data-i18n-prev-zh-hant="上一頁"
+      data-i18n-prev-zh-hans="上一页"
+      data-i18n-next-en="Next"
+      data-i18n-next-zh-hant="下一頁"
+      data-i18n-next-zh-hans="下一页"
+      hidden
+    ></div>
 
     <ContributionPanel
       text="Propose a missing concert or concert-series record with date, location, and sources."
@@ -192,11 +449,82 @@ const sortedYears = Array.from(concertsByYear.keys()).sort((a, b) => (a === "Unk
   </section>
 
   <script>
-    const concertRoot = document.querySelector("[data-sort-root][data-filter-root]");
-    const yearList = document.querySelector("[data-concert-year-list]");
-    if (concertRoot && yearList) {
+    const concertRoot = document.querySelector("[data-concert-page]");
+    if (concertRoot) {
       const root = concertRoot as HTMLElement;
-      const sortOptions = Array.from(root.querySelectorAll("[data-sort-option]"));
+      const categorySelect = root.querySelector<HTMLSelectElement>('[data-filter-key="concert-tags"]');
+      const viewOptions = Array.from(root.querySelectorAll<HTMLButtonElement>("[data-view-option]"));
+      const subfilterLabels = Array.from(root.querySelectorAll<HTMLElement>("[data-subfilter]"));
+      const yearList = root.querySelector<HTMLElement>("[data-concert-year-list]");
+      const flatPanel = root.querySelector<HTMLElement>('[data-view-panel="all"]');
+
+      const activeCategory = () => (categorySelect instanceof HTMLSelectElement ? categorySelect.value : "");
+      const activeView = () => {
+        const active = root.querySelector("[data-view-option][aria-pressed='true']");
+        return active?.getAttribute("data-view-value") || "by-year";
+      };
+
+      const SUBFILTER_MAP: Record<string, string[]> = {
+        solo: ["solo"],
+        "concert-series": ["concert-series"]
+      };
+
+      const updateSubfilters = () => {
+        const cat = activeCategory();
+        subfilterLabels.forEach((label) => {
+          const forCat = label.getAttribute("data-subfilter-for") || "";
+          const matches = SUBFILTER_MAP[forCat]?.includes(cat);
+          label.toggleAttribute("hidden", !matches);
+          if (!matches) {
+            const select = label.querySelector<HTMLSelectElement>("[data-subfilter-select]");
+            if (select && select.value) {
+              select.value = "";
+              select.dispatchEvent(new Event("change", { bubbles: true }));
+            }
+          }
+        });
+      };
+
+      const updateView = () => {
+        const cat = activeCategory();
+        const filtering = Boolean(cat);
+        const desiredView = filtering ? "all" : activeView();
+        const showYear = desiredView === "by-year";
+        if (yearList) yearList.toggleAttribute("hidden", !showYear);
+        if (flatPanel) flatPanel.toggleAttribute("hidden", showYear);
+        // Keep the "by-year" view option disabled while a category filter is active.
+        viewOptions.forEach((option) => {
+          if (option.getAttribute("data-view-value") === "by-year") {
+            option.toggleAttribute("disabled", filtering);
+          }
+        });
+        // Force "all" view while filtering.
+        if (filtering) {
+          viewOptions.forEach((o) => o.setAttribute("aria-pressed", o.getAttribute("data-view-value") === "all" ? "true" : "false"));
+        }
+        window.dispatchEvent(new CustomEvent("archive-concert-view-change"));
+      };
+
+      categorySelect?.addEventListener("change", () => {
+        updateSubfilters();
+        updateView();
+      });
+      viewOptions.forEach((option) => {
+        option.addEventListener("click", () => {
+          if (option.hasAttribute("disabled")) return;
+          viewOptions.forEach((o) => o.setAttribute("aria-pressed", "false"));
+          option.setAttribute("aria-pressed", "true");
+          updateView();
+        });
+      });
+
+      window.addEventListener("archive-locale-change", () => {
+        updateSubfilters();
+        updateView();
+      });
+
+      // Year-group sort/recount (mirrors the by-year panel behavior).
+      const sortOptions = Array.from(root.querySelectorAll<HTMLButtonElement>("[data-sort-option]"));
       const sortValue = () => {
         const active = root.querySelector("[data-sort-option][aria-pressed='true']");
         return active?.getAttribute("data-sort-value") || "date-desc";
@@ -220,7 +548,6 @@ const sortedYears = Array.from(concertsByYear.keys()).sort((a, b) => (a === "Unk
         if (by === "Unknown") return -1;
         return dir === "asc" ? ay.localeCompare(by, "en") : by.localeCompare(ay, "en");
       };
-
       const recountYear = (group: Element) => {
         const countEl = group.querySelector("[data-year-count]");
         const total = group.querySelectorAll("[data-sort-item]").length;
@@ -232,8 +559,8 @@ const sortedYears = Array.from(concertsByYear.keys()).sort((a, b) => (a === "Unk
         }
         (group as HTMLElement).toggleAttribute("hidden", total > 0 && visibleCount === 0);
       };
-
-      const update = () => {
+      const updateYearPanel = () => {
+        if (!yearList) return;
         const groups = Array.from(yearList.querySelectorAll("[data-year-group]"));
         groups.forEach((group) => {
           const grid = group.querySelector(".archive-grid");
@@ -241,8 +568,8 @@ const sortedYears = Array.from(concertsByYear.keys()).sort((a, b) => (a === "Unk
           const items = Array.from(grid.querySelectorAll(":scope > [data-sort-item]"));
           items.sort(compareItems).forEach((item) => grid.appendChild(item));
         });
-        const yearListParent = yearList as HTMLElement;
-        groups.sort(compareGroups).forEach((group) => yearListParent.appendChild(group));
+        const parent = yearList as HTMLElement;
+        groups.sort(compareGroups).forEach((group) => parent.appendChild(group));
         groups.forEach(recountYear);
       };
 
@@ -250,12 +577,21 @@ const sortedYears = Array.from(concertsByYear.keys()).sort((a, b) => (a === "Unk
         option.addEventListener("click", () => {
           sortOptions.forEach((o) => o.setAttribute("aria-pressed", "false"));
           option.setAttribute("aria-pressed", "true");
-          update();
+          updateYearPanel();
         });
       });
-      window.addEventListener("archive-filter-change", update);
-      window.addEventListener("archive-locale-change", update);
-      update();
+      window.addEventListener("archive-filter-change", () => {
+        updateYearPanel();
+      });
+      window.addEventListener("archive-locale-change", updateYearPanel);
+
+      // Initialize after layout script has run.
+      const init = () => {
+        updateSubfilters();
+        updateView();
+        updateYearPanel();
+      };
+      requestAnimationFrame(init);
     }
   </script>
 </BaseLayout>

@@ -133,6 +133,8 @@ export type SongPerformance = {
   notes?: string;
 };
 
+export type ConcertRole = "headliner" | "co-headliner" | "guest";
+
 export type Concert = {
   id: string;
   slug: string;
@@ -146,6 +148,10 @@ export type Concert = {
   performers?: string[];
   guests?: string[];
   tags?: string[];
+  role?: ConcertRole;
+  series?: string | null;
+  version?: string | null;
+  host?: string | null;
   setlist: SongPerformance[];
   mediaLinks: ArchiveLink[];
   officialRecording?: boolean;
@@ -438,20 +444,27 @@ function hasNonChyiPerformer(concert: Concert) {
   return performers.some((id) => id !== CHYI_YU_PERSON_ID && !id.toLowerCase().includes("chyi"));
 }
 
+const ORTHOGONAL_CONCERT_TAGS = new Set(["charity", "festival", "religious", "anniversary", "other"]);
+
+export function concertPrimaryCategoryTag(concert: Concert): string {
+  if (concert.series) return "concert-series";
+  if (concert.role === "headliner") return "solo";
+  if (concert.role === "guest") return "guest";
+  if (concert.role === "co-headliner") return "collaboration";
+  return "other";
+}
+
 export function concertCategoryTags(concert: Concert) {
-  const tags = new Set<string>(concert.tags || []);
-  if (tags.size) return Array.from(tags);
-
-  if (concert.eventType === "festival") tags.add("festival");
-  if ((concert.guests || []).length > 0 && !tags.has("collaboration")) tags.add("guest");
-  if (hasNonChyiPerformer(concert)) tags.add("collaboration");
-
-  const notes = (concert.notes || "").toLocaleLowerCase("en-US");
-  if (notes.includes("charity") || notes.includes("慈善")) tags.add("charity");
-  if (notes.includes("religious") || notes.includes("chanting") || notes.includes("宗教") || notes.includes("法會") || notes.includes("法会")) tags.add("religious");
-  if (notes.includes("anniversary") || notes.includes("周年") || notes.includes("民歌四十") || notes.includes("民歌五十")) tags.add("anniversary");
-  if (concert.eventType === "concert-series") tags.add("concert-series");
-
+  const tags = new Set<string>();
+  (concert.tags || []).forEach((tag) => {
+    if (ORTHOGONAL_CONCERT_TAGS.has(tag)) tags.add(tag);
+  });
+  const primary = concertPrimaryCategoryTag(concert);
+  tags.add(primary);
+  if (!tags.has("concert-series") && !tags.has("solo") && !tags.has("guest") && !tags.has("collaboration")) {
+    if (concert.eventType === "festival") tags.add("festival");
+    if (hasNonChyiPerformer(concert)) tags.add("collaboration");
+  }
   if (!tags.size) tags.add("other");
   return Array.from(tags);
 }
@@ -470,6 +483,65 @@ export function concertPrimaryCategory(concert: Concert) {
   ];
   const tags = concertCategoryTags(concert);
   return priority.find((tag) => tags.includes(tag)) || concert.eventType;
+}
+
+const CONCERT_SERIES_ORDER = [
+  "grace-still",
+  "rolling-stone-30",
+  "minge",
+  "echo",
+  "power-woman",
+  "angel-wolf"
+];
+
+export function concertSeriesKeys(): string[] {
+  return CONCERT_SERIES_ORDER.filter((key) =>
+    concerts.some((concert) => concert.series === key)
+  );
+}
+
+export function concertEarliestYear(concert: Concert): string {
+  return (concert.date || "").split("/")[0].slice(0, 4) || "";
+}
+
+export function concertYearStage(concert: Concert, seriesHomeStage: Record<string, string> = {}): string {
+  if (concert.series && seriesHomeStage[concert.series]) {
+    return seriesHomeStage[concert.series];
+  }
+  const year = Number(concertEarliestYear(concert));
+  if (!year) return "unknown";
+  if (year <= 1999) return "early";
+  if (year <= 2009) return "2000s";
+  if (year <= 2019) return "2010s";
+  return "2020s";
+}
+
+export function concertSeriesHomeStages(): Record<string, string> {
+  const map: Record<string, string> = {};
+  for (const key of CONCERT_SERIES_ORDER) {
+    const stops = concerts.filter((concert) => concert.series === key);
+    if (!stops.length) continue;
+    const earliest = stops
+      .map((concert) => concertEarliestYear(concert))
+      .filter(Boolean)
+      .sort()[0];
+    const year = Number(earliest);
+    map[key] = !year ? "unknown" : year <= 1999 ? "early" : year <= 2009 ? "2000s" : year <= 2019 ? "2010s" : "2020s";
+  }
+  return map;
+}
+
+export function concertRegion(concert: Concert): string {
+  const r = concert.countryOrRegion || "";
+  if (r === "Taiwan") return "taiwan";
+  if (r === "Hong Kong" || r === "Macau") return "hongkong";
+  if (r === "China") return "mainland";
+  if (r === "Singapore" || r === "Malaysia") return "overseas";
+  return "overseas";
+}
+
+export function concertGuestIds(concert: Concert): string[] {
+  return (concert.guests || []).filter((id) => id !== CHYI_YU_PERSON_ID);
 }
 
 export function showAvailabilityChecks(show: MusicShow) {

@@ -281,6 +281,31 @@ const ui = {
   "tag.anniversary": { en: "Anniversary", "zh-Hant": "周年", "zh-Hans": "周年" },
   "tag.concert-series": { en: "Concert series", "zh-Hant": "系列演出", "zh-Hans": "系列演出" },
   "tag.other": { en: "Other", "zh-Hant": "其他", "zh-Hans": "其他" },
+  "label.yearStage": { en: "Year stage", "zh-Hant": "年代", "zh-Hans": "年代" },
+  "label.series": { en: "Series", "zh-Hant": "系列", "zh-Hans": "系列" },
+  "label.version": { en: "Version", "zh-Hant": "版本", "zh-Hans": "版本" },
+  "label.host": { en: "Host", "zh-Hant": "主辦人", "zh-Hans": "主办人" },
+  "label.subfilter": { en: "Refine", "zh-Hant": "再篩選", "zh-Hans": "再筛选" },
+  "option.allYears": { en: "All years", "zh-Hant": "全部年代", "zh-Hans": "全部年代" },
+  "option.allRegions": { en: "All regions", "zh-Hant": "全部地區", "zh-Hans": "全部地区" },
+  "option.allSeries": { en: "All series", "zh-Hant": "全部系列", "zh-Hans": "全部系列" },
+  "option.allGuests": { en: "All guests", "zh-Hant": "全部嘉賓", "zh-Hans": "全部嘉宾" },
+  "option.byYear": { en: "By year", "zh-Hant": "依年份", "zh-Hans": "依年份" },
+  "option.allAtOnce": { en: "All at once", "zh-Hant": "一次顯示", "zh-Hans": "一次显示" },
+  "stage.early": { en: "Early (≤1999)", "zh-Hant": "早期 (≤1999)", "zh-Hans": "早期 (≤1999)" },
+  "stage.2000s": { en: "2000s", "zh-Hant": "2000 年代", "zh-Hans": "2000 年代" },
+  "stage.2010s": { en: "2010s", "zh-Hant": "2010 年代", "zh-Hans": "2010 年代" },
+  "stage.2020s": { en: "2020s", "zh-Hant": "2020 年代", "zh-Hans": "2020 年代" },
+  "region.taiwan": { en: "Taiwan", "zh-Hant": "台灣", "zh-Hans": "台湾" },
+  "region.hongkong": { en: "Hong Kong / Macau", "zh-Hant": "港澳", "zh-Hans": "港澳" },
+  "region.mainland": { en: "Mainland China", "zh-Hant": "中國大陸", "zh-Hans": "中国大陆" },
+  "region.overseas": { en: "Overseas", "zh-Hant": "海外", "zh-Hans": "海外" },
+  "series.grace-still": { en: "Grace Still", "zh-Hant": "風采依舊 在", "zh-Hans": "风采依旧 在" },
+  "series.rolling-stone-30": { en: "Rolling Stone 30", "zh-Hant": "滾石30", "zh-Hans": "滚石30" },
+  "series.minge": { en: "Folk", "zh-Hant": "民歌", "zh-Hans": "民歌" },
+  "series.echo": { en: "Echo", "zh-Hant": "回聲", "zh-Hans": "回声" },
+  "series.power-woman": { en: "Power Woman", "zh-Hant": "珍愛女人", "zh-Hans": "珍爱女人" },
+  "series.angel-wolf": { en: "Angel and Wolf", "zh-Hant": "天使與狼", "zh-Hans": "天使与狼" },
   "option.allSections": { en: "All sections", "zh-Hant": "全部分類", "zh-Hans": "全部分类" },
   "option.allTypes": { en: "All types", "zh-Hant": "全部類型", "zh-Hans": "全部类型" },
   "option.allLevels": { en: "All levels", "zh-Hant": "全部等級", "zh-Hans": "全部等级" },
@@ -544,6 +569,39 @@ export function concertTagsValues(concert: Concert): LocaleValues {
     values[locale] = tags.map((tag) => valueForLocale(concertTagValues(tag), locale)).join(", ");
     return values;
   }, {} as LocaleValues);
+}
+
+export function yearStageValues(stage: string): LocaleValues {
+  const stages: Record<string, LocaleValues> = {
+    early: uiText("stage.early"),
+    "2000s": uiText("stage.2000s"),
+    "2010s": uiText("stage.2010s"),
+    "2020s": uiText("stage.2020s"),
+    unknown: uiText("value.unknown")
+  };
+  return stages[stage] || textValues(stage);
+}
+
+export function regionValues(region: string): LocaleValues {
+  const regions: Record<string, LocaleValues> = {
+    taiwan: uiText("region.taiwan"),
+    hongkong: uiText("region.hongkong"),
+    mainland: uiText("region.mainland"),
+    overseas: uiText("region.overseas")
+  };
+  return regions[region] || textValues(region);
+}
+
+export function seriesValues(seriesKey: string): LocaleValues {
+  const known: Record<string, LocaleValues> = {
+    "grace-still": uiText("series.grace-still"),
+    "rolling-stone-30": uiText("series.rolling-stone-30"),
+    minge: uiText("series.minge"),
+    echo: uiText("series.echo"),
+    "power-woman": uiText("series.power-woman"),
+    "angel-wolf": uiText("series.angel-wolf")
+  };
+  return known[seriesKey] || textValues(seriesKey);
 }
 
 export function appearanceTypeValues(type: string): LocaleValues {

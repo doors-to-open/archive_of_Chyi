@@ -3010,5 +3010,29 @@
     "citation": null,
     "reliability": "medium-high",
     "notes": "Confirms Beijing stop and the 夢田 duet with Pan Yue-yun memorializing 三毛's 20th death anniversary."
+  },
+  {
+    "id": "source-bilibili-wei-lu-2002-beijing",
+    "sourceType": "video",
+    "title": "Bilibili clips of 2002 Lo Ta-yu Beijing Around the Fire concert (Chyi Yu songs)",
+    "authorOrPublisher": "我诚我在 (Bilibili uploader)",
+    "date": null,
+    "url": "https://www.bilibili.com/video/BV1ViRgYhEYR",
+    "accessDate": "2026-06-29",
+    "citation": "我诚我在. \"2002年罗大佑北京围炉演唱会\" clips. Bilibili.",
+    "reliability": "medium",
+    "notes": "Fan-uploaded per-song clips from the 2002 Beijing Around the Fire concert, used to confirm Chyi Yu's performed songs."
+  },
+  {
+    "id": "source-qq-music-wei-lu-2002-official-cd",
+    "sourceType": "streaming",
+    "title": "QQ Music official CD: 2002 Lo Ta-yu Beijing Hong Kong concert",
+    "authorOrPublisher": "QQ Music / 滚石唱片",
+    "date": "2002-12-31",
+    "url": "https://c6.y.qq.com/base/fcgi-bin/u?__=AI1icuVhZSBV",
+    "accessDate": "2026-06-29",
+    "citation": "QQ Music. \"2002年北京围炉跨年音乐晚会\" official CD distribution.",
+    "reliability": "high",
+    "notes": "Official CD distribution of the 2002 Around the Fire New Year concert, covering Beijing and Hong Kong stops. Provides official audio for Chyi Yu's co-performed songs."
   }
 ]
