@@ -235,9 +235,30 @@ expectUnique(concerts, "id", "Concert");
 expectUnique(concerts, "slug", "Concert");
 
 const datePattern = /^\d{4}-\d{2}-\d{2}(\/\d{4}-\d{2}-\d{2})?$|^\d{4}-\d{2}(-\d{2})?$|^\d{4}$/;
+const concertCategoriesByNature = {
+  commercial: new Set(["solo", "collaboration", "anniversary", "guest", "other"]),
+  "non-commercial": new Set(["charity", "religion", "festival", "other"])
+};
+const concertGroupKinds = new Set(["tour", "theme", "host"]);
+
 for (const concert of concerts) {
   validateSourceRefs(concert, "Concert");
   validateLinks(concert.mediaLinks, `Concert ${concert.id}`);
+  if (!concert.nature || !concertCategoriesByNature[concert.nature]) {
+    addError(`Concert ${concert.id} has invalid nature "${concert.nature || ""}"`);
+  } else if (!concert.category || !concertCategoriesByNature[concert.nature].has(concert.category)) {
+    addError(`Concert ${concert.id} has invalid category "${concert.category || ""}" for nature "${concert.nature}"`);
+  }
+  if (concert.groupKey || concert.groupKind || concert.groupTitle || concert.groupTitleLocalized) {
+    if (!concert.groupKey) addError(`Concert ${concert.id} has group metadata without groupKey`);
+    if (!concert.groupKind || !concertGroupKinds.has(concert.groupKind)) {
+      addError(`Concert ${concert.id} has invalid groupKind "${concert.groupKind || ""}"`);
+    }
+    if (!concert.groupTitle) addError(`Concert ${concert.id} has group metadata without groupTitle`);
+    if (!concert.groupTitleLocalized?.en) {
+      addError(`Concert ${concert.id} has group metadata without English groupTitleLocalized`);
+    }
+  }
   if (concert.date && !datePattern.test(concert.date)) {
     addError(`Concert ${concert.id} has unsortable date "${concert.date}"`);
   }

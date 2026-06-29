@@ -487,7 +487,9 @@
     },
     "role": "headliner",
     "series": null,
-    "tags": []
+    "tags": [],
+    "nature": "commercial",
+    "category": "solo"
   },
   {
     "id": "concert-grace-still-beijing-2025",
@@ -987,7 +989,17 @@
     "role": "headliner",
     "series": "grace-still",
     "version": "1.0",
-    "tags": []
+    "tags": [],
+    "nature": "commercial",
+    "category": "solo",
+    "groupKey": "grace-still",
+    "groupKind": "tour",
+    "groupTitle": "Grace Still",
+    "groupTitleLocalized": {
+      "en": "Grace Still",
+      "zh-Hant": "風采依舊 在",
+      "zh-Hans": "风采依旧 在"
+    }
   },
   {
     "id": "concert-grace-still-shenzhen-2026",
@@ -1516,7 +1528,17 @@
     "role": "headliner",
     "series": "grace-still",
     "version": "2.0",
-    "tags": []
+    "tags": [],
+    "nature": "commercial",
+    "category": "solo",
+    "groupKey": "grace-still",
+    "groupKind": "tour",
+    "groupTitle": "Grace Still",
+    "groupTitleLocalized": {
+      "en": "Grace Still",
+      "zh-Hant": "風采依舊 在",
+      "zh-Hans": "风采依旧 在"
+    }
   },
   {
     "id": "concert-grace-still-chengdu-2025",
@@ -2279,7 +2301,17 @@
     "role": "headliner",
     "series": "grace-still",
     "version": "1.0",
-    "tags": []
+    "tags": [],
+    "nature": "commercial",
+    "category": "solo",
+    "groupKey": "grace-still",
+    "groupKind": "tour",
+    "groupTitle": "Grace Still",
+    "groupTitleLocalized": {
+      "en": "Grace Still",
+      "zh-Hant": "風采依舊 在",
+      "zh-Hans": "风采依旧 在"
+    }
   },
   {
     "id": "concert-grace-still-changsha-2026",
@@ -2833,7 +2865,17 @@
     "role": "headliner",
     "series": "grace-still",
     "version": "2.0",
-    "tags": []
+    "tags": [],
+    "nature": "commercial",
+    "category": "solo",
+    "groupKey": "grace-still",
+    "groupKind": "tour",
+    "groupTitle": "Grace Still",
+    "groupTitleLocalized": {
+      "en": "Grace Still",
+      "zh-Hant": "風采依舊 在",
+      "zh-Hans": "风采依旧 在"
+    }
   },
   {
     "id": "concert-mei-li-ren-sheng-1999-taipei",
@@ -3155,7 +3197,9 @@
       "zh-Hans": "美丽人生歌友会"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "solo"
   },
   {
     "id": "concert-hui-yi-shi-yu-ge-de-qi-yu-2003-taipei",
@@ -3326,7 +3370,9 @@
       "zh-Hans": "回忆那段诗与歌的奇遇"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "solo"
   },
   {
     "id": "concert-qi-jia-huan-2004-beijing",
@@ -3542,7 +3588,17 @@
       "zh-Hans": "齐家欢"
     },
     "role": "co-headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "qi-chin-2004",
+    "groupKind": "tour",
+    "groupTitle": "Chyi Yu and Chyi Chin 2004",
+    "groupTitleLocalized": {
+      "en": "Chyi Yu and Chyi Chin 2004",
+      "zh-Hant": "齊豫與齊秦 2004",
+      "zh-Hans": "齐豫与齐秦 2004"
+    }
   },
   {
     "id": "concert-zhen-qing-nian-lun-2004-shanghai",
@@ -3778,7 +3834,17 @@
       "zh-Hans": "真情年轮"
     },
     "role": "co-headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "qi-chin-2004",
+    "groupKind": "tour",
+    "groupTitle": "Chyi Yu and Chyi Chin 2004",
+    "groupTitleLocalized": {
+      "en": "Chyi Yu and Chyi Chin 2004",
+      "zh-Hant": "齊豫與齊秦 2004",
+      "zh-Hans": "齐豫与齐秦 2004"
+    }
   },
   {
     "id": "concert-tian-shi-yu-lang-2008-taipei",
@@ -3944,7 +4010,17 @@
       "zh-Hans": "天使与狼"
     },
     "role": "co-headliner",
-    "series": "angel-wolf"
+    "series": "angel-wolf",
+    "nature": "commercial",
+    "category": "anniversary",
+    "groupKey": "angel-wolf",
+    "groupKind": "tour",
+    "groupTitle": "Angel and Wolf",
+    "groupTitleLocalized": {
+      "en": "Angel and Wolf",
+      "zh-Hant": "天使與狼",
+      "zh-Hans": "天使与狼"
+    }
   },
   {
     "id": "concert-jing-dian-jin-qu-hao-ting-2007-taipei",
@@ -4033,7 +4109,17 @@
       "zh-Hans": "经典好听"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "solo",
+    "groupKey": "classic-hao-ting",
+    "groupKind": "tour",
+    "groupTitle": "Classic Hao Ting",
+    "groupTitleLocalized": {
+      "en": "Classic Hao Ting",
+      "zh-Hant": "經典好聽",
+      "zh-Hans": "经典好听"
+    }
   },
   {
     "id": "concert-echo-2018-taipei",
@@ -4429,7 +4515,17 @@
       "zh-Hans": "回声"
     },
     "role": "co-headliner",
-    "series": "echo"
+    "series": "echo",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "echo",
+    "groupKind": "tour",
+    "groupTitle": "Echo",
+    "groupTitleLocalized": {
+      "en": "Echo",
+      "zh-Hant": "回聲",
+      "zh-Hans": "回声"
+    }
   },
   {
     "id": "concert-echo-2018-beijing",
@@ -4587,7 +4683,17 @@
       "zh-Hans": "回声"
     },
     "role": "co-headliner",
-    "series": "echo"
+    "series": "echo",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "echo",
+    "groupKind": "tour",
+    "groupTitle": "Echo",
+    "groupTitleLocalized": {
+      "en": "Echo",
+      "zh-Hant": "回聲",
+      "zh-Hans": "回声"
+    }
   },
   {
     "id": "concert-echo-2018-wuhan",
@@ -4739,7 +4845,17 @@
       "zh-Hans": "回声"
     },
     "role": "co-headliner",
-    "series": "echo"
+    "series": "echo",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "echo",
+    "groupKind": "tour",
+    "groupTitle": "Echo",
+    "groupTitleLocalized": {
+      "en": "Echo",
+      "zh-Hant": "回聲",
+      "zh-Hans": "回声"
+    }
   },
   {
     "id": "concert-echo-2019-singapore",
@@ -4937,7 +5053,17 @@
       "zh-Hans": "回声"
     },
     "role": "co-headliner",
-    "series": "echo"
+    "series": "echo",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "echo",
+    "groupKind": "tour",
+    "groupTitle": "Echo",
+    "groupTitleLocalized": {
+      "en": "Echo",
+      "zh-Hant": "回聲",
+      "zh-Hans": "回声"
+    }
   },
   {
     "id": "concert-echo-2019-guangzhou",
@@ -5405,7 +5531,17 @@
       "zh-Hans": "回声"
     },
     "role": "co-headliner",
-    "series": "echo"
+    "series": "echo",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "echo",
+    "groupKind": "tour",
+    "groupTitle": "Echo",
+    "groupTitleLocalized": {
+      "en": "Echo",
+      "zh-Hant": "回聲",
+      "zh-Hans": "回声"
+    }
   },
   {
     "id": "concert-chishang-autumn-harvest-2019-taitung",
@@ -5614,7 +5750,9 @@
       "zh-Hans": "池上秋收稻穗艺术节"
     },
     "role": "guest",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "festival"
   },
   {
     "id": "concert-echo-2018-nanjing",
@@ -5817,7 +5955,17 @@
       "zh-Hans": "回声"
     },
     "role": "co-headliner",
-    "series": "echo"
+    "series": "echo",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "echo",
+    "groupKind": "tour",
+    "groupTitle": "Echo",
+    "groupTitleLocalized": {
+      "en": "Echo",
+      "zh-Hant": "回聲",
+      "zh-Hans": "回声"
+    }
   },
   {
     "id": "concert-fenghua-charity-2018-taipei",
@@ -6076,7 +6224,9 @@
       "zh-Hans": "峰华齐唱"
     },
     "role": "co-headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity"
   },
   {
     "id": "concert-ai-yu-xi-wang-2019-jiayi",
@@ -6128,7 +6278,9 @@
       "zh-Hans": "爱与希望 展望未来 关怀"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity"
   },
   {
     "id": "concert-echoes-back-2022-taipei",
@@ -6351,7 +6503,17 @@
       "zh-Hans": "回声"
     },
     "role": "co-headliner",
-    "series": "echo"
+    "series": "echo",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "echo",
+    "groupKind": "tour",
+    "groupTitle": "Echo",
+    "groupTitleLocalized": {
+      "en": "Echo",
+      "zh-Hant": "回聲",
+      "zh-Hans": "回声"
+    }
   },
   {
     "id": "concert-jing-dian-hao-ting-2008-genting",
@@ -6441,7 +6603,17 @@
       "zh-Hans": "经典好听"
     },
     "role": "guest",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "guest",
+    "groupKey": "classic-hao-ting",
+    "groupKind": "tour",
+    "groupTitle": "Classic Hao Ting",
+    "groupTitleLocalized": {
+      "en": "Classic Hao Ting",
+      "zh-Hant": "經典好聽",
+      "zh-Hans": "经典好听"
+    }
   },
   {
     "id": "concert-tian-shi-yu-lang-2008-beijing",
@@ -6794,7 +6966,17 @@
       "zh-Hans": "天使与狼"
     },
     "role": "co-headliner",
-    "series": "angel-wolf"
+    "series": "angel-wolf",
+    "nature": "commercial",
+    "category": "anniversary",
+    "groupKey": "angel-wolf",
+    "groupKind": "tour",
+    "groupTitle": "Angel and Wolf",
+    "groupTitleLocalized": {
+      "en": "Angel and Wolf",
+      "zh-Hant": "天使與狼",
+      "zh-Hans": "天使与狼"
+    }
   },
   {
     "id": "concert-rollings-tone-30-2011-beijing",
@@ -6871,7 +7053,17 @@
       "zh-Hans": "滚石30"
     },
     "role": "guest",
-    "series": "rolling-stone-30"
+    "series": "rolling-stone-30",
+    "nature": "commercial",
+    "category": "guest",
+    "groupKey": "rolling-stone-30",
+    "groupKind": "tour",
+    "groupTitle": "Rolling Stone 30",
+    "groupTitleLocalized": {
+      "en": "Rolling Stone 30",
+      "zh-Hant": "滾石30",
+      "zh-Hans": "滚石30"
+    }
   },
   {
     "id": "concert-zhen-ai-nv-ren-2011-wuhan",
@@ -6946,7 +7138,17 @@
       "zh-Hans": "珍爱女人"
     },
     "role": "co-headliner",
-    "series": "power-woman"
+    "series": "power-woman",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "power-woman",
+    "groupKind": "tour",
+    "groupTitle": "Power Woman",
+    "groupTitleLocalized": {
+      "en": "Power Woman",
+      "zh-Hant": "珍愛女人",
+      "zh-Hans": "珍爱女人"
+    }
   },
   {
     "id": "concert-zhen-ai-nv-ren-2011-beijing",
@@ -7022,7 +7224,17 @@
       "zh-Hans": "珍爱女人"
     },
     "role": "co-headliner",
-    "series": "power-woman"
+    "series": "power-woman",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "power-woman",
+    "groupKind": "tour",
+    "groupTitle": "Power Woman",
+    "groupTitleLocalized": {
+      "en": "Power Woman",
+      "zh-Hant": "珍愛女人",
+      "zh-Hans": "珍爱女人"
+    }
   },
   {
     "id": "concert-zhen-ai-nv-ren-2011-kunming",
@@ -7096,7 +7308,17 @@
       "zh-Hans": "珍爱女人"
     },
     "role": "co-headliner",
-    "series": "power-woman"
+    "series": "power-woman",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "power-woman",
+    "groupKind": "tour",
+    "groupTitle": "Power Woman",
+    "groupTitleLocalized": {
+      "en": "Power Woman",
+      "zh-Hant": "珍愛女人",
+      "zh-Hans": "珍爱女人"
+    }
   },
   {
     "id": "concert-rollings-tone-30-2011-shanghai",
@@ -7187,7 +7409,17 @@
       "zh-Hans": "滚石30"
     },
     "role": "guest",
-    "series": "rolling-stone-30"
+    "series": "rolling-stone-30",
+    "nature": "commercial",
+    "category": "guest",
+    "groupKey": "rolling-stone-30",
+    "groupKind": "tour",
+    "groupTitle": "Rolling Stone 30",
+    "groupTitleLocalized": {
+      "en": "Rolling Stone 30",
+      "zh-Hant": "滾石30",
+      "zh-Hans": "滚石30"
+    }
   },
   {
     "id": "concert-rollings-tone-30-2011-shenzhen",
@@ -7261,7 +7493,17 @@
       "zh-Hans": "滚石30"
     },
     "role": "guest",
-    "series": "rolling-stone-30"
+    "series": "rolling-stone-30",
+    "nature": "commercial",
+    "category": "guest",
+    "groupKey": "rolling-stone-30",
+    "groupKind": "tour",
+    "groupTitle": "Rolling Stone 30",
+    "groupTitleLocalized": {
+      "en": "Rolling Stone 30",
+      "zh-Hant": "滾石30",
+      "zh-Hans": "滚石30"
+    }
   },
   {
     "id": "concert-yun-duan-2012-taipei",
@@ -7375,7 +7617,9 @@
       "zh-Hans": "云端"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "solo"
   },
   {
     "id": "concert-xin-xing-fu-2012-tainan",
@@ -7419,7 +7663,17 @@
       "zh-Hans": "心幸福"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity",
+    "groupKey": "xin-xing-fu",
+    "groupKind": "theme",
+    "groupTitle": "Heart Happiness",
+    "groupTitleLocalized": {
+      "en": "Heart Happiness",
+      "zh-Hant": "心幸福音樂會",
+      "zh-Hans": "心幸福音乐会"
+    }
   },
   {
     "id": "concert-zhen-ai-nv-ren-2012-macau",
@@ -7495,7 +7749,17 @@
       "zh-Hans": "珍爱女人"
     },
     "role": "co-headliner",
-    "series": "power-woman"
+    "series": "power-woman",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "power-woman",
+    "groupKind": "tour",
+    "groupTitle": "Power Woman",
+    "groupTitleLocalized": {
+      "en": "Power Woman",
+      "zh-Hant": "珍愛女人",
+      "zh-Hans": "珍爱女人"
+    }
   },
   {
     "id": "concert-rollings-tone-30-2012-hangzhou",
@@ -7577,7 +7841,17 @@
       "zh-Hans": "滚石30"
     },
     "role": "guest",
-    "series": "rolling-stone-30"
+    "series": "rolling-stone-30",
+    "nature": "commercial",
+    "category": "guest",
+    "groupKey": "rolling-stone-30",
+    "groupKind": "tour",
+    "groupTitle": "Rolling Stone 30",
+    "groupTitleLocalized": {
+      "en": "Rolling Stone 30",
+      "zh-Hant": "滾石30",
+      "zh-Hans": "滚石30"
+    }
   },
   {
     "id": "concert-rollings-tone-30-2012-chengdu",
@@ -7652,7 +7926,17 @@
       "zh-Hans": "滚石30"
     },
     "role": "guest",
-    "series": "rolling-stone-30"
+    "series": "rolling-stone-30",
+    "nature": "commercial",
+    "category": "guest",
+    "groupKey": "rolling-stone-30",
+    "groupKind": "tour",
+    "groupTitle": "Rolling Stone 30",
+    "groupTitleLocalized": {
+      "en": "Rolling Stone 30",
+      "zh-Hant": "滾石30",
+      "zh-Hans": "滚石30"
+    }
   },
   {
     "id": "concert-rollings-tone-30-2012-wuhan",
@@ -7736,7 +8020,17 @@
       "zh-Hans": "滚石30"
     },
     "role": "guest",
-    "series": "rolling-stone-30"
+    "series": "rolling-stone-30",
+    "nature": "commercial",
+    "category": "guest",
+    "groupKey": "rolling-stone-30",
+    "groupKind": "tour",
+    "groupTitle": "Rolling Stone 30",
+    "groupTitleLocalized": {
+      "en": "Rolling Stone 30",
+      "zh-Hant": "滾石30",
+      "zh-Hans": "滚石30"
+    }
   },
   {
     "id": "concert-rollings-tone-30-2012-guangzhou",
@@ -7823,7 +8117,17 @@
       "zh-Hans": "滚石30"
     },
     "role": "guest",
-    "series": "rolling-stone-30"
+    "series": "rolling-stone-30",
+    "nature": "commercial",
+    "category": "guest",
+    "groupKey": "rolling-stone-30",
+    "groupKind": "tour",
+    "groupTitle": "Rolling Stone 30",
+    "groupTitleLocalized": {
+      "en": "Rolling Stone 30",
+      "zh-Hant": "滾石30",
+      "zh-Hans": "滚石30"
+    }
   },
   {
     "id": "concert-olive-tree-2014-taipei",
@@ -7957,7 +8261,17 @@
       "zh-Hans": "橄榄树"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity",
+    "groupKey": "olive-tree-2014",
+    "groupKind": "tour",
+    "groupTitle": "Olive Tree 2014",
+    "groupTitleLocalized": {
+      "en": "Olive Tree 2014",
+      "zh-Hant": "橄欖樹 2014",
+      "zh-Hans": "橄榄树 2014"
+    }
   },
   {
     "id": "concert-olive-tree-2014-guangzhou",
@@ -8032,7 +8346,17 @@
       "zh-Hans": "橄榄树"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "solo",
+    "groupKey": "olive-tree-2014",
+    "groupKind": "tour",
+    "groupTitle": "Olive Tree 2014",
+    "groupTitleLocalized": {
+      "en": "Olive Tree 2014",
+      "zh-Hant": "橄欖樹 2014",
+      "zh-Hans": "橄榄树 2014"
+    }
   },
   {
     "id": "concert-olive-tree-2014-singapore",
@@ -8132,7 +8456,17 @@
       "zh-Hans": "橄榄树"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "solo",
+    "groupKey": "olive-tree-2014",
+    "groupKind": "tour",
+    "groupTitle": "Olive Tree 2014",
+    "groupTitleLocalized": {
+      "en": "Olive Tree 2014",
+      "zh-Hant": "橄欖樹 2014",
+      "zh-Hans": "橄榄树 2014"
+    }
   },
   {
     "id": "concert-minge-classics-2015-shanghai",
@@ -8213,7 +8547,17 @@
       "zh-Hans": "两岸校园民歌经典名曲"
     },
     "role": "guest",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "festival",
+    "groupKey": "minge",
+    "groupKind": "theme",
+    "groupTitle": "Folk",
+    "groupTitleLocalized": {
+      "en": "Folk",
+      "zh-Hant": "民歌",
+      "zh-Hans": "民歌"
+    }
   },
   {
     "id": "concert-huai-nian-charity-2015-singapore",
@@ -8341,7 +8685,17 @@
       "zh-Hans": "怀念因为有爱"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity",
+    "groupKey": "yin-wei-you-ai",
+    "groupKind": "theme",
+    "groupTitle": "Because There Is Love",
+    "groupTitleLocalized": {
+      "en": "Because There Is Love",
+      "zh-Hant": "因為有愛",
+      "zh-Hans": "因为有爱"
+    }
   },
   {
     "id": "concert-dian-deng-ying-guang-2016-taipei",
@@ -8417,7 +8771,9 @@
       "zh-Hans": "点灯迎光看见生命勇士"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity"
   },
   {
     "id": "concert-minge-40-2016-shenzhen",
@@ -8502,7 +8858,17 @@
     },
     "role": "guest",
     "series": "minge",
-    "version": "40"
+    "version": "40",
+    "nature": "non-commercial",
+    "category": "festival",
+    "groupKey": "minge",
+    "groupKind": "theme",
+    "groupTitle": "Folk",
+    "groupTitleLocalized": {
+      "en": "Folk",
+      "zh-Hant": "民歌",
+      "zh-Hans": "民歌"
+    }
   },
   {
     "id": "concert-gan-en-charity-2017-singapore",
@@ -8653,7 +9019,17 @@
       "zh-Hans": "感恩因为有爱"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity",
+    "groupKey": "yin-wei-you-ai",
+    "groupKind": "theme",
+    "groupTitle": "Because There Is Love",
+    "groupTitleLocalized": {
+      "en": "Because There Is Love",
+      "zh-Hant": "因為有愛",
+      "zh-Hans": "因为有爱"
+    }
   },
   {
     "id": "concert-zhen-ai-nv-ren-2017-macau",
@@ -8728,7 +9104,17 @@
       "zh-Hans": "珍爱女人"
     },
     "role": "co-headliner",
-    "series": "power-woman"
+    "series": "power-woman",
+    "nature": "commercial",
+    "category": "collaboration",
+    "groupKey": "power-woman",
+    "groupKind": "tour",
+    "groupTitle": "Power Woman",
+    "groupTitleLocalized": {
+      "en": "Power Woman",
+      "zh-Hant": "珍愛女人",
+      "zh-Hans": "珍爱女人"
+    }
   },
   {
     "id": "concert-chuan-yue-yu-jian-2017-genting",
@@ -8865,7 +9251,9 @@
       "zh-Hans": "穿越豫见"
     },
     "role": "co-headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "collaboration"
   },
   {
     "id": "concert-minge-50-2025-taipei",
@@ -8918,7 +9306,17 @@
     },
     "role": "guest",
     "series": "minge",
-    "version": "50"
+    "version": "50",
+    "nature": "non-commercial",
+    "category": "festival",
+    "groupKey": "minge",
+    "groupKind": "theme",
+    "groupTitle": "Folk",
+    "groupTitleLocalized": {
+      "en": "Folk",
+      "zh-Hant": "民歌",
+      "zh-Hans": "民歌"
+    }
   },
   {
     "id": "concert-yong-heng-de-xing-2025-taipei",
@@ -9000,7 +9398,9 @@
       "zh-Hans": "永恒的星"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "religion"
   },
   {
     "id": "concert-jing-dian-yin-le-ye-2019-macau",
@@ -9034,7 +9434,9 @@
       "zh-Hans": "齐豫齐秦经典音乐夜"
     },
     "role": "co-headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "collaboration"
   },
   {
     "id": "concert-tian-lai-zhi-yin-yun-ding-2008-malaysia",
@@ -9065,7 +9467,9 @@
       "zh-Hans": "天籁之音"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "solo"
   },
   {
     "id": "concert-xin-xing-fu-2013-pingdong",
@@ -9098,7 +9502,17 @@
       "zh-Hans": "心幸福"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity",
+    "groupKey": "xin-xing-fu",
+    "groupKind": "theme",
+    "groupTitle": "Heart Happiness",
+    "groupTitleLocalized": {
+      "en": "Heart Happiness",
+      "zh-Hant": "心幸福音樂會",
+      "zh-Hans": "心幸福音乐会"
+    }
   },
   {
     "id": "concert-xin-xing-fu-2014-taoyuan",
@@ -9133,7 +9547,17 @@
       "zh-Hans": "心幸福：齐豫唱心歌"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity",
+    "groupKey": "xin-xing-fu",
+    "groupKind": "theme",
+    "groupTitle": "Heart Happiness",
+    "groupTitleLocalized": {
+      "en": "Heart Happiness",
+      "zh-Hant": "心幸福音樂會",
+      "zh-Hans": "心幸福音乐会"
+    }
   },
   {
     "id": "concert-xin-xing-fu-2016-yilan",
@@ -9166,7 +9590,17 @@
       "zh-Hans": "心幸福"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity",
+    "groupKey": "xin-xing-fu",
+    "groupKind": "theme",
+    "groupTitle": "Heart Happiness",
+    "groupTitleLocalized": {
+      "en": "Heart Happiness",
+      "zh-Hant": "心幸福音樂會",
+      "zh-Hans": "心幸福音乐会"
+    }
   },
   {
     "id": "concert-xin-xing-fu-2017-taizhong",
@@ -9199,7 +9633,17 @@
       "zh-Hans": "心幸福"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity",
+    "groupKey": "xin-xing-fu",
+    "groupKind": "theme",
+    "groupTitle": "Heart Happiness",
+    "groupTitleLocalized": {
+      "en": "Heart Happiness",
+      "zh-Hant": "心幸福音樂會",
+      "zh-Hans": "心幸福音乐会"
+    }
   },
   {
     "id": "concert-ai-ci-bei-guan-huai-2024-changhua",
@@ -9232,7 +9676,9 @@
       "zh-Hans": "爱 慈悲与关怀"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "non-commercial",
+    "category": "charity"
   },
   {
     "id": "concert-a-na-ya-sanya-2025-hainan",
@@ -9263,7 +9709,9 @@
       "zh-Hans": "阿那亚新春"
     },
     "role": "headliner",
-    "series": null
+    "series": null,
+    "nature": "commercial",
+    "category": "solo"
   },
   {
     "id": "concert-wei-lu-2002-beijing",
@@ -9411,6 +9859,8 @@
     ],
     "sourceQuality": "official-recording-with-fan-clips",
     "notes": "Chyi Yu attended only the Beijing stop of Lo Ta-yu's 2002 Around the Fire New Year concert, co-performing five songs. The official CD covers the Beijing and Hong Kong stops; only the Beijing setlist of Chyi Yu is modeled here.",
-    "status": "partial"
+    "status": "partial",
+    "nature": "commercial",
+    "category": "guest"
   }
 ]

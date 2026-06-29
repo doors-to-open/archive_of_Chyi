@@ -668,6 +668,69 @@ details[open].record-card summary::after {
   grid-template-columns: minmax(14rem, 0.5fr) minmax(20rem, 1fr) auto;
 }
 
+.concert-filter-panel {
+  grid-template-columns: repeat(3, minmax(10rem, 0.7fr)) repeat(2, minmax(10rem, 0.55fr)) auto;
+}
+
+.concert-list-panel {
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.concert-group {
+  border-bottom: 1px solid var(--line);
+}
+
+.concert-group-summary {
+  align-items: baseline;
+  cursor: pointer;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: minmax(0, 1fr) auto auto 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0.75rem;
+}
+
+.concert-group-summary::-webkit-details-marker {
+  display: none;
+}
+
+.concert-group-summary::after {
+  color: var(--muted);
+  content: "+";
+  font-size: 1rem;
+  line-height: 1;
+  text-align: right;
+}
+
+details[open].concert-group .concert-group-summary::after {
+  content: "\2013";
+}
+
+.concert-group-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.concert-group-kind,
+.concert-group-count {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.concert-group-grid {
+  border-top: 0;
+}
+
 .concert-year-list {
   border-top: 1px solid var(--line);
   display: flex;
@@ -1456,6 +1519,15 @@ details[open].concert-year-group .concert-year-summary::after {
 
   .record-card summary {
     grid-template-columns: minmax(0, 1fr) 1.2rem;
+  }
+
+  .concert-group-summary {
+    grid-template-columns: minmax(0, 1fr) 1rem;
+  }
+
+  .concert-group-kind,
+  .concert-group-count {
+    grid-column: 1;
   }
 
   .summary-meta {

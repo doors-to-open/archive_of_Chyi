@@ -114,6 +114,16 @@ Suggested fields:
 - `city`
 - `countryOrRegion`
 - `eventType`: `concert`, `concert-series`, `festival`, `live-album`, or `other`
+- `role`: `headliner`, `co-headliner`, or `guest`
+- `series`
+- `version`
+- `host`
+- `nature`: `commercial` or `non-commercial`
+- `category`: commercial `solo`, `collaboration`, `anniversary`, `guest`, or `other`; non-commercial `charity`, `religion`, `festival`, or `other`
+- `groupKey`: optional stable key for tour/theme drawer grouping
+- `groupKind`: optional `tour`, `theme`, or `host`
+- `groupTitle`
+- `groupTitleLocalized`
 - `guests`
 - `setlist`
 - `mediaLinks`

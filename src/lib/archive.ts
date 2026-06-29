@@ -134,6 +134,11 @@ export type SongPerformance = {
 };
 
 export type ConcertRole = "headliner" | "co-headliner" | "guest";
+export type ConcertNature = "commercial" | "non-commercial";
+export type CommercialConcertCategory = "solo" | "collaboration" | "anniversary" | "guest" | "other";
+export type NonCommercialConcertCategory = "charity" | "religion" | "festival" | "other";
+export type ConcertCategory = CommercialConcertCategory | NonCommercialConcertCategory;
+export type ConcertGroupKind = "tour" | "theme" | "host";
 
 export type Concert = {
   id: string;
@@ -152,6 +157,12 @@ export type Concert = {
   series?: string | null;
   version?: string | null;
   host?: string | null;
+  nature: ConcertNature;
+  category: ConcertCategory;
+  groupKey?: string | null;
+  groupKind?: ConcertGroupKind | null;
+  groupTitle?: string | null;
+  groupTitleLocalized?: LocalizedText;
   setlist: SongPerformance[];
   mediaLinks: ArchiveLink[];
   officialRecording?: boolean;
@@ -439,50 +450,29 @@ export function concertAvailabilityChecks(concert: Concert) {
 
 const CHYI_YU_PERSON_ID = "person-chyi-yu";
 
-function hasNonChyiPerformer(concert: Concert) {
-  const performers = concert.performers || [];
-  return performers.some((id) => id !== CHYI_YU_PERSON_ID && !id.toLowerCase().includes("chyi"));
-}
-
-const ORTHOGONAL_CONCERT_TAGS = new Set(["charity", "festival", "religious", "anniversary", "other"]);
+const LEGACY_CONCERT_CATEGORY_TAGS: Record<ConcertCategory, string> = {
+  solo: "solo",
+  collaboration: "collaboration",
+  anniversary: "anniversary",
+  guest: "guest",
+  charity: "charity",
+  religion: "religious",
+  festival: "festival",
+  other: "other"
+};
 
 export function concertPrimaryCategoryTag(concert: Concert): string {
-  if (concert.series) return "concert-series";
-  if (concert.role === "headliner") return "solo";
-  if (concert.role === "guest") return "guest";
-  if (concert.role === "co-headliner") return "collaboration";
-  return "other";
+  return LEGACY_CONCERT_CATEGORY_TAGS[concert.category] || "other";
 }
 
 export function concertCategoryTags(concert: Concert) {
-  const tags = new Set<string>();
-  (concert.tags || []).forEach((tag) => {
-    if (ORTHOGONAL_CONCERT_TAGS.has(tag)) tags.add(tag);
-  });
-  const primary = concertPrimaryCategoryTag(concert);
-  tags.add(primary);
-  if (!tags.has("concert-series") && !tags.has("solo") && !tags.has("guest") && !tags.has("collaboration")) {
-    if (concert.eventType === "festival") tags.add("festival");
-    if (hasNonChyiPerformer(concert)) tags.add("collaboration");
-  }
-  if (!tags.size) tags.add("other");
+  const tags = new Set<string>([concertPrimaryCategoryTag(concert)]);
+  if (concert.groupKind === "tour") tags.add("concert-series");
   return Array.from(tags);
 }
 
 export function concertPrimaryCategory(concert: Concert) {
-  const priority = [
-    "festival",
-    "concert-series",
-    "collaboration",
-    "guest",
-    "charity",
-    "religious",
-    "anniversary",
-    "solo",
-    "other"
-  ];
-  const tags = concertCategoryTags(concert);
-  return priority.find((tag) => tags.includes(tag)) || concert.eventType;
+  return concertPrimaryCategoryTag(concert);
 }
 
 const CONCERT_SERIES_ORDER = [

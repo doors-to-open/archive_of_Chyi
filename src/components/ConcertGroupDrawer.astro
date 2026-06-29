@@ -1,0 +1,62 @@
+---
+import type { Concert, ConcertGroupKind } from "../lib/archive";
+import type { LocaleValues } from "../lib/i18n";
+import ConcertRecordCard from "./ConcertRecordCard.astro";
+import {
+  concertGroupKindValues,
+  countValues,
+  i18nAttrs,
+  i18nCountLabelAttrs,
+  uiText,
+  valueForLocale
+} from "../lib/i18n";
+
+type ConcertGroupRecord = Concert & {
+  alphaSort?: string;
+  dateSort?: string;
+  originalIndex?: number;
+  regionKey?: string;
+  searchText?: string;
+  stageKey?: string;
+};
+
+type Props = {
+  group: {
+    key: string;
+    kind: ConcertGroupKind;
+    title: LocaleValues;
+    count: number;
+    dateSort: string;
+    alphaSort: string;
+    originalIndex: number;
+    items: ConcertGroupRecord[];
+  };
+};
+
+const { group } = Astro.props;
+---
+
+<details
+  class="concert-group"
+  data-concert-list-item
+  data-concert-group
+  data-sort-date={group.dateSort}
+  data-sort-alpha={group.alphaSort}
+  data-sort-index={group.originalIndex}
+  data-count-label-singular="concert"
+  data-count-label-plural="concerts"
+  {...i18nCountLabelAttrs(uiText("count.concert"), uiText("count.concerts"))}
+>
+  <summary class="concert-group-summary">
+    <span class="concert-group-title" {...i18nAttrs(group.title)}>{valueForLocale(group.title)}</span>
+    <span class="concert-group-kind" {...i18nAttrs(concertGroupKindValues(group.kind))}>
+      {valueForLocale(concertGroupKindValues(group.kind))}
+    </span>
+    <span class="concert-group-count" data-concert-group-count>
+      {valueForLocale(countValues(group.count, "count.concert", "count.concerts"))}
+    </span>
+  </summary>
+  <div class="archive-grid concert-group-grid" data-concert-group-list>
+    {group.items.map((concert) => <ConcertRecordCard concert={concert} />)}
+  </div>
+</details>

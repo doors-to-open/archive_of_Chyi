@@ -4,6 +4,9 @@ import type { AlbumRecord } from "./archive";
 import type {
   Appearance,
   Concert,
+  ConcertCategory,
+  ConcertGroupKind,
+  ConcertNature,
   LocalizedText,
   MusicShow,
   Person,
@@ -561,6 +564,37 @@ export function concertTagValues(tag: string): LocaleValues {
     other: uiText("tag.other")
   };
   return tags[tag] || textValues(tag);
+}
+
+export function concertNatureValues(nature: ConcertNature): LocaleValues {
+  const values: Record<ConcertNature, LocaleValues> = {
+    commercial: { en: "Commercial", "zh-Hant": "\u5546\u696d", "zh-Hans": "\u5546\u4e1a" },
+    "non-commercial": { en: "Non-Commercial", "zh-Hant": "\u975e\u5546\u696d", "zh-Hans": "\u975e\u5546\u4e1a" }
+  };
+  return values[nature] || textValues(nature);
+}
+
+export function concertCategoryValues(category: ConcertCategory): LocaleValues {
+  const values: Record<ConcertCategory, LocaleValues> = {
+    solo: uiText("tag.solo"),
+    collaboration: uiText("tag.collaboration"),
+    anniversary: uiText("tag.anniversary"),
+    guest: uiText("tag.guest"),
+    charity: uiText("tag.charity"),
+    religion: { en: "Religion", "zh-Hant": "\u5b97\u6559", "zh-Hans": "\u5b97\u6559" },
+    festival: uiText("tag.festival"),
+    other: uiText("tag.other")
+  };
+  return values[category] || textValues(category);
+}
+
+export function concertGroupKindValues(kind: ConcertGroupKind | null | undefined): LocaleValues {
+  const values: Record<ConcertGroupKind, LocaleValues> = {
+    tour: { en: "Tour", "zh-Hant": "\u5de1\u6f14", "zh-Hans": "\u5de1\u6f14" },
+    theme: { en: "Theme", "zh-Hant": "\u4e3b\u984c", "zh-Hans": "\u4e3b\u9898" },
+    host: uiText("label.host")
+  };
+  return kind ? values[kind] || textValues(kind) : textValues("");
 }
 
 export function concertTagsValues(concert: Concert): LocaleValues {

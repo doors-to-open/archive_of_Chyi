@@ -66,12 +66,13 @@ Track titles should not link to standalone song pages.
 
 Concert and concert-series index.
 
-Expected controls later:
+Controls:
 
-- Filter by location.
-- Filter by source quality.
-- Sort by date.
-- Search by concert title, venue, city, guest, and song.
+- Filter by year stage and region at every level.
+- Filter by nature, then category.
+- Refine solo concerts by guest name or no guests.
+- View Chyi Yu guest appearances flat by default, with optional host grouping.
+- Sort old-new, new-old, A-Z, and Z-A; grouped drawers sort by the group earliest event date.
 
 ### `/concerts/[slug]/`
 
