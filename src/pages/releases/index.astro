@@ -61,7 +61,7 @@ const releaseFilterOptions = [
 ---
 
 <BaseLayout title="Releases | All for Chyi Yu">
-  <section class="page-shell" data-sort-root data-filter-root>
+  <section class="page-shell archive-page-shell releases-page-shell" data-sort-root data-filter-root>
     <p class="page-kicker" {...i18nAttrs(uiText("nav.releases"))}>{valueForLocale(uiText("nav.releases"))}</p>
     <h1 class="page-title" {...i18nAttrs(uiText("nav.releases"))}>{valueForLocale(uiText("nav.releases"))}</h1>
     <p class="page-intro" {...i18nAttrs(uiText("page.releases.intro"))}>{valueForLocale(uiText("page.releases.intro"))}</p>
@@ -150,8 +150,8 @@ const releaseFilterOptions = [
             <h2>
               <span>{originalReleaseTitle(release)}</span>
               {echoCoPerformer ? (
-                <small class="title-side-note" {...i18nAttrs(labelValueValues("label.performedBy", echoCoPerformer))}>
-                  {valueForLocale(labelValueValues("label.performedBy", echoCoPerformer))}
+                <small class="title-side-note" {...i18nAttrs(labelValueValues("label.coPerformedBy", echoCoPerformer))}>
+                  {valueForLocale(labelValueValues("label.coPerformedBy", echoCoPerformer))}
                 </small>
               ) : null}
             </h2>

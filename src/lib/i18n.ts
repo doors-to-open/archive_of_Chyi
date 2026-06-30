@@ -198,6 +198,7 @@ const ui = {
   "label.leadingCast": { en: "Leading cast", "zh-Hant": "主演", "zh-Hans": "主演" },
   "label.originalPerformer": { en: "Original performer", "zh-Hant": "原唱", "zh-Hans": "原唱" },
   "label.performedBy": { en: "Performed by", "zh-Hant": "演唱", "zh-Hans": "演唱" },
+  "label.coPerformedBy": { en: "Co-performed by", "zh-Hant": "共同演唱", "zh-Hans": "共同演唱" },
   "label.relationships": { en: "Relationships", "zh-Hant": "關聯", "zh-Hans": "关联" },
   "label.roles": { en: "Roles", "zh-Hant": "角色", "zh-Hans": "角色" },
   "label.aliases": { en: "Aliases", "zh-Hant": "別名", "zh-Hans": "别名" },

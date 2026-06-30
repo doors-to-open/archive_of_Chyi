@@ -62,9 +62,39 @@ function platformName(link: ArchiveLink) {
   return link.platform || link.label;
 }
 
+function platformNameValues(link: ArchiveLink) {
+  const name = platformName(link);
+  const normalized = name.toLocaleLowerCase("en-US");
+  if (normalized === "spotify") return textValues("Spotify");
+  if (normalized === "apple-music" || normalized === "apple music") {
+    return textValues("Apple Music", "Apple 音樂", "Apple 音乐");
+  }
+  if (normalized === "youtube-music" || normalized === "youtube music") {
+    return textValues("YouTube Music", "YouTube 音樂", "YouTube 音乐");
+  }
+  if (normalized === "qq-music" || normalized === "qq music" || normalized === "qq音乐" || normalized === "qq音樂") {
+    return textValues("QQ Music", "QQ 音樂", "QQ 音乐");
+  }
+  if (
+    normalized === "netease-cloud-music" ||
+    normalized === "netease cloud music" ||
+    normalized === "netease" ||
+    normalized === "网易云音乐" ||
+    normalized === "網易雲音樂"
+  ) {
+    return textValues("NetEase Cloud Music", "網易雲音樂", "网易云音乐");
+  }
+  if (normalized === "kugou" || normalized === "kugou music" || normalized === "酷狗音乐" || normalized === "酷狗音樂") {
+    return textValues("Kugou Music", "酷狗音樂", "酷狗音乐");
+  }
+  return textValues(name);
+}
+
 function isChyiOriginalPerformer(value: string | undefined | null) {
   return Boolean(value?.toLocaleLowerCase("en-US").includes("chyi yu"));
 }
+
+const unknownMetaClass = "metadata-placeholder";
 
 const primaryCategory = releasePrimaryCategory(release);
 const categoryValues = releaseCategoryValues(primaryCategory);
@@ -84,29 +114,26 @@ const categoryValues = releaseCategoryValues(primaryCategory);
     <article class="section detail-panel">
       <RecordStatus status={release.status} />
       <div class="record-meta-table">
-        <span>
-          <span {...i18nAttrs(uiText("label.artist"))}>{valueForLocale(uiText("label.artist"))}</span>
-          {": "}
+        <span {...i18nAttrs(release.artists?.length ? personIdsValues(release.artists) : personIdValues(release.artist))}>
           <b
             class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""}
-            {...i18nAttrs(release.artists?.length ? personIdsValues(release.artists) : personIdValues(release.artist))}
           >
             {valueForLocale(release.artists?.length ? personIdsValues(release.artists) : personIdValues(release.artist)) || releaseArtists(release) || personName(release.artist)}
           </b>
         </span>
         {releaseProducers(release) ? (
-          <span {...i18nAttrs(labelValueValues("label.producer", personIdsValues(release.credits.producer || release.credits.producers || [])))}>
-            {valueForLocale(labelValueValues("label.producer", personIdsValues(release.credits.producer || release.credits.producers || [])))}
+          <span {...i18nAttrs(personIdsValues(release.credits.producer || release.credits.producers || []))}>
+            {valueForLocale(personIdsValues(release.credits.producer || release.credits.producers || []))}
           </span>
         ) : null}
-        <span {...i18nAttrs(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}
+        <span class={!release.releaseDate ? unknownMetaClass : ""} {...i18nAttrs(release.releaseDate ? textValues(release.releaseDate) : uiText("label.date"))}>
+          {release.releaseDate || valueForLocale(uiText("label.date"))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.category", categoryValues))}>
-          {valueForLocale(labelValueValues("label.category", categoryValues))}
+        <span {...i18nAttrs(categoryValues)}>
+          {valueForLocale(categoryValues)}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.label", release.label || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.label", release.label || uiText("value.unknown")))}
+        <span class={!release.label ? unknownMetaClass : ""} {...i18nAttrs(release.label ? textValues(release.label) : uiText("label.label"))}>
+          {release.label || valueForLocale(uiText("label.label"))}
         </span>
       </div>
       <div class="availability-row availability-row-detail" aria-label="Availability summary">
@@ -117,14 +144,14 @@ const categoryValues = releaseCategoryValues(primaryCategory);
       </div>
     </article>
 
-    <section class="section detail-panel">
+    <section class="section detail-panel streaming-detail-panel">
       <h2 {...i18nAttrs(uiText("label.streaming"))}>{valueForLocale(uiText("label.streaming"))}</h2>
       {release.availability?.streaming?.length ? (
         <div class="availability-link-grid">
           <div class="platform-links platform-links-flat">
             {release.availability.streaming.map((link) => (
               <a href={link.url} title={link.notes || link.label}>
-                <span>{platformName(link)}</span>
+                <span {...i18nAttrs(platformNameValues(link))}>{valueForLocale(platformNameValues(link))}</span>
                 {link.isOfficial !== false ? (
                   <small {...i18nAttrs(uiText("value.official"))}>{valueForLocale(uiText("value.official"))}</small>
                 ) : null}
@@ -146,7 +173,7 @@ const categoryValues = releaseCategoryValues(primaryCategory);
           <div class="platform-links platform-links-flat">
             {release.availability?.purchase?.map((link) => (
               <a href={link.url} title={link.notes || link.label}>
-                <span>{platformName(link)}</span>
+                <span {...i18nAttrs(platformNameValues(link))}>{valueForLocale(platformNameValues(link))}</span>
                 {link.isOfficial !== false ? (
                   <small {...i18nAttrs(uiText("value.official"))}>{valueForLocale(uiText("value.official"))}</small>
                 ) : null}
@@ -161,14 +188,10 @@ const categoryValues = releaseCategoryValues(primaryCategory);
     </section>
 
     <section class="section detail-flow-section release-track-section">
-      <div class="section-header">
+      <div class="section-header track-section-header">
         <h2 {...i18nAttrs(uiText("label.tracks"))}>{valueForLocale(uiText("label.tracks"))}</h2>
-        <p data-sort-count>{valueForLocale(countValues(release.tracks.length, "count.entry", "count.entries"))}</p>
-      </div>
-
-      <div class="filter-panel inline-filter-panel">
-        <fieldset class="filter-option-group sort-option-group">
-          <legend {...i18nAttrs(uiText("label.sortTracks"))}>{valueForLocale(uiText("label.sortTracks"))}</legend>
+        <fieldset class="filter-option-group sort-option-group track-header-sort">
+          <legend class="visually-hidden" {...i18nAttrs(uiText("label.sortTracks"))}>{valueForLocale(uiText("label.sortTracks"))}</legend>
           <div class="filter-options">
             <button type="button" data-sort-option data-sort-value="index-asc" aria-pressed="true">
               <span {...i18nAttrs(uiText("option.albumOrder"))}>{valueForLocale(uiText("option.albumOrder"))}</span>
@@ -181,6 +204,7 @@ const categoryValues = releaseCategoryValues(primaryCategory);
             </button>
           </div>
         </fieldset>
+        <p data-sort-count hidden>{valueForLocale(countValues(release.tracks.length, "count.entry", "count.entries"))}</p>
       </div>
 
       <div class="archive-grid aligned-record-grid track-card-grid" data-sort-container>
@@ -215,7 +239,10 @@ const categoryValues = releaseCategoryValues(primaryCategory);
               data-sort-live={summary?.liveCount || 0}
             >
               <summary>
-                <span>{numberedTitle}</span>
+                <span class="track-summary-title-row">
+                  <span>{numberedTitle}</span>
+                  <span class="track-meta-line" {...i18nAttrs(trackMeta)}>{valueForLocale(trackMeta)}</span>
+                </span>
                 <span class="summary-meta" {...i18nAttrs(summaryMeta)}>{valueForLocale(summaryMeta)}</span>
               </summary>
 
@@ -225,7 +252,6 @@ const categoryValues = releaseCategoryValues(primaryCategory);
                     {valueForLocale(labelValueValues("label.performedBy", personIdsValues(track.performers)))}
                   </p>
                 ) : null}
-                <p class="track-meta-line" {...i18nAttrs(trackMeta)}>{valueForLocale(trackMeta)}</p>
                 {originalPerformerValues ? (
                   <p class="track-origin-line" {...i18nAttrs(originalPerformerValues)}>{valueForLocale(originalPerformerValues)}</p>
                 ) : null}
@@ -237,10 +263,16 @@ const categoryValues = releaseCategoryValues(primaryCategory);
 
                 {summary?.liveRecords.length ? (
                   <div class="nested-links live-record-list" data-sort-root>
-                    <h3 {...i18nAttrs(uiText("label.liveRecords"))}>{valueForLocale(uiText("label.liveRecords"))}</h3>
-                    <div class="live-record-sort filter-options" aria-label="Sort live records">
-                      <button type="button" data-sort-option data-sort-value="date-asc" aria-pressed="true">Date</button>
-                      <button type="button" data-sort-option data-sort-value="date-desc" aria-pressed="false">Newest</button>
+                    <div class="live-record-header">
+                      <h3 {...i18nAttrs(uiText("label.liveRecords"))}>{valueForLocale(uiText("label.liveRecords"))}</h3>
+                      <div class="live-record-sort filter-options" aria-label="Sort live records">
+                        <button type="button" data-sort-option data-sort-value="date-asc" aria-pressed="true">
+                          <span {...i18nAttrs(uiText("option.oldest"))}>{valueForLocale(uiText("option.oldest"))}</span>
+                        </button>
+                        <button type="button" data-sort-option data-sort-value="date-desc" aria-pressed="false">
+                          <span {...i18nAttrs(uiText("option.newest"))}>{valueForLocale(uiText("option.newest"))}</span>
+                        </button>
+                      </div>
                     </div>
                     <div class="live-record-table" data-sort-container>
                       {summary.liveRecords.map((record, recordIndex) => {

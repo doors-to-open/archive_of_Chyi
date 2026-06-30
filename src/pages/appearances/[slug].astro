@@ -35,6 +35,7 @@ export function getStaticPaths() {
 }
 
 const { appearance } = Astro.props;
+const unknownMetaClass = "metadata-placeholder";
 
 function appearanceTrackTitleValues(track: NonNullable<typeof appearance.tracks>[number]) {
   return track.titleLocalized
@@ -85,36 +86,36 @@ function officialReleasePlacements(track: NonNullable<typeof appearance.tracks>[
     <article class="section detail-panel">
       <RecordStatus status={appearance.status} />
       <div class="record-meta-table">
-        <span {...i18nAttrs(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}
+        <span class={!appearance.date ? unknownMetaClass : ""} {...i18nAttrs(appearance.date ? textValues(appearance.date) : uiText("label.date"))}>
+          {appearance.date || valueForLocale(uiText("label.date"))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.type", appearanceTypeValues(appearance.appearanceType)))}>
-          {valueForLocale(labelValueValues("label.type", appearanceTypeValues(appearance.appearanceType)))}
+        <span {...i18nAttrs(appearanceTypeValues(appearance.appearanceType))}>
+          {valueForLocale(appearanceTypeValues(appearance.appearanceType))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.programOrWork", appearance.programOrWork || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.programOrWork", appearance.programOrWork || uiText("value.unknown")))}
+        <span class={!appearance.programOrWork ? unknownMetaClass : ""} {...i18nAttrs(appearance.programOrWork ? textValues(appearance.programOrWork) : uiText("label.programOrWork"))}>
+          {appearance.programOrWork || valueForLocale(uiText("label.programOrWork"))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.role", appearance.role || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.role", appearance.role || uiText("value.unknown")))}
+        <span class={!appearance.role ? unknownMetaClass : ""} {...i18nAttrs(appearance.role ? textValues(appearance.role) : uiText("label.role"))}>
+          {appearance.role || valueForLocale(uiText("label.role"))}
         </span>
         {appearance.hosts?.length ? (
-          <span {...i18nAttrs(labelValueValues("label.hosts", localizedNameListValues(appearance.hosts)))}>
-            {valueForLocale(labelValueValues("label.hosts", localizedNameListValues(appearance.hosts)))}
+          <span {...i18nAttrs(localizedNameListValues(appearance.hosts))}>
+            {valueForLocale(localizedNameListValues(appearance.hosts))}
           </span>
         ) : null}
         {appearance.workDetails?.releaseDate ? (
-          <span {...i18nAttrs(labelValueValues("label.workReleaseDate", appearance.workDetails.releaseDate))}>
-            {valueForLocale(labelValueValues("label.workReleaseDate", appearance.workDetails.releaseDate))}
+          <span {...i18nAttrs(textValues(appearance.workDetails.releaseDate))}>
+            {appearance.workDetails.releaseDate}
           </span>
         ) : null}
         {appearance.workDetails?.directors?.length ? (
-          <span {...i18nAttrs(labelValueValues("label.directors", localizedNameListValues(appearance.workDetails.directors)))}>
-            {valueForLocale(labelValueValues("label.directors", localizedNameListValues(appearance.workDetails.directors)))}
+          <span {...i18nAttrs(localizedNameListValues(appearance.workDetails.directors))}>
+            {valueForLocale(localizedNameListValues(appearance.workDetails.directors))}
           </span>
         ) : null}
         {appearance.workDetails?.leadingCast?.length ? (
-          <span {...i18nAttrs(labelValueValues("label.leadingCast", localizedNameListValues(appearance.workDetails.leadingCast)))}>
-            {valueForLocale(labelValueValues("label.leadingCast", localizedNameListValues(appearance.workDetails.leadingCast)))}
+          <span {...i18nAttrs(localizedNameListValues(appearance.workDetails.leadingCast))}>
+            {valueForLocale(localizedNameListValues(appearance.workDetails.leadingCast))}
           </span>
         ) : null}
         <span {...i18nAttrs(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}>

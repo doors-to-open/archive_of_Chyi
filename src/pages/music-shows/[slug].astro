@@ -19,6 +19,7 @@ import {
   labelValueValues,
   performanceTitleValues,
   personIdsValues,
+  textValues,
   titleValues,
   uiText,
   valueForLocale
@@ -32,6 +33,7 @@ export function getStaticPaths() {
 }
 
 const { show } = Astro.props;
+const unknownMetaClass = "metadata-placeholder";
 ---
 
 <BaseLayout title={`${show.title} | All for Chyi Yu`}>
@@ -42,23 +44,23 @@ const { show } = Astro.props;
     <article class="section detail-panel">
       <RecordStatus status={show.status} />
       <div class="record-meta-table">
-        <span {...i18nAttrs(labelValueValues("label.date", show.date || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.date", show.date || uiText("value.unknown")))}
+        <span class={!show.date ? unknownMetaClass : ""} {...i18nAttrs(show.date ? textValues(show.date) : uiText("label.date"))}>
+          {show.date || valueForLocale(uiText("label.date"))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.program", show.program || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.program", show.program || uiText("value.unknown")))}
+        <span class={!show.program ? unknownMetaClass : ""} {...i18nAttrs(show.program ? textValues(show.program) : uiText("label.program"))}>
+          {show.program || valueForLocale(uiText("label.program"))}
         </span>
         <span {...i18nAttrs(countValues(show.performedSongs.length, "count.song", "count.songs"))}>
           {valueForLocale(countValues(show.performedSongs.length, "count.song", "count.songs"))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.platform", show.platform || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.platform", show.platform || uiText("value.unknown")))}
+        <span class={!show.platform ? unknownMetaClass : ""} {...i18nAttrs(show.platform ? textValues(show.platform) : uiText("label.platform"))}>
+          {show.platform || valueForLocale(uiText("label.platform"))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.episode", show.episode || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.episode", show.episode || uiText("value.unknown")))}
+        <span class={!show.episode ? unknownMetaClass : ""} {...i18nAttrs(show.episode ? textValues(show.episode) : uiText("label.episode"))}>
+          {show.episode || valueForLocale(uiText("label.episode"))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.collaborators", show.collaborators.length ? personIdsValues(show.collaborators) : uiText("value.noneRecorded")))}>
-          {valueForLocale(labelValueValues("label.collaborators", show.collaborators.length ? personIdsValues(show.collaborators) : uiText("value.noneRecorded")))}
+        <span {...i18nAttrs(show.collaborators.length ? personIdsValues(show.collaborators) : uiText("value.noneRecorded"))}>
+          {valueForLocale(show.collaborators.length ? personIdsValues(show.collaborators) : uiText("value.noneRecorded"))}
         </span>
       </div>
       <div class="availability-row availability-row-detail" aria-label="Access summary">

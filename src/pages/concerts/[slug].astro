@@ -22,6 +22,7 @@ import {
   performanceTitleValues,
   personIdValues,
   personIdsValues,
+  textValues,
   titleValues,
   uiText,
   valueForLocale
@@ -38,9 +39,11 @@ const { concert } = Astro.props;
 const hasHost = concert.role === "guest" && concert.host;
 const isCollaboration = concert.nature === "commercial" && concert.category === "collaboration";
 const participantIds = isCollaboration ? concertCoPerformerIds(concert) : concert.guests || [];
-const participantLabel = isCollaboration ? "label.coPerformers" : "label.guests";
 const locationValues = concertLocationValues(concert);
 const venueValues = concertVenueValues(concert);
+const hasLocation = Boolean(concert.city || concert.countryOrRegion || concert.cityLocalized || concert.countryOrRegionLocalized);
+const hasVenue = Boolean(concert.venue || concert.venueLocalized);
+const unknownMetaClass = "metadata-placeholder";
 ---
 
 <BaseLayout title={`${concert.title} | All for Chyi Yu`}>
@@ -51,22 +54,22 @@ const venueValues = concertVenueValues(concert);
     <article class="section detail-panel">
       <RecordStatus status={concert.status} />
       <div class="record-meta-table">
-        <span {...i18nAttrs(labelValueValues("label.date", concert.date || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.date", concert.date || uiText("value.unknown")))}
+        <span class={!concert.date ? unknownMetaClass : ""} {...i18nAttrs(concert.date ? textValues(concert.date) : uiText("label.date"))}>
+          {concert.date || valueForLocale(uiText("label.date"))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.location", locationValues))}>
-          {valueForLocale(labelValueValues("label.location", locationValues))}
+        <span class={!hasLocation ? unknownMetaClass : ""} {...i18nAttrs(hasLocation ? locationValues : uiText("label.location"))}>
+          {hasLocation ? valueForLocale(locationValues) : valueForLocale(uiText("label.location"))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.venue", venueValues))}>
-          {valueForLocale(labelValueValues("label.venue", venueValues))}
+        <span class={!hasVenue ? unknownMetaClass : ""} {...i18nAttrs(hasVenue ? venueValues : uiText("label.venue"))}>
+          {hasVenue ? valueForLocale(venueValues) : valueForLocale(uiText("label.venue"))}
         </span>
         {hasHost ? (
-          <span {...i18nAttrs(labelValueValues("label.host", personIdValues(concert.host!)))}>
-            {valueForLocale(labelValueValues("label.host", personIdValues(concert.host!)))}
+          <span {...i18nAttrs(personIdValues(concert.host!))}>
+            {valueForLocale(personIdValues(concert.host!))}
           </span>
         ) : null}
-        <span {...i18nAttrs(labelValueValues(participantLabel, participantIds.length ? personIdsValues(participantIds) : uiText("value.noneRecorded")))}>
-          {valueForLocale(labelValueValues(participantLabel, participantIds.length ? personIdsValues(participantIds) : uiText("value.noneRecorded")))}
+        <span {...i18nAttrs(participantIds.length ? personIdsValues(participantIds) : uiText("value.noneRecorded"))}>
+          {valueForLocale(participantIds.length ? personIdsValues(participantIds) : uiText("value.noneRecorded"))}
         </span>
       </div>
       <div class="availability-row availability-row-detail" aria-label="Recording availability summary">
