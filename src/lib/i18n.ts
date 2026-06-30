@@ -1,7 +1,8 @@
-import { byId, people, releaseCategoryTags } from "./archive";
+import { archiveLinkDisplayParts, byId, people, releaseCategoryTags } from "./archive";
 import { concertCategoryTags } from "./archive";
 import type { AlbumRecord } from "./archive";
 import type {
+  ArchiveLink,
   Appearance,
   Concert,
   ConcertCategory,
@@ -206,6 +207,11 @@ const ui = {
   "label.streaming": { en: "Streaming", "zh-Hant": "串流平台", "zh-Hans": "流媒体平台" },
   "label.links": { en: "Links", "zh-Hant": "連結", "zh-Hans": "链接" },
   "label.showLinks": { en: "Show links", "zh-Hant": "演出連結", "zh-Hans": "演出链接" },
+  "label.linkNotice": {
+    en: "Links point to third-party platforms. Copyright belongs to the original rights holders; please support the uploader and official sources on the original platform.",
+    "zh-Hant": "連結指向第三方平台。版權歸原權利人所有；請在原平台支持上傳者與官方來源。",
+    "zh-Hans": "链接指向第三方平台。版权归原权利人所有；请在原平台支持上传者与官方来源。"
+  },
   "label.watchLinks": { en: "Watch links", "zh-Hant": "觀看連結", "zh-Hans": "观看链接" },
   "label.releaseLinks": { en: "Release links", "zh-Hant": "發行連結", "zh-Hans": "发行链接" },
   "label.clipLinks": { en: "Clip links", "zh-Hant": "片段連結", "zh-Hans": "片段链接" },
@@ -1022,6 +1028,7 @@ export function availabilityValues(label: string): LocaleValues {
   const normalized = label.toLocaleLowerCase("en-US");
   const known: Record<string, LocaleValues> = {
     "official recording": { en: "Official recording", "zh-Hant": "官方錄音", "zh-Hans": "官方录音" },
+    "official release": uiText("label.officialRelease"),
     video: { en: "Video", "zh-Hant": "影片", "zh-Hans": "视频" },
     audio: { en: "Audio", "zh-Hant": "音訊", "zh-Hans": "音频" },
     clips: uiText("label.clips"),
@@ -1035,6 +1042,28 @@ export function availabilityValues(label: string): LocaleValues {
     cassette: { en: "Cassette", "zh-Hant": "卡帶", "zh-Hans": "卡带" }
   };
   return known[normalized] || textValues(label);
+}
+
+export function archiveLinkDisplayValues(link: ArchiveLink): LocaleValues {
+  const status = link.isOfficial
+    ? { en: "official release", "zh-Hant": "正式發行", "zh-Hans": "正式发行" }
+    : { en: "fan upload", "zh-Hant": "歌迷上傳", "zh-Hans": "歌迷上传" };
+  const credit = link.credit
+    ? textValues(`Credit: ${link.credit}`, `來源：${link.credit}`, `来源：${link.credit}`)
+    : textValues("Credit: not recorded", "來源：未記錄", "来源：未记录");
+  const resolution = link.resolution
+    ? textValues(link.resolution)
+    : textValues("resolution not recorded", "解析度未記錄", "分辨率未记录");
+  const parts = archiveLinkDisplayParts(link);
+  const optionalParts = parts.slice(5);
+  return joinValues([
+    credit,
+    status,
+    link.platform || link.label,
+    link.kind || "media",
+    resolution,
+    ...optionalParts
+  ]);
 }
 
 export function contributionValues(value: string): LocaleValues {

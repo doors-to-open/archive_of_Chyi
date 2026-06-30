@@ -1,20 +1,12 @@
 ---
 import type { Concert } from "../lib/archive";
 import {
-  concertAvailabilityChecks,
   concertCoPerformerIds,
-  concertGuestIds,
 } from "../lib/archive";
 import {
-  availabilityValues,
-  concertCategoryValues,
   concertDisplayTitleValues,
-  concertNatureValues,
-  concertVenueValues,
-  countValues,
   i18nAttrs,
   joinValues,
-  labelValueValues,
   personIdValues,
   personIdsValues,
   valueForLocale
@@ -34,18 +26,18 @@ type Props = {
 };
 
 const { concert } = Astro.props;
-const guestIds = concertGuestIds(concert);
 const coPerformerIds = concertCoPerformerIds(concert);
 const isCollaboration = concert.nature === "commercial" && concert.category === "collaboration";
-const classificationValues = joinValues(
-  [concertNatureValues(concert.nature), concertCategoryValues(concert.category)],
-  " / "
-);
 const displayTitle = concertDisplayTitleValues(concert);
-const summaryValues = joinValues(
-  [concert.date || "", concert.venue ? concertVenueValues(concert) : ""],
-  " / "
-);
+const peopleValues = concert.role === "guest" && concert.host
+  ? personIdValues(concert.host)
+  : isCollaboration && coPerformerIds.length
+    ? personIdsValues(coPerformerIds)
+    : !isCollaboration && concert.guests?.length && concert.role !== "guest"
+      ? personIdsValues(concert.guests)
+      : null;
+const noteValues = joinValues([concert.date || "", peopleValues]);
+const filterGuestIds = concert.role === "guest" && concert.host ? [concert.host] : concert.guests || [];
 ---
 
 <a
@@ -60,40 +52,11 @@ const summaryValues = joinValues(
   data-concert-region={concert.regionKey || ""}
   data-concert-nature={concert.nature}
   data-concert-category={concert.category}
-  data-concert-guest={guestIds.length ? guestIds.join("|") : "none"}
+  data-concert-guest={filterGuestIds.length ? filterGuestIds.join("|") : "none"}
   data-search={concert.searchText || ""}
 >
-  <h2 {...i18nAttrs(displayTitle)}>{valueForLocale(displayTitle)}</h2>
-  {valueForLocale(summaryValues) ? (
-    <p class="concert-card-summary" {...i18nAttrs(summaryValues)}>{valueForLocale(summaryValues)}</p>
-  ) : null}
-  <div class="record-meta-table">
-    <span {...i18nAttrs(labelValueValues("label.category", classificationValues))}>
-      {valueForLocale(labelValueValues("label.category", classificationValues))}
-    </span>
-    <span {...i18nAttrs(countValues(concert.setlist.length, "count.song", "count.songs"))}>
-      {valueForLocale(countValues(concert.setlist.length, "count.song", "count.songs"))}
-    </span>
-  </div>
-  <div class="availability-row" aria-label="Recording availability summary">
-    {concertAvailabilityChecks(concert).map(([label, available]) => {
-      const values = availabilityValues(label);
-      return <span class={available ? "available" : ""} {...i18nAttrs(values)}>{valueForLocale(values)}</span>;
-    })}
-  </div>
-  {concert.role === "guest" && concert.host ? (
-    <p {...i18nAttrs(labelValueValues("label.host", personIdValues(concert.host)))}>
-      {valueForLocale(labelValueValues("label.host", personIdValues(concert.host)))}
-    </p>
-  ) : null}
-  {isCollaboration && coPerformerIds.length ? (
-    <p {...i18nAttrs(labelValueValues("label.coPerformers", personIdsValues(coPerformerIds)))}>
-      {valueForLocale(labelValueValues("label.coPerformers", personIdsValues(coPerformerIds)))}
-    </p>
-  ) : null}
-  {!isCollaboration && concert.guests?.length && concert.role !== "guest" ? (
-    <p {...i18nAttrs(labelValueValues("label.guests", personIdsValues(concert.guests)))}>
-      {valueForLocale(labelValueValues("label.guests", personIdsValues(concert.guests)))}
-    </p>
+  <span class="concert-card-title" {...i18nAttrs(displayTitle)}>{valueForLocale(displayTitle)}</span>
+  {valueForLocale(noteValues) ? (
+    <span class="concert-card-note" {...i18nAttrs(noteValues)}>{valueForLocale(noteValues)}</span>
   ) : null}
 </a>

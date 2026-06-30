@@ -7,13 +7,12 @@ import {
   concertAvailabilityChecks,
   concertCoPerformerIds,
   concerts,
-  linkPlatformList,
-  linkCreditLabel,
   releasesForSong,
   songs
 } from "../../lib/archive";
 import {
   availabilityValues,
+  archiveLinkDisplayValues,
   concertEventTypeValues,
   concertLocationValues,
   concertVenueValues,
@@ -63,9 +62,6 @@ const venueValues = concertVenueValues(concert);
         <span {...i18nAttrs(labelValueValues("label.location", locationValues))}>
           {valueForLocale(labelValueValues("label.location", locationValues))}
         </span>
-        <span {...i18nAttrs(countValues(concert.setlist.length, "count.song", "count.songs"))}>
-          {valueForLocale(countValues(concert.setlist.length, "count.song", "count.songs"))}
-        </span>
         <span {...i18nAttrs(labelValueValues("label.venue", venueValues))}>
           {valueForLocale(labelValueValues("label.venue", venueValues))}
         </span>
@@ -88,21 +84,12 @@ const venueValues = concertVenueValues(concert);
 
     <section class="section detail-panel">
       <h2 {...i18nAttrs(uiText("label.showLinks"))}>{valueForLocale(uiText("label.showLinks"))}</h2>
+      <p class="link-notice" {...i18nAttrs(uiText("label.linkNotice"))}>{valueForLocale(uiText("label.linkNotice"))}</p>
       {concert.mediaLinks.length ? (
         <div class="link-list">
           {concert.mediaLinks.map((link) => (
             <p>
-              <a href={link.url}>{link.label}</a>
-              {linkPlatformList([link]) ? ` / ${linkPlatformList([link])}` : ""}
-              {link.kind ? ` / ${link.kind}` : ""}
-              {link.accessRegion ? ` / ${link.accessRegion}` : ""}
-              {link.isOfficial === false ? (
-                <>
-                  {" / "}
-                  <span {...i18nAttrs(uiText("value.fanUpload"))}>{valueForLocale(uiText("value.fanUpload"))}</span>
-                </>
-              ) : ""}
-              {linkCreditLabel(link) ? ` / ${linkCreditLabel(link)}` : ""}
+              <a href={link.url} {...i18nAttrs(archiveLinkDisplayValues(link))}>{valueForLocale(archiveLinkDisplayValues(link))}</a>
             </p>
           ))}
         </div>
@@ -119,14 +106,13 @@ const venueValues = concertVenueValues(concert);
         </p>
       </div>
 
-      <div class="archive-grid">
-        {concert.setlist.map((entry) => {
+      <div class="archive-grid setlist-grid">
+        {concert.setlist.map((entry, index) => {
           const linkedSong = byId(songs, entry.song);
           const linkedReleases = linkedSong ? releasesForSong(linkedSong.id) : [];
           const performedTitle = performanceTitleValues(entry, linkedSong);
-          const numberedTitle = entry.position
-            ? joinValues([{ en: `${entry.position}. `, "zh-Hant": `${entry.position}. `, "zh-Hans": `${entry.position}. ` }, performedTitle], "")
-            : performedTitle;
+          const displayPosition = entry.position || index + 1;
+          const numberedTitle = joinValues([{ en: `${displayPosition}. `, "zh-Hant": `${displayPosition}. `, "zh-Hans": `${displayPosition}. ` }, performedTitle], "");
           return (
             <details class="record-card compact-record-card">
               <summary>
@@ -179,16 +165,7 @@ const venueValues = concertVenueValues(concert);
                     <h3 {...i18nAttrs(uiText("label.clipLinks"))}>{valueForLocale(uiText("label.clipLinks"))}</h3>
                     {entry.mediaLinks.map((link) => (
                       <p>
-                        <a href={link.url}>{link.label}</a>
-                        {linkPlatformList([link]) ? ` / ${linkPlatformList([link])}` : ""}
-                        {link.kind ? ` / ${link.kind}` : ""}
-                        {link.isOfficial === false ? (
-                          <>
-                            {" / "}
-                            <span {...i18nAttrs(uiText("value.fanUpload"))}>{valueForLocale(uiText("value.fanUpload"))}</span>
-                          </>
-                        ) : ""}
-                        {linkCreditLabel(link) ? ` / ${linkCreditLabel(link)}` : ""}
+                        <a href={link.url} {...i18nAttrs(archiveLinkDisplayValues(link))}>{valueForLocale(archiveLinkDisplayValues(link))}</a>
                       </p>
                     ))}
                   </div>

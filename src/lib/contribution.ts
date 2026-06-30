@@ -338,9 +338,13 @@ function bodyFor(params: ContributionIssueParams) {
     ...section("Information", [
       "Platform:",
       "Official or unofficial upload:",
-      "Full item or clip:",
-      "Related record, song, track, or timecode:",
       "Uploader or publisher:",
+      "Video or audio:",
+      "Resolution:",
+      "Full item or clip:",
+      "Part or timestamp, if clip:",
+      "Optional details (angle / handheld / single-person / vertical):",
+      "Related record, song, or track:",
       "Availability notes:"
     ]),
     ...section("Sources", [

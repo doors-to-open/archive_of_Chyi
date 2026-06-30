@@ -606,6 +606,29 @@ main {
   white-space: nowrap;
 }
 
+.concert-record-card {
+  align-items: baseline;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.concert-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.25;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.concert-card-note {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
 .record-card p {
   color: var(--muted);
   line-height: 1.45;
@@ -690,7 +713,7 @@ details[open].record-card summary::after {
   gap: 0.8rem;
   grid-template-columns: minmax(0, 1fr) auto auto 1rem;
   list-style: none;
-  margin: 0;
+  margin: 0 -0.75rem;
   padding: 1.25rem 0.75rem;
 }
 
@@ -1399,6 +1422,19 @@ details[open].concert-year-group .concert-year-summary::after {
   margin: 0.35rem 0;
 }
 
+.link-notice {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin: 0.45rem 0 0.9rem;
+  max-width: 760px;
+}
+
+.setlist-grid .record-card {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .empty-state {
   border-top: 1px solid var(--line);
   color: var(--muted);
@@ -1511,10 +1547,15 @@ details[open].concert-year-group .concert-year-summary::after {
   }
 
   .record-card,
+  .concert-group-summary,
   .section-row,
   .contribution-group {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .concert-record-card {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .record-card summary {

@@ -96,6 +96,13 @@ export type ArchiveLink = {
   isOfficial?: boolean;
   accessRegion?: string;
   credit?: string;
+  resolution?: string;
+  angle?: string;
+  handheld?: boolean;
+  singlePerson?: boolean;
+  vertical?: boolean;
+  part?: string;
+  timestamp?: string;
   notes?: string;
 };
 
@@ -338,6 +345,25 @@ export function linkPlatformList(links: ArchiveLink[] | undefined) {
     : "";
 }
 
+export function archiveLinkDisplayParts(link: ArchiveLink) {
+  const core = [
+    link.credit ? `Credit: ${link.credit}` : "Credit: not recorded",
+    link.isOfficial ? "official release" : "fan upload",
+    link.platform || link.label,
+    link.kind || "media",
+    link.resolution || "resolution not recorded"
+  ];
+  const optional = [
+    link.angle,
+    link.handheld ? "handheld" : "",
+    link.singlePerson ? "single-person" : "",
+    link.vertical ? "vertical" : "",
+    link.accessRegion
+  ];
+  const clipPosition = [link.part, link.timestamp].filter(Boolean).join(" / ");
+  return [...core, ...optional, clipPosition].filter(Boolean);
+}
+
 export function availabilityLabels(availability: Release["availability"]) {
   return [
     availability?.streaming?.length ? `Streaming: ${linkPlatformList(availability.streaming)}` : "",
@@ -457,7 +483,7 @@ export function releasePrimaryCategory(release: Release) {
 
 export function concertAvailabilityChecks(concert: Concert) {
   return [
-    ["Official recording", Boolean(concert.officialRecording)],
+    ["Official release", Boolean(concert.officialRecording)],
     ["Video", concert.mediaLinks.some((link) => link.kind === "video")],
     ["Audio", concert.mediaLinks.some((link) => link.kind === "audio")],
     ["Clips", concert.setlist.some((entry) => entry.mediaLinks?.length)]
