@@ -13,7 +13,6 @@ import {
 import {
   availabilityValues,
   archiveLinkDisplayValues,
-  concertEventTypeValues,
   concertLocationValues,
   concertVenueValues,
   countValues,
@@ -40,7 +39,6 @@ const hasHost = concert.role === "guest" && concert.host;
 const isCollaboration = concert.nature === "commercial" && concert.category === "collaboration";
 const participantIds = isCollaboration ? concertCoPerformerIds(concert) : concert.guests || [];
 const participantLabel = isCollaboration ? "label.coPerformers" : "label.guests";
-const eventTypeValues = concertEventTypeValues(concert.eventType);
 const locationValues = concertLocationValues(concert);
 const venueValues = concertVenueValues(concert);
 ---
@@ -55,9 +53,6 @@ const venueValues = concertVenueValues(concert);
       <div class="record-meta-table">
         <span {...i18nAttrs(labelValueValues("label.date", concert.date || uiText("value.unknown")))}>
           {valueForLocale(labelValueValues("label.date", concert.date || uiText("value.unknown")))}
-        </span>
-        <span {...i18nAttrs(labelValueValues("label.type", eventTypeValues))}>
-          {valueForLocale(labelValueValues("label.type", eventTypeValues))}
         </span>
         <span {...i18nAttrs(labelValueValues("label.location", locationValues))}>
           {valueForLocale(labelValueValues("label.location", locationValues))}
