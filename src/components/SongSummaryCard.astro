@@ -42,6 +42,7 @@ const summaryMeta = joinValues([
   countValues(summary.liveCount, "count.liveRecord", "count.liveRecords")
 ]);
 const credits = joinValues([personIdsValues(summary.song.lyricsBy), personIdsValues(summary.song.composedBy)], " / ");
+const originalPerformers = personIdsValues(summary.song.originalPerformers || []);
 ---
 
 <details class="record-card compact-record-card song-summary-card" {...attrs}>
@@ -62,6 +63,11 @@ const credits = joinValues([personIdsValues(summary.song.lyricsBy), personIdsVal
     ) : (
       <p {...i18nAttrs(uiText("value.creditsNotRecorded"))}>{valueForLocale(uiText("value.creditsNotRecorded"))}</p>
     )}
+    {summary.song.originalPerformers?.length ? (
+      <p {...i18nAttrs(joinValues([uiText("label.originalPerformer"), originalPerformers], ": "))}>
+        {valueForLocale(joinValues([uiText("label.originalPerformer"), originalPerformers], ": "))}
+      </p>
+    ) : null}
 
     <div class="nested-links">
       <h3 {...i18nAttrs(uiText("label.albums"))}>{valueForLocale(uiText("label.albums"))}</h3>

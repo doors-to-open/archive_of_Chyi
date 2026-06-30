@@ -119,6 +119,16 @@ function validateTrackCredits(track, release) {
   }
 }
 
+function validateSongCredits(song) {
+  for (const role of ["lyricsBy", "composedBy", "arrangedBy", "originalPerformers"]) {
+    for (const credit of song[role] || []) {
+      if (!personIds.has(credit) && /^person-/.test(credit)) {
+        addError(`Song ${song.id} references missing ${role} person ${credit}`);
+      }
+    }
+  }
+}
+
 function validateLinks(links, label) {
   for (const [index, link] of (links || []).entries()) {
     if (!link.label) addError(`${label} link ${index + 1} is missing label`);
@@ -190,6 +200,11 @@ if (!releases.some((release) =>
   release.titleLocalized?.["zh-Hans"]?.includes("一念")
 )) {
   addWarning("No obvious Wu Tsing-fong/Chyi Yu 2025 EP candidate is modeled yet");
+}
+
+for (const song of songs) {
+  validateSourceRefs(song, "Song");
+  validateSongCredits(song);
 }
 
 // Live-performance linkage check: flag concert/show entries whose song is null

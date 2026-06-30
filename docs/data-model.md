@@ -61,6 +61,7 @@ Suggested fields:
 - `lyricsBy`
 - `composedBy`
 - `arrangedBy`
+- `originalPerformers`: canonical performer IDs or literal performer labels for the first/original known recording, especially useful for covers; event-specific cover labels can still use `setlist[].originalPerformer`.
 - `firstKnownRelease`
 - `relatedReleases`
 - `knownConcerts`

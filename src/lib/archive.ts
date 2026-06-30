@@ -48,6 +48,7 @@ export type Song = {
   lyricsBy: string[];
   composedBy: string[];
   arrangedBy: string[];
+  originalPerformers?: string[];
   firstKnownRelease?: string;
   relatedReleases: string[];
   knownConcerts: string[];
@@ -690,8 +691,13 @@ function hasChyiOriginalPerformer(record: SongLiveRecord) {
   return Boolean(record.entry.originalPerformer?.toLocaleLowerCase("en-US").includes("chyi yu"));
 }
 
+function hasChyiOriginalPerformerIds(song: Song) {
+  return Boolean(song.originalPerformers?.some((id) => id === CHYI_YU_PERSON_ID));
+}
+
 function hasCoverClue(song: Song, liveRecords: SongLiveRecord[]) {
-  return song.notes?.toLocaleLowerCase("en-US").includes("cover") ||
+  return Boolean(song.originalPerformers?.length && !hasChyiOriginalPerformerIds(song)) ||
+    song.notes?.toLocaleLowerCase("en-US").includes("cover") ||
     liveRecords.some((record) => record.entry.originalPerformer && !hasChyiOriginalPerformer(record));
 }
 
@@ -795,6 +801,7 @@ export function songSummary(song: Song): SongSummary {
       personNames(song.lyricsBy),
       personNames(song.composedBy),
       personNames(song.arrangedBy),
+      personNames(song.originalPerformers),
       albumReleases.map(displayTitle).join(" "),
       ...albumReleases.flatMap((release) => localizedTextValues(release.titleLocalized)),
       releasePlacements.map((placement) => placement.track.titleOnRelease).join(" "),
@@ -911,6 +918,7 @@ function songCreditRoles(song: Song, personId: string) {
   if (hasPerson(song.lyricsBy, personId)) roles.push("lyrics");
   if (hasPerson(song.composedBy, personId)) roles.push("music");
   if (hasPerson(song.arrangedBy, personId)) roles.push("arrangement");
+  if (hasPerson(song.originalPerformers, personId)) roles.push("original performer");
   return roles;
 }
 

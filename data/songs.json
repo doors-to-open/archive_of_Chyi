@@ -46,7 +46,10 @@
       "en": "The Olive Tree",
       "zh-Hant": "橄欖樹",
       "zh-Hans": "橄榄树"
-    }
+    },
+    "originalPerformers": [
+      "person-chyi-yu"
+    ]
   },
   {
     "id": "song-walking-in-the-rain",
@@ -123,7 +126,8 @@
     "sources": [
       "source-wikipedia-yue-olive-tree-album",
       "source-apple-music-olive-tree",
-      "source-user-task-0630-3"
+      "source-user-task-0630-3",
+      "source-wikipedia-en-chyi-yu"
     ],
     "notes": "Lyricist/composer credits follow the Olive Tree album source trail and the 2026-06-30 appearance-audit task note; still partial pending booklet verification.",
     "status": "partial",
@@ -131,7 +135,10 @@
       "en": "Your Smiling Face",
       "zh-Hant": "歡顏",
       "zh-Hans": "欢颜"
-    }
+    },
+    "originalPerformers": [
+      "person-chyi-yu"
+    ]
   },
   {
     "id": "song-answer",
@@ -140,7 +147,9 @@
     "titleOriginal": "答案",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
+    "lyricsBy": [
+      "person-lo-ching"
+    ],
     "composedBy": [
       "person-li-tai-hsiang"
     ],
@@ -161,7 +170,8 @@
     "mediaLinks": [],
     "sources": [
       "source-wikipedia-yue-olive-tree-album",
-      "source-apple-music-olive-tree"
+      "source-apple-music-olive-tree",
+      "source-wikipedia-en-chyi-yu"
     ],
     "notes": "Modeled for release/concert relationship testing; lyric credit needs booklet verification.",
     "status": "partial",
@@ -247,7 +257,8 @@
     "mediaLinks": [],
     "sources": [
       "source-wikipedia-yue-echo-album",
-      "source-apple-music-echo"
+      "source-apple-music-echo",
+      "source-wikipedia-en-chyi-yu"
     ],
     "notes": "Co-performed by Chyi Yu and Pan Yue-yun on Echo.",
     "status": "partial",
@@ -255,7 +266,11 @@
       "en": "Dream Field",
       "zh-Hant": "夢田",
       "zh-Hans": "梦田"
-    }
+    },
+    "originalPerformers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun"
+    ]
   },
   {
     "id": "song-jin-shi",
@@ -287,14 +302,18 @@
       "source-qq-music-echo",
       "source-wikipedia-yue-singer-2019",
       "source-baike-singer-2019",
-      "source-wikipedia-zh-singer-2019"
+      "source-wikipedia-zh-singer-2019",
+      "source-wikipedia-en-chyi-yu"
     ],
     "notes": "Modeled so the Echo album track and Chyi Yu's 2019-02-01 Singer 2019 performance resolve to the same song identity.",
     "status": "partial",
     "titleLocalized": {
       "en": "This Life",
       "zh-Hant": "今世"
-    }
+    },
+    "originalPerformers": [
+      "person-chyi-yu"
+    ]
   },
   {
     "id": "song-flying-bird-and-fish",
@@ -332,7 +351,8 @@
     "mediaLinks": [],
     "sources": [
       "source-wikipedia-yue-camel-bird-fish",
-      "source-apple-music-camel-bird-fish"
+      "source-apple-music-camel-bird-fish",
+      "source-wikipedia-en-chyi-yu"
     ],
     "notes": "The supplied encyclopedia title field says 飛魚與鳥 while Apple Music and concert sources use 飛鳥與魚.",
     "status": "partial",
@@ -340,7 +360,10 @@
       "en": "Flying Bird and Fish",
       "zh-Hant": "飛鳥與魚",
       "zh-Hans": "飞鸟与鱼"
-    }
+    },
+    "originalPerformers": [
+      "person-chyi-yu"
+    ]
   },
   {
     "id": "song-happiness",
@@ -352,7 +375,9 @@
     "lyricsBy": [
       "person-chyi-yu"
     ],
-    "composedBy": [],
+    "composedBy": [
+      "Xue Zhongming"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-camel-bird-fish-1997",
     "relatedReleases": [],
@@ -366,7 +391,8 @@
     "mediaLinks": [],
     "sources": [
       "source-wikipedia-yue-camel-bird-fish",
-      "source-apple-music-camel-bird-fish"
+      "source-apple-music-camel-bird-fish",
+      "source-wikipedia-en-chyi-yu"
     ],
     "notes": "Composer credit from the source page has not yet been modeled as a person record.",
     "status": "partial",
@@ -418,12 +444,14 @@
     "aliases": [],
     "language": "English",
     "lyricsBy": [
-      "person-frank-myers",
-      "person-gary-baker"
+      "J. Walravens",
+      "Viktor Lazlo",
+      "G. Waddy"
     ],
     "composedBy": [
-      "person-frank-myers",
-      "person-gary-baker"
+      "J. Walravens",
+      "Viktor Lazlo",
+      "G. Waddy"
     ],
     "arrangedBy": [],
     "relatedReleases": [
@@ -447,12 +475,15 @@
       "source-wikipedia-en-chyi-yu",
       "source-qq-music-stories"
     ],
-    "notes": "Modeled from concert setlists only; original credits pending. Stage 6B links this cover identity to the 1987 Stories album.",
+    "notes": "Cover identity linked to the 1987 Stories album and live records; songwriter/original-performer fields populated from the Chyi Yu discography source.",
     "status": "partial",
     "titleLocalized": {
       "en": "Stories"
     },
-    "firstKnownRelease": "release-stories-1987"
+    "firstKnownRelease": "release-stories-1987",
+    "originalPerformers": [
+      "Viktor Lazlo"
+    ]
   },
   {
     "id": "song-vincent",
@@ -460,8 +491,12 @@
     "title": "Vincent",
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Don McLean"
+    ],
+    "composedBy": [
+      "Don McLean"
+    ],
     "arrangedBy": [],
     "relatedReleases": [
       "release-dare-to-dream-1994",
@@ -484,12 +519,15 @@
       "source-wikipedia-en-chyi-yu",
       "source-qq-music-whoever-finds-this-i-love-you"
     ],
-    "notes": "Cover-performance identity record for statistics; original performer/credits pending. Stage 6B links this cover identity to the 1988 Whoever Finds This, I Love You album.",
+    "notes": "Cover identity linked to the 1988 Whoever Finds This, I Love You album and live records; Don McLean writer/original-performer fields populated from the Chyi Yu discography source.",
     "status": "partial",
     "titleLocalized": {
       "en": "Vincent"
     },
-    "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988"
+    "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
+    "originalPerformers": [
+      "Don McLean"
+    ]
   },
   {
     "id": "song-boat-song",
@@ -528,7 +566,8 @@
       "source-bilibili-grace-still-beijing-full",
       "source-user-task-0618-1",
       "source-user-task-0618-2",
-      "source-qq-music-eight-taels-of-gold-ost"
+      "source-qq-music-eight-taels-of-gold-ost",
+      "source-wikipedia-en-chyi-yu"
     ],
     "notes": "Eight Taels of Gold sources identify 船歌 as the film theme song sung by Chyi Yu and credited to Lo Ta-yu; soundtrack usage is modeled as an appearance, while live-performance links are modeled separately.",
     "status": "partial",
@@ -536,7 +575,10 @@
       "en": "Boat Song",
       "zh-Hant": "船歌"
     },
-    "firstKnownRelease": "release-dare-to-love-1994"
+    "firstKnownRelease": "release-dare-to-love-1994",
+    "originalPerformers": [
+      "person-chyi-yu"
+    ]
   },
   {
     "id": "song-li-xianglan",
@@ -547,8 +589,13 @@
       "李香兰"
     ],
     "language": "Cantonese",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Goro Matsui",
+      "Chow Lai-mau"
+    ],
+    "composedBy": [
+      "Koji Tamaki"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -560,16 +607,21 @@
     "sources": [
       "source-bilibili-unheard-full-hd",
       "source-bilibili-grace-still-beijing-full",
-      "source-bilibili-grace-still-beijing-clip-li-xianglan"
+      "source-bilibili-grace-still-beijing-clip-li-xianglan",
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-yukiko-yamaguchi-ikanai-de"
     ],
-    "notes": "Cover-performance identity record for statistics; original credits pending.",
-    "status": "needs-source",
+    "notes": "Cover identity for 張學友’s Cantonese 李香蘭, adapted from 玉置浩二’s 行かないで; credits populated from the Chyi Yu live-album copyright table and song-source cross-check.",
+    "status": "partial",
     "titleLocalized": {
       "en": "Li Xianglan",
       "zh-Hant": "李香蘭",
       "zh-Hans": "李香兰"
     },
-    "firstKnownRelease": "release-the-unheard-of-chyi-2003"
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "originalPerformers": [
+      "Jacky Cheung"
+    ]
   },
   {
     "id": "song-zui-ai",
@@ -580,8 +632,13 @@
       "最爱"
     ],
     "language": "Cantonese",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Zhong Xiaoyang",
+      "person-sylvia-chang"
+    ],
+    "composedBy": [
+      "person-li-tsung-sheng"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -595,16 +652,23 @@
     "mediaLinks": [],
     "sources": [
       "source-bilibili-unheard-full-hd",
-      "source-bilibili-grace-still-beijing-full"
+      "source-bilibili-grace-still-beijing-full",
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-zh-li-tsung-sheng-love-price-collection",
+      "source-wikipedia-zh-passion-1986-film"
     ],
-    "notes": "Cover-performance identity record for statistics; original credits pending.",
-    "status": "needs-source",
+    "notes": "Cover identity for 最愛; credits populated from the Chyi Yu live-album copyright table. Original-performer context is kept partial because sources point to both the 1986 film theme and Pan Yue-yun/Chyi Yu live-show usage.",
+    "status": "partial",
     "titleLocalized": {
       "en": "Most Beloved",
       "zh-Hant": "最愛",
       "zh-Hans": "最爱"
     },
-    "firstKnownRelease": "release-the-unheard-of-chyi-2003"
+    "firstKnownRelease": "release-the-unheard-of-chyi-2003",
+    "originalPerformers": [
+      "person-sylvia-chang",
+      "person-pan-yue-yun"
+    ]
   },
   {
     "id": "song-friendship",
@@ -615,8 +679,12 @@
       "友谊地久天长"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Robert Burns"
+    ],
+    "composedBy": [
+      "Traditional"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -626,10 +694,11 @@
     "mediaLinks": [],
     "sources": [
       "source-bilibili-grace-still-beijing-full",
-      "source-bilibili-grace-still-beijing-clip-friendship"
+      "source-bilibili-grace-still-beijing-clip-friendship",
+      "source-wikipedia-en-auld-lang-syne-song"
     ],
     "notes": "Concert cover-performance identity record for statistics.",
-    "status": "needs-source",
+    "status": "partial",
     "titleLocalized": {
       "en": "Auld Lang Syne",
       "zh-Hant": "友誼地久天長",
@@ -645,8 +714,12 @@
       "这世界那么多人"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Wang Haitao"
+    ],
+    "composedBy": [
+      "Akiyama Sayuri"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -659,15 +732,19 @@
     "mediaLinks": [],
     "sources": [
       "source-bilibili-grace-still-beijing-full",
-      "source-bilibili-grace-still-beijing-clip-friendship"
+      "source-bilibili-grace-still-beijing-clip-friendship",
+      "source-wikipedia-zh-this-world-so-many-people-song"
     ],
     "notes": "Concert cover-performance identity record for statistics.",
-    "status": "needs-source",
+    "status": "partial",
     "titleLocalized": {
       "en": "So Many People in This World",
       "zh-Hant": "這世界那麼多人",
       "zh-Hans": "这世界那么多人"
-    }
+    },
+    "originalPerformers": [
+      "Karen Mok"
+    ]
   },
   {
     "id": "song-yu-si",
@@ -841,10 +918,14 @@
     "mediaLinks": [],
     "sources": [
       "source-wikipedia-zh-blessing-album",
-      "source-qq-music-blessing"
+      "source-qq-music-blessing",
+      "source-wikipedia-en-chyi-yu"
     ],
     "notes": "Linked to the Blessing album and the 2025 Beijing concert setlist.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "person-chyi-yu"
+    ]
   },
   {
     "id": "song-you-are-all-my-memories",
@@ -967,7 +1048,10 @@
       "source-qq-music-you-meiyou-zhe-zhong-shuofa"
     ],
     "notes": "Created to connect album, 2002 live album/concert, 2013 music-show, and 2025 concert appearances.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "person-chyi-yu"
+    ]
   },
   {
     "id": "song-any-words-like-this",
@@ -1016,8 +1100,16 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Andrew Lloyd Webber",
+      "Trevor Nunn",
+      "T. S. Eliot"
+    ],
+    "composedBy": [
+      "Andrew Lloyd Webber",
+      "Trevor Nunn",
+      "T. S. Eliot"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-stories-1987",
     "relatedReleases": [
@@ -1035,8 +1127,11 @@
       "source-qq-music-stories",
       "source-bilibili-unheard-full-hd"
     ],
-    "notes": "Cover-performance identity for Memory from Cats; original credits remain pending.",
-    "status": "partial"
+    "notes": "Cover-performance identity for Memory from Cats; credits populated from the Chyi Yu live-album copyright table.",
+    "status": "partial",
+    "originalPerformers": [
+      "Elaine Paige"
+    ]
   },
   {
     "id": "song-whoever-finds-this-i-love-you",
@@ -1053,8 +1148,12 @@
       "誰撿到這張紙條 我愛你"
     ],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Mac Davis"
+    ],
+    "composedBy": [
+      "Mac Davis"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
     "relatedReleases": [
@@ -1073,8 +1172,11 @@
       "source-qq-music-whoever-finds-this-i-love-you",
       "source-bilibili-unheard-full-hd"
     ],
-    "notes": "Cover-performance identity linked from the 1988 cover album and 2002 live material; original performer noted as Mac Davis in source notes.",
-    "status": "partial"
+    "notes": "Cover identity linked from the 1988 cover album and 2002 live material; Mac Davis writer/original-performer fields populated from the Chyi Yu discography source.",
+    "status": "partial",
+    "originalPerformers": [
+      "Mac Davis"
+    ]
   },
   {
     "id": "song-where-have-all-the-flowers-gone",
@@ -1091,8 +1193,14 @@
       "花兒都到哪兒去了？"
     ],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-pete-seeger",
+      "Joe Hickerson"
+    ],
+    "composedBy": [
+      "person-pete-seeger",
+      "Joe Hickerson"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
     "relatedReleases": [
@@ -1108,8 +1216,11 @@
       "source-qq-music-where-have-all-the-flowers-gone",
       "source-bilibili-unheard-full-hd"
     ],
-    "notes": "Cover-performance identity linked from the 1990 cover album and 2002 live material; source notes identify Pete Seeger/Joe Hickerson context.",
-    "status": "partial"
+    "notes": "Cover identity linked from the 1990 cover album and 2002 live material; Pete Seeger writer/original-performer fields populated from the Chyi Yu live-album copyright table.",
+    "status": "partial",
+    "originalPerformers": [
+      "person-pete-seeger"
+    ]
   },
   {
     "id": "song-all-souls-night",
@@ -1120,8 +1231,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Frances Cornford"
+    ],
+    "composedBy": [
+      "Andrew Mark Vores"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chyis-tears-1996",
     "relatedReleases": [
@@ -1137,8 +1252,11 @@
       "source-qq-music-chyis-tears",
       "source-bilibili-unheard-full-hd"
     ],
-    "notes": "Cover-performance identity linked from Chyi’s Tears and 2002 live material; original credits remain partial.",
-    "status": "partial"
+    "notes": "Cover identity linked from Chyi’s Tears and 2002 live material; live-album copyright credits and Loreena McKennitt original-performer context are now structured.",
+    "status": "partial",
+    "originalPerformers": [
+      "Loreena McKennitt"
+    ]
   },
   {
     "id": "song-tears",
@@ -1169,7 +1287,10 @@
       "source-qq-music-chyis-tears"
     ],
     "notes": "Library title kept as Tears. English Wikipedia identifies Donde Voy as the original Spanish title and notes English lyric by Chyi Yu.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Tish Hinojosa"
+    ]
   },
   {
     "id": "song-forever",
@@ -1180,8 +1301,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Timo Tolkki"
+    ],
+    "composedBy": [
+      "Timo Tolkki"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [
@@ -1195,10 +1320,14 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-qq-music-unheard-of-chyi",
-      "source-bilibili-unheard-full-hd"
+      "source-bilibili-unheard-full-hd",
+      "source-wikipedia-en-chyi-yu"
     ],
-    "notes": "English cover identity linked from the 1999 C'est La Vie album and 2002 live material. The concert source identifies Stratovarius as original performer; writer/composer credits remain pending because the QQ album API did not expose them.",
-    "status": "partial"
+    "notes": "English cover identity linked from the 1999 C'est La Vie album and 2002 live material; Timo Tolkki/Stratovarius credit fields populated from the Chyi Yu discography source.",
+    "status": "partial",
+    "originalPerformers": [
+      "Stratovarius"
+    ]
   },
   {
     "id": "song-cest-la-vie",
@@ -1213,8 +1342,14 @@
       "这就是人生"
     ],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Greg Lake",
+      "Peter Sinfield"
+    ],
+    "composedBy": [
+      "Greg Lake",
+      "Peter Sinfield"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [
@@ -1229,7 +1364,8 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-qq-music-unheard-of-chyi",
-      "source-bilibili-unheard-full-hd"
+      "source-bilibili-unheard-full-hd",
+      "source-wikipedia-en-chyi-yu"
     ],
     "notes": "QQ Music gives the 1999 album track title as 这就是人生; the 2002 concert/live-album material uses C'est La Vie.",
     "status": "partial"
@@ -1245,8 +1381,14 @@
       "Windflower"
     ],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-jimmy-seals",
+      "person-dan-crofts"
+    ],
+    "composedBy": [
+      "person-jimmy-seals",
+      "person-dan-crofts"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [
@@ -1259,10 +1401,14 @@
     "mediaLinks": [],
     "sources": [
       "source-qq-music-cest-la-vie",
-      "source-qq-music-unheard-of-chyi"
+      "source-qq-music-unheard-of-chyi",
+      "source-wikipedia-en-chyi-yu"
     ],
-    "notes": "QQ Music titles the 1999 track Windflowers; the 2003 live album uses Windflower. Live-release notes identify Seals and Crofts as original performer context.",
-    "status": "partial"
+    "notes": "QQ Music titles the 1999 track Windflowers; the 2003 live album uses Windflower. Writer and original-performer fields populated from the live-album copyright table.",
+    "status": "partial",
+    "originalPerformers": [
+      "Seals and Crofts"
+    ]
   },
   {
     "id": "song-i-swear",
@@ -1273,8 +1419,14 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-frank-myers",
+      "person-gary-baker"
+    ],
+    "composedBy": [
+      "person-frank-myers",
+      "person-gary-baker"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "appearance-i-swear-1996",
     "relatedReleases": [
@@ -1490,8 +1642,12 @@
     },
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-li-tai-hsiang"
+    ],
+    "composedBy": [
+      "person-li-tai-hsiang"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-dare-to-love-1994",
     "relatedReleases": [
@@ -1503,7 +1659,8 @@
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": [
-      "source-qq-music-dare-to-love"
+      "source-qq-music-dare-to-love",
+      "source-wikipedia-en-chyi-yu"
     ],
     "notes": "Promoted from the Dare to Love compilation track to connect the 2002 concert performance. Credits pending.",
     "status": "partial"
@@ -1519,8 +1676,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Joan Baez"
+    ],
+    "composedBy": [
+      "Joan Baez"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-stories-1987",
     "relatedReleases": [
@@ -1536,8 +1697,11 @@
       "source-wikipedia-en-chyi-yu",
       "source-qq-music-stories"
     ],
-    "notes": "Cover; original performer Joan Baez, 1975. Promoted to connect concert performances. Credits pending.",
-    "status": "partial"
+    "notes": "Cover; original performer Joan Baez, 1975. Writer/original-performer fields populated from the Chyi Yu discography source.",
+    "status": "partial",
+    "originalPerformers": [
+      "Joan Baez"
+    ]
   },
   {
     "id": "song-xiao-meng-hu-die",
@@ -1621,8 +1785,12 @@
       "奇异恩典"
     ],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Public Domain"
+    ],
+    "composedBy": [
+      "Public Domain"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-the-voice-2010",
     "relatedReleases": [],
@@ -1790,8 +1958,12 @@
     },
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Traditional"
+    ],
+    "composedBy": [
+      "Traditional"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-olive-tree-1979",
     "relatedReleases": [],
@@ -2914,8 +3086,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Janis Ian"
+    ],
+    "composedBy": [
+      "Janis Ian"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-stories-1987",
     "relatedReleases": [],
@@ -2926,9 +3102,13 @@
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-stories",
-      "source-netease-cloud-music-stories-1987"
+      "source-netease-cloud-music-stories-1987",
+      "source-wikipedia-en-between-the-lines-janis-ian"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Janis Ian"
+    ]
   },
   {
     "id": "song-castles-in-the-air",
@@ -2941,8 +3121,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Don McLean"
+    ],
+    "composedBy": [
+      "Don McLean"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-stories-1987",
     "relatedReleases": [],
@@ -2953,9 +3137,13 @@
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-stories",
-      "source-netease-cloud-music-stories-1987"
+      "source-netease-cloud-music-stories-1987",
+      "source-wikipedia-en-castles-in-the-air-song"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Don McLean"
+    ]
   },
   {
     "id": "song-windmills-of-your-mind",
@@ -2968,8 +3156,13 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Alan Bergman",
+      "Marilyn Bergman"
+    ],
+    "composedBy": [
+      "Michel Legrand"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-stories-1987",
     "relatedReleases": [],
@@ -2980,9 +3173,13 @@
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-stories",
-      "source-netease-cloud-music-stories-1987"
+      "source-netease-cloud-music-stories-1987",
+      "source-wikipedia-en-windmills-of-your-mind"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Noel Harrison"
+    ]
   },
   {
     "id": "song-love-s-in-disguise",
@@ -2995,8 +3192,14 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Giorgio Moroder",
+      "Keith Forsey"
+    ],
+    "composedBy": [
+      "Giorgio Moroder",
+      "Keith Forsey"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-stories-1987",
     "relatedReleases": [],
@@ -3007,9 +3210,13 @@
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-stories",
-      "source-netease-cloud-music-stories-1987"
+      "source-netease-cloud-music-stories-1987",
+      "source-wikipedia-en-amii-album"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Amii Stewart"
+    ]
   },
   {
     "id": "song-unknown-musician",
@@ -3036,7 +3243,10 @@
       "source-qq-music-stories",
       "source-netease-cloud-music-stories-1987"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Blast"
+    ]
   },
   {
     "id": "song-if-you-say-my-eyes-are-beautiful",
@@ -3049,8 +3259,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Elliot Willensky"
+    ],
+    "composedBy": [
+      "Elliot Willensky"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-stories-1987",
     "relatedReleases": [],
@@ -3061,9 +3275,14 @@
       "source-wikipedia-en-chyi-yu",
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-stories",
-      "source-netease-cloud-music-stories-1987"
+      "source-netease-cloud-music-stories-1987",
+      "source-wikipedia-en-elliot-willensky"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Whitney Houston",
+      "Jermaine Jackson"
+    ]
   },
   {
     "id": "song-like-a-hero",
@@ -3076,8 +3295,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Dieter Bohlen"
+    ],
+    "composedBy": [
+      "Dieter Bohlen"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-stories-1987",
     "relatedReleases": [
@@ -3092,7 +3315,10 @@
       "source-qq-music-stories",
       "source-netease-cloud-music-stories-1987"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Modern Talking"
+    ]
   },
   {
     "id": "song-requiem",
@@ -3119,7 +3345,10 @@
       "source-qq-music-stories",
       "source-netease-cloud-music-stories-1987"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Karthago"
+    ]
   },
   {
     "id": "song-you-got-a-nerve",
@@ -3132,8 +3361,14 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Rod Stewart",
+      "Gary Grainger"
+    ],
+    "composedBy": [
+      "Rod Stewart",
+      "Gary Grainger"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
     "relatedReleases": [],
@@ -3145,9 +3380,13 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-whoever-finds-this-i-love-you",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988",
+      "source-wikipedia-en-foot-loose-fancy-free"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Rod Stewart"
+    ]
   },
   {
     "id": "song-waiting-for-the-morning",
@@ -3160,8 +3399,18 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Lars Kildvold",
+      "Jon Terje Rovedal",
+      "Eivind Rölles",
+      "Jan Thoreby"
+    ],
+    "composedBy": [
+      "Lars Kildvold",
+      "Jon Terje Rovedal",
+      "Eivind Rölles",
+      "Jan Thoreby"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
     "relatedReleases": [],
@@ -3173,9 +3422,13 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-whoever-finds-this-i-love-you",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988",
+      "source-wikipedia-en-waiting-for-the-morning-song"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Bobbysocks"
+    ]
   },
   {
     "id": "song-make-no-mistake-he-s-mine",
@@ -3188,8 +3441,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Kim Carnes"
+    ],
+    "composedBy": [
+      "Kim Carnes"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
     "relatedReleases": [],
@@ -3201,9 +3458,14 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-whoever-finds-this-i-love-you",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988",
+      "source-wikipedia-en-make-no-mistake-hes-mine"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Barbra Streisand",
+      "Kim Carnes"
+    ]
   },
   {
     "id": "song-he-s-so-beautiful-to-me",
@@ -3231,7 +3493,10 @@
       "source-musicbrainz-chyi-yu-release-media",
       "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Anita Meyer"
+    ]
   },
   {
     "id": "song-angels-roses-and-rain",
@@ -3244,8 +3509,16 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Bob Morrison",
+      "Bill Zerface",
+      "Jim Zerface"
+    ],
+    "composedBy": [
+      "Bob Morrison",
+      "Bill Zerface",
+      "Jim Zerface"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
     "relatedReleases": [
@@ -3259,9 +3532,13 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-whoever-finds-this-i-love-you",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988",
+      "source-wikipedia-en-angels-roses-and-rain"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Dickey Lee"
+    ]
   },
   {
     "id": "song-lady-on-the-other-side-of-town",
@@ -3302,8 +3579,13 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Charles Aznavour",
+      "Herbert Kretzmer"
+    ],
+    "composedBy": [
+      "Georges Garvarentz"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-whoever-finds-this-i-love-you-1988",
     "relatedReleases": [],
@@ -3315,9 +3597,13 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-whoever-finds-this-i-love-you",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988"
+      "source-netease-cloud-music-whoever-finds-this-i-love-you-1988",
+      "source-wikipedia-en-hier-encore"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Roy Clark"
+    ]
   },
   {
     "id": "song-only-love",
@@ -3330,8 +3616,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Norman Gimbel"
+    ],
+    "composedBy": [
+      "Vladimir Cosma"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-paradise-bird-1988",
     "relatedReleases": [],
@@ -3343,9 +3633,13 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-paradise-bird",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-paradise-bird-1988"
+      "source-netease-cloud-music-paradise-bird-1988",
+      "source-wikipedia-en-only-love-nana-mouskouri-song"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Nana Mouskouri"
+    ]
   },
   {
     "id": "song-paradise-bird",
@@ -3358,8 +3652,16 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Barry Leng",
+      "Simon May",
+      "Gerry Morris"
+    ],
+    "composedBy": [
+      "Barry Leng",
+      "Simon May",
+      "Gerry Morris"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-paradise-bird-1988",
     "relatedReleases": [
@@ -3373,9 +3675,13 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-paradise-bird",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-paradise-bird-1988"
+      "source-netease-cloud-music-paradise-bird-1988",
+      "source-wikipedia-en-paradise-bird-album"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Amii Stewart"
+    ]
   },
   {
     "id": "song-gypsy",
@@ -3388,8 +3694,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Suzanne Vega"
+    ],
+    "composedBy": [
+      "Suzanne Vega"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-paradise-bird-1988",
     "relatedReleases": [],
@@ -3401,9 +3711,13 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-paradise-bird",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-paradise-bird-1988"
+      "source-netease-cloud-music-paradise-bird-1988",
+      "source-wikipedia-en-solitude-standing"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Suzanne Vega"
+    ]
   },
   {
     "id": "song-graveyard-angel",
@@ -3431,7 +3745,10 @@
       "source-musicbrainz-chyi-yu-release-media",
       "source-netease-cloud-music-paradise-bird-1988"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Louise Tucker"
+    ]
   },
   {
     "id": "song-tonight",
@@ -3444,8 +3761,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Eddie Schwartz"
+    ],
+    "composedBy": [
+      "Eddie Schwartz"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-paradise-bird-1988",
     "relatedReleases": [],
@@ -3457,9 +3778,13 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-paradise-bird",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-paradise-bird-1988"
+      "source-netease-cloud-music-paradise-bird-1988",
+      "source-wikipedia-en-images-amii-stewart-album"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Amii Stewart"
+    ]
   },
   {
     "id": "song-it-was-love",
@@ -3487,7 +3812,10 @@
       "source-musicbrainz-chyi-yu-release-media",
       "source-netease-cloud-music-paradise-bird-1988"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Frank Duval"
+    ]
   },
   {
     "id": "song-islands",
@@ -3500,8 +3828,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Mike Oldfield"
+    ],
+    "composedBy": [
+      "Mike Oldfield"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-paradise-bird-1988",
     "relatedReleases": [],
@@ -3513,9 +3845,14 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-paradise-bird",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-paradise-bird-1988"
+      "source-netease-cloud-music-paradise-bird-1988",
+      "source-wikipedia-en-islands-mike-oldfield-song"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Mike Oldfield",
+      "Bonnie Tyler"
+    ]
   },
   {
     "id": "song-joan-of-arc",
@@ -3528,8 +3865,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Leonard Cohen"
+    ],
+    "composedBy": [
+      "Leonard Cohen"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-paradise-bird-1988",
     "relatedReleases": [],
@@ -3541,9 +3882,13 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-paradise-bird",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-paradise-bird-1988"
+      "source-netease-cloud-music-paradise-bird-1988",
+      "source-wikipedia-en-joan-of-arc-leonard-cohen-song"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Leonard Cohen"
+    ]
   },
   {
     "id": "song-broken-heroes",
@@ -3556,8 +3901,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Dieter Bohlen"
+    ],
+    "composedBy": [
+      "Dieter Bohlen"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-paradise-bird-1988",
     "relatedReleases": [],
@@ -3569,9 +3918,13 @@
       "source-wikipedia-zh-chyi-yu",
       "source-qq-music-paradise-bird",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-paradise-bird-1988"
+      "source-netease-cloud-music-paradise-bird-1988",
+      "source-wikipedia-en-broken-heroes-song"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Chris Norman"
+    ]
   },
   {
     "id": "song-wang-le-shu-yang",
@@ -3848,8 +4201,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Stephen Stills"
+    ],
+    "composedBy": [
+      "Stephen Stills"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
     "relatedReleases": [],
@@ -3875,8 +4232,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Chris de Burgh"
+    ],
+    "composedBy": [
+      "Chris de Burgh"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
     "relatedReleases": [
@@ -3891,7 +4252,10 @@
       "source-qq-music-where-have-all-the-flowers-gone",
       "source-musicbrainz-chyi-yu-release-media"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Chris de Burgh"
+    ]
   },
   {
     "id": "song-senses-in-flight",
@@ -3904,8 +4268,13 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-chyi-yu",
+      "Mark Hansell"
+    ],
+    "composedBy": [
+      "Clannad"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
     "relatedReleases": [],
@@ -3931,8 +4300,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Dan Hill"
+    ],
+    "composedBy": [
+      "Dan Hill"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
     "relatedReleases": [
@@ -3947,7 +4320,10 @@
       "source-qq-music-where-have-all-the-flowers-gone",
       "source-musicbrainz-chyi-yu-release-media"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Dan Hill"
+    ]
   },
   {
     "id": "song-wind-beneath-my-wings",
@@ -3960,8 +4336,14 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Larry Henley",
+      "Jeff Silbar"
+    ],
+    "composedBy": [
+      "Larry Henley",
+      "Jeff Silbar"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
     "relatedReleases": [
@@ -3989,8 +4371,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Joan Baez"
+    ],
+    "composedBy": [
+      "Joan Baez"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
     "relatedReleases": [],
@@ -4003,7 +4389,10 @@
       "source-qq-music-where-have-all-the-flowers-gone",
       "source-musicbrainz-chyi-yu-release-media"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Joan Baez"
+    ]
   },
   {
     "id": "song-the-end-of-the-innocence",
@@ -4016,8 +4405,14 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Don Henley",
+      "Bruce Hornsby"
+    ],
+    "composedBy": [
+      "Don Henley",
+      "Bruce Hornsby"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
     "relatedReleases": [],
@@ -4043,8 +4438,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Dan Fogelberg"
+    ],
+    "composedBy": [
+      "Dan Fogelberg"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
     "relatedReleases": [],
@@ -4070,8 +4469,14 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Mark Spiro",
+      "Ed Arkin"
+    ],
+    "composedBy": [
+      "Mark Spiro",
+      "Ed Arkin"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-where-have-all-the-flowers-gone-1990",
     "relatedReleases": [],
@@ -4097,8 +4502,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Charles Hart"
+    ],
+    "composedBy": [
+      "Andrew Lloyd Webber"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4125,8 +4534,13 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Tony Hiller",
+      "Nicky Graham"
+    ],
+    "composedBy": [
+      "Traditional"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4153,8 +4567,13 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Tony Hiller",
+      "Nicky Graham"
+    ],
+    "composedBy": [
+      "Franz Schubert"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4181,8 +4600,13 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Tony Hiller",
+      "Nicky Graham"
+    ],
+    "composedBy": [
+      "Ludwig van Beethoven"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4209,8 +4633,14 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Freddie Mercury",
+      "Queen"
+    ],
+    "composedBy": [
+      "Freddie Mercury",
+      "Queen"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4238,7 +4668,9 @@
     "aliases": [],
     "language": "English",
     "lyricsBy": [],
-    "composedBy": [],
+    "composedBy": [
+      "Pyotr Ilyich Tchaikovsky"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4266,7 +4698,9 @@
     "aliases": [],
     "language": "English",
     "lyricsBy": [],
-    "composedBy": [],
+    "composedBy": [
+      "Jean-Paul-Égide Martini"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4294,7 +4728,9 @@
     "aliases": [],
     "language": "English",
     "lyricsBy": [],
-    "composedBy": [],
+    "composedBy": [
+      "Pyotr Ilyich Tchaikovsky"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4321,8 +4757,13 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Tony Hiller",
+      "Nicky Graham"
+    ],
+    "composedBy": [
+      "Camille Saint-Saëns"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4350,7 +4791,9 @@
     "aliases": [],
     "language": "English",
     "lyricsBy": [],
-    "composedBy": [],
+    "composedBy": [
+      "Francisco Tárrega"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4378,7 +4821,9 @@
     "aliases": [],
     "language": "English",
     "lyricsBy": [],
-    "composedBy": [],
+    "composedBy": [
+      "Frédéric Chopin"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4405,8 +4850,13 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Tony Hiller",
+      "Nicky Graham"
+    ],
+    "composedBy": [
+      "Ludwig van Beethoven"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-love-of-my-life-1993",
     "relatedReleases": [],
@@ -4432,8 +4882,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Kenny Loggins"
+    ],
+    "composedBy": [
+      "Kenny Loggins"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-dare-to-dream-1994",
     "relatedReleases": [],
@@ -4445,9 +4899,13 @@
       "source-user-task-0623-1",
       "source-musicbrainz-chyi-yu-release-media",
       "source-spotify-dare-to-dream-1994",
-      "source-youtube-music-dare-to-dream-1994"
+      "source-youtube-music-dare-to-dream-1994",
+      "source-wikipedia-en-chyi-yu"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Kenny Loggins"
+    ]
   },
   {
     "id": "song-sad-lisa",
@@ -4459,8 +4917,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Cat Stevens"
+    ],
+    "composedBy": [
+      "Cat Stevens"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-dare-to-dream-1994",
     "relatedReleases": [],
@@ -4472,9 +4934,13 @@
       "source-user-task-0623-1",
       "source-musicbrainz-chyi-yu-release-media",
       "source-spotify-dare-to-dream-1994",
-      "source-youtube-music-dare-to-dream-1994"
+      "source-youtube-music-dare-to-dream-1994",
+      "source-wikipedia-en-chyi-yu"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Cat Stevens"
+    ]
   },
   {
     "id": "song-babes-in-the-wood",
@@ -4487,8 +4953,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Noel Brazil"
+    ],
+    "composedBy": [
+      "Noel Brazil"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chyis-tears-1996",
     "relatedReleases": [],
@@ -4515,8 +4985,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Elena Rostropovich"
+    ],
+    "composedBy": [
+      "Elena Rostropovich"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chyis-tears-1996",
     "relatedReleases": [],
@@ -4543,8 +5017,14 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "John Jarvis",
+      "Bill Lamb"
+    ],
+    "composedBy": [
+      "John Jarvis",
+      "Bill Lamb"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chyis-tears-1996",
     "relatedReleases": [],
@@ -4571,8 +5051,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Terry Jacks"
+    ],
+    "composedBy": [
+      "Terry Jacks"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chyis-tears-1996",
     "relatedReleases": [],
@@ -4599,8 +5083,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Chris Simpson"
+    ],
+    "composedBy": [
+      "Chris Simpson"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chyis-tears-1996",
     "relatedReleases": [],
@@ -4627,8 +5115,16 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Norma Helms",
+      "Mitch Bottler",
+      "Rockwell"
+    ],
+    "composedBy": [
+      "Norma Helms",
+      "Mitch Bottler",
+      "Rockwell"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chyis-tears-1996",
     "relatedReleases": [],
@@ -4655,8 +5151,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Chris de Burgh"
+    ],
+    "composedBy": [
+      "Chris de Burgh"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chyis-tears-1996",
     "relatedReleases": [],
@@ -4683,8 +5183,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Stephen Sondheim"
+    ],
+    "composedBy": [
+      "Stephen Sondheim"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chyis-tears-1996",
     "relatedReleases": [],
@@ -4914,7 +5418,9 @@
     "lyricsBy": [
       "person-lin-xi"
     ],
-    "composedBy": [],
+    "composedBy": [
+      "Chen Wei"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-camel-bird-fish-1997",
     "relatedReleases": [],
@@ -4927,7 +5433,8 @@
       "source-qq-music-camel-bird-fish",
       "source-musicbrainz-chyi-yu-release-media",
       "source-spotify-camel-bird-fish-1997",
-      "source-youtube-music-camel-bird-fish-1997"
+      "source-youtube-music-camel-bird-fish-1997",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -5045,8 +5552,12 @@
       "At Seventeen"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Janis Ian"
+    ],
+    "composedBy": [
+      "Janis Ian"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [],
@@ -5056,9 +5567,13 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-wikipedia-en-chyi-yu"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Janis Ian"
+    ]
   },
   {
     "id": "song-songs-and-silhouettes",
@@ -5070,8 +5585,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Kate St John"
+    ],
+    "composedBy": [
+      "Kate St John"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [],
@@ -5081,7 +5600,8 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -5095,8 +5615,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Tish Hinojosa"
+    ],
+    "composedBy": [
+      "Tish Hinojosa"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [],
@@ -5106,9 +5630,13 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-wikipedia-en-chyi-yu"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Tish Hinojosa"
+    ]
   },
   {
     "id": "song-qiao-di",
@@ -5122,8 +5650,12 @@
       "Geordie"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Traditional"
+    ],
+    "composedBy": [
+      "Traditional"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [],
@@ -5133,7 +5665,8 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -5147,8 +5680,14 @@
     },
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Dee Carstensen",
+      "Glen Burtnik"
+    ],
+    "composedBy": [
+      "Dee Carstensen",
+      "Glen Burtnik"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [],
@@ -5158,7 +5697,8 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -5172,8 +5712,12 @@
     },
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Don McLean"
+    ],
+    "composedBy": [
+      "Don McLean"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [],
@@ -5183,9 +5727,14 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-wikipedia-en-chyi-yu",
+      "source-wikipedia-en-and-i-love-you-so-song"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Don McLean"
+    ]
   },
   {
     "id": "song-wishful-milenio",
@@ -5197,8 +5746,14 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Rene Kupere",
+      "person-chyi-yu"
+    ],
+    "composedBy": [
+      "Rene Kupere",
+      "person-chyi-yu"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [],
@@ -5208,7 +5763,8 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -5261,7 +5817,9 @@
     "aliases": [],
     "language": "Mandarin",
     "lyricsBy": [],
-    "composedBy": [],
+    "composedBy": [
+      "person-suzanne-ciani"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [],
@@ -5271,7 +5829,8 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -5321,8 +5880,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Tanita Tikaram"
+    ],
+    "composedBy": [
+      "Tanita Tikaram"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [],
@@ -5332,9 +5895,13 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-wikipedia-en-chyi-yu"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Tanita Tikaram"
+    ]
   },
   {
     "id": "song-xu",
@@ -5462,8 +6029,14 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Michael Cretu",
+      "Dylan Cross"
+    ],
+    "composedBy": [
+      "Michael Cretu",
+      "Dylan Cross"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-the-unheard-of-chyi-2003",
     "relatedReleases": [],
@@ -5476,7 +6049,8 @@
       "source-bilibili-unheard-chapters",
       "source-qq-music-unheard-of-chyi",
       "source-local-qq-unheard-track-image",
-      "source-user-task-0618-2"
+      "source-user-task-0618-2",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -5664,8 +6238,12 @@
     },
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Kate St John"
+    ],
+    "composedBy": [
+      "Kate St John"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-the-unheard-of-chyi-2003",
     "relatedReleases": [],
@@ -5678,7 +6256,8 @@
       "source-bilibili-unheard-chapters",
       "source-qq-music-unheard-of-chyi",
       "source-local-qq-unheard-track-image",
-      "source-user-task-0618-2"
+      "source-user-task-0618-2",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -6472,8 +7051,12 @@
     "aliases": [],
     "language": "Mandarin",
     "lyricsBy": [],
-    "composedBy": [],
-    "arrangedBy": [],
+    "composedBy": [
+      "Jon Wei Hsiang"
+    ],
+    "arrangedBy": [
+      "Jon Wei Hsiang"
+    ],
     "firstKnownRelease": "release-morning-bell-gatha-cundi-mantra-2014",
     "relatedReleases": [
       "release-kshitigarbha-praise-2017"
@@ -6486,7 +7069,8 @@
       "source-user-task-0623-2",
       "source-youtube-music-cundi-mantra-2014",
       "source-youtube-music-morning-bell-gatha-2014",
-      "source-kugou-morning-bell-gatha-cundi-mantra-2014"
+      "source-kugou-morning-bell-gatha-cundi-mantra-2014",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -6501,8 +7085,12 @@
     "aliases": [],
     "language": "Mandarin",
     "lyricsBy": [],
-    "composedBy": [],
-    "arrangedBy": [],
+    "composedBy": [
+      "Jon Wei Hsiang"
+    ],
+    "arrangedBy": [
+      "Jon Wei Hsiang"
+    ],
     "firstKnownRelease": "release-morning-bell-gatha-cundi-mantra-2014",
     "relatedReleases": [
       "release-kshitigarbha-praise-2017"
@@ -6515,7 +7103,8 @@
       "source-user-task-0623-2",
       "source-youtube-music-cundi-mantra-2014",
       "source-youtube-music-morning-bell-gatha-2014",
-      "source-kugou-morning-bell-gatha-cundi-mantra-2014"
+      "source-kugou-morning-bell-gatha-cundi-mantra-2014",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -6530,8 +7119,12 @@
     "aliases": [],
     "language": "Mandarin",
     "lyricsBy": [],
-    "composedBy": [],
-    "arrangedBy": [],
+    "composedBy": [
+      "Jon Wei Hsiang"
+    ],
+    "arrangedBy": [
+      "Jon Wei Hsiang"
+    ],
     "firstKnownRelease": "release-morning-bell-gatha-cundi-mantra-2014",
     "relatedReleases": [
       "release-kshitigarbha-praise-2017"
@@ -6544,7 +7137,8 @@
       "source-user-task-0623-2",
       "source-youtube-music-cundi-mantra-2014",
       "source-youtube-music-morning-bell-gatha-2014",
-      "source-kugou-morning-bell-gatha-cundi-mantra-2014"
+      "source-kugou-morning-bell-gatha-cundi-mantra-2014",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -6558,9 +7152,15 @@
     },
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
-    "arrangedBy": [],
+    "lyricsBy": [
+      "Mipham Rinpoche"
+    ],
+    "composedBy": [
+      "Otis Chen"
+    ],
+    "arrangedBy": [
+      "Ying Tu"
+    ],
     "firstKnownRelease": "release-eight-auspicious-prayer-thirty-seven-practices-2015",
     "relatedReleases": [
       "release-kshitigarbha-praise-2017"
@@ -6573,7 +7173,8 @@
       "source-user-task-0623-2",
       "source-spotify-eight-auspicious-prayer-thirty-seven-practices-2015",
       "source-youtube-music-eight-auspicious-prayer-thirty-seven-practices-2015",
-      "source-kugou-eight-auspicious-prayer-thirty-seven-practices-2015"
+      "source-kugou-eight-auspicious-prayer-thirty-seven-practices-2015",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -6588,8 +7189,12 @@
     "aliases": [],
     "language": "Mandarin",
     "lyricsBy": [],
-    "composedBy": [],
-    "arrangedBy": [],
+    "composedBy": [
+      "Jon Wei Hsiang"
+    ],
+    "arrangedBy": [
+      "Jon Wei Hsiang"
+    ],
     "firstKnownRelease": "release-eight-auspicious-prayer-thirty-seven-practices-2015",
     "relatedReleases": [
       "release-kshitigarbha-praise-2017"
@@ -6602,7 +7207,8 @@
       "source-user-task-0623-2",
       "source-spotify-eight-auspicious-prayer-thirty-seven-practices-2015",
       "source-youtube-music-eight-auspicious-prayer-thirty-seven-practices-2015",
-      "source-kugou-eight-auspicious-prayer-thirty-seven-practices-2015"
+      "source-kugou-eight-auspicious-prayer-thirty-seven-practices-2015",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -6645,8 +7251,12 @@
     "aliases": [],
     "language": "Mandarin",
     "lyricsBy": [],
-    "composedBy": [],
-    "arrangedBy": [],
+    "composedBy": [
+      "Otis Chen"
+    ],
+    "arrangedBy": [
+      "Otis Chen"
+    ],
     "firstKnownRelease": "release-kshitigarbha-praise-2017",
     "relatedReleases": [],
     "knownConcerts": [],
@@ -6658,7 +7268,8 @@
       "source-netease-cloud-music-kshitigarbha-praise-2017",
       "source-spotify-kshitigarbha-praise-2017",
       "source-youtube-music-kshitigarbha-praise-2017",
-      "source-kugou-kshitigarbha-praise-2017"
+      "source-kugou-kshitigarbha-praise-2017",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -6817,8 +7428,12 @@
     },
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Li Shutong"
+    ],
+    "composedBy": [
+      "John P. Ordway"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-ape-sounds-2020",
     "relatedReleases": [],
@@ -6832,9 +7447,13 @@
       "source-netease-cloud-music-ape-sounds-2020",
       "source-spotify-ape-sounds-2020",
       "source-youtube-music-ape-sounds-2020",
-      "source-kugou-ape-sounds-2020"
+      "source-kugou-ape-sounds-2020",
+      "source-wikipedia-zh-song-bie-song"
     ],
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Li Shutong"
+    ]
   },
   {
     "id": "song-chan-hui-wen",
@@ -6846,8 +7465,12 @@
     },
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Avatamsaka Sutra: Samantabhadra's Conduct and Vows"
+    ],
+    "composedBy": [
+      "Traditional Buddhist chant"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chanting-for-you-1-peaceful-heart-2004",
     "relatedReleases": [
@@ -6861,7 +7484,8 @@
       "source-musicbrainz-chyi-yu-release-groups",
       "source-qq-music-chanting-trilogy",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-chanting-for-you-trilogy"
+      "source-netease-cloud-music-chanting-for-you-trilogy",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -6875,8 +7499,12 @@
     },
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Golden Light Sutra"
+    ],
+    "composedBy": [
+      "Imee Ooi"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chanting-for-you-1-peaceful-heart-2004",
     "relatedReleases": [
@@ -6892,7 +7520,8 @@
       "source-musicbrainz-chyi-yu-release-groups",
       "source-qq-music-chanting-trilogy",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-chanting-for-you-trilogy"
+      "source-netease-cloud-music-chanting-for-you-trilogy",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -6909,8 +7538,12 @@
       "般若波羅蜜多心經"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Xuanzang translation"
+    ],
+    "composedBy": [
+      "Imee Ooi"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chanting-for-you-1-peaceful-heart-2004",
     "relatedReleases": [
@@ -6924,7 +7557,8 @@
       "source-musicbrainz-chyi-yu-release-groups",
       "source-qq-music-chanting-trilogy",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-chanting-for-you-trilogy"
+      "source-netease-cloud-music-chanting-for-you-trilogy",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -6938,8 +7572,12 @@
     },
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Hu Haiji"
+    ],
+    "composedBy": [
+      "Hu Haiji"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chanting-for-you-2-peace-of-mind-2004",
     "relatedReleases": [
@@ -6952,7 +7590,8 @@
       "source-musicbrainz-chyi-yu-release-groups",
       "source-qq-music-chanting-trilogy",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-chanting-for-you-trilogy"
+      "source-netease-cloud-music-chanting-for-you-trilogy",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -6967,7 +7606,9 @@
     "aliases": [],
     "language": "Mandarin",
     "lyricsBy": [],
-    "composedBy": [],
+    "composedBy": [
+      "Xiang Zhongwei"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chanting-for-you-2-peace-of-mind-2004",
     "relatedReleases": [
@@ -6981,7 +7622,8 @@
       "source-musicbrainz-chyi-yu-release-groups",
       "source-qq-music-chanting-trilogy",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-chanting-for-you-trilogy"
+      "source-netease-cloud-music-chanting-for-you-trilogy",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -7024,8 +7666,12 @@
     },
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Wang Anshi"
+    ],
+    "composedBy": [
+      "person-chen-yang"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chanting-for-you-3-happy-journey-2004",
     "relatedReleases": [
@@ -7038,7 +7684,8 @@
       "source-musicbrainz-chyi-yu-release-groups",
       "source-qq-music-chanting-trilogy",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-chanting-for-you-trilogy"
+      "source-netease-cloud-music-chanting-for-you-trilogy",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -7052,8 +7699,12 @@
     },
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Wang Anshi"
+    ],
+    "composedBy": [
+      "Kay Huang"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chanting-for-you-3-happy-journey-2004",
     "relatedReleases": [
@@ -7068,7 +7719,8 @@
       "source-musicbrainz-chyi-yu-release-groups",
       "source-qq-music-chanting-trilogy",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-chanting-for-you-trilogy"
+      "source-netease-cloud-music-chanting-for-you-trilogy",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -7084,8 +7736,12 @@
       "一念心清淨蓮花處處開"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Pang Yun"
+    ],
+    "composedBy": [
+      "Kay Huang"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-chanting-for-you-3-happy-journey-2004",
     "relatedReleases": [
@@ -7098,7 +7754,8 @@
       "source-musicbrainz-chyi-yu-release-groups",
       "source-qq-music-chanting-trilogy",
       "source-musicbrainz-chyi-yu-release-media",
-      "source-netease-cloud-music-chanting-for-you-trilogy"
+      "source-netease-cloud-music-chanting-for-you-trilogy",
+      "source-wikipedia-en-chyi-yu"
     ],
     "status": "partial"
   },
@@ -7168,8 +7825,14 @@
     "titleOriginal": null,
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Michael Cretu",
+      "Dylan Cross"
+    ],
+    "composedBy": [
+      "Michael Cretu",
+      "Dylan Cross"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7177,7 +7840,9 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
     "status": "partial"
   },
@@ -7188,8 +7853,12 @@
     "titleOriginal": "祝我幸福",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Shi Li"
+    ],
+    "composedBy": [
+      "Chen Xiaoxia"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7200,9 +7869,14 @@
       "music-show-singer-2019"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-shi-li"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "person-yang-nai-wen"
+    ]
   },
   {
     "id": "song-zong-fa-shao-nv",
@@ -7232,8 +7906,12 @@
     "titleOriginal": "海上花",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-luo-dayou"
+    ],
+    "composedBy": [
+      "person-luo-dayou"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7242,9 +7920,14 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-luo-dayou"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Jenny Tseng"
+    ]
   },
   {
     "id": "song-wen-fo",
@@ -7276,8 +7959,12 @@
     "titleOriginal": "女人花",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Li Anxiu"
+    ],
+    "composedBy": [
+      "Chen Yaochuan"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7290,9 +7977,14 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-chen-yaochuan"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Anita Mui"
+    ]
   },
   {
     "id": "song-zhang-sheng-xiang-qi",
@@ -7301,8 +7993,12 @@
     "titleOriginal": "掌聲響起",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Chen Guifen"
+    ],
+    "composedBy": [
+      "Chen Jinxing"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7313,9 +8009,14 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-zhangsheng-xiangqi"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Fong Fei-fei"
+    ]
   },
   {
     "id": "song-500-miles-scarborough-fair",
@@ -7324,8 +8025,14 @@
     "titleOriginal": null,
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Hedy West",
+      "Traditional"
+    ],
+    "composedBy": [
+      "Hedy West",
+      "Traditional"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7333,9 +8040,16 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-en-500-miles-song",
+      "source-wikipedia-en-scarborough-fair-ballad"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Hedy West",
+      "Traditional"
+    ]
   },
   {
     "id": "song-si-sui-de-hai-liu-ma",
@@ -7364,8 +8078,12 @@
     "titleOriginal": "我要你",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Fan Chong"
+    ],
+    "composedBy": [
+      "Fan Chong"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7374,9 +8092,15 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-lvdeshui-film"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Lao Lang",
+      "Ren Suxi"
+    ]
   },
   {
     "id": "song-qi-dao",
@@ -7426,8 +8150,12 @@
     "titleOriginal": null,
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Hedy West"
+    ],
+    "composedBy": [
+      "Hedy West"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7435,9 +8163,14 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-en-500-miles-song"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Hedy West"
+    ]
   },
   {
     "id": "song-scarborough-fair",
@@ -7446,8 +8179,12 @@
     "titleOriginal": null,
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Traditional"
+    ],
+    "composedBy": [
+      "Traditional"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7455,9 +8192,14 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-en-scarborough-fair-ballad"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Traditional"
+    ]
   },
   {
     "id": "song-gu-yan",
@@ -7486,8 +8228,12 @@
     "titleOriginal": "因為愛情",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Xiao Ke"
+    ],
+    "composedBy": [
+      "Xiao Ke"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -7496,9 +8242,15 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-yin-wei-ai-qing-song"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Faye Wong",
+      "Eason Chan"
+    ]
   },
   {
     "id": "song-zhi-fou-zhi-fou",
@@ -7507,8 +8259,13 @@
     "titleOriginal": "知否知否",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Li Qingzhao",
+      "Zhang Jingyi"
+    ],
+    "composedBy": [
+      "Liu Xuandou"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -7516,9 +8273,15 @@
       "music-show-singer-2019"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-yisa-yu"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Yisa Yu",
+      "person-hu-xia"
+    ]
   },
   {
     "id": "song-tian-shi-yu-lang",
@@ -7536,9 +8299,15 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-en-chyi-yu"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "person-chyi-yu",
+      "person-chi-chin"
+    ]
   },
   {
     "id": "song-wai-mian-de-shi-jie",
@@ -7547,8 +8316,12 @@
     "titleOriginal": "外面的世界",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-chi-chin"
+    ],
+    "composedBy": [
+      "person-chi-chin"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -7556,9 +8329,14 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-zhongguo-zhixing"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "person-chi-chin"
+    ]
   },
   {
     "id": "song-ai-pin-cai-hui-ying",
@@ -7567,8 +8345,12 @@
     "titleOriginal": "愛拼才會贏",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Chen Baitan"
+    ],
+    "composedBy": [
+      "Chen Baitan"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -7576,9 +8358,14 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-ai-pin-cai-hui-ying"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Yeh Chi-tien"
+    ]
   },
   {
     "id": "song-tian-xia-you-qing-ren",
@@ -7587,8 +8374,12 @@
     "titleOriginal": "天下有情人",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-lin-xi"
+    ],
+    "composedBy": [
+      "person-wakin-chau"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -7596,9 +8387,15 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-ai-xiang-sui-album"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "person-wakin-chau",
+      "person-chyi-yu"
+    ]
   },
   {
     "id": "song-wo-zhi-zai-hu-ni",
@@ -7607,8 +8404,13 @@
     "titleOriginal": "我只在乎你",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Toyohisa Araki",
+      "Shen Zhi"
+    ],
+    "composedBy": [
+      "Takashi Miki"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -7616,9 +8418,14 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-wo-zhi-zai-hu-ni"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Teresa Teng"
+    ]
   },
   {
     "id": "song-hua-ji",
@@ -7649,8 +8456,12 @@
     "titleOriginal": "我願意",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Yao Chien"
+    ],
+    "composedBy": [
+      "Huang Guolun"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -7658,9 +8469,14 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-wo-yuan-yi-song"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Faye Wong"
+    ]
   },
   {
     "id": "song-qia-si-ni-de-wen-rou",
@@ -7669,8 +8485,12 @@
     "titleOriginal": "恰似你的溫柔",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-liang-hong-zhi"
+    ],
+    "composedBy": [
+      "person-liang-hong-zhi"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7681,9 +8501,14 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-liang-hong-zhi"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Tsai Chin"
+    ]
   },
   {
     "id": "song-xiang-jian-de-xiao-lu",
@@ -7692,8 +8517,12 @@
     "titleOriginal": "鄉間的小路",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Yeh Chia-hsiu"
+    ],
+    "composedBy": [
+      "Yeh Chia-hsiu"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7703,9 +8532,14 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-yeh-chia-hsiu"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "person-chyi-yu"
+    ]
   },
   {
     "id": "song-cheng-li-de-yue-guang",
@@ -7714,8 +8548,12 @@
     "titleOriginal": "城裡的月光",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Chen Jiaming"
+    ],
+    "composedBy": [
+      "Chen Jiaming"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -7725,7 +8563,10 @@
     "mediaLinks": [],
     "sources": [],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Mavis Hee"
+    ]
   },
   {
     "id": "song-song-e58f88e8a68b",
@@ -7754,8 +8595,12 @@
     "titleOriginal": "月亮代表我的心",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Sun Yi"
+    ],
+    "composedBy": [
+      "Weng Ching-hsi"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -7763,9 +8608,14 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-yue-liang-dai-biao-wo-de-xin-song"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Chen Fen-lan"
+    ]
   },
   {
     "id": "song-ru-guo",
@@ -7796,8 +8646,12 @@
     "titleOriginal": "讓我們看雲去",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Zhong Lili"
+    ],
+    "composedBy": [
+      "Huang Dacheng"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7806,9 +8660,14 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-guang-yin-de-gu-shi-tv"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Chen Mingshao"
+    ]
   },
   {
     "id": "song-zhuo-ni-qiu",
@@ -7817,8 +8676,12 @@
     "titleOriginal": "捉泥鰍",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-hou-dejian"
+    ],
+    "composedBy": [
+      "person-hou-dejian"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7827,9 +8690,14 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-zhuo-ni-qiu"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Pao Mei-sheng"
+    ]
   },
   {
     "id": "song-lan-hua-cao",
@@ -7838,8 +8706,13 @@
     "titleOriginal": "蘭花草",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Hu Shih"
+    ],
+    "composedBy": [
+      "Chen Xiande",
+      "Zhang Bi"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7850,9 +8723,15 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-lan-hua-cao-song"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Yinxia",
+      "Pao Mei-sheng"
+    ]
   },
   {
     "id": "song-tong-nian",
@@ -7861,8 +8740,12 @@
     "titleOriginal": "童年",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-luo-dayou"
+    ],
+    "composedBy": [
+      "person-luo-dayou"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7873,9 +8756,14 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-luo-dayou"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Sylvia Chang"
+    ]
   },
   {
     "id": "song-xiang-jian-xiao-lu",
@@ -7884,8 +8772,12 @@
     "titleOriginal": "鄉間小路",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Yeh Chia-hsiu"
+    ],
+    "composedBy": [
+      "Yeh Chia-hsiu"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7896,9 +8788,14 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-yeh-chia-hsiu"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "person-chyi-yu"
+    ]
   },
   {
     "id": "song-wai-po-de-peng-hu-wan",
@@ -7907,8 +8804,12 @@
     "titleOriginal": "外婆的澎湖灣",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Yeh Chia-hsiu"
+    ],
+    "composedBy": [
+      "Yeh Chia-hsiu"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7919,9 +8820,15 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-yeh-chia-hsiu",
+      "source-wikipedia-zh-pan-anbang"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Pan An-bang"
+    ]
   },
   {
     "id": "song-tong-zhuo-de-ni",
@@ -7930,8 +8837,12 @@
     "titleOriginal": "同桌的你",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Gao Xiaosong"
+    ],
+    "composedBy": [
+      "Gao Xiaosong"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7942,9 +8853,14 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-tongzhuo-de-ni-song"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Lao Lang"
+    ]
   },
   {
     "id": "song-guang-yin-de-gu-shi",
@@ -7953,8 +8869,12 @@
     "titleOriginal": "光陰的故事",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-luo-dayou"
+    ],
+    "composedBy": [
+      "person-luo-dayou"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7965,9 +8885,14 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-guang-yin-de-gu-shi-tv"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Lo Ta-yu"
+    ]
   },
   {
     "id": "song-lu-dao-xiao-ye-qu",
@@ -7976,8 +8901,12 @@
     "titleOriginal": "綠島小夜曲",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Pan Yingjie"
+    ],
+    "composedBy": [
+      "Chow Lan-ping"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -7988,9 +8917,14 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-green-island-serenade"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Jin Qin"
+    ]
   },
   {
     "id": "song-su-zhou-he-bian",
@@ -8045,8 +8979,12 @@
     "titleOriginal": "情人的眼淚",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Chen Dieyi"
+    ],
+    "composedBy": [
+      "Yao Min"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -8057,9 +8995,15 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-chen-dieyi",
+      "source-wikipedia-zh-jin-xiao-duo-zhen-zhong-album"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Pan Xiuqiong"
+    ]
   },
   {
     "id": "song-ai-de-zhen-yan",
@@ -8070,8 +9014,12 @@
       "爱的笺言"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-luo-dayou"
+    ],
+    "composedBy": [
+      "person-luo-dayou"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -8083,9 +9031,14 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-luo-dayou"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Lo Ta-yu"
+    ]
   },
   {
     "id": "song-shi-fou",
@@ -8094,8 +9047,12 @@
     "titleOriginal": "是否",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-luo-dayou"
+    ],
+    "composedBy": [
+      "person-luo-dayou"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -8107,9 +9064,14 @@
       "music-show-dream-star-partner-2013"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-luo-dayou"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Su Rui"
+    ]
   },
   {
     "id": "song-bu-yao-gao-bie",
@@ -8158,8 +9120,12 @@
     "titleOriginal": "隱形的翅膀",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Wang Yajun"
+    ],
+    "composedBy": [
+      "Wang Yajun"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -8167,9 +9133,14 @@
       "music-show-singer-2019"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-wang-yajun"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Angela Chang"
+    ]
   },
   {
     "id": "song-you-raise-me-up",
@@ -8178,8 +9149,12 @@
     "titleOriginal": null,
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Brendan Graham"
+    ],
+    "composedBy": [
+      "Rolf Løvland"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -8187,9 +9162,15 @@
       "music-show-singer-2019"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-en-you-raise-me-up"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Secret Garden",
+      "Brian Kennedy"
+    ]
   },
   {
     "id": "song-xue-luo-xia-de-sheng-yin",
@@ -8198,8 +9179,12 @@
     "titleOriginal": "雪落下的聲音",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Yu Zheng"
+    ],
+    "composedBy": [
+      "Lu Hu"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
@@ -8207,9 +9192,15 @@
       "music-show-singer-2019"
     ],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-yu-zheng",
+      "source-wikipedia-zh-lu-hu"
+    ],
     "notes": "Live-only performance; no album track linked yet.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Lu Hu"
+    ]
   },
   {
     "id": "song-teng-chan-shu",
@@ -8239,8 +9230,12 @@
     "titleOriginal": "秋蟬",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Li Ziheng"
+    ],
+    "composedBy": [
+      "Li Ziheng"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -8248,9 +9243,15 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-li-ziheng"
+    ],
     "notes": "Folk song performed at the 2004 齐家欢 Beijing concert. Concert cover-performance identity; release/credit details incomplete.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Yang Fangyi",
+      "Xu Xiaojing"
+    ]
   },
   {
     "id": "song-xiao-mo-li",
@@ -8259,8 +9260,12 @@
     "titleOriginal": "小茉莉",
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Qiu Chen"
+    ],
+    "composedBy": [
+      "Qiu Chen"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [
@@ -8268,16 +9273,25 @@
     ],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-guang-yin-de-gu-shi-tv",
+      "source-wikipedia-zh-qiu-chen"
+    ],
     "notes": "Folk song performed at the 2004 齐家欢 Beijing concert. Concert cover-performance identity; release/credit details incomplete.",
-    "status": "partial"
+    "status": "partial",
+    "originalPerformers": [
+      "Pao Mei-sheng"
+    ]
   },
   {
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-rolling-red-dust-film",
+      "source-wikipedia-zh-luo-dayou"
+    ],
     "status": "partial",
     "id": "song-gun-gun-hong-chen",
     "slug": "gun-gun-hong-chen",
@@ -8287,19 +9301,27 @@
       "滚滚红尘"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
+    "lyricsBy": [
+      "person-luo-dayou"
+    ],
     "composedBy": [
       "person-luo-dayou"
     ],
     "arrangedBy": [],
-    "notes": "Cover; original performer 陳淑樺/羅大佑, 1990 film 滾滾紅塵 theme. 羅大佑 composed. Concert cover-performance identity for statistics; Chyi Yu performs as a duet with Pan Yue-yun at Echo shows."
+    "notes": "Cover; original performer 陳淑樺/羅大佑, 1990 film 滾滾紅塵 theme. 羅大佑 composed. Concert cover-performance identity for statistics; Chyi Yu performs as a duet with Pan Yue-yun at Echo shows.",
+    "originalPerformers": [
+      "Sarah Chen"
+    ]
   },
   {
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-luo-dayou",
+      "source-wikipedia-zh-a-moment-of-romance-1990-film"
+    ],
     "status": "partial",
     "id": "song-zhui-meng-ren",
     "slug": "zhui-meng-ren",
@@ -8309,19 +9331,26 @@
       "追梦人"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
+    "lyricsBy": [
+      "person-luo-dayou"
+    ],
     "composedBy": [
       "person-luo-dayou"
     ],
     "arrangedBy": [],
-    "notes": "Cover; original performer 羅大佑, 1991 film 天若有情 theme. 羅大佑 composed. Concert cover-performance identity for statistics."
+    "notes": "Cover of 羅大佑’s 追夢人; source trails identify 鳳飛飛 as the original vocal performer for the film-song recording. Concert cover-performance identity for statistics.",
+    "originalPerformers": [
+      "Fong Fei-fei"
+    ]
   },
   {
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-tiantang-song"
+    ],
     "status": "partial",
     "id": "song-tian-tang",
     "slug": "tian-tang",
@@ -8329,17 +9358,26 @@
     "titleOriginal": null,
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Tengger"
+    ],
+    "composedBy": [
+      "Tengger"
+    ],
     "arrangedBy": [],
-    "notes": "Cover; original performer 鄭怡, 1983. Concert cover-performance identity for statistics."
+    "notes": "Cover; original performer 鄭怡, 1983. Concert cover-performance identity for statistics.",
+    "originalPerformers": [
+      "Tengger"
+    ]
   },
   {
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-tian-kong-wang-fei-album"
+    ],
     "status": "partial",
     "id": "song-tian-kong",
     "slug": "tian-kong",
@@ -8347,17 +9385,26 @@
     "titleOriginal": null,
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Huang Guilan"
+    ],
+    "composedBy": [
+      "Yang Minghuang"
+    ],
     "arrangedBy": [],
-    "notes": "Cover; original performer 王菲, 1994. Concert cover-performance identity for statistics; at fenghua-charity-2018 Chyi Yu sings harmony in a duet with 吳青峰."
+    "notes": "Cover; original performer 王菲, 1994. Concert cover-performance identity for statistics; at fenghua-charity-2018 Chyi Yu sings harmony in a duet with 吳青峰.",
+    "originalPerformers": [
+      "Faye Wong"
+    ]
   },
   {
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-ai-de-dai-jia-song"
+    ],
     "status": "partial",
     "id": "song-ai-de-dai-jia",
     "slug": "ai-de-dai-jia",
@@ -8367,12 +9414,17 @@
       "爱的代价"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
+    "lyricsBy": [
+      "person-li-tsung-sheng"
+    ],
     "composedBy": [
       "person-li-tsung-sheng"
     ],
     "arrangedBy": [],
-    "notes": "Cover; original performer 李宗盛 (張艾嘉 first sang), 李宗盛 composed. Concert cover-performance identity for statistics."
+    "notes": "Cover; 張艾嘉 first recorded the song, with 李宗盛 credited for lyrics and music. Concert cover-performance identity for statistics.",
+    "originalPerformers": [
+      "person-sylvia-chang"
+    ]
   },
   {
     "relatedReleases": [],
@@ -8387,19 +9439,27 @@
     "titleOriginal": null,
     "aliases": [],
     "language": "Mandarin",
-    "lyricsBy": [],
+    "lyricsBy": [
+      "person-wakin-chau"
+    ],
     "composedBy": [
       "person-wakin-chau"
     ],
     "arrangedBy": [],
-    "notes": "Cover; original performer 周華健, 1993. 周華健 composed. Concert cover-performance identity for statistics; performed as a duet with 周華健 at gan-en-charity-2017."
+    "notes": "Cover; original performer 周華健, 1993. 周華健 composed. Concert cover-performance identity for statistics; performed as a duet with 周華健 at gan-en-charity-2017.",
+    "originalPerformers": [
+      "person-wakin-chau"
+    ]
   },
   {
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-top-ten-chinese-gold-songs-1988",
+      "source-wikipedia-zh-sam-and-friends"
+    ],
     "status": "partial",
     "id": "song-shen-mo-shi-jin",
     "slug": "shen-mo-shi-jin",
@@ -8409,10 +9469,18 @@
       "沉默是金"
     ],
     "language": "Cantonese",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Sam Hui"
+    ],
+    "composedBy": [
+      "person-leslie-cheung"
+    ],
     "arrangedBy": [],
-    "notes": "Cover; original performer 許冠傑/張國榮, 1988 Cantonese. Concert cover-performance identity for statistics; performed as a medley with 海海人生 at fenghua-charity-2018."
+    "notes": "Cover; original performer 許冠傑/張國榮, 1988 Cantonese. Concert cover-performance identity for statistics; performed as a medley with 海海人生 at fenghua-charity-2018.",
+    "originalPerformers": [
+      "Sam Hui",
+      "person-leslie-cheung"
+    ]
   },
   {
     "relatedReleases": [],
@@ -8430,14 +9498,19 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "notes": "Cover; original performer 陳盈潔, 1988 Taiwanese. Concert cover-performance identity for statistics; performed as a medley with 沈默是金 at fenghua-charity-2018."
+    "notes": "Cover; original performer 陳盈潔, 1988 Taiwanese. Concert cover-performance identity for statistics; performed as a medley with 沈默是金 at fenghua-charity-2018.",
+    "originalPerformers": [
+      "Chen Yingjie"
+    ]
   },
   {
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-liang-hong-zhi"
+    ],
     "status": "partial",
     "id": "song-yi-dong-de-xin",
     "slug": "yi-dong-de-xin",
@@ -8447,12 +9520,17 @@
       "驿动的心"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
+    "lyricsBy": [
+      "person-liang-hong-zhi"
+    ],
     "composedBy": [
       "person-liang-hong-zhi"
     ],
     "arrangedBy": [],
-    "notes": "Cover; original performer 姜育恆, 1987. 梁弘志 composed. Concert cover-performance identity for statistics; performed as a group finale at jing-dian concerts."
+    "notes": "Cover; original performer 姜育恆, 1987. 梁弘志 composed. Concert cover-performance identity for statistics; performed as a group finale at jing-dian concerts.",
+    "originalPerformers": [
+      "Johnny Chiang"
+    ]
   },
   {
     "relatedReleases": [],
@@ -8469,10 +9547,17 @@
       "夜来香"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Li Jinguang"
+    ],
+    "composedBy": [
+      "Li Jinguang"
+    ],
     "arrangedBy": [],
-    "notes": "Cover; original performer 李香蘭, 1944 classic. 黎錦光 composed. Concert cover-performance identity for statistics; part of an opening suite at fenghua-charity-2018."
+    "notes": "Cover; original performer 李香蘭, 1944 classic. 黎錦光 composed. Concert cover-performance identity for statistics; part of an opening suite at fenghua-charity-2018.",
+    "originalPerformers": [
+      "Li Xianglan"
+    ]
   },
   {
     "relatedReleases": [],
@@ -8492,14 +9577,19 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "notes": "Cover; original performer 齊秦, 1990. Concert cover-performance identity for statistics; performed as a duet with 齊秦 at tian-shi-yu-lang-2008."
+    "notes": "Cover; original performer 齊秦, 1990. Concert cover-performance identity for statistics; performed as a duet with 齊秦 at tian-shi-yu-lang-2008.",
+    "originalPerformers": [
+      "person-chi-chin"
+    ]
   },
   {
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-en-and-i-love-you-so-song"
+    ],
     "status": "partial",
     "id": "song-and-i-love-you-so",
     "slug": "and-i-love-you-so",
@@ -8507,17 +9597,26 @@
     "titleOriginal": null,
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Don McLean"
+    ],
+    "composedBy": [
+      "Don McLean"
+    ],
     "arrangedBy": [],
-    "notes": "Cover; original performer Perry Como, 1975. Concert cover-performance identity for statistics; performed at mei-li-ren-sheng-1999-taipei."
+    "notes": "Cover; Don McLean wrote and first released the song; Perry Como’s 1973 recording is a later popular version. Concert cover-performance identity for statistics; performed at mei-li-ren-sheng-1999-taipei.",
+    "originalPerformers": [
+      "Don McLean"
+    ]
   },
   {
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-en-dancing-queen-song"
+    ],
     "status": "partial",
     "id": "song-dancing-queen",
     "slug": "dancing-queen",
@@ -8525,17 +9624,30 @@
     "titleOriginal": null,
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Benny Andersson",
+      "Björn Ulvaeus",
+      "Stig Anderson"
+    ],
+    "composedBy": [
+      "Benny Andersson",
+      "Björn Ulvaeus",
+      "Stig Anderson"
+    ],
     "arrangedBy": [],
-    "notes": "Cover; original performer ABBA, 1976. Concert cover-performance identity for statistics; group closing number at zhen-ai-nv-ren-2017-macau."
+    "notes": "Cover; original performer ABBA, 1976. Concert cover-performance identity for statistics; group closing number at zhen-ai-nv-ren-2017-macau.",
+    "originalPerformers": [
+      "ABBA"
+    ]
   },
   {
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-en-when-will-i-see-you-again-song"
+    ],
     "status": "partial",
     "id": "song-when-will-i-see-you-again",
     "slug": "when-will-i-see-you-again",
@@ -8543,17 +9655,28 @@
     "titleOriginal": null,
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Kenny Gamble",
+      "Leon Huff"
+    ],
+    "composedBy": [
+      "Kenny Gamble",
+      "Leon Huff"
+    ],
     "arrangedBy": [],
-    "notes": "Cover; original performer The Three Degrees, 1974. Concert cover-performance identity for statistics; group number at zhen-ai-nv-ren-2017-macau."
+    "notes": "Cover; original performer The Three Degrees, 1974. Concert cover-performance identity for statistics; group number at zhen-ai-nv-ren-2017-macau.",
+    "originalPerformers": [
+      "The Three Degrees"
+    ]
   },
   {
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-qiu-chen"
+    ],
     "status": "partial",
     "id": "song-kan-wo-ting-wo",
     "slug": "kan-wo-ting-wo",
@@ -8563,10 +9686,17 @@
       "看我看我"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Qiu Chen"
+    ],
+    "composedBy": [
+      "Qiu Chen"
+    ],
     "arrangedBy": [],
-    "notes": "Campus folk song (校園民歌). Concert cover-performance identity for statistics; performed as a duet with 趙詠華 at fenghua-charity-2018."
+    "notes": "Campus folk song (校園民歌). Concert cover-performance identity for statistics; performed as a duet with 趙詠華 at fenghua-charity-2018.",
+    "originalPerformers": [
+      "Pao Mei-sheng"
+    ]
   },
   {
     "relatedReleases": [],
@@ -8584,9 +9714,14 @@
     ],
     "language": "Mandarin",
     "lyricsBy": [],
-    "composedBy": [],
+    "composedBy": [
+      "Su Lai"
+    ],
     "arrangedBy": [],
-    "notes": "Campus folk song (校園民歌); 蘇來 composed, 陳明韶 original 1980. Concert cover-performance identity for statistics; performed as a duet with 趙詠華 at fenghua-charity-2018."
+    "notes": "Campus folk song (校園民歌); 蘇來 composed, 陳明韶 original 1980. Concert cover-performance identity for statistics; performed as a duet with 趙詠華 at fenghua-charity-2018.",
+    "originalPerformers": [
+      "Chen Ming-shao"
+    ]
   },
   {
     "relatedReleases": [],
@@ -8604,9 +9739,14 @@
     ],
     "language": "Mandarin",
     "lyricsBy": [],
-    "composedBy": [],
+    "composedBy": [
+      "Wang Menglin"
+    ],
     "arrangedBy": [],
-    "notes": "Campus folk song (校園民歌); 王夢麟 composed/original 1980. Concert cover-performance identity for statistics; performed as a duet with 趙詠華 at fenghua-charity-2018."
+    "notes": "Campus folk song (校園民歌); 王夢麟 composed/original 1980. Concert cover-performance identity for statistics; performed as a duet with 趙詠華 at fenghua-charity-2018.",
+    "originalPerformers": [
+      "Wang Menglin"
+    ]
   },
   {
     "relatedReleases": [],
@@ -8633,7 +9773,9 @@
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-flash-days-tv"
+    ],
     "status": "partial",
     "id": "song-qian-gua",
     "slug": "qian-gua",
@@ -8643,10 +9785,17 @@
       "牵挂"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Hong Xiaoqiao"
+    ],
+    "composedBy": [
+      "Hong Xiaoqiao"
+    ],
     "arrangedBy": [],
-    "notes": "Campus folk song (校園民歌). Concert cover-performance identity for statistics; performed in a medley with 不曾告別 at Echo shows."
+    "notes": "Campus folk song (校園民歌). Concert cover-performance identity for statistics; performed in a medley with 不曾告別 at Echo shows.",
+    "originalPerformers": [
+      "Huang Zhongkun"
+    ]
   },
   {
     "relatedReleases": [],
@@ -8664,7 +9813,10 @@
     "lyricsBy": [],
     "composedBy": [],
     "arrangedBy": [],
-    "notes": "Cover; original performer 蔡琴. Concert cover-performance identity for statistics; performed at echoes-back-2022."
+    "notes": "Cover; original performer 蔡琴. Concert cover-performance identity for statistics; performed at echoes-back-2022.",
+    "originalPerformers": [
+      "Tsai Chin"
+    ]
   },
   {
     "relatedReleases": [],
@@ -8718,16 +9870,25 @@
     "title": "Today",
     "aliases": [],
     "language": "en",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Randy Sparks"
+    ],
+    "composedBy": [
+      "Randy Sparks"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
-    "notes": "Added as a live cover-performance identity from the 2025 Hangzhou Yu Jian setlist; credits pending.",
-    "status": "needs-source"
+    "sources": [
+      "source-wikipedia-en-today-new-christy-minstrels-song"
+    ],
+    "notes": "Added as a live cover-performance identity from the 2025 Hangzhou Yu Jian setlist; mapped to Randy Sparks / The New Christy Minstrels song metadata pending event-specific confirmation.",
+    "status": "partial",
+    "originalPerformers": [
+      "The New Christy Minstrels"
+    ]
   },
   {
     "id": "song-donna-donna",
@@ -8737,16 +9898,24 @@
       "Dona Dona"
     ],
     "language": "en",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Aaron Zeitlin",
+      "Arthur Kevess",
+      "Teddi Schwartz"
+    ],
+    "composedBy": [
+      "Sholom Secunda"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
-    "notes": "Added as a live cover-performance identity from the 2025 Hangzhou Yu Jian setlist; credits pending.",
-    "status": "needs-source"
+    "sources": [
+      "source-wikipedia-en-dona-dona-song"
+    ],
+    "notes": "Added as a live cover-performance identity from the 2025 Hangzhou Yu Jian setlist; writer fields follow the common English “Dona, Dona / Donna Donna” source.",
+    "status": "partial"
   },
   {
     "id": "song-nan-ping-wan-zhong",
@@ -8763,16 +9932,25 @@
       "Nan Ping Wan Zhong"
     ],
     "language": "zh",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Chen Dieyi"
+    ],
+    "composedBy": [
+      "Wang Fuling"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
-    "notes": "Added as a live cover-performance identity from the 2025 Hangzhou Yu Jian era medley; credits pending.",
-    "status": "needs-source"
+    "sources": [
+      "source-wikipedia-zh-nanping-evening-bell-song"
+    ],
+    "notes": "Added as a live cover-performance identity from the 2025 Hangzhou Yu Jian era medley; credits and original performer populated from the 南屏晚鐘 source.",
+    "status": "partial",
+    "originalPerformers": [
+      "Cui Ping"
+    ]
   },
   {
     "id": "song-mu-qin-wo-ai-ni",
@@ -8840,16 +10018,25 @@
       "Kang Ding Qing Ge"
     ],
     "language": "zh",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Traditional"
+    ],
+    "composedBy": [
+      "Traditional"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-kangding-qingge"
+    ],
     "notes": "Added as a live duet-performance identity from the 1991 Beijing Kuang Biao timestamped comment setlist; credits pending.",
-    "status": "needs-source"
+    "status": "needs-source",
+    "originalPerformers": [
+      "Yu Yixuan"
+    ]
   },
   {
     "id": "song-pu-ti-shu",
@@ -8891,16 +10078,27 @@
       "Zai Na Yao Yuan De Di Fang"
     ],
     "language": "zh",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Traditional",
+      "Wang Luobin"
+    ],
+    "composedBy": [
+      "Traditional",
+      "Wang Luobin"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-zai-na-yao-yuan-de-di-fang-song"
+    ],
     "notes": "Added as a live-performance identity from the 2009 Beijing The Voice multipart page metadata; credits pending.",
-    "status": "needs-source"
+    "status": "needs-source",
+    "originalPerformers": [
+      "Hu Ran"
+    ]
   },
   {
     "id": "song-wo-ai-ni-zhong-guo",
@@ -8916,16 +10114,25 @@
       "Wo Ai Ni Zhong Guo"
     ],
     "language": "zh",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Qu Cong"
+    ],
+    "composedBy": [
+      "Zheng Qiufeng"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-zh-wo-ai-ni-zhongguo-song"
+    ],
     "notes": "Added as a live-performance identity from the 2009 Beijing The Voice multipart page metadata; credits pending.",
-    "status": "needs-source"
+    "status": "needs-source",
+    "originalPerformers": [
+      "Ye Peiying"
+    ]
   },
   {
     "id": "song-nu-ren-yu-xiao-hai",
@@ -8967,15 +10174,22 @@
     ],
     "language": "zh",
     "lyricsBy": [],
-    "composedBy": [],
+    "composedBy": [
+      "Pyotr Ilyich Tchaikovsky"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
-    "sources": [],
+    "sources": [
+      "source-wikipedia-en-swan-lake"
+    ],
     "notes": "Added as a live-performance identity from the 2009 Beijing The Voice multipart page metadata; credits pending.",
-    "status": "needs-source"
+    "status": "needs-source",
+    "originalPerformers": [
+      "Bolshoi Ballet"
+    ]
   },
   {
     "id": "song-tie-xue-dan-xin",
@@ -8992,17 +10206,26 @@
       "Tie Xue Dan Xin"
     ],
     "language": "Cantonese",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "Deng Weixiong"
+    ],
+    "composedBy": [
+      "Joseph Koo"
+    ],
     "arrangedBy": [],
     "relatedReleases": [],
     "knownConcerts": [],
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": [
-      "source-youtube-wakin-shao-nian-xia-ke-2021-tiexue-official"
+      "source-youtube-wakin-shao-nian-xia-ke-2021-tiexue-official",
+      "source-wikipedia-zh-top-ten-chinese-gold-songs-1988"
     ],
-    "notes": "Live cover-performance identity for Wakin Chau / Chyi Yu guest segments; original 1983 射鵰英雄傳 theme performed by 羅文 and 甄妮. Detailed credits pending.",
-    "status": "partial"
+    "notes": "Live cover-performance identity for Wakin Chau / Chyi Yu guest segments; original 1983 射鵰英雄傳 theme performed by 羅文 and 甄妮. Credits populated from public song-award/source metadata.",
+    "status": "partial",
+    "originalPerformers": [
+      "Roman Tam",
+      "Jenny Tseng"
+    ]
   }
 ]
