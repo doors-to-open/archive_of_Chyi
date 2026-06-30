@@ -4,6 +4,7 @@ import SongSummaryCard from "../components/SongSummaryCard.astro";
 import { buildSearchEntries, songSummaries } from "../lib/archive";
 import {
   countValues,
+  creditSummaryValues,
   creditTitleValues,
   i18nAttrs,
   i18nEmptyAttrs,
@@ -66,25 +67,33 @@ const categories = Array.from(
         />
       ))}
 
-      {nonSongEntries.map((entry) => (
-        <a
-          class="record-card"
-          href={entry.href}
-          hidden
-          data-filter-item
-          data-category={entry.filterCategory}
-          data-search={`${entry.title} ${entry.summary} ${entry.meta} ${entry.searchText}`}
-        >
-          <h2 {...i18nAttrs(creditTitleValues(entry))}>{valueForLocale(creditTitleValues(entry)) || entry.title}</h2>
-          <p>
-            <span {...i18nAttrs(sourceCategoryValues(entry.filterCategory))}>
-              {valueForLocale(sourceCategoryValues(entry.filterCategory)) || entry.category}
-            </span>
-            {entry.summary ? ` / ${entry.summary}` : ""}
-          </p>
-          {entry.meta ? <div class="meta-row"><span>{entry.meta}</span></div> : null}
-        </a>
-      ))}
+      {nonSongEntries.map((entry) => {
+        const summaryValues = creditSummaryValues(entry);
+        return (
+          <a
+            class="record-card"
+            href={entry.href}
+            hidden
+            data-filter-item
+            data-category={entry.filterCategory}
+            data-search={`${entry.title} ${entry.summary} ${Object.values(summaryValues).join(" ")} ${entry.meta} ${entry.searchText}`}
+          >
+            <h2 {...i18nAttrs(creditTitleValues(entry))}>{valueForLocale(creditTitleValues(entry)) || entry.title}</h2>
+            <p>
+              <span {...i18nAttrs(sourceCategoryValues(entry.filterCategory))}>
+                {valueForLocale(sourceCategoryValues(entry.filterCategory)) || entry.category}
+              </span>
+              {entry.summary ? (
+                <>
+                  {" / "}
+                  <span {...i18nAttrs(summaryValues)}>{valueForLocale(summaryValues)}</span>
+                </>
+              ) : null}
+            </p>
+            {entry.meta ? <div class="meta-row"><span>{entry.meta}</span></div> : null}
+          </a>
+        );
+      })}
     </div>
 
     <p

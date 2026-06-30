@@ -11,14 +11,16 @@ import {
   concertSeriesHomeStages,
   concertYearStage,
   concerts,
-  personName,
-  personNames
+  personName
 } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
 import {
   concertCategoryValues,
+  concertCityValues,
+  concertCountryOrRegionValues,
   concertDisplayTitleValues,
   concertNatureValues,
+  concertVenueValues,
   countValues,
   i18nAttrs,
   i18nCountLabelAttrs,
@@ -47,6 +49,16 @@ function titleAlpha(concert: typeof concerts[number]) {
   return Object.values(concertDisplayTitleValues(concert)).join(" ").toLocaleLowerCase("en-US");
 }
 
+function valuesText(values: LocaleValues) {
+  return Object.values(values).join(" ");
+}
+
+function personListSearchText(ids: string[] | undefined) {
+  return ids?.length
+    ? ids.flatMap((id) => Object.values(personIdValues(id))).join(" ")
+    : "";
+}
+
 function concertSearchText(concert: typeof concerts[number]) {
   return [
     concert.title,
@@ -54,15 +66,18 @@ function concertSearchText(concert: typeof concerts[number]) {
     concert.date,
     concert.eventType,
     concert.venue,
+    valuesText(concertVenueValues(concert)),
     concert.city,
+    valuesText(concertCityValues(concert)),
     concert.countryOrRegion,
+    valuesText(concertCountryOrRegionValues(concert)),
     concert.nature,
     concert.category,
     concert.anniversaryYear,
     concert.groupTitle,
     ...Object.values(concert.groupTitleLocalized || {}),
-    personNames(concert.guests),
-    personNames(concert.performers)
+    personListSearchText(concert.guests),
+    personListSearchText(concert.performers)
   ].filter(Boolean).join(" ");
 }
 
@@ -152,9 +167,9 @@ function hostTitle(host: string | null | undefined) {
   return host
     ? personIdValues(host)
     : textValues(
-      "Host not recorded",
-      "\u4e3b\u8fa6\u672a\u8a18\u9304",
-      "\u4e3b\u529e\u672a\u8bb0\u5f55"
+      "Host artist not recorded",
+      "\u4e3b\u5834\u85dd\u4eba\u672a\u8a18\u9304",
+      "\u4e3b\u573a\u827a\u4eba\u672a\u8bb0\u5f55"
     );
 }
 
@@ -314,7 +329,7 @@ const noGuestsLabel = textValues("No guests", "\u7121\u5609\u8cd3", "\u65e0\u560
             <span {...i18nAttrs(uiText("option.allAtOnce"))}>{valueForLocale(uiText("option.allAtOnce"))}</span>
           </button>
           <button type="button" data-guest-view-option data-guest-view-value="host" aria-pressed="false">
-            <span {...i18nAttrs(textValues("By Host", "\u6309\u4e3b\u8fa6", "\u6309\u4e3b\u529e"))}>{valueForLocale(textValues("By Host", "\u6309\u4e3b\u8fa6", "\u6309\u4e3b\u529e"))}</span>
+            <span {...i18nAttrs(textValues("By host artist", "\u4f9d\u4e3b\u5834\u85dd\u4eba", "\u6309\u4e3b\u573a\u827a\u4eba"))}>{valueForLocale(textValues("By host artist", "\u4f9d\u4e3b\u5834\u85dd\u4eba", "\u6309\u4e3b\u573a\u827a\u4eba"))}</span>
           </button>
         </div>
       </fieldset>

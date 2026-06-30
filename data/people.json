@@ -1701,9 +1701,15 @@
     "id": "person-johnny-chen",
     "slug": "johnny-chen",
     "displayName": "Johnny Chen",
-    "nameOriginal": null,
-    "aliases": [],
+    "nameOriginal": "小蟲",
+    "aliases": [
+      "Chen Huan-chang",
+      "Chen Huan Chang",
+      "Jonny Chen",
+      "小虫"
+    ],
     "roles": [
+      "lyricist",
       "composer"
     ],
     "sources": [],
@@ -1742,6 +1748,87 @@
     "id": "person-gary-baker",
     "slug": "gary-baker",
     "displayName": "Gary Baker",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-heidi-h-chen",
+    "slug": "heidi-h-chen",
+    "displayName": "Heidi H. Chen",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-ivan-lins",
+    "slug": "ivan-lins",
+    "displayName": "Ivan Lins",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-vitor-martins",
+    "slug": "vitor-martins",
+    "displayName": "Vitor Martins",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-herb-alpert",
+    "slug": "herb-alpert",
+    "displayName": "Herb Alpert",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-lou-adler",
+    "slug": "lou-adler",
+    "displayName": "Lou Adler",
+    "nameOriginal": null,
+    "aliases": [],
+    "roles": [
+      "lyricist",
+      "composer"
+    ],
+    "sources": [],
+    "notes": "External songwriter credited on a Chyi Yu cover album or appearance.",
+    "status": "partial"
+  },
+  {
+    "id": "person-sam-cooke",
+    "slug": "sam-cooke",
+    "displayName": "Sam Cooke",
     "nameOriginal": null,
     "aliases": [],
     "roles": [

@@ -270,10 +270,13 @@ function bodyFor(params: ContributionIssueParams) {
       ]),
       ...section("Information", [
         "Date:",
-        "Appearance type: talk show / film / soundtrack / podcast / interview / documentary / book / article / other",
+        "Appearance type: OST vocal appearance / guest vocal album or single / interview / talk show / podcast / screen guest appearance / other",
         "Program or work:",
         "Role:",
+        "Host(s), if interview/talk show/podcast:",
+        "Work release date / director / leading cast, if movie or series:",
         "Related song(s):",
+        "Performed song(s), if any:",
         "Known media links:"
       ]),
       ...section("Sources", sourceLines()),

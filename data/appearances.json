@@ -5,7 +5,7 @@
     "title": "Eight Taels of Gold OST",
     "titleOriginal": "八兩金 OST",
     "date": "1989-12-21",
-    "appearanceType": "soundtrack",
+    "appearanceType": "ost-vocal-appearance",
     "programOrWork": "Eight Taels of Gold",
     "role": "OST vocal appearance",
     "relatedSongs": [
@@ -35,10 +35,18 @@
         "url": "https://www.imdb.com/title/tt0099079/",
         "kind": "metadata",
         "isOfficial": false
+      },
+      {
+        "label": "Letterboxd film record",
+        "platform": "letterboxd",
+        "url": "https://letterboxd.com/film/eight-taels-of-gold/",
+        "kind": "metadata",
+        "isOfficial": false
       }
     ],
     "sources": [
       "source-user-task-0618-2",
+      "source-user-task-0630-3",
       "source-douban-eight-taels-of-gold",
       "source-wikipedia-zh-eight-taels-of-gold-film",
       "source-qq-music-eight-taels-of-gold-ost"
@@ -93,7 +101,7 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "notes": "Chyi Yu vocal appearance on the film soundtrack; lyricist/composer credits remain unresolved in the public sources checked."
+        "notes": "Maintainer-confirmed lyricless Chyi Yu chant/vocalise on the film soundtrack; composer credit remains unresolved in the public sources checked."
       },
       {
         "position": 3,
@@ -102,7 +110,7 @@
         "titleLocalized": {
           "en": "Mess",
           "zh-Hant": "亂",
-          "zh-Hans": "亂"
+          "zh-Hans": "乱"
         },
         "role": "vocal appearance",
         "performers": [
@@ -113,7 +121,7 @@
           "lyricsBy": [],
           "composedBy": []
         },
-        "notes": "Chyi Yu vocal appearance on the film soundtrack; lyricist/composer credits remain unresolved in the public sources checked."
+        "notes": "Maintainer-confirmed lyricless Chyi Yu chant/vocalise on the film soundtrack; composer credit remains unresolved in the public sources checked."
       }
     ]
   },
@@ -126,11 +134,12 @@
     },
     "titleOriginal": "Turning",
     "date": "1999-09-14",
-    "appearanceType": "collaboration",
+    "appearanceType": "album-guest-vocal",
     "programOrWork": "Turning",
     "role": "vocal appearance",
     "relatedSongs": [
-      "song-turning"
+      "song-turning",
+      "song-flying-bird-and-fish"
     ],
     "tracks": [
       {
@@ -153,6 +162,28 @@
           ]
         },
         "notes": "Only the title track is retained as the Chyi Yu voice-appearance record. The user-supplied QQ short link resolves to Suzanne Ciani album MID 002HM2yh0OU8N2; the earlier QQ collaboration source lists Chyi Yu and Suzanne Ciani on the title-track candidate, so Chyi Yu is retained here pending booklet-level credits."
+      },
+      {
+        "position": null,
+        "song": "song-flying-bird-and-fish",
+        "title": "Bird & Fish",
+        "titleLocalized": {
+          "en": "Bird & Fish",
+          "zh-Hant": "飛鳥與魚（演奏版本）",
+          "zh-Hans": "飞鸟与鱼（演奏版本）"
+        },
+        "role": "related instrumental track",
+        "performers": [
+          "person-suzanne-ciani"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [],
+          "composedBy": [
+            "person-chi-chin"
+          ]
+        },
+        "notes": "Maintainer task note identifies Bird & Fish on Turning as an instrumental-like version related to Chyi Yu's 飛鳥與魚."
       }
     ],
     "mediaLinks": [
@@ -177,9 +208,10 @@
     "sources": [
       "source-qq-music-turning-suzanne-ciani-1999",
       "source-qq-music-turning-collaboration",
-      "source-user-task-0623-1"
+      "source-user-task-0623-1",
+      "source-user-task-0630-3"
     ],
-    "notes": "Moved from Releases to Appearances per the release wrap-up task. The user-supplied QQ short link resolves to a 12-track Suzanne Ciani album dated 1999-09-14; only the title track is retained here as the Chyi Yu-related voice-appearance record.",
+    "notes": "Moved from Releases to Appearances per the release wrap-up task. The user-supplied QQ short link resolves to a 12-track Suzanne Ciani album dated 1999-09-14; the title track is retained as the Chyi Yu voice-appearance record, and Bird & Fish is included as a maintainer-confirmed instrumental relation to 飛鳥與魚.",
     "status": "partial"
   },
   {
@@ -193,144 +225,100 @@
     },
     "titleOriginal": "天浴 OST",
     "date": "1998",
-    "appearanceType": "soundtrack",
+    "appearanceType": "ost-vocal-appearance",
     "programOrWork": "Xiu Xiu: The Sent Down Girl",
     "role": "OST vocal appearance",
-    "relatedSongs": [],
+    "workDetails": {
+      "releaseDate": "1998",
+      "directors": [
+        {
+          "name": "Joan Chen",
+          "nameLocalized": {
+            "en": "Joan Chen",
+            "zh-Hant": "陳冲",
+            "zh-Hans": "陈冲"
+          }
+        }
+      ],
+      "leadingCast": [
+        {
+          "name": "Li Xiaolu",
+          "nameLocalized": {
+            "en": "Li Xiaolu",
+            "zh-Hant": "李小璐",
+            "zh-Hans": "李小璐"
+          }
+        },
+        {
+          "name": "Lopsang",
+          "nameLocalized": {
+            "en": "Lopsang",
+            "zh-Hant": "洛桑群培",
+            "zh-Hans": "洛桑群培"
+          }
+        }
+      ]
+    },
+    "relatedSongs": [
+      "song-xi-yu-ye-ye-de-cao-yuan"
+    ],
     "tracks": [
       {
         "position": 1,
-        "song": null,
-        "title": "Windflower",
+        "song": "song-xi-yu-ye-ye-de-cao-yuan",
+        "title": "慾水",
         "titleLocalized": {
-          "en": "Windflower",
-          "zh-Hant": "風之花",
-          "zh-Hans": "风之花"
+          "en": "Desirous Water",
+          "zh-Hant": "慾水",
+          "zh-Hans": "欲水"
         },
-        "role": "vocal appearance",
+        "role": "Chinese theme-song vocal appearance",
         "performers": [
           "person-chyi-yu"
         ],
-        "duration": null,
+        "duration": "4:42",
         "credits": {
           "lyricsBy": [
-            "person-jimmy-seals",
-            "person-dan-crofts"
-          ],
-          "composedBy": [
-            "person-jimmy-seals",
-            "person-dan-crofts"
-          ]
-        },
-        "notes": "Chyi Yu page soundtrack table lists original credit as Seals, Jimmy/Crofts, Dan."
-      },
-      {
-        "position": 2,
-        "song": null,
-        "title": "Whispering Steppes",
-        "titleLocalized": {
-          "en": "Whispering Steppes",
-          "zh-Hant": "細雨咽咽的的草原",
-          "zh-Hans": "细雨咽咽的的草原"
-        },
-        "role": "vocal appearance",
-        "performers": [
-          "person-chyi-yu"
-        ],
-        "duration": null,
-        "credits": {
-          "lyricsBy": [
-            "person-chyi-yu"
+            "person-johnny-chen"
           ],
           "composedBy": [
             "person-johnny-chen"
           ]
         },
-        "notes": "Chyi Yu page soundtrack table gives words by Chyi Yu and composition/arrangement by Johnny Chen."
-      },
-      {
-        "position": 3,
-        "song": null,
-        "title": "Turning",
-        "titleLocalized": {
-          "en": "Turning",
-          "zh-Hant": "流轉",
-          "zh-Hans": "流转"
-        },
-        "role": "vocal appearance",
-        "performers": [
-          "person-chyi-yu"
-        ],
-        "duration": null,
-        "credits": {
-          "lyricsBy": [],
-          "composedBy": [
-            "person-suzanne-ciani"
-          ]
-        },
-        "notes": "Chyi Yu page soundtrack table lists original credit as Suzanne Ciani."
-      },
-      {
-        "position": 4,
-        "song": null,
-        "title": "The Rose",
-        "titleLocalized": {
-          "en": "The Rose",
-          "zh-Hant": "玫瑰",
-          "zh-Hans": "玫瑰"
-        },
-        "role": "vocal appearance",
-        "performers": [
-          "person-chyi-yu",
-          "person-sandy-lam"
-        ],
-        "duration": null,
-        "credits": {
-          "lyricsBy": [
-            "person-amanda-mcbroom"
-          ],
-          "composedBy": [
-            "person-amanda-mcbroom"
-          ]
-        },
-        "notes": "Chyi Yu page soundtrack table lists this Chyi Yu/Sandy Lam duet with Amanda McBroom original-credit context; spelling normalized against The Rose song source."
-      },
-      {
-        "position": 5,
-        "song": null,
-        "title": "I Swear",
-        "titleLocalized": {
-          "en": "I Swear",
-          "zh-Hant": "我發誓",
-          "zh-Hans": "我发誓"
-        },
-        "role": "vocal appearance",
-        "performers": [
-          "person-chyi-yu",
-          "person-sandy-lam",
-          "person-teresa-carpio",
-          "person-prudence-liew"
-        ],
-        "duration": null,
-        "credits": {
-          "lyricsBy": [
-            "person-frank-myers",
-            "person-gary-baker"
-          ],
-          "composedBy": [
-            "person-frank-myers",
-            "person-gary-baker"
-          ]
-        },
-        "notes": "Chyi Yu page soundtrack table lists this quartet vocal appearance and original credit as Frank Myers/Gary Baker."
+        "notes": "Official Rolling Records video labels 慾水 / Desirous Water as the Chinese theme song for 天浴. Mainland-platform availability was not found in this source pass; this track is linked to the C'est La Vie placement identified by the 2026-06-30 task note as the English-version relationship."
       }
     ],
-    "mediaLinks": [],
-    "sources": [
-      "source-wikipedia-en-chyi-yu",
-      "source-wikipedia-the-rose-song"
+    "mediaLinks": [
+      {
+        "label": "Official YouTube music video",
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=lnJ0m5pYLbI",
+        "kind": "watch",
+        "isOfficial": true,
+        "accessRegion": "Global",
+        "notes": "Rolling Records official upload for 齊豫【慾水 Desirous Water】電影「天浴 Xiu Xiu: The Sent-down Girl」中文主題曲."
+      },
+      {
+        "label": "IMDb film record",
+        "platform": "imdb",
+        "url": "https://www.imdb.com/title/tt0115005/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "Letterboxd film record",
+        "platform": "letterboxd",
+        "url": "https://letterboxd.com/film/xiu-xiu-the-sent-down-girl/",
+        "kind": "metadata",
+        "isOfficial": false
+      }
     ],
-    "notes": "Moved from Releases to Appearances because this is soundtrack/film vocal material rather than a Chyi Yu release. The soundtrack appearance title now follows the film-title + OST rule; the retained tracks are the Chyi Yu vocal appearances listed in the Chyi Yu page soundtrack table, with songwriter/composer credits populated where the checked sources support them.",
+    "sources": [
+      "source-youtube-rockrecords-yu-shui",
+      "source-user-task-0630-3",
+      "source-wikipedia-en-chyi-yu"
+    ],
+    "notes": "Narrowed per the 2026-06-30 appearance-audit task: 慾水 is the retained 天浴 OST vocal appearance. Earlier carry-over rows for Windflower, Turning, The Rose, and I Swear were removed from this OST container; The Rose/I Swear remain modeled through release or guest-vocal contexts instead.",
     "status": "partial"
   },
   {
@@ -342,6 +330,24 @@
     "appearanceType": "talk-show",
     "programOrWork": "Kangsi Coming",
     "role": "Guest",
+    "hosts": [
+      {
+        "name": "Kevin Tsai",
+        "nameLocalized": {
+          "en": "Kevin Tsai",
+          "zh-Hant": "蔡康永",
+          "zh-Hans": "蔡康永"
+        }
+      },
+      {
+        "name": "Dee Hsu",
+        "nameLocalized": {
+          "en": "Dee Hsu",
+          "zh-Hant": "徐熙娣",
+          "zh-Hans": "徐熙娣"
+        }
+      }
+    ],
     "relatedSongs": [],
     "mediaLinks": [
       {
@@ -371,7 +377,7 @@
       "zh-Hans": "印象·刘三姐 OST"
     },
     "date": "2003",
-    "appearanceType": "soundtrack",
+    "appearanceType": "ost-vocal-appearance",
     "programOrWork": "Impression Liu Sanjie",
     "role": "OST vocal appearance",
     "relatedSongs": [],
@@ -435,7 +441,7 @@
       "zh-Hans": "明天会更好"
     },
     "date": "1985",
-    "appearanceType": "collaboration",
+    "appearanceType": "album-guest-vocal",
     "programOrWork": "Tomorrow Will Be Better",
     "role": "charity single vocal appearance",
     "relatedSongs": [],
@@ -507,7 +513,7 @@
       "zh-Hans": "大明风华 OST"
     },
     "date": "2019-12-25",
-    "appearanceType": "soundtrack",
+    "appearanceType": "ost-vocal-appearance",
     "programOrWork": "大明风华",
     "role": "OST vocal appearance",
     "relatedSongs": [],
@@ -567,7 +573,7 @@
       "zh-Hans": "快乐天堂"
     },
     "date": "1987-01-15",
-    "appearanceType": "collaboration",
+    "appearanceType": "album-guest-vocal",
     "programOrWork": "快乐天堂",
     "role": "album vocal appearance",
     "relatedSongs": [],
@@ -639,7 +645,7 @@
       "zh-Hans": "继园台七号 OST"
     },
     "date": "2020-11-17",
-    "appearanceType": "soundtrack",
+    "appearanceType": "ost-vocal-appearance",
     "programOrWork": "繼園臺七號",
     "role": "OST vocal appearance",
     "relatedSongs": [],
@@ -712,7 +718,7 @@
       "zh-Hans": "左耳 OST"
     },
     "date": "2017-09-04",
-    "appearanceType": "soundtrack",
+    "appearanceType": "ost-vocal-appearance",
     "programOrWork": "左耳",
     "role": "OST vocal appearance",
     "relatedSongs": [],
@@ -774,7 +780,7 @@
       "zh-Hans": "神雕侠侣 OST"
     },
     "date": "1995-07-31",
-    "appearanceType": "soundtrack",
+    "appearanceType": "ost-vocal-appearance",
     "programOrWork": "神雕侠侣",
     "role": "OST vocal appearance",
     "relatedSongs": [],
@@ -846,6 +852,513 @@
     "status": "partial"
   },
   {
+    "id": "appearance-jin-nian-hu-pan-hui-hen-leng-ost",
+    "slug": "jin-nian-hu-pan-hui-hen-leng-ost",
+    "title": "Beside the Lonely Lake OST",
+    "titleOriginal": "今年的湖畔會很冷 OST",
+    "titleLocalized": {
+      "en": "Beside the Lonely Lake OST",
+      "zh-Hant": "今年的湖畔會很冷 OST",
+      "zh-Hans": "今年的湖畔会很冷 OST"
+    },
+    "date": "1983",
+    "appearanceType": "ost-vocal-appearance",
+    "programOrWork": "Beside the Lonely Lake",
+    "role": "OST vocal appearance",
+    "workDetails": {
+      "releaseDate": "1983",
+      "directors": [
+        {
+          "name": "Chin-jin Yeh",
+          "nameLocalized": {
+            "en": "Chin-jin Yeh",
+            "zh-Hant": "葉金淦",
+            "zh-Hans": "叶金淦"
+          }
+        }
+      ],
+      "leadingCast": [
+        {
+          "name": "Joey Wang",
+          "nameLocalized": {
+            "en": "Joey Wang",
+            "zh-Hant": "王祖賢",
+            "zh-Hans": "王祖贤"
+          }
+        },
+        {
+          "name": "Yung-Hung Huang",
+          "nameLocalized": {
+            "en": "Yung-Hung Huang",
+            "zh-Hant": "黃永洪",
+            "zh-Hans": "黄永洪"
+          }
+        },
+        {
+          "name": "Ping-Nan Hsieh",
+          "nameLocalized": {
+            "en": "Ping-Nan Hsieh",
+            "zh-Hant": "謝屏楠",
+            "zh-Hans": "谢屏楠"
+          }
+        }
+      ]
+    },
+    "relatedSongs": [
+      "song-you-are-all-my-memories",
+      "song-jin-nian-de-hu-pan-hui-hen-leng",
+      "song-fu-yun-ge"
+    ],
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-jin-nian-de-hu-pan-hui-hen-leng",
+        "title": "今年的湖畔會很冷",
+        "titleLocalized": {
+          "zh-Hant": "今年的湖畔會很冷",
+          "zh-Hans": "今年的湖畔会很冷"
+        },
+        "role": "theme-song vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [
+            "person-shen-lu-bai"
+          ],
+          "composedBy": [
+            "person-li-tai-hsiang"
+          ]
+        },
+        "notes": "Listed in the maintainer task as a Chyi Yu vocal appearance for this film."
+      },
+      {
+        "position": 2,
+        "song": "song-you-are-all-my-memories",
+        "title": "你是我所有的回憶",
+        "titleLocalized": {
+          "en": "You Are All My Memories",
+          "zh-Hant": "你是我所有的回憶",
+          "zh-Hans": "你是我所有的回忆"
+        },
+        "role": "insert-song vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [
+            "person-hou-dejian"
+          ],
+          "composedBy": [
+            "person-li-tai-hsiang"
+          ]
+        },
+        "notes": "The National Cultural Memory Bank poster text and the maintainer task connect this Chyi Yu song to the film."
+      },
+      {
+        "position": 3,
+        "song": "song-fu-yun-ge",
+        "title": "浮雲歌",
+        "titleLocalized": {
+          "zh-Hant": "浮雲歌",
+          "zh-Hans": "浮云歌"
+        },
+        "role": "insert-song vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [
+            "person-wang-yu-ping"
+          ],
+          "composedBy": [
+            "person-li-tai-hsiang"
+          ]
+        },
+        "notes": "The National Cultural Memory Bank poster text and the maintainer task connect this Chyi Yu song to the film."
+      }
+    ],
+    "mediaLinks": [
+      {
+        "label": "Douban film record",
+        "platform": "douban",
+        "url": "https://movie.douban.com/subject/2214099/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "Taiwan Cinema film record",
+        "platform": "taiwan-cinema",
+        "url": "https://taiwancinema.bamid.gov.tw/Film/Filmcontent/?ContentUrl=14749",
+        "kind": "metadata",
+        "isOfficial": true
+      },
+      {
+        "label": "IMDb film record",
+        "platform": "imdb",
+        "url": "https://www.imdb.com/title/tt0102257/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "National Cultural Memory Bank poster",
+        "platform": "culture-memory-bank",
+        "url": "https://tcmb.culture.tw/zh-tw/detail?id=11000023597&indexCode=MOCCOLLECTIONS",
+        "kind": "metadata",
+        "isOfficial": true
+      }
+    ],
+    "sources": [
+      "source-user-task-0630-3",
+      "source-douban-jin-nian-hu-pan-hui-hen-leng",
+      "source-taiwan-cinema-jin-nian-hu-pan-hui-hen-leng",
+      "source-tcmb-jin-nian-hu-pan-poster",
+      "source-imdb-jin-nian-hu-pan-hui-hen-leng"
+    ],
+    "notes": "Added from the 2026-06-30 appearance-audit task. The public source pass found film metadata and poster evidence, but no stable mainland streaming link.",
+    "status": "partial"
+  },
+  {
+    "id": "appearance-huan-yan-1979-ost",
+    "slug": "huan-yan-1979-ost",
+    "title": "Your Smiling Face OST",
+    "titleOriginal": "歡顏 OST",
+    "titleLocalized": {
+      "en": "Your Smiling Face OST",
+      "zh-Hant": "歡顏 OST",
+      "zh-Hans": "欢颜 OST"
+    },
+    "date": "1979-05-25",
+    "appearanceType": "ost-vocal-appearance",
+    "programOrWork": "Your Smiling Face",
+    "role": "OST vocal appearance",
+    "workDetails": {
+      "releaseDate": "1979-05-25",
+      "directors": [
+        {
+          "name": "Tu Chung-Hsun",
+          "nameLocalized": {
+            "en": "Tu Chung-Hsun",
+            "zh-Hant": "屠忠訓",
+            "zh-Hans": "屠忠训"
+          }
+        }
+      ],
+      "leadingCast": [
+        {
+          "name": "Hu Hui-chung",
+          "nameLocalized": {
+            "en": "Hu Hui-chung",
+            "zh-Hant": "胡慧中",
+            "zh-Hans": "胡慧中"
+          }
+        },
+        {
+          "name": "Chang Kuo-chu",
+          "nameLocalized": {
+            "en": "Chang Kuo-chu",
+            "zh-Hant": "張國柱",
+            "zh-Hans": "张国柱"
+          }
+        },
+        {
+          "name": "Chou Shao-tung",
+          "nameLocalized": {
+            "en": "Chou Shao-tung",
+            "zh-Hant": "周紹棟",
+            "zh-Hans": "周绍栋"
+          }
+        }
+      ]
+    },
+    "relatedSongs": [
+      "song-olive-tree",
+      "song-your-smiling-face",
+      "song-walking-in-the-rain"
+    ],
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-olive-tree",
+        "title": "橄欖樹",
+        "titleLocalized": {
+          "en": "The Olive Tree",
+          "zh-Hant": "橄欖樹",
+          "zh-Hans": "橄榄树"
+        },
+        "role": "OST vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [
+            "person-sanmao"
+          ],
+          "composedBy": [
+            "person-li-tai-hsiang"
+          ]
+        },
+        "notes": "Maintainer task identifies this song as part of Chyi Yu's vocal appearance for the film."
+      },
+      {
+        "position": 2,
+        "song": "song-your-smiling-face",
+        "title": "歡顏",
+        "titleLocalized": {
+          "en": "Your Smiling Face",
+          "zh-Hant": "歡顏",
+          "zh-Hans": "欢颜"
+        },
+        "role": "OST vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [
+            "person-shen-lu-bai"
+          ],
+          "composedBy": [
+            "person-li-tai-hsiang"
+          ]
+        },
+        "notes": "Maintainer task identifies this song as part of Chyi Yu's vocal appearance for the film."
+      },
+      {
+        "position": 3,
+        "song": "song-walking-in-the-rain",
+        "title": "走在雨中",
+        "titleLocalized": {
+          "en": "Walking in the Rain",
+          "zh-Hant": "走在雨中",
+          "zh-Hans": "走在雨中"
+        },
+        "role": "OST vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [
+            "person-li-tai-hsiang"
+          ],
+          "composedBy": [
+            "person-li-tai-hsiang"
+          ]
+        },
+        "notes": "Maintainer task identifies this song as part of Chyi Yu's vocal appearance for the film."
+      }
+    ],
+    "mediaLinks": [
+      {
+        "label": "Douban film record",
+        "platform": "douban",
+        "url": "https://movie.douban.com/subject/1459387/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "Letterboxd film record",
+        "platform": "letterboxd",
+        "url": "https://letterboxd.com/film/your-smiling-face/",
+        "kind": "metadata",
+        "isOfficial": false
+      }
+    ],
+    "sources": [
+      "source-user-task-0630-3",
+      "source-douban-huan-yan-1979",
+      "source-apple-music-olive-tree",
+      "source-qq-music-olive-tree"
+    ],
+    "notes": "Added from the 2026-06-30 appearance-audit task. Public sources corroborate the film identity and the Olive Tree album track credits; streaming links for the film itself remain unresolved.",
+    "status": "partial"
+  },
+  {
+    "id": "appearance-modern-bumpkins-1980",
+    "slug": "modern-bumpkins-1980",
+    "title": "Disco Bumpkins appearance",
+    "titleOriginal": "摩登土佬",
+    "titleLocalized": {
+      "en": "Disco Bumpkins appearance",
+      "zh-Hant": "摩登土佬客串",
+      "zh-Hans": "摩登土佬客串"
+    },
+    "date": "1980-02-15",
+    "appearanceType": "screen-guest-appearance",
+    "programOrWork": "Disco Bumpkins",
+    "role": "Guest actor",
+    "workDetails": {
+      "releaseDate": "1980-02-15",
+      "directors": [
+        {
+          "name": "Ricky Chan",
+          "nameLocalized": {
+            "en": "Ricky Chan",
+            "zh-Hant": "陳家蓀",
+            "zh-Hans": "陈家荪"
+          }
+        }
+      ],
+      "leadingCast": [
+        {
+          "name": "George Lam",
+          "nameLocalized": {
+            "en": "George Lam",
+            "zh-Hant": "林子祥",
+            "zh-Hans": "林子祥"
+          }
+        },
+        {
+          "name": "Mak Tak-law",
+          "nameLocalized": {
+            "en": "Mak Tak-law",
+            "zh-Hant": "麥德羅",
+            "zh-Hans": "麦德罗"
+          }
+        },
+        {
+          "name": "Ching Li",
+          "nameLocalized": {
+            "en": "Ching Li",
+            "zh-Hant": "井莉",
+            "zh-Hans": "井莉"
+          }
+        },
+        {
+          "name": "Chyi Yu",
+          "nameLocalized": {
+            "en": "Chyi Yu",
+            "zh-Hant": "齊豫",
+            "zh-Hans": "齐豫"
+          }
+        }
+      ]
+    },
+    "relatedSongs": [],
+    "mediaLinks": [
+      {
+        "label": "Douban film record",
+        "platform": "douban",
+        "url": "https://movie.douban.com/subject/2352638/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "IMDb film record",
+        "platform": "imdb",
+        "url": "https://www.imdb.com/title/tt0923794/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "Letterboxd film record",
+        "platform": "letterboxd",
+        "url": "https://letterboxd.com/film/disco-bumpkins/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "Youku watch page",
+        "platform": "youku",
+        "url": "https://m.youku.com/alipay_video/id_cc104084962411de83b1.html",
+        "kind": "watch",
+        "isOfficial": true,
+        "accessRegion": "China mainland",
+        "notes": "Douban availability metadata points to this Youku VIP watch page."
+      }
+    ],
+    "sources": [
+      "source-user-task-0630-3",
+      "source-douban-modern-bumpkins",
+      "source-1905-modern-bumpkins"
+    ],
+    "notes": "Added as a guest appearance in a movie/series record. Douban describes Chyi Yu as a cameo/guest appearance in Ricky Chan's 1980 Hong Kong music comedy.",
+    "status": "partial"
+  },
+  {
+    "id": "appearance-20-30-40-2004",
+    "slug": "20-30-40-2004",
+    "title": "20:30:40 appearance",
+    "titleOriginal": "20:30:40",
+    "titleLocalized": {
+      "en": "20:30:40 appearance",
+      "zh-Hant": "20:30:40 客串",
+      "zh-Hans": "20:30:40 客串"
+    },
+    "date": "2004-03-05",
+    "appearanceType": "screen-guest-appearance",
+    "programOrWork": "20:30:40",
+    "role": "Actor: Qi Yu / Chyi Yu",
+    "workDetails": {
+      "releaseDate": "2004-03-05",
+      "directors": [
+        {
+          "name": "Sylvia Chang",
+          "nameLocalized": {
+            "en": "Sylvia Chang",
+            "zh-Hant": "張艾嘉",
+            "zh-Hans": "张艾嘉"
+          }
+        }
+      ],
+      "leadingCast": [
+        {
+          "name": "Sylvia Chang",
+          "nameLocalized": {
+            "en": "Sylvia Chang",
+            "zh-Hant": "張艾嘉",
+            "zh-Hans": "张艾嘉"
+          }
+        },
+        {
+          "name": "Rene Liu",
+          "nameLocalized": {
+            "en": "Rene Liu",
+            "zh-Hant": "劉若英",
+            "zh-Hans": "刘若英"
+          }
+        },
+        {
+          "name": "Angelica Lee",
+          "nameLocalized": {
+            "en": "Angelica Lee",
+            "zh-Hant": "李心潔",
+            "zh-Hans": "李心洁"
+          }
+        }
+      ]
+    },
+    "relatedSongs": [],
+    "mediaLinks": [
+      {
+        "label": "IMDb film record",
+        "platform": "imdb",
+        "url": "https://www.imdb.com/title/tt0397229/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "Letterboxd film record",
+        "platform": "letterboxd",
+        "url": "https://letterboxd.com/film/20-30-40/",
+        "kind": "metadata",
+        "isOfficial": false
+      }
+    ],
+    "sources": [
+      "source-user-task-0630-3",
+      "source-imdb-20-30-40",
+      "source-wikipedia-en-20-30-40"
+    ],
+    "notes": "Added as a guest appearance in a movie/series record. IMDb lists Chyi Yu in the cast as Qi Yu (Chyi Yu), credited as Chyi.",
+    "status": "partial"
+  },
+  {
     "id": "appearance-i-swear-1996",
     "slug": "i-swear-1996",
     "title": "I Swear",
@@ -873,7 +1386,8 @@
     ],
     "sources": [
       "source-qq-music-i-swear",
-      "source-user-task-0623-1"
+      "source-user-task-0623-1",
+      "source-wikipedia-i-swear-song"
     ],
     "notes": "Converted from a release record. Imported from the accepted Stage 6B review as a Chyi Yu vocal-appearance release. QQ Music lists Chyi Yu on the title track with Sandy Lam, Teresa Carpio, and Prudence Liew; the remaining track list is retained for album context.",
     "status": "partial",
@@ -894,8 +1408,14 @@
         ],
         "duration": "4:10",
         "credits": {
-          "lyricsBy": [],
-          "composedBy": []
+          "lyricsBy": [
+            "person-frank-myers",
+            "person-gary-baker"
+          ],
+          "composedBy": [
+            "person-frank-myers",
+            "person-gary-baker"
+          ]
         },
         "notes": null
       }
@@ -916,7 +1436,8 @@
     "role": "guest vocalist",
     "relatedSongs": [
       "song-rhythm-of-my-heart",
-      "song-what-a-wonderful-world"
+      "song-what-a-wonderful-world",
+      "song-mei-gui"
     ],
     "mediaLinks": [
       {
@@ -930,7 +1451,10 @@
     ],
     "sources": [
       "source-qq-music-wonderful-world",
-      "source-user-task-0623-1"
+      "source-user-task-0623-1",
+      "source-wikipedia-zh-wonderful-world-sandy-lam",
+      "source-wikipedia-the-rose-song",
+      "source-user-task-0630-3"
     ],
     "notes": "Converted from a release record. Imported from the accepted Stage 6B review as a Chyi Yu vocal-appearance release. QQ Music lists Chyi Yu on Rhythm Of My Heart and What A Wonderful World; the remaining track list is retained for album context.",
     "status": "partial",
@@ -949,8 +1473,13 @@
         ],
         "duration": "4:12",
         "credits": {
-          "lyricsBy": [],
-          "composedBy": []
+          "lyricsBy": [
+            "person-heidi-h-chen"
+          ],
+          "composedBy": [
+            "person-ivan-lins",
+            "person-vitor-martins"
+          ]
         },
         "notes": null
       },
@@ -969,10 +1498,43 @@
         ],
         "duration": "3:39",
         "credits": {
-          "lyricsBy": [],
-          "composedBy": []
+          "lyricsBy": [
+            "person-herb-alpert",
+            "person-lou-adler",
+            "person-sam-cooke"
+          ],
+          "composedBy": [
+            "person-herb-alpert",
+            "person-lou-adler",
+            "person-sam-cooke"
+          ]
         },
         "notes": null
+      },
+      {
+        "position": null,
+        "song": "song-mei-gui",
+        "title": "The Rose",
+        "titleLocalized": {
+          "en": "The Rose",
+          "zh-Hant": "玫瑰",
+          "zh-Hans": "玫瑰"
+        },
+        "role": "vocal appearance",
+        "performers": [
+          "person-sandy-lam",
+          "person-chyi-yu"
+        ],
+        "duration": null,
+        "credits": {
+          "lyricsBy": [
+            "person-amanda-mcbroom"
+          ],
+          "composedBy": [
+            "person-amanda-mcbroom"
+          ]
+        },
+        "notes": "Retained under the Sandy Lam guest-vocal appearance per the 2026-06-30 task note; album-platform confirmation for this exact Wonderful World placement is still needed."
       }
     ]
   },
@@ -990,6 +1552,16 @@
     "appearanceType": "interview",
     "programOrWork": "大雲時堂",
     "role": "Guest interview / promo appearance",
+    "hosts": [
+      {
+        "name": "Li Si-duan",
+        "nameLocalized": {
+          "en": "Li Si-duan",
+          "zh-Hant": "李四端",
+          "zh-Hans": "李四端"
+        }
+      }
+    ],
     "relatedSongs": [],
     "mediaLinks": [
       {

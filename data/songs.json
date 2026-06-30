@@ -97,7 +97,9 @@
       "欢颜"
     ],
     "language": "Mandarin",
-    "lyricsBy": [],
+    "lyricsBy": [
+      "person-shen-lu-bai"
+    ],
     "composedBy": [
       "person-li-tai-hsiang"
     ],
@@ -120,9 +122,10 @@
     "mediaLinks": [],
     "sources": [
       "source-wikipedia-yue-olive-tree-album",
-      "source-apple-music-olive-tree"
+      "source-apple-music-olive-tree",
+      "source-user-task-0630-3"
     ],
-    "notes": "Lyricist spelling varies across secondary sources, so it is intentionally left blank until checked against an official booklet.",
+    "notes": "Lyricist/composer credits follow the Olive Tree album source trail and the 2026-06-30 appearance-audit task note; still partial pending booklet verification.",
     "status": "partial",
     "titleLocalized": {
       "en": "Your Smiling Face",
@@ -414,8 +417,14 @@
     "title": "Stories",
     "aliases": [],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-frank-myers",
+      "person-gary-baker"
+    ],
+    "composedBy": [
+      "person-frank-myers",
+      "person-gary-baker"
+    ],
     "arrangedBy": [],
     "relatedReleases": [
       "release-dare-to-dream-1994",
@@ -1276,9 +1285,10 @@
     "mediaLinks": [],
     "sources": [
       "source-qq-music-i-swear",
-      "source-qq-music-cest-la-vie"
+      "source-qq-music-cest-la-vie",
+      "source-wikipedia-i-swear-song"
     ],
-    "notes": "QQ Music lists Chyi Yu on I Swear placements in the Sandy Lam-led album and the later C'est La Vie album. Writer/composer credits remain pending.",
+    "notes": "QQ Music lists Chyi Yu on I Swear placements in the Sandy Lam-led album and the later C'est La Vie album; writer/composer credits follow the song reference source.",
     "status": "partial"
   },
   {
@@ -1292,8 +1302,13 @@
       "Rhythm of My Heart"
     ],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-heidi-h-chen"
+    ],
+    "composedBy": [
+      "person-ivan-lins",
+      "person-vitor-martins"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "appearance-wonderful-world-1997",
     "relatedReleases": [],
@@ -1301,9 +1316,10 @@
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": [
-      "source-qq-music-wonderful-world"
+      "source-qq-music-wonderful-world",
+      "source-wikipedia-zh-wonderful-world-sandy-lam"
     ],
-    "notes": "QQ Music lists Chyi Yu and Sandy Lam as singers on this Wonderful World track. Writer/composer credits remain pending.",
+    "notes": "QQ Music lists Chyi Yu and Sandy Lam as singers on this Wonderful World track; writer/composer credits follow the Wonderful World album reference source.",
     "status": "partial"
   },
   {
@@ -1317,8 +1333,16 @@
       "What a Wonderful World"
     ],
     "language": "English",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-herb-alpert",
+      "person-lou-adler",
+      "person-sam-cooke"
+    ],
+    "composedBy": [
+      "person-herb-alpert",
+      "person-lou-adler",
+      "person-sam-cooke"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "appearance-wonderful-world-1997",
     "relatedReleases": [],
@@ -1326,9 +1350,10 @@
     "knownMusicShows": [],
     "mediaLinks": [],
     "sources": [
-      "source-qq-music-wonderful-world"
+      "source-qq-music-wonderful-world",
+      "source-wikipedia-zh-wonderful-world-sandy-lam"
     ],
-    "notes": "QQ Music lists Sandy Lam, Prudence Liew, and Chyi Yu as singers on this Wonderful World track. Writer/composer credits remain pending.",
+    "notes": "QQ Music lists Sandy Lam, Prudence Liew, and Chyi Yu as singers on this Wonderful World track; writer/composer credits follow the Wonderful World album reference source.",
     "status": "partial"
   },
   {
@@ -5190,15 +5215,25 @@
   {
     "id": "song-xi-yu-ye-ye-de-cao-yuan",
     "slug": "xi-yu-ye-ye-de-cao-yuan",
-    "title": "细语咽咽的草原",
+    "title": "Whispering Steppes",
     "titleOriginal": "细语咽咽的草原",
     "titleLocalized": {
+      "en": "Whispering Steppes",
+      "zh-Hant": "細語咽咽的草原",
       "zh-Hans": "细语咽咽的草原"
     },
-    "aliases": [],
+    "aliases": [
+      "慾水",
+      "欲水",
+      "Desirous Water"
+    ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-johnny-chen"
+    ],
+    "composedBy": [
+      "person-johnny-chen"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [],
@@ -5208,8 +5243,11 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-youtube-rockrecords-yu-shui",
+      "source-user-task-0630-3"
     ],
+    "notes": "The 2026-06-30 appearance-audit task identifies 慾水 / 欲水 as the 天浴 Chinese theme and this C'est La Vie track as its English-version relationship. Rolling Records' official YouTube upload for 慾水 credits words and music to 小蟲.",
     "status": "partial"
   },
   {
@@ -5243,12 +5281,20 @@
     "title": "玫瑰",
     "titleOriginal": "玫瑰",
     "titleLocalized": {
+      "en": "The Rose",
+      "zh-Hant": "玫瑰",
       "zh-Hans": "玫瑰"
     },
-    "aliases": [],
+    "aliases": [
+      "The Rose"
+    ],
     "language": "Mandarin",
-    "lyricsBy": [],
-    "composedBy": [],
+    "lyricsBy": [
+      "person-amanda-mcbroom"
+    ],
+    "composedBy": [
+      "person-amanda-mcbroom"
+    ],
     "arrangedBy": [],
     "firstKnownRelease": "release-cest-la-vie-1999",
     "relatedReleases": [],
@@ -5258,8 +5304,11 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-wikipedia-the-rose-song",
+      "source-user-task-0630-3"
     ],
+    "notes": "Modeled as the Chinese-titled placement of Amanda McBroom's The Rose on C'est La Vie; the 2026-06-30 task note clarifies that this belongs with Sandy Lam/Wonderful World-related guest-vocal context, not the 天浴 OST appearance.",
     "status": "partial"
   },
   {
@@ -8636,5 +8685,324 @@
     "composedBy": [],
     "arrangedBy": [],
     "notes": "Cover-performance identity for statistics; original performer pending. Performed at echoes-back-2022."
+  },
+  {
+    "id": "song-kuai-le-tian-tang",
+    "slug": "kuai-le-tian-tang",
+    "title": "Happy Paradise",
+    "titleLocalized": {
+      "en": "Happy Paradise",
+      "zh-Hant": "快樂天堂",
+      "zh-Hans": "快乐天堂"
+    },
+    "titleOriginal": "快樂天堂",
+    "aliases": [
+      "快乐天堂",
+      "Kuai Le Tian Tang"
+    ],
+    "language": "zh",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live group-performance identity for the 1987 Rolling Stone Intimate Relations concert; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-today",
+    "slug": "today",
+    "title": "Today",
+    "aliases": [],
+    "language": "en",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live cover-performance identity from the 2025 Hangzhou Yu Jian setlist; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-donna-donna",
+    "slug": "donna-donna",
+    "title": "Donna Donna",
+    "aliases": [
+      "Dona Dona"
+    ],
+    "language": "en",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live cover-performance identity from the 2025 Hangzhou Yu Jian setlist; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-nan-ping-wan-zhong",
+    "slug": "nan-ping-wan-zhong",
+    "title": "Nanping Evening Bell",
+    "titleLocalized": {
+      "en": "Nanping Evening Bell",
+      "zh-Hant": "南屏晚鐘",
+      "zh-Hans": "南屏晚钟"
+    },
+    "titleOriginal": "南屏晚鐘",
+    "aliases": [
+      "南屏晚钟",
+      "Nan Ping Wan Zhong"
+    ],
+    "language": "zh",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live cover-performance identity from the 2025 Hangzhou Yu Jian era medley; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-mu-qin-wo-ai-ni",
+    "slug": "mu-qin-wo-ai-ni",
+    "title": "Mother, I Love You",
+    "titleLocalized": {
+      "en": "Mother, I Love You",
+      "zh-Hant": "母親，我愛你",
+      "zh-Hans": "母亲，我爱你"
+    },
+    "titleOriginal": "母親，我愛你",
+    "aliases": [
+      "母亲，我爱你",
+      "母親我愛您",
+      "母亲我爱您"
+    ],
+    "language": "zh",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live-performance identity from Grace Still Kuala Lumpur/Taipei setlists; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-min-ge-shou",
+    "slug": "min-ge-shou",
+    "title": "Folk Singer",
+    "titleLocalized": {
+      "en": "Folk Singer",
+      "zh-Hant": "民歌手",
+      "zh-Hans": "民歌手"
+    },
+    "titleOriginal": "民歌手",
+    "aliases": [
+      "Min Ge Shou"
+    ],
+    "language": "zh",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live-performance identity from the Grace Still Taipei 2.0 setlist; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-kang-ding-qing-ge",
+    "slug": "kang-ding-qing-ge",
+    "title": "Kangding Love Song",
+    "titleLocalized": {
+      "en": "Kangding Love Song",
+      "zh-Hant": "康定情歌",
+      "zh-Hans": "康定情歌"
+    },
+    "titleOriginal": "康定情歌",
+    "aliases": [
+      "Kang Ding Qing Ge"
+    ],
+    "language": "zh",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live duet-performance identity from the 1991 Beijing Kuang Biao timestamped comment setlist; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-pu-ti-shu",
+    "slug": "pu-ti-shu",
+    "title": "Bodhi Tree",
+    "titleLocalized": {
+      "en": "Bodhi Tree",
+      "zh-Hant": "菩提樹",
+      "zh-Hans": "菩提树"
+    },
+    "titleOriginal": "菩提樹",
+    "aliases": [
+      "菩提树",
+      "Pu Ti Shu"
+    ],
+    "language": "zh",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live-performance identity from the 2025 Shanghai Grace Still setlist; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-zai-na-yao-yuan-de-di-fang",
+    "slug": "zai-na-yao-yuan-de-di-fang",
+    "title": "In That Faraway Place",
+    "titleLocalized": {
+      "en": "In That Faraway Place",
+      "zh-Hant": "在那遙遠的地方",
+      "zh-Hans": "在那遥远的地方"
+    },
+    "titleOriginal": "在那遙遠的地方",
+    "aliases": [
+      "Zai Na Yao Yuan De Di Fang"
+    ],
+    "language": "zh",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live-performance identity from the 2009 Beijing The Voice multipart page metadata; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-wo-ai-ni-zhong-guo",
+    "slug": "wo-ai-ni-zhong-guo",
+    "title": "I Love You, China",
+    "titleLocalized": {
+      "en": "I Love You, China",
+      "zh-Hant": "我愛你中國",
+      "zh-Hans": "我爱你中国"
+    },
+    "titleOriginal": "我愛你中國",
+    "aliases": [
+      "Wo Ai Ni Zhong Guo"
+    ],
+    "language": "zh",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live-performance identity from the 2009 Beijing The Voice multipart page metadata; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-nu-ren-yu-xiao-hai",
+    "slug": "nu-ren-yu-xiao-hai",
+    "title": "Women and Children",
+    "titleLocalized": {
+      "en": "Women and Children",
+      "zh-Hant": "女人與小孩",
+      "zh-Hans": "女人与小孩"
+    },
+    "titleOriginal": "女人與小孩",
+    "aliases": [
+      "Nu Ren Yu Xiao Hai"
+    ],
+    "language": "zh",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live-performance identity from the 2009 Beijing The Voice multipart page metadata; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-tian-e-hu",
+    "slug": "tian-e-hu",
+    "title": "Swan Lake",
+    "titleLocalized": {
+      "en": "Swan Lake",
+      "zh-Hant": "天鵝湖",
+      "zh-Hans": "天鹅湖"
+    },
+    "titleOriginal": "天鵝湖",
+    "aliases": [
+      "Tian E Hu"
+    ],
+    "language": "zh",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [],
+    "notes": "Added as a live-performance identity from the 2009 Beijing The Voice multipart page metadata; credits pending.",
+    "status": "needs-source"
+  },
+  {
+    "id": "song-tie-xue-dan-xin",
+    "slug": "tie-xue-dan-xin",
+    "title": "Iron Blooded Heart",
+    "titleLocalized": {
+      "en": "Iron Blooded Heart",
+      "zh-Hant": "鐵血丹心",
+      "zh-Hans": "铁血丹心"
+    },
+    "titleOriginal": "鐵血丹心",
+    "aliases": [
+      "铁血丹心",
+      "Tie Xue Dan Xin"
+    ],
+    "language": "Cantonese",
+    "lyricsBy": [],
+    "composedBy": [],
+    "arrangedBy": [],
+    "relatedReleases": [],
+    "knownConcerts": [],
+    "knownMusicShows": [],
+    "mediaLinks": [],
+    "sources": [
+      "source-youtube-wakin-shao-nian-xia-ke-2021-tiexue-official"
+    ],
+    "notes": "Live cover-performance identity for Wakin Chau / Chyi Yu guest segments; original 1983 射鵰英雄傳 theme performed by 羅文 and 甄妮. Detailed credits pending.",
+    "status": "partial"
   }
 ]

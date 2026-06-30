@@ -190,7 +190,9 @@
         "duration": "3:47",
         "versionNote": null,
         "credits": {
-          "lyricsBy": [],
+          "lyricsBy": [
+            "person-shen-lu-bai"
+          ],
           "composedBy": [
             "person-li-tai-hsiang"
           ]
@@ -4403,13 +4405,19 @@
         "song": "song-xi-yu-ye-ye-de-cao-yuan",
         "titleOnRelease": "细语咽咽的草原",
         "titleOnReleaseLocalized": {
+          "en": "Whispering Steppes",
+          "zh-Hant": "細語咽咽的草原",
           "zh-Hans": "细语咽咽的草原"
         },
         "duration": "4:44",
         "versionNote": null,
         "credits": {
-          "lyricsBy": [],
-          "composedBy": []
+          "lyricsBy": [
+            "person-johnny-chen"
+          ],
+          "composedBy": [
+            "person-johnny-chen"
+          ]
         }
       },
       {
@@ -4436,8 +4444,12 @@
         "duration": "3:58",
         "versionNote": null,
         "credits": {
-          "lyricsBy": [],
-          "composedBy": []
+          "lyricsBy": [
+            "person-amanda-mcbroom"
+          ],
+          "composedBy": [
+            "person-amanda-mcbroom"
+          ]
         },
         "performers": [
           "person-chyi-yu",
@@ -4456,8 +4468,14 @@
         "duration": "4:06",
         "versionNote": null,
         "credits": {
-          "lyricsBy": [],
-          "composedBy": []
+          "lyricsBy": [
+            "person-frank-myers",
+            "person-gary-baker"
+          ],
+          "composedBy": [
+            "person-frank-myers",
+            "person-gary-baker"
+          ]
         },
         "performers": [
           "person-chyi-yu",
@@ -4495,7 +4513,11 @@
     "sources": [
       "source-qq-music-cest-la-vie",
       "source-user-task-0623-1",
-      "source-musicbrainz-chyi-yu-release-media"
+      "source-musicbrainz-chyi-yu-release-media",
+      "source-youtube-rockrecords-yu-shui",
+      "source-wikipedia-the-rose-song",
+      "source-wikipedia-i-swear-song",
+      "source-user-task-0630-3"
     ],
     "notes": "Imported from the accepted Stage 6B review. Modeled as a Chyi Yu English-cover studio album with several collaboration tracks; QQ Music supplies current platform order, durations, and singer lists. Original writer/composer credits remain blank pending booklet or primary-credit verification. Format audit: MusicBrainz lists the official Taiwan release as a two-disc CD set.",
     "status": "partial"

@@ -17,6 +17,11 @@ export type LocalizedText = {
   [locale: string]: string | undefined;
 };
 
+export type LocalizedName = {
+  name: string;
+  nameLocalized?: LocalizedText;
+};
+
 export type Person = {
   id: string;
   slug: string;
@@ -147,8 +152,11 @@ export type Concert = {
   titleLocalized?: LocalizedText;
   date?: string | null;
   venue?: string | null;
+  venueLocalized?: LocalizedText;
   city?: string | null;
+  cityLocalized?: LocalizedText;
   countryOrRegion?: string | null;
+  countryOrRegionLocalized?: LocalizedText;
   eventType: string;
   performers?: string[];
   guests?: string[];
@@ -202,8 +210,15 @@ export type Appearance = {
   appearanceType: string;
   programOrWork?: string | null;
   role?: string | null;
+  hosts?: LocalizedName[];
+  workDetails?: {
+    releaseDate?: string | null;
+    directors?: LocalizedName[];
+    leadingCast?: LocalizedName[];
+  };
   relatedSongs: string[];
   tracks?: AppearanceTrack[];
+  performedSongs?: SongPerformance[];
   mediaLinks: ArchiveLink[];
   sources: string[];
   notes?: string;

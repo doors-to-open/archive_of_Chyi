@@ -10,6 +10,7 @@ import {
   concertCategoryValues,
   concertDisplayTitleValues,
   concertNatureValues,
+  concertVenueValues,
   countValues,
   i18nAttrs,
   joinValues,
@@ -41,6 +42,10 @@ const classificationValues = joinValues(
   " / "
 );
 const displayTitle = concertDisplayTitleValues(concert);
+const summaryValues = joinValues(
+  [concert.date || "", concert.venue ? concertVenueValues(concert) : ""],
+  " / "
+);
 ---
 
 <a
@@ -59,6 +64,9 @@ const displayTitle = concertDisplayTitleValues(concert);
   data-search={concert.searchText || ""}
 >
   <h2 {...i18nAttrs(displayTitle)}>{valueForLocale(displayTitle)}</h2>
+  {valueForLocale(summaryValues) ? (
+    <p class="concert-card-summary" {...i18nAttrs(summaryValues)}>{valueForLocale(summaryValues)}</p>
+  ) : null}
   <div class="record-meta-table">
     <span {...i18nAttrs(labelValueValues("label.category", classificationValues))}>
       {valueForLocale(labelValueValues("label.category", classificationValues))}

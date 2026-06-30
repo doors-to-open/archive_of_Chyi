@@ -22,6 +22,7 @@ const sources = readJson("data/sources.json");
 const concerts = readJson("data/concerts.json");
 const musicShows = readJson("data/music-shows.json");
 const archiveSource = fs.readFileSync(path.join(root, "src/lib/archive.ts"), "utf8");
+const i18nSource = fs.readFileSync(path.join(root, "src/lib/i18n.ts"), "utf8");
 
 const sourceIds = new Set(sources.map((source) => source.id));
 const songIds = new Set(songs.map((song) => song.id));
@@ -60,6 +61,21 @@ function expectUnique(items, field, label) {
       seen.set(value, item.id);
     }
   }
+}
+
+function extractLocaleValueKeys(source, constName) {
+  const pattern = new RegExp(`const ${constName} = \\{([\\s\\S]*?)\\n\\} satisfies Record<string, LocaleValues>;`);
+  const match = source.match(pattern);
+  if (!match) {
+    addError(`Could not locate ${constName} in src/lib/i18n.ts`);
+    return new Set();
+  }
+  const keys = new Set();
+  for (const line of match[1].split(/\r?\n/)) {
+    const keyMatch = line.match(/^\s*(?:"([^"]+)"|([A-Za-z][A-Za-z0-9]*)):\s*\{/);
+    if (keyMatch) keys.add(keyMatch[1] || keyMatch[2]);
+  }
+  return keys;
 }
 
 function pathLabel(parts) {
@@ -240,6 +256,8 @@ const concertCategoriesByNature = {
   "non-commercial": new Set(["charity", "religion", "festival", "other"])
 };
 const concertGroupKinds = new Set(["tour", "theme", "host"]);
+const concertCityI18nKeys = extractLocaleValueKeys(i18nSource, "CONCERT_CITY_VALUES");
+const concertRegionI18nKeys = extractLocaleValueKeys(i18nSource, "CONCERT_REGION_VALUES");
 
 for (const concert of concerts) {
   validateSourceRefs(concert, "Concert");
@@ -264,6 +282,16 @@ for (const concert of concerts) {
   }
   if (concert.date && !datePattern.test(concert.date)) {
     addError(`Concert ${concert.id} has unsortable date "${concert.date}"`);
+  }
+  if (concert.city && !concert.cityLocalized && !concertCityI18nKeys.has(concert.city)) {
+    addError(`Concert ${concert.id} city "${concert.city}" has no CONCERT_CITY_VALUES mapping`);
+  }
+  if (
+    concert.countryOrRegion &&
+    !concert.countryOrRegionLocalized &&
+    !concertRegionI18nKeys.has(concert.countryOrRegion)
+  ) {
+    addError(`Concert ${concert.id} countryOrRegion "${concert.countryOrRegion}" has no CONCERT_REGION_VALUES mapping`);
   }
   if (concert.status === "needs-source" && concert.status === "confirmed") {
     addError(`Concert ${concert.id} is marked both needs-source and confirmed`);

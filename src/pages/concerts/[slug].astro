@@ -14,6 +14,9 @@ import {
 } from "../../lib/archive";
 import {
   availabilityValues,
+  concertEventTypeValues,
+  concertLocationValues,
+  concertVenueValues,
   countValues,
   i18nAttrs,
   joinValues,
@@ -38,6 +41,9 @@ const hasHost = concert.role === "guest" && concert.host;
 const isCollaboration = concert.nature === "commercial" && concert.category === "collaboration";
 const participantIds = isCollaboration ? concertCoPerformerIds(concert) : concert.guests || [];
 const participantLabel = isCollaboration ? "label.coPerformers" : "label.guests";
+const eventTypeValues = concertEventTypeValues(concert.eventType);
+const locationValues = concertLocationValues(concert);
+const venueValues = concertVenueValues(concert);
 ---
 
 <BaseLayout title={`${concert.title} | All for Chyi Yu`}>
@@ -51,17 +57,17 @@ const participantLabel = isCollaboration ? "label.coPerformers" : "label.guests"
         <span {...i18nAttrs(labelValueValues("label.date", concert.date || uiText("value.unknown")))}>
           {valueForLocale(labelValueValues("label.date", concert.date || uiText("value.unknown")))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.type", concert.eventType))}>
-          {valueForLocale(labelValueValues("label.type", concert.eventType))}
+        <span {...i18nAttrs(labelValueValues("label.type", eventTypeValues))}>
+          {valueForLocale(labelValueValues("label.type", eventTypeValues))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.location", [concert.city, concert.countryOrRegion].filter(Boolean).join(", ") || uiText("value.unknown")))}
+        <span {...i18nAttrs(labelValueValues("label.location", locationValues))}>
+          {valueForLocale(labelValueValues("label.location", locationValues))}
         </span>
         <span {...i18nAttrs(countValues(concert.setlist.length, "count.song", "count.songs"))}>
           {valueForLocale(countValues(concert.setlist.length, "count.song", "count.songs"))}
         </span>
-        <span {...i18nAttrs(labelValueValues("label.venue", concert.venue || uiText("value.unknown")))}>
-          {valueForLocale(labelValueValues("label.venue", concert.venue || uiText("value.unknown")))}
+        <span {...i18nAttrs(labelValueValues("label.venue", venueValues))}>
+          {valueForLocale(labelValueValues("label.venue", venueValues))}
         </span>
         {hasHost ? (
           <span {...i18nAttrs(labelValueValues("label.host", personIdValues(concert.host!)))}>
@@ -87,7 +93,7 @@ const participantLabel = isCollaboration ? "label.coPerformers" : "label.guests"
           {concert.mediaLinks.map((link) => (
             <p>
               <a href={link.url}>{link.label}</a>
-              {link.platform ? ` / ${link.platform}` : ""}
+              {linkPlatformList([link]) ? ` / ${linkPlatformList([link])}` : ""}
               {link.kind ? ` / ${link.kind}` : ""}
               {link.accessRegion ? ` / ${link.accessRegion}` : ""}
               {link.isOfficial === false ? (

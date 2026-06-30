@@ -2,7 +2,14 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
-import { appearanceAvailabilityChecks, appearances, linkCreditLabel, personNames } from "../../lib/archive";
+import {
+  appearanceAvailabilityChecks,
+  appearances,
+  linkCreditLabel,
+  personNames,
+  releasePlacementsForSong
+} from "../../lib/archive";
+import type { LocalizedName } from "../../lib/archive";
 import {
   appearanceTypeValues,
   availabilityValues,
@@ -10,6 +17,7 @@ import {
   i18nAttrs,
   joinValues,
   labelValueValues,
+  localizedValues,
   noteValues,
   personIdsValues,
   textValues,
@@ -45,6 +53,28 @@ function appearanceTrackTitleValues(track: NonNullable<typeof appearance.tracks>
 function trackNumber(track: NonNullable<typeof appearance.tracks>[number]) {
   return track.position ? `${track.position}.` : "";
 }
+
+function localizedNameValues(name: LocalizedName) {
+  return localizedValues(name.nameLocalized, name.name);
+}
+
+function localizedNameListValues(names: LocalizedName[] | undefined) {
+  return names?.length
+    ? joinValues(names.map(localizedNameValues), ", ")
+    : textValues("");
+}
+
+function officialReleasePlacements(track: NonNullable<typeof appearance.tracks>[number]) {
+  if (!track.song) return [];
+  const seen = new Set<string>();
+  return releasePlacementsForSong(track.song).filter((placement) => {
+    const isChyiRelease = placement.release.artist === "person-chyi-yu" ||
+      placement.release.artists?.includes("person-chyi-yu");
+    if (!isChyiRelease || seen.has(placement.release.id)) return false;
+    seen.add(placement.release.id);
+    return true;
+  });
+}
 ---
 
 <BaseLayout title={`${appearance.title} | All for Chyi Yu`}>
@@ -67,6 +97,26 @@ function trackNumber(track: NonNullable<typeof appearance.tracks>[number]) {
         <span {...i18nAttrs(labelValueValues("label.role", appearance.role || uiText("value.unknown")))}>
           {valueForLocale(labelValueValues("label.role", appearance.role || uiText("value.unknown")))}
         </span>
+        {appearance.hosts?.length ? (
+          <span {...i18nAttrs(labelValueValues("label.hosts", localizedNameListValues(appearance.hosts)))}>
+            {valueForLocale(labelValueValues("label.hosts", localizedNameListValues(appearance.hosts)))}
+          </span>
+        ) : null}
+        {appearance.workDetails?.releaseDate ? (
+          <span {...i18nAttrs(labelValueValues("label.workReleaseDate", appearance.workDetails.releaseDate))}>
+            {valueForLocale(labelValueValues("label.workReleaseDate", appearance.workDetails.releaseDate))}
+          </span>
+        ) : null}
+        {appearance.workDetails?.directors?.length ? (
+          <span {...i18nAttrs(labelValueValues("label.directors", localizedNameListValues(appearance.workDetails.directors)))}>
+            {valueForLocale(labelValueValues("label.directors", localizedNameListValues(appearance.workDetails.directors)))}
+          </span>
+        ) : null}
+        {appearance.workDetails?.leadingCast?.length ? (
+          <span {...i18nAttrs(labelValueValues("label.leadingCast", localizedNameListValues(appearance.workDetails.leadingCast)))}>
+            {valueForLocale(labelValueValues("label.leadingCast", localizedNameListValues(appearance.workDetails.leadingCast)))}
+          </span>
+        ) : null}
         <span {...i18nAttrs(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}>
           {valueForLocale(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}
         </span>
@@ -93,6 +143,7 @@ function trackNumber(track: NonNullable<typeof appearance.tracks>[number]) {
             const numberedTitle = trackNumber(track)
               ? joinValues([textValues(`${trackNumber(track)} `), title], "")
               : title;
+            const releaseLinks = officialReleasePlacements(track);
             return (
               <article class="track-credit-row">
                 <h3 {...i18nAttrs(numberedTitle)}>{valueForLocale(numberedTitle)}</h3>
@@ -111,6 +162,23 @@ function trackNumber(track: NonNullable<typeof appearance.tracks>[number]) {
                   {track.duration ? (
                     <span {...i18nAttrs(labelValueValues("label.duration", track.duration))}>
                       {valueForLocale(labelValueValues("label.duration", track.duration))}
+                    </span>
+                  ) : null}
+                  {releaseLinks.length ? (
+                    <span>
+                      <span {...i18nAttrs(uiText("label.officialRelease"))}>{valueForLocale(uiText("label.officialRelease"))}</span>
+                      {": "}
+                      {releaseLinks.map((placement, index) => {
+                        const releaseTitle = titleValues(placement.release);
+                        return (
+                          <>
+                            <a href={placement.href} {...i18nAttrs(releaseTitle)}>
+                              {valueForLocale(releaseTitle)}
+                            </a>
+                            {index < releaseLinks.length - 1 ? ", " : ""}
+                          </>
+                        );
+                      })}
                     </span>
                   ) : null}
                 </div>
