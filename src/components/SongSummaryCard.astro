@@ -105,7 +105,7 @@ const credits = joinValues([personIdsValues(summary.song.lyricsBy), personIdsVal
       <h3 {...i18nAttrs(uiText("label.liveRecords"))}>{valueForLocale(uiText("label.liveRecords"))}</h3>
       {summary.liveRecords.length ? (
         summary.liveRecords.map((record) => {
-          const recordTitle = textValues(record.title);
+          const recordTitle = record.titleValues;
           const performedTitle = performanceTitleValues(record.entry, summary.song);
           return (
             <p>

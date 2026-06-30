@@ -63,7 +63,7 @@ const groups = [
     </article>
 
     {groups.map(([title, items, emptyText]) => (
-      <section class="section">
+      <section class="section detail-flow-section">
         <div class="section-header">
           <h2 {...i18nAttrs(title)}>{valueForLocale(title)}</h2>
           <p {...i18nAttrs(countValues(items.length, "count.link", "count.links"))}>

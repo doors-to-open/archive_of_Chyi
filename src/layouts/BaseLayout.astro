@@ -227,16 +227,21 @@ const appendixItems = [
       });
 
       document.querySelectorAll("[data-sort-root]").forEach((root) => {
-        const sortSelect = root.querySelector("[data-sort-select]");
-        const sortOptions = Array.from(root.querySelectorAll("[data-sort-option]"));
-        const viewOptions = Array.from(root.querySelectorAll("[data-view-option]"));
-        const panels = Array.from(root.querySelectorAll("[data-view-panel]"));
-        const count = root.querySelector("[data-sort-count]");
-        const paginationControls = root.querySelector("[data-pagination-controls]");
+        const scopedElements = (selector: string) =>
+          Array.from(root.querySelectorAll(selector)).filter((element) =>
+            element.closest("[data-sort-root]") === root
+          );
+        const scopedElement = (selector: string) => scopedElements(selector)[0] || null;
+        const sortSelect = scopedElement("[data-sort-select]");
+        const sortOptions = scopedElements("[data-sort-option]");
+        const viewOptions = scopedElements("[data-view-option]");
+        const panels = scopedElements("[data-view-panel]");
+        const count = scopedElement("[data-sort-count]");
+        const paginationControls = scopedElement("[data-pagination-controls]");
         const pageState: Record<string, { page: number; pageSize: number }> = {};
 
         const activeView = () => {
-          const active = root.querySelector("[data-view-option][aria-pressed='true']");
+          const active = scopedElement("[data-view-option][aria-pressed='true']");
           return normalize(active?.getAttribute("data-view-value"));
         };
 
@@ -248,7 +253,7 @@ const appendixItems = [
         };
 
         const sortValue = () => {
-          const activeSort = root.querySelector("[data-sort-option][aria-pressed='true']");
+          const activeSort = scopedElement("[data-sort-option][aria-pressed='true']");
           return activeSort?.getAttribute("data-sort-value") ||
             (sortSelect instanceof HTMLSelectElement ? sortSelect.value : "index-asc");
         };
@@ -273,7 +278,9 @@ const appendixItems = [
         };
 
         const sortPanel = (panel: Element) => {
-          const container = panel.querySelector("[data-sort-container]") || panel;
+          const container = Array.from(panel.querySelectorAll("[data-sort-container]")).find((element) =>
+            element.closest("[data-sort-root]") === root
+          ) || panel;
           const items = Array.from(container.querySelectorAll(":scope > [data-sort-item]"));
           const [key = "index", direction = "asc"] = sortValue().split("-") as [string, "asc" | "desc"];
           items
@@ -285,7 +292,9 @@ const appendixItems = [
 
         const paginatePanel = (panel: Element) => {
           if (!panel.hasAttribute("data-paginate")) return;
-          const container = panel.querySelector("[data-sort-container]") || panel;
+          const container = Array.from(panel.querySelectorAll("[data-sort-container]")).find((element) =>
+            element.closest("[data-sort-root]") === root
+          ) || panel;
           const panelId = panel.getAttribute("data-view-panel") || "default";
           const pageSize = Number(panel.getAttribute("data-page-size")) || 24;
           if (!pageState[panelId]) pageState[panelId] = { page: 1, pageSize };
@@ -395,8 +404,10 @@ const appendixItems = [
             const activePanel = visiblePanels[0];
             const p = (activePanel as any).__pagination;
             const totalItems = activePanel
-              ? activePanel.querySelectorAll("[data-sort-item]:not([hidden])").length
-              : root.querySelectorAll("[data-sort-item]:not([hidden])").length;
+              ? Array.from(activePanel.querySelectorAll("[data-sort-item]:not([hidden])")).filter((element) =>
+                  element.closest("[data-sort-root]") === root
+                ).length
+              : scopedElements("[data-sort-item]:not([hidden])").length;
             const singular =
               countLabel(activePanel, "singular", "") ||
               countLabel(root, "singular", "record");

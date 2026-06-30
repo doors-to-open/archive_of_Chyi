@@ -4,8 +4,6 @@ import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import {
   byId,
-  concertsForSong,
-  musicShowsForSong,
   personName,
   releaseAvailabilityChecks,
   releaseArtists,
@@ -29,7 +27,6 @@ import {
   personIdsValues,
   releaseCategoryValues,
   textValues,
-  titleValues,
   uiText,
   valueForLocale,
   originalReleaseTitle,
@@ -63,6 +60,10 @@ function trackNumber(track: (typeof release.tracks)[number]) {
 
 function platformName(link: ArchiveLink) {
   return link.platform || link.label;
+}
+
+function isChyiOriginalPerformer(value: string | undefined | null) {
+  return Boolean(value?.toLocaleLowerCase("en-US").includes("chyi yu"));
 }
 
 const primaryCategory = releasePrimaryCategory(release);
@@ -159,7 +160,7 @@ const categoryValues = releaseCategoryValues(primaryCategory);
       ) : null}
     </section>
 
-    <section class="section">
+    <section class="section detail-flow-section release-track-section">
       <div class="section-header">
         <h2 {...i18nAttrs(uiText("label.tracks"))}>{valueForLocale(uiText("label.tracks"))}</h2>
         <p data-sort-count>{valueForLocale(countValues(release.tracks.length, "count.entry", "count.entries"))}</p>
@@ -182,30 +183,29 @@ const categoryValues = releaseCategoryValues(primaryCategory);
         </fieldset>
       </div>
 
-      <div class="archive-grid" data-sort-container>
+      <div class="archive-grid aligned-record-grid track-card-grid" data-sort-container>
         {release.tracks.map((track, index) => {
           const linkedSong = byId(songs, track.song);
           const summary = track.song ? trackSummaries.get(track.song) : undefined;
-          const linkedConcerts = linkedSong ? concertsForSong(linkedSong.id) : [];
-          const linkedMusicShows = linkedSong ? musicShowsForSong(linkedSong.id) : [];
           const numberedTitle = trackNumber(track)
             ? `${trackNumber(track)}. ${originalTrackTitle(track)}`
             : originalTrackTitle(track);
           const summaryMeta = summary
             ? joinValues([originValues(summary.originLabel), countValues(summary.liveCount, "count.liveRecord", "count.liveRecords")])
             : uiText("value.unmodeledSong");
-          const primaryAlbum = summary?.albumReleases[0];
-          const albumLabel = primaryAlbum
-            ? joinValues([
-                titleValues(primaryAlbum),
-                summary.albumReleases.length > 1
-                  ? textValues(`+ ${summary.albumReleases.length - 1} more`, `另 ${summary.albumReleases.length - 1} 張`, `另 ${summary.albumReleases.length - 1} 张`)
-                  : ""
-              ], " ")
-            : uiText("empty.noLinkedAlbum");
-          const songIdentity = summary
-            ? joinValues([uiText("label.songIdentity"), joinValues([originValues(summary.originLabel), albumLabel])], ": ")
-            : textValues("");
+          const trackMeta = joinValues([
+            labelValueValues("label.lyrics", peopleListValues(track.credits.lyricsBy)),
+            labelValueValues("label.music", peopleListValues(track.credits.composedBy)),
+            track.duration ? labelValueValues("label.duration", track.duration) : ""
+          ]);
+          const originalPerformer = summary?.originLabel === "Cover"
+            ? summary.liveRecords.find((record) =>
+                record.entry.originalPerformer && !isChyiOriginalPerformer(record.entry.originalPerformer)
+              )?.entry.originalPerformer
+            : undefined;
+          const originalPerformerValues = originalPerformer
+            ? labelValueValues("label.originalPerformer", textValues(originalPerformer))
+            : undefined;
           return (
             <details
               class="record-card compact-record-card"
@@ -225,17 +225,9 @@ const categoryValues = releaseCategoryValues(primaryCategory);
                     {valueForLocale(labelValueValues("label.performedBy", personIdsValues(track.performers)))}
                   </p>
                 ) : null}
-                <p {...i18nAttrs(labelValueValues("label.lyrics", peopleListValues(track.credits.lyricsBy)))}>
-                  {valueForLocale(labelValueValues("label.lyrics", peopleListValues(track.credits.lyricsBy)))}
-                </p>
-                <p {...i18nAttrs(labelValueValues("label.music", peopleListValues(track.credits.composedBy)))}>
-                  {valueForLocale(labelValueValues("label.music", peopleListValues(track.credits.composedBy)))}
-                </p>
-                {summary ? <p {...i18nAttrs(songIdentity)}>{valueForLocale(songIdentity)}</p> : null}
-                {track.duration ? (
-                  <p {...i18nAttrs(labelValueValues("label.duration", track.duration))}>
-                    {valueForLocale(labelValueValues("label.duration", track.duration))}
-                  </p>
+                <p class="track-meta-line" {...i18nAttrs(trackMeta)}>{valueForLocale(trackMeta)}</p>
+                {originalPerformerValues ? (
+                  <p class="track-origin-line" {...i18nAttrs(originalPerformerValues)}>{valueForLocale(originalPerformerValues)}</p>
                 ) : null}
                 {track.versionNote ? (
                   <p {...i18nAttrs(noteValues(track.versionNote, track.versionNoteLocalized))}>
@@ -243,25 +235,43 @@ const categoryValues = releaseCategoryValues(primaryCategory);
                   </p>
                 ) : null}
 
-                {linkedConcerts.length || linkedMusicShows.length ? (
-                  <div class="nested-links">
+                {summary?.liveRecords.length ? (
+                  <div class="nested-links live-record-list" data-sort-root>
                     <h3 {...i18nAttrs(uiText("label.liveRecords"))}>{valueForLocale(uiText("label.liveRecords"))}</h3>
-                    {linkedConcerts.map((concert) => (
-                      <p>
-                        <a href={`/concerts/${concert.slug}/`} {...i18nAttrs(titleValues(concert))}>
-                          {valueForLocale(titleValues(concert))}
-                        </a>
-                        {concert.date ? ` / ${concert.date}` : ""}
-                      </p>
-                    ))}
-                    {linkedMusicShows.map((show) => (
-                      <p>
-                        <a href={`/music-shows/${show.slug}/`} {...i18nAttrs(titleValues(show))}>
-                          {valueForLocale(titleValues(show))}
-                        </a>
-                        {show.date ? ` / ${show.date}` : ""}
-                      </p>
-                    ))}
+                    <div class="live-record-sort filter-options" aria-label="Sort live records">
+                      <button type="button" data-sort-option data-sort-value="date-asc" aria-pressed="true">Date</button>
+                      <button type="button" data-sort-option data-sort-value="date-desc" aria-pressed="false">Newest</button>
+                    </div>
+                    <div class="live-record-table" data-sort-container>
+                      {summary.liveRecords.map((record, recordIndex) => {
+                        const recordTitle = record.titleValues;
+                        const performedTitle = record.entry.titlePerformed !== linkedSong?.title
+                          ? textValues(record.entry.titlePerformed)
+                          : undefined;
+                        return (
+                          <div
+                            class="live-record-row"
+                            data-sort-item
+                            data-sort-index={recordIndex}
+                            data-sort-date={record.date || ""}
+                            data-sort-likes="0"
+                            data-sort-memories="0"
+                          >
+                            <div class="live-record-main">
+                              <a href={record.href} {...i18nAttrs(recordTitle)}>{valueForLocale(recordTitle)}</a>
+                              {performedTitle ? (
+                                <small {...i18nAttrs(performedTitle)}>{valueForLocale(performedTitle)}</small>
+                              ) : null}
+                            </div>
+                            <span class="live-record-date">{record.date || valueForLocale(uiText("value.unknown"))}</span>
+                            <div class="live-record-actions" aria-label="Future community actions">
+                              <button type="button" aria-disabled="true" title="Coming later" tabindex="-1">♡</button>
+                              <button type="button" aria-disabled="true" title="Coming later" tabindex="-1">Comment</button>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 ) : (
                   <p class="muted" {...i18nAttrs(uiText("empty.noLinkedLiveRecords"))}>

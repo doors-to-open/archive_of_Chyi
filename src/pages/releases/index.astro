@@ -3,7 +3,6 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionPanel from "../../components/ContributionPanel.astro";
 import SongSummaryCard from "../../components/SongSummaryCard.astro";
 import {
-  personName,
   releaseAvailabilityChecks,
   releaseArtists,
   releaseCategoryTags,
@@ -22,7 +21,6 @@ import {
   i18nCountLabelAttrs,
   labelValueValues,
   personIdValues,
-  personIdsValues,
   releaseCategoryValues,
   uiText,
   valueForLocale,
@@ -112,7 +110,7 @@ const releaseFilterOptions = [
     </div>
 
     <div
-      class="section archive-grid"
+      class="section archive-grid aligned-record-grid"
       data-view-panel="albums"
       data-sort-container
       data-paginate
@@ -122,12 +120,11 @@ const releaseFilterOptions = [
       {...i18nCountLabelAttrs(uiText("count.album"), uiText("count.albums"))}
     >
       {releases.map((release, index) => {
-        const producer = personIdsValues(release.credits.producer || release.credits.producers || []);
-        const artists = release.artists?.length ? personIdsValues(release.artists) : personIdValues(release.artist);
         const liveRecordCount = releaseLiveRecordCount(release);
         const releaseTags = releaseCategoryTags(release);
         const primaryCategory = releasePrimaryCategory(release);
         const categoryValues = releaseCategoryValues(primaryCategory);
+        const echoCoPerformer = release.id === "release-echo-1985" ? personIdValues("person-pan-yue-yun") : undefined;
         return (
           <a
             class="record-card"
@@ -150,7 +147,14 @@ const releaseFilterOptions = [
               releaseProducers(release)
             ].filter(Boolean).join(" ")}
           >
-            <h2>{originalReleaseTitle(release)}</h2>
+            <h2>
+              <span>{originalReleaseTitle(release)}</span>
+              {echoCoPerformer ? (
+                <small class="title-side-note" {...i18nAttrs(labelValueValues("label.performedBy", echoCoPerformer))}>
+                  {valueForLocale(labelValueValues("label.performedBy", echoCoPerformer))}
+                </small>
+              ) : null}
+            </h2>
             <div class="record-meta-table">
               <span {...i18nAttrs(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}>
                 {valueForLocale(labelValueValues("label.date", release.releaseDate || uiText("value.unknown")))}
@@ -169,16 +173,6 @@ const releaseFilterOptions = [
                   {valueForLocale(labelValueValues("label.label", release.label))}
                 </span>
               ) : null}
-            </div>
-            <div class="meta-row">
-              {releaseProducers(release) ? (
-                <span {...i18nAttrs(labelValueValues("label.producer", producer))}>
-                  {valueForLocale(labelValueValues("label.producer", producer))}
-                </span>
-              ) : null}
-              <span class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""} {...i18nAttrs(artists)}>
-                {valueForLocale(artists) || releaseArtists(release) || personName(release.artist)}
-              </span>
             </div>
             <div class="availability-row" aria-label="Availability summary">
               {releaseAvailabilityChecks(release).map(([label, available]) => {

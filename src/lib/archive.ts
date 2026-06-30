@@ -6,6 +6,8 @@ import musicShowsData from "../../data/music-shows.json";
 import releasesData from "../../data/releases.json";
 import songsData from "../../data/songs.json";
 import sourcesData from "../../data/sources.json";
+import { concertDisplayTitleValues, titleValues } from "./i18n";
+import type { LocaleValues } from "./i18n";
 
 export type Status = "confirmed" | "partial" | "uncertain" | "needs-source";
 
@@ -275,6 +277,7 @@ export type SongLiveRecord = {
   kind: "concert" | "music-show";
   category: string;
   title: string;
+  titleValues: LocaleValues;
   href: string;
   date?: string | null;
   context?: string | null;
@@ -716,6 +719,7 @@ export function liveRecordsForSong(songId: string): SongLiveRecord[] {
         kind: "concert" as const,
         category: "Concert",
         title: concert.title,
+        titleValues: concertDisplayTitleValues(concert),
         href: `/concerts/${concert.slug}/`,
         date: entry.date || concert.date,
         context: text([concert.venue, concert.city, concert.countryOrRegion]),
@@ -731,6 +735,7 @@ export function liveRecordsForSong(songId: string): SongLiveRecord[] {
         kind: "music-show" as const,
         category: "Music show",
         title: show.title,
+        titleValues: titleValues(show),
         href: `/music-shows/${show.slug}/`,
         date: entry.date || show.date,
         context: text([show.program, show.episode, show.platform]),

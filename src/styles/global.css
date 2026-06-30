@@ -20,6 +20,8 @@
     0 4px 8px -4px rgba(0, 0, 0, 0.04),
     0 16px 24px -8px rgba(0, 0, 0, 0.06);
   --focus-ring: 0 0 0 2px #ffffff, 0 0 0 4px var(--accent);
+  --detail-section-measure: 960px;
+  --detail-content-measure: 900px;
   font-family:
     "Geist Sans", "Helvetica Neue", Arial, ui-sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -606,6 +608,28 @@ main {
   white-space: nowrap;
 }
 
+.record-card h2 {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+}
+
+.record-card h2 > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.title-side-note {
+  color: var(--subtle);
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: none;
+}
+
 .concert-record-card {
   align-items: baseline;
   display: grid;
@@ -816,6 +840,18 @@ details[open].concert-year-group .concert-year-summary::after {
   grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   line-height: 1.35;
   margin-top: 0.6rem;
+}
+
+.detail-panel > .record-meta-table {
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 620;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.detail-panel > .record-meta-table b {
+  font-weight: 620;
 }
 
 .record-meta-table span {
@@ -1297,7 +1333,16 @@ details[open].concert-year-group .concert-year-summary::after {
 .fact-list {
   background: transparent;
   border-top: 1px solid var(--line);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--detail-section-measure);
   padding: 1.25rem 0 0;
+}
+
+.detail-flow-section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--detail-section-measure);
 }
 
 .detail-panel h2,
@@ -1312,7 +1357,31 @@ details[open].concert-year-group .concert-year-summary::after {
 .fact-list p {
   color: var(--muted);
   line-height: 1.65;
-  max-width: 760px;
+  max-width: min(760px, var(--detail-content-measure));
+}
+
+.detail-panel > .record-meta-table,
+.detail-panel > .availability-row,
+.detail-panel > .availability-link-grid,
+.detail-panel > .link-list,
+.detail-panel > .empty-state,
+.detail-panel > .track-credit-list,
+.detail-flow-section > .filter-panel,
+.detail-flow-section > .archive-grid,
+.detail-flow-section > .empty-state {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--detail-content-measure);
+}
+
+.detail-panel > .availability-link-grid,
+.detail-panel > .link-list,
+.detail-panel > .empty-state,
+.detail-panel > .track-credit-list,
+.detail-flow-section > .filter-panel,
+.detail-flow-section > .archive-grid,
+.detail-flow-section > .empty-state {
+  width: 100%;
 }
 
 .fact-lines {
@@ -1365,6 +1434,102 @@ details[open].concert-year-group .concert-year-summary::after {
   line-height: 1.48;
   margin: 0.28rem 0;
   max-width: 720px;
+}
+
+.aligned-record-grid .record-card {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.track-meta-line,
+.track-origin-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.live-record-list {
+  margin-top: 1rem;
+}
+
+.live-record-sort {
+  margin: 0.4rem 0 0.55rem;
+}
+
+.live-record-sort button {
+  font-size: 0.74rem;
+  min-height: 1.75rem;
+  padding: 0.28rem 0.48rem;
+}
+
+.live-record-table {
+  border-top: 1px solid var(--line);
+  display: grid;
+}
+
+.live-record-row {
+  align-items: center;
+  border-bottom: 1px solid var(--line-soft);
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: minmax(0, 1fr) 8rem max-content;
+  min-width: 0;
+  padding: 0.62rem 0;
+}
+
+.live-record-main,
+.live-record-date {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.live-record-main {
+  display: grid;
+  gap: 0.12rem;
+  justify-self: stretch;
+  text-align: left;
+}
+
+.live-record-main a {
+  font-size: 0.88rem;
+  font-weight: 620;
+  text-decoration: none;
+}
+
+.live-record-date {
+  justify-self: center;
+  text-align: center;
+  transform: translateX(-4rem);
+}
+
+.live-record-main small,
+.live-record-date {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.3;
+}
+
+.live-record-actions {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.25rem;
+  justify-content: flex-end;
+  justify-self: end;
+}
+
+.live-record-actions button {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--subtle);
+  cursor: default;
+  font: inherit;
+  font-size: 0.72rem;
+  line-height: 1;
+  min-height: 1.75rem;
+  padding: 0.25rem 0.42rem;
 }
 
 .track-credit-list {
@@ -1560,6 +1725,25 @@ details[open].concert-year-group .concert-year-summary::after {
 
   .record-card summary {
     grid-template-columns: minmax(0, 1fr) 1.2rem;
+  }
+
+  .track-meta-line,
+  .track-origin-line {
+    white-space: normal;
+  }
+
+  .live-record-row {
+    align-items: start;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .live-record-date {
+    white-space: normal;
+  }
+
+  .live-record-actions {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
   }
 
   .concert-group-summary {
