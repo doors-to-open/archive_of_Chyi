@@ -317,15 +317,6 @@ const categoryValues = releaseCategoryValues(primaryCategory);
       </div>
     </section>
 
-    {release.notes ? (
-      <section class="section detail-panel">
-        <h2 {...i18nAttrs(uiText("label.notes"))}>{valueForLocale(uiText("label.notes"))}</h2>
-        <p {...i18nAttrs(noteValues(release.notes, release.notesLocalized))}>
-          {valueForLocale(noteValues(release.notes, release.notesLocalized))}
-        </p>
-      </section>
-    ) : null}
-
     <ContributionActions
       recordType="Release"
       recordTitle={release.title}

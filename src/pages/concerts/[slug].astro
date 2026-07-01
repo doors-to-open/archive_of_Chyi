@@ -4,9 +4,11 @@ import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import {
   byId,
+  type ArchiveLink,
   concertAvailabilityChecks,
   concertCoPerformerIds,
   concerts,
+  personForName,
   releasesForSong,
   songs
 } from "../../lib/archive";
@@ -44,6 +46,28 @@ const venueValues = concertVenueValues(concert);
 const hasLocation = Boolean(concert.city || concert.countryOrRegion || concert.cityLocalized || concert.countryOrRegionLocalized);
 const hasVenue = Boolean(concert.venue || concert.venueLocalized);
 const unknownMetaClass = "metadata-placeholder";
+
+function clipMetaValues(link: ArchiveLink) {
+  return joinValues([
+    link.platform ? textValues(link.platform) : null,
+    link.credit ? textValues(`Credit: ${link.credit}`, `來源：${link.credit}`, `来源：${link.credit}`) : null,
+    link.resolution ? textValues(link.resolution) : null,
+    link.part ? textValues(link.part) : null,
+    link.timestamp ? textValues(link.timestamp) : null
+  ]);
+}
+
+function clipPositionValues(link: ArchiveLink) {
+  return link.timestamp ? textValues(link.timestamp) : link.part ? textValues(link.part) : uiText("value.unknown");
+}
+
+function earliestRelease(releaseList: ReturnType<typeof releasesForSong>) {
+  return [...releaseList].sort((first, second) => {
+    const firstDate = first.releaseDate || "9999-99-99";
+    const secondDate = second.releaseDate || "9999-99-99";
+    return firstDate.localeCompare(secondDate) || first.title.localeCompare(second.title);
+  })[0];
+}
 ---
 
 <BaseLayout title={`${concert.title} | All for Chyi Yu`}>
@@ -96,50 +120,63 @@ const unknownMetaClass = "metadata-placeholder";
       )}
     </section>
 
-    <section class="section detail-flow-section">
-      <div class="section-header">
+    <section class="section detail-flow-section release-track-section">
+      <div class="section-header track-section-header">
         <h2 {...i18nAttrs(uiText("label.songs"))}>{valueForLocale(uiText("label.songs"))}</h2>
         <p {...i18nAttrs(countValues(concert.setlist.length, "count.entry", "count.entries"))}>
           {valueForLocale(countValues(concert.setlist.length, "count.entry", "count.entries"))}
         </p>
       </div>
 
-      <div class="archive-grid setlist-grid">
+      <div class="archive-grid aligned-record-grid track-card-grid setlist-grid">
         {concert.setlist.map((entry, index) => {
           const linkedSong = byId(songs, entry.song);
           const linkedReleases = linkedSong ? releasesForSong(linkedSong.id) : [];
           const performedTitle = performanceTitleValues(entry, linkedSong);
           const displayPosition = entry.position || index + 1;
           const numberedTitle = joinValues([{ en: `${displayPosition}. `, "zh-Hant": `${displayPosition}. `, "zh-Hans": `${displayPosition}. ` }, performedTitle], "");
+          const isMedley = Boolean(entry.songParts?.length);
+          const originalPerformerIds = linkedSong?.originalPerformers?.filter((id) => id !== "person-chyi-yu") || [];
+          const hasOriginalPerformer = Boolean(entry.originalPerformer || originalPerformerIds.length);
+          const hasCollaborators = Boolean(entry.collaborators?.length);
+          const sideRelease = !isMedley && !hasOriginalPerformer && !hasCollaborators ? earliestRelease(linkedReleases) : undefined;
+          const originalPerformer = personForName(entry.originalPerformer);
+          const collaboratorNote = hasCollaborators ? personIdsValues(entry.collaborators) : undefined;
+          const originalPerformerNote = hasOriginalPerformer
+            ? originalPerformerIds.length
+              ? personIdsValues(originalPerformerIds)
+              : originalPerformer
+                ? personIdValues(originalPerformer.id)
+                : textValues(entry.originalPerformer || "")
+            : undefined;
+          const nameNote = collaboratorNote || originalPerformerNote
+            ? joinValues([collaboratorNote, originalPerformerNote])
+            : undefined;
+          const sideNote = !isMedley
+            ? nameNote || (sideRelease ? titleValues(sideRelease) : undefined)
+            : undefined;
+          const clipCount = entry.mediaLinks?.length || 0;
+          const summaryMeta = joinValues([
+            linkedSong ? titleValues(linkedSong) : null,
+            clipCount ? countValues(clipCount, "count.link", "count.links") : null
+          ]);
           return (
             <details class="record-card compact-record-card">
               <summary>
-                <span {...i18nAttrs(numberedTitle)}>{valueForLocale(numberedTitle)}</span>
-                <span class="summary-meta" {...i18nAttrs(linkedSong ? titleValues(linkedSong) : { en: "", "zh-Hant": "", "zh-Hans": "" })}>
-                  {linkedSong ? valueForLocale(titleValues(linkedSong)) : ""}
+                <span class="track-summary-title-row">
+                  <span {...i18nAttrs(numberedTitle)}>{valueForLocale(numberedTitle)}</span>
+                  {sideRelease && sideNote ? (
+                    <a class="track-meta-line" href={`/releases/${sideRelease.slug}/`} {...i18nAttrs(sideNote)}>{valueForLocale(sideNote)}</a>
+                  ) : sideNote ? (
+                    <span class="track-meta-line" {...i18nAttrs(sideNote)}>{valueForLocale(sideNote)}</span>
+                  ) : null}
+                </span>
+                <span class="summary-meta" {...i18nAttrs(summaryMeta)}>
+                  {valueForLocale(summaryMeta)}
                 </span>
               </summary>
 
               <div class="details-body">
-                {linkedSong ? (
-                  <>
-                    {linkedSong.lyricsBy.length ? (
-                      <p {...i18nAttrs(labelValueValues("label.lyrics", personIdsValues(linkedSong.lyricsBy)))}>
-                        {valueForLocale(labelValueValues("label.lyrics", personIdsValues(linkedSong.lyricsBy)))}
-                      </p>
-                    ) : null}
-                    {linkedSong.composedBy.length ? (
-                      <p {...i18nAttrs(labelValueValues("label.music", personIdsValues(linkedSong.composedBy)))}>
-                        {valueForLocale(labelValueValues("label.music", personIdsValues(linkedSong.composedBy)))}
-                      </p>
-                    ) : null}
-                  </>
-                ) : null}
-                {entry.collaborators?.length ? (
-                  <p {...i18nAttrs(labelValueValues("label.collaborators", personIdsValues(entry.collaborators)))}>
-                    {valueForLocale(labelValueValues("label.collaborators", personIdsValues(entry.collaborators)))}
-                  </p>
-                ) : null}
                 {entry.originalPerformer ? (
                   <p {...i18nAttrs(labelValueValues("label.originalPerformer", entry.originalPerformer))}>
                     {valueForLocale(labelValueValues("label.originalPerformer", entry.originalPerformer))}
@@ -159,13 +196,26 @@ const unknownMetaClass = "metadata-placeholder";
                   </div>
                 ) : null}
                 {entry.mediaLinks?.length ? (
-                  <div>
-                    <h3 {...i18nAttrs(uiText("label.clipLinks"))}>{valueForLocale(uiText("label.clipLinks"))}</h3>
-                    {entry.mediaLinks.map((link) => (
-                      <p>
-                        <a href={link.url} {...i18nAttrs(archiveLinkDisplayValues(link))}>{valueForLocale(archiveLinkDisplayValues(link))}</a>
-                      </p>
-                    ))}
+                  <div class="nested-links live-record-list clip-link-list">
+                    <div class="live-record-header">
+                      <h3 {...i18nAttrs(uiText("label.clipLinks"))}>{valueForLocale(uiText("label.clipLinks"))}</h3>
+                    </div>
+                    <div class="live-record-table">
+                      {entry.mediaLinks.map((link) => {
+                        const linkTitle = archiveLinkDisplayValues(link);
+                        const linkMeta = clipMetaValues(link);
+                        const linkPosition = clipPositionValues(link);
+                        return (
+                          <div class="live-record-row clip-link-row">
+                            <div class="live-record-main">
+                              <a href={link.url} {...i18nAttrs(linkTitle)}>{valueForLocale(linkTitle)}</a>
+                              <small {...i18nAttrs(linkMeta)}>{valueForLocale(linkMeta)}</small>
+                            </div>
+                            <span class="live-record-date" {...i18nAttrs(linkPosition)}>{valueForLocale(linkPosition)}</span>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 ) : (
                   <p class="muted" {...i18nAttrs(uiText("empty.noClipLinks"))}>{valueForLocale(uiText("empty.noClipLinks"))}</p>
@@ -176,13 +226,6 @@ const unknownMetaClass = "metadata-placeholder";
         })}
       </div>
     </section>
-
-    {concert.notes ? (
-      <section class="section detail-panel">
-        <h2 {...i18nAttrs(uiText("label.notes"))}>{valueForLocale(uiText("label.notes"))}</h2>
-        <p>{concert.notes}</p>
-      </section>
-    ) : null}
 
     <ContributionActions
       recordType="Concert"

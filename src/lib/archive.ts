@@ -335,6 +335,17 @@ export function personNames(ids: string[] | undefined) {
   return ids?.length ? ids.map(personName).join(", ") : "";
 }
 
+export function personForName(name: string | undefined | null) {
+  if (!name) return undefined;
+  const normalized = name.toLocaleLowerCase("en-US");
+  return people.find((person) =>
+    person.id.toLocaleLowerCase("en-US") === normalized ||
+    person.displayName.toLocaleLowerCase("en-US") === normalized ||
+    person.nameOriginal?.toLocaleLowerCase("en-US") === normalized ||
+    person.aliases.some((alias) => alias.toLocaleLowerCase("en-US") === normalized)
+  );
+}
+
 export function releaseArtists(release: Release) {
   return personNames(release.artists?.length ? release.artists : [release.artist]);
 }

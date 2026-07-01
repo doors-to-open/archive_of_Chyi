@@ -1606,6 +1606,10 @@ details[open].concert-year-group .concert-year-summary::after {
   padding: 0.62rem 0;
 }
 
+.clip-link-row {
+  grid-template-columns: minmax(0, 1fr) 8rem;
+}
+
 .live-record-main,
 .live-record-date {
   min-width: 0;
@@ -1877,6 +1881,10 @@ details[open].concert-year-group .concert-year-summary::after {
 
   .live-record-row {
     align-items: start;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .clip-link-row {
     grid-template-columns: minmax(0, 1fr) auto;
   }
 

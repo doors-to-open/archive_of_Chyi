@@ -219,15 +219,6 @@ function officialReleasePlacements(track: NonNullable<typeof appearance.tracks>[
       )}
     </section>
 
-    {appearance.notes ? (
-      <section class="section detail-panel">
-        <h2 {...i18nAttrs(uiText("label.notes"))}>{valueForLocale(uiText("label.notes"))}</h2>
-        <p {...i18nAttrs(noteValues(appearance.notes, appearance.notesLocalized))}>
-          {valueForLocale(noteValues(appearance.notes, appearance.notesLocalized))}
-        </p>
-      </section>
-    ) : null}
-
     <ContributionActions
       recordType="Appearance"
       recordTitle={appearance.title}

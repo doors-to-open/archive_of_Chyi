@@ -190,13 +190,6 @@ const unknownMetaClass = "metadata-placeholder";
       </div>
     </section>
 
-    {show.notes ? (
-      <section class="section detail-panel">
-        <h2 {...i18nAttrs(uiText("label.notes"))}>{valueForLocale(uiText("label.notes"))}</h2>
-        <p>{show.notes}</p>
-      </section>
-    ) : null}
-
     <ContributionActions
       recordType="Music show"
       recordTitle={show.title}
