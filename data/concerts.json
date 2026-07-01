@@ -8146,6 +8146,101 @@
     "category": "collaboration"
   },
   {
+    "id": "concert-minge-40-2015-taipei",
+    "slug": "minge-40-2015-taipei",
+    "title": "Folk",
+    "date": "2015-06-05/2015-06-06",
+    "venue": "Taipei Arena",
+    "city": "Taipei",
+    "countryOrRegion": "Taiwan",
+    "eventType": "festival",
+    "performers": [
+      "person-chyi-yu",
+      "person-pan-yue-yun",
+      "李建復"
+    ],
+    "guests": [
+      "person-pan-yue-yun"
+    ],
+    "tags": [],
+    "setlist": [
+      {
+        "position": 79,
+        "song": "song-your-smiling-face",
+        "titlePerformed": "歡顏",
+        "collaborators": []
+      },
+      {
+        "position": 80,
+        "song": "song-you-are-all-my-memories",
+        "titlePerformed": "你是我所有的回憶",
+        "collaborators": []
+      },
+      {
+        "position": 81,
+        "song": "song-olive-tree",
+        "titlePerformed": "橄欖樹",
+        "collaborators": []
+      },
+      {
+        "position": 82,
+        "song": "song-dream-field",
+        "titlePerformed": "夢田",
+        "collaborators": [
+          "person-pan-yue-yun"
+        ]
+      }
+    ],
+    "mediaLinks": [
+      {
+        "label": "QQ Music official recording",
+        "platform": "qq-music",
+        "url": "https://y.qq.com/n/ryqq/albumDetail/004IqUC92Aw9TL",
+        "kind": "streaming",
+        "isOfficial": true,
+        "accessRegion": "China mainland",
+        "notes": "QQ Music exposes an official 78-track audio recording under albumMID 004IqUC92Aw9TL."
+      },
+      {
+        "label": "Rockmall official 2BD listing",
+        "platform": "official-store",
+        "url": "https://shop.rockmall.com.tw/product_view.php?id=53850",
+        "kind": "release-link",
+        "isOfficial": true,
+        "accessRegion": "Taiwan",
+        "notes": "Official video-recording product page lists the Taipei Arena 2015-06-05/06 concert and the Chyi Yu segment order."
+      }
+    ],
+    "officialRecording": true,
+    "sources": [
+      "source-taipei-arena-minge-40-2015-taipei",
+      "source-rockmall-minge-40-taipei-2bd",
+      "source-ettoday-minge-40-taipei-opening",
+      "source-qq-music-minge-40-taipei-2015"
+    ],
+    "sourceQuality": "official venue; official recording; news-backed",
+    "notes": "Created from the maintainer-supplied QQ Music recording link after correcting the earlier mistaken release modeling. Taipei Arena confirms the two-night event on 2015-06-05 and 2015-06-06, hosted by 中華音樂人交流協會. Rockmall's official 2BD page documents the full concert recording and places Chyi Yu's segment as 歡顏, 你是我所有的回憶, 橄欖樹, and 夢田 with Pan Yue-yun. QQ Music has a different streaming sequence for the same official recording, with Chyi Yu credited on 梦田, 欢颜, 橄榄树, and 你是我所有的回忆.",
+    "status": "partial",
+    "titleLocalized": {
+      "en": "Folk",
+      "zh-Hant": "民歌",
+      "zh-Hans": "民歌"
+    },
+    "role": "guest",
+    "series": "minge",
+    "nature": "commercial",
+    "category": "anniversary",
+    "groupKey": "minge",
+    "groupKind": "theme",
+    "groupTitle": "Folk",
+    "groupTitleLocalized": {
+      "en": "Folk",
+      "zh-Hant": "民歌",
+      "zh-Hans": "民歌"
+    },
+    "anniversaryYear": "40"
+  },
+  {
     "id": "concert-huai-nian-charity-2015-singapore",
     "slug": "huai-nian-charity-2015-singapore",
     "title": "Cherish, Because of Love",

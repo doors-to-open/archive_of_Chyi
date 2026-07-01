@@ -323,9 +323,37 @@ export const appearances = appearancesData as Appearance[];
 export const sources = sourcesData as Source[];
 export const mediaLinks = mediaLinksData as unknown[];
 
+const englishCoverReleaseIds = new Set([
+  "release-stories-1987",
+  "release-whoever-finds-this-i-love-you-1988",
+  "release-paradise-bird-1988",
+  "release-where-have-all-the-flowers-gone-1990",
+  "release-love-of-my-life-1993",
+  "release-dare-to-dream-1994",
+  "release-chyis-tears-1996",
+  "release-cest-la-vie-1999",
+  "release-the-voice-2010",
+  "release-clouds-2011"
+]);
+
+const coverTrackContextReleaseIds = new Set([
+  "release-stories-1987",
+  "release-whoever-finds-this-i-love-you-1988",
+  "release-paradise-bird-1988",
+  "release-where-have-all-the-flowers-gone-1990",
+  "release-love-of-my-life-1993",
+  "release-dare-to-dream-1994",
+  "release-chyis-tears-1996",
+  "release-cest-la-vie-1999"
+]);
+
 export function byId<T extends { id: string }>(items: T[], id: string | null | undefined) {
   if (!id) return undefined;
   return items.find((item) => item.id === id);
+}
+
+export function usesCoverTrackContext(release: Pick<Release, "id">) {
+  return coverTrackContextReleaseIds.has(release.id);
 }
 
 export function personName(id: string) {
@@ -416,14 +444,6 @@ export function releaseAvailabilityChecks(release: Release) {
 }
 
 export function releaseCategoryTags(release: Release) {
-  const englishCoverReleaseIds = new Set([
-    "release-whoever-finds-this-i-love-you-1988",
-    "release-where-have-all-the-flowers-gone-1990",
-    "release-dare-to-dream-1994",
-    "release-chyis-tears-1996",
-    "release-the-voice-2010",
-    "release-clouds-2011"
-  ]);
   const religiousReleaseIds = new Set([
     "release-chanting-for-you-2-peace-of-mind-2004",
     "release-chanting-for-you-1-peaceful-heart-2004",
@@ -460,6 +480,7 @@ export function releaseCategoryTags(release: Release) {
     englishCoverReleaseIds.has(release.id) ||
     text.includes("english-language") ||
     text.includes("english cover") ||
+    text.includes("english-cover") ||
     text.includes("cover album")
   ) {
     tags.add("english-cover");

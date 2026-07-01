@@ -168,11 +168,6 @@ const releaseFilterOptions = [
               <span {...i18nAttrs(countValues(liveRecordCount, "count.linkedLiveRecord", "count.linkedLiveRecords"))}>
                 {valueForLocale(countValues(liveRecordCount, "count.linkedLiveRecord", "count.linkedLiveRecords"))}
               </span>
-              {release.label ? (
-                <span {...i18nAttrs(labelValueValues("label.label", release.label))}>
-                  {valueForLocale(labelValueValues("label.label", release.label))}
-                </span>
-              ) : null}
             </div>
             <div class="availability-row" aria-label="Availability summary">
               {releaseAvailabilityChecks(release).map(([label, available]) => {

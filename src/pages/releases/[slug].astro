@@ -4,15 +4,14 @@ import ContributionActions from "../../components/ContributionActions.astro";
 import RecordStatus from "../../components/RecordStatus.astro";
 import {
   byId,
-  personName,
   releaseAvailabilityChecks,
-  releaseArtists,
+  releaseCategoryTags,
   releasePrimaryCategory,
   hasPhysicalPurchaseLinks,
-  releaseProducers,
   releases,
   songSummary,
-  songs
+  songs,
+  usesCoverTrackContext
 } from "../../lib/archive";
 import {
   availabilityValues,
@@ -21,9 +20,7 @@ import {
   i18nCountLabelAttrs,
   joinValues,
   labelValueValues,
-  noteValues,
   originValues,
-  personIdValues,
   personIdsValues,
   releaseCategoryValues,
   textValues,
@@ -33,6 +30,7 @@ import {
   originalTrackTitle
 } from "../../lib/i18n";
 import type { ArchiveLink } from "../../lib/archive";
+import type { LocaleValues } from "../../lib/i18n";
 
 export function getStaticPaths() {
   return releases.map((release) => ({
@@ -47,15 +45,133 @@ const trackSummaries = new Map(
     .filter((track) => track.song)
     .map((track) => [track.song, songSummary(byId(songs, track.song)!)])
 );
+const useCoverTrackContext = usesCoverTrackContext(release);
+const useDurationOnlyTrackMeta = releaseCategoryTags(release).includes("religious");
+const originalComposerLabel = textValues("Original composer", "原作曲", "原作曲");
+const originalSourceLabel = textValues("Original source", "原始來源", "原始来源");
+const coPerformedWithLabel = textValues("Co-performed with", "共同演唱", "共同演唱");
+const chyiYuPersonId = "person-chyi-yu";
+
+type ReleaseTrack = (typeof release.tracks)[number];
+type LinkedSong = (typeof songs)[number] | undefined;
 
 function peopleListValues(ids: string[]) {
   return personIdsValues(ids, uiText("value.notRecorded"));
 }
 
-function trackNumber(track: (typeof release.tracks)[number]) {
+function resolvedLyricsBy(track: ReleaseTrack, linkedSong: LinkedSong) {
+  return track.credits.lyricsBy.length ? track.credits.lyricsBy : linkedSong?.lyricsBy || [];
+}
+
+function resolvedComposedBy(track: ReleaseTrack, linkedSong: LinkedSong) {
+  return track.credits.composedBy.length ? track.credits.composedBy : linkedSong?.composedBy || [];
+}
+
+function trackNumber(track: ReleaseTrack) {
   return [track.disc ? `D${track.disc}` : "", track.position ? `${track.position}` : ""]
     .filter(Boolean)
     .join(".");
+}
+
+function customLabelValueValues(label: LocaleValues, value: string | LocaleValues | null | undefined) {
+  const resolved = typeof value === "string"
+    ? (value ? textValues(value) : undefined)
+    : value;
+  return joinValues([label, resolved || uiText("value.unknown")], ": ");
+}
+
+function cleanCoverContextValue(value: string) {
+  return value
+    .replace(/\s+/g, " ")
+    .replace(/,\s*\d{4}$/, "")
+    .trim();
+}
+
+function firstNoteMatch(track: ReleaseTrack, patterns: RegExp[]) {
+  const note = track.versionNote || "";
+  for (const pattern of patterns) {
+    const match = note.match(pattern);
+    if (match?.[1]) return cleanCoverContextValue(match[1]);
+  }
+  return "";
+}
+
+function noteMarksUnknownSource(track: ReleaseTrack) {
+  return Boolean(track.versionNote?.match(/original source (?:unknown|unmentioned)/i));
+}
+
+function noteOriginalPerformer(track: ReleaseTrack) {
+  if (noteMarksUnknownSource(track)) return "";
+  return firstNoteMatch(track, [
+    /Original performer\/source noted by English Wikipedia:\s*([^.;]+)/i,
+    /original source\s+([^.;]+)/i,
+    /OC note:\s*([^.;]+)/i
+  ]);
+}
+
+function noteOriginalComposer(track: ReleaseTrack) {
+  return firstNoteMatch(track, [
+    /based on .*? by\s+([^.;]+)/i,
+    /based on\s+([^.;]+?)[’']s\s+[^.;]+/i,
+    /lists .*? music by\s+([^.;]+)/i,
+    /Music\/lyrics source noted by English Wikipedia:\s*([^.;]+)/i,
+    /notes words by .*? and music by\s+([^.;]+)/i,
+    /notes\s+([^.;]+),\s+with arrangement/i
+  ]);
+}
+
+function coverOriginalPerformerValues(track: ReleaseTrack, linkedSong: LinkedSong) {
+  if (linkedSong?.originalPerformers?.length) return personIdsValues(linkedSong.originalPerformers);
+  const performer = noteOriginalPerformer(track);
+  return performer ? textValues(performer) : undefined;
+}
+
+function coverOriginalComposerValues(track: ReleaseTrack, linkedSong: LinkedSong) {
+  if (linkedSong?.composedBy?.length) return personIdsValues(linkedSong.composedBy);
+  const composer = noteOriginalComposer(track);
+  return composer ? textValues(composer) : undefined;
+}
+
+function coPerformerValues(track: ReleaseTrack) {
+  const coPerformers = track.performers?.filter((personId) => personId !== chyiYuPersonId) || [];
+  return coPerformers.length
+    ? customLabelValueValues(coPerformedWithLabel, personIdsValues(coPerformers))
+    : undefined;
+}
+
+function echoLeadingTrackNotes(track: ReleaseTrack) {
+  if (release.id !== "release-echo-1985") return [];
+  const note = track.versionNote || "";
+  return [
+    note.includes("Performed by Pan Yue-yun") ? textValues("Pan Yue-yun", "潘越雲", "潘越云") : "",
+    note.includes("七點鐘（今生）") ? textValues("今生") : ""
+  ];
+}
+
+function echoTrailingTrackNotes(track: ReleaseTrack) {
+  if (release.id !== "release-echo-1985") return [];
+  const note = track.versionNote || "";
+  return note.includes("Sanmao spoken narration")
+    ? [textValues("Sanmao narration", "三毛口白", "三毛口白")]
+    : [];
+}
+
+function coverTrackMetaValues(track: ReleaseTrack, linkedSong: LinkedSong) {
+  const originalPerformerValues = coverOriginalPerformerValues(track, linkedSong);
+  const originalComposerValues = originalPerformerValues
+    ? undefined
+    : coverOriginalComposerValues(track, linkedSong);
+  const originContext = originalPerformerValues
+    ? originalPerformerValues
+    : originalComposerValues
+      ? customLabelValueValues(originalComposerLabel, originalComposerValues)
+      : customLabelValueValues(originalSourceLabel, uiText("value.unknown"));
+
+  return joinValues([
+    originContext,
+    coPerformerValues(track),
+    track.duration ? labelValueValues("label.duration", track.duration) : ""
+  ]);
 }
 
 function platformName(link: ArchiveLink) {
@@ -90,14 +206,14 @@ function platformNameValues(link: ArchiveLink) {
   return textValues(name);
 }
 
-function isChyiOriginalPerformer(value: string | undefined | null) {
-  return Boolean(value?.toLocaleLowerCase("en-US").includes("chyi yu"));
-}
-
 const unknownMetaClass = "metadata-placeholder";
 
 const primaryCategory = releasePrimaryCategory(release);
 const categoryValues = releaseCategoryValues(primaryCategory);
+const releaseProducerIds = release.credits.producer || release.credits.producers || [];
+const producerValues = releaseProducerIds.length
+  ? personIdsValues(releaseProducerIds)
+  : uiText("label.producer");
 ---
 
 <BaseLayout title={`${release.title} | All for Chyi Yu`}>
@@ -114,18 +230,11 @@ const categoryValues = releaseCategoryValues(primaryCategory);
     <article class="section detail-panel">
       <RecordStatus status={release.status} />
       <div class="record-meta-table">
-        <span {...i18nAttrs(release.artists?.length ? personIdsValues(release.artists) : personIdValues(release.artist))}>
-          <b
-            class={release.artists && release.artists.length > 1 ? "meta-highlight" : ""}
-          >
-            {valueForLocale(release.artists?.length ? personIdsValues(release.artists) : personIdValues(release.artist)) || releaseArtists(release) || personName(release.artist)}
+        <span class={!releaseProducerIds.length ? unknownMetaClass : ""} {...i18nAttrs(producerValues)}>
+          <b class={releaseProducerIds.length ? "meta-highlight" : ""}>
+            {valueForLocale(producerValues)}
           </b>
         </span>
-        {releaseProducers(release) ? (
-          <span {...i18nAttrs(personIdsValues(release.credits.producer || release.credits.producers || []))}>
-            {valueForLocale(personIdsValues(release.credits.producer || release.credits.producers || []))}
-          </span>
-        ) : null}
         <span class={!release.releaseDate ? unknownMetaClass : ""} {...i18nAttrs(release.releaseDate ? textValues(release.releaseDate) : uiText("label.date"))}>
           {release.releaseDate || valueForLocale(uiText("label.date"))}
         </span>
@@ -209,27 +318,28 @@ const categoryValues = releaseCategoryValues(primaryCategory);
 
       <div class="archive-grid aligned-record-grid track-card-grid" data-sort-container>
         {release.tracks.map((track, index) => {
-          const linkedSong = byId(songs, track.song);
+          const linkedSong = track.song ? byId(songs, track.song) : undefined;
           const summary = track.song ? trackSummaries.get(track.song) : undefined;
           const numberedTitle = trackNumber(track)
             ? `${trackNumber(track)}. ${originalTrackTitle(track)}`
             : originalTrackTitle(track);
           const summaryMeta = summary
-            ? joinValues([originValues(summary.originLabel), countValues(summary.liveCount, "count.liveRecord", "count.liveRecords")])
+            ? joinValues([
+                originValues(useCoverTrackContext ? "Cover" : summary.originLabel),
+                countValues(summary.liveCount, "count.liveRecord", "count.liveRecords")
+              ])
             : uiText("value.unmodeledSong");
-          const trackMeta = joinValues([
-            labelValueValues("label.lyrics", peopleListValues(track.credits.lyricsBy)),
-            labelValueValues("label.music", peopleListValues(track.credits.composedBy)),
-            track.duration ? labelValueValues("label.duration", track.duration) : ""
-          ]);
-          const originalPerformer = summary?.originLabel === "Cover"
-            ? summary.liveRecords.find((record) =>
-                record.entry.originalPerformer && !isChyiOriginalPerformer(record.entry.originalPerformer)
-              )?.entry.originalPerformer
-            : undefined;
-          const originalPerformerValues = originalPerformer
-            ? labelValueValues("label.originalPerformer", textValues(originalPerformer))
-            : undefined;
+          const trackMeta = useDurationOnlyTrackMeta
+            ? (track.duration ? labelValueValues("label.duration", track.duration) : textValues(""))
+            : useCoverTrackContext
+              ? coverTrackMetaValues(track, linkedSong)
+              : joinValues([
+                  ...echoLeadingTrackNotes(track),
+                  labelValueValues("label.lyrics", peopleListValues(resolvedLyricsBy(track, linkedSong))),
+                  labelValueValues("label.music", peopleListValues(resolvedComposedBy(track, linkedSong))),
+                  ...echoTrailingTrackNotes(track),
+                  track.duration ? labelValueValues("label.duration", track.duration) : ""
+                ]);
           return (
             <details
               class="record-card compact-record-card"
@@ -247,20 +357,6 @@ const categoryValues = releaseCategoryValues(primaryCategory);
               </summary>
 
               <div class="details-body">
-                {track.performers?.length ? (
-                  <p class="performer-note" {...i18nAttrs(labelValueValues("label.performedBy", personIdsValues(track.performers)))}>
-                    {valueForLocale(labelValueValues("label.performedBy", personIdsValues(track.performers)))}
-                  </p>
-                ) : null}
-                {originalPerformerValues ? (
-                  <p class="track-origin-line" {...i18nAttrs(originalPerformerValues)}>{valueForLocale(originalPerformerValues)}</p>
-                ) : null}
-                {track.versionNote ? (
-                  <p {...i18nAttrs(noteValues(track.versionNote, track.versionNoteLocalized))}>
-                    {valueForLocale(noteValues(track.versionNote, track.versionNoteLocalized))}
-                  </p>
-                ) : null}
-
                 {summary?.liveRecords.length ? (
                   <div class="nested-links live-record-list" data-sort-root>
                     <div class="live-record-header">

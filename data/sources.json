@@ -4594,5 +4594,53 @@
     "title": "Zhongguo Zhi Xing",
     "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E4%B9%8B%E6%98%9F",
     "citation": "Wikipedia contributors. \"Zhongguo Zhi Xing.\" Wikipedia."
+  },
+  {
+    "id": "source-qq-music-minge-40-taipei-2015",
+    "sourceType": "platform",
+    "title": "民歌四十 再唱一段思想起--台北场 official recording on QQ Music",
+    "authorOrPublisher": "QQ Music",
+    "date": null,
+    "url": "https://y.qq.com/n/ryqq/albumDetail/004IqUC92Aw9TL",
+    "accessDate": "2026-07-02",
+    "citation": "QQ Music. \"民歌四十 再唱一段思想起--台北场.\"",
+    "reliability": "high",
+    "notes": "Maintainer-supplied QQ Music short link https://c6.y.qq.com/base/fcgi-bin/u?__=gZjwnh83HVnd resolves to albumMID 004IqUC92Aw9TL. QQ Music metadata lists artist 华语群星, publisher 中华音乐人交流协会, publishDate/publicTime 2015-06-05, and 78 tracks; Chyi Yu is credited on 梦田, 欢颜, 橄榄树, and 你是我所有的回忆. Used as official recording evidence for the Taipei 民歌40 concert shell, not as a Chyi Yu release."
+  },
+  {
+    "id": "source-taipei-arena-minge-40-2015-taipei",
+    "sourceType": "venue",
+    "title": "2015/06/05~06/06 民歌40演唱會-再唱一段思想起",
+    "authorOrPublisher": "Taipei Arena",
+    "date": null,
+    "url": "https://www.arena.taipei/News_Content.aspx?n=4A7BFF61FA074F0F&sms=F9A95D3F5A5C2C68&s=05E0905E50F8EEB4",
+    "accessDate": "2026-07-02",
+    "citation": "Taipei Arena. \"2015/06/05~06/06《民歌40演唱會-再唱一段思想起》.\"",
+    "reliability": "high",
+    "notes": "Official venue listing gives the Taipei Arena dates/times, organizer 中華音樂人交流協會, and event title."
+  },
+  {
+    "id": "source-rockmall-minge-40-taipei-2bd",
+    "sourceType": "official-store",
+    "title": "《民歌四十-再唱一段思想起》演唱會全紀錄 (2BD)",
+    "authorOrPublisher": "Rockmall",
+    "date": null,
+    "url": "https://shop.rockmall.com.tw/product_view.php?id=53850",
+    "accessDate": "2026-07-02",
+    "citation": "Rockmall. \"《民歌四十-再唱一段思想起》演唱會全紀錄 (2BD).\"",
+    "reliability": "high",
+    "notes": "Official product listing states the 2015-06-05/06 Taipei Arena concerts were recorded, with 68 singers and 90 songs; track listing includes 歡顏, 你是我所有的回憶, 橄欖樹, and 夢田 by 齊豫/潘越雲."
+  },
+  {
+    "id": "source-ettoday-minge-40-taipei-opening",
+    "sourceType": "news",
+    "title": "《民歌40》68人唱響小巨蛋 李宗盛：40年後走音還是我",
+    "authorOrPublisher": "ETtoday",
+    "date": "2015-06-06",
+    "url": "https://star.ettoday.net/news/516879",
+    "accessDate": "2026-07-02",
+    "citation": "ETtoday. \"《民歌40》68人唱響小巨蛋 李宗盛：40年後走音還是我.\" 2015-06-06.",
+    "reliability": "medium",
+    "notes": "News report confirms the 2015-06-05 Taipei Arena opening night, 68 performers, Chyi Yu and Pan Yue-yun participation, and the Chyi Yu/Pan Yue-yun 夢田 duet."
   }
 ]
