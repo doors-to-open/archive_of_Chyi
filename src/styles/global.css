@@ -780,7 +780,31 @@ details[open].record-card summary::after {
 }
 
 .concert-filter-panel {
-  grid-template-columns: repeat(3, minmax(10rem, 0.7fr)) repeat(2, minmax(10rem, 0.55fr)) auto;
+  gap: 0.85rem;
+  grid-template-columns: repeat(5, minmax(8.5rem, 1fr)) minmax(11rem, auto) minmax(8.5rem, auto) minmax(4.75rem, auto);
+}
+
+.concert-filter-panel .release-filter-select-label {
+  max-width: none;
+}
+
+.concert-filter-panel .filter-options {
+  flex-wrap: nowrap;
+}
+
+.concert-filter-panel .filter-options button {
+  padding-left: 0.55rem;
+  padding-right: 0.55rem;
+  white-space: nowrap;
+}
+
+.concert-filter-panel .sort-option-group {
+  margin-left: 2rem;
+}
+
+.concert-filter-panel [data-concert-count] {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .concert-list-panel {

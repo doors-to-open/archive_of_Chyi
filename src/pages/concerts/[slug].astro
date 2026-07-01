@@ -182,7 +182,7 @@ function earliestRelease(releaseList: ReturnType<typeof releasesForSong>) {
                     {valueForLocale(labelValueValues("label.originalPerformer", entry.originalPerformer))}
                   </p>
                 ) : null}
-                {linkedReleases.length ? (
+                {linkedReleases.length && !sideRelease ? (
                   <div>
                     <h3 {...i18nAttrs(uiText("label.releaseLinks"))}>{valueForLocale(uiText("label.releaseLinks"))}</h3>
                     {linkedReleases.map((release) => (
