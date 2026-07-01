@@ -168,6 +168,11 @@
     "appearanceType": "album-guest-vocal",
     "programOrWork": "Turning",
     "role": "vocal appearance",
+    "mainPerformers": [
+      {
+        "name": "Suzanne Ciani"
+      }
+    ],
     "relatedSongs": [
       "song-turning",
       "song-flying-bird-and-fish"
@@ -362,12 +367,13 @@
   {
     "id": "appearance-kangsi-coming",
     "slug": "kangsi-coming",
-    "title": "Kangsi Coming appearance",
+    "title": "Kangsi Coming",
     "titleOriginal": "康熙來了",
     "date": "2004",
-    "appearanceType": "talk-show",
+    "appearanceType": "show",
     "programOrWork": "Kangsi Coming",
     "role": "Guest",
+    "showContent": "promo",
     "hosts": [
       {
         "name": "Kevin Tsai",
@@ -519,7 +525,17 @@
     "date": "1985",
     "appearanceType": "album-guest-vocal",
     "programOrWork": "Tomorrow Will Be Better",
-    "role": "charity single vocal appearance",
+    "role": "vocal appearance",
+    "mainPerformers": [
+      {
+        "name": "Charity",
+        "nameLocalized": {
+          "en": "Charity",
+          "zh-Hant": "公益合唱",
+          "zh-Hans": "公益合唱"
+        }
+      }
+    ],
     "relatedSongs": [],
     "tracks": [
       {
@@ -628,14 +644,6 @@
             "zh-Hant": "鄧家佳",
             "zh-Hans": "邓家佳"
           }
-        },
-        {
-          "name": "Qiao Zhenyu",
-          "nameLocalized": {
-            "en": "Qiao Zhenyu",
-            "zh-Hant": "喬振宇",
-            "zh-Hans": "乔振宇"
-          }
         }
       ]
     },
@@ -713,6 +721,16 @@
     "appearanceType": "album-guest-vocal",
     "programOrWork": "快乐天堂",
     "role": "album vocal appearance",
+    "mainPerformers": [
+      {
+        "name": "Rolling Stone Stars",
+        "nameLocalized": {
+          "en": "Rolling Stone Stars",
+          "zh-Hant": "滾石群星",
+          "zh-Hans": "滚石群星"
+        }
+      }
+    ],
     "relatedSongs": [],
     "tracks": [
       {
@@ -954,14 +972,6 @@
             "zh-Hant": "鄭凱",
             "zh-Hans": "郑凯"
           }
-        },
-        {
-          "name": "Huang Rende",
-          "nameLocalized": {
-            "en": "Huang Rende",
-            "zh-Hant": "黃仁德",
-            "zh-Hans": "黄仁德"
-          }
         }
       ]
     },
@@ -1039,43 +1049,11 @@
       "releaseDate": "1995-07-31",
       "directors": [
         {
-          "name": "Yuen Ying-ming",
+          "name": "Lee Tim-sing",
           "nameLocalized": {
-            "en": "Yuen Ying-ming",
-            "zh-Hant": "袁英明",
-            "zh-Hans": "袁英明"
-          }
-        },
-        {
-          "name": "Lau Shun-on",
-          "nameLocalized": {
-            "en": "Lau Shun-on",
-            "zh-Hant": "劉順安",
-            "zh-Hans": "刘顺安"
-          }
-        },
-        {
-          "name": "Sin Yin-fong",
-          "nameLocalized": {
-            "en": "Sin Yin-fong",
-            "zh-Hant": "冼燕芳",
-            "zh-Hans": "冼燕芳"
-          }
-        },
-        {
-          "name": "Lau Kwok-ho",
-          "nameLocalized": {
-            "en": "Lau Kwok-ho",
-            "zh-Hant": "劉國豪",
-            "zh-Hans": "刘国豪"
-          }
-        },
-        {
-          "name": "Kong Kam-hung",
-          "nameLocalized": {
-            "en": "Kong Kam-hung",
-            "zh-Hant": "孔錦鴻",
-            "zh-Hans": "孔锦鸿"
+            "en": "Lee Tim-sing",
+            "zh-Hant": "李添勝",
+            "zh-Hans": "李添胜"
           }
         }
       ],
@@ -1351,6 +1329,105 @@
     "status": "partial"
   },
   {
+    "id": "appearance-rouge-of-the-north-1988-ost",
+    "slug": "rouge-of-the-north-1988-ost",
+    "title": "Rouge of the North OST",
+    "titleOriginal": "怨女 OST",
+    "titleLocalized": {
+      "en": "Rouge of the North OST",
+      "zh-Hant": "怨女 OST",
+      "zh-Hans": "怨女 OST"
+    },
+    "date": "1988-09-15",
+    "appearanceType": "ost-vocal-appearance",
+    "programOrWork": "Rouge of the North",
+    "role": "OST vocal appearance",
+    "workDetails": {
+      "releaseDate": "1988-09-15",
+      "directors": [
+        {
+          "name": "Fred Tan",
+          "nameLocalized": {
+            "en": "Fred Tan",
+            "zh-Hant": "但漢章",
+            "zh-Hans": "但汉章"
+          }
+        }
+      ],
+      "leadingCast": [
+        {
+          "name": "Pat Ha",
+          "nameLocalized": {
+            "en": "Pat Ha",
+            "zh-Hant": "夏文汐",
+            "zh-Hans": "夏文汐"
+          }
+        },
+        {
+          "name": "Jack Kao",
+          "nameLocalized": {
+            "en": "Jack Kao",
+            "zh-Hant": "高捷",
+            "zh-Hans": "高捷"
+          }
+        },
+        {
+          "name": "Xu Ming",
+          "nameLocalized": {
+            "en": "Xu Ming",
+            "zh-Hant": "徐明",
+            "zh-Hans": "徐明"
+          }
+        }
+      ]
+    },
+    "relatedSongs": [
+      "song-yuan-nv"
+    ],
+    "tracks": [
+      {
+        "position": 1,
+        "song": "song-yuan-nv",
+        "title": "怨女",
+        "titleLocalized": {
+          "en": "Rouge of the North",
+          "zh-Hant": "怨女",
+          "zh-Hans": "怨女"
+        },
+        "role": "OST vocal appearance",
+        "performers": [
+          "person-chyi-yu"
+        ],
+        "duration": "6:02",
+        "credits": {
+          "lyricsBy": [
+            "person-lu-szu-chih"
+          ],
+          "composedBy": [
+            "person-chang-hong-yi"
+          ]
+        },
+        "notes": "Maintainer task identifies this as the song Chyi Yu sang for the film; the same recording is tracked on the 1988 release 有没有这种说法."
+      }
+    ],
+    "mediaLinks": [
+      {
+        "label": "Douban film record",
+        "platform": "douban",
+        "url": "https://movie.douban.com/subject/1308492/",
+        "kind": "metadata",
+        "isOfficial": false
+      }
+    ],
+    "sources": [
+      "source-user-task-0701-1",
+      "source-douban-rouge-of-the-north-1988",
+      "source-qq-music-you-meiyou-zhe-zhong-shuofa"
+    ],
+    "notes": "Added from the 2026-07-01 maintainer task. Douban supplies the film identity and date; the task note links Chyi Yu's 怨女 performance to this film and to the same song from the release 有没有这种说法.",
+    "status": "partial"
+  },
+  {
     "id": "appearance-huan-yan-1979-ost",
     "slug": "huan-yan-1979-ost",
     "title": "Your Smiling Face OST",
@@ -1564,14 +1641,6 @@
             "zh-Hant": "井莉",
             "zh-Hans": "井莉"
           }
-        },
-        {
-          "name": "Chyi Yu",
-          "nameLocalized": {
-            "en": "Chyi Yu",
-            "zh-Hant": "齊豫",
-            "zh-Hans": "齐豫"
-          }
         }
       ]
     },
@@ -1714,6 +1783,16 @@
     "appearanceType": "album-guest-vocal",
     "programOrWork": "I Swear",
     "role": "guest vocalist",
+    "mainPerformers": [
+      {
+        "name": "Sandy Lam",
+        "nameLocalized": {
+          "en": "Sandy Lam",
+          "zh-Hant": "林憶蓮",
+          "zh-Hans": "林忆莲"
+        }
+      }
+    ],
     "relatedSongs": [
       "song-i-swear"
     ],
@@ -1777,6 +1856,16 @@
     "appearanceType": "album-guest-vocal",
     "programOrWork": "Wonderful World",
     "role": "guest vocalist",
+    "mainPerformers": [
+      {
+        "name": "Sandy Lam",
+        "nameLocalized": {
+          "en": "Sandy Lam",
+          "zh-Hant": "林憶蓮",
+          "zh-Hans": "林忆莲"
+        }
+      }
+    ],
     "relatedSongs": [
       "song-rhythm-of-my-heart",
       "song-what-a-wonderful-world",
@@ -1892,9 +1981,10 @@
       "zh-Hans": "大云时堂：齐豫、潘越云 再现经典之音"
     },
     "date": "2022-12-07",
-    "appearanceType": "interview",
+    "appearanceType": "show",
     "programOrWork": "大雲時堂",
     "role": "Guest interview / promo appearance",
+    "showContent": "promo",
     "hosts": [
       {
         "name": "Li Si-duan",

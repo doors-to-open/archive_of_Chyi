@@ -102,7 +102,7 @@ export const contributionTypeOptions: ContributionTypeOption[] = [
     kind: "appearance",
     label: "Add appearance",
     defaultRecordType: "Appearance",
-    helper: "Use this for interviews, talk shows, soundtrack work, film, documentary, article, podcast, or similar records."
+    helper: "Use this for shows, soundtrack work, film, documentary, article, podcast, or similar records."
   },
   {
     kind: "person",
@@ -270,10 +270,11 @@ function bodyFor(params: ContributionIssueParams) {
       ]),
       ...section("Information", [
         "Date:",
-        "Appearance type: OST vocal appearance / guest vocal album or single / interview / talk show / podcast / screen guest appearance / other",
+        "Appearance type: OST vocal appearance / guest vocal album or single / show / podcast / screen guest appearance / other",
+        "Show content summary, if show: promo / seminar / speech / entertainment / other",
         "Program or work:",
         "Role:",
-        "Host(s), if interview/talk show/podcast:",
+        "Host(s), if show/podcast:",
         "Work release date / director / leading cast, if movie or series:",
         "Related song(s):",
         "Performed song(s), if any:",

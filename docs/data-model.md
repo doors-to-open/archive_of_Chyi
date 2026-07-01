@@ -187,14 +187,15 @@ Suggested fields:
 - `title`
 - `titleLocalized`
 - `date`
-- `appearanceType`: `ost-vocal-appearance`, `album-guest-vocal`, `interview`, `talk-show`, `podcast`, `screen-guest-appearance`, or `other`
+- `appearanceType`: `ost-vocal-appearance`, `album-guest-vocal`, `show`, `podcast`, `screen-guest-appearance`, or `other`
+- `showContent`: optional summary for `show` records, currently `promo`; future values may include `seminar`, `speech`, `entertainment`, or similar content categories.
 - `programOrWork`
 - `role`
-- `hosts`: optional localized host names for interviews, talk shows, and podcasts.
+- `hosts`: optional localized host names for shows and podcasts.
 - `workDetails`: optional metadata for film/series/show context, including `releaseDate`, `directors`, and `leadingCast`.
 - `relatedSongs`
 - `tracks`: Chyi Yu-relevant OST or guest-vocal tracks only; include whole-work music/movie platform links in `mediaLinks`.
-- `performedSongs`: optional song-performance rows for interviews, talk shows, and podcasts when a non-concert/non-music-show appearance includes singing.
+- `performedSongs`: optional song-performance rows for shows and podcasts when a non-concert/non-music-show appearance includes singing.
 - `mediaLinks`
 - `sources`
 - `notes`

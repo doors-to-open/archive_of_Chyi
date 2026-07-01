@@ -220,6 +220,8 @@ export type Appearance = {
   appearanceType: string;
   programOrWork?: string | null;
   role?: string | null;
+  showContent?: string | null;
+  mainPerformers?: LocalizedName[];
   hosts?: LocalizedName[];
   workDetails?: {
     releaseDate?: string | null;

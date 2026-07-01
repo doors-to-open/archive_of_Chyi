@@ -104,9 +104,9 @@ const ui = {
     "zh-Hans": "电视、流媒体与广播音乐节目演出。"
   },
   "home.appearances.text": {
-    en: "Talk shows, film soundtrack work, podcasts, interviews, and other appearances.",
-    "zh-Hant": "談話節目、電影原聲工作、Podcast、專訪與其他演出。",
-    "zh-Hans": "谈话节目、电影原声工作、播客、专访与其他演出。"
+    en: "Shows, film soundtrack work, podcasts, and other appearances.",
+    "zh-Hant": "節目、電影原聲工作、Podcast 與其他演出。",
+    "zh-Hans": "节目、电影原声工作、播客与其他演出。"
   },
   "home.people.text": {
     en: "Writers, composers, producers, collaborators, hosts, and other credits.",
@@ -139,9 +139,9 @@ const ui = {
     "zh-Hans": "电视、流媒体与广播音乐节目演出。"
   },
   "page.appearances.intro": {
-    en: "Talk shows, film soundtrack work, podcasts, interviews, documentaries, and other appearances.",
-    "zh-Hant": "談話節目、電影原聲工作、Podcast、專訪、紀錄片與其他演出。",
-    "zh-Hans": "谈话节目、电影原声工作、播客、专访、纪录片与其他演出。"
+    en: "Shows, film soundtrack work, podcasts, documentaries, and other appearances.",
+    "zh-Hant": "節目、電影原聲工作、Podcast、紀錄片與其他演出。",
+    "zh-Hans": "节目、电影原声工作、播客、纪录片与其他演出。"
   },
   "page.people.intro": {
     en: "Writers, composers, producers, collaborators, hosts, and other credits.",
@@ -176,6 +176,7 @@ const ui = {
   "label.label": { en: "Label", "zh-Hant": "廠牌", "zh-Hans": "厂牌" },
   "label.formats": { en: "Formats", "zh-Hant": "格式", "zh-Hans": "格式" },
   "label.program": { en: "Program", "zh-Hant": "節目", "zh-Hans": "节目" },
+  "label.contentSummary": { en: "Content summary", "zh-Hant": "內容摘要", "zh-Hans": "内容摘要" },
   "label.platform": { en: "Platform", "zh-Hant": "平台", "zh-Hans": "平台" },
   "label.region": { en: "Region", "zh-Hant": "地區", "zh-Hans": "地区" },
   "label.physicalFormats": { en: "Physical formats", "zh-Hant": "實體格式", "zh-Hans": "实体格式" },
@@ -245,9 +246,9 @@ const ui = {
     "zh-Hans": "提交缺少的电视、流媒体或广播音乐节目演出，并附上来源。"
   },
   "contribution.appearanceText": {
-    en: "Propose a missing interview, soundtrack, film, article, or other appearance record with sources.",
-    "zh-Hant": "提交缺少的專訪、原聲、電影、文章或其他演出紀錄，並附上來源。",
-    "zh-Hans": "提交缺少的专访、原声、电影、文章或其他演出记录，并附上来源。"
+    en: "Propose a missing show, soundtrack, film, article, or other appearance record with sources.",
+    "zh-Hant": "提交缺少的節目、原聲、電影、文章或其他演出紀錄，並附上來源。",
+    "zh-Hans": "提交缺少的节目、原声、电影、文章或其他演出记录，并附上来源。"
   },
   "contribution.personText": {
     en: "Propose a missing person record or credit relationship with a source.",
@@ -974,6 +975,7 @@ export function appearanceTypeValues(type: string): LocaleValues {
     soundtrack: { en: "OST vocal appearance", "zh-Hant": "原聲演唱", "zh-Hans": "原声演唱" },
     "album-guest-vocal": { en: "Guest vocal for album/single", "zh-Hant": "專輯／單曲客座演唱", "zh-Hans": "专辑／单曲客座演唱" },
     collaboration: { en: "Collaboration", "zh-Hant": "合作演出", "zh-Hans": "合作演出" },
+    show: { en: "Shows", "zh-Hant": "節目", "zh-Hans": "节目" },
     "talk-show": { en: "Talk show", "zh-Hant": "談話節目", "zh-Hans": "谈话节目" },
     interview: { en: "Interview", "zh-Hant": "專訪", "zh-Hans": "专访" },
     "screen-guest-appearance": { en: "Guest appearance in movie/series", "zh-Hant": "影視客串", "zh-Hans": "影视客串" },
@@ -984,6 +986,16 @@ export function appearanceTypeValues(type: string): LocaleValues {
     other: uiText("option.otherReleases")
   };
   return types[type] || textValues(type);
+}
+
+export function appearanceShowContentValues(content: string | null | undefined): LocaleValues {
+  const values: Record<string, LocaleValues> = {
+    promo: textValues("Promo", "宣傳", "宣传"),
+    seminar: textValues("Seminar", "講座", "讲座"),
+    speech: textValues("Speech", "演講", "演讲"),
+    entertainment: textValues("Entertainment", "娛樂", "娱乐")
+  };
+  return content ? values[content] || textValues(content) : textValues("");
 }
 
 export function appearanceProgramOrWorkValues(appearance: Appearance): LocaleValues {

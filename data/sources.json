@@ -3660,6 +3660,18 @@
     "notes": "Used for external film ID and English metadata cross-check."
   },
   {
+    "id": "source-douban-rouge-of-the-north-1988",
+    "sourceType": "database",
+    "title": "怨女 on Douban",
+    "authorOrPublisher": "Douban Movie",
+    "date": null,
+    "url": "https://movie.douban.com/subject/1308492/",
+    "accessDate": "2026-07-01",
+    "citation": "Douban Movie. \"怨女.\"",
+    "reliability": "medium",
+    "notes": "Maintainer-provided Douban ID for the film; agent-reach search result returned the 1988 film metadata, including English title Rouge of the North, director Fred Tan, release date, cast, and IMDb ID."
+  },
+  {
     "id": "source-douban-huan-yan-1979",
     "sourceType": "database",
     "title": "歡顏 on Douban",

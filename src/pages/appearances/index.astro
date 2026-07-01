@@ -1,17 +1,13 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionPanel from "../../components/ContributionPanel.astro";
-import { appearanceAvailabilityChecks, appearances } from "../../lib/archive";
+import { appearances } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
 import {
-  appearanceProgramOrWorkValues,
-  appearanceRoleValues,
   appearanceTypeValues,
-  availabilityValues,
   countValues,
   i18nAttrs,
   i18nCountLabelAttrs,
-  labelValueValues,
   titleValues,
   uiText,
   valueForLocale,
@@ -86,7 +82,7 @@ const appearanceTypeOptions = [
         <div class="section archive-grid" data-sort-container>
           {appearances.map((appearance, index) => (
             <a
-              class="record-card"
+              class="record-card concert-record-card"
               href={`/appearances/${appearance.slug}/`}
               data-filter-item
               data-sort-item
@@ -100,35 +96,13 @@ const appearanceTypeOptions = [
                 ...Object.values(appearance.titleLocalized || {}),
                 appearance.date,
                 appearance.appearanceType,
+                appearance.showContent,
                 appearance.programOrWork,
                 appearance.role
               ].filter(Boolean).join(" ")}
             >
-              <h2 {...i18nAttrs(titleValues(appearance))}>{valueForLocale(titleValues(appearance))}</h2>
-              <div class="record-meta-table">
-                <span {...i18nAttrs(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}>
-                  {valueForLocale(labelValueValues("label.date", appearance.date || uiText("value.unknown")))}
-                </span>
-                <span {...i18nAttrs(labelValueValues("label.type", appearanceTypeValues(appearance.appearanceType)))}>
-                  {valueForLocale(labelValueValues("label.type", appearanceTypeValues(appearance.appearanceType)))}
-                </span>
-                {appearance.programOrWork ? (
-                  <span {...i18nAttrs(labelValueValues("label.work", appearanceProgramOrWorkValues(appearance)))}>
-                    {valueForLocale(labelValueValues("label.work", appearanceProgramOrWorkValues(appearance)))}
-                  </span>
-                ) : null}
-                {appearance.role ? (
-                  <span {...i18nAttrs(labelValueValues("label.role", appearanceRoleValues(appearance)))}>
-                    {valueForLocale(labelValueValues("label.role", appearanceRoleValues(appearance)))}
-                  </span>
-                ) : null}
-              </div>
-              <div class="availability-row" aria-label="Access summary">
-                {appearanceAvailabilityChecks(appearance).map(([label, available]) => {
-                  const values = availabilityValues(label);
-                  return <span class={available ? "available" : ""} {...i18nAttrs(values)}>{valueForLocale(values)}</span>;
-                })}
-              </div>
+              <span class="concert-card-title" {...i18nAttrs(titleValues(appearance))}>{valueForLocale(titleValues(appearance))}</span>
+              {appearance.date ? <span class="concert-card-note">{appearance.date}</span> : null}
             </a>
           ))}
         </div>
@@ -140,7 +114,7 @@ const appearanceTypeOptions = [
     )}
 
     <ContributionPanel
-      text="Propose a missing interview, soundtrack, film, article, or other appearance record with sources."
+      text="Propose a missing show, soundtrack, film, article, or other appearance record with sources."
       actions={contributionActions}
     />
   </section>

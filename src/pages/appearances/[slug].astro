@@ -9,6 +9,7 @@ import {
 } from "../../lib/archive";
 import type { ArchiveLink, LocalizedName } from "../../lib/archive";
 import {
+  appearanceShowContentValues,
   appearanceTypeValues,
   appearanceProgramOrWorkValues,
   appearanceRoleValues,
@@ -37,6 +38,8 @@ const { appearance } = Astro.props;
 const unknownMetaClass = "metadata-placeholder";
 const isOstAppearance = ["ost-vocal-appearance", "soundtrack"].includes(appearance.appearanceType);
 const isWorkAppearance = isOstAppearance || appearance.appearanceType === "screen-guest-appearance";
+const isGuestVocalAppearance = appearance.appearanceType === "album-guest-vocal";
+const isShowAppearance = appearance.appearanceType === "show";
 
 function appearanceTrackTitleValues(track: NonNullable<typeof appearance.tracks>[number]) {
   return track.titleLocalized
@@ -52,7 +55,8 @@ function appearanceTrackTitleValues(track: NonNullable<typeof appearance.tracks>
     : textValues(track.title);
 }
 
-function trackNumber(track: NonNullable<typeof appearance.tracks>[number]) {
+function trackNumber(track: NonNullable<typeof appearance.tracks>[number], index: number) {
+  if (isGuestVocalAppearance) return `${index + 1}.`;
   return track.position ? `${track.position}.` : "";
 }
 
@@ -123,6 +127,7 @@ function officialReleasePlacements(track: NonNullable<typeof appearance.tracks>[
 
 const contributionValues = appearanceRoleValues(appearance);
 const programOrWorkValues = appearanceProgramOrWorkValues(appearance);
+const showContentValues = appearanceShowContentValues(appearance.showContent);
 const leadingCastWithoutChyi = appearance.workDetails?.leadingCast?.filter((name) => !isChyiYuName(name));
 ---
 
@@ -133,7 +138,7 @@ const leadingCastWithoutChyi = appearance.workDetails?.leadingCast?.filter((name
 
     <article class="section detail-panel">
       <RecordStatus status={appearance.status} />
-      <div class:list={["record-meta-table", isWorkAppearance ? "ost-meta-table" : ""]}>
+      <div class:list={["record-meta-table", isWorkAppearance || isGuestVocalAppearance || isShowAppearance ? "ost-meta-table" : ""]}>
         {isWorkAppearance ? (
           <>
             <span class={!appearance.date && !appearance.workDetails?.releaseDate ? unknownMetaClass : ""} {...i18nAttrs(appearance.date ? textValues(appearance.date) : appearance.workDetails?.releaseDate ? textValues(appearance.workDetails.releaseDate) : uiText("label.date"))}>
@@ -152,6 +157,36 @@ const leadingCastWithoutChyi = appearance.workDetails?.leadingCast?.filter((name
                 {valueForLocale(localizedNameListValues(leadingCastWithoutChyi))}
               </span>
             ) : null}
+          </>
+        ) : isGuestVocalAppearance ? (
+          <>
+            <span class={!appearance.date ? unknownMetaClass : ""} {...i18nAttrs(appearance.date ? textValues(appearance.date) : uiText("label.date"))}>
+              {appearance.date || valueForLocale(uiText("label.date"))}
+            </span>
+            <span class={!appearance.role ? unknownMetaClass : ""} {...i18nAttrs(appearance.role ? contributionValues : uiText("label.role"))}>
+              {appearance.role ? valueForLocale(contributionValues) : valueForLocale(uiText("label.role"))}
+            </span>
+            <span class={!appearance.mainPerformers?.length ? unknownMetaClass : ""} {...i18nAttrs(appearance.mainPerformers?.length ? localizedNameListValues(appearance.mainPerformers) : uiText("label.artist"))}>
+              {appearance.mainPerformers?.length ? valueForLocale(localizedNameListValues(appearance.mainPerformers)) : valueForLocale(uiText("label.artist"))}
+            </span>
+            <span {...i18nAttrs(countValues(appearance.tracks?.length || 0, "count.song", "count.songs"))}>
+              {valueForLocale(countValues(appearance.tracks?.length || 0, "count.song", "count.songs"))}
+            </span>
+          </>
+        ) : isShowAppearance ? (
+          <>
+            <span class={!appearance.date ? unknownMetaClass : ""} {...i18nAttrs(appearance.date ? textValues(appearance.date) : uiText("label.date"))}>
+              {appearance.date || valueForLocale(uiText("label.date"))}
+            </span>
+            <span class={!appearance.showContent ? unknownMetaClass : ""} {...i18nAttrs(appearance.showContent ? showContentValues : uiText("label.contentSummary"))}>
+              {appearance.showContent ? valueForLocale(showContentValues) : valueForLocale(uiText("label.contentSummary"))}
+            </span>
+            <span class={!appearance.hosts?.length ? unknownMetaClass : ""} {...i18nAttrs(appearance.hosts?.length ? localizedNameListValues(appearance.hosts) : uiText("label.hosts"))}>
+              {appearance.hosts?.length ? valueForLocale(localizedNameListValues(appearance.hosts)) : valueForLocale(uiText("label.hosts"))}
+            </span>
+            <span {...i18nAttrs(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}>
+              {valueForLocale(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}
+            </span>
           </>
         ) : (
           <>
@@ -233,10 +268,11 @@ const leadingCastWithoutChyi = appearance.workDetails?.leadingCast?.filter((name
       <section class="section detail-panel">
         <h2 {...i18nAttrs(uiText("label.appearanceTracks"))}>{valueForLocale(uiText("label.appearanceTracks"))}</h2>
         <div class="track-credit-list">
-          {appearance.tracks.map((track) => {
+          {appearance.tracks.map((track, index) => {
             const title = appearanceTrackTitleValues(track);
-            const numberedTitle = trackNumber(track)
-              ? joinValues([textValues(`${trackNumber(track)} `), title], "")
+            const number = trackNumber(track, index);
+            const numberedTitle = number
+              ? joinValues([textValues(`${number} `), title], "")
               : title;
             const releaseLinks = officialReleasePlacements(track);
             return (
