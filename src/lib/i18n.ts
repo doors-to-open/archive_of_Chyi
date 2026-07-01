@@ -986,6 +986,49 @@ export function appearanceTypeValues(type: string): LocaleValues {
   return types[type] || textValues(type);
 }
 
+export function appearanceProgramOrWorkValues(appearance: Appearance): LocaleValues {
+  const known: Record<string, LocaleValues> = {
+    "20:30:40": textValues("20:30:40"),
+    "Beside the Lonely Lake": textValues("Beside the Lonely Lake", "今年的湖畔會很冷", "今年的湖畔会很冷"),
+    "Disco Bumpkins": textValues("Disco Bumpkins", "摩登土佬", "摩登土佬"),
+    "Eight Taels of Gold": textValues("Eight Taels of Gold", "八兩金", "八两金"),
+    "I Swear": textValues("I Swear"),
+    "Impression Liu Sanjie": textValues("Impression Liu Sanjie", "印象·劉三姐", "印象·刘三姐"),
+    "Kangsi Coming": textValues("Kangsi Coming", "康熙來了", "康熙来了"),
+    "No.7 Cherry Lane": textValues("No.7 Cherry Lane", "繼園臺七號", "继园台七号"),
+    "The Left Ear": textValues("The Left Ear", "左耳", "左耳"),
+    "The Return of the Condor Heroes": textValues("The Return of the Condor Heroes", "神鵰俠侶", "神雕侠侣"),
+    "Tomorrow Will Be Better": textValues("Tomorrow Will Be Better", "明天會更好", "明天会更好"),
+    Turning: textValues("Turning"),
+    "Wonderful World": textValues("Wonderful World"),
+    "Xiu Xiu: The Sent Down Girl": textValues("Xiu Xiu: The Sent Down Girl", "天浴", "天浴"),
+    "Your Smiling Face": textValues("Your Smiling Face", "歡顏", "欢颜"),
+    "大明风华": textValues("Ming Dynasty", "大明風華", "大明风华"),
+    "大雲時堂": textValues("Da Yun Time", "大雲時堂", "大云时堂"),
+    "快乐天堂": textValues("Happy Paradise", "快樂天堂", "快乐天堂"),
+    "左耳": textValues("The Left Ear", "左耳", "左耳"),
+    "神雕侠侣": textValues("The Return of the Condor Heroes", "神鵰俠侶", "神雕侠侣"),
+    "繼園臺七號": textValues("No.7 Cherry Lane", "繼園臺七號", "继园台七号")
+  };
+  return known[appearance.programOrWork || ""] || textValues(appearance.programOrWork || "");
+}
+
+export function appearanceRoleValues(appearance: Appearance): LocaleValues {
+  const role = appearance.role || "";
+  const known: Record<string, LocaleValues> = {
+    "Actor: Qi Yu / Chyi Yu": textValues("Actor: Qi Yu / Chyi Yu", "演員：齊豫", "演员：齐豫"),
+    "Guest": textValues("Guest", "嘉賓", "嘉宾"),
+    "Guest actor": textValues("Guest actor", "客串演員", "客串演员"),
+    "Guest interview / promo appearance": textValues("Guest interview / promo appearance", "訪談嘉賓 / 宣傳露出", "访谈嘉宾 / 宣传露出"),
+    "OST vocal appearance": textValues("OST vocal appearance", "原聲演唱", "原声演唱"),
+    "album vocal appearance": textValues("Album vocal appearance", "專輯演唱參與", "专辑演唱参与"),
+    "charity single vocal appearance": textValues("Charity single vocal appearance", "公益單曲演唱參與", "公益单曲演唱参与"),
+    "guest vocalist": textValues("Guest vocalist", "客座演唱", "客座演唱"),
+    "vocal appearance": textValues("Vocal appearance", "客座演唱", "客座演唱")
+  };
+  return known[role] || (role ? textValues(role) : appearanceTypeValues(appearance.appearanceType));
+}
+
 export function originValues(label: string): LocaleValues {
   if (label === "Original") return uiText("origin.original");
   if (label === "Cover") return uiText("origin.cover");

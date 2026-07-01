@@ -4,6 +4,8 @@ import ContributionPanel from "../../components/ContributionPanel.astro";
 import { appearanceAvailabilityChecks, appearances } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
 import {
+  appearanceProgramOrWorkValues,
+  appearanceRoleValues,
   appearanceTypeValues,
   availabilityValues,
   countValues,
@@ -111,13 +113,13 @@ const appearanceTypeOptions = [
                   {valueForLocale(labelValueValues("label.type", appearanceTypeValues(appearance.appearanceType)))}
                 </span>
                 {appearance.programOrWork ? (
-                  <span {...i18nAttrs(labelValueValues("label.work", appearance.programOrWork))}>
-                    {valueForLocale(labelValueValues("label.work", appearance.programOrWork))}
+                  <span {...i18nAttrs(labelValueValues("label.work", appearanceProgramOrWorkValues(appearance)))}>
+                    {valueForLocale(labelValueValues("label.work", appearanceProgramOrWorkValues(appearance)))}
                   </span>
                 ) : null}
                 {appearance.role ? (
-                  <span {...i18nAttrs(labelValueValues("label.role", appearance.role))}>
-                    {valueForLocale(labelValueValues("label.role", appearance.role))}
+                  <span {...i18nAttrs(labelValueValues("label.role", appearanceRoleValues(appearance)))}>
+                    {valueForLocale(labelValueValues("label.role", appearanceRoleValues(appearance)))}
                   </span>
                 ) : null}
               </div>

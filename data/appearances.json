@@ -8,6 +8,37 @@
     "appearanceType": "ost-vocal-appearance",
     "programOrWork": "Eight Taels of Gold",
     "role": "OST vocal appearance",
+    "workDetails": {
+      "releaseDate": "1989-12-21",
+      "directors": [
+        {
+          "name": "Mabel Cheung",
+          "nameLocalized": {
+            "en": "Mabel Cheung",
+            "zh-Hant": "張婉婷",
+            "zh-Hans": "张婉婷"
+          }
+        }
+      ],
+      "leadingCast": [
+        {
+          "name": "Sammo Hung",
+          "nameLocalized": {
+            "en": "Sammo Hung",
+            "zh-Hant": "洪金寶",
+            "zh-Hans": "洪金宝"
+          }
+        },
+        {
+          "name": "Sylvia Chang",
+          "nameLocalized": {
+            "en": "Sylvia Chang",
+            "zh-Hant": "張艾嘉",
+            "zh-Hans": "张艾嘉"
+          }
+        }
+      ]
+    },
     "relatedSongs": [
       "song-boat-song",
       "song-red-cotton",
@@ -311,6 +342,13 @@
         "url": "https://letterboxd.com/film/xiu-xiu-the-sent-down-girl/",
         "kind": "metadata",
         "isOfficial": false
+      },
+      {
+        "label": "Douban film record",
+        "platform": "douban",
+        "url": "https://movie.douban.com/subject/1302836/",
+        "kind": "metadata",
+        "isOfficial": false
       }
     ],
     "sources": [
@@ -380,6 +418,35 @@
     "appearanceType": "ost-vocal-appearance",
     "programOrWork": "Impression Liu Sanjie",
     "role": "OST vocal appearance",
+    "workDetails": {
+      "releaseDate": "2004-03-20",
+      "directors": [
+        {
+          "name": "Zhang Yimou",
+          "nameLocalized": {
+            "en": "Zhang Yimou",
+            "zh-Hant": "張藝謀",
+            "zh-Hans": "张艺谋"
+          }
+        },
+        {
+          "name": "Wang Chaoge",
+          "nameLocalized": {
+            "en": "Wang Chaoge",
+            "zh-Hant": "王潮歌",
+            "zh-Hans": "王潮歌"
+          }
+        },
+        {
+          "name": "Fan Yue",
+          "nameLocalized": {
+            "en": "Fan Yue",
+            "zh-Hant": "樊躍",
+            "zh-Hans": "樊跃"
+          }
+        }
+      ]
+    },
     "relatedSongs": [],
     "tracks": [
       {
@@ -423,7 +490,16 @@
         "notes": "Listed under the Impression Liu Sanjie soundtrack/concept work; public lyricist/composer credits remain unresolved."
       }
     ],
-    "mediaLinks": [],
+    "mediaLinks": [
+      {
+        "label": "Douban music record",
+        "platform": "douban",
+        "url": "https://music.douban.com/subject/6543499/",
+        "kind": "metadata",
+        "isOfficial": false,
+        "notes": "Douban record for the Impression Liu Sanjie soundtrack/concept album; no exact IMDb or Letterboxd title record was found for the live performance itself."
+      }
+    ],
     "sources": [
       "source-wikipedia-en-chyi-yu"
     ],
@@ -516,6 +592,53 @@
     "appearanceType": "ost-vocal-appearance",
     "programOrWork": "大明风华",
     "role": "OST vocal appearance",
+    "workDetails": {
+      "releaseDate": "2019-12-17",
+      "directors": [
+        {
+          "name": "Zhang Ting",
+          "nameLocalized": {
+            "en": "Zhang Ting",
+            "zh-Hant": "張挺",
+            "zh-Hans": "张挺"
+          }
+        }
+      ],
+      "leadingCast": [
+        {
+          "name": "Tang Wei",
+          "nameLocalized": {
+            "en": "Tang Wei",
+            "zh-Hant": "湯唯",
+            "zh-Hans": "汤唯"
+          }
+        },
+        {
+          "name": "Zhu Yawen",
+          "nameLocalized": {
+            "en": "Zhu Yawen",
+            "zh-Hant": "朱亞文",
+            "zh-Hans": "朱亚文"
+          }
+        },
+        {
+          "name": "Deng Jiajia",
+          "nameLocalized": {
+            "en": "Deng Jiajia",
+            "zh-Hant": "鄧家佳",
+            "zh-Hans": "邓家佳"
+          }
+        },
+        {
+          "name": "Qiao Zhenyu",
+          "nameLocalized": {
+            "en": "Qiao Zhenyu",
+            "zh-Hant": "喬振宇",
+            "zh-Hans": "乔振宇"
+          }
+        }
+      ]
+    },
     "relatedSongs": [],
     "tracks": [
       {
@@ -553,6 +676,20 @@
         "kind": "streaming",
         "isOfficial": true,
         "accessRegion": "China mainland"
+      },
+      {
+        "label": "Douban TV record",
+        "platform": "douban",
+        "url": "https://movie.douban.com/subject/27094895/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "IMDb TV record",
+        "platform": "imdb",
+        "url": "https://www.imdb.com/title/tt9638680/",
+        "kind": "metadata",
+        "isOfficial": false
       }
     ],
     "sources": [
@@ -648,6 +785,45 @@
     "appearanceType": "ost-vocal-appearance",
     "programOrWork": "繼園臺七號",
     "role": "OST vocal appearance",
+    "workDetails": {
+      "releaseDate": "2019-09-02",
+      "directors": [
+        {
+          "name": "Yonfan",
+          "nameLocalized": {
+            "en": "Yonfan",
+            "zh-Hant": "楊凡",
+            "zh-Hans": "杨凡"
+          }
+        }
+      ],
+      "leadingCast": [
+        {
+          "name": "Sylvia Chang",
+          "nameLocalized": {
+            "en": "Sylvia Chang",
+            "zh-Hant": "張艾嘉",
+            "zh-Hans": "张艾嘉"
+          }
+        },
+        {
+          "name": "Zhao Wei",
+          "nameLocalized": {
+            "en": "Zhao Wei",
+            "zh-Hant": "趙薇",
+            "zh-Hans": "赵薇"
+          }
+        },
+        {
+          "name": "Alex Lam",
+          "nameLocalized": {
+            "en": "Alex Lam",
+            "zh-Hant": "林德信",
+            "zh-Hans": "林德信"
+          }
+        }
+      ]
+    },
     "relatedSongs": [],
     "tracks": [
       {
@@ -695,6 +871,27 @@
         "kind": "streaming",
         "isOfficial": true,
         "accessRegion": "China mainland"
+      },
+      {
+        "label": "Douban film record",
+        "platform": "douban",
+        "url": "https://movie.douban.com/subject/34606671/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "IMDb film record",
+        "platform": "imdb",
+        "url": "https://www.imdb.com/title/tt10687168/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "Letterboxd film record",
+        "platform": "letterboxd",
+        "url": "https://letterboxd.com/film/no-7-cherry-lane/",
+        "kind": "metadata",
+        "isOfficial": false
       }
     ],
     "sources": [
@@ -721,6 +918,53 @@
     "appearanceType": "ost-vocal-appearance",
     "programOrWork": "左耳",
     "role": "OST vocal appearance",
+    "workDetails": {
+      "releaseDate": "2023-12-15",
+      "directors": [
+        {
+          "name": "Chen Huiling",
+          "nameLocalized": {
+            "en": "Chen Huiling",
+            "zh-Hant": "陳慧翎",
+            "zh-Hans": "陈慧翎"
+          }
+        }
+      ],
+      "leadingCast": [
+        {
+          "name": "Mi Mi",
+          "nameLocalized": {
+            "en": "Mi Mi",
+            "zh-Hant": "米咪",
+            "zh-Hans": "米咪"
+          }
+        },
+        {
+          "name": "Ma Yinyin",
+          "nameLocalized": {
+            "en": "Ma Yinyin",
+            "zh-Hant": "馬吟吟",
+            "zh-Hans": "马吟吟"
+          }
+        },
+        {
+          "name": "Zheng Kai",
+          "nameLocalized": {
+            "en": "Zheng Kai",
+            "zh-Hant": "鄭凱",
+            "zh-Hans": "郑凯"
+          }
+        },
+        {
+          "name": "Huang Rende",
+          "nameLocalized": {
+            "en": "Huang Rende",
+            "zh-Hant": "黃仁德",
+            "zh-Hans": "黄仁德"
+          }
+        }
+      ]
+    },
     "relatedSongs": [],
     "tracks": [
       {
@@ -760,6 +1004,14 @@
         "kind": "streaming",
         "isOfficial": true,
         "accessRegion": "China mainland"
+      },
+      {
+        "label": "Douban TV record",
+        "platform": "douban",
+        "url": "https://movie.douban.com/subject/26469835/",
+        "kind": "metadata",
+        "isOfficial": false,
+        "notes": "Exact TV-drama record; Letterboxd only exposes the separate 2015 film adaptation."
       }
     ],
     "sources": [
@@ -783,6 +1035,69 @@
     "appearanceType": "ost-vocal-appearance",
     "programOrWork": "神雕侠侣",
     "role": "OST vocal appearance",
+    "workDetails": {
+      "releaseDate": "1995-07-31",
+      "directors": [
+        {
+          "name": "Yuen Ying-ming",
+          "nameLocalized": {
+            "en": "Yuen Ying-ming",
+            "zh-Hant": "袁英明",
+            "zh-Hans": "袁英明"
+          }
+        },
+        {
+          "name": "Lau Shun-on",
+          "nameLocalized": {
+            "en": "Lau Shun-on",
+            "zh-Hant": "劉順安",
+            "zh-Hans": "刘顺安"
+          }
+        },
+        {
+          "name": "Sin Yin-fong",
+          "nameLocalized": {
+            "en": "Sin Yin-fong",
+            "zh-Hant": "冼燕芳",
+            "zh-Hans": "冼燕芳"
+          }
+        },
+        {
+          "name": "Lau Kwok-ho",
+          "nameLocalized": {
+            "en": "Lau Kwok-ho",
+            "zh-Hant": "劉國豪",
+            "zh-Hans": "刘国豪"
+          }
+        },
+        {
+          "name": "Kong Kam-hung",
+          "nameLocalized": {
+            "en": "Kong Kam-hung",
+            "zh-Hant": "孔錦鴻",
+            "zh-Hans": "孔锦鸿"
+          }
+        }
+      ],
+      "leadingCast": [
+        {
+          "name": "Louis Koo",
+          "nameLocalized": {
+            "en": "Louis Koo",
+            "zh-Hant": "古天樂",
+            "zh-Hans": "古天乐"
+          }
+        },
+        {
+          "name": "Carman Lee",
+          "nameLocalized": {
+            "en": "Carman Lee",
+            "zh-Hant": "李若彤",
+            "zh-Hans": "李若彤"
+          }
+        }
+      ]
+    },
     "relatedSongs": [],
     "tracks": [
       {
@@ -842,6 +1157,20 @@
         "kind": "streaming",
         "isOfficial": true,
         "accessRegion": "China mainland"
+      },
+      {
+        "label": "Douban TV record",
+        "platform": "douban",
+        "url": "https://movie.douban.com/subject/1863947/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "IMDb TV record",
+        "platform": "imdb",
+        "url": "https://www.imdb.com/title/tt0843229/",
+        "kind": "metadata",
+        "isOfficial": false
       }
     ],
     "sources": [
@@ -1167,6 +1496,13 @@
         "url": "https://letterboxd.com/film/your-smiling-face/",
         "kind": "metadata",
         "isOfficial": false
+      },
+      {
+        "label": "IMDb film record",
+        "platform": "imdb",
+        "url": "https://www.imdb.com/title/tt0260959/",
+        "kind": "metadata",
+        "isOfficial": false
       }
     ],
     "sources": [
@@ -1185,8 +1521,8 @@
     "titleOriginal": "摩登土佬",
     "titleLocalized": {
       "en": "Disco Bumpkins appearance",
-      "zh-Hant": "摩登土佬客串",
-      "zh-Hans": "摩登土佬客串"
+      "zh-Hant": "摩登土佬 客串",
+      "zh-Hans": "摩登土佬 客串"
     },
     "date": "1980-02-15",
     "appearanceType": "screen-guest-appearance",
@@ -1346,6 +1682,13 @@
         "label": "Letterboxd film record",
         "platform": "letterboxd",
         "url": "https://letterboxd.com/film/20-30-40/",
+        "kind": "metadata",
+        "isOfficial": false
+      },
+      {
+        "label": "Douban film record",
+        "platform": "douban",
+        "url": "https://movie.douban.com/subject/1310174/",
         "kind": "metadata",
         "isOfficial": false
       }

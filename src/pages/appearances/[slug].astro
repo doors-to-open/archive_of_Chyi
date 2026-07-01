@@ -5,20 +5,19 @@ import RecordStatus from "../../components/RecordStatus.astro";
 import {
   appearanceAvailabilityChecks,
   appearances,
-  linkCreditLabel,
-  personNames,
   releasePlacementsForSong
 } from "../../lib/archive";
-import type { LocalizedName } from "../../lib/archive";
+import type { ArchiveLink, LocalizedName } from "../../lib/archive";
 import {
   appearanceTypeValues,
+  appearanceProgramOrWorkValues,
+  appearanceRoleValues,
   availabilityValues,
   countValues,
   i18nAttrs,
   joinValues,
   labelValueValues,
   localizedValues,
-  noteValues,
   personIdsValues,
   textValues,
   titleValues,
@@ -36,6 +35,8 @@ export function getStaticPaths() {
 
 const { appearance } = Astro.props;
 const unknownMetaClass = "metadata-placeholder";
+const isOstAppearance = ["ost-vocal-appearance", "soundtrack"].includes(appearance.appearanceType);
+const isWorkAppearance = isOstAppearance || appearance.appearanceType === "screen-guest-appearance";
 
 function appearanceTrackTitleValues(track: NonNullable<typeof appearance.tracks>[number]) {
   return track.titleLocalized
@@ -65,6 +66,49 @@ function localizedNameListValues(names: LocalizedName[] | undefined) {
     : textValues("");
 }
 
+function isChyiYuName(name: LocalizedName) {
+  const values = [name.name, name.nameLocalized?.en, name.nameLocalized?.["zh-Hant"], name.nameLocalized?.["zh-Hans"]];
+  return values.some((value) => ["Chyi Yu", "齊豫", "齐豫"].includes(value || ""));
+}
+
+function platformName(link: ArchiveLink) {
+  return link.platform || link.label;
+}
+
+function platformNameValues(link: ArchiveLink) {
+  const name = platformName(link);
+  const normalized = name.toLocaleLowerCase("en-US");
+  if (normalized === "imdb") return textValues("IMDb");
+  if (normalized === "letterboxd") return textValues("Letterboxd");
+  if (normalized === "douban") return textValues("Douban", "豆瓣", "豆瓣");
+  if (normalized === "youtube") return textValues("YouTube");
+  if (normalized === "bilibili") return textValues("Bilibili", "Bilibili", "哔哩哔哩");
+  if (normalized === "youku") return textValues("Youku", "優酷", "优酷");
+  if (normalized === "spotify") return textValues("Spotify");
+  if (normalized === "apple-music" || normalized === "apple music") {
+    return textValues("Apple Music", "Apple 音樂", "Apple 音乐");
+  }
+  if (normalized === "youtube-music" || normalized === "youtube music") {
+    return textValues("YouTube Music", "YouTube 音樂", "YouTube 音乐");
+  }
+  if (normalized === "qq-music" || normalized === "qq music" || normalized === "qq音乐" || normalized === "qq音樂") {
+    return textValues("QQ Music", "QQ 音樂", "QQ 音乐");
+  }
+  if (
+    normalized === "netease-cloud-music" ||
+    normalized === "netease cloud music" ||
+    normalized === "netease" ||
+    normalized === "网易云音乐" ||
+    normalized === "網易雲音樂"
+  ) {
+    return textValues("NetEase Cloud Music", "網易雲音樂", "网易云音乐");
+  }
+  if (normalized === "kugou" || normalized === "kugou music" || normalized === "酷狗音乐" || normalized === "酷狗音樂") {
+    return textValues("Kugou Music", "酷狗音樂", "酷狗音乐");
+  }
+  return textValues(name);
+}
+
 function officialReleasePlacements(track: NonNullable<typeof appearance.tracks>[number]) {
   if (!track.song) return [];
   const seen = new Set<string>();
@@ -76,6 +120,10 @@ function officialReleasePlacements(track: NonNullable<typeof appearance.tracks>[
     return true;
   });
 }
+
+const contributionValues = appearanceRoleValues(appearance);
+const programOrWorkValues = appearanceProgramOrWorkValues(appearance);
+const leadingCastWithoutChyi = appearance.workDetails?.leadingCast?.filter((name) => !isChyiYuName(name));
 ---
 
 <BaseLayout title={`${appearance.title} | All for Chyi Yu`}>
@@ -85,47 +133,70 @@ function officialReleasePlacements(track: NonNullable<typeof appearance.tracks>[
 
     <article class="section detail-panel">
       <RecordStatus status={appearance.status} />
-      <div class="record-meta-table">
-        <span class={!appearance.date ? unknownMetaClass : ""} {...i18nAttrs(appearance.date ? textValues(appearance.date) : uiText("label.date"))}>
-          {appearance.date || valueForLocale(uiText("label.date"))}
-        </span>
-        <span {...i18nAttrs(appearanceTypeValues(appearance.appearanceType))}>
-          {valueForLocale(appearanceTypeValues(appearance.appearanceType))}
-        </span>
-        <span class={!appearance.programOrWork ? unknownMetaClass : ""} {...i18nAttrs(appearance.programOrWork ? textValues(appearance.programOrWork) : uiText("label.programOrWork"))}>
-          {appearance.programOrWork || valueForLocale(uiText("label.programOrWork"))}
-        </span>
-        <span class={!appearance.role ? unknownMetaClass : ""} {...i18nAttrs(appearance.role ? textValues(appearance.role) : uiText("label.role"))}>
-          {appearance.role || valueForLocale(uiText("label.role"))}
-        </span>
-        {appearance.hosts?.length ? (
-          <span {...i18nAttrs(localizedNameListValues(appearance.hosts))}>
-            {valueForLocale(localizedNameListValues(appearance.hosts))}
-          </span>
-        ) : null}
-        {appearance.workDetails?.releaseDate ? (
-          <span {...i18nAttrs(textValues(appearance.workDetails.releaseDate))}>
-            {appearance.workDetails.releaseDate}
-          </span>
-        ) : null}
-        {appearance.workDetails?.directors?.length ? (
-          <span {...i18nAttrs(localizedNameListValues(appearance.workDetails.directors))}>
-            {valueForLocale(localizedNameListValues(appearance.workDetails.directors))}
-          </span>
-        ) : null}
-        {appearance.workDetails?.leadingCast?.length ? (
-          <span {...i18nAttrs(localizedNameListValues(appearance.workDetails.leadingCast))}>
-            {valueForLocale(localizedNameListValues(appearance.workDetails.leadingCast))}
-          </span>
-        ) : null}
-        <span {...i18nAttrs(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}>
-          {valueForLocale(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}
-        </span>
-        {appearance.tracks?.length ? (
-          <span {...i18nAttrs(countValues(appearance.tracks.length, "count.song", "count.songs"))}>
-            {valueForLocale(countValues(appearance.tracks.length, "count.song", "count.songs"))}
-          </span>
-        ) : null}
+      <div class:list={["record-meta-table", isWorkAppearance ? "ost-meta-table" : ""]}>
+        {isWorkAppearance ? (
+          <>
+            <span class={!appearance.date && !appearance.workDetails?.releaseDate ? unknownMetaClass : ""} {...i18nAttrs(appearance.date ? textValues(appearance.date) : appearance.workDetails?.releaseDate ? textValues(appearance.workDetails.releaseDate) : uiText("label.date"))}>
+              {appearance.date || appearance.workDetails?.releaseDate || valueForLocale(uiText("label.date"))}
+            </span>
+            <span {...i18nAttrs(appearanceTypeValues(appearance.appearanceType))}>
+              {valueForLocale(appearanceTypeValues(appearance.appearanceType))}
+            </span>
+            {appearance.workDetails?.directors?.length ? (
+              <span {...i18nAttrs(localizedNameListValues(appearance.workDetails.directors))}>
+                {valueForLocale(localizedNameListValues(appearance.workDetails.directors))}
+              </span>
+            ) : null}
+            {leadingCastWithoutChyi?.length ? (
+              <span {...i18nAttrs(localizedNameListValues(leadingCastWithoutChyi))}>
+                {valueForLocale(localizedNameListValues(leadingCastWithoutChyi))}
+              </span>
+            ) : null}
+          </>
+        ) : (
+          <>
+            <span class={!appearance.date ? unknownMetaClass : ""} {...i18nAttrs(appearance.date ? textValues(appearance.date) : uiText("label.date"))}>
+              {appearance.date || valueForLocale(uiText("label.date"))}
+            </span>
+            <span {...i18nAttrs(appearanceTypeValues(appearance.appearanceType))}>
+              {valueForLocale(appearanceTypeValues(appearance.appearanceType))}
+            </span>
+            <span class={!appearance.programOrWork ? unknownMetaClass : ""} {...i18nAttrs(appearance.programOrWork ? programOrWorkValues : uiText("label.programOrWork"))}>
+              {appearance.programOrWork ? valueForLocale(programOrWorkValues) : valueForLocale(uiText("label.programOrWork"))}
+            </span>
+            <span class={!appearance.role ? unknownMetaClass : ""} {...i18nAttrs(appearance.role ? contributionValues : uiText("label.role"))}>
+              {appearance.role ? valueForLocale(contributionValues) : valueForLocale(uiText("label.role"))}
+            </span>
+            {appearance.hosts?.length ? (
+              <span {...i18nAttrs(localizedNameListValues(appearance.hosts))}>
+                {valueForLocale(localizedNameListValues(appearance.hosts))}
+              </span>
+            ) : null}
+            {appearance.workDetails?.releaseDate ? (
+              <span {...i18nAttrs(textValues(appearance.workDetails.releaseDate))}>
+                {appearance.workDetails.releaseDate}
+              </span>
+            ) : null}
+            {appearance.workDetails?.directors?.length ? (
+              <span {...i18nAttrs(localizedNameListValues(appearance.workDetails.directors))}>
+                {valueForLocale(localizedNameListValues(appearance.workDetails.directors))}
+              </span>
+            ) : null}
+            {leadingCastWithoutChyi?.length ? (
+              <span {...i18nAttrs(localizedNameListValues(leadingCastWithoutChyi))}>
+                {valueForLocale(localizedNameListValues(leadingCastWithoutChyi))}
+              </span>
+            ) : null}
+            <span {...i18nAttrs(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}>
+              {valueForLocale(countValues(appearance.relatedSongs.length, "count.relatedSong", "count.relatedSongs"))}
+            </span>
+            {appearance.tracks?.length ? (
+              <span {...i18nAttrs(countValues(appearance.tracks.length, "count.song", "count.songs"))}>
+                {valueForLocale(countValues(appearance.tracks.length, "count.song", "count.songs"))}
+              </span>
+            ) : null}
+          </>
+        )}
       </div>
       <div class="availability-row availability-row-detail" aria-label="Access summary">
         {appearanceAvailabilityChecks(appearance).map(([label, available]) => {
@@ -134,6 +205,29 @@ function officialReleasePlacements(track: NonNullable<typeof appearance.tracks>[
         })}
       </div>
     </article>
+
+    <section class="section detail-panel streaming-detail-panel">
+      <h2 {...i18nAttrs(uiText("label.links"))}>{valueForLocale(uiText("label.links"))}</h2>
+      {appearance.mediaLinks.length ? (
+        <div class="availability-link-grid">
+          <div class="platform-links platform-links-flat">
+            {appearance.mediaLinks.map((link) => (
+              <a href={link.url} title={link.notes || link.label}>
+                <span {...i18nAttrs(platformNameValues(link))}>{valueForLocale(platformNameValues(link))}</span>
+                {link.isOfficial !== false ? (
+                  <small {...i18nAttrs(uiText("value.official"))}>{valueForLocale(uiText("value.official"))}</small>
+                ) : null}
+                {link.isOfficial === false ? (
+                  <small {...i18nAttrs(uiText("value.unofficial"))}>{valueForLocale(uiText("value.unofficial"))}</small>
+                ) : null}
+              </a>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <p class="empty-state" {...i18nAttrs(uiText("empty.noLinks"))}>{valueForLocale(uiText("empty.noLinks"))}</p>
+      )}
+    </section>
 
     {appearance.tracks?.length ? (
       <section class="section detail-panel">
@@ -149,11 +243,6 @@ function officialReleasePlacements(track: NonNullable<typeof appearance.tracks>[
               <article class="track-credit-row">
                 <h3 {...i18nAttrs(numberedTitle)}>{valueForLocale(numberedTitle)}</h3>
                 <div class="record-meta-table">
-                  {track.performers?.length ? (
-                    <span {...i18nAttrs(labelValueValues("label.performedBy", personIdsValues(track.performers)))}>
-                      {valueForLocale(labelValueValues("label.performedBy", personIdsValues(track.performers))) || personNames(track.performers)}
-                    </span>
-                  ) : null}
                   <span {...i18nAttrs(labelValueValues("label.lyrics", personIdsValues(track.credits.lyricsBy, uiText("value.notRecorded"))))}>
                     {valueForLocale(labelValueValues("label.lyrics", personIdsValues(track.credits.lyricsBy, uiText("value.notRecorded"))))}
                   </span>
@@ -183,41 +272,12 @@ function officialReleasePlacements(track: NonNullable<typeof appearance.tracks>[
                     </span>
                   ) : null}
                 </div>
-                {track.notes ? (
-                  <p {...i18nAttrs(noteValues(track.notes, track.notesLocalized))}>
-                    {valueForLocale(noteValues(track.notes, track.notesLocalized))}
-                  </p>
-                ) : null}
               </article>
             );
           })}
         </div>
       </section>
     ) : null}
-
-    <section class="section detail-panel">
-      <h2 {...i18nAttrs(uiText("label.links"))}>{valueForLocale(uiText("label.links"))}</h2>
-      {appearance.mediaLinks.length ? (
-        <div class="link-list">
-          {appearance.mediaLinks.map((link) => (
-            <p>
-              <a href={link.url}>{link.label}</a>
-              {link.platform ? ` / ${link.platform}` : ""}
-              {link.accessRegion ? ` / ${link.accessRegion}` : ""}
-              {link.isOfficial === false ? (
-                <>
-                  {" / "}
-                  <span {...i18nAttrs(uiText("value.fanUpload"))}>{valueForLocale(uiText("value.fanUpload"))}</span>
-                </>
-              ) : ""}
-              {linkCreditLabel(link) ? ` / ${linkCreditLabel(link)}` : ""}
-            </p>
-          ))}
-        </div>
-      ) : (
-        <p class="empty-state" {...i18nAttrs(uiText("empty.noLinks"))}>{valueForLocale(uiText("empty.noLinks"))}</p>
-      )}
-    </section>
 
     <ContributionActions
       recordType="Appearance"
