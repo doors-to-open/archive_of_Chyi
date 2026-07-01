@@ -6,11 +6,14 @@ import { contributionPageUrl } from "../../lib/contribution";
 import {
   appearanceTypeValues,
   availabilityValues,
+  countValues,
   i18nAttrs,
+  i18nCountLabelAttrs,
   labelValueValues,
   titleValues,
   uiText,
-  valueForLocale
+  valueForLocale,
+  withCountValues
 } from "../../lib/i18n";
 
 const contributionActions = [
@@ -19,21 +22,85 @@ const contributionActions = [
     href: contributionPageUrl({ kind: "appearance", recordType: "Appearance", recordPath: "/appearances/" })
   }
 ];
+
+const appearanceTypeCounts = appearances.reduce((counts, appearance) => {
+  counts.set(appearance.appearanceType, (counts.get(appearance.appearanceType) || 0) + 1);
+  return counts;
+}, new Map<string, number>());
+
+const appearanceTypeOptions = [
+  { value: "", label: uiText("option.allAppearances"), count: appearances.length },
+  ...Array.from(appearanceTypeCounts.entries()).map(([type, count]) => ({
+    value: type,
+    label: appearanceTypeValues(type),
+    count
+  }))
+].map((option) => ({
+  ...option,
+  label: withCountValues(option.label, option.count)
+}));
 ---
 
 <BaseLayout title="Appearances | All for Chyi Yu">
-  <section class="page-shell archive-page-shell">
+  <section
+    class="page-shell archive-page-shell appearances-page-shell"
+    data-sort-root
+    data-filter-root
+    data-count-label-singular="record"
+    data-count-label-plural="records"
+    {...i18nCountLabelAttrs(uiText("count.record"), uiText("count.records"))}
+  >
     <p class="page-kicker" {...i18nAttrs(uiText("nav.appearances"))}>{valueForLocale(uiText("nav.appearances"))}</p>
     <h1 class="page-title" {...i18nAttrs(uiText("nav.appearances"))}>{valueForLocale(uiText("nav.appearances"))}</h1>
     <p class="page-intro" {...i18nAttrs(uiText("page.appearances.intro"))}>{valueForLocale(uiText("page.appearances.intro"))}</p>
 
     {appearances.length ? (
       <>
-        <div class="section archive-grid">
-          {appearances.map((appearance) => (
+        <div class="section filter-panel appearances-controls-panel">
+          <label class="release-filter-select-label">
+            <span {...i18nAttrs(uiText("label.type"))}>{valueForLocale(uiText("label.type"))}</span>
+            <select data-filter-select data-filter-key="appearance-type">
+              {appearanceTypeOptions.map((option) => (
+                <option value={option.value} {...i18nAttrs(option.label)}>{valueForLocale(option.label)}</option>
+              ))}
+            </select>
+          </label>
+
+          <fieldset class="filter-option-group sort-option-group">
+            <legend {...i18nAttrs(uiText("label.sort"))}>{valueForLocale(uiText("label.sort"))}</legend>
+            <div class="filter-options">
+              <button type="button" data-sort-option data-sort-value="date-desc" aria-pressed="true">
+                <span {...i18nAttrs(uiText("option.newest"))}>{valueForLocale(uiText("option.newest"))}</span>
+              </button>
+              <button type="button" data-sort-option data-sort-value="date-asc" aria-pressed="false">
+                <span {...i18nAttrs(uiText("option.oldest"))}>{valueForLocale(uiText("option.oldest"))}</span>
+              </button>
+            </div>
+          </fieldset>
+
+          <p data-sort-count data-filter-count>{valueForLocale(countValues(appearances.length, "count.record", "count.records"))}</p>
+        </div>
+
+        <div class="section archive-grid" data-sort-container>
+          {appearances.map((appearance, index) => (
             <a
               class="record-card"
               href={`/appearances/${appearance.slug}/`}
+              data-filter-item
+              data-sort-item
+              data-sort-index={index}
+              data-sort-date={appearance.date || ""}
+              data-sort-alpha={`${appearance.title} ${appearance.titleOriginal || ""}`.toLocaleLowerCase("en-US")}
+              data-appearance-type={appearance.appearanceType}
+              data-search={[
+                appearance.title,
+                appearance.titleOriginal,
+                ...Object.values(appearance.titleLocalized || {}),
+                appearance.date,
+                appearance.appearanceType,
+                appearance.programOrWork,
+                appearance.role
+              ].filter(Boolean).join(" ")}
             >
               <h2 {...i18nAttrs(titleValues(appearance))}>{valueForLocale(titleValues(appearance))}</h2>
               <div class="record-meta-table">

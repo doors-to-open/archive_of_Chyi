@@ -427,6 +427,10 @@ main {
   grid-template-columns: minmax(10rem, 0.35fr) minmax(14rem, 0.45fr) minmax(24rem, 1fr) auto;
 }
 
+.appearances-controls-panel {
+  grid-template-columns: minmax(14rem, 0.7fr) minmax(12rem, 0.3fr) auto;
+}
+
 .archive-page-shell > .filter-panel,
 .archive-page-shell > .archive-grid,
 .archive-page-shell > .concert-list-panel,
@@ -464,8 +468,9 @@ main {
 .filter-option-group legend,
 .filter-panel p {
   color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 620;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1rem;
   margin: 0;
   text-transform: uppercase;
 }
@@ -496,10 +501,11 @@ main {
   color: var(--muted);
   cursor: pointer;
   font: inherit;
-  font-size: 0.84rem;
-  line-height: 1.2;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
   min-height: 2.5rem;
-  padding: 0.35rem 0.6rem;
+  padding: 0 0.625rem;
 }
 
 .filter-options button:hover {
@@ -521,8 +527,9 @@ main {
   border-radius: var(--radius-sm);
   color: var(--ink);
   font: inherit;
-  font-size: 0.84rem;
+  font-size: 0.875rem;
   height: 2.5rem;
+  line-height: 1.25rem;
   min-width: 0;
   padding: 0 0.75rem;
 }

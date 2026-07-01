@@ -276,6 +276,7 @@ const ui = {
   "option.mostLive": { en: "Most live", "zh-Hant": "現場最多", "zh-Hans": "现场最多" },
   "option.leastLive": { en: "Least live", "zh-Hant": "現場最少", "zh-Hans": "现场最少" },
   "option.albumOrder": { en: "Album order", "zh-Hant": "專輯順序", "zh-Hans": "专辑顺序" },
+  "option.allAppearances": { en: "All appearances", "zh-Hant": "全部其他演出", "zh-Hans": "全部其他演出" },
   "option.allReleases": { en: "All releases", "zh-Hant": "全部音樂發行", "zh-Hans": "全部音乐发行" },
   "option.studioAlbums": { en: "Studio albums", "zh-Hant": "錄音室專輯", "zh-Hans": "录音室专辑" },
   "option.epSingles": { en: "EPs / singles", "zh-Hant": "EP / 單曲", "zh-Hans": "EP / 单曲" },
