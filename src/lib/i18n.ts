@@ -84,9 +84,9 @@ const ui = {
   "nav.about": { en: "About", "zh-Hant": "關於", "zh-Hans": "关于" },
   "nav.menu": { en: "Menu", "zh-Hant": "選單", "zh-Hans": "菜单" },
   "page.home.intro": {
-    en: "Releases, concerts, music shows, appearances, people, and source-backed links.",
-    "zh-Hant": "收錄發行、演唱會、音樂節目、其他出現、人物與有來源支持的連結。",
-    "zh-Hans": "收录发行、演唱会、音乐节目、其他出现、人物与有来源支持的链接。"
+    en: "Releases, concerts, appearances, people, and source-backed links.",
+    "zh-Hant": "收錄發行、演唱會、演出、人物與有來源支持的連結。",
+    "zh-Hans": "收录发行、演唱会、演出、人物与有来源支持的链接。"
   },
   "home.releases.text": {
     en: "Albums, singles, compilations, collaborations, and related releases.",
@@ -104,9 +104,9 @@ const ui = {
     "zh-Hans": "电视、流媒体与广播音乐节目演出。"
   },
   "home.appearances.text": {
-    en: "Shows, film soundtrack work, podcasts, and other appearances.",
-    "zh-Hant": "節目、電影原聲工作、Podcast 與其他演出。",
-    "zh-Hans": "节目、电影原声工作、播客与其他演出。"
+    en: "Music shows, other shows, soundtrack work, podcasts, and other appearances.",
+    "zh-Hant": "音樂節目、其他節目、原聲工作、Podcast 與其他演出。",
+    "zh-Hans": "音乐节目、其他节目、原声工作、播客与其他演出。"
   },
   "home.people.text": {
     en: "Writers, composers, producers, collaborators, hosts, and other credits.",
@@ -139,9 +139,9 @@ const ui = {
     "zh-Hans": "电视、流媒体与广播音乐节目演出。"
   },
   "page.appearances.intro": {
-    en: "Shows, film soundtrack work, podcasts, documentaries, and other appearances.",
-    "zh-Hant": "節目、電影原聲工作、Podcast、紀錄片與其他演出。",
-    "zh-Hans": "节目、电影原声工作、播客、纪录片与其他演出。"
+    en: "Music shows, other shows, soundtrack work, podcasts, documentaries, and other appearances.",
+    "zh-Hant": "音樂節目、其他節目、原聲工作、Podcast、紀錄片與其他演出。",
+    "zh-Hans": "音乐节目、其他节目、原声工作、播客、纪录片与其他演出。"
   },
   "page.people.intro": {
     en: "Writers, composers, producers, collaborators, hosts, and other credits.",
@@ -226,50 +226,228 @@ const ui = {
   "label.notes": { en: "Notes", "zh-Hant": "備註", "zh-Hans": "备注" },
   "label.contribute": { en: "Contribute", "zh-Hant": "貢獻", "zh-Hans": "贡献" },
   "contribution.recordText": {
-    en: "Send a sourced correction or link for this record.",
-    "zh-Hant": "為這筆紀錄送出有來源的修正或連結。",
-    "zh-Hans": "为这条记录提交有来源的修正或链接。"
+    en: "Send a sourced correction or useful link for this page.",
+    "zh-Hant": "為這個頁面送出有來源的修正或實用連結。",
+    "zh-Hans": "为这个页面提交有来源的修正或实用链接。"
   },
   "contribution.releaseText": {
-    en: "Propose a missing release or track-level addition with source links.",
-    "zh-Hant": "提交缺少的發行或曲目層級補充，並附上來源連結。",
-    "zh-Hans": "提交缺少的发行或曲目层级补充，并附上来源链接。"
+    en: "Send a missing album, single, or song detail with source links.",
+    "zh-Hant": "提交缺少的專輯、單曲或歌曲資料，並附上來源連結。",
+    "zh-Hans": "提交缺少的专辑、单曲或歌曲资料，并附上来源链接。"
   },
   "contribution.concertText": {
-    en: "Propose a missing concert or concert-series record with date, location, and sources.",
-    "zh-Hant": "提交缺少的演唱會或系列演出紀錄，包含日期、地點與來源。",
-    "zh-Hans": "提交缺少的演唱会或系列演出记录，包含日期、地点与来源。"
+    en: "Send a missing concert with date, place, songs, links, and sources.",
+    "zh-Hant": "提交缺少的演唱會，包含日期、地點、曲目、連結與來源。",
+    "zh-Hans": "提交缺少的演唱会，包含日期、地点、曲目、链接与来源。"
   },
   "contribution.musicShowText": {
-    en: "Propose a missing broadcast, streamed, or radio music-show performance with sources.",
-    "zh-Hant": "提交缺少的電視、串流或廣播音樂節目演出，並附上來源。",
-    "zh-Hans": "提交缺少的电视、流媒体或广播音乐节目演出，并附上来源。"
+    en: "Send a TV, online, radio, or platform music performance with sources.",
+    "zh-Hant": "提交電視、網路、廣播或平台音樂演出，並附上來源。",
+    "zh-Hans": "提交电视、网络、广播或平台音乐演出，并附上来源。"
   },
   "contribution.appearanceText": {
-    en: "Propose a missing show, soundtrack, film, article, or other appearance record with sources.",
-    "zh-Hant": "提交缺少的節目、原聲、電影、文章或其他演出紀錄，並附上來源。",
-    "zh-Hans": "提交缺少的节目、原声、电影、文章或其他演出记录，并附上来源。"
+    en: "Send an interview, article, film, soundtrack, podcast, or other appearance.",
+    "zh-Hant": "提交訪談、文章、電影、原聲、Podcast 或其他出現紀錄。",
+    "zh-Hans": "提交访谈、文章、电影、原声、播客或其他出现记录。"
   },
   "contribution.personText": {
-    en: "Propose a missing person record or credit relationship with a source.",
-    "zh-Hant": "提交缺少的人物紀錄或工作人員關聯，並附上來源。",
-    "zh-Hans": "提交缺少的人物记录或工作人员关联，并附上来源。"
+    en: "Send a missing person, role, or credit with a source.",
+    "zh-Hant": "提交缺少的人物、角色或工作人員資料，並附上來源。",
+    "zh-Hans": "提交缺少的人物、角色或工作人员资料，并附上来源。"
   },
   "contribution.sourceText": {
-    en: "Propose a source that can support archive facts or improve uncertain records.",
-    "zh-Hant": "提交可支持資料館事實或改善不確定紀錄的來源。",
-    "zh-Hans": "提交可支持资料馆事实或改善不确定记录的来源。"
+    en: "Send a source that can confirm or improve information on the site.",
+    "zh-Hant": "提交可確認或改善網站資料的來源。",
+    "zh-Hans": "提交可确认或改善网站资料的来源。"
   },
   "contribution.suggestCorrection": { en: "Suggest correction", "zh-Hant": "建議修正", "zh-Hans": "建议修正" },
   "contribution.addSource": { en: "Add source", "zh-Hant": "新增來源", "zh-Hans": "新增来源" },
   "contribution.addMediaLink": { en: "Add media link", "zh-Hant": "新增媒體連結", "zh-Hans": "新增媒体链接" },
-  "contribution.proposeRelease": { en: "Propose album/release", "zh-Hant": "提交專輯/發行", "zh-Hans": "提交专辑/发行" },
-  "contribution.addTrack": { en: "Add release track", "zh-Hant": "新增發行曲目", "zh-Hans": "新增发行曲目" },
+  "contribution.proposeRelease": { en: "Add album or single", "zh-Hant": "新增專輯或單曲", "zh-Hans": "新增专辑或单曲" },
+  "contribution.addTrack": { en: "Add song detail", "zh-Hant": "新增歌曲資料", "zh-Hans": "新增歌曲资料" },
   "contribution.proposeConcert": { en: "Propose concert", "zh-Hant": "提交演唱會", "zh-Hans": "提交演唱会" },
-  "contribution.proposeMusicShow": { en: "Propose music-show performance", "zh-Hant": "提交音樂節目演出", "zh-Hans": "提交音乐节目演出" },
-  "contribution.proposeAppearance": { en: "Propose appearance", "zh-Hant": "提交演出紀錄", "zh-Hans": "提交演出记录" },
-  "contribution.proposePerson": { en: "Propose person/credit", "zh-Hant": "提交人物/工作人員", "zh-Hans": "提交人物/工作人员" },
-  "contribution.proposeSource": { en: "Propose source", "zh-Hant": "提交來源", "zh-Hans": "提交来源" },
+  "contribution.proposeMusicShow": { en: "Add TV or online performance", "zh-Hant": "新增電視或網路演出", "zh-Hans": "新增电视或网络演出" },
+  "contribution.proposeAppearance": { en: "Add interview or appearance", "zh-Hant": "新增訪談或其他出現", "zh-Hans": "新增访谈或其他出现" },
+  "contribution.proposePerson": { en: "Add person or credit", "zh-Hant": "新增人物或工作人員", "zh-Hans": "新增人物或工作人员" },
+  "contribution.proposeSource": { en: "Add source", "zh-Hant": "新增來源", "zh-Hans": "新增来源" },
+  "contribution.pageIntro": {
+    en: "Send a sourced correction, missing information, or useful external link.",
+    "zh-Hant": "提交有來源的修正、缺少資料或實用外部連結。",
+    "zh-Hans": "提交有来源的修正、缺少资料或实用外部链接。"
+  },
+  "contribution.newSubmission": { en: "New submission", "zh-Hant": "新增提交", "zh-Hans": "新增提交" },
+  "contribution.typeLabel": { en: "What do you want to send?", "zh-Hant": "你想提交什麼？", "zh-Hans": "你想提交什么？" },
+  "contribution.recordTypeLabel": { en: "What kind of page is this about?", "zh-Hant": "這是關於哪一類頁面？", "zh-Hans": "这是关于哪一类页面？" },
+  "contribution.targetTitleLabel": { en: "Title or name", "zh-Hant": "標題或名稱", "zh-Hans": "标题或名称" },
+  "contribution.targetTitlePlaceholder": {
+    en: "Album, concert, person, source, or page title",
+    "zh-Hant": "專輯、演唱會、人物、來源或頁面標題",
+    "zh-Hans": "专辑、演唱会、人物、来源或页面标题"
+  },
+  "contribution.targetPageLabel": { en: "Site page, if known", "zh-Hant": "網站頁面，如已知", "zh-Hans": "网站页面，如已知" },
+  "contribution.summaryLabel": { en: "What should change or be added?", "zh-Hant": "需要修正或新增什麼？", "zh-Hans": "需要修正或新增什么？" },
+  "contribution.summaryPlaceholder": {
+    en: "Describe the correction, missing information, or link.",
+    "zh-Hant": "描述需要修正、補充或連結的內容。",
+    "zh-Hans": "描述需要修正、补充或链接的内容。"
+  },
+  "contribution.sourceLinksLabel": { en: "Source or link", "zh-Hant": "來源或連結", "zh-Hans": "来源或链接" },
+  "contribution.sourceLinksPlaceholder": {
+    en: "One link per line when possible",
+    "zh-Hant": "可的話每行一個連結",
+    "zh-Hans": "可以的话每行一个链接"
+  },
+  "contribution.sourceTitlesLabel": { en: "Source title", "zh-Hant": "來源標題", "zh-Hans": "来源标题" },
+  "contribution.sourceTitlesPlaceholder": {
+    en: "Page, platform, book, article, album, or video title",
+    "zh-Hant": "頁面、平台、書籍、文章、專輯或影片標題",
+    "zh-Hans": "页面、平台、书籍、文章、专辑或影片标题"
+  },
+  "contribution.sourceTypeLabel": { en: "Source kind", "zh-Hant": "來源類型", "zh-Hans": "来源类型" },
+  "contribution.sourceTypeEmpty": { en: "Choose if known", "zh-Hant": "知道的話請選擇", "zh-Hans": "知道的话请选择" },
+  "contribution.accessDateLabel": { en: "Date checked", "zh-Hant": "查閱日期", "zh-Hans": "查阅日期" },
+  "contribution.creditNameLabel": { en: "Name for credit", "zh-Hant": "署名名稱", "zh-Hans": "署名名称" },
+  "contribution.creditNamePlaceholder": { en: "Name or handle", "zh-Hant": "姓名或暱稱", "zh-Hans": "姓名或昵称" },
+  "contribution.publicCredit": { en: "Public credit", "zh-Hant": "公開署名", "zh-Hans": "公开署名" },
+  "contribution.yes": { en: "Yes", "zh-Hant": "是", "zh-Hans": "是" },
+  "contribution.no": { en: "No", "zh-Hant": "否", "zh-Hans": "否" },
+  "contribution.notesLabel": { en: "Notes", "zh-Hant": "備註", "zh-Hans": "备注" },
+  "contribution.notesPlaceholder": {
+    en: "Uncertainty, alternate titles, timecodes, or extra context",
+    "zh-Hant": "不確定之處、其他標題、時間碼或補充說明",
+    "zh-Hans": "不确定之处、其他标题、时间码或补充说明"
+  },
+  "contribution.submit": { en: "Submit for review", "zh-Hant": "送出審核", "zh-Hans": "提交审核" },
+  "contribution.preview": { en: "Preview review draft", "zh-Hant": "預覽審核草稿", "zh-Hans": "预览审核草稿" },
+  "contribution.submissionNote": {
+    en: "Submissions are reviewed through the project tracker after this step.",
+    "zh-Hant": "送出後會進入專案追蹤系統審核。",
+    "zh-Hans": "提交后会进入项目跟踪系统审核。"
+  },
+  "contribution.existingRecordsTitle": { en: "Existing pages", "zh-Hant": "已有頁面", "zh-Hans": "已有页面" },
+  "contribution.existingRecordsText": {
+    en: "Use these when the page already exists and the change belongs there.",
+    "zh-Hant": "如果頁面已經存在，且修改屬於該頁面，請使用這些選項。",
+    "zh-Hans": "如果页面已经存在，且修改属于该页面，请使用这些选项。"
+  },
+  "contribution.releasesTracksTitle": { en: "Albums And Songs", "zh-Hant": "專輯與歌曲", "zh-Hans": "专辑与歌曲" },
+  "contribution.releasesTracksText": {
+    en: "Send album, single, song order, lyricist, composer, duration, or platform details.",
+    "zh-Hant": "提交專輯、單曲、曲序、作詞、作曲、時長或平台資料。",
+    "zh-Hans": "提交专辑、单曲、曲序、作词、作曲、时长或平台资料。"
+  },
+  "contribution.performancesTitle": { en: "Performances And Appearances", "zh-Hant": "演出與其他出現", "zh-Hans": "演出与其他出现" },
+  "contribution.performancesText": {
+    en: "Send concerts, TV or online performances, interviews, film work, articles, or podcasts.",
+    "zh-Hant": "提交演唱會、電視或網路演出、訪談、電影工作、文章或 Podcast。",
+    "zh-Hans": "提交演唱会、电视或网络演出、访谈、电影工作、文章或播客。"
+  },
+  "contribution.peopleSourcesMediaTitle": { en: "People, Sources, And Links", "zh-Hant": "人物、來源與連結", "zh-Hans": "人物、来源与链接" },
+  "contribution.peopleSourcesMediaText": {
+    en: "Send people, credits, source pages, videos, audio, or platform links.",
+    "zh-Hant": "提交人物、工作人員、來源頁面、影片、音訊或平台連結。",
+    "zh-Hans": "提交人物、工作人员、来源页面、影片、音频或平台链接。"
+  },
+  "contribution.reviewWorkflow": { en: "Review workflow", "zh-Hant": "審核流程", "zh-Hans": "审核流程" },
+  "contribution.workflowSubmittedTitle": { en: "Submitted", "zh-Hant": "已送出", "zh-Hans": "已提交" },
+  "contribution.workflowSubmittedText": {
+    en: "A review ticket is created with the type, page, source, and note fields.",
+    "zh-Hant": "系統會建立審核項目，包含類型、頁面、來源與備註。",
+    "zh-Hans": "系统会建立审核项目，包含类型、页面、来源与备注。"
+  },
+  "contribution.workflowReviewedTitle": { en: "Reviewed", "zh-Hant": "審核中", "zh-Hans": "审核中" },
+  "contribution.workflowReviewedText": {
+    en: "The maintainer checks sources, duplicates, copyright risk, and fit.",
+    "zh-Hant": "維護者會檢查來源、重複項目、版權風險與是否適合收錄。",
+    "zh-Hans": "维护者会检查来源、重复项目、版权风险与是否适合收录。"
+  },
+  "contribution.workflowDecisionTitle": { en: "Accepted or declined", "zh-Hant": "接受或暫不收錄", "zh-Hans": "接受或暂不收录" },
+  "contribution.workflowDecisionText": {
+    en: "Accepted submissions move to a data edit; declined ones keep the reason in the thread.",
+    "zh-Hant": "接受的提交會進入資料編輯；暫不收錄的提交會在討論串保留原因。",
+    "zh-Hans": "接受的提交会进入数据编辑；暂不收录的提交会在讨论串保留原因。"
+  },
+  "contribution.workflowAddedTitle": { en: "Added to the site", "zh-Hant": "加入網站", "zh-Hans": "加入网站" },
+  "contribution.workflowAddedText": {
+    en: "Reviewed changes are added through a normal project edit.",
+    "zh-Hant": "審核後的修改會透過正常專案編輯加入網站。",
+    "zh-Hans": "审核后的修改会通过正常项目编辑加入网站。"
+  },
+  "contribution.reviewRules": { en: "Review rules", "zh-Hant": "審核規則", "zh-Hans": "审核规则" },
+  "contribution.ruleSources": {
+    en: "Facts need source links.",
+    "zh-Hant": "事實資訊需要來源連結。",
+    "zh-Hans": "事实信息需要来源链接。"
+  },
+  "contribution.ruleAnonymous": {
+    en: "Anonymous facts stay unconfirmed until a source can verify them.",
+    "zh-Hant": "匿名提供的事實在來源確認前會保持未確認狀態。",
+    "zh-Hans": "匿名提供的事实在来源确认前会保持未确认状态。"
+  },
+  "contribution.ruleFocus": {
+    en: "Please focus on information that can be checked.",
+    "zh-Hant": "請盡量提交可查證的資料。",
+    "zh-Hans": "请尽量提交可查证的资料。"
+  },
+  "contribution.ruleAccepted": {
+    en: "Accepted changes are added after review.",
+    "zh-Hant": "接受的修改會在審核後加入。",
+    "zh-Hans": "接受的修改会在审核后加入。"
+  },
+  "contribution.optionCorrection": { en: "Correct a record", "zh-Hant": "修正現有資料", "zh-Hans": "修正现有资料" },
+  "contribution.optionSource": { en: "Add a source", "zh-Hant": "新增來源", "zh-Hans": "新增来源" },
+  "contribution.optionMedia": { en: "Add a video or audio link", "zh-Hant": "新增影片或音訊連結", "zh-Hans": "新增影片或音频链接" },
+  "contribution.optionAlbum": { en: "Add album or single", "zh-Hant": "新增專輯或單曲", "zh-Hans": "新增专辑或单曲" },
+  "contribution.optionTrack": { en: "Add song detail", "zh-Hant": "新增歌曲資料", "zh-Hans": "新增歌曲资料" },
+  "contribution.optionConcert": { en: "Add concert", "zh-Hant": "新增演唱會", "zh-Hans": "新增演唱会" },
+  "contribution.optionMusicShow": { en: "Add TV or online performance", "zh-Hant": "新增電視或網路演出", "zh-Hans": "新增电视或网络演出" },
+  "contribution.optionAppearance": { en: "Add interview or appearance", "zh-Hant": "新增訪談或其他出現", "zh-Hans": "新增访谈或其他出现" },
+  "contribution.optionPerson": { en: "Add person or credit", "zh-Hant": "新增人物或工作人員", "zh-Hans": "新增人物或工作人员" },
+  "contribution.helperCorrection": {
+    en: "Use this to fix information on an existing album, song, concert, performance, appearance, person, source, or link.",
+    "zh-Hant": "用於修正現有專輯、歌曲、演唱會、演出、其他出現、人物、來源或連結的資料。",
+    "zh-Hans": "用于修正现有专辑、歌曲、演唱会、演出、其他出现、人物、来源或链接的资料。"
+  },
+  "contribution.helperSource": {
+    en: "Use this when a page, article, book, platform listing, or other source can confirm information on the site.",
+    "zh-Hant": "如果某個頁面、文章、書籍、平台資料或其他來源可以確認網站資訊，請使用這項。",
+    "zh-Hans": "如果某个页面、文章、书籍、平台资料或其他来源可以确认网站信息，请使用这项。"
+  },
+  "contribution.helperMedia": {
+    en: "Use this for video, audio, platform, or clip links. The site links out instead of hosting media.",
+    "zh-Hant": "用於影片、音訊、平台或片段連結。本站只提供外部連結，不託管媒體。",
+    "zh-Hans": "用于影片、音频、平台或片段链接。本站只提供外部链接，不托管媒体。"
+  },
+  "contribution.helperAlbum": {
+    en: "Use this for albums, singles, compilations, reissues, collaborations, soundtracks, and related music releases.",
+    "zh-Hant": "用於專輯、單曲、合輯、再版、合作、原聲帶與相關音樂發行。",
+    "zh-Hans": "用于专辑、单曲、合辑、再版、合作、原声带与相关音乐发行。"
+  },
+  "contribution.helperTrack": {
+    en: "Use this for song order, album placement, duration, version notes, lyricists, composers, or arrangers.",
+    "zh-Hant": "用於曲序、所屬專輯、時長、版本說明、作詞、作曲或編曲資料。",
+    "zh-Hans": "用于曲序、所属专辑、时长、版本说明、作词、作曲或编曲资料。"
+  },
+  "contribution.helperConcert": {
+    en: "Use this for concert, concert-series, festival, live-album, or setlist records.",
+    "zh-Hant": "用於演唱會、系列演出、音樂節、現場專輯或曲目表資料。",
+    "zh-Hans": "用于演唱会、系列演出、音乐节、现场专辑或曲目表资料。"
+  },
+  "contribution.helperMusicShow": {
+    en: "Use this for televised, streamed, radio, or platform music performances.",
+    "zh-Hant": "用於電視、串流、廣播或平台音樂演出。",
+    "zh-Hans": "用于电视、流媒体、广播或平台音乐演出。"
+  },
+  "contribution.helperAppearance": {
+    en: "Use this for interviews, shows, soundtrack work, film, documentary, articles, podcasts, or similar items.",
+    "zh-Hant": "用於訪談、節目、原聲工作、電影、紀錄片、文章、Podcast 或類似項目。",
+    "zh-Hans": "用于访谈、节目、原声工作、电影、纪录片、文章、播客或类似项目。"
+  },
+  "contribution.helperPerson": {
+    en: "Use this for people, public profiles, roles, and credits connected to the site.",
+    "zh-Hant": "用於與本站資料相關的人物、公開資料、角色與工作人員資訊。",
+    "zh-Hans": "用于与本站资料相关的人物、公开资料、角色与工作人员信息。"
+  },
   "option.albums": { en: "Albums", "zh-Hant": "專輯", "zh-Hans": "专辑" },
   "option.songs": { en: "Songs", "zh-Hant": "歌曲", "zh-Hans": "歌曲" },
   "option.oldest": { en: "Oldest", "zh-Hant": "最早", "zh-Hans": "最早" },
@@ -1126,23 +1304,46 @@ export function archiveLinkDisplayValues(link: ArchiveLink): LocaleValues {
 export function contributionValues(value: string): LocaleValues {
   const known: Record<string, LocaleValues> = {
     Contribute: uiText("label.contribute"),
+    "Send a sourced correction or useful link for this page.": uiText("contribution.recordText"),
     "Send a sourced correction or link for this record.": uiText("contribution.recordText"),
+    "Send a missing album, single, or song detail with source links.": uiText("contribution.releaseText"),
     "Propose a missing release or track-level addition with source links.": uiText("contribution.releaseText"),
+    "Send a missing concert with date, place, songs, links, and sources.": uiText("contribution.concertText"),
     "Propose a missing concert or concert-series record with date, location, and sources.": uiText("contribution.concertText"),
+    "Send a TV, online, radio, or platform music performance with sources.": uiText("contribution.musicShowText"),
     "Propose a missing broadcast, streamed, or radio music-show performance with sources.": uiText("contribution.musicShowText"),
+    "Send an interview, article, film, soundtrack, podcast, or other appearance.": uiText("contribution.appearanceText"),
     "Propose a missing interview, soundtrack, film, article, or other appearance record with sources.": uiText("contribution.appearanceText"),
+    "Send a missing person, role, or credit with a source.": uiText("contribution.personText"),
     "Propose a missing person record or credit relationship with a source.": uiText("contribution.personText"),
+    "Send a source that can confirm or improve information on the site.": uiText("contribution.sourceText"),
     "Propose a source that can support archive facts or improve uncertain records.": uiText("contribution.sourceText"),
     "Suggest correction": uiText("contribution.suggestCorrection"),
     "Add source": uiText("contribution.addSource"),
     "Add media link": uiText("contribution.addMediaLink"),
+    "Add a video or audio link": uiText("contribution.optionMedia"),
+    "Correct a record": uiText("contribution.optionCorrection"),
+    "Add album or single": uiText("contribution.proposeRelease"),
     "Propose album/release": uiText("contribution.proposeRelease"),
+    "Add song detail": uiText("contribution.addTrack"),
     "Add release track": uiText("contribution.addTrack"),
     "Propose concert": uiText("contribution.proposeConcert"),
+    "Add TV or online performance": uiText("contribution.proposeMusicShow"),
     "Propose music-show performance": uiText("contribution.proposeMusicShow"),
+    "Add interview or appearance": uiText("contribution.proposeAppearance"),
     "Propose appearance": uiText("contribution.proposeAppearance"),
+    "Add person or credit": uiText("contribution.proposePerson"),
     "Propose person/credit": uiText("contribution.proposePerson"),
-    "Propose source": uiText("contribution.proposeSource")
+    "Propose source": uiText("contribution.proposeSource"),
+    "Use this to fix information on an existing album, song, concert, performance, appearance, person, source, or link.": uiText("contribution.helperCorrection"),
+    "Use this when a page, article, book, platform listing, or other source can confirm information on the site.": uiText("contribution.helperSource"),
+    "Use this for video, audio, platform, or clip links. The site links out instead of hosting media.": uiText("contribution.helperMedia"),
+    "Use this for albums, singles, compilations, reissues, collaborations, soundtracks, and related music releases.": uiText("contribution.helperAlbum"),
+    "Use this for song order, album placement, duration, version notes, lyricists, composers, or arrangers.": uiText("contribution.helperTrack"),
+    "Use this for concert, concert-series, festival, live-album, or setlist records.": uiText("contribution.helperConcert"),
+    "Use this for televised, streamed, radio, or platform music performances.": uiText("contribution.helperMusicShow"),
+    "Use this for interviews, shows, soundtrack work, film, documentary, articles, podcasts, or similar items.": uiText("contribution.helperAppearance"),
+    "Use this for people, public profiles, roles, and credits connected to the site.": uiText("contribution.helperPerson")
   };
   return known[value] || textValues(value);
 }

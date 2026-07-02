@@ -1,14 +1,16 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContributionPanel from "../../components/ContributionPanel.astro";
-import { appearances } from "../../lib/archive";
+import { appearances, musicShows } from "../../lib/archive";
 import { contributionPageUrl } from "../../lib/contribution";
 import {
   appearanceTypeValues,
   countValues,
   i18nAttrs,
   i18nCountLabelAttrs,
+  labelValueValues,
   titleValues,
+  textValues,
   uiText,
   valueForLocale,
   withCountValues
@@ -21,16 +23,72 @@ const contributionActions = [
   }
 ];
 
-const appearanceTypeCounts = appearances.reduce((counts, appearance) => {
-  counts.set(appearance.appearanceType, (counts.get(appearance.appearanceType) || 0) + 1);
+type AppearanceListItem = {
+  href: string;
+  title: ReturnType<typeof titleValues>;
+  date: string;
+  type: string;
+  typeLabel: ReturnType<typeof textValues>;
+  alpha: string;
+  search: string;
+};
+
+function displayType(type: string) {
+  if (type === "music-show") return textValues("Music shows", "音樂節目", "音乐节目");
+  if (type === "show") return textValues("Other shows", "其他節目", "其他节目");
+  return appearanceTypeValues(type);
+}
+
+const appearanceItems: AppearanceListItem[] = [
+  ...musicShows.map((show) => ({
+    href: `/music-shows/${show.slug}/`,
+    title: titleValues(show),
+    date: show.date || "",
+    type: "music-show",
+    typeLabel: displayType("music-show"),
+    alpha: `${show.title} ${show.titleOriginal || ""}`.toLocaleLowerCase("en-US"),
+    search: [
+      show.title,
+      show.titleOriginal,
+      ...Object.values(show.titleLocalized || {}),
+      show.date,
+      show.program,
+      show.episode,
+      show.platform,
+      "music shows"
+    ].filter(Boolean).join(" ")
+  })),
+  ...appearances.map((appearance) => ({
+    href: `/appearances/${appearance.slug}/`,
+    title: titleValues(appearance),
+    date: appearance.date || "",
+    type: appearance.appearanceType,
+    typeLabel: displayType(appearance.appearanceType),
+    alpha: `${appearance.title} ${appearance.titleOriginal || ""}`.toLocaleLowerCase("en-US"),
+    search: [
+      appearance.title,
+      appearance.titleOriginal,
+      ...Object.values(appearance.titleLocalized || {}),
+      appearance.date,
+      appearance.appearanceType,
+      appearance.appearanceType === "show" ? "other shows" : "",
+      appearance.showContent,
+      appearance.programOrWork,
+      appearance.role
+    ].filter(Boolean).join(" ")
+  }))
+];
+
+const appearanceTypeCounts = appearanceItems.reduce((counts, item) => {
+  counts.set(item.type, (counts.get(item.type) || 0) + 1);
   return counts;
 }, new Map<string, number>());
 
 const appearanceTypeOptions = [
-  { value: "", label: uiText("option.allAppearances"), count: appearances.length },
+  { value: "", label: uiText("option.allAppearances"), count: appearanceItems.length },
   ...Array.from(appearanceTypeCounts.entries()).map(([type, count]) => ({
     value: type,
-    label: appearanceTypeValues(type),
+    label: displayType(type),
     count
   }))
 ].map((option) => ({
@@ -52,7 +110,7 @@ const appearanceTypeOptions = [
     <h1 class="page-title" {...i18nAttrs(uiText("nav.appearances"))}>{valueForLocale(uiText("nav.appearances"))}</h1>
     <p class="page-intro" {...i18nAttrs(uiText("page.appearances.intro"))}>{valueForLocale(uiText("page.appearances.intro"))}</p>
 
-    {appearances.length ? (
+    {appearanceItems.length ? (
       <>
         <div class="section filter-panel appearances-controls-panel">
           <label class="release-filter-select-label">
@@ -76,33 +134,27 @@ const appearanceTypeOptions = [
             </div>
           </fieldset>
 
-          <p data-sort-count data-filter-count>{valueForLocale(countValues(appearances.length, "count.record", "count.records"))}</p>
+          <p data-sort-count data-filter-count>{valueForLocale(countValues(appearanceItems.length, "count.record", "count.records"))}</p>
         </div>
 
         <div class="section archive-grid" data-sort-container>
-          {appearances.map((appearance, index) => (
+          {appearanceItems.map((item, index) => (
             <a
               class="record-card concert-record-card"
-              href={`/appearances/${appearance.slug}/`}
+              href={item.href}
               data-filter-item
               data-sort-item
               data-sort-index={index}
-              data-sort-date={appearance.date || ""}
-              data-sort-alpha={`${appearance.title} ${appearance.titleOriginal || ""}`.toLocaleLowerCase("en-US")}
-              data-appearance-type={appearance.appearanceType}
-              data-search={[
-                appearance.title,
-                appearance.titleOriginal,
-                ...Object.values(appearance.titleLocalized || {}),
-                appearance.date,
-                appearance.appearanceType,
-                appearance.showContent,
-                appearance.programOrWork,
-                appearance.role
-              ].filter(Boolean).join(" ")}
+              data-sort-date={item.date}
+              data-sort-alpha={item.alpha}
+              data-appearance-type={item.type}
+              data-search={item.search}
             >
-              <span class="concert-card-title" {...i18nAttrs(titleValues(appearance))}>{valueForLocale(titleValues(appearance))}</span>
-              {appearance.date ? <span class="concert-card-note">{appearance.date}</span> : null}
+              <span class="concert-card-title" {...i18nAttrs(item.title)}>{valueForLocale(item.title)}</span>
+              <span class="concert-card-note" {...i18nAttrs(labelValueValues("label.type", item.typeLabel))}>
+                {valueForLocale(labelValueValues("label.type", item.typeLabel))}
+              </span>
+              {item.date ? <span class="concert-card-note">{item.date}</span> : null}
             </a>
           ))}
         </div>

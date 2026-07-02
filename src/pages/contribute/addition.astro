@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionIssueForm from "../../components/ContributionIssueForm.astro";
+import { i18nAttrs, textValues, valueForLocale } from "../../lib/i18n";
+
+const title = textValues("Add missing information", "新增缺少資料", "新增缺少资料");
+const intro = textValues(
+  "Choose what you want to add. You can paste a source link for us to import from, or type the important details manually.",
+  "選擇你想新增的內容。你可以貼上來源連結讓我們整理，也可以手動填寫重要資料。",
+  "选择你想新增的内容。你可以贴上来源链接让我们整理，也可以手动填写重要资料。"
+);
+---
+
+<BaseLayout title="Add missing information | All for Chyi Yu">
+  <section class="page-shell">
+    <p class="page-kicker"><a href="/contribute/">Contribute</a></p>
+    <h1 class="page-title" {...i18nAttrs(title)}>{valueForLocale(title)}</h1>
+    <p class="page-intro" {...i18nAttrs(intro)}>{valueForLocale(intro)}</p>
+    <ContributionIssueForm
+      mode="addition"
+      title={title}
+      intro={intro}
+      kinds={["album", "track", "concert", "music-show", "appearance", "person", "source", "media"]}
+      defaultKind="album"
+    />
+  </section>
+</BaseLayout>

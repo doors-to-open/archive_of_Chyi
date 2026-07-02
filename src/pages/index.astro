@@ -17,15 +17,9 @@ const sections = [
     text: uiText("home.concerts.text")
   },
   {
-    href: "/music-shows/",
-    title: uiText("nav.musicShows"),
-    count: musicShows.length,
-    text: uiText("home.musicShows.text")
-  },
-  {
     href: "/appearances/",
     title: uiText("nav.appearances"),
-    count: appearances.length,
+    count: appearances.length + musicShows.length,
     text: uiText("home.appearances.text")
   },
   {

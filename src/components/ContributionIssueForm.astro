@@ -1,0 +1,1128 @@
+---
+import {
+  contributionIssueBody,
+  contributionLabels,
+  contributionTitles,
+  contributionTypeOptions,
+  repositoryIssueUrl,
+  type ContributionKind
+} from "../lib/contribution";
+import {
+  contributionValues,
+  i18nAttrs,
+  i18nPlaceholderAttrs,
+  textValues,
+  uiText,
+  valueForLocale,
+  type LocaleValues
+} from "../lib/i18n";
+import { appearanceCorrectionCatalog } from "../lib/appearance-correction-catalog";
+import { concertCorrectionCatalog } from "../lib/concert-correction-catalog";
+import { releaseCorrectionCatalog } from "../lib/release-correction-catalog";
+
+type Props = {
+  mode: "correction" | "addition" | "freeform";
+  title: LocaleValues;
+  intro: LocaleValues;
+  kinds: ContributionKind[];
+  defaultKind: ContributionKind;
+};
+
+const { mode, title, intro, kinds, defaultKind } = Astro.props;
+const contributionKinds = contributionTypeOptions.filter((option) => kinds.includes(option.kind));
+const initialFormType = contributionKinds.find((option) => option.kind === defaultKind) || contributionKinds[0];
+
+const formTypes = contributionKinds.map((option) => ({
+  kind: option.kind,
+  label: option.label,
+  labelValues: contributionValues(option.label),
+  defaultRecordType: option.defaultRecordType,
+  helper: option.helper,
+  helperValues: contributionValues(option.helper),
+  title: contributionTitles[option.kind],
+  labels: contributionLabels[option.kind],
+  template: contributionIssueBody({
+    kind: option.kind,
+    recordType: option.defaultRecordType
+  })
+}));
+
+const labels = {
+  type: mode === "correction" ? textValues("What needs correction?", "需要修正什麼？", "需要修正什么？") : uiText("contribution.typeLabel"),
+  pageKind: uiText("contribution.recordTypeLabel"),
+  findPage: textValues("Find the page or item", "尋找頁面或項目", "寻找页面或项目"),
+  findPagePlaceholder: textValues("Type an album, song, concert, person, source, or page title", "輸入專輯、歌曲、演唱會、人物、來源或頁面標題", "输入专辑、歌曲、演唱会、人物、来源或页面标题"),
+  matches: textValues("Matching pages", "符合的頁面", "符合的页面"),
+  noMatches: textValues("No matches found. You can keep typing or use the free-form page.", "找不到符合項目。你可以繼續輸入，或使用自由描述頁面。", "找不到符合项目。你可以继续输入，或使用自由描述页面。"),
+  sitePage: uiText("contribution.targetPageLabel"),
+  fieldGroup: textValues("Which part is this about?", "這是關於哪一部分？", "这是关于哪一部分？"),
+  currentValue: textValues("Current value, if shown on the site", "網站目前顯示的值，如有", "网站目前显示的值，如有"),
+  suggestedValue: textValues("Recommended value", "建議改成", "建议改成"),
+  additionMethod: textValues("How would you like to add it?", "你想怎麼新增？", "你想怎么新增？"),
+  importLink: textValues("Import from a source link", "從來源連結整理", "从来源链接整理"),
+  manualEntry: textValues("I will type the information", "我會手動填寫資料", "我会手动填写资料"),
+  importantDetails: textValues("Important details", "重要資料", "重要资料"),
+  freeText: textValues("Describe it in your own words", "用你的話描述", "用你的话描述"),
+  sourceLinks: uiText("contribution.sourceLinksLabel"),
+  sourceLinksPlaceholder: uiText("contribution.sourceLinksPlaceholder"),
+  creditName: uiText("contribution.creditNameLabel"),
+  creditNamePlaceholder: uiText("contribution.creditNamePlaceholder"),
+  contact: textValues("Contact, if sources are missing", "沒有來源時請留下聯絡方式", "没有来源时请留下联系方式"),
+  contactPlaceholder: textValues("Email, social account, or another way to reach you", "Email、社群帳號或其他聯絡方式", "Email、社交账号或其他联系方式"),
+  publicCredit: uiText("contribution.publicCredit"),
+  yes: uiText("contribution.yes"),
+  no: uiText("contribution.no"),
+  notes: uiText("contribution.notesLabel"),
+  notesPlaceholder: uiText("contribution.notesPlaceholder"),
+  submit: uiText("contribution.submit"),
+  preview: uiText("contribution.preview"),
+  submissionNote: uiText("contribution.submissionNote"),
+  websiteSection: textValues("Website section", "網站區域", "网站区域"),
+  additionTarget: textValues("What are you adding?", "你要新增什麼？", "你要新增什么？"),
+  parentItem: textValues("Parent item", "所屬項目", "所属项目"),
+  parentPlaceholder: textValues("Search for the album, concert, appearance, or music show this belongs to", "搜尋這筆資料所屬的專輯、演唱會、其他演出或音樂節目", "搜索这笔资料所属的专辑、演唱会、其他演出或音乐节目"),
+  helper: initialFormType ? contributionValues(initialFormType.helper) : textValues("")
+};
+
+const navigationSections = ["Releases", "Concerts", "Appearances", "People", "Sources"];
+const additionSections = ["Releases", "Concerts", "Appearances"];
+const releaseAreas = ["Category", "Title", "Metadata", "Format", "Streaming", "Tracklist sequence", "Tracklist song", "Live records"];
+const concertAreas = ["Category", "Title", "Metadata", "Participants", "Format", "Show links", "Setlist sequence", "Setlist song", "Clip links"];
+const appearanceAreas = ["Category", "Title", "Metadata", "People", "Format", "Links", "Related songs", "Track sequence", "Track details", "Performance sequence", "Performance song", "Clip links"];
+const appearanceCategories = ["Music shows", "Other shows", "Soundtrack and screen work", "Guest vocals", "Interviews and articles", "Other appearances"];
+
+const additionPrompts: Partial<Record<ContributionKind, string>> = {
+  album: "Album/single title, release date, label, format, platform links, track list, and known credits.",
+  track: "Album, song title, song order, title printed on the album, duration, lyricist, composer, arranger, and version note.",
+  concert: "Concert title, date, venue, city, category, tour or series, guests, songs performed, and video/audio links.",
+  "music-show": "Program or platform, date, episode, songs performed, collaborators, video/audio links, and timecodes.",
+  appearance: "Interview, article, film, soundtrack, podcast, or show title; date; role; related songs; and links.",
+  person: "Person name, original name, role, public profile, related song/album/show, and credit relationship.",
+  source: "Source title, author or publisher, date, source kind, link, archive link if unstable, and what fact it supports.",
+  media: "Video/audio link, platform, uploader, official or unofficial, full item or clip, timestamp, resolution, and related page."
+};
+const initialAdditionPrompt = additionPrompts[defaultKind] || "Important dates, people, songs, links, and anything that should be added.";
+---
+
+<section class="section detail-panel contribution-form-panel">
+  <h2 {...i18nAttrs(title)}>{valueForLocale(title)}</h2>
+  <p {...i18nAttrs(intro)}>{valueForLocale(intro)}</p>
+  <form class="contribution-form" data-guided-contribution-form data-mode={mode} data-issue-url={repositoryIssueUrl}>
+    <div class="form-grid">
+      {mode === "addition" ? (
+        <select name="kind" data-contribution-kind hidden aria-hidden="true">
+          {formTypes.map((option) => (
+            <option value={option.kind} {...i18nAttrs(option.labelValues)}>{valueForLocale(option.labelValues)}</option>
+          ))}
+        </select>
+      ) : (
+        <label>
+          <span {...i18nAttrs(labels.type)}>{valueForLocale(labels.type)}</span>
+          <select name="kind" data-contribution-kind>
+            {formTypes.map((option) => (
+              <option value={option.kind} {...i18nAttrs(option.labelValues)}>{valueForLocale(option.labelValues)}</option>
+            ))}
+          </select>
+        </label>
+      )}
+      {mode === "correction" && (
+        <label>
+          <span {...i18nAttrs(labels.websiteSection)}>{valueForLocale(labels.websiteSection)}</span>
+          <select name="navigationSection" data-navigation-section>
+            {navigationSections.map((section) => <option value={section}>{section}</option>)}
+          </select>
+        </label>
+      )}
+      {mode === "addition" && (
+        <label>
+          <span {...i18nAttrs(labels.websiteSection)}>{valueForLocale(labels.websiteSection)}</span>
+          <select name="navigationSection" data-navigation-section>
+            {additionSections.map((section) => <option value={section}>{section}</option>)}
+          </select>
+        </label>
+      )}
+      {mode === "correction" && (
+        <label data-appearance-category-wrap hidden>
+          <span>Appearance category</span>
+          <select name="appearanceCategory" data-appearance-category>
+            {appearanceCategories.map((category) => <option value={category}>{category}</option>)}
+          </select>
+        </label>
+      )}
+      <input name="recordType" type="hidden" data-contribution-record-type value={initialFormType?.defaultRecordType || ""} />
+    </div>
+
+    {mode === "correction" ? (
+      <div class="form-grid">
+        <label>
+          <span {...i18nAttrs(labels.findPage)}>{valueForLocale(labels.findPage)}</span>
+          <input name="recordTitle" data-record-search placeholder={valueForLocale(labels.findPagePlaceholder)} {...i18nPlaceholderAttrs(labels.findPagePlaceholder)} autocomplete="off" />
+          <input name="catalogItemId" type="hidden" />
+        </label>
+        <input name="recordPath" type="hidden" />
+      </div>
+    ) : (
+      <>
+        <input name="recordTitle" type="hidden" />
+        <input name="recordPath" type="hidden" />
+        <input name="catalogItemId" type="hidden" />
+      </>
+    )}
+
+    {mode === "correction" && (
+      <div class="record-meta-table" data-record-results hidden aria-live="polite">
+        <span {...i18nAttrs(labels.matches)}>{valueForLocale(labels.matches)}</span>
+      </div>
+    )}
+
+    {mode === "correction" && (
+      <>
+        <label>
+          <span>Page area</span>
+          <select name="fieldGroup" data-field-group data-release-areas={JSON.stringify(releaseAreas)} data-concert-areas={JSON.stringify(concertAreas)} data-appearance-areas={JSON.stringify(appearanceAreas)}>
+            {releaseAreas.map((fieldGroup) => <option value={fieldGroup}>{fieldGroup}</option>)}
+          </select>
+        </label>
+        <label data-release-field-wrap>
+          <span>Exact field or item</span>
+          <select name="releaseField" data-release-field></select>
+        </label>
+        <p class="submission-note" data-correction-sentence></p>
+        <div class="form-grid">
+          <label>
+            <span {...i18nAttrs(labels.currentValue)}>{valueForLocale(labels.currentValue)}</span>
+            <textarea name="currentValue" rows="3" data-current-value></textarea>
+          </label>
+          <label>
+            <span {...i18nAttrs(labels.suggestedValue)}>{valueForLocale(labels.suggestedValue)}</span>
+            <textarea name="suggestedValue" rows="3" required data-suggested-value></textarea>
+          </label>
+        </div>
+      </>
+    )}
+
+    {mode === "addition" && (
+      <>
+        <label>
+          <span {...i18nAttrs(labels.additionTarget)}>{valueForLocale(labels.additionTarget)}</span>
+          <select name="additionTarget" data-addition-target></select>
+        </label>
+        <div class="form-grid" data-addition-parent-wrap hidden>
+          <label>
+            <span {...i18nAttrs(labels.parentItem)}>{valueForLocale(labels.parentItem)}</span>
+            <input name="additionParentTitle" data-addition-parent-search placeholder={valueForLocale(labels.parentPlaceholder)} {...i18nPlaceholderAttrs(labels.parentPlaceholder)} autocomplete="off" />
+          </label>
+        </div>
+        <div class="record-meta-table" data-addition-parent-results hidden aria-live="polite">
+          <span {...i18nAttrs(labels.matches)}>{valueForLocale(labels.matches)}</span>
+        </div>
+        <fieldset class="credit-choice">
+          <legend {...i18nAttrs(labels.additionMethod)}>{valueForLocale(labels.additionMethod)}</legend>
+          <label><input type="radio" name="additionMethod" value="import" checked /><span {...i18nAttrs(labels.importLink)}>{valueForLocale(labels.importLink)}</span></label>
+          <label><input type="radio" name="additionMethod" value="manual" /><span {...i18nAttrs(labels.manualEntry)}>{valueForLocale(labels.manualEntry)}</span></label>
+        </fieldset>
+        <div class="form-grid" data-addition-manual-fields hidden></div>
+        <label>
+          <span {...i18nAttrs(labels.importantDetails)}>{valueForLocale(labels.importantDetails)}</span>
+          <textarea name="details" rows="5" data-addition-details placeholder={initialAdditionPrompt}></textarea>
+        </label>
+      </>
+    )}
+
+    {mode === "freeform" && (
+      <label>
+        <span {...i18nAttrs(labels.freeText)}>{valueForLocale(labels.freeText)}</span>
+        <textarea name="details" rows="7" required placeholder="No matches found? Describe the correction or addition and the maintainer will help place it."></textarea>
+      </label>
+    )}
+
+    <label>
+      <span {...i18nAttrs(labels.sourceLinks)}>{valueForLocale(labels.sourceLinks)}</span>
+      <textarea name="sourceLinks" rows="3" placeholder={valueForLocale(labels.sourceLinksPlaceholder)} {...i18nPlaceholderAttrs(labels.sourceLinksPlaceholder)}></textarea>
+    </label>
+
+    <input name="sourceTitles" type="hidden" />
+    <input name="sourceType" type="hidden" />
+    <input name="accessDate" type="hidden" />
+
+    <label>
+      <span {...i18nAttrs(labels.creditName)}>{valueForLocale(labels.creditName)}</span>
+      <input name="creditName" placeholder={valueForLocale(labels.creditNamePlaceholder)} {...i18nPlaceholderAttrs(labels.creditNamePlaceholder)} />
+    </label>
+
+    <label>
+      <span {...i18nAttrs(labels.contact)}>{valueForLocale(labels.contact)}</span>
+      <input name="contact" placeholder={valueForLocale(labels.contactPlaceholder)} {...i18nPlaceholderAttrs(labels.contactPlaceholder)} />
+    </label>
+
+    <fieldset class="credit-choice">
+      <legend {...i18nAttrs(labels.publicCredit)}>{valueForLocale(labels.publicCredit)}</legend>
+      <label><input type="radio" name="creditPublic" value="yes" checked /><span {...i18nAttrs(labels.yes)}>{valueForLocale(labels.yes)}</span></label>
+      <label><input type="radio" name="creditPublic" value="no" /><span {...i18nAttrs(labels.no)}>{valueForLocale(labels.no)}</span></label>
+    </fieldset>
+
+    <label>
+      <span {...i18nAttrs(labels.notes)}>{valueForLocale(labels.notes)}</span>
+      <textarea name="notes" rows="3" placeholder={valueForLocale(labels.notesPlaceholder)} {...i18nPlaceholderAttrs(labels.notesPlaceholder)}></textarea>
+    </label>
+
+    <p class="contribution-helper" data-contribution-helper {...i18nAttrs(labels.helper)}>{valueForLocale(labels.helper)}</p>
+
+    <div class="form-actions">
+      <button type="submit" {...i18nAttrs(labels.submit)}>{valueForLocale(labels.submit)}</button>
+      <a data-contribution-preview href={repositoryIssueUrl}><span {...i18nAttrs(labels.preview)}>{valueForLocale(labels.preview)}</span></a>
+    </div>
+    <p class="submission-note" {...i18nAttrs(labels.submissionNote)}>{valueForLocale(labels.submissionNote)}</p>
+  </form>
+</section>
+
+<script is:inline type="application/json" id={`contribution-form-types-${mode}`} set:html={JSON.stringify(formTypes)} />
+{(mode === "correction" || mode === "addition") && (
+  <script is:inline type="application/json" id="release-correction-catalog" set:html={JSON.stringify(releaseCorrectionCatalog)} />
+)}
+{(mode === "correction" || mode === "addition") && (
+  <script is:inline type="application/json" id="concert-correction-catalog" set:html={JSON.stringify(concertCorrectionCatalog)} />
+)}
+{(mode === "correction" || mode === "addition") && (
+  <script is:inline type="application/json" id="appearance-correction-catalog" set:html={JSON.stringify(appearanceCorrectionCatalog)} />
+)}
+<script>
+  type ContributionFormType = {
+    kind: string;
+    label: string;
+    labelValues: Record<string, string>;
+    defaultRecordType: string;
+    helper: string;
+    helperValues: Record<string, string>;
+    title: string;
+    labels: string;
+    template: string;
+  };
+
+  const additionPrompts: Record<string, string> = {
+    album: "Album/single title, release date, label, format, platform links, track list, and known credits.",
+    track: "Album, song title, song order, title printed on the album, duration, lyricist, composer, arranger, and version note.",
+    concert: "Concert title, date, venue, city, category, tour or series, guests, songs performed, and video/audio links.",
+    "music-show": "Program or platform, date, episode, songs performed, collaborators, video/audio links, and timecodes.",
+    appearance: "Interview, article, film, soundtrack, podcast, or show title; date; role; related songs; and links.",
+    person: "Person name, original name, role, public profile, related song/album/show, and credit relationship.",
+    source: "Source title, author or publisher, date, source kind, link, archive link if unstable, and what fact it supports.",
+    media: "Video/audio link, platform, uploader, official or unofficial, full item or clip, timestamp, resolution, and related page."
+  };
+
+  type AdditionManualField = {
+    name: string;
+    label: string;
+    required?: boolean;
+    rows?: number;
+  };
+
+  type AdditionTarget = {
+    id: string;
+    section: string;
+    label: string;
+    kind: string;
+    recordType: string;
+    parent?: "release" | "concert" | "appearance";
+    prompt: string;
+    importPrompt: string;
+    fields: AdditionManualField[];
+  };
+
+  const additionTargets: AdditionTarget[] = [
+    {
+      id: "release-new",
+      section: "Releases",
+      label: "New album, single, or release",
+      kind: "album",
+      recordType: "Album or single",
+      prompt: "Required: title and release category. Add release date, track list, label, formats, links, and credits when known.",
+      importPrompt: "Paste a source link for the release. Add a short note about what should be imported if helpful.",
+      fields: [
+        { name: "title", label: "Release title", required: true },
+        { name: "category", label: "Release category", required: true },
+        { name: "date", label: "Release date" },
+        { name: "label", label: "Label" },
+        { name: "formats", label: "Format(s)" },
+        { name: "trackList", label: "Track list with positions", rows: 4 },
+        { name: "credits", label: "Known credits", rows: 3 },
+        { name: "links", label: "Streaming, purchase, or reference links", rows: 3 }
+      ]
+    },
+    {
+      id: "release-track",
+      section: "Releases",
+      label: "Track on an existing release",
+      kind: "track",
+      recordType: "Track on release",
+      parent: "release",
+      prompt: "Required: parent release and track title. Add position, matched song, duration, and credits when known.",
+      importPrompt: "Paste a source link for the track listing or credits. Choose the parent release if you know it.",
+      fields: [
+        { name: "title", label: "Track title", required: true },
+        { name: "position", label: "Track position" },
+        { name: "matchedSong", label: "Matched song, if known" },
+        { name: "duration", label: "Duration" },
+        { name: "credits", label: "Lyrics, music, arrangement, or performer credits", rows: 3 },
+        { name: "version", label: "Version or performance note" }
+      ]
+    },
+    {
+      id: "release-link",
+      section: "Releases",
+      label: "Streaming or purchase link",
+      kind: "media",
+      recordType: "Release link",
+      parent: "release",
+      prompt: "Required: parent release, URL, and platform. Add region and official/unofficial status when known.",
+      importPrompt: "Paste the platform link. Choose the parent release if you know it.",
+      fields: [
+        { name: "url", label: "Link URL", required: true },
+        { name: "platform", label: "Platform", required: true },
+        { name: "region", label: "Available region" },
+        { name: "official", label: "Official or unofficial" }
+      ]
+    },
+    {
+      id: "concert-new",
+      section: "Concerts",
+      label: "New concert or live event",
+      kind: "concert",
+      recordType: "Concert",
+      prompt: "Required: concert title or event name, and date or approximate date. Add venue, city, category, guests, setlist, and links when known.",
+      importPrompt: "Paste a source link for the concert. Add a note about the event date, title, or setlist if helpful.",
+      fields: [
+        { name: "title", label: "Concert title or event name", required: true },
+        { name: "date", label: "Date or approximate date", required: true },
+        { name: "venue", label: "Venue" },
+        { name: "place", label: "City and country/region" },
+        { name: "category", label: "Concert category" },
+        { name: "people", label: "Performers, guests, or host artist", rows: 3 },
+        { name: "setlist", label: "Setlist, if known", rows: 4 },
+        { name: "links", label: "Show links or references", rows: 3 }
+      ]
+    },
+    {
+      id: "concert-song",
+      section: "Concerts",
+      label: "Song in a concert setlist",
+      kind: "track",
+      recordType: "Concert setlist song",
+      parent: "concert",
+      prompt: "Required: parent concert and song title performed. Add position, collaborators, original performer/source, and clips when known.",
+      importPrompt: "Paste a setlist or clip source. Choose the parent concert if you know it.",
+      fields: [
+        { name: "title", label: "Song title performed", required: true },
+        { name: "position", label: "Setlist position" },
+        { name: "matchedSong", label: "Matched song, if known" },
+        { name: "collaborators", label: "Performed with" },
+        { name: "original", label: "Original performer or source" },
+        { name: "links", label: "Clip links or timecodes", rows: 3 }
+      ]
+    },
+    {
+      id: "concert-link",
+      section: "Concerts",
+      label: "Concert video or audio link",
+      kind: "media",
+      recordType: "Concert media link",
+      parent: "concert",
+      prompt: "Required: parent concert, URL, and platform. Add whether it is full show or clip, timestamp, credit, and official/unofficial status.",
+      importPrompt: "Paste the media link. Choose the parent concert if you know it.",
+      fields: [
+        { name: "url", label: "Link URL", required: true },
+        { name: "platform", label: "Platform", required: true },
+        { name: "kind", label: "Full show, audio, or clip" },
+        { name: "timestamp", label: "Part or timestamp" },
+        { name: "credit", label: "Uploader or credit" },
+        { name: "official", label: "Official or unofficial" }
+      ]
+    },
+    {
+      id: "appearance-new",
+      section: "Appearances",
+      label: "New appearance",
+      kind: "appearance",
+      recordType: "Appearance",
+      prompt: "Required: category, title or program/work, and date or approximate date. Add role, content summary, people, related songs, and links when known.",
+      importPrompt: "Paste a source link for the appearance. Add a note about the category or program/work if helpful.",
+      fields: [
+        { name: "category", label: "Appearance category", required: true },
+        { name: "title", label: "Title or program/work", required: true },
+        { name: "date", label: "Date or approximate date", required: true },
+        { name: "role", label: "Role" },
+        { name: "summary", label: "Content summary" },
+        { name: "people", label: "Hosts, performers, directors, or cast", rows: 3 },
+        { name: "songs", label: "Related songs, tracks, or performed songs", rows: 4 },
+        { name: "links", label: "Media or reference links", rows: 3 }
+      ]
+    },
+    {
+      id: "appearance-music-show",
+      section: "Appearances",
+      label: "New music show",
+      kind: "music-show",
+      recordType: "Music show",
+      prompt: "Required: title or program, and date or approximate date. Add platform, episode, performed songs, collaborators, and links when known.",
+      importPrompt: "Paste a source link for the music show. Add a note about the songs or platform if helpful.",
+      fields: [
+        { name: "title", label: "Title or program", required: true },
+        { name: "date", label: "Date or approximate date", required: true },
+        { name: "platform", label: "Platform or broadcaster" },
+        { name: "episode", label: "Episode" },
+        { name: "songs", label: "Performed songs", rows: 4 },
+        { name: "people", label: "Collaborators", rows: 3 },
+        { name: "links", label: "Watch links, clip links, or timecodes", rows: 3 }
+      ]
+    },
+    {
+      id: "appearance-song",
+      section: "Appearances",
+      label: "Song, track, or performance under an appearance",
+      kind: "track",
+      recordType: "Appearance song or track",
+      parent: "appearance",
+      prompt: "Required: parent appearance or music show, and song title. Add position, matched song, role, collaborators, and clip links when known.",
+      importPrompt: "Paste a source link for the song, track, or clip. Choose the parent appearance/music show if you know it.",
+      fields: [
+        { name: "title", label: "Song or track title", required: true },
+        { name: "position", label: "Position" },
+        { name: "matchedSong", label: "Matched song, if known" },
+        { name: "role", label: "Role or relationship" },
+        { name: "people", label: "Performers or collaborators" },
+        { name: "links", label: "Clip links or timecodes", rows: 3 }
+      ]
+    },
+    {
+      id: "appearance-link",
+      section: "Appearances",
+      label: "Appearance or music-show link",
+      kind: "media",
+      recordType: "Appearance media link",
+      parent: "appearance",
+      prompt: "Required: parent appearance/music show, URL, and platform. Add kind, timestamp, credit, and official/unofficial status when known.",
+      importPrompt: "Paste the media or reference link. Choose the parent appearance/music show if you know it.",
+      fields: [
+        { name: "url", label: "Link URL", required: true },
+        { name: "platform", label: "Platform", required: true },
+        { name: "kind", label: "Watch link, clip, streaming, metadata, or reference" },
+        { name: "timestamp", label: "Part or timestamp" },
+        { name: "credit", label: "Uploader or credit" },
+        { name: "official", label: "Official or unofficial" }
+      ]
+    }
+  ];
+
+  type CorrectionCatalogItem = {
+    id: string;
+    title: string;
+    path: string;
+    meta: string;
+    searchText: string;
+    category?: string;
+    recordType?: string;
+    fields: Record<string, Array<{ label: string; value: string }>>;
+  };
+
+  document.querySelectorAll("[data-guided-contribution-form]").forEach((form) => {
+    if (!(form instanceof HTMLFormElement)) return;
+    const mode = form.getAttribute("data-mode") || "addition";
+    const dataNode = document.getElementById(`contribution-form-types-${mode}`);
+    const contributionTypes = JSON.parse(dataNode?.textContent || "[]") as ContributionFormType[];
+    const releaseCatalogNode = document.getElementById("release-correction-catalog");
+    const concertCatalogNode = document.getElementById("concert-correction-catalog");
+    const appearanceCatalogNode = document.getElementById("appearance-correction-catalog");
+    const releaseCatalog = JSON.parse(releaseCatalogNode?.textContent || "[]") as CorrectionCatalogItem[];
+    const concertCatalog = JSON.parse(concertCatalogNode?.textContent || "[]") as CorrectionCatalogItem[];
+    const appearanceCatalog = JSON.parse(appearanceCatalogNode?.textContent || "[]") as CorrectionCatalogItem[];
+    if (!contributionTypes.length) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const helper = form.querySelector("[data-contribution-helper]");
+    const preview = form.querySelector("[data-contribution-preview]");
+    const recordTypeInput = form.querySelector("[data-contribution-record-type]");
+    const recordSearchInput = form.querySelector("[data-record-search]");
+    const recordResults = form.querySelector("[data-record-results]");
+    const fieldGroupSelect = form.querySelector("[data-field-group]");
+    const currentValueInput = form.querySelector("[data-current-value]");
+    const navigationSectionSelect = form.querySelector("[data-navigation-section]");
+    const appearanceCategorySelect = form.querySelector("[data-appearance-category]");
+    const appearanceCategoryWrap = form.querySelector("[data-appearance-category-wrap]");
+    const releaseFieldSelect = form.querySelector("[data-release-field]");
+    const correctionSentence = form.querySelector("[data-correction-sentence]");
+    const suggestedValueInput = form.querySelector("[data-suggested-value]");
+    const additionTargetSelect = form.querySelector("[data-addition-target]");
+    const additionParentWrap = form.querySelector("[data-addition-parent-wrap]");
+    const additionParentSearchInput = form.querySelector("[data-addition-parent-search]");
+    const additionParentResults = form.querySelector("[data-addition-parent-results]");
+    const additionManualFields = form.querySelector("[data-addition-manual-fields]");
+    const additionDetailsInput = form.querySelector("[data-addition-details]");
+    const issueBaseUrl = form.getAttribute("data-issue-url") || "";
+
+    const fieldValue = (name: string) => {
+      const checked = form.querySelector(`[name="${name}"]:checked`);
+      const field = checked || form.querySelector(`[name="${name}"]`);
+      return field instanceof HTMLInputElement || field instanceof HTMLSelectElement || field instanceof HTMLTextAreaElement
+        ? field.value.trim()
+        : "";
+    };
+
+    const setFieldValue = (name: string, value: string | null) => {
+      if (value === null) return;
+      const field = form.querySelector(`[name="${name}"]`);
+      if (field instanceof HTMLInputElement || field instanceof HTMLSelectElement || field instanceof HTMLTextAreaElement) {
+        field.value = value;
+      }
+    };
+
+    const selectedType = () => contributionTypes.find((item) => item.kind === fieldValue("kind")) || contributionTypes[0];
+    const activeSection = () => fieldValue("navigationSection");
+    const activeCatalog = () => {
+      if (activeSection() === "Concerts") return concertCatalog;
+      if (activeSection() === "Releases") return releaseCatalog;
+      if (activeSection() === "Appearances") {
+        const category = fieldValue("appearanceCategory");
+        return appearanceCatalog.filter((item) => !category || item.category === category);
+      }
+      return [];
+    };
+    const activeRecordType = () => {
+      const item = selectedCatalogItem();
+      if (item?.recordType) return item.recordType;
+      if (activeSection() === "Concerts") return "Concert";
+      if (activeSection() === "Releases") return "Release";
+      if (activeSection() === "Appearances") return fieldValue("appearanceCategory") === "Music shows" ? "Music show" : "Appearance";
+      return selectedType().defaultRecordType;
+    };
+    const selectedCatalogItem = () => activeCatalog().find((item) => item.id === fieldValue("catalogItemId"));
+    const selectedAdditionTarget = () => additionTargets.find((item) => item.id === fieldValue("additionTarget")) || additionTargets.find((item) => item.section === activeSection()) || additionTargets[0];
+    const additionMethod = () => fieldValue("additionMethod") || "import";
+    const activeLocale = () => document.documentElement.getAttribute("data-locale") || "en";
+    const localizedValue = (values: Record<string, string> | undefined, fallback: string) => values?.[activeLocale()] || values?.en || fallback;
+
+    const parentCatalog = (parent: AdditionTarget["parent"]) => {
+      if (parent === "release") return releaseCatalog;
+      if (parent === "concert") return concertCatalog;
+      if (parent === "appearance") return appearanceCatalog;
+      return [];
+    };
+
+    const additionManualData = () => {
+      const target = selectedAdditionTarget();
+      return target.fields
+        .map((manualField) => ({ label: manualField.label, value: fieldValue(`addition_${manualField.name}`) }))
+        .filter((item) => item.value);
+    };
+
+    const additionRecordTitle = () => {
+      const manualTitle = fieldValue("addition_title");
+      const parentTitle = fieldValue("additionParentTitle");
+      const target = selectedAdditionTarget();
+      if (manualTitle && parentTitle) return `${manualTitle} (${parentTitle})`;
+      return manualTitle || parentTitle || target.label;
+    };
+
+    const issueBody = (selected: ContributionFormType) => {
+      const fields = {
+        recordType: fieldValue("recordType") || selected.defaultRecordType,
+        recordTitle: fieldValue("recordTitle"),
+        recordPath: fieldValue("recordPath"),
+        catalogItemId: fieldValue("catalogItemId"),
+        navigationSection: fieldValue("navigationSection"),
+        appearanceCategory: fieldValue("appearanceCategory"),
+        fieldGroup: fieldValue("fieldGroup"),
+        releaseField: fieldValue("releaseField"),
+        currentValue: fieldValue("currentValue"),
+        suggestedValue: fieldValue("suggestedValue"),
+        additionTarget: fieldValue("additionTarget"),
+        additionParentTitle: fieldValue("additionParentTitle"),
+        additionMethod: fieldValue("additionMethod"),
+        details: fieldValue("details"),
+        sourceLinks: fieldValue("sourceLinks"),
+        sourceTitles: fieldValue("sourceTitles"),
+        sourceType: fieldValue("sourceType"),
+        accessDate: fieldValue("accessDate"),
+        creditName: fieldValue("creditName"),
+        contact: fieldValue("contact"),
+        creditPublic: fieldValue("creditPublic"),
+        notes: fieldValue("notes")
+      };
+
+      const summary = [
+        "## Submission Summary",
+        `Flow: ${mode}`,
+        `Contribution type: ${selected.label}`,
+        fields.navigationSection ? `Website section: ${fields.navigationSection}` : "",
+        fields.appearanceCategory && mode === "correction" ? `Appearance category: ${fields.appearanceCategory}` : "",
+        fields.additionTarget ? `Addition target: ${selectedAdditionTarget().label}` : "",
+        `Page or item type: ${fields.recordType}`,
+        fields.catalogItemId ? `Selected item id: ${fields.catalogItemId}` : "",
+        fields.additionParentTitle ? `Parent item: ${fields.additionParentTitle}` : "",
+        `Title or name: ${fields.recordTitle}`,
+        `Site page: ${fields.recordPath}`,
+        fields.fieldGroup ? `Part to change: ${fields.fieldGroup}` : "",
+        fields.releaseField ? `Exact field or item: ${fields.releaseField}` : "",
+        fields.currentValue ? `Current value: ${fields.currentValue}` : "",
+        fields.suggestedValue ? `Recommended value: ${fields.suggestedValue}` : "",
+        fields.additionMethod ? `Addition method: ${fields.additionMethod}` : "",
+        fields.details ? `Details: ${fields.details}` : "",
+        ...additionManualData().map((item) => `${item.label}: ${item.value}`),
+        `Contact: ${fields.contact}`,
+        ""
+      ].filter(Boolean);
+
+      if (mode === "addition") {
+        const target = selectedAdditionTarget();
+        return [
+          ...summary,
+          "## What is this about?",
+          `Target: ${target.label}`,
+          `Website section: ${fields.navigationSection}`,
+          `Addition method: ${fields.additionMethod || "import"}`,
+          `Parent item: ${fields.additionParentTitle}`,
+          `Parent page: ${fields.recordPath}`,
+          "",
+          "## Information",
+          ...additionManualData().map((item) => `${item.label}: ${item.value}`),
+          fields.details ? `Additional details: ${fields.details}` : "Additional details:",
+          "",
+          "## Sources",
+          `Source link(s): ${fields.sourceLinks}`,
+          "",
+          "## Credits",
+          `Contributor credit name: ${fields.creditName}`,
+          `Can we credit you publicly? ${fields.creditPublic || "yes/no"}`,
+          "",
+          "## Notes",
+          `Notes: ${fields.notes}`
+        ].filter((line) => line !== null).join("\n").trim();
+      }
+
+      const mappedTemplate = selected.template.split("\n").map((line: string) => {
+        if (line.startsWith("Target:")) return `Target: ${selected.title}`;
+        if (line.startsWith(`${selected.defaultRecordType}:`) || line.startsWith("Record:")) return `${fields.recordType}: ${fields.recordTitle}`;
+        if (line.startsWith("Page:")) return `Page: ${fields.recordPath}`;
+        if (line.startsWith("Field to correct:")) return `Field to correct: ${fields.fieldGroup}`;
+        if (line.startsWith("Current value:")) return `Current value: ${fields.currentValue}`;
+        if (line.startsWith("Suggested value:")) return `Suggested value: ${fields.suggestedValue}`;
+        if (line.startsWith("Why this should change:")) return `Why this should change: ${fields.details}`;
+        if (line.startsWith("Source link(s):")) return `Source link(s): ${fields.sourceLinks}`;
+        if (line.startsWith("Source link:")) return `Source link: ${fields.sourceLinks}`;
+        if (line.startsWith("Media page link:")) return `Media page link: ${fields.sourceLinks}`;
+        if (line.startsWith("Source or context link:")) return `Source or context link: ${fields.sourceLinks}`;
+        if (line.startsWith("Source title(s):")) return `Source title(s): ${fields.sourceTitles}`;
+        if (line.startsWith("Source title:")) return `Source title: ${fields.sourceTitles}`;
+        if (line.startsWith("Source type(s):")) return `Source type(s): ${fields.sourceType}`;
+        if (line.startsWith("Source type:")) return `Source type: ${fields.sourceType}`;
+        if (line.startsWith("Access date:")) return `Access date: ${fields.accessDate}`;
+        if (line.startsWith("Contributor credit name:")) return `Contributor credit name: ${fields.creditName}`;
+        if (line.startsWith("Can we credit you publicly?")) return `Can we credit you publicly? ${fields.creditPublic || "yes/no"}`;
+        if (line.startsWith("Notes:")) return `Notes: ${fields.notes}`;
+        return line;
+      });
+
+      return [...summary, ...mappedTemplate].join("\n").trim();
+    };
+
+    const issueHref = () => {
+      const selected = selectedType();
+      const recordTitle = mode === "addition" ? additionRecordTitle() : fieldValue("recordTitle");
+      const title = recordTitle ? `${selected.title}: ${recordTitle}` : selected.title;
+      const query = new URLSearchParams({ title, labels: selected.labels, body: issueBody(selected) });
+      return `${issueBaseUrl}?${query.toString()}`;
+    };
+
+    const validateSourceContact = () => {
+      const sourceLinks = fieldValue("sourceLinks");
+      const contact = fieldValue("contact");
+      const creditPublic = fieldValue("creditPublic");
+      if (mode === "addition" && additionMethod() === "import" && !sourceLinks) {
+        return { fieldName: "sourceLinks", message: "Importing from a source link needs a source link." };
+      }
+      if (creditPublic === "no" && !sourceLinks) {
+        return { fieldName: "sourceLinks", message: "Anonymous submissions need a source link." };
+      }
+      if (!sourceLinks && !contact) {
+        return { fieldName: "contact", message: "If you do not have a source link, please leave contact information." };
+      }
+      return null;
+    };
+
+    const validateAdditionManualFields = () => {
+      if (mode !== "addition") return null;
+      const target = selectedAdditionTarget();
+      if (target.parent && !fieldValue("catalogItemId")) {
+        return { fieldName: "additionParentTitle", message: "Please choose the parent item this belongs to." };
+      }
+      if (additionMethod() !== "manual") return null;
+      for (const manualField of target.fields) {
+        if (manualField.required && !fieldValue(`addition_${manualField.name}`)) {
+          return { fieldName: `addition_${manualField.name}`, message: `${manualField.label} is required for this addition.` };
+        }
+      }
+      return null;
+    };
+
+    const applyPrefill = () => {
+      const kind = params.get("kind");
+      const selected = contributionTypes.find((item) => item.kind === kind);
+      if (selected) setFieldValue("kind", selected.kind);
+      setFieldValue("recordType", params.get("recordType") || selected?.defaultRecordType || "");
+      setFieldValue("recordTitle", params.get("recordTitle"));
+      setFieldValue("recordPath", params.get("recordPath"));
+      const path = params.get("recordPath");
+      const match = path ? [...releaseCatalog, ...concertCatalog, ...appearanceCatalog].find((item) => item.path === path) : undefined;
+      if (match?.path.startsWith("/concerts/")) setFieldValue("navigationSection", "Concerts");
+      if (match?.path.startsWith("/releases/")) setFieldValue("navigationSection", "Releases");
+      if (match?.path.startsWith("/appearances/") || match?.path.startsWith("/music-shows/")) {
+        setFieldValue("navigationSection", "Appearances");
+        if (match.category) setFieldValue("appearanceCategory", match.category);
+      }
+      if (match) applyCatalogItem(match);
+    };
+
+    const updateAppearanceCategoryVisibility = () => {
+      if (appearanceCategoryWrap instanceof HTMLElement) appearanceCategoryWrap.hidden = activeSection() !== "Appearances";
+    };
+
+    const setAdditionTargetOptions = () => {
+      if (!(additionTargetSelect instanceof HTMLSelectElement)) return;
+      const section = activeSection() || "Releases";
+      const targets = additionTargets.filter((item) => item.section === section);
+      const previousValue = additionTargetSelect.value;
+      additionTargetSelect.innerHTML = "";
+      targets.forEach((target) => {
+        const option = document.createElement("option");
+        option.value = target.id;
+        option.textContent = target.label;
+        additionTargetSelect.append(option);
+      });
+      if (targets.some((target) => target.id === previousValue)) {
+        additionTargetSelect.value = previousValue;
+      }
+    };
+
+    const applyAdditionTarget = () => {
+      if (mode !== "addition") return;
+      const target = selectedAdditionTarget();
+      setFieldValue("kind", target.kind);
+      setFieldValue("recordType", target.recordType);
+      if (!target.parent) {
+        setFieldValue("catalogItemId", "");
+        setFieldValue("recordPath", "");
+        setFieldValue("additionParentTitle", "");
+        if (additionParentResults instanceof HTMLElement) additionParentResults.hidden = true;
+      }
+      if (additionParentWrap instanceof HTMLElement) additionParentWrap.hidden = !target.parent;
+      if (additionDetailsInput instanceof HTMLTextAreaElement) {
+        additionDetailsInput.placeholder = additionMethod() === "import" ? target.importPrompt : target.prompt;
+        additionDetailsInput.required = false;
+      }
+      setFieldValue("recordTitle", additionRecordTitle());
+    };
+
+    const renderAdditionManualFields = () => {
+      if (!(additionManualFields instanceof HTMLElement)) return;
+      const target = selectedAdditionTarget();
+      const isManual = additionMethod() === "manual";
+      const renderKey = `${target.id}:${additionMethod()}`;
+      if (additionManualFields.getAttribute("data-render-key") === renderKey) return;
+      additionManualFields.setAttribute("data-render-key", renderKey);
+      additionManualFields.hidden = !isManual;
+      additionManualFields.innerHTML = "";
+      if (!isManual) return;
+      target.fields.forEach((manualField) => {
+        const label = document.createElement("label");
+        const span = document.createElement("span");
+        span.textContent = manualField.required ? `${manualField.label} *` : manualField.label;
+        label.append(span);
+        const input = manualField.rows && manualField.rows > 1 ? document.createElement("textarea") : document.createElement("input");
+        input.name = `addition_${manualField.name}`;
+        if (input instanceof HTMLTextAreaElement) input.rows = manualField.rows || 3;
+        input.required = Boolean(manualField.required);
+        label.append(input);
+        additionManualFields.append(label);
+      });
+    };
+
+    const applyAdditionParent = (item: CorrectionCatalogItem) => {
+      setFieldValue("catalogItemId", item.id);
+      setFieldValue("additionParentTitle", item.title);
+      setFieldValue("recordPath", item.path);
+      if (additionParentResults instanceof HTMLElement) additionParentResults.hidden = true;
+      applyAdditionTarget();
+      update();
+    };
+
+    const renderAdditionParentResults = () => {
+      if (!(additionParentSearchInput instanceof HTMLInputElement) || !(additionParentResults instanceof HTMLElement)) return;
+      const target = selectedAdditionTarget();
+      const catalog = parentCatalog(target.parent);
+      const query = additionParentSearchInput.value.trim().normalize("NFKC").toLocaleLowerCase("en-US");
+      const hasCjk = /[\u3400-\u9fff\uf900-\ufaff]/.test(query);
+      const minimumLength = hasCjk ? 1 : 2;
+      if (mode !== "addition" || !target.parent || !catalog.length || query.length < minimumLength) {
+        additionParentResults.hidden = true;
+        return;
+      }
+      const matches = catalog.filter((item) => item.searchText.includes(query)).slice(0, 8);
+      additionParentResults.innerHTML = "";
+      if (!matches.length) {
+        const empty = document.createElement("span");
+        empty.textContent = "No matches found. You can still describe the parent item in the details box.";
+        additionParentResults.append(empty);
+      } else {
+        matches.forEach((item) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.textContent = `${item.title} - ${item.meta}`;
+          button.addEventListener("click", () => applyAdditionParent(item));
+          additionParentResults.append(button);
+        });
+      }
+      additionParentResults.hidden = false;
+    };
+
+    const updateAdditionUi = () => {
+      if (mode !== "addition") return;
+      setAdditionTargetOptions();
+      applyAdditionTarget();
+      renderAdditionManualFields();
+    };
+
+    const setFieldGroupOptions = () => {
+      if (!(fieldGroupSelect instanceof HTMLSelectElement)) return;
+      const previousValue = fieldGroupSelect.value;
+      const releaseAreas = JSON.parse(fieldGroupSelect.getAttribute("data-release-areas") || "[]") as string[];
+      const concertAreas = JSON.parse(fieldGroupSelect.getAttribute("data-concert-areas") || "[]") as string[];
+      const appearanceAreas = JSON.parse(fieldGroupSelect.getAttribute("data-appearance-areas") || "[]") as string[];
+      const baseAreas = activeSection() === "Concerts" ? concertAreas : activeSection() === "Releases" ? releaseAreas : activeSection() === "Appearances" ? appearanceAreas : [];
+      const item = selectedCatalogItem();
+      const areas = item ? baseAreas.filter((area) => item.fields[area]?.length) : baseAreas;
+      fieldGroupSelect.innerHTML = "";
+      if (!areas.length) {
+        const option = document.createElement("option");
+        option.value = "";
+        option.textContent = "Choose a website section first";
+        fieldGroupSelect.append(option);
+        return;
+      }
+      areas.forEach((area) => {
+        const option = document.createElement("option");
+        option.value = area;
+        option.textContent = area;
+        fieldGroupSelect.append(option);
+      });
+      if (areas.includes(previousValue)) fieldGroupSelect.value = previousValue;
+    };
+
+    const setCorrectionFieldOptions = () => {
+      if (!(releaseFieldSelect instanceof HTMLSelectElement)) return;
+      const item = selectedCatalogItem();
+      const area = fieldValue("fieldGroup");
+      const fields = item?.fields[area] || [];
+      const previousValue = releaseFieldSelect.value;
+      releaseFieldSelect.innerHTML = "";
+      if (!fields.length) {
+        const option = document.createElement("option");
+        option.value = "";
+        option.textContent = item ? "Choose a page area first" : "Choose an item first";
+        releaseFieldSelect.append(option);
+        return;
+      }
+      fields.forEach((field) => {
+        const option = document.createElement("option");
+        option.value = field.label;
+        option.textContent = field.label;
+        releaseFieldSelect.append(option);
+      });
+      if (fields.some((field) => field.label === previousValue)) {
+        releaseFieldSelect.value = previousValue;
+      }
+    };
+
+    const selectedCorrectionField = () => {
+      const item = selectedCatalogItem();
+      const area = fieldValue("fieldGroup");
+      return item?.fields[area]?.find((field) => field.label === fieldValue("releaseField"));
+    };
+
+    const correctionText = () => {
+      const item = selectedCatalogItem();
+      const field = selectedCorrectionField();
+      if (!item || !field) return "";
+      const area = fieldValue("fieldGroup");
+      const recommendedValue = fieldValue("suggestedValue") || "[recommended value]";
+      if (area === "Format") return `Recommend changing whether ${item.title} has ${field.label} from ${field.value} to ${recommendedValue}.`;
+      if (area === "Streaming") return `Recommend changing ${field.label} for ${item.title} from ${field.value} to ${recommendedValue}.`;
+      if (area === "Show links") return `Recommend changing ${field.label} for ${item.title} from ${field.value} to ${recommendedValue}.`;
+      if (area === "Tracklist sequence") return `Recommend changing the track order on ${item.title}: ${field.label} is currently listed as ${field.value}, and should be ${recommendedValue}.`;
+      if (area === "Tracklist song") return `Recommend changing ${field.label} from ${field.value} to ${recommendedValue}.`;
+      if (area === "Setlist sequence") return `Recommend changing the song order on ${item.title}: ${field.label} is currently listed as ${field.value}, and should be ${recommendedValue}.`;
+      if (area === "Setlist song") return `Recommend changing ${field.label} from ${field.value} to ${recommendedValue}.`;
+      if (area === "Clip links") return `Recommend changing ${field.label} from ${field.value} to ${recommendedValue}.`;
+      if (area === "Links") return `Recommend changing ${field.label} for ${item.title} from ${field.value} to ${recommendedValue}.`;
+      if (area === "Related songs") return `Recommend changing the related song entry for ${item.title}: ${field.label} should be ${recommendedValue}.`;
+      if (area === "Track sequence") return `Recommend changing the track order on ${item.title}: ${field.label} is currently listed as ${field.value}, and should be ${recommendedValue}.`;
+      if (area === "Track details") return `Recommend changing ${field.label} from ${field.value} to ${recommendedValue}.`;
+      if (area === "Performance sequence") return `Recommend changing the performance order on ${item.title}: ${field.label} is currently listed as ${field.value}, and should be ${recommendedValue}.`;
+      if (area === "Performance song") return `Recommend changing ${field.label} from ${field.value} to ${recommendedValue}.`;
+      if (area === "Live records") return field.value;
+      return `Recommend changing ${field.label} of ${item.title} from ${field.value} to ${recommendedValue}.`;
+    };
+
+    const updateCurrentValue = () => {
+      if (!(currentValueInput instanceof HTMLTextAreaElement)) return;
+      const field = selectedCorrectionField();
+      currentValueInput.value = field?.value || "";
+      if (correctionSentence instanceof HTMLElement) correctionSentence.textContent = correctionText();
+    };
+
+    const applyCatalogItem = (item: CorrectionCatalogItem) => {
+      setFieldValue("catalogItemId", item.id);
+      setFieldValue("recordType", activeRecordType());
+      setFieldValue("recordTitle", item.title);
+      setFieldValue("recordPath", item.path);
+      setFieldGroupOptions();
+      setCorrectionFieldOptions();
+      updateCurrentValue();
+      if (recordResults instanceof HTMLElement) recordResults.hidden = true;
+      update();
+    };
+
+    const renderSearchResults = () => {
+      if (!(recordSearchInput instanceof HTMLInputElement) || !(recordResults instanceof HTMLElement)) return;
+      const query = recordSearchInput.value.trim().normalize("NFKC").toLocaleLowerCase("en-US");
+      const hasCjk = /[\u3400-\u9fff\uf900-\ufaff]/.test(query);
+      const minimumLength = hasCjk ? 1 : 2;
+      const catalog = activeCatalog();
+      if (mode !== "correction" || !catalog.length || query.length < minimumLength) {
+        recordResults.hidden = true;
+        return;
+      }
+      const matches = catalog
+        .filter((item) => item.searchText.includes(query))
+        .slice(0, 8);
+      recordResults.innerHTML = "";
+      if (!matches.length) {
+        const empty = document.createElement("span");
+        empty.textContent = "No matches found. You can keep typing or use the free-form page.";
+        recordResults.append(empty);
+      } else {
+        matches.forEach((item) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.textContent = `${item.title} - ${item.meta}`;
+          button.addEventListener("click", () => applyCatalogItem(item));
+          recordResults.append(button);
+        });
+      }
+      recordResults.hidden = false;
+    };
+
+    const update = () => {
+      const selected = selectedType();
+      if (recordTypeInput instanceof HTMLInputElement) {
+        const previousDefault = recordTypeInput.getAttribute("data-default-record-type");
+        if (!recordTypeInput.value || recordTypeInput.value === previousDefault) recordTypeInput.value = selected.defaultRecordType;
+        recordTypeInput.setAttribute("data-default-record-type", selected.defaultRecordType);
+      }
+      if (helper) helper.textContent = localizedValue(selected.helperValues, selected.helper);
+      if (additionDetailsInput instanceof HTMLTextAreaElement && additionPrompts[selected.kind]) {
+        additionDetailsInput.placeholder = additionPrompts[selected.kind];
+      }
+      if (mode === "correction") {
+        updateAppearanceCategoryVisibility();
+        setFieldGroupOptions();
+        setCorrectionFieldOptions();
+        updateCurrentValue();
+      }
+      if (mode === "addition") {
+        updateAdditionUi();
+      }
+      if (preview instanceof HTMLAnchorElement) preview.href = issueHref();
+    };
+
+    form.addEventListener("input", update);
+    form.addEventListener("change", update);
+    if (recordSearchInput instanceof HTMLInputElement) recordSearchInput.addEventListener("input", renderSearchResults);
+    if (additionParentSearchInput instanceof HTMLInputElement) additionParentSearchInput.addEventListener("input", () => {
+      setFieldValue("catalogItemId", "");
+      setFieldValue("recordPath", "");
+      renderAdditionParentResults();
+      update();
+    });
+    if (fieldGroupSelect instanceof HTMLSelectElement) fieldGroupSelect.addEventListener("change", () => { setCorrectionFieldOptions(); updateCurrentValue(); });
+    if (releaseFieldSelect instanceof HTMLSelectElement) releaseFieldSelect.addEventListener("change", updateCurrentValue);
+    if (suggestedValueInput instanceof HTMLTextAreaElement) suggestedValueInput.addEventListener("input", updateCurrentValue);
+    if (navigationSectionSelect instanceof HTMLSelectElement) navigationSectionSelect.addEventListener("change", () => {
+      if (recordResults instanceof HTMLElement) recordResults.hidden = true;
+      setFieldValue("catalogItemId", "");
+      setFieldValue("recordTitle", "");
+      setFieldValue("recordPath", "");
+      setFieldValue("recordType", activeRecordType());
+      updateAppearanceCategoryVisibility();
+      setFieldGroupOptions();
+      setCorrectionFieldOptions();
+      updateCurrentValue();
+      if (!activeCatalog().length && correctionSentence instanceof HTMLElement) {
+        correctionSentence.textContent = "This section is not fully guided yet. Please describe the correction in your own words below.";
+      }
+      if (mode === "addition") {
+        setFieldValue("catalogItemId", "");
+        setFieldValue("recordPath", "");
+        setFieldValue("additionParentTitle", "");
+        setAdditionTargetOptions();
+        if (additionManualFields instanceof HTMLElement) additionManualFields.removeAttribute("data-render-key");
+        updateAdditionUi();
+      }
+    });
+    if (additionTargetSelect instanceof HTMLSelectElement) additionTargetSelect.addEventListener("change", () => {
+      setFieldValue("catalogItemId", "");
+      setFieldValue("recordPath", "");
+      setFieldValue("additionParentTitle", "");
+      if (additionManualFields instanceof HTMLElement) additionManualFields.removeAttribute("data-render-key");
+      updateAdditionUi();
+    });
+    form.querySelectorAll('[name="additionMethod"]').forEach((field) => {
+      field.addEventListener("change", () => {
+        if (additionManualFields instanceof HTMLElement) additionManualFields.removeAttribute("data-render-key");
+        updateAdditionUi();
+      });
+    });
+    if (appearanceCategorySelect instanceof HTMLSelectElement) appearanceCategorySelect.addEventListener("change", () => {
+      if (recordResults instanceof HTMLElement) recordResults.hidden = true;
+      setFieldValue("catalogItemId", "");
+      setFieldValue("recordTitle", "");
+      setFieldValue("recordPath", "");
+      setFieldValue("recordType", activeRecordType());
+      setFieldGroupOptions();
+      setCorrectionFieldOptions();
+      updateCurrentValue();
+    });
+    window.addEventListener("archive-locale-change", update);
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const validation = validateAdditionManualFields() || validateSourceContact();
+      if (validation) {
+        form.querySelectorAll("input, textarea, select").forEach((field) => {
+          if (field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement || field instanceof HTMLSelectElement) {
+            field.setCustomValidity("");
+          }
+        });
+        const targetField = form.querySelector(`[name="${validation.fieldName}"]`);
+        if (targetField instanceof HTMLInputElement || targetField instanceof HTMLTextAreaElement || targetField instanceof HTMLSelectElement) {
+          targetField.setCustomValidity(validation.message);
+          targetField.reportValidity();
+          targetField.setCustomValidity("");
+        }
+        return;
+      }
+      if (!form.reportValidity()) return;
+      window.location.href = issueHref();
+    });
+
+    applyPrefill();
+    update();
+  });
+</script>

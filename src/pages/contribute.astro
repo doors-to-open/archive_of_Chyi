@@ -1,473 +1,64 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import {
-  contributionIssueBody,
-  contributionLabels,
-  contributionPageUrl,
-  contributionTitles,
-  contributionTypeOptions,
-  repositoryIssueUrl
-} from "../lib/contribution";
+import { i18nAttrs, textValues, uiText, valueForLocale } from "../lib/i18n";
 
-const contributionGroups = [
+const pageTitle = uiText("label.contribute");
+const pageIntro = textValues(
+  "Choose the simplest path. Each option asks for sources, credit preference, and notes before opening a review ticket.",
+  "選擇最簡單的提交方式。每個選項都會在建立審核項目前詢問來源、署名偏好與備註。",
+  "选择最简单的提交方式。每个选项都会在建立审核项目前询问来源、署名偏好与备注。"
+);
+
+const entrances = [
   {
-    title: "Existing Records",
-    text: "Use these when a page already exists and the change belongs to that record.",
-    actions: [
-      {
-        label: "Suggest correction",
-        href: contributionPageUrl({ kind: "correction", recordType: "Archive record" })
-      },
-      {
-        label: "Add source",
-        href: contributionPageUrl({ kind: "source", recordType: "Archive record" })
-      },
-      {
-        label: "Add media link",
-        href: contributionPageUrl({ kind: "media", recordType: "Archive record" })
-      }
-    ]
+    title: textValues("Correct something", "修正現有資料", "修正现有资料"),
+    text: textValues(
+      "Use this when an existing page has a wrong title, date, place, credit, song order, link, or other value.",
+      "如果現有頁面的標題、日期、地點、工作人員、曲序、連結或其他資料有誤，請使用這項。",
+      "如果现有页面的标题、日期、地点、工作人员、曲序、链接或其他资料有误，请使用这项。"
+    ),
+    href: "/contribute/correction/"
   },
   {
-    title: "Releases And Tracks",
-    text: "Propose release-level records or track-level additions with printed or platform sources.",
-    actions: [
-      {
-        label: "New album/release",
-        href: contributionPageUrl({ kind: "album", recordType: "Release" })
-      },
-      {
-        label: "Track addition",
-        href: contributionPageUrl({ kind: "track", recordType: "Track" })
-      }
-    ]
+    title: textValues("Add missing information", "新增缺少資料", "新增缺少资料"),
+    text: textValues(
+      "Use this for a missing album, song detail, concert, TV or online performance, appearance, person, source, or video/audio link.",
+      "用於新增缺少的專輯、歌曲資料、演唱會、電視或網路演出、其他出現、人物、來源或影片/音訊連結。",
+      "用于新增缺少的专辑、歌曲资料、演唱会、电视或网络演出、其他出现、人物、来源或影片/音频链接。"
+    ),
+    href: "/contribute/addition/"
   },
   {
-    title: "Performances And Appearances",
-    text: "Add dated concert, broadcast, interview, soundtrack, or other appearance records.",
-    actions: [
-      {
-        label: "New concert",
-        href: contributionPageUrl({ kind: "concert", recordType: "Concert" })
-      },
-      {
-        label: "New music show",
-        href: contributionPageUrl({ kind: "music-show", recordType: "Music show" })
-      },
-      {
-        label: "New appearance",
-        href: contributionPageUrl({ kind: "appearance", recordType: "Appearance" })
-      }
-    ]
-  },
-  {
-    title: "People, Sources, And Media",
-    text: "Add supporting people, credit relationships, citations, or external media links.",
-    actions: [
-      {
-        label: "New person/credit",
-        href: contributionPageUrl({ kind: "person", recordType: "Person" })
-      },
-      {
-        label: "New source",
-        href: contributionPageUrl({ kind: "source", recordType: "Source" })
-      },
-      {
-        label: "New media link",
-        href: contributionPageUrl({ kind: "media", recordType: "Media link" })
-      }
-    ]
+    title: textValues("Describe it in your own words", "用你的話描述", "用你的话描述"),
+    text: textValues(
+      "Use this when you cannot find a matching option. The maintainer will help place the information.",
+      "如果找不到合適選項，請使用這項。維護者會協助判斷資料應放在哪裡。",
+      "如果找不到合适选项，请使用这项。维护者会协助判断资料应放在哪里。"
+    ),
+    href: "/contribute/freeform/"
   }
 ];
 
-const recordTypeOptions = [
-  "Archive record",
-  "Release",
-  "Track",
-  "Concert",
-  "Music show",
-  "Appearance",
-  "Person",
-  "Source",
-  "Media link"
-];
-
-const sourceTypeOptions = [
-  "official",
-  "platform",
-  "news",
-  "book",
-  "database",
-  "archive",
-  "album-booklet",
-  "encyclopedia",
-  "other"
-];
-
-const contributionFormTypes = contributionTypeOptions.map((option) => ({
-  kind: option.kind,
-  label: option.label,
-  defaultRecordType: option.defaultRecordType,
-  helper: option.helper,
-  title: contributionTitles[option.kind],
-  labels: contributionLabels[option.kind],
-  template: contributionIssueBody({
-    kind: option.kind,
-    recordType: option.defaultRecordType
-  })
-}));
-
-const initialFormType = contributionFormTypes[0];
 ---
 
 <BaseLayout title="Contribute | All for Chyi Yu">
   <section class="page-shell">
-    <p class="page-kicker">Contribute</p>
-    <h1 class="page-title">Contribute</h1>
-    <p class="page-intro">
-      Prepare a sourced contribution for corrections, additions, and external links.
-    </p>
-
-    <section class="section detail-panel contribution-form-panel">
-      <h2>New Submission</h2>
-      <form
-        class="contribution-form"
-        data-contribution-form
-        data-issue-url={repositoryIssueUrl}
-      >
-        <div class="form-grid">
-          <label>
-            <span>Contribution type</span>
-            <select name="kind" data-contribution-kind>
-              {contributionTypeOptions.map((option) => (
-                <option value={option.kind}>{option.label}</option>
-              ))}
-            </select>
-          </label>
-          <label>
-            <span>Target record type</span>
-            <input
-              name="recordType"
-              list="record-type-options"
-              data-contribution-record-type
-              value={initialFormType.defaultRecordType}
-            />
-          </label>
-        </div>
-
-        <datalist id="record-type-options">
-          {recordTypeOptions.map((recordType) => <option value={recordType} />)}
-        </datalist>
-
-        <div class="form-grid">
-          <label>
-            <span>Target title</span>
-            <input
-              name="recordTitle"
-              placeholder="Album, concert, person, source, or page title"
-            />
-          </label>
-          <label>
-            <span>Target page</span>
-            <input name="recordPath" placeholder="/releases/olive-tree/" />
-          </label>
-        </div>
-
-        <label>
-          <span>Summary</span>
-          <textarea
-            name="summary"
-            required
-            rows="4"
-            placeholder="What should be added, corrected, or linked?"
-          ></textarea>
-        </label>
-
-        <label>
-          <span>Source or media link(s)</span>
-          <textarea
-            name="sourceLinks"
-            required
-            rows="3"
-            placeholder="One link per line when possible"
-          ></textarea>
-        </label>
-
-        <div class="form-grid">
-          <label>
-            <span>Source title(s)</span>
-            <input name="sourceTitles" placeholder="Page, platform, book, article, or release title" />
-          </label>
-          <label>
-            <span>Source type</span>
-            <select name="sourceType">
-              <option value="">Choose if known</option>
-              {sourceTypeOptions.map((sourceType) => (
-                <option value={sourceType}>{sourceType}</option>
-              ))}
-            </select>
-          </label>
-        </div>
-
-        <div class="form-grid">
-          <label>
-            <span>Access date</span>
-            <input name="accessDate" type="date" />
-          </label>
-          <label>
-            <span>Contributor credit name</span>
-            <input name="creditName" placeholder="Name or handle" />
-          </label>
-        </div>
-
-        <fieldset class="credit-choice">
-          <legend>Public credit</legend>
-          <label>
-            <input type="radio" name="creditPublic" value="yes" checked />
-            <span>Yes</span>
-          </label>
-          <label>
-            <input type="radio" name="creditPublic" value="no" />
-            <span>No</span>
-          </label>
-        </fieldset>
-
-        <label>
-          <span>Notes</span>
-          <textarea
-            name="notes"
-            rows="3"
-            placeholder="Uncertainty, alternate titles, timecodes, or review notes"
-          ></textarea>
-        </label>
-
-        <p class="contribution-helper" data-contribution-helper>
-          {initialFormType.helper}
-        </p>
-
-        <div class="form-actions">
-          <button type="submit">Submit for review</button>
-          <a
-            data-contribution-preview
-            href={`${repositoryIssueUrl}?${new URLSearchParams({
-              title: initialFormType.title,
-              labels: initialFormType.labels,
-              body: initialFormType.template
-            }).toString()}`}
-          >
-            Preview review draft
-          </a>
-        </div>
-        <p class="submission-note">
-          Submissions are reviewed through the project tracker after this step.
-        </p>
-      </form>
-    </section>
+    <p class="page-kicker" {...i18nAttrs(pageTitle)}>{valueForLocale(pageTitle)}</p>
+    <h1 class="page-title" {...i18nAttrs(pageTitle)}>{valueForLocale(pageTitle)}</h1>
+    <p class="page-intro" {...i18nAttrs(pageIntro)}>{valueForLocale(pageIntro)}</p>
 
     <div class="section contribution-groups">
-      {contributionGroups.map((group) => (
+      {entrances.map((item) => (
         <section class="contribution-group">
           <div>
-            <h2>{group.title}</h2>
-            <p>{group.text}</p>
+            <h2 {...i18nAttrs(item.title)}>{valueForLocale(item.title)}</h2>
+            <p {...i18nAttrs(item.text)}>{valueForLocale(item.text)}</p>
           </div>
           <div class="contribution-actions">
-            {group.actions.map((action) => (
-              <a href={action.href}>{action.label}</a>
-            ))}
+            <a href={item.href} {...i18nAttrs(item.title)}>{valueForLocale(item.title)}</a>
           </div>
         </section>
       ))}
     </div>
-
-    <section class="section detail-panel">
-      <h2>Review Workflow</h2>
-      <ol class="review-flow">
-        <li>
-          <strong>Submitted</strong>
-          <span>A review ticket is created with contribution type, target record, and source fields.</span>
-        </li>
-        <li>
-          <strong>Reviewed</strong>
-          <span>The maintainer checks sources, duplicates, copyright risk, and record fit.</span>
-        </li>
-        <li>
-          <strong>Accepted or rejected</strong>
-          <span>Accepted issues are assigned to a data edit; rejected issues keep the reason in the thread.</span>
-        </li>
-        <li>
-          <strong>Added to data</strong>
-          <span>Reviewed changes enter `data/*.json` through a normal Git commit or pull request.</span>
-        </li>
-      </ol>
-    </section>
-
-    <section class="section detail-panel">
-      <h2>Review Rules</h2>
-      <div class="record-meta-table">
-        <span>Factual claims need source links.</span>
-        <span>Anonymous factual claims stay unconfirmed until independently sourced.</span>
-        <span>Submissions should focus on verifiable archive information.</span>
-        <span>Accepted changes are added through reviewed edits to the data files.</span>
-      </div>
-    </section>
   </section>
-  <script
-    is:inline
-    type="application/json"
-    id="contribution-form-types"
-    set:html={JSON.stringify(contributionFormTypes)}
-  />
-  <script>
-    type ContributionFormType = {
-      kind: string;
-      label: string;
-      defaultRecordType: string;
-      helper: string;
-      title: string;
-      labels: string;
-      template: string;
-    };
-
-    const contributionDataNode = document.getElementById("contribution-form-types");
-    const contributionTypes = JSON.parse(contributionDataNode?.textContent || "[]") as ContributionFormType[];
-    const sourceTypeFallback = "official / platform / news / book / database / archive / other";
-
-    document.querySelectorAll("[data-contribution-form]").forEach((form) => {
-      if (!(form instanceof HTMLFormElement) || !contributionTypes.length) return;
-
-      const recordTypeInput = form.querySelector("[data-contribution-record-type]");
-      const helper = form.querySelector("[data-contribution-helper]");
-      const preview = form.querySelector("[data-contribution-preview]");
-      const issueBaseUrl = form.getAttribute("data-issue-url") || "";
-      const params = new URLSearchParams(window.location.search);
-
-      const fieldValue = (name: string) => {
-        const checked = form.querySelector(`[name="${name}"]:checked`);
-        const field = checked || form.querySelector(`[name="${name}"]`);
-        return field instanceof HTMLInputElement ||
-          field instanceof HTMLSelectElement ||
-          field instanceof HTMLTextAreaElement
-          ? field.value.trim()
-          : "";
-      };
-
-      const setFieldValue = (name: string, value: string | null) => {
-        if (!value) return;
-        const field = form.querySelector(`[name="${name}"]`);
-        if (
-          field instanceof HTMLInputElement ||
-          field instanceof HTMLSelectElement ||
-          field instanceof HTMLTextAreaElement
-        ) {
-          field.value = value;
-        }
-      };
-
-      const selectedType = () =>
-        contributionTypes.find((item) => item.kind === fieldValue("kind")) ||
-        contributionTypes[0];
-
-      const issueBody = (selected: ContributionFormType) => {
-        const fields = {
-          recordType: fieldValue("recordType") || selected.defaultRecordType,
-          recordTitle: fieldValue("recordTitle"),
-          recordPath: fieldValue("recordPath"),
-          summary: fieldValue("summary"),
-          sourceLinks: fieldValue("sourceLinks"),
-          sourceTitles: fieldValue("sourceTitles"),
-          sourceType: fieldValue("sourceType"),
-          accessDate: fieldValue("accessDate"),
-          creditName: fieldValue("creditName"),
-          creditPublic: fieldValue("creditPublic"),
-          notes: fieldValue("notes")
-        };
-
-        const summaryLines = [
-          "## Submission Summary",
-          `Contribution type: ${selected.label}`,
-          `Target title: ${fields.recordTitle}`,
-          `Target page: ${fields.recordPath}`,
-          `Summary: ${fields.summary}`,
-          ""
-        ];
-
-        const mappedTemplate = selected.template.split("\n").map((line: string) => {
-          if (line.startsWith("Target:")) return `Target: ${selected.title}`;
-          if (line.startsWith(`${selected.defaultRecordType}:`)) {
-            return `${fields.recordType}: ${fields.recordTitle}`;
-          }
-          if (line.startsWith("Page:")) return `Page: ${fields.recordPath}`;
-          if (line.startsWith("Source link(s):")) return `Source link(s): ${fields.sourceLinks}`;
-          if (line.startsWith("Source link:")) return `Source link: ${fields.sourceLinks}`;
-          if (line.startsWith("Media page link:")) return `Media page link: ${fields.sourceLinks}`;
-          if (line.startsWith("Source or context link:")) return `Source or context link: ${fields.sourceLinks}`;
-          if (line.startsWith("Source title(s):")) return `Source title(s): ${fields.sourceTitles}`;
-          if (line.startsWith("Source title:")) return `Source title: ${fields.sourceTitles}`;
-          if (line.startsWith("Source type(s):")) {
-            return `Source type(s): ${fields.sourceType || sourceTypeFallback}`;
-          }
-          if (line.startsWith("Source type:")) {
-            return `Source type: ${fields.sourceType || sourceTypeFallback}`;
-          }
-          if (line.startsWith("Access date:")) return `Access date: ${fields.accessDate}`;
-          if (line.startsWith("Contributor credit name:")) {
-            return `Contributor credit name: ${fields.creditName}`;
-          }
-          if (line.startsWith("Can we credit you publicly?")) {
-            return `Can we credit you publicly? ${fields.creditPublic || "yes/no"}`;
-          }
-          if (line.startsWith("Notes:")) return `Notes: ${fields.notes}`;
-          return line;
-        });
-
-        return [...summaryLines, ...mappedTemplate].join("\n").trim();
-      };
-
-      const issueHref = () => {
-        const selected = selectedType();
-        const recordTitle = fieldValue("recordTitle");
-        const title = recordTitle ? `${selected.title}: ${recordTitle}` : selected.title;
-        const query = new URLSearchParams({
-          title,
-          labels: selected.labels,
-          body: issueBody(selected)
-        });
-        return `${issueBaseUrl}?${query.toString()}`;
-      };
-
-      const applyPrefill = () => {
-        const kind = params.get("kind");
-        const selected = contributionTypes.find((item) => item.kind === kind);
-        if (selected) setFieldValue("kind", selected.kind);
-        setFieldValue("recordType", params.get("recordType") || selected?.defaultRecordType || "");
-        setFieldValue("recordTitle", params.get("recordTitle"));
-        setFieldValue("recordPath", params.get("recordPath"));
-      };
-
-      const update = () => {
-        const selected = selectedType();
-        if (recordTypeInput instanceof HTMLInputElement) {
-          const previousDefault = recordTypeInput.getAttribute("data-default-record-type");
-          if (!recordTypeInput.value || recordTypeInput.value === previousDefault) {
-            recordTypeInput.value = selected.defaultRecordType;
-          }
-          recordTypeInput.setAttribute("data-default-record-type", selected.defaultRecordType);
-        }
-        if (helper) helper.textContent = selected.helper;
-        if (preview instanceof HTMLAnchorElement) preview.href = issueHref();
-      };
-
-      form.addEventListener("input", update);
-      form.addEventListener("change", update);
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        if (!form.reportValidity()) return;
-        window.location.href = issueHref();
-      });
-
-      applyPrefill();
-      update();
-    });
-  </script>
 </BaseLayout>

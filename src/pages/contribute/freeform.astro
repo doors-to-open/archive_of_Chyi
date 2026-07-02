@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionIssueForm from "../../components/ContributionIssueForm.astro";
+import { i18nAttrs, textValues, valueForLocale } from "../../lib/i18n";
+
+const title = textValues("Describe it in your own words", "用你的話描述", "用你的话描述");
+const intro = textValues(
+  "Use this when no option fits. Tell us what you found, where it may belong, and how we can check it.",
+  "如果沒有合適選項，請使用這裡。告訴我們你找到什麼、可能屬於哪裡，以及如何查證。",
+  "如果没有合适选项，请使用这里。告诉我们你找到什么、可能属于哪里，以及如何查证。"
+);
+---
+
+<BaseLayout title="Free-form contribution | All for Chyi Yu">
+  <section class="page-shell">
+    <p class="page-kicker"><a href="/contribute/">Contribute</a></p>
+    <h1 class="page-title" {...i18nAttrs(title)}>{valueForLocale(title)}</h1>
+    <p class="page-intro" {...i18nAttrs(intro)}>{valueForLocale(intro)}</p>
+    <ContributionIssueForm mode="freeform" title={title} intro={intro} kinds={["correction"]} defaultKind="correction" />
+  </section>
+</BaseLayout>

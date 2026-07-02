@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContributionIssueForm from "../../components/ContributionIssueForm.astro";
+import { i18nAttrs, textValues, valueForLocale } from "../../lib/i18n";
+
+const title = textValues("Correct something", "修正現有資料", "修正现有资料");
+const intro = textValues(
+  "Find the page, choose the part that needs correction, then tell us the current value and your recommended value.",
+  "先找到頁面，選擇需要修正的部分，再填寫目前值與建議值。",
+  "先找到页面，选择需要修正的部分，再填写目前值与建议值。"
+);
+---
+
+<BaseLayout title="Correct something | All for Chyi Yu">
+  <section class="page-shell">
+    <p class="page-kicker"><a href="/contribute/">Contribute</a></p>
+    <h1 class="page-title" {...i18nAttrs(title)}>{valueForLocale(title)}</h1>
+    <p class="page-intro" {...i18nAttrs(intro)}>{valueForLocale(intro)}</p>
+    <ContributionIssueForm mode="correction" title={title} intro={intro} kinds={["correction"]} defaultKind="correction" />
+  </section>
+</BaseLayout>
